@@ -12,13 +12,13 @@ import httpx
 from bs4 import BeautifulSoup
 
 CATALOG = Path("site/data/games.json")
-MAX_WORKERS = 8
+DEFAULT_WORKERS = 12
 MAX_RETRIES = 3
 MAX_MEDIA_PER_GAME = 8
 MEDIA_VERSION = 3
 DETAILS_VERSION = 1
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackDetails/3.0)",
+    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackDetails/3.1)",
     "Accept-Language": "en-US,en;q=0.8",
 }
 
@@ -36,7 +36,8 @@ SKIP_HINTS = (
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Incrementally enrich catalog entries with public details, screenshots and GIFs.")
-    parser.add_argument("--batch", type=int, default=180, help="Maximum games to enrich in one run.")
+    parser.add_argument("--batch", type=int, default=360, help="Maximum games to enrich in one run.")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Parallel detail-page workers (max 24).")
     parser.add_argument("--refresh", action="store_true", help="Recheck entries even when already on the current parser versions.")
     return parser.parse_args()
 
@@ -234,6 +235,7 @@ def main():
     args = parse_args()
     payload = load_catalog()
     games = payload["games"]
+    workers = max(1, min(args.workers, 24))
 
     candidates = [
         game for game in games
@@ -250,7 +252,7 @@ def main():
         return
 
     print(
-        f"details/media candidates: {len(candidates)}; workers: {MAX_WORKERS}; "
+        f"details/media candidates: {len(candidates)}; workers: {workers}; "
         f"media=v{MEDIA_VERSION}; details=v{DETAILS_VERSION}"
     )
     updates = {}
@@ -258,11 +260,11 @@ def main():
     with httpx.Client(
         headers=HEADERS,
         timeout=httpx.Timeout(25.0, connect=15.0),
-        limits=httpx.Limits(max_connections=MAX_WORKERS + 2, max_keepalive_connections=MAX_WORKERS),
+        limits=httpx.Limits(max_connections=workers + 2, max_keepalive_connections=workers),
         follow_redirects=True,
         http2=True,
     ) as client:
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {executor.submit(enrich_one, client, game): game["id"] for game in candidates}
             for future in as_completed(futures):
                 game_id = futures[future]

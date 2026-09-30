@@ -1,0 +1,60 @@
+name: Catalog Refresh
+
+on:
+  schedule:
+    - cron: '17 */4 * * *'
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: 'Listing pages to scan'
+        required: false
+        default: '6'
+      limit:
+        description: 'Maximum games kept in the JSON catalog'
+        required: false
+        default: '2500'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh metadata catalog
+        env:
+          PAGES: ${{ github.event.inputs.pages || '6' }}
+          LIMIT: ${{ github.event.inputs.limit || '2500' }}
+        run: python tools/update_catalog.py --pages "$PAGES" --limit "$LIMIT"
+
+      - name: Commit catalog when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- data/games.json; then
+            echo 'No catalog change.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/games.json
+          git commit -m 'data: refresh game catalog'
+          git push

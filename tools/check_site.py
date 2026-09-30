@@ -33,7 +33,7 @@ assert './assets/media-sanitize.js' in p.scripts
 assert './assets/style.css' in p.links
 assert './assets/modal-fix.css' in p.links
 assert (ROOT/'data/games.json').exists()
-for token in ('DATA_URL','renderRecommendations','appendMediaGallery','selectedTags'):
+for token in ('DATA_URL','renderRecommendations','appendMediaGallery','selectedTags','navigateDialog','dialogScrollY','restoreCatalogPosition','pointerdown'):
     assert token in js, f'missing frontend behavior: {token}'
 for token in ('openLightbox','preventDefault','renderCoverDetails','renderDescriptionTabs','renderGameplayPreview'):
     assert token in details_js, f'missing rich details behavior: {token}'

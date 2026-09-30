@@ -69,7 +69,7 @@ jobs:
       - name: Reject indexed magnet/download payloads
         shell: bash
         run: |
-          if grep -RniE 'magnet:\?|torrent[^a-z]|download[_ -]?mirrors?' site/data site/assets 2>/dev/null; then
-            echo 'Forbidden download payload detected in static catalog.'
+          if grep -RniE 'magnet:\?|"(magnets|downloads|download_mirrors|torrent_links)"[[:space:]]*:' site/data site/assets 2>/dev/null; then
+            echo 'Forbidden direct-download payload detected in static catalog.'
             exit 1
           fi

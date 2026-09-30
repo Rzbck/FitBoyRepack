@@ -36,10 +36,11 @@ jobs:
         with:
           node-version: '22'
       - run: node --check site/assets/app.js
+      - run: node --check site/assets/details.js
       - run: python tools/check_site.py
 
   media-filter:
-    name: Robot · media filter regression
+    name: Robot · details/media parser regression
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

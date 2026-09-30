@@ -2,6 +2,8 @@
 import argparse
 import json
 import re
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -16,11 +18,14 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.8",
 }
 SIZE_RE = re.compile(r"Repack Size:\s*(?:from\s*)?([\d.,]+\s*(?:KB|MB|GB|TB))", re.IGNORECASE)
+MAX_WORKERS = 6
+MAX_RETRIES = 3
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Refresh the public metadata catalog.")
-    parser.add_argument("--pages", type=int, default=6)
+    parser.add_argument("--pages", type=int, default=6, help="Newest listing pages to scan after bootstrap.")
+    parser.add_argument("--bootstrap-pages", type=int, default=200, help="Pages scanned when the catalog is empty.")
     parser.add_argument("--limit", type=int, default=2500)
     parser.add_argument("--replace", action="store_true")
     return parser.parse_args()
@@ -77,34 +82,74 @@ def parse_article(article):
     }
 
 
+def request_text(client, url):
+    last_error = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            response = client.get(url)
+            response.raise_for_status()
+            return response.text
+        except (httpx.HTTPError, httpx.TimeoutException) as exc:
+            last_error = exc
+            if attempt < MAX_RETRIES:
+                time.sleep(0.6 * attempt)
+    raise last_error
+
+
+def discover_total_pages(client):
+    html = request_text(client, BASE_URL)
+    soup = BeautifulSoup(html, "lxml")
+    numbers = []
+    for tag in soup.select("a.page-numbers"):
+        text = tag.get_text(strip=True)
+        if text.isdigit():
+            numbers.append(int(text))
+    return max(numbers) if numbers else 1
+
+
+def fetch_page(client, page):
+    url = BASE_URL if page == 1 else f"{BASE_URL}/page/{page}/"
+    html = request_text(client, url)
+    articles = BeautifulSoup(html, "lxml").find_all("article")
+    games = []
+    for article in articles:
+        game = parse_article(article)
+        if game:
+            games.append(game)
+    return page, games
+
+
 def scan_pages(client, pages):
-    found = []
-    seen = set()
-    for page in range(1, max(1, pages) + 1):
-        url = BASE_URL if page == 1 else f"{BASE_URL}/page/{page}/"
-        response = client.get(url)
-        response.raise_for_status()
-        articles = BeautifulSoup(response.text, "lxml").find_all("article")
-        print(f"page {page}: {len(articles)} articles")
-        for article in articles:
-            game = parse_article(article)
-            if game and game["id"] not in seen:
-                seen.add(game["id"])
-                found.append(game)
-    return found
+    total_pages = discover_total_pages(client)
+    requested = min(max(1, pages), total_pages)
+    print(f"source pages: {total_pages}; scanning: {requested}; workers: {MAX_WORKERS}")
+
+    found = {}
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(fetch_page, client, page) for page in range(1, requested + 1)]
+        for future in as_completed(futures):
+            page, games = future.result()
+            print(f"page {page}: {len(games)} games")
+            for game in games:
+                found[game["id"]] = game
+    return list(found.values())
 
 
 def main():
     args = parse_args()
     current = load_existing()
     old_games = current.get("games", [])
+    requested_pages = args.pages if old_games else max(args.pages, args.bootstrap_pages)
+    print(f"mode: {'incremental' if old_games else 'bootstrap'}")
+
     with httpx.Client(
         headers=HEADERS,
         timeout=httpx.Timeout(25.0, connect=15.0),
+        limits=httpx.Limits(max_connections=MAX_WORKERS + 2, max_keepalive_connections=MAX_WORKERS),
         follow_redirects=True,
         http2=True,
     ) as client:
-        fresh = scan_pages(client, args.pages)
+        fresh = scan_pages(client, requested_pages)
 
     merged = {} if args.replace else {str(game.get("id")): game for game in old_games if game.get("id")}
     for game in fresh:

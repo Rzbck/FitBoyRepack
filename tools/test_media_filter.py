@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from tools.enrich_media import MEDIA_VERSION, extract_media
+from enrich_media import MEDIA_VERSION, extract_media
 
 HTML = """
 <html><body>

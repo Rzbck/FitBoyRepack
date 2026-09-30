@@ -3,20 +3,21 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
-CATALOG_VERSION = 2
+SUPPORTED_CATALOG_VERSIONS = {2, 3}
 META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
 P = Path("site/data/games.json")
 data = json.loads(P.read_text(encoding="utf-8"))
 
 assert isinstance(data, dict), "games.json must be an object"
-assert data.get("catalog_version") == CATALOG_VERSION, f"unexpected catalog_version: {data.get('catalog_version')}"
+assert data.get("catalog_version") in SUPPORTED_CATALOG_VERSIONS, f"unexpected catalog_version: {data.get('catalog_version')}"
 assert isinstance(data.get("games"), list), "games.json must contain games: []"
 if data.get("generated_at"):
     datetime.fromisoformat(data["generated_at"].replace("Z", "+00:00"))
 
 seen = set()
+magnet_count = 0
 for i, game in enumerate(data["games"]):
     assert isinstance(game, dict), f"game[{i}] is not an object"
     for key in ("id", "title", "source_url"):
@@ -33,9 +34,16 @@ for i, game in enumerate(data["games"]):
         parsed_image = urlparse(image)
         assert parsed_image.scheme == "https" and parsed_image.netloc, f"invalid image_url: {image}"
 
-    serialized = json.dumps(game, ensure_ascii=False).lower()
-    assert "magnet:" not in serialized, f"magnet URI found in {game['id']}"
-    assert not any(key in game for key in ("magnets", "downloads", "download_mirrors", "torrent_links")), f"forbidden download field in {game['id']}"
+    magnet = game.get("magnet_url") or ""
+    if magnet:
+        assert isinstance(magnet, str), f"magnet_url must be a string in {game['id']}"
+        parsed_magnet = urlparse(magnet)
+        assert parsed_magnet.scheme == "magnet", f"invalid magnet scheme in {game['id']}"
+        query = parse_qs(parsed_magnet.query)
+        assert any(value.startswith("urn:btih:") for value in query.get("xt", [])), f"missing BitTorrent info hash in {game['id']}"
+        magnet_count += 1
+
+    assert not any(key in game for key in ("magnets", "downloads", "download_mirrors", "torrent_links", "torrent_url")), f"unexpected download field in {game['id']}"
 
     if game.get("post_date"):
         datetime.fromisoformat(game["post_date"].replace("Z", "+00:00"))
@@ -46,4 +54,4 @@ for i, game in enumerate(data["games"]):
         assert isinstance(genre, str) and genre.strip(), f"invalid genre in {game['id']}"
         assert not META_LABEL_RE.search(genre), f"metadata leaked into genre for {game['id']}: {genre}"
 
-print(f"catalog OK v{CATALOG_VERSION}: {len(data['games'])} games, {len(seen)} unique ids")
+print(f"catalog OK v{data.get('catalog_version')}: {len(data['games'])} games, {len(seen)} unique ids, {magnet_count} magnets")

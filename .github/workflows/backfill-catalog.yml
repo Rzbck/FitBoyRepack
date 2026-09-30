@@ -2,13 +2,16 @@ name: Full Catalog Backfill
 
 on:
   schedule:
-    - cron: '31 3 * * 0'
+    - cron: '31 3 * * *'
   workflow_dispatch:
     inputs:
       workers:
         description: 'Parallel listing-page workers'
         required: false
         default: '12'
+  # Intentionally the only catalog writer started by code pushes. This lets a
+  # newly deployed scraper perform one complete backfill before the fast jobs
+  # resume their normal schedules.
   push:
     branches: [main]
     paths:

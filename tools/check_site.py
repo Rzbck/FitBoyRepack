@@ -78,8 +78,8 @@ for token in ('.compact-topbar','.header-toolbar','.scroll-sentinel','.header-co
     assert token in compact_css, f'missing compact header/infinite-scroll CSS contract: {token}'
 for token in ('content-visibility: auto','contain-intrinsic-size'):
     assert token in performance_css, f'missing offscreen rendering optimization: {token}'
-for token in ('.catalog-layout','.filter-sidebar','.sidebar-tag-list','position:sticky'):
-    assert token in sidebar_css, f'missing sidebar filter contract: {token}'
+for token in ('.catalog-layout','.filter-sidebar','.sidebar-tag-list','position:sticky','flex-wrap:wrap','width:min(1900px,calc(100% - 20px))'):
+    assert token in sidebar_css, f'missing compact sidebar filter contract: {token}'
 for token in ('torrent-stats.info','MutationObserver','.media-item'):
     assert token in sanitize_js, f'missing legacy media sanitizer contract: {token}'
 print('site smoke OK')

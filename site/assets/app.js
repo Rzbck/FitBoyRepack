@@ -1,4 +1,5 @@
-const DATA_URL = './data/games.json';
+import { loadCatalogPayload } from './catalog-api.js';
+
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
 const FAVORITES_KEY = 'fitboyrepack:favorites:v1';
@@ -35,10 +36,6 @@ function getTags(game) {
   const value = game.genres ?? game.genre ?? [];
   const raw = Array.isArray(value) ? value : String(value || '').split(',');
   return raw.map(item => String(item).trim()).filter(Boolean);
-}
-function getMedia(game) {
-  if (!Array.isArray(game.media)) return [];
-  return game.media.filter(item => item && typeof item.url === 'string' && item.url.startsWith('https://')).slice(0, 12);
 }
 
 function prepareGame(raw) {
@@ -106,19 +103,11 @@ function applyFilters() {
   const query = normalized(els.search.value);
   const tagQuery = normalized(els.tagSearch.value);
   const selected = [...state.selectedTags];
-  const requireAll = els.tagMode.value === 'all';
   const sort = els.sort.value;
 
   state.filtered = state.games.filter(game => {
     if (state.favoritesOnly && !state.favorites.has(game.id)) return false;
-
-    if (selected.length) {
-      const match = requireAll
-        ? selected.every(tag => game.__tagKeySet.has(tag))
-        : selected.some(tag => game.__tagKeySet.has(tag));
-      if (!match) return false;
-    }
-
+    if (selected.length && !selected.every(tag => game.__tagKeySet.has(tag))) return false;
     if (tagQuery && !game.__tagKeys.some(tag => tag.includes(tagQuery))) return false;
     if (query && !game.__searchText.includes(query)) return false;
     return true;
@@ -168,7 +157,7 @@ function renderCard(game, compact = false) {
   favorite.classList.toggle('active', active); favorite.textContent = active ? '♥' : '♡';
   favorite.setAttribute('aria-label', active ? 'Retirer des favoris' : 'Ajouter aux favoris');
   favorite.addEventListener('click', event => { event.stopPropagation(); toggleFavorite(game.id); });
-  open.addEventListener('click', () => openDialog(game));
+  open.addEventListener('click', () => openDialog(game, { syncUrl:true }));
   return card;
 }
 
@@ -185,7 +174,7 @@ function updateCatalogMeta() {
   const active = [];
   if (els.search.value.trim()) active.push(`recherche « ${els.search.value.trim()} »`);
   if (els.tagSearch.value.trim()) active.push(`tag recherché « ${els.tagSearch.value.trim()} »`);
-  if (state.selectedTags.size) active.push(`${state.selectedTags.size} tag${state.selectedTags.size > 1 ? 's' : ''} (${els.tagMode.value === 'all' ? 'tous' : 'au moins un'})`);
+  if (state.selectedTags.size) active.push(`${state.selectedTags.size} tag${state.selectedTags.size > 1 ? 's' : ''}`);
   if (state.favoritesOnly) active.push('favoris');
   els.activeState.hidden = active.length === 0;
   els.activeState.textContent = active.length ? `Filtres actifs : ${active.join(' • ')} • ${resultLabel}` : '';
@@ -227,9 +216,6 @@ function loadNextPage() {
 }
 
 function scheduleInfiniteCheck() {
-  // Kept as a compatibility hook for resize/tests. It never loads a page itself.
-  // The previous implementation called loadNextPage recursively here and could
-  // cascade dozens of renders while the sentinel remained near the viewport.
   armInfiniteObserver();
 }
 
@@ -295,25 +281,6 @@ function renderRecommendations() {
   els.recommendationSection.hidden = false;
 }
 
-function appendMediaGallery(info, game) {
-  const media = getMedia(game);
-  if (!media.length) return;
-  const section = document.createElement('section'); section.className = 'dialog-media';
-  const heading = document.createElement('div'); heading.className = 'dialog-subheading';
-  const title = document.createElement('h3'); title.textContent = 'Images & GIFs';
-  const count = document.createElement('span'); count.textContent = `${media.length} média${media.length > 1 ? 's' : ''}`;
-  heading.append(title, count); section.append(heading);
-  const grid = document.createElement('div'); grid.className = 'media-grid';
-  for (const item of media) {
-    const link = document.createElement('a'); link.className = 'media-item'; link.href = item.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
-    const img = document.createElement('img'); img.src = item.url; img.alt = `Capture de ${game.title}`; img.loading = 'lazy'; img.decoding = 'async'; img.referrerPolicy = 'no-referrer';
-    img.addEventListener('error', () => link.remove(), { once:true }); link.append(img);
-    if (item.type === 'gif') { const badge = document.createElement('span'); badge.className = 'media-kind'; badge.textContent = 'GIF'; link.append(badge); }
-    grid.append(link);
-  }
-  section.append(grid); info.append(section);
-}
-
 function lockCatalogScroll() {
   state.dialogScrollY = window.scrollY;
   const scrollbarGap = Math.max(0, window.innerWidth - document.documentElement.clientWidth);
@@ -340,7 +307,23 @@ function unlockCatalogScroll() {
   window.scrollTo({ top, left:0, behavior:'auto' });
 }
 
-function openDialog(game) {
+function gameHashId() {
+  if (!window.location.hash.startsWith('#')) return '';
+  return new URLSearchParams(window.location.hash.slice(1)).get('game') || '';
+}
+
+function syncGameHash(gameId) {
+  const hash = `#game=${encodeURIComponent(gameId)}`;
+  if (window.location.hash === hash) return;
+  history.replaceState(history.state, '', `${window.location.pathname}${window.location.search}${hash}`);
+}
+
+function clearGameHash() {
+  if (!gameHashId()) return;
+  history.replaceState(history.state, '', `${window.location.pathname}${window.location.search}`);
+}
+
+function openDialog(game, { syncUrl = true } = {}) {
   const firstOpen = !els.dialog.open;
   if (firstOpen) {
     state.dialogOpener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
@@ -348,7 +331,11 @@ function openDialog(game) {
   }
   state.dialogGameId = game.id;
 
-  const layout = document.createElement('div'); layout.className = 'dialog-layout';
+  const layout = document.createElement('div');
+  layout.className = 'dialog-layout';
+  layout.dataset.gameId = game.id;
+  layout.dataset.detailPath = game.detail_path || '';
+
   const cover = document.createElement('div'); cover.className = 'dialog-cover';
   if (game.image_url) {
     const img = document.createElement('img'); img.src = game.image_url; img.alt = ''; img.referrerPolicy = 'no-referrer';
@@ -367,12 +354,22 @@ function openDialog(game) {
 
   const source = game.source_url || game.post_url || '';
   if (source) { const link = document.createElement('a'); link.className = 'source-link'; link.href = source; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Voir la page source ↗'; info.append(link); }
-  appendMediaGallery(info, game);
+
+  if (game.detail_path) {
+    const loading = document.createElement('p');
+    loading.className = 'dialog-note detail-loading';
+    loading.dataset.detailStatus = 'loading';
+    loading.textContent = 'Chargement de la fiche détaillée…';
+    info.append(loading);
+  }
+
   const note = document.createElement('p'); note.className = 'dialog-note'; note.textContent = 'FitBoyRepack indexe les métadonnées et médias publics utiles au catalogue puis renvoie vers la page source.'; info.append(note);
 
   layout.append(cover, info);
   els.dialogContent.replaceChildren(layout);
   if (firstOpen) els.dialog.showModal();
+  if (syncUrl) syncGameHash(game.id);
+  document.dispatchEvent(new CustomEvent('fitboy:game-open', { detail:{ gameId:game.id, detailPath:game.detail_path || '' } }));
 }
 
 function isMediaLightboxOpen() {
@@ -385,13 +382,14 @@ function navigateDialog(delta) {
   const current = state.filtered.findIndex(game => game.id === state.dialogGameId);
   if (current < 0) return;
   const next = (current + delta + state.filtered.length) % state.filtered.length;
-  openDialog(state.filtered[next]);
+  openDialog(state.filtered[next], { syncUrl:true });
 }
 
 function restoreCatalogPosition() {
   const opener = state.dialogOpener;
   state.dialogGameId = null;
   state.dialogOpener = null;
+  clearGameHash();
   unlockCatalogScroll();
   requestAnimationFrame(() => {
     if (opener?.isConnected) {
@@ -400,16 +398,24 @@ function restoreCatalogPosition() {
   });
 }
 
+function openGameFromHash() {
+  if (!state.games.length) return;
+  const gameId = gameHashId();
+  if (!gameId) {
+    if (els.dialog.open) els.dialog.close();
+    return;
+  }
+  const game = state.games.find(item => item.id === gameId);
+  if (game) openDialog(game, { syncUrl:false });
+}
+
 async function loadCatalog() {
   try {
-    const response = await fetch(DATA_URL, { cache:'no-cache' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    const source = Array.isArray(payload) ? payload : payload.games || [];
-    state.games = source.filter(game => game?.id && game?.title).map(prepareGame);
-    const generated = Array.isArray(payload) ? null : payload.generated_at;
+    const payload = await loadCatalogPayload();
+    state.games = payload.games.filter(game => game?.id && game?.title).map(prepareGame);
+    const generated = payload.generated_at;
     els.status.textContent = generated ? `Mis à jour ${new Intl.DateTimeFormat('fr-FR', { dateStyle:'medium', timeStyle:'short' }).format(new Date(generated))}` : `${state.games.length.toLocaleString('fr-FR')} jeux`;
-    buildTagIndex(); applyFilters(); renderRecommendations();
+    buildTagIndex(); applyFilters(); renderRecommendations(); openGameFromHash();
   } catch (error) {
     console.error(error); els.status.textContent = 'Catalogue indisponible'; els.empty.hidden = false;
     els.empty.querySelector('strong').textContent = 'Impossible de charger le catalogue';
@@ -450,4 +456,5 @@ document.addEventListener('keydown', event => {
 });
 
 window.addEventListener('resize', scheduleInfiniteCheck, { passive:true });
+window.addEventListener('hashchange', openGameFromHash);
 loadCatalog();

@@ -48,16 +48,15 @@ jobs:
           python-version: '3.12'
       - run: python -m py_compile tools/update_catalog.py tools/validate_catalog.py tools/check_site.py
 
-  magnet-contract:
-    name: Robot · magnet contract
+  security-boundary:
+    name: Robot · forbidden-link guard
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Allow magnets, reject mirror/torrent payload fields
+      - name: Reject indexed magnet/download payloads
         shell: bash
         run: |
-          if grep -RniE '"(downloads|download_mirrors|torrent_links|torrent_url)"\s*:' site/data 2>/dev/null; then
-            echo 'Unexpected download payload field detected. Only magnet_url is allowed.'
+          if grep -RniE 'magnet:\?|torrent[^a-z]|download[_ -]?mirrors?' site/data site/assets 2>/dev/null; then
+            echo 'Forbidden download payload detected in static catalog.'
             exit 1
           fi
-          echo 'Magnet contract OK'

@@ -43,10 +43,10 @@
           <div class="tag-controls">
             <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
             <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="all" selected>Tous les tags (ET)</option><option value="any">Au moins un (OU)</option></select></label>
-            <button id="clearTags" class="ghost-btn" type="button">Effacer</button>
+            <button id="clearTags" class="ghost-btn" type="button" title="Retirer tous les tags et vider la recherche">Réinitialiser</button>
           </div>
           <div class="tag-result-summary" aria-live="polite">
-            <span>Résultat du filtre</span>
+            <span>Résultat du filtre · tags impossibles désactivés</span>
             <strong id="tagResultCount">0 jeux</strong>
           </div>
           <div id="tagList" class="tag-list" aria-label="Liste des tags"></div>
@@ -89,6 +89,7 @@
 
   <footer><span>FitBoyRepack</span><span>Catalogue statique • actualisé automatiquement • profil et favoris stockés localement</span></footer>
   <script type="module" src="./assets/app.js"></script>
+  <script type="module" src="./assets/tag-facets.js"></script>
   <script type="module" src="./assets/details.js"></script>
   <script src="./assets/media-sanitize.js"></script>
 </body>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="FitBoyRepack — catalogue léger et rapide des dernières sorties répertoriées.">
+  <meta name="description" content="FitBoyRepack — catalogue léger, filtrable et actualisé automatiquement.">
   <title>FitBoyRepack</title>
   <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -23,22 +23,44 @@
       <div>
         <p class="eyebrow">Catalogue</p>
         <h1>Les derniers jeux, vite et proprement.</h1>
-        <p class="hero-copy">Recherche instantanée, filtres locaux et catalogue actualisé automatiquement.</p>
+        <p class="hero-copy">Recherche instantanée, filtres multi-tags, galerie médias et recommandations locales basées sur tes favoris.</p>
       </div>
-      <div class="hero-stat" aria-live="polite"><strong id="visibleCount">0</strong><span>jeux affichés</span></div>
+      <div class="hero-stat" aria-live="polite"><strong id="visibleCount">0</strong><span>jeux trouvés</span></div>
     </section>
 
     <section class="toolbar" aria-label="Filtres du catalogue">
       <label class="search-box">
         <span class="sr-only">Rechercher</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-        <input id="searchInput" type="search" autocomplete="off" placeholder="Rechercher un jeu…">
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Rechercher un jeu, un tag, une taille…">
       </label>
-      <label class="select-wrap"><span class="sr-only">Genre</span><select id="genreFilter"><option value="">Tous les genres</option></select></label>
+
+      <details id="tagFilter" class="tag-filter">
+        <summary><span>Tags</span><strong id="selectedTagCount">0</strong></summary>
+        <div class="tag-popover">
+          <div class="tag-controls">
+            <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
+            <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="any">Au moins un</option><option value="all">Tous les tags</option></select></label>
+            <button id="clearTags" class="ghost-btn" type="button">Effacer</button>
+          </div>
+          <div id="tagList" class="tag-list" aria-label="Liste des tags"></div>
+        </div>
+      </details>
+
       <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Plus récents</option><option value="date_asc">Plus anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
     </section>
 
     <div id="activeState" class="active-state" hidden></div>
+
+    <section id="recommendationSection" class="recommendations" hidden>
+      <div class="section-heading">
+        <div><p class="eyebrow">Ton profil local</p><h2>Pour toi</h2></div>
+        <p id="recommendationMeta" class="section-note"></p>
+      </div>
+      <div id="recommendationGrid" class="recommendation-grid"></div>
+    </section>
+
+    <div class="section-heading catalog-heading"><div><p class="eyebrow">Tous les jeux</p><h2>Catalogue</h2></div></div>
     <section id="gameGrid" class="game-grid" aria-live="polite"></section>
     <div class="load-more-wrap"><button id="loadMore" class="primary-btn" type="button" hidden>Afficher plus</button></div>
     <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
@@ -59,7 +81,7 @@
     </article>
   </template>
 
-  <footer><span>FitBoyRepack</span><span>Catalogue statique • actualisé automatiquement • données publiques</span></footer>
+  <footer><span>FitBoyRepack</span><span>Catalogue statique • actualisé automatiquement • profil et favoris stockés localement</span></footer>
   <script type="module" src="./assets/app.js"></script>
 </body>
 </html>

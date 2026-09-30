@@ -1,0 +1,68 @@
+name: Media Enrichment
+
+on:
+  schedule:
+    - cron: '47 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'Maximum games to enrich in this run'
+        required: false
+        default: '180'
+      refresh:
+        description: 'Recheck already enriched games'
+        required: false
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'tools/enrich_media.py'
+      - '.github/workflows/enrich-media.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: media-enrichment
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Enrich screenshots and GIFs
+        env:
+          BATCH: ${{ github.event.inputs.batch || '180' }}
+          REFRESH: ${{ github.event.inputs.refresh || 'false' }}
+        shell: bash
+        run: |
+          ARGS=(--batch "$BATCH")
+          if [ "$REFRESH" = "true" ]; then ARGS+=(--refresh); fi
+          python tools/enrich_media.py "${ARGS[@]}"
+      - name: Validate generated catalog
+        run: python tools/validate_catalog.py
+      - name: Commit media safely
+        shell: bash
+        run: |
+          if git diff --quiet -- site/data/games.json; then
+            echo 'No media change'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/games.json
+          git commit -m 'data: enrich media'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

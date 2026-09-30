@@ -6,6 +6,9 @@ on:
     paths:
       - 'site/**'
       - '.github/workflows/pages.yml'
+  workflow_run:
+    workflows: ['Catalog Refresh', 'Media Enrichment']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -19,9 +22,12 @@ concurrency:
 
 jobs:
   verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -40,6 +46,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Enable/configure GitHub Pages
         uses: actions/configure-pages@v5
         with:

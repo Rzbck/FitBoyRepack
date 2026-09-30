@@ -39,11 +39,27 @@ for i, game in enumerate(data["games"]):
 
     if game.get("post_date"):
         datetime.fromisoformat(game["post_date"].replace("Z", "+00:00"))
+    if game.get("media_checked_at"):
+        datetime.fromisoformat(game["media_checked_at"].replace("Z", "+00:00"))
 
     genres = game.get("genres", [])
     assert isinstance(genres, list), f"genres must be list: {game['id']}"
     for genre in genres:
         assert isinstance(genre, str) and genre.strip(), f"invalid genre in {game['id']}"
         assert not META_LABEL_RE.search(genre), f"metadata leaked into genre for {game['id']}: {genre}"
+
+    media = game.get("media", [])
+    assert isinstance(media, list), f"media must be list: {game['id']}"
+    assert len(media) <= 12, f"too many media entries in {game['id']}"
+    media_seen = set()
+    for item in media:
+        assert isinstance(item, dict), f"invalid media object in {game['id']}"
+        assert item.get("type") in ("image", "gif"), f"invalid media type in {game['id']}"
+        url = item.get("url")
+        assert isinstance(url, str) and url.startswith("https://"), f"invalid media URL in {game['id']}"
+        parsed = urlparse(url)
+        assert parsed.netloc, f"invalid media host in {game['id']}"
+        assert url not in media_seen, f"duplicate media URL in {game['id']}"
+        media_seen.add(url)
 
 print(f"catalog OK v{CATALOG_VERSION}: {len(data['games'])} games, {len(seen)} unique ids")

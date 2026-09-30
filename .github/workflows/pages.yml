@@ -1,4 +1,5 @@
 name: Deploy Pages
+
 on:
   push:
     branches: [main]
@@ -22,9 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: '3.12' }
+        with:
+          python-version: '3.12'
       - uses: actions/setup-node@v4
-        with: { node-version: '22' }
+        with:
+          node-version: '22'
       - run: python tools/validate_catalog.py
       - run: python tools/check_site.py
       - run: node --check site/assets/app.js
@@ -37,9 +40,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - name: Enable/configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
-        with: { path: site }
+        with:
+          path: site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

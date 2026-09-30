@@ -6,18 +6,18 @@ const FAVORITES_KEY = 'fitboyrepack:favorites:v1';
 const $ = (selector) => document.querySelector(selector);
 const els = {
   grid: $('#gameGrid'), template: $('#cardTemplate'), search: $('#searchInput'), sort: $('#sortControl'),
-  count: $('#visibleCount'), status: $('#catalogStatus'), loadMore: $('#loadMore'), empty: $('#emptyState'),
+  count: $('#visibleCount'), status: $('#catalogStatus'), empty: $('#emptyState'),
   favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'), dialog: $('#gameDialog'),
   dialogContent: $('#dialogContent'), tagFilter: $('#tagFilter'), tagList: $('#tagList'), tagSearch: $('#tagSearch'),
   tagMode: $('#tagMode'), clearTags: $('#clearTags'), selectedTagCount: $('#selectedTagCount'), tagResultCount: $('#tagResultCount'),
   recommendationSection: $('#recommendationSection'), recommendationGrid: $('#recommendationGrid'),
-  recommendationMeta: $('#recommendationMeta')
+  recommendationMeta: $('#recommendationMeta'), scrollSentinel: $('#scrollSentinel'), infiniteStatus: $('#infiniteStatus')
 };
 
 const state = {
   games: [], filtered: [], visible: PAGE_SIZE, favoritesOnly: false,
   favorites: readFavorites(), selectedTags: new Set(), tagCounts: new Map(),
-  dialogGameId: null, dialogScrollY: 0, dialogOpener: null
+  dialogGameId: null, dialogScrollY: 0, dialogOpener: null, loadingMore: false
 };
 
 function readFavorites() {
@@ -110,8 +110,6 @@ function applyFilters() {
       if (!match) return false;
     }
 
-    // The tag finder is a real catalog filter too: while typing, only games whose
-    // tags match the text remain visible. It never matches a title by accident.
     if (tagQuery && !normalizedTags.some(tag => tag.includes(tagQuery))) return false;
 
     if (!query) return true;
@@ -124,8 +122,9 @@ function applyFilters() {
     if (sort === 'name_desc') return b.title.localeCompare(a.title, 'fr', { sensitivity:'base' });
     return gameDate(b) - gameDate(a);
   });
-  state.visible = PAGE_SIZE;
+  state.visible = Math.min(PAGE_SIZE, state.filtered.length);
   renderCatalog();
+  scheduleInfiniteCheck();
 }
 
 function pill(text) { const el = document.createElement('span'); el.className = 'genre-pill'; el.textContent = text; return el; }
@@ -158,16 +157,15 @@ function renderCard(game, compact = false) {
   return card;
 }
 
-function renderCatalog() {
-  const shown = state.filtered.slice(0, state.visible); const fragment = document.createDocumentFragment();
-  for (const game of shown) fragment.append(renderCard(game));
-  els.grid.replaceChildren(fragment);
-
+function updateCatalogMeta() {
   const resultLabel = `${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length > 1 ? 'x' : ''}`;
   els.count.textContent = state.filtered.length.toLocaleString('fr-FR');
   if (els.tagResultCount) els.tagResultCount.textContent = resultLabel;
   els.empty.hidden = state.filtered.length !== 0;
-  els.loadMore.hidden = state.visible >= state.filtered.length;
+
+  const hasMore = state.visible < state.filtered.length;
+  els.scrollSentinel.hidden = !hasMore;
+  if (!hasMore) els.infiniteStatus.hidden = true;
 
   const active = [];
   if (els.search.value.trim()) active.push(`recherche « ${els.search.value.trim()} »`);
@@ -180,6 +178,44 @@ function renderCatalog() {
   els.favoritesToggle.setAttribute('aria-pressed', String(state.favoritesOnly));
   els.favoritesToggle.textContent = state.favoritesOnly ? '♥ Favoris' : '♡ Favoris';
 }
+
+function renderCatalog({ append = false, start = 0 } = {}) {
+  const end = Math.min(state.visible, state.filtered.length);
+  const fragment = document.createDocumentFragment();
+  for (let index = start; index < end; index += 1) fragment.append(renderCard(state.filtered[index]));
+  if (append) els.grid.append(fragment);
+  else els.grid.replaceChildren(fragment);
+  updateCatalogMeta();
+}
+
+function loadNextPage() {
+  if (state.loadingMore || state.visible >= state.filtered.length) return;
+  state.loadingMore = true;
+  els.infiniteStatus.hidden = false;
+  const start = state.visible;
+
+  requestAnimationFrame(() => {
+    state.visible = Math.min(state.visible + PAGE_SIZE, state.filtered.length);
+    renderCatalog({ append:true, start });
+    state.loadingMore = false;
+    els.infiniteStatus.hidden = true;
+    scheduleInfiniteCheck();
+  });
+}
+
+function scheduleInfiniteCheck() {
+  if (state.loadingMore || els.scrollSentinel.hidden) return;
+  requestAnimationFrame(() => {
+    if (state.loadingMore || els.scrollSentinel.hidden) return;
+    const rect = els.scrollSentinel.getBoundingClientRect();
+    if (rect.top <= window.innerHeight + 900) loadNextPage();
+  });
+}
+
+const infiniteObserver = new IntersectionObserver(entries => {
+  if (entries.some(entry => entry.isIntersecting)) loadNextPage();
+}, { rootMargin:'900px 0px' });
+infiniteObserver.observe(els.scrollSentinel);
 
 function recommendationScores() {
   const favorites = state.games.filter(game => state.favorites.has(game.id));
@@ -360,7 +396,6 @@ els.clearTags.addEventListener('click', () => {
   updateTagUI();
 });
 els.sort.addEventListener('change', applyFilters);
-els.loadMore.addEventListener('click', () => { state.visible += PAGE_SIZE; renderCatalog(); });
 els.favoritesToggle.addEventListener('click', () => { state.favoritesOnly = !state.favoritesOnly; applyFilters(); });
 els.dialog.addEventListener('click', event => { if (event.target === els.dialog || event.target.closest('[data-close-dialog]')) els.dialog.close(); });
 els.dialog.addEventListener('close', restoreCatalogPosition);
@@ -381,4 +416,6 @@ document.addEventListener('keydown', event => {
   if (event.key === '/' && !typing) { event.preventDefault(); els.search.focus(); }
   if (event.key === 'Escape' && els.tagFilter.open) els.tagFilter.open = false;
 });
+
+window.addEventListener('resize', scheduleInfiniteCheck, { passive:true });
 loadCatalog();

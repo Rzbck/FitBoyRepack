@@ -1,0 +1,9 @@
+.game-grid .game-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+.recommendation-grid .game-card {
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}

@@ -150,7 +150,8 @@ els.clearTags.addEventListener('click', () => {
 
 async function loadGames() {
   try {
-    const response = await fetch(DATA_URL, { cache:'force-cache' });
+    // Keep the facet index in sync with the same fresh catalog used by app.js.
+    const response = await fetch(DATA_URL, { cache:'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
     const source = Array.isArray(payload) ? payload : payload.games || [];

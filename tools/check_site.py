@@ -48,7 +48,7 @@ for token in (
     'scheduleInfiniteCheck','grid.append','rootMargin'
 ):
     assert token in js, f'missing frontend behavior: {token}'
-for token in ('compatibleCounts','button.disabled','selectedTagKeys','force-cache','Réinitialisation complète'):
+for token in ('compatibleCounts','button.disabled','selectedTagKeys',"cache:'no-cache'",'Réinitialisation complète'):
     assert token in facets_js, f'missing tag facet behavior: {token}'
 for token in ('openLightbox','preventDefault','renderCoverDetails','renderDescriptionTabs','renderGameplayPreview'):
     assert token in details_js, f'missing rich details behavior: {token}'

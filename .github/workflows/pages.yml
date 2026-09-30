@@ -41,6 +41,9 @@ jobs:
 
   deploy:
     needs: verify
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+      commit_sha: ${{ steps.version.outputs.sha }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -49,6 +52,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Stamp deployed revision
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha="$(git rev-parse HEAD)"
+          built_at="$(date -u +%FT%TZ)"
+          printf '{"commit":"%s","built_at":"%s"}\n' "$sha" "$built_at" > site/version.json
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
       - name: Enable/configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
@@ -59,3 +71,46 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  healthcheck:
+    name: Robot · production Pages health
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify public site, assets and catalog from a clean runner
+        shell: bash
+        env:
+          PAGE_URL: ${{ needs.deploy.outputs.page_url }}
+          EXPECTED_SHA: ${{ needs.deploy.outputs.commit_sha }}
+        run: |
+          set -euo pipefail
+          base="${PAGE_URL%/}"
+          nonce="${EXPECTED_SHA:0:12}-$(date +%s)"
+
+          fetch() {
+            local path="$1"
+            local output="$2"
+            echo "GET ${base}/${path}?health=${nonce}"
+            curl --fail --silent --show-error --location \
+              --retry 10 --retry-delay 3 --retry-all-errors \
+              --connect-timeout 10 --max-time 45 \
+              -H 'Cache-Control: no-cache, no-store, max-age=0' \
+              -H 'Pragma: no-cache' \
+              "${base}/${path}?health=${nonce}" -o "$output"
+          }
+
+          fetch index.html /tmp/index.html
+          fetch assets/app.js /tmp/app.js
+          fetch assets/compact-header.css /tmp/compact-header.css
+          fetch data/games.json /tmp/games.json
+          fetch version.json /tmp/version.json
+
+          grep -q 'FitBoyRepack' /tmp/index.html
+          grep -q 'scrollSentinel' /tmp/index.html
+          grep -q 'IntersectionObserver' /tmp/app.js
+          grep -q 'compact-topbar' /tmp/compact-header.css
+          grep -q '"games"' /tmp/games.json
+          grep -Fq "$EXPECTED_SHA" /tmp/version.json
+
+          echo "Production Pages is live on revision $EXPECTED_SHA"
+          cat /tmp/version.json

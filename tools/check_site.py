@@ -9,6 +9,7 @@ modal_css = (ROOT/'assets/modal-fix.css').read_text(encoding='utf-8')
 ux_css = (ROOT/'assets/ux-fixes.css').read_text(encoding='utf-8')
 compact_css = (ROOT/'assets/compact-header.css').read_text(encoding='utf-8')
 performance_css = (ROOT/'assets/performance.css').read_text(encoding='utf-8')
+sidebar_css = (ROOT/'assets/filter-sidebar.css').read_text(encoding='utf-8')
 js = (ROOT/'assets/app.js').read_text(encoding='utf-8')
 facets_js = (ROOT/'assets/tag-facets.js').read_text(encoding='utf-8')
 details_js = (ROOT/'assets/details.js').read_text(encoding='utf-8')
@@ -26,7 +27,7 @@ class P(HTMLParser):
 p=P(); p.feed(html)
 required={
     'gameGrid','cardTemplate','searchInput','sortControl','gameDialog','catalogStatus','visibleCount',
-    'tagFilter','tagList','tagSearch','tagMode','clearTags','selectedTagCount','tagResultCount',
+    'tagFilter','tagList','tagSearch','tagMode','clearTags','selectedTagCount','tagResultCount','filterSidebar',
     'recommendationSection','recommendationGrid','recommendationMeta','scrollSentinel','infiniteStatus'
 }
 missing=required-p.ids
@@ -42,6 +43,7 @@ assert './assets/modal-fix.css' in p.links
 assert './assets/ux-fixes.css' in p.links
 assert './assets/compact-header.css' in p.links
 assert './assets/performance.css' in p.links
+assert './assets/filter-sidebar.css' in p.links
 assert (ROOT/'data/games.json').exists()
 
 for token in (
@@ -76,6 +78,8 @@ for token in ('.compact-topbar','.header-toolbar','.scroll-sentinel','.header-co
     assert token in compact_css, f'missing compact header/infinite-scroll CSS contract: {token}'
 for token in ('content-visibility: auto','contain-intrinsic-size'):
     assert token in performance_css, f'missing offscreen rendering optimization: {token}'
+for token in ('.catalog-layout','.filter-sidebar','.sidebar-tag-list','position:sticky'):
+    assert token in sidebar_css, f'missing sidebar filter contract: {token}'
 for token in ('torrent-stats.info','MutationObserver','.media-item'):
     assert token in sanitize_js, f'missing legacy media sanitizer contract: {token}'
 print('site smoke OK')

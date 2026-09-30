@@ -13,11 +13,13 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://fitgirl-repacks.site"
 OUTPUT = Path("site/data/games.json")
+CATALOG_VERSION = 2
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackCatalog/1.0)",
+    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackCatalog/2.0)",
     "Accept-Language": "en-US,en;q=0.8",
 }
 SIZE_RE = re.compile(r"Repack Size:\s*(?:from\s*)?([\d.,]+\s*(?:KB|MB|GB|TB))", re.IGNORECASE)
+META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
 MAX_WORKERS = 6
 MAX_RETRIES = 3
 
@@ -25,7 +27,7 @@ MAX_RETRIES = 3
 def parse_args():
     parser = argparse.ArgumentParser(description="Refresh the public metadata catalog.")
     parser.add_argument("--pages", type=int, default=6, help="Newest listing pages to scan after bootstrap.")
-    parser.add_argument("--bootstrap-pages", type=int, default=200, help="Pages scanned when the catalog is empty.")
+    parser.add_argument("--bootstrap-pages", type=int, default=300, help="Pages scanned for an empty/outdated catalog.")
     parser.add_argument("--limit", type=int, default=2500)
     parser.add_argument("--replace", action="store_true")
     return parser.parse_args()
@@ -33,9 +35,11 @@ def parse_args():
 
 def load_existing():
     if not OUTPUT.exists():
-        return {"generated_at": None, "games": []}
+        return {"catalog_version": None, "generated_at": None, "games": []}
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
-    return {"generated_at": None, "games": payload} if isinstance(payload, list) else payload
+    if isinstance(payload, list):
+        return {"catalog_version": None, "generated_at": None, "games": payload}
+    return payload
 
 
 def post_id(url):
@@ -53,11 +57,21 @@ def image_url(tag):
 
 
 def extract_genres(article):
+    """Extract only the Genres/Tags field, stopping before the next metadata line."""
     for paragraph in article.find_all("p"):
-        text = paragraph.get_text(" ", strip=True)
-        if "Genres/Tags:" in text:
-            raw = text.split("Genres/Tags:", 1)[1]
-            return [item.strip() for item in raw.split(",") if item.strip()]
+        html = str(paragraph)
+        marker = html.lower().find("genres/tags:")
+        if marker == -1:
+            continue
+
+        tail = html[marker + len("Genres/Tags:") :]
+        # FitGirl places the next metadata field after a <br>; keep only this field.
+        tail = re.split(r"<br\s*/?>", tail, maxsplit=1, flags=re.IGNORECASE)[0]
+        tail = re.sub(r"^\s*</(?:strong|b)>\s*", "", tail, flags=re.IGNORECASE)
+        text = BeautifulSoup(tail, "lxml").get_text(" ", strip=True)
+        # Defensive fallback if the markup changes and the <br> disappears.
+        text = META_LABEL_RE.split(text, maxsplit=1)[0].strip()
+        return [item.strip() for item in text.split(",") if item.strip()]
     return []
 
 
@@ -68,6 +82,7 @@ def parse_article(article):
     title = link.get_text(" ", strip=True)
     if not title or "Updates Digest" in title or "Upcoming Repacks" in title:
         return None
+
     source = link["href"].replace("http://", "https://")
     size_match = SIZE_RE.search(article.get_text(" ", strip=True))
     time_tag = article.find("time")
@@ -139,8 +154,17 @@ def main():
     args = parse_args()
     current = load_existing()
     old_games = current.get("games", [])
-    requested_pages = args.pages if old_games else max(args.pages, args.bootstrap_pages)
-    print(f"mode: {'incremental' if old_games else 'bootstrap'}")
+    needs_rebuild = current.get("catalog_version") != CATALOG_VERSION
+
+    if not old_games:
+        mode = "bootstrap"
+    elif needs_rebuild:
+        mode = "schema-rebuild"
+    else:
+        mode = "incremental"
+
+    requested_pages = max(args.pages, args.bootstrap_pages) if mode != "incremental" else args.pages
+    print(f"mode: {mode}; catalog schema: {CATALOG_VERSION}")
 
     with httpx.Client(
         headers=HEADERS,
@@ -151,16 +175,21 @@ def main():
     ) as client:
         fresh = scan_pages(client, requested_pages)
 
-    merged = {} if args.replace else {str(game.get("id")): game for game in old_games if game.get("id")}
+    replace = args.replace or needs_rebuild
+    merged = {} if replace else {str(game.get("id")): game for game in old_games if game.get("id")}
     for game in fresh:
         merged[game["id"]] = {**merged.get(game["id"], {}), **game}
     games = sorted(merged.values(), key=lambda game: game.get("post_date") or "", reverse=True)[: max(1, args.limit)]
 
-    if games == old_games:
+    if games == old_games and not needs_rebuild:
         print(f"No catalog changes ({len(games)} games).")
         return
 
-    payload = {"generated_at": datetime.now(timezone.utc).isoformat(), "games": games}
+    payload = {
+        "catalog_version": CATALOG_VERSION,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "games": games,
+    }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Catalog updated: {len(old_games)} -> {len(games)} ({len(fresh)} scanned).")

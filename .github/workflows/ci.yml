@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/validate_catalog.py
+      - run: python tools/build_site_data.py
+      - name: Verify every lightweight entry has a lazy detail payload
+        run: python -c "import json,pathlib; p=json.load(open('site/data/catalog.json',encoding='utf-8')); assert p['count']==len(p['games']); assert all((pathlib.Path('site')/g['detail_path']).exists() for g in p['games']); print('split payloads',p['count'])"
 
   frontend:
     name: Robot · frontend smoke
@@ -35,6 +38,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - run: python tools/build_site_data.py
+      - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/tag-facets.js
       - run: node --check site/assets/details.js
@@ -48,6 +53,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Build deploy-shaped site data
+        run: python tools/build_site_data.py
       - name: Boot site in headless Chrome and require rendered cards
         shell: bash
         run: |
@@ -87,6 +94,19 @@ jobs:
           test "$cards" -ge 20
           ! grep -q 'id="catalogStatus" class="catalog-status">Chargement' /tmp/fitboy-dom.html
 
+          first_id=$(python -c "import json; print(json.load(open('site/data/catalog.json',encoding='utf-8'))['games'][0]['id'])")
+          encoded_id=$(python -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1],safe=''))" "$first_id")
+          timeout 45s "$chrome" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --disable-dev-shm-usage \
+            --blink-settings=imagesEnabled=false \
+            --virtual-time-budget=6000 \
+            --dump-dom "http://127.0.0.1:4173/#game=${encoded_id}" > /tmp/fitboy-game-dom.html
+          grep -q 'class="dialog-layout' /tmp/fitboy-game-dom.html
+          grep -Fq "data-game-id=\"${first_id}\"" /tmp/fitboy-game-dom.html
+
   media-filter:
     name: Robot · details/media parser regression
     runs-on: ubuntu-latest
@@ -108,7 +128,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/check_feed.py tools/test_media_filter.py tools/validate_catalog.py tools/check_site.py
+      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/check_feed.py tools/build_site_data.py tools/test_media_filter.py tools/validate_catalog.py tools/check_site.py
 
   security-boundary:
     name: Robot · forbidden-link guard

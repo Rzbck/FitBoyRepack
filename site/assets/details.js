@@ -1,11 +1,11 @@
-const DATA_URL = './data/games.json';
+import { loadGameDetail } from './catalog-api.js';
+
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');
 
-let gamesBySource = new Map();
-let catalogReady = false;
 let lightboxItems = [];
 let lightboxIndex = 0;
+let detailRequestId = 0;
 
 function normalizedUrl(value = '') {
   try {
@@ -43,10 +43,11 @@ function formatDate(value) {
     : 'Date inconnue';
 }
 
-function gameForOpenDialog() {
-  const source = dialogContent.querySelector('.source-link')?.href;
-  if (!source) return null;
-  return gamesBySource.get(normalizedUrl(source)) || null;
+function currentLayout(gameId = '') {
+  const layout = dialogContent.querySelector('.dialog-layout');
+  if (!layout) return null;
+  if (gameId && layout.dataset.gameId !== String(gameId)) return null;
+  return layout;
 }
 
 function renderCoverDetails(layout, game) {
@@ -168,9 +169,64 @@ function renderDescriptionTabs(info, game) {
   info.prepend(section);
 }
 
+function validMedia(game) {
+  if (!Array.isArray(game.media)) return [];
+  return game.media
+    .filter(item => item && typeof item.url === 'string' && item.url.startsWith('https://') && ['image', 'gif'].includes(item.type))
+    .slice(0, 12);
+}
+
+function renderMediaGallery(info, game) {
+  if (info.querySelector('.dialog-media')) return;
+  const media = validMedia(game);
+  if (!media.length) return;
+
+  const section = document.createElement('section');
+  section.className = 'dialog-media';
+  const heading = document.createElement('div');
+  heading.className = 'dialog-subheading';
+  const title = document.createElement('h3');
+  title.textContent = 'Images & GIFs';
+  const count = document.createElement('span');
+  count.textContent = `${media.length} média${media.length > 1 ? 's' : ''}`;
+  heading.append(title, count);
+
+  const grid = document.createElement('div');
+  grid.className = 'media-grid';
+  for (const item of media) {
+    const link = document.createElement('a');
+    link.className = 'media-item';
+    link.href = item.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+
+    const img = document.createElement('img');
+    img.src = item.url;
+    img.alt = `Capture de ${game.title}`;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.referrerPolicy = 'no-referrer';
+    img.addEventListener('error', () => link.remove(), { once:true });
+    link.append(img);
+
+    if (item.type === 'gif') {
+      const badge = document.createElement('span');
+      badge.className = 'media-kind';
+      badge.textContent = 'GIF';
+      link.append(badge);
+    }
+    grid.append(link);
+  }
+  section.append(heading, grid);
+
+  const sourceLink = info.querySelector('.source-link');
+  if (sourceLink) info.insertBefore(section, sourceLink);
+  else info.append(section);
+}
+
 function renderGameplayPreview(info, game) {
   if (info.querySelector('.gameplay-preview')) return;
-  const gif = Array.isArray(game.media) ? game.media.find(item => item?.type === 'gif' && item.url) : null;
+  const gif = validMedia(game).find(item => item.type === 'gif');
   if (!gif) return;
 
   const section = document.createElement('section');
@@ -280,34 +336,41 @@ function currentMediaItems() {
   return result;
 }
 
-function enhanceDialog() {
-  if (!catalogReady || !dialog.open) return;
-  const game = gameForOpenDialog();
-  const layout = dialogContent.querySelector('.dialog-layout');
-  const info = dialogContent.querySelector('.dialog-info');
-  if (!game || !layout || !info || layout.dataset.enhanced === 'true') return;
+function enhanceDialog(game, gameId) {
+  const layout = currentLayout(gameId);
+  const info = layout?.querySelector('.dialog-info');
+  if (!layout || !info || layout.dataset.enhanced === 'true') return;
   layout.dataset.enhanced = 'true';
+  info.querySelector('[data-detail-status]')?.remove();
   renderCoverDetails(layout, game);
   renderDescriptionTabs(info, game);
+  renderMediaGallery(info, game);
   renderGameplayPreview(info, game);
 }
 
-async function loadCatalog() {
+async function loadDetailsForOpenGame(gameId, detailPath) {
+  const requestId = ++detailRequestId;
+  if (!detailPath) return;
+
   try {
-    const response = await fetch(DATA_URL, { cache:'no-cache' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    const games = Array.isArray(payload) ? payload : payload.games || [];
-    gamesBySource = new Map(games.filter(game => game?.source_url).map(game => [normalizedUrl(game.source_url), game]));
-    catalogReady = true;
-    enhanceDialog();
+    const game = await loadGameDetail(detailPath);
+    if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
+    enhanceDialog(game, gameId);
   } catch (error) {
-    console.error('Rich details catalog unavailable', error);
+    if (requestId !== detailRequestId || !currentLayout(gameId)) return;
+    console.error('Game details unavailable', error);
+    const status = dialogContent.querySelector('[data-detail-status]');
+    if (status) {
+      status.dataset.detailStatus = 'error';
+      status.textContent = 'La fiche détaillée est momentanément indisponible.';
+    }
   }
 }
 
-const observer = new MutationObserver(() => queueMicrotask(enhanceDialog));
-observer.observe(dialogContent, { childList:true, subtree:false });
+document.addEventListener('fitboy:game-open', event => {
+  const { gameId, detailPath } = event.detail || {};
+  loadDetailsForOpenGame(String(gameId || ''), detailPath || '');
+});
 
 dialog.addEventListener('click', event => {
   const preview = event.target.closest('.gameplay-preview-button');
@@ -342,5 +405,7 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowRight') { event.preventDefault(); stepLightbox(1); }
 });
 
-dialog.addEventListener('close', closeLightbox);
-loadCatalog();
+dialog.addEventListener('close', () => {
+  detailRequestId += 1;
+  closeLightbox();
+});

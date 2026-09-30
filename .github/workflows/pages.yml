@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'tools/build_site_data.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -31,7 +32,9 @@ jobs:
         with:
           node-version: '22'
       - run: python tools/validate_catalog.py
+      - run: python tools/build_site_data.py
       - run: python tools/check_site.py
+      - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/tag-facets.js
       - run: node --check site/assets/details.js
@@ -49,6 +52,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build lightweight catalog and lazy game payloads
+        run: python tools/build_site_data.py
+      - name: Remove rich source monolith from public artifact
+        run: rm site/data/games.json
       - name: Stamp deployed revision
         id: version
         shell: bash
@@ -74,7 +84,7 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Verify public site, assets and catalog from a clean runner
+      - name: Verify public site, lightweight catalog and one lazy detail payload
         shell: bash
         env:
           PAGE_URL: ${{ needs.deploy.outputs.page_url }}
@@ -98,16 +108,28 @@ jobs:
 
           fetch index.html /tmp/index.html
           fetch assets/app.js /tmp/app.js
+          fetch assets/catalog-api.js /tmp/catalog-api.js
           fetch assets/compact-header.css /tmp/compact-header.css
-          fetch data/games.json /tmp/games.json
+          fetch data/catalog.json /tmp/catalog.json
           fetch version.json /tmp/version.json
+
+          detail_path=$(python - <<'PY'
+          import json
+          payload=json.load(open('/tmp/catalog.json', encoding='utf-8'))
+          assert payload.get('count') == len(payload.get('games', [])) and payload['games']
+          print(payload['games'][0]['detail_path'])
+          PY
+          )
+          fetch "$detail_path" /tmp/game-detail.json
 
           grep -q 'FitBoyRepack' /tmp/index.html
           grep -q 'scrollSentinel' /tmp/index.html
           grep -q 'IntersectionObserver' /tmp/app.js
+          grep -q 'catalog.json' /tmp/catalog-api.js
           grep -q 'compact-topbar' /tmp/compact-header.css
-          grep -q '"games"' /tmp/games.json
+          grep -q '"detail_path"' /tmp/catalog.json
+          grep -q '"source_url"' /tmp/game-detail.json
           grep -Fq "$EXPECTED_SHA" /tmp/version.json
 
-          echo "Production Pages is live on revision $EXPECTED_SHA"
+          echo "Production Pages is live on split-data revision $EXPECTED_SHA"
           cat /tmp/version.json

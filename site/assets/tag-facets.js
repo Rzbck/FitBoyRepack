@@ -1,4 +1,5 @@
-const DATA_URL = './data/games.json';
+import { loadCatalogPayload } from './catalog-api.js';
+
 const FAVORITES_KEY = 'fitboyrepack:favorites:v1';
 
 const els = {
@@ -50,33 +51,12 @@ function coreGames() {
   });
 }
 
-function compatibleCounts(pool, selected, requireAll) {
+function compatibleCounts(pool, selected) {
   const counts = new Map();
-
-  if (requireAll) {
-    let currentCount = 0;
-    for (const game of pool) {
-      if (!selected.every(tag => game.tagSet.has(tag))) continue;
-      currentCount += 1;
-      for (const tag of game.tagSet) counts.set(tag, (counts.get(tag) || 0) + 1);
-    }
-    return { counts, currentCount };
-  }
-
-  if (!selected.length) {
-    for (const game of pool) {
-      for (const tag of game.tagSet) counts.set(tag, (counts.get(tag) || 0) + 1);
-    }
-    return { counts, currentCount: pool.length };
-  }
-
   let currentCount = 0;
   for (const game of pool) {
-    const alreadyMatches = selected.some(tag => game.tagSet.has(tag));
-    if (alreadyMatches) {
-      currentCount += 1;
-      continue;
-    }
+    if (!selected.every(tag => game.tagSet.has(tag))) continue;
+    currentCount += 1;
     for (const tag of game.tagSet) counts.set(tag, (counts.get(tag) || 0) + 1);
   }
   return { counts, currentCount };
@@ -87,38 +67,22 @@ function updateFacets() {
 
   const selected = selectedTagKeys();
   const selectedSet = new Set(selected);
-  const requireAll = els.tagMode.value === 'all';
   const pool = coreGames();
-  const { counts, currentCount } = compatibleCounts(pool, selected, requireAll);
+  const { counts, currentCount } = compatibleCounts(pool, selected);
   const tagQuery = normalized(els.tagSearch.value);
 
   els.tagList.querySelectorAll('.tag-chip').forEach(button => {
     const key = button.dataset.tagKey;
     const active = selectedSet.has(key);
     const small = button.querySelector('small');
-    let nextCount;
+    const nextCount = active ? currentCount : (counts.get(key) || 0);
 
-    if (active) {
-      nextCount = currentCount;
-      button.disabled = false;
-      button.title = `Retirer le tag ${button.dataset.tagLabel}`;
-      button.hidden = false;
-    } else if (requireAll) {
-      nextCount = counts.get(key) || 0;
-      button.disabled = nextCount === 0;
-      button.title = button.disabled
-        ? `Aucun jeu supplémentaire ne correspond avec ${button.dataset.tagLabel}`
-        : `Ajouter ${button.dataset.tagLabel} · ${nextCount} jeu${nextCount > 1 ? 'x' : ''}`;
-    } else {
-      const extra = counts.get(key) || 0;
-      nextCount = selected.length ? currentCount + extra : extra;
-      button.disabled = nextCount === 0;
-      button.title = button.disabled
-        ? `Aucun jeu ne correspond à ${button.dataset.tagLabel}`
-        : `Ajouter ${button.dataset.tagLabel} · ${nextCount} jeu${nextCount > 1 ? 'x' : ''}`;
-    }
+    button.disabled = !active && nextCount === 0;
+    button.hidden = button.disabled || (!active && tagQuery && !normalized(button.dataset.tagLabel).includes(tagQuery));
+    button.title = active
+      ? `Retirer le tag ${button.dataset.tagLabel}`
+      : `Ajouter ${button.dataset.tagLabel} · ${nextCount} jeu${nextCount > 1 ? 'x' : ''}`;
 
-    if (!active && tagQuery) button.hidden = !normalized(button.dataset.tagLabel).includes(tagQuery);
     const label = nextCount.toLocaleString('fr-FR');
     if (small && small.textContent !== label) small.textContent = label;
     button.setAttribute('aria-disabled', String(button.disabled));
@@ -133,8 +97,6 @@ function scheduleUpdate() {
   });
 }
 
-// Only watch direct children being replaced when the main catalog builds the tag list.
-// Do not observe the whole subtree: updating a counter must never schedule itself again.
 const tagListObserver = new MutationObserver(scheduleUpdate);
 tagListObserver.observe(els.tagList, { childList:true, subtree:false });
 
@@ -143,23 +105,13 @@ els.tagList.addEventListener('click', event => {
 });
 els.search.addEventListener('input', scheduleUpdate);
 els.tagSearch.addEventListener('input', scheduleUpdate);
-els.tagMode.addEventListener('change', scheduleUpdate);
 els.favoritesToggle.addEventListener('click', scheduleUpdate);
-els.clearTags.addEventListener('click', () => {
-  if (els.tagMode.value !== 'all') {
-    els.tagMode.value = 'all';
-    els.tagMode.dispatchEvent(new Event('change', { bubbles:true }));
-  }
-  scheduleUpdate();
-});
+els.clearTags.addEventListener('click', scheduleUpdate);
 
 async function loadGames() {
   try {
-    const response = await fetch(DATA_URL, { cache:'no-cache' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    const source = Array.isArray(payload) ? payload : payload.games || [];
-    games = source.filter(game => game?.id && game?.title).map(game => {
+    const payload = await loadCatalogPayload();
+    games = payload.games.filter(game => game?.id && game?.title).map(game => {
       const raw = rawTags(game);
       const tags = raw.map(normalized);
       return {

@@ -1,0 +1,71 @@
+name: Full Catalog Backfill
+
+on:
+  schedule:
+    - cron: '31 3 * * 0'
+  workflow_dispatch:
+    inputs:
+      workers:
+        description: 'Parallel listing-page workers'
+        required: false
+        default: '12'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/update_catalog.py'
+      - '.github/workflows/backfill-catalog.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: catalog-writer
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Scan every discoverable listing page
+        env:
+          WORKERS: ${{ github.event.inputs.workers || '12' }}
+        run: python tools/update_catalog.py --full-scan --workers "$WORKERS"
+      - name: Validate generated catalog
+        run: python tools/validate_catalog.py
+      - name: Commit full catalog safely
+        id: commit
+        shell: bash
+        run: |
+          echo 'changed=false' >> "$GITHUB_OUTPUT"
+          if git diff --quiet -- site/data/games.json; then
+            echo 'Full scan found no catalog change'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/games.json
+          git commit -m 'data: full catalog backfill'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Kick off accelerated enrichment and deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh workflow run enrich-media.yml --ref main -f batch=480 -f workers=12 -f refresh=false
+          gh workflow run pages.yml --ref main

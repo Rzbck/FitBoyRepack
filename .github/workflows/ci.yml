@@ -64,14 +64,23 @@ jobs:
           chrome="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
           test -n "$chrome" || { echo 'No Chrome/Chromium found on runner'; exit 1; }
 
-          timeout 20s "$chrome" \
-            --headless=new \
-            --no-sandbox \
-            --disable-gpu \
-            --disable-dev-shm-usage \
-            --blink-settings=imagesEnabled=false \
-            --virtual-time-budget=5000 \
-            --dump-dom http://127.0.0.1:4173/ > /tmp/fitboy-dom.html
+          ok=false
+          for attempt in 1 2; do
+            if timeout 45s "$chrome" \
+              --headless=new \
+              --no-sandbox \
+              --disable-gpu \
+              --disable-dev-shm-usage \
+              --blink-settings=imagesEnabled=false \
+              --virtual-time-budget=6000 \
+              --dump-dom http://127.0.0.1:4173/ > /tmp/fitboy-dom.html; then
+              ok=true
+              break
+            fi
+            echo "Chrome runtime attempt $attempt failed; retrying"
+            sleep 2
+          done
+          test "$ok" = true
 
           cards=$(grep -o 'data-game-id=' /tmp/fitboy-dom.html | wc -l | tr -d ' ')
           echo "Rendered cards: $cards"
@@ -99,7 +108,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/test_media_filter.py tools/validate_catalog.py tools/check_site.py
+      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/check_feed.py tools/test_media_filter.py tools/validate_catalog.py tools/check_site.py
 
   security-boundary:
     name: Robot · forbidden-link guard

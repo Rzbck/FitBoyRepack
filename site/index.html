@@ -41,8 +41,12 @@
         <div class="tag-popover">
           <div class="tag-controls">
             <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
-            <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="any">Au moins un</option><option value="all">Tous les tags</option></select></label>
+            <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="all" selected>Tous les tags (ET)</option><option value="any">Au moins un (OU)</option></select></label>
             <button id="clearTags" class="ghost-btn" type="button">Effacer</button>
+          </div>
+          <div class="tag-result-summary" aria-live="polite">
+            <span>Résultat du filtre</span>
+            <strong id="tagResultCount">0 jeux</strong>
           </div>
           <div id="tagList" class="tag-list" aria-label="Liste des tags"></div>
         </div>

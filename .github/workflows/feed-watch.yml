@@ -1,0 +1,75 @@
+name: Fast New Post Watch
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [fitgirl-new-post]
+  push:
+    branches: [main]
+    paths:
+      - 'tools/check_feed.py'
+      - '.github/workflows/feed-watch.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: catalog-writer
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Check RSS signal
+        id: feed
+        run: python tools/check_feed.py
+      - name: Scan newest listing pages
+        env:
+          NEW_COUNT: ${{ steps.feed.outputs.new_count || '0' }}
+        shell: bash
+        run: |
+          pages=1
+          if [ "$NEW_COUNT" -gt 0 ]; then pages=3; fi
+          python tools/update_catalog.py --pages "$pages" --workers 6
+      - name: Validate generated catalog
+        run: python tools/validate_catalog.py
+      - name: Commit fast catalog update
+        id: commit
+        shell: bash
+        run: |
+          echo 'changed=false' >> "$GITHUB_OUTPUT"
+          if git diff --quiet -- site/data/games.json; then
+            echo 'No new catalog entry'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/games.json
+          git commit -m 'data: add newly published games'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Trigger immediate detail pass and deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh workflow run enrich-media.yml --ref main -f batch=120 -f workers=12 -f refresh=false
+          gh workflow run pages.yml --ref main

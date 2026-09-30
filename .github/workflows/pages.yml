@@ -37,6 +37,7 @@ jobs:
       - run: python tools/validate_catalog.py
       - run: python tools/check_site.py
       - run: node --check site/assets/app.js
+      - run: node --check site/assets/tag-facets.js
 
   deploy:
     needs: verify

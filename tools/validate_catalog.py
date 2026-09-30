@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 CATALOG_VERSION = 2
+CURRENT_MEDIA_VERSION = 2
 META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
 P = Path("site/data/games.json")
 data = json.loads(P.read_text(encoding="utf-8"))
@@ -50,7 +51,14 @@ for i, game in enumerate(data["games"]):
 
     media = game.get("media", [])
     assert isinstance(media, list), f"media must be list: {game['id']}"
-    assert len(media) <= 12, f"too many media entries in {game['id']}"
+    media_version = game.get("media_version")
+    if media_version is not None:
+        assert media_version == CURRENT_MEDIA_VERSION, f"unexpected media_version in {game['id']}: {media_version}"
+        assert len(media) <= 8, f"too many v{CURRENT_MEDIA_VERSION} media entries in {game['id']}"
+    else:
+        # Legacy v1 entries are accepted temporarily while the v2 robot replaces them in batches.
+        assert len(media) <= 12, f"too many legacy media entries in {game['id']}"
+
     media_seen = set()
     for item in media:
         assert isinstance(item, dict), f"invalid media object in {game['id']}"

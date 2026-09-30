@@ -14,19 +14,29 @@ from bs4 import BeautifulSoup
 CATALOG = Path("site/data/games.json")
 MAX_WORKERS = 8
 MAX_RETRIES = 3
-MAX_MEDIA_PER_GAME = 12
+MAX_MEDIA_PER_GAME = 8
+MEDIA_VERSION = 2
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackMedia/1.0)",
+    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackMedia/2.0)",
     "Accept-Language": "en-US,en;q=0.8",
 }
-IMAGE_EXT_RE = re.compile(r"\.(?:jpe?g|png|webp|gif)(?:$|[?#])", re.IGNORECASE)
-SKIP_HINTS = ("logo", "avatar", "emoji", "smiley", "counter", "rating", "button", "icon")
+
+# FitGirl's actual screenshot thumbnails use this naming convention. The old app
+# deliberately keyed off it; generic entry-content images are too noisy and can
+# include unrelated widgets/text captures.
+SCREENSHOT_THUMB_RE = re.compile(r"\.jpg\.240p\.jpg(?:$|[?#])", re.IGNORECASE)
+GIF_RE = re.compile(r"\.gif(?:$|[?#])", re.IGNORECASE)
+IMAGE_EXT_RE = re.compile(r"\.(?:jpe?g|png|webp)(?:$|[?#])", re.IGNORECASE)
+SKIP_HINTS = (
+    "logo", "avatar", "emoji", "smiley", "counter", "rating", "button", "icon",
+    "badge", "banner", "donat", "patreon", "discord", "telegram", "rss", "feed",
+)
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Incrementally enrich catalog entries with public screenshots/GIFs.")
+    parser = argparse.ArgumentParser(description="Incrementally enrich catalog entries with filtered public screenshots/GIFs.")
     parser.add_argument("--batch", type=int, default=180, help="Maximum games to enrich in one run.")
-    parser.add_argument("--refresh", action="store_true", help="Recheck entries that already have media_checked_at.")
+    parser.add_argument("--refresh", action="store_true", help="Recheck entries even when already on the current media parser version.")
     return parser.parse_args()
 
 
@@ -55,16 +65,13 @@ def img_src(img, base_url):
     return ""
 
 
-def classify_media(url):
-    path = urlparse(url).path.lower()
-    return "gif" if path.endswith(".gif") else "image"
+def has_skip_hint(*values):
+    lower = " ".join(value.lower() for value in values if value)
+    return any(hint in lower for hint in SKIP_HINTS)
 
 
-def usable_image(url):
-    lower = url.lower()
-    if any(hint in lower for hint in SKIP_HINTS):
-        return False
-    return bool(IMAGE_EXT_RE.search(url))
+def normalize_identity(url):
+    return url.split("?", 1)[0].split("#", 1)[0]
 
 
 def extract_media(html, source_url, cover_url):
@@ -73,30 +80,57 @@ def extract_media(html, source_url, cover_url):
     if not content:
         return []
 
-    cover = (cover_url or "").split("?", 1)[0]
+    cover = normalize_identity(cover_url or "")
     media = []
     seen = set()
+    gif_added = False
+
     for img in content.find_all("img"):
         source = img_src(img, source_url)
+        if not source:
+            continue
+
+        alt = img.get("alt", "")
+        classes = " ".join(img.get("class", []))
         parent = img.find_parent("a", href=True)
         linked = clean_url(source_url, parent.get("href")) if parent else ""
 
-        candidates = []
-        if linked and usable_image(linked):
-            candidates.append(linked)
-        if source and usable_image(source):
-            candidates.append(source)
+        if has_skip_hint(source, linked, alt, classes):
+            continue
 
-        for candidate in candidates:
-            identity = candidate.split("?", 1)[0]
-            if not identity or identity == cover or identity in seen:
+        source_id = normalize_identity(source)
+        if not source_id or source_id == cover:
+            continue
+
+        # GIF: keep at most one animation, matching the behavior of the old app.
+        if GIF_RE.search(source):
+            candidate = linked if linked and GIF_RE.search(linked) else source
+            identity = normalize_identity(candidate)
+            if gif_added or identity in seen:
                 continue
             seen.add(identity)
-            media.append({"url": candidate, "type": classify_media(candidate)})
-            break
+            media.append({"url": candidate, "type": "gif"})
+            gif_added = True
+            if len(media) >= MAX_MEDIA_PER_GAME:
+                break
+            continue
 
+        # Screenshots: only accept the site's real 240p screenshot thumbnails.
+        # If the thumbnail links to a full-resolution image, expose that image;
+        # otherwise keep the verified thumbnail itself.
+        if not SCREENSHOT_THUMB_RE.search(source):
+            continue
+
+        candidate = linked if linked and IMAGE_EXT_RE.search(linked) else source
+        identity = normalize_identity(candidate)
+        if not identity or identity == cover or identity in seen:
+            continue
+
+        seen.add(identity)
+        media.append({"url": candidate, "type": "image"})
         if len(media) >= MAX_MEDIA_PER_GAME:
             break
+
     return media
 
 
@@ -124,14 +158,18 @@ def main():
     payload = load_catalog()
     games = payload["games"]
 
-    candidates = [game for game in games if game.get("source_url") and (args.refresh or not game.get("media_checked_at"))]
+    # Parser versioning automatically revisits old/bad media after filter changes.
+    candidates = [
+        game for game in games
+        if game.get("source_url") and (args.refresh or game.get("media_version") != MEDIA_VERSION)
+    ]
     candidates.sort(key=lambda game: game.get("post_date") or "", reverse=True)
     candidates = candidates[: max(1, args.batch)]
     if not candidates:
         print("No media enrichment work needed.")
         return
 
-    print(f"media candidates: {len(candidates)}; workers: {MAX_WORKERS}")
+    print(f"media candidates: {len(candidates)}; workers: {MAX_WORKERS}; parser=v{MEDIA_VERSION}")
     updates = {}
     failures = 0
     with httpx.Client(
@@ -163,8 +201,13 @@ def main():
         if game.get("id") not in updates:
             continue
         new_media = updates[game["id"]]
-        if game.get("media") != new_media or not game.get("media_checked_at"):
+        if (
+            game.get("media") != new_media
+            or game.get("media_version") != MEDIA_VERSION
+            or not game.get("media_checked_at")
+        ):
             game["media"] = new_media
+            game["media_version"] = MEDIA_VERSION
             game["media_checked_at"] = checked_at
             changed += 1
 

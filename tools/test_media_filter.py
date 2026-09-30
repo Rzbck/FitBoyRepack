@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from enrich_media import MEDIA_VERSION, extract_media
+from enrich_media import DETAILS_VERSION, MEDIA_VERSION, extract_details, extract_media
 
 HTML = """
 <html><body>
@@ -11,17 +11,33 @@ HTML = """
     <img src="https://cdn.example/animation.gif">
     <img src="https://cdn.example/site-logo.jpg" class="logo">
     <img src="https://cdn.example/random-entry-image.jpg">
+
+    <div class="su-spoiler-title">Game Description</div>
+    <div class="su-spoiler-content">
+      Explore a large fantasy world with your party.
+      <h3>Game Features</h3>
+      <ul><li>Turn-based tactical combat</li><li>Online co-op</li></ul>
+    </div>
+    <h3>Repack Features</h3>
+    <ul><li>Based on the latest build</li><li>Nothing ripped</li></ul>
   </div>
 </body></html>
 """
 
 media = extract_media(HTML, "https://fitgirl-repacks.site/example/", "https://cdn.example/game-cover.jpg")
-assert MEDIA_VERSION == 2
+assert MEDIA_VERSION == 3
 assert media == [
+    {"url": "https://cdn.example/animation.gif", "type": "gif"},
     {"url": "https://cdn.example/screen-01.jpg", "type": "image"},
     {"url": "https://cdn.example/screen-02.png", "type": "image"},
-    {"url": "https://cdn.example/animation.gif", "type": "gif"},
 ], media
 assert all("registered-users" not in item["url"] for item in media)
 assert all("random-entry-image" not in item["url"] for item in media)
-print("media filter OK")
+assert sum(item["type"] == "gif" for item in media) == 1
+
+details = extract_details(HTML)
+assert DETAILS_VERSION == 1
+assert "Explore a large fantasy world" in details["description"]
+assert details["game_features"] == ["Turn-based tactical combat", "Online co-op"], details
+assert details["repack_features"] == ["Based on the latest build", "Nothing ripped"], details
+print("media/details parser OK")

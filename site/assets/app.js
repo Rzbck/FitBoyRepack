@@ -16,7 +16,8 @@ const els = {
 
 const state = {
   games: [], filtered: [], visible: PAGE_SIZE, favoritesOnly: false,
-  favorites: readFavorites(), selectedTags: new Set(), tagCounts: new Map()
+  favorites: readFavorites(), selectedTags: new Set(), tagCounts: new Map(),
+  dialogGameId: null, dialogScrollY: 0, dialogOpener: null
 };
 
 function readFavorites() {
@@ -232,6 +233,13 @@ function appendMediaGallery(info, game) {
 }
 
 function openDialog(game) {
+  const firstOpen = !els.dialog.open;
+  if (firstOpen) {
+    state.dialogScrollY = window.scrollY;
+    state.dialogOpener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+  }
+  state.dialogGameId = game.id;
+
   const layout = document.createElement('div'); layout.className = 'dialog-layout';
   const cover = document.createElement('div'); cover.className = 'dialog-cover';
   if (game.image_url) {
@@ -254,7 +262,39 @@ function openDialog(game) {
   appendMediaGallery(info, game);
   const note = document.createElement('p'); note.className = 'dialog-note'; note.textContent = 'FitBoyRepack indexe les métadonnées et médias publics utiles au catalogue puis renvoie vers la page source.'; info.append(note);
 
-  layout.append(cover, info); els.dialogContent.replaceChildren(layout); els.dialog.showModal();
+  layout.append(cover, info);
+  els.dialogContent.replaceChildren(layout);
+  if (firstOpen) {
+    els.dialog.showModal();
+    requestAnimationFrame(() => window.scrollTo({ top: state.dialogScrollY, left: 0, behavior: 'auto' }));
+  }
+}
+
+function isMediaLightboxOpen() {
+  const box = els.dialog.querySelector('.media-lightbox');
+  return Boolean(box && !box.hidden);
+}
+
+function navigateDialog(delta) {
+  if (!els.dialog.open || isMediaLightboxOpen() || state.filtered.length < 2) return;
+  const current = state.filtered.findIndex(game => game.id === state.dialogGameId);
+  if (current < 0) return;
+  const next = (current + delta + state.filtered.length) % state.filtered.length;
+  openDialog(state.filtered[next]);
+}
+
+function restoreCatalogPosition() {
+  const top = state.dialogScrollY;
+  const opener = state.dialogOpener;
+  state.dialogGameId = null;
+  state.dialogOpener = null;
+  requestAnimationFrame(() => {
+    if (opener?.isConnected) {
+      try { opener.focus({ preventScroll: true }); } catch { /* noop */ }
+    }
+    window.scrollTo({ top, left: 0, behavior: 'auto' });
+    requestAnimationFrame(() => window.scrollTo({ top, left: 0, behavior: 'auto' }));
+  });
 }
 
 async function loadCatalog() {
@@ -282,8 +322,22 @@ els.sort.addEventListener('change', applyFilters);
 els.loadMore.addEventListener('click', () => { state.visible += PAGE_SIZE; renderCatalog(); });
 els.favoritesToggle.addEventListener('click', () => { state.favoritesOnly = !state.favoritesOnly; applyFilters(); });
 els.dialog.addEventListener('click', event => { if (event.target === els.dialog || event.target.closest('[data-close-dialog]')) els.dialog.close(); });
+els.dialog.addEventListener('close', restoreCatalogPosition);
+
+document.addEventListener('pointerdown', event => {
+  if (els.tagFilter.open && !els.tagFilter.contains(event.target)) els.tagFilter.open = false;
+});
+
 document.addEventListener('keydown', event => {
-  if (event.key === '/' && document.activeElement?.tagName !== 'INPUT') { event.preventDefault(); els.search.focus(); }
+  const activeTag = document.activeElement?.tagName;
+  const typing = activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT';
+
+  if (els.dialog.open && !typing && !isMediaLightboxOpen()) {
+    if (event.key === 'ArrowLeft') { event.preventDefault(); navigateDialog(-1); return; }
+    if (event.key === 'ArrowRight') { event.preventDefault(); navigateDialog(1); return; }
+  }
+
+  if (event.key === '/' && !typing) { event.preventDefault(); els.search.focus(); }
   if (event.key === 'Escape' && els.tagFilter.open) els.tagFilter.open = false;
 });
 loadCatalog();

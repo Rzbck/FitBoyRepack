@@ -9,7 +9,7 @@ const els = {
   count: $('#visibleCount'), status: $('#catalogStatus'), loadMore: $('#loadMore'), empty: $('#emptyState'),
   favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'), dialog: $('#gameDialog'),
   dialogContent: $('#dialogContent'), tagFilter: $('#tagFilter'), tagList: $('#tagList'), tagSearch: $('#tagSearch'),
-  tagMode: $('#tagMode'), clearTags: $('#clearTags'), selectedTagCount: $('#selectedTagCount'),
+  tagMode: $('#tagMode'), clearTags: $('#clearTags'), selectedTagCount: $('#selectedTagCount'), tagResultCount: $('#tagResultCount'),
   recommendationSection: $('#recommendationSection'), recommendationGrid: $('#recommendationGrid'),
   recommendationMeta: $('#recommendationMeta')
 };
@@ -88,21 +88,32 @@ function filterVisibleTags() {
   els.tagList.querySelectorAll('.tag-chip').forEach(button => {
     button.hidden = Boolean(query && !normalized(button.dataset.tagLabel).includes(query));
   });
+  applyFilters();
 }
 
 function applyFilters() {
   const query = normalized(els.search.value);
+  const tagQuery = normalized(els.tagSearch.value);
   const selected = [...state.selectedTags];
   const requireAll = els.tagMode.value === 'all';
   const sort = els.sort.value;
 
   state.filtered = state.games.filter(game => {
     if (state.favoritesOnly && !state.favorites.has(game.id)) return false;
-    const tags = getTags(game); const tagKeys = new Set(tags.map(normalized));
+
+    const tags = getTags(game);
+    const normalizedTags = tags.map(normalized);
+    const tagKeys = new Set(normalizedTags);
+
     if (selected.length) {
       const match = requireAll ? selected.every(tag => tagKeys.has(tag)) : selected.some(tag => tagKeys.has(tag));
       if (!match) return false;
     }
+
+    // The tag finder is a real catalog filter too: while typing, only games whose
+    // tags match the text remain visible. It never matches a title by accident.
+    if (tagQuery && !normalizedTags.some(tag => tag.includes(tagQuery))) return false;
+
     if (!query) return true;
     return normalized([game.title, game.repack_size, ...tags].join(' ')).includes(query);
   });
@@ -151,16 +162,20 @@ function renderCatalog() {
   const shown = state.filtered.slice(0, state.visible); const fragment = document.createDocumentFragment();
   for (const game of shown) fragment.append(renderCard(game));
   els.grid.replaceChildren(fragment);
+
+  const resultLabel = `${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length > 1 ? 'x' : ''}`;
   els.count.textContent = state.filtered.length.toLocaleString('fr-FR');
+  if (els.tagResultCount) els.tagResultCount.textContent = resultLabel;
   els.empty.hidden = state.filtered.length !== 0;
   els.loadMore.hidden = state.visible >= state.filtered.length;
 
   const active = [];
   if (els.search.value.trim()) active.push(`recherche « ${els.search.value.trim()} »`);
+  if (els.tagSearch.value.trim()) active.push(`tag recherché « ${els.tagSearch.value.trim()} »`);
   if (state.selectedTags.size) active.push(`${state.selectedTags.size} tag${state.selectedTags.size > 1 ? 's' : ''} (${els.tagMode.value === 'all' ? 'tous' : 'au moins un'})`);
   if (state.favoritesOnly) active.push('favoris');
   els.activeState.hidden = active.length === 0;
-  els.activeState.textContent = active.length ? `Filtres actifs : ${active.join(' • ')}` : '';
+  els.activeState.textContent = active.length ? `Filtres actifs : ${active.join(' • ')} • ${resultLabel}` : '';
   els.favoritesToggle.classList.toggle('active', state.favoritesOnly);
   els.favoritesToggle.setAttribute('aria-pressed', String(state.favoritesOnly));
   els.favoritesToggle.textContent = state.favoritesOnly ? '♥ Favoris' : '♡ Favoris';
@@ -232,11 +247,37 @@ function appendMediaGallery(info, game) {
   section.append(grid); info.append(section);
 }
 
+function lockCatalogScroll() {
+  state.dialogScrollY = window.scrollY;
+  const scrollbarGap = Math.max(0, window.innerWidth - document.documentElement.clientWidth);
+  document.documentElement.classList.add('dialog-scroll-locked');
+  document.body.classList.add('dialog-scroll-locked');
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${state.dialogScrollY}px`;
+  document.body.style.left = '0';
+  document.body.style.right = '0';
+  document.body.style.width = '100%';
+  if (scrollbarGap) document.body.style.paddingRight = `${scrollbarGap}px`;
+}
+
+function unlockCatalogScroll() {
+  const top = state.dialogScrollY;
+  document.documentElement.classList.remove('dialog-scroll-locked');
+  document.body.classList.remove('dialog-scroll-locked');
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.left = '';
+  document.body.style.right = '';
+  document.body.style.width = '';
+  document.body.style.paddingRight = '';
+  window.scrollTo({ top, left: 0, behavior: 'auto' });
+}
+
 function openDialog(game) {
   const firstOpen = !els.dialog.open;
   if (firstOpen) {
-    state.dialogScrollY = window.scrollY;
     state.dialogOpener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    lockCatalogScroll();
   }
   state.dialogGameId = game.id;
 
@@ -264,10 +305,7 @@ function openDialog(game) {
 
   layout.append(cover, info);
   els.dialogContent.replaceChildren(layout);
-  if (firstOpen) {
-    els.dialog.showModal();
-    requestAnimationFrame(() => window.scrollTo({ top: state.dialogScrollY, left: 0, behavior: 'auto' }));
-  }
+  if (firstOpen) els.dialog.showModal();
 }
 
 function isMediaLightboxOpen() {
@@ -284,16 +322,14 @@ function navigateDialog(delta) {
 }
 
 function restoreCatalogPosition() {
-  const top = state.dialogScrollY;
   const opener = state.dialogOpener;
   state.dialogGameId = null;
   state.dialogOpener = null;
+  unlockCatalogScroll();
   requestAnimationFrame(() => {
     if (opener?.isConnected) {
       try { opener.focus({ preventScroll: true }); } catch { /* noop */ }
     }
-    window.scrollTo({ top, left: 0, behavior: 'auto' });
-    requestAnimationFrame(() => window.scrollTo({ top, left: 0, behavior: 'auto' }));
   });
 }
 
@@ -317,7 +353,12 @@ let searchTimer;
 els.search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(applyFilters, 100); });
 els.tagSearch.addEventListener('input', filterVisibleTags);
 els.tagMode.addEventListener('change', applyFilters);
-els.clearTags.addEventListener('click', () => { state.selectedTags.clear(); updateTagUI(); applyFilters(); });
+els.clearTags.addEventListener('click', () => {
+  state.selectedTags.clear();
+  els.tagSearch.value = '';
+  filterVisibleTags();
+  updateTagUI();
+});
 els.sort.addEventListener('change', applyFilters);
 els.loadMore.addEventListener('click', () => { state.visible += PAGE_SIZE; renderCatalog(); });
 els.favoritesToggle.addEventListener('click', () => { state.favoritesOnly = !state.favoritesOnly; applyFilters(); });

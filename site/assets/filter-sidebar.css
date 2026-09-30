@@ -130,7 +130,7 @@
   text-align:left;
 }
 
-.sidebar-tag-list .tag-chip:disabled{
+.sidebar-tag-list .tag-chip:disabled:not(.active){
   display:none;
 }
 

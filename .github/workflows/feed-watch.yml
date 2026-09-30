@@ -6,11 +6,6 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [fitgirl-new-post]
-  push:
-    branches: [main]
-    paths:
-      - 'tools/check_feed.py'
-      - '.github/workflows/feed-watch.yml'
 
 permissions:
   contents: write

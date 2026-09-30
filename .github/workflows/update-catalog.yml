@@ -17,7 +17,6 @@ on:
     branches: [main]
     paths:
       - 'tools/update_catalog.py'
-      - 'site/data/games.json'
       - '.github/workflows/update-catalog.yml'
 
 permissions:
@@ -46,16 +45,23 @@ jobs:
           PAGES: ${{ github.event.inputs.pages || '6' }}
           LIMIT: ${{ github.event.inputs.limit || '2500' }}
         run: python tools/update_catalog.py --pages "$PAGES" --limit "$LIMIT"
-      - run: python tools/validate_catalog.py
-      - name: Commit only when changed
+      - name: Validate generated catalog
+        run: python tools/validate_catalog.py
+      - name: Commit catalog safely
         shell: bash
         run: |
           if git diff --quiet -- site/data/games.json; then
             echo 'No catalog change'
             exit 0
           fi
+
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add site/data/games.json
           git commit -m 'data: refresh catalog'
-          git push
+
+          # Main can move while this scraper is running (for example a UI or CI fix).
+          # Rebase our generated-data commit onto the newest main before pushing.
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

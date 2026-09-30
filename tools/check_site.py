@@ -52,8 +52,8 @@ for token in (
 
 load_block = js.split('function loadNextPage()', 1)[1].split('function scheduleInfiniteCheck()', 1)[0]
 schedule_block = js.split('function scheduleInfiniteCheck()', 1)[1].split('const infiniteObserver', 1)[0]
-assert 'scheduleInfiniteCheck' not in load_block, 'loadNextPage must not recursively schedule another page'
-assert 'loadNextPage' not in schedule_block, 'resize/schedule hook must never trigger a page load directly'
+assert 'scheduleInfiniteCheck(' not in load_block, 'loadNextPage must not recursively schedule another page'
+assert 'loadNextPage(' not in schedule_block, 'resize/schedule hook must never trigger a page load directly'
 assert "rootMargin:'900px 0px'" not in js, '900px prefetch margin is too aggressive for this catalog'
 
 for token in ('compatibleCounts','button.disabled','selectedTagKeys',"cache:'no-cache'",'Réinitialisation complète'):

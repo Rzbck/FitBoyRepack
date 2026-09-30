@@ -15,20 +15,26 @@ BASE_URL = "https://fitgirl-repacks.site"
 OUTPUT = Path("site/data/games.json")
 CATALOG_VERSION = 2
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackCatalog/2.0)",
+    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackCatalog/2.1)",
     "Accept-Language": "en-US,en;q=0.8",
 }
 SIZE_RE = re.compile(r"Repack Size:\s*(?:from\s*)?([\d.,]+\s*(?:KB|MB|GB|TB))", re.IGNORECASE)
 META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
-MAX_WORKERS = 6
+DEFAULT_WORKERS = 10
 MAX_RETRIES = 3
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Refresh the public metadata catalog.")
-    parser.add_argument("--pages", type=int, default=6, help="Newest listing pages to scan after bootstrap.")
-    parser.add_argument("--bootstrap-pages", type=int, default=300, help="Pages scanned for an empty/outdated catalog.")
-    parser.add_argument("--limit", type=int, default=2500)
+    parser.add_argument("--pages", type=int, default=8, help="Newest listing pages to scan in incremental mode.")
+    parser.add_argument("--full-scan", action="store_true", help="Scan every currently discoverable listing page.")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Parallel listing-page workers (max 24).")
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="Optional emergency cap. 0 means unlimited and keeps the complete historical catalog.",
+    )
     parser.add_argument("--replace", action="store_true")
     return parser.parse_args()
 
@@ -132,20 +138,35 @@ def fetch_page(client, page):
     return page, games
 
 
-def scan_pages(client, pages):
+def scan_pages(client, pages, workers, full_scan=False):
     total_pages = discover_total_pages(client)
-    requested = min(max(1, pages), total_pages)
-    print(f"source pages: {total_pages}; scanning: {requested}; workers: {MAX_WORKERS}")
+    requested = total_pages if full_scan else min(max(1, pages), total_pages)
+    page_numbers = range(1, requested + 1)
+    print(
+        f"source pages: {total_pages}; scanning: {requested}; "
+        f"full_scan={str(full_scan).lower()}; workers: {workers}"
+    )
 
     found = {}
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = [executor.submit(fetch_page, client, page) for page in range(1, requested + 1)]
+    failures = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(fetch_page, client, page): page for page in page_numbers}
         for future in as_completed(futures):
-            page, games = future.result()
-            print(f"page {page}: {len(games)} games")
-            for game in games:
-                found[game["id"]] = game
-    return list(found.values())
+            page = futures[future]
+            try:
+                _, games = future.result()
+                print(f"page {page}: {len(games)} games")
+                for game in games:
+                    found[game["id"]] = game
+            except Exception as exc:
+                failures.append(page)
+                print(f"page {page}: ERROR {type(exc).__name__}: {exc}")
+
+    if requested and len(failures) == requested:
+        raise RuntimeError("all requested listing pages failed")
+    if failures:
+        print(f"listing page failures: {len(failures)}/{requested}: {sorted(failures)}")
+    return list(found.values()), total_pages, failures
 
 
 def main():
@@ -158,39 +179,60 @@ def main():
         mode = "bootstrap"
     elif needs_rebuild:
         mode = "schema-rebuild"
+    elif args.full_scan:
+        mode = "full-scan"
     else:
         mode = "incremental"
 
-    requested_pages = max(args.pages, args.bootstrap_pages) if mode != "incremental" else args.pages
-    print(f"mode: {mode}; catalog schema: {CATALOG_VERSION}")
+    full_scan = args.full_scan or mode in {"bootstrap", "schema-rebuild"}
+    workers = max(1, min(args.workers, 24))
+    print(f"mode: {mode}; catalog schema: {CATALOG_VERSION}; existing games: {len(old_games)}")
 
     with httpx.Client(
         headers=HEADERS,
         timeout=httpx.Timeout(25.0, connect=15.0),
-        limits=httpx.Limits(max_connections=MAX_WORKERS + 2, max_keepalive_connections=MAX_WORKERS),
+        limits=httpx.Limits(max_connections=workers + 2, max_keepalive_connections=workers),
         follow_redirects=True,
         http2=True,
     ) as client:
-        fresh = scan_pages(client, requested_pages)
+        fresh, total_pages, failures = scan_pages(client, args.pages, workers, full_scan=full_scan)
 
-    replace = args.replace or needs_rebuild
-    merged = {} if replace else {str(game.get("id")): game for game in old_games if game.get("id")}
+    merged = {} if args.replace else {str(game.get("id")): game for game in old_games if game.get("id")}
     for game in fresh:
         merged[game["id"]] = {**merged.get(game["id"], {}), **game}
-    games = sorted(merged.values(), key=lambda game: game.get("post_date") or "", reverse=True)[: max(1, args.limit)]
 
-    if games == old_games and not needs_rebuild:
+    games = sorted(merged.values(), key=lambda game: game.get("post_date") or "", reverse=True)
+    if args.limit > 0:
+        games = games[: args.limit]
+        print(f"WARNING: emergency catalog cap enabled: {args.limit}")
+
+    now = datetime.now(timezone.utc).isoformat()
+    last_full_scan_at = current.get("last_full_scan_at")
+    if full_scan and not failures:
+        last_full_scan_at = now
+
+    games_changed = games != old_games or needs_rebuild
+    metadata_changed = (
+        current.get("source_pages") != total_pages
+        or current.get("last_full_scan_at") != last_full_scan_at
+    )
+    if not games_changed and not metadata_changed:
         print(f"No catalog changes ({len(games)} games).")
         return
 
     payload = {
         "catalog_version": CATALOG_VERSION,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": now,
+        "source_pages": total_pages,
+        "last_full_scan_at": last_full_scan_at,
         "games": games,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Catalog updated: {len(old_games)} -> {len(games)} ({len(fresh)} scanned).")
+    print(
+        f"Catalog updated: {len(old_games)} -> {len(games)} games; "
+        f"{len(fresh)} scanned; source pages={total_pages}; failures={len(failures)}."
+    )
 
 
 if __name__ == "__main__":

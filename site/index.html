@@ -50,14 +50,14 @@
           <div class="tag-popover sidebar-tag-panel">
             <div class="tag-controls sidebar-tag-controls">
               <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
-              <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="all" selected>Tous les tags (ET)</option><option value="any">Au moins un (OU)</option></select></label>
+              <select id="tagMode" hidden aria-hidden="true" tabindex="-1"><option value="all" selected>Tous les tags</option></select>
               <button id="clearTags" class="ghost-btn reset-tags" type="button" title="Retirer tous les tags et vider la recherche">Réinitialiser</button>
             </div>
             <div class="tag-result-summary" aria-live="polite">
               <span>Résultat</span>
               <strong id="tagResultCount">0 jeux</strong>
             </div>
-            <p class="sidebar-filter-help">Les tags incompatibles sont automatiquement désactivés.</p>
+            <p class="sidebar-filter-help">Chaque tag ajouté affine le résultat. Les tags sans résultat sont masqués.</p>
             <div id="tagList" class="tag-list sidebar-tag-list" aria-label="Liste des tags"></div>
           </div>
         </section>

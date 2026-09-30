@@ -8,6 +8,7 @@ css = (ROOT/'assets/style.css').read_text(encoding='utf-8')
 modal_css = (ROOT/'assets/modal-fix.css').read_text(encoding='utf-8')
 ux_css = (ROOT/'assets/ux-fixes.css').read_text(encoding='utf-8')
 js = (ROOT/'assets/app.js').read_text(encoding='utf-8')
+facets_js = (ROOT/'assets/tag-facets.js').read_text(encoding='utf-8')
 details_js = (ROOT/'assets/details.js').read_text(encoding='utf-8')
 sanitize_js = (ROOT/'assets/media-sanitize.js').read_text(encoding='utf-8')
 
@@ -29,6 +30,7 @@ required={
 missing=required-p.ids
 assert not missing, f'missing required DOM ids: {sorted(missing)}'
 assert './assets/app.js' in p.scripts
+assert './assets/tag-facets.js' in p.scripts
 assert './assets/details.js' in p.scripts
 assert './assets/media-sanitize.js' in p.scripts
 assert './assets/style.css' in p.links
@@ -41,13 +43,15 @@ for token in (
     'navigateDialog','dialogScrollY','pointerdown'
 ):
     assert token in js, f'missing frontend behavior: {token}'
+for token in ('compatibleCounts','button.disabled','selectedTagKeys','force-cache','Réinitialisation complète'):
+    assert token in facets_js, f'missing tag facet behavior: {token}'
 for token in ('openLightbox','preventDefault','renderCoverDetails','renderDescriptionTabs','renderGameplayPreview'):
     assert token in details_js, f'missing rich details behavior: {token}'
 for token in ('.game-grid','.tag-list','.recommendation-grid','.media-grid'):
     assert token in css, f'missing CSS contract: {token}'
 for token in ('.game-dialog','#dialogContent','.dialog-info','.media-grid','90dvh','.media-lightbox','.cover-details','.detail-tabs'):
     assert token in modal_css, f'missing modal viewport/details contract: {token}'
-for token in ('.dialog-scroll-locked','.tag-result-summary','overflow:hidden'):
+for token in ('.dialog-scroll-locked','.tag-result-summary','overflow:hidden','.tag-chip:disabled','.tag-chip.active::after'):
     assert token in ux_css, f'missing modal/filter UX contract: {token}'
 for token in ('torrent-stats.info','MutationObserver','.media-item'):
     assert token in sanitize_js, f'missing legacy media sanitizer contract: {token}'

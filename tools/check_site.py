@@ -8,6 +8,7 @@ css = (ROOT/'assets/style.css').read_text(encoding='utf-8')
 modal_css = (ROOT/'assets/modal-fix.css').read_text(encoding='utf-8')
 ux_css = (ROOT/'assets/ux-fixes.css').read_text(encoding='utf-8')
 compact_css = (ROOT/'assets/compact-header.css').read_text(encoding='utf-8')
+performance_css = (ROOT/'assets/performance.css').read_text(encoding='utf-8')
 js = (ROOT/'assets/app.js').read_text(encoding='utf-8')
 facets_js = (ROOT/'assets/tag-facets.js').read_text(encoding='utf-8')
 details_js = (ROOT/'assets/details.js').read_text(encoding='utf-8')
@@ -40,7 +41,9 @@ assert './assets/style.css' in p.links
 assert './assets/modal-fix.css' in p.links
 assert './assets/ux-fixes.css' in p.links
 assert './assets/compact-header.css' in p.links
+assert './assets/performance.css' in p.links
 assert (ROOT/'data/games.json').exists()
+
 for token in (
     'DATA_URL','renderRecommendations','appendMediaGallery','selectedTags',
     'lockCatalogScroll','unlockCatalogScroll','tagResultCount','__tagKeySet',
@@ -56,8 +59,11 @@ assert 'scheduleInfiniteCheck(' not in load_block, 'loadNextPage must not recurs
 assert 'loadNextPage(' not in schedule_block, 'resize/schedule hook must never trigger a page load directly'
 assert "rootMargin:'900px 0px'" not in js, '900px prefetch margin is too aggressive for this catalog'
 
-for token in ('compatibleCounts','button.disabled','selectedTagKeys',"cache:'no-cache'",'Réinitialisation complète'):
+for token in ('compatibleCounts','button.disabled','selectedTagKeys',"cache:'no-cache'",'requestAnimationFrame','subtree:false'):
     assert token in facets_js, f'missing tag facet behavior: {token}'
+assert 'queueMicrotask' not in facets_js, 'facet updates must not create a microtask feedback loop'
+assert "childList:true, subtree:true" not in facets_js, 'facet observer must never watch its own counter mutations'
+
 for token in ('openLightbox','preventDefault','renderCoverDetails','renderDescriptionTabs','renderGameplayPreview'):
     assert token in details_js, f'missing rich details behavior: {token}'
 for token in ('.game-grid','.tag-list','.recommendation-grid','.media-grid'):
@@ -68,6 +74,8 @@ for token in ('.dialog-scroll-locked','.tag-result-summary','overflow:hidden','.
     assert token in ux_css, f'missing modal/filter UX contract: {token}'
 for token in ('.compact-topbar','.header-toolbar','.scroll-sentinel','.header-count'):
     assert token in compact_css, f'missing compact header/infinite-scroll CSS contract: {token}'
+for token in ('content-visibility: auto','contain-intrinsic-size'):
+    assert token in performance_css, f'missing offscreen rendering optimization: {token}'
 for token in ('torrent-stats.info','MutationObserver','.media-item'):
     assert token in sanitize_js, f'missing legacy media sanitizer contract: {token}'
 print('site smoke OK')

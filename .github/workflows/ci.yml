@@ -1,0 +1,52 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main, feat/static-catalog]
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    name: Robot · catalog integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: python tools/validate_catalog.py
+
+  frontend:
+    name: Robot · frontend smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - run: node --check site/assets/app.js
+      - run: python tools/check_site.py
+
+  python:
+    name: Robot · Python syntax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: python -m py_compile tools/update_catalog.py tools/validate_catalog.py tools/check_site.py
+
+  security-boundary:
+    name: Robot · forbidden-link guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject indexed magnet/download payloads
+        shell: bash
+        run: |
+          if grep -RniE 'magnet:\?|torrent[^a-z]|download[_ -]?mirrors?' site/data site/assets 2>/dev/null; then
+            echo 'Forbidden download payload detected in static catalog.'
+            exit 1
+          fi

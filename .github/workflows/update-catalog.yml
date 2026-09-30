@@ -2,17 +2,17 @@ name: Catalog Refresh
 
 on:
   schedule:
-    - cron: '17 */4 * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       pages:
-        description: 'Listing pages to scan'
+        description: 'Newest listing pages to scan'
         required: false
-        default: '6'
-      limit:
-        description: 'Maximum games kept'
+        default: '8'
+      workers:
+        description: 'Parallel listing-page workers'
         required: false
-        default: '2500'
+        default: '8'
   push:
     branches: [main]
     paths:
@@ -21,15 +21,16 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
-  group: catalog-refresh
+  group: catalog-writer
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -40,16 +41,18 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Refresh metadata
+      - name: Refresh recent metadata
         env:
-          PAGES: ${{ github.event.inputs.pages || '6' }}
-          LIMIT: ${{ github.event.inputs.limit || '2500' }}
-        run: python tools/update_catalog.py --pages "$PAGES" --limit "$LIMIT"
+          PAGES: ${{ github.event.inputs.pages || '8' }}
+          WORKERS: ${{ github.event.inputs.workers || '8' }}
+        run: python tools/update_catalog.py --pages "$PAGES" --workers "$WORKERS"
       - name: Validate generated catalog
         run: python tools/validate_catalog.py
       - name: Commit catalog safely
+        id: commit
         shell: bash
         run: |
+          echo 'changed=false' >> "$GITHUB_OUTPUT"
           if git diff --quiet -- site/data/games.json; then
             echo 'No catalog change'
             exit 0
@@ -60,8 +63,15 @@ jobs:
           git add site/data/games.json
           git commit -m 'data: refresh catalog'
 
-          # Main can move while this scraper is running (for example a UI or CI fix).
-          # Rebase our generated-data commit onto the newest main before pushing.
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Trigger immediate enrichment and deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh workflow run enrich-media.yml --ref main -f batch=180 -f workers=12 -f refresh=false
+          gh workflow run pages.yml --ref main

@@ -43,11 +43,19 @@ assert './assets/compact-header.css' in p.links
 assert (ROOT/'data/games.json').exists()
 for token in (
     'DATA_URL','renderRecommendations','appendMediaGallery','selectedTags',
-    'lockCatalogScroll','unlockCatalogScroll','tagResultCount','normalizedTags.some',
+    'lockCatalogScroll','unlockCatalogScroll','tagResultCount','__tagKeySet',
     'navigateDialog','dialogScrollY','pointerdown','IntersectionObserver','loadNextPage',
-    'scheduleInfiniteCheck','grid.append','rootMargin'
+    'scheduleInfiniteCheck','armInfiniteObserver','grid.append','rootMargin','LOAD_COOLDOWN_MS',
+    'infiniteObserver.unobserve','const PAGE_SIZE = 30;'
 ):
     assert token in js, f'missing frontend behavior: {token}'
+
+load_block = js.split('function loadNextPage()', 1)[1].split('function scheduleInfiniteCheck()', 1)[0]
+schedule_block = js.split('function scheduleInfiniteCheck()', 1)[1].split('const infiniteObserver', 1)[0]
+assert 'scheduleInfiniteCheck(' not in load_block, 'loadNextPage must not recursively schedule another page'
+assert 'loadNextPage(' not in schedule_block, 'resize/schedule hook must never trigger a page load directly'
+assert "rootMargin:'900px 0px'" not in js, '900px prefetch margin is too aggressive for this catalog'
+
 for token in ('compatibleCounts','button.disabled','selectedTagKeys',"cache:'no-cache'",'Réinitialisation complète'):
     assert token in facets_js, f'missing tag facet behavior: {token}'
 for token in ('openLightbox','preventDefault','renderCoverDetails','renderDescriptionTabs','renderGameplayPreview'):

@@ -10,27 +10,13 @@
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/modal-fix.css">
   <link rel="stylesheet" href="./assets/ux-fixes.css">
+  <link rel="stylesheet" href="./assets/compact-header.css">
 </head>
 <body>
-  <header class="topbar">
+  <header class="topbar compact-topbar">
     <a class="brand" href="./" aria-label="FitBoyRepack — accueil"><span>FitBoy</span><strong>Repack</strong></a>
-    <div class="topbar-meta">
-      <span id="catalogStatus">Chargement…</span>
-      <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ Favoris</button>
-    </div>
-  </header>
 
-  <main class="page-shell">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">Catalogue</p>
-        <h1>Les derniers jeux, vite et proprement.</h1>
-        <p class="hero-copy">Recherche instantanée, filtres multi-tags, galerie médias et recommandations locales basées sur tes favoris.</p>
-      </div>
-      <div class="hero-stat" aria-live="polite"><strong id="visibleCount">0</strong><span>jeux trouvés</span></div>
-    </section>
-
-    <section class="toolbar" aria-label="Filtres du catalogue">
+    <section class="header-toolbar" aria-label="Filtres du catalogue">
       <label class="search-box">
         <span class="sr-only">Rechercher</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
@@ -56,6 +42,14 @@
       <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Plus récents</option><option value="date_asc">Plus anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
     </section>
 
+    <div class="topbar-meta compact-meta">
+      <span id="catalogStatus" class="catalog-status">Chargement…</span>
+      <span class="header-count" aria-live="polite"><strong id="visibleCount">0</strong><span>jeux</span></span>
+      <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ Favoris</button>
+    </div>
+  </header>
+
+  <main class="page-shell compact-shell">
     <div id="activeState" class="active-state" hidden></div>
 
     <section id="recommendationSection" class="recommendations" hidden>
@@ -68,7 +62,9 @@
 
     <div class="section-heading catalog-heading"><div><p class="eyebrow">Tous les jeux</p><h2>Catalogue</h2></div></div>
     <section id="gameGrid" class="game-grid" aria-live="polite"></section>
-    <div class="load-more-wrap"><button id="loadMore" class="primary-btn" type="button" hidden>Afficher plus</button></div>
+    <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true">
+      <span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span>
+    </div>
     <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
   </main>
 

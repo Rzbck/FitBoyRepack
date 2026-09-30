@@ -1,28 +1,19 @@
-name: Media Enrichment
+name: Full Catalog Backfill
 
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '31 3 * * 0'
   workflow_dispatch:
     inputs:
-      batch:
-        description: 'Maximum games to enrich in this run'
-        required: false
-        default: '360'
       workers:
-        description: 'Parallel detail-page workers'
+        description: 'Parallel listing-page workers'
         required: false
         default: '12'
-      refresh:
-        description: 'Recheck already enriched games'
-        required: false
-        type: boolean
-        default: false
   push:
     branches: [main]
     paths:
-      - 'tools/enrich_media.py'
-      - '.github/workflows/enrich-media.yml'
+      - 'tools/update_catalog.py'
+      - '.github/workflows/backfill-catalog.yml'
 
 permissions:
   contents: write
@@ -33,9 +24,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  enrich:
+  backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,37 +37,35 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Enrich screenshots, GIFs and public details
+      - name: Scan every discoverable listing page
         env:
-          BATCH: ${{ github.event.inputs.batch || '360' }}
           WORKERS: ${{ github.event.inputs.workers || '12' }}
-          REFRESH: ${{ github.event.inputs.refresh || 'false' }}
-        shell: bash
-        run: |
-          ARGS=(--batch "$BATCH" --workers "$WORKERS")
-          if [ "$REFRESH" = "true" ]; then ARGS+=(--refresh); fi
-          python tools/enrich_media.py "${ARGS[@]}"
+        run: python tools/update_catalog.py --full-scan --workers "$WORKERS"
       - name: Validate generated catalog
         run: python tools/validate_catalog.py
-      - name: Commit media safely
+      - name: Commit full catalog safely
         id: commit
         shell: bash
         run: |
           echo 'changed=false' >> "$GITHUB_OUTPUT"
           if git diff --quiet -- site/data/games.json; then
-            echo 'No media change'
+            echo 'Full scan found no catalog change'
             exit 0
           fi
+
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add site/data/games.json
-          git commit -m 'data: enrich media'
+          git commit -m 'data: full catalog backfill'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
           echo 'changed=true' >> "$GITHUB_OUTPUT"
-      - name: Deploy enriched catalog
+      - name: Kick off accelerated enrichment and deploy
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml --ref main
+        shell: bash
+        run: |
+          gh workflow run enrich-media.yml --ref main -f batch=480 -f workers=12 -f refresh=false
+          gh workflow run pages.yml --ref main

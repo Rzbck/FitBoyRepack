@@ -6,9 +6,6 @@ on:
     paths:
       - 'site/**'
       - '.github/workflows/pages.yml'
-  workflow_run:
-    workflows: ['Catalog Refresh', 'Media Enrichment']
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -22,7 +19,6 @@ concurrency:
 
 jobs:
   verify:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,6 +34,7 @@ jobs:
       - run: python tools/check_site.py
       - run: node --check site/assets/app.js
       - run: node --check site/assets/tag-facets.js
+      - run: node --check site/assets/details.js
 
   deploy:
     needs: verify

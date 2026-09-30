@@ -6,7 +6,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 CATALOG_VERSION = 2
-CURRENT_MEDIA_VERSION = 2
+CURRENT_MEDIA_VERSION = 3
+CURRENT_DETAILS_VERSION = 1
+LEGACY_MEDIA_VERSIONS = {None, 2}
 META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
 P = Path("site/data/games.json")
 data = json.loads(P.read_text(encoding="utf-8"))
@@ -42,6 +44,8 @@ for i, game in enumerate(data["games"]):
         datetime.fromisoformat(game["post_date"].replace("Z", "+00:00"))
     if game.get("media_checked_at"):
         datetime.fromisoformat(game["media_checked_at"].replace("Z", "+00:00"))
+    if game.get("details_checked_at"):
+        datetime.fromisoformat(game["details_checked_at"].replace("Z", "+00:00"))
 
     genres = game.get("genres", [])
     assert isinstance(genres, list), f"genres must be list: {game['id']}"
@@ -52,15 +56,12 @@ for i, game in enumerate(data["games"]):
     media = game.get("media", [])
     assert isinstance(media, list), f"media must be list: {game['id']}"
     media_version = game.get("media_version")
-    if media_version is not None:
-        assert media_version == CURRENT_MEDIA_VERSION, f"unexpected media_version in {game['id']}: {media_version}"
-        assert len(media) <= 8, f"too many v{CURRENT_MEDIA_VERSION} media entries in {game['id']}"
-    else:
-        # Legacy v1 entries are accepted temporarily while the v2 robot replaces them in batches.
-        assert len(media) <= 12, f"too many legacy media entries in {game['id']}"
+    assert media_version == CURRENT_MEDIA_VERSION or media_version in LEGACY_MEDIA_VERSIONS, f"unexpected media_version in {game['id']}: {media_version}"
+    assert len(media) <= (8 if media_version == CURRENT_MEDIA_VERSION else 12), f"too many media entries in {game['id']}"
 
     media_seen = set()
-    for item in media:
+    gif_count = 0
+    for position, item in enumerate(media):
         assert isinstance(item, dict), f"invalid media object in {game['id']}"
         assert item.get("type") in ("image", "gif"), f"invalid media type in {game['id']}"
         url = item.get("url")
@@ -69,5 +70,22 @@ for i, game in enumerate(data["games"]):
         assert parsed.netloc, f"invalid media host in {game['id']}"
         assert url not in media_seen, f"duplicate media URL in {game['id']}"
         media_seen.add(url)
+        if item.get("type") == "gif":
+            gif_count += 1
+            if media_version == CURRENT_MEDIA_VERSION:
+                assert position == 0, f"v{CURRENT_MEDIA_VERSION} GIF must be prioritized in {game['id']}"
+    if media_version == CURRENT_MEDIA_VERSION:
+        assert gif_count <= 1, f"too many GIFs in {game['id']}"
+
+    details_version = game.get("details_version")
+    if details_version is not None:
+        assert details_version == CURRENT_DETAILS_VERSION, f"unexpected details_version in {game['id']}: {details_version}"
+        details = game.get("details")
+        assert isinstance(details, dict), f"details must be object in {game['id']}"
+        assert isinstance(details.get("description", ""), str), f"invalid description in {game['id']}"
+        for key in ("game_features", "repack_features"):
+            values = details.get(key, [])
+            assert isinstance(values, list), f"{key} must be list in {game['id']}"
+            assert all(isinstance(item, str) and item.strip() for item in values), f"invalid {key} in {game['id']}"
 
 print(f"catalog OK v{CATALOG_VERSION}: {len(data['games'])} games, {len(seen)} unique ids")

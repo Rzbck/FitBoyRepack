@@ -12,7 +12,7 @@ const els = {
 
 let games = [];
 let ready = false;
-let updateQueued = false;
+let updateFrame = 0;
 
 function normalized(value = '') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
@@ -83,7 +83,6 @@ function compatibleCounts(pool, selected, requireAll) {
 }
 
 function updateFacets() {
-  updateQueued = false;
   if (!ready || !els.tagList.children.length) return;
 
   const selected = selectedTagKeys();
@@ -103,7 +102,6 @@ function updateFacets() {
       nextCount = currentCount;
       button.disabled = false;
       button.title = `Retirer le tag ${button.dataset.tagLabel}`;
-      // Un tag déjà sélectionné reste toujours visible afin de pouvoir l'enlever.
       button.hidden = false;
     } else if (requireAll) {
       nextCount = counts.get(key) || 0;
@@ -121,26 +119,33 @@ function updateFacets() {
     }
 
     if (!active && tagQuery) button.hidden = !normalized(button.dataset.tagLabel).includes(tagQuery);
-    if (small) small.textContent = nextCount.toLocaleString('fr-FR');
+    const label = nextCount.toLocaleString('fr-FR');
+    if (small && small.textContent !== label) small.textContent = label;
     button.setAttribute('aria-disabled', String(button.disabled));
   });
 }
 
 function scheduleUpdate() {
-  if (updateQueued) return;
-  updateQueued = true;
-  queueMicrotask(updateFacets);
+  if (!ready || updateFrame) return;
+  updateFrame = requestAnimationFrame(() => {
+    updateFrame = 0;
+    updateFacets();
+  });
 }
 
-const observer = new MutationObserver(scheduleUpdate);
-observer.observe(els.tagList, { childList:true, subtree:true, attributes:true, attributeFilter:['class'] });
-observer.observe(els.favoritesToggle, { attributes:true, attributeFilter:['aria-pressed'] });
+// Only watch direct children being replaced when the main catalog builds the tag list.
+// Do not observe the whole subtree: updating a counter must never schedule itself again.
+const tagListObserver = new MutationObserver(scheduleUpdate);
+tagListObserver.observe(els.tagList, { childList:true, subtree:false });
 
+els.tagList.addEventListener('click', event => {
+  if (event.target.closest('.tag-chip')) scheduleUpdate();
+});
 els.search.addEventListener('input', scheduleUpdate);
 els.tagSearch.addEventListener('input', scheduleUpdate);
 els.tagMode.addEventListener('change', scheduleUpdate);
+els.favoritesToggle.addEventListener('click', scheduleUpdate);
 els.clearTags.addEventListener('click', () => {
-  // Réinitialisation complète du sous-système Tags : sélection, recherche et mode ET.
   if (els.tagMode.value !== 'all') {
     els.tagMode.value = 'all';
     els.tagMode.dispatchEvent(new Event('change', { bubbles:true }));
@@ -150,18 +155,18 @@ els.clearTags.addEventListener('click', () => {
 
 async function loadGames() {
   try {
-    // Keep the facet index in sync with the same fresh catalog used by app.js.
     const response = await fetch(DATA_URL, { cache:'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
     const source = Array.isArray(payload) ? payload : payload.games || [];
     games = source.filter(game => game?.id && game?.title).map(game => {
-      const tags = rawTags(game).map(normalized);
+      const raw = rawTags(game);
+      const tags = raw.map(normalized);
       return {
         id: String(game.id),
         tags,
         tagSet: new Set(tags),
-        searchText: normalized([game.title, game.repack_size, ...rawTags(game)].join(' '))
+        searchText: normalized([game.title, game.repack_size, ...raw].join(' '))
       };
     });
     ready = true;

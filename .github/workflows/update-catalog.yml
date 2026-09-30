@@ -13,11 +13,6 @@ on:
         description: 'Parallel listing-page workers'
         required: false
         default: '8'
-  push:
-    branches: [main]
-    paths:
-      - 'tools/update_catalog.py'
-      - '.github/workflows/update-catalog.yml'
 
 permissions:
   contents: write

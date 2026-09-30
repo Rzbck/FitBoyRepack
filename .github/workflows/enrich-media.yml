@@ -18,11 +18,6 @@ on:
         required: false
         type: boolean
         default: false
-  push:
-    branches: [main]
-    paths:
-      - 'tools/enrich_media.py'
-      - '.github/workflows/enrich-media.yml'
 
 permissions:
   contents: write

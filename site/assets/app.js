@@ -1,7 +1,8 @@
 const DATA_URL = './data/games.json';
-const PAGE_SIZE = 60;
+const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
 const FAVORITES_KEY = 'fitboyrepack:favorites:v1';
+const LOAD_COOLDOWN_MS = 250;
 
 const $ = (selector) => document.querySelector(selector);
 const els = {
@@ -17,7 +18,8 @@ const els = {
 const state = {
   games: [], filtered: [], visible: PAGE_SIZE, favoritesOnly: false,
   favorites: readFavorites(), selectedTags: new Set(), tagCounts: new Map(),
-  dialogGameId: null, dialogScrollY: 0, dialogOpener: null, loadingMore: false
+  dialogGameId: null, dialogScrollY: 0, dialogOpener: null,
+  loadingMore: false, lastLoadAt: 0
 };
 
 function readFavorites() {
@@ -37,6 +39,15 @@ function getTags(game) {
 function getMedia(game) {
   if (!Array.isArray(game.media)) return [];
   return game.media.filter(item => item && typeof item.url === 'string' && item.url.startsWith('https://')).slice(0, 12);
+}
+
+function prepareGame(raw) {
+  const game = { ...raw, id:String(raw.id) };
+  const tags = getTags(game);
+  game.__tagKeys = tags.map(normalized);
+  game.__tagKeySet = new Set(game.__tagKeys);
+  game.__searchText = normalized([game.title, game.repack_size, ...tags].join(' '));
+  return game;
 }
 
 function buildTagIndex() {
@@ -101,19 +112,16 @@ function applyFilters() {
   state.filtered = state.games.filter(game => {
     if (state.favoritesOnly && !state.favorites.has(game.id)) return false;
 
-    const tags = getTags(game);
-    const normalizedTags = tags.map(normalized);
-    const tagKeys = new Set(normalizedTags);
-
     if (selected.length) {
-      const match = requireAll ? selected.every(tag => tagKeys.has(tag)) : selected.some(tag => tagKeys.has(tag));
+      const match = requireAll
+        ? selected.every(tag => game.__tagKeySet.has(tag))
+        : selected.some(tag => game.__tagKeySet.has(tag));
       if (!match) return false;
     }
 
-    if (tagQuery && !normalizedTags.some(tag => tag.includes(tagQuery))) return false;
-
-    if (!query) return true;
-    return normalized([game.title, game.repack_size, ...tags].join(' ')).includes(query);
+    if (tagQuery && !game.__tagKeys.some(tag => tag.includes(tagQuery))) return false;
+    if (query && !game.__searchText.includes(query)) return false;
+    return true;
   });
 
   state.filtered.sort((a, b) => {
@@ -122,9 +130,11 @@ function applyFilters() {
     if (sort === 'name_desc') return b.title.localeCompare(a.title, 'fr', { sensitivity:'base' });
     return gameDate(b) - gameDate(a);
   });
+
   state.visible = Math.min(PAGE_SIZE, state.filtered.length);
+  state.loadingMore = false;
   renderCatalog();
-  scheduleInfiniteCheck();
+  armInfiniteObserver();
 }
 
 function pill(text) { const el = document.createElement('span'); el.className = 'genre-pill'; el.textContent = text; return el; }
@@ -138,13 +148,18 @@ function toggleFavorite(gameId) {
 
 function renderCard(game, compact = false) {
   const card = els.template.content.firstElementChild.cloneNode(true);
-  const image = card.querySelector('.cover'); const open = card.querySelector('.card-open'); const favorite = card.querySelector('.favorite-btn');
-  card.dataset.gameId = game.id; if (compact) card.classList.add('compact-card');
+  const image = card.querySelector('.cover');
+  const open = card.querySelector('.card-open');
+  const favorite = card.querySelector('.favorite-btn');
+  card.dataset.gameId = game.id;
+  if (compact) card.classList.add('compact-card');
   card.querySelector('.card-title').textContent = game.title;
   card.querySelector('.card-date').textContent = formatDate(game.post_date);
   card.querySelector('.card-size').textContent = game.repack_size !== 'N/A' ? (game.repack_size || '') : '';
   if (game.image_url) {
-    image.src = game.image_url; image.alt = `Illustration de ${game.title}`;
+    image.fetchPriority = 'low';
+    image.src = game.image_url;
+    image.alt = `Illustration de ${game.title}`;
     image.addEventListener('error', () => { image.style.display = 'none'; }, { once:true });
   } else image.style.display = 'none';
   card.querySelector('.new-badge').hidden = !isNew(game);
@@ -190,31 +205,47 @@ function renderCatalog({ append = false, start = 0 } = {}) {
 
 function loadNextPage() {
   if (state.loadingMore || state.visible >= state.filtered.length) return;
+  const now = performance.now();
+  if (now - state.lastLoadAt < LOAD_COOLDOWN_MS) return;
+
   state.loadingMore = true;
+  state.lastLoadAt = now;
+  infiniteObserver.unobserve(els.scrollSentinel);
   els.infiniteStatus.hidden = false;
   const start = state.visible;
 
   requestAnimationFrame(() => {
     state.visible = Math.min(state.visible + PAGE_SIZE, state.filtered.length);
     renderCatalog({ append:true, start });
-    state.loadingMore = false;
     els.infiniteStatus.hidden = true;
-    scheduleInfiniteCheck();
+
+    window.setTimeout(() => {
+      state.loadingMore = false;
+      armInfiniteObserver();
+    }, LOAD_COOLDOWN_MS);
   });
 }
 
 function scheduleInfiniteCheck() {
-  if (state.loadingMore || els.scrollSentinel.hidden) return;
-  requestAnimationFrame(() => {
-    if (state.loadingMore || els.scrollSentinel.hidden) return;
-    const rect = els.scrollSentinel.getBoundingClientRect();
-    if (rect.top <= window.innerHeight + 900) loadNextPage();
-  });
+  // Kept as a compatibility hook for resize/tests. It never loads a page itself.
+  // The previous implementation called loadNextPage recursively here and could
+  // cascade dozens of renders while the sentinel remained near the viewport.
+  armInfiniteObserver();
 }
 
 const infiniteObserver = new IntersectionObserver(entries => {
-  if (entries.some(entry => entry.isIntersecting)) loadNextPage();
-}, { rootMargin:'900px 0px' });
+  const entry = entries.find(item => item.target === els.scrollSentinel);
+  if (entry?.isIntersecting) loadNextPage();
+}, { root:null, rootMargin:'350px 0px', threshold:0.01 });
+
+function armInfiniteObserver() {
+  infiniteObserver.unobserve(els.scrollSentinel);
+  if (state.loadingMore || els.scrollSentinel.hidden) return;
+  requestAnimationFrame(() => {
+    if (!state.loadingMore && !els.scrollSentinel.hidden) infiniteObserver.observe(els.scrollSentinel);
+  });
+}
+
 infiniteObserver.observe(els.scrollSentinel);
 
 function recommendationScores() {
@@ -306,7 +337,7 @@ function unlockCatalogScroll() {
   document.body.style.right = '';
   document.body.style.width = '';
   document.body.style.paddingRight = '';
-  window.scrollTo({ top, left: 0, behavior: 'auto' });
+  window.scrollTo({ top, left:0, behavior:'auto' });
 }
 
 function openDialog(game) {
@@ -364,7 +395,7 @@ function restoreCatalogPosition() {
   unlockCatalogScroll();
   requestAnimationFrame(() => {
     if (opener?.isConnected) {
-      try { opener.focus({ preventScroll: true }); } catch { /* noop */ }
+      try { opener.focus({ preventScroll:true }); } catch { /* noop */ }
     }
   });
 }
@@ -374,7 +405,8 @@ async function loadCatalog() {
     const response = await fetch(DATA_URL, { cache:'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
-    state.games = (Array.isArray(payload) ? payload : payload.games || []).filter(game => game?.id && game?.title).map(game => ({ ...game, id:String(game.id) }));
+    const source = Array.isArray(payload) ? payload : payload.games || [];
+    state.games = source.filter(game => game?.id && game?.title).map(prepareGame);
     const generated = Array.isArray(payload) ? null : payload.generated_at;
     els.status.textContent = generated ? `Mis à jour ${new Intl.DateTimeFormat('fr-FR', { dateStyle:'medium', timeStyle:'short' }).format(new Date(generated))}` : `${state.games.length.toLocaleString('fr-FR')} jeux`;
     buildTagIndex(); applyFilters(); renderRecommendations();

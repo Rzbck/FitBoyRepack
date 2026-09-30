@@ -12,33 +12,18 @@
   <link rel="stylesheet" href="./assets/ux-fixes.css">
   <link rel="stylesheet" href="./assets/compact-header.css">
   <link rel="stylesheet" href="./assets/performance.css">
+  <link rel="stylesheet" href="./assets/filter-sidebar.css">
 </head>
 <body>
   <header class="topbar compact-topbar">
     <a class="brand" href="./" aria-label="FitBoyRepack — accueil"><span>FitBoy</span><strong>Repack</strong></a>
 
-    <section class="header-toolbar" aria-label="Filtres du catalogue">
+    <section class="header-toolbar" aria-label="Recherche et tri du catalogue">
       <label class="search-box">
         <span class="sr-only">Rechercher</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
         <input id="searchInput" type="search" autocomplete="off" placeholder="Rechercher un jeu, un tag, une taille…">
       </label>
-
-      <details id="tagFilter" class="tag-filter">
-        <summary><span>Tags</span><strong id="selectedTagCount">0</strong></summary>
-        <div class="tag-popover">
-          <div class="tag-controls">
-            <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
-            <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="all" selected>Tous les tags (ET)</option><option value="any">Au moins un (OU)</option></select></label>
-            <button id="clearTags" class="ghost-btn" type="button" title="Retirer tous les tags et vider la recherche">Réinitialiser</button>
-          </div>
-          <div class="tag-result-summary" aria-live="polite">
-            <span>Résultat du filtre · tags impossibles désactivés</span>
-            <strong id="tagResultCount">0 jeux</strong>
-          </div>
-          <div id="tagList" class="tag-list" aria-label="Liste des tags"></div>
-        </div>
-      </details>
 
       <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Plus récents</option><option value="date_asc">Plus anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
     </section>
@@ -51,22 +36,52 @@
   </header>
 
   <main class="page-shell compact-shell">
-    <div id="activeState" class="active-state" hidden></div>
+    <div class="catalog-layout">
+      <aside id="filterSidebar" class="filter-sidebar" aria-label="Filtres du catalogue">
+        <section id="tagFilter" class="tag-filter sidebar-filter">
+          <div class="sidebar-filter-heading">
+            <div>
+              <p class="eyebrow">Filtres</p>
+              <h2>Tags</h2>
+            </div>
+            <strong id="selectedTagCount" class="sidebar-selected-count">0</strong>
+          </div>
 
-    <section id="recommendationSection" class="recommendations" hidden>
-      <div class="section-heading">
-        <div><p class="eyebrow">Ton profil local</p><h2>Pour toi</h2></div>
-        <p id="recommendationMeta" class="section-note"></p>
+          <div class="tag-popover sidebar-tag-panel">
+            <div class="tag-controls sidebar-tag-controls">
+              <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
+              <label class="select-wrap compact"><span class="sr-only">Mode des tags</span><select id="tagMode"><option value="all" selected>Tous les tags (ET)</option><option value="any">Au moins un (OU)</option></select></label>
+              <button id="clearTags" class="ghost-btn reset-tags" type="button" title="Retirer tous les tags et vider la recherche">Réinitialiser</button>
+            </div>
+            <div class="tag-result-summary" aria-live="polite">
+              <span>Résultat</span>
+              <strong id="tagResultCount">0 jeux</strong>
+            </div>
+            <p class="sidebar-filter-help">Les tags incompatibles sont automatiquement désactivés.</p>
+            <div id="tagList" class="tag-list sidebar-tag-list" aria-label="Liste des tags"></div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="catalog-content">
+        <div id="activeState" class="active-state" hidden></div>
+
+        <section id="recommendationSection" class="recommendations" hidden>
+          <div class="section-heading">
+            <div><p class="eyebrow">Ton profil local</p><h2>Pour toi</h2></div>
+            <p id="recommendationMeta" class="section-note"></p>
+          </div>
+          <div id="recommendationGrid" class="recommendation-grid"></div>
+        </section>
+
+        <div class="section-heading catalog-heading"><div><p class="eyebrow">Tous les jeux</p><h2>Catalogue</h2></div></div>
+        <section id="gameGrid" class="game-grid" aria-live="polite"></section>
+        <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true">
+          <span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span>
+        </div>
+        <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
       </div>
-      <div id="recommendationGrid" class="recommendation-grid"></div>
-    </section>
-
-    <div class="section-heading catalog-heading"><div><p class="eyebrow">Tous les jeux</p><h2>Catalogue</h2></div></div>
-    <section id="gameGrid" class="game-grid" aria-live="polite"></section>
-    <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true">
-      <span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span>
     </div>
-    <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
   </main>
 
   <dialog id="gameDialog" class="game-dialog">

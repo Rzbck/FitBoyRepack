@@ -1,0 +1,24 @@
+name: Search normalization v2
+
+on:
+  pull_request:
+    paths:
+      - 'tools/batched_metadata_bootstrap_v2.py'
+      - 'tools/test_search_normalization_v2.py'
+      - '.github/workflows/search-normalization-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile tools/batched_metadata_bootstrap_v2.py tools/test_search_normalization_v2.py
+      - run: python tools/test_search_normalization_v2.py

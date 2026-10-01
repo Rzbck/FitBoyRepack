@@ -1,0 +1,37 @@
+[Unit]
+Description=FitBoyRepack evidence-gated local LLM review resolver
+After=network-online.target llama-server.service metadata-autodrain.service
+Wants=network-online.target
+Requires=llama-server.service
+
+[Service]
+Type=oneshot
+User=fitboy
+Group=fitboy
+WorkingDirectory=/opt/FitBoyRepack
+EnvironmentFile=/etc/llm/llm.env
+Environment=HOME=/var/lib/fitboy
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONPATH=/opt/FitBoyRepack/tools
+
+# V2 always has priority. The worker exits without an LLM call while pending or
+# processing first-stage rows exist. Each activation is intentionally bounded.
+ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/review_llm_autodrain.py --catalog /opt/FitBoyRepack/site/data/games.json --db /var/lib/fitboy/ai/catalog_enrichment.sqlite3 --limit 12 --confidence-threshold 0.92 --max-error-attempts 3
+
+TimeoutStartSec=45min
+Nice=15
+CPUQuota=25%
+MemoryMax=512M
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/fitboy/ai
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+IPAddressDeny=any
+IPAddressAllow=localhost
+
+[Install]
+WantedBy=multi-user.target

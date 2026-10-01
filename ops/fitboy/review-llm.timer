@@ -1,0 +1,12 @@
+[Unit]
+Description=Schedule FitBoyRepack local LLM review resolution
+
+[Timer]
+OnBootSec=25min
+OnUnitInactiveSec=30min
+RandomizedDelaySec=2min
+Persistent=true
+Unit=review-llm.service
+
+[Install]
+WantedBy=timers.target

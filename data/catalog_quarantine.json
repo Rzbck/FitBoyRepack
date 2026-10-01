@@ -35,7 +35,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "warning-megaupload-users",
@@ -117,7 +117,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "all-game-uploads-restored",
@@ -172,6 +172,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "birchpunk-special-ai-vanich-in-the-russian-cyberfarm",
+      "title": "BIRCHPUNK SPECIAL – AI-VANICH IN THE RUSSIAN CYBERFARM",
+      "source_url": "https://fitgirl-repacks.site/birchpunk-special-ai-vanich-in-the-russian-cyberfarm/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "because-why-not",
       "title": "Because why not",
       "source_url": "https://fitgirl-repacks.site/because-why-not/",
@@ -179,6 +189,18 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
+      "action": "excluded-new"
+    },
+    {
+      "id": "believers",
+      "title": "Believers",
+      "source_url": "https://fitgirl-repacks.site/believers/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
       "action": "removed-existing"
     },
     {
@@ -287,7 +309,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "dmc5-related-decompression-test",
@@ -431,7 +453,7 @@
       "reason": "standalone-language-patch",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "do-you-want-developers-build-of-atomic-heart-to-be-repacked",
@@ -443,7 +465,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "domain-issue-resolved",
@@ -453,7 +475,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "donation-mining-resumed",
@@ -489,7 +511,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fifa-19-repack-poll",
@@ -499,7 +521,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fifa-19-turtle-repack-poll",
@@ -509,7 +531,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "facebook-imposters",
@@ -519,7 +541,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fallout-4-witcher-3",
@@ -529,7 +551,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fallout-4-high-resolution-texture-pack",
@@ -555,7 +577,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "faster-installation-vote-now",
@@ -565,7 +587,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fitgirl-recommends-russian-movies",
@@ -577,7 +599,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fitgirl-repacks-11-years-in-service",
@@ -589,7 +611,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fitgirl-repacks-belated-x-anniversary",
@@ -601,7 +623,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fitgirls-browser-miner-is-online",
@@ -613,7 +635,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "from-repacking-to-hacking",
@@ -625,7 +647,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "gta-v-ultra-repack-v2-1x-details",
@@ -635,7 +657,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "games-re-repacking",
@@ -645,7 +667,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "games4up-mirrors-virus-warning",
@@ -655,7 +677,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "gears-of-war-ultimate-edition-repack-poll",
@@ -665,7 +687,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "good-read-about-hypervisor",
@@ -675,7 +697,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "goodbye-codex",
@@ -687,7 +709,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "got-problems-fitgirl-rescue",
@@ -699,7 +721,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "grand-theft-auto-6-an-extended-look-2026-2160p-h-265",
@@ -711,7 +733,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "grand-theft-auto-vi-trailer-1",
@@ -721,7 +743,7 @@
       "reason": "trailer-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "grand-theft-auto-vi-trailer-2",
@@ -731,7 +753,7 @@
       "reason": "trailer-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "happy-new-year-4",
@@ -743,7 +765,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hdd-or-ssd",
@@ -755,7 +777,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hdd-or-ssd-version-2025",
@@ -765,7 +787,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "happy-new-year",
@@ -775,7 +797,7 @@
       "reason": "seasonal-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "happy-new-year-2",
@@ -787,7 +809,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "happy-new-year-3",
@@ -799,7 +821,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "happy-new-year-5",
@@ -811,7 +833,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "happy-new-year-6",
@@ -823,7 +845,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hellblade-senuas-sacrifice-repack-updated",
@@ -845,7 +867,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "help",
@@ -857,7 +879,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "heroskeep-the-malware-distributor",
@@ -867,7 +889,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "history-drm-copy-protection-computer-games",
@@ -877,7 +899,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hitman-fast-or-small",
@@ -887,7 +909,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "horizon-forbidden-west-complete-edition-updates-posted",
@@ -909,7 +931,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "how-many-threads-does-your-cpu-have",
@@ -919,7 +941,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hypervisor-cracks-status-update",
@@ -939,7 +961,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "installer-fixes",
@@ -961,7 +983,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "im-that-popular",
@@ -973,7 +995,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "kat-is-back",
@@ -985,7 +1007,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "lets-support-baldman",
@@ -997,7 +1019,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "livelock-poll",
@@ -1007,7 +1029,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "lolly-decompression-test",
@@ -1027,6 +1049,18 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
+      "action": "excluded-new"
+    },
+    {
+      "id": "looks-familiar",
+      "title": "Looks familiar?",
+      "source_url": "https://fitgirl-repacks.site/looks-familiar/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
       "action": "removed-existing"
     },
     {
@@ -1039,7 +1073,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "mafia-2-cod-mw2",
@@ -1049,7 +1083,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "mafia-3-cracked",
@@ -1059,7 +1093,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "mafia-3-news",
@@ -1069,7 +1103,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "mafia-3-poll",
@@ -1079,7 +1113,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "malware-analysis-help-needed",
@@ -1089,7 +1123,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "man-o-war-corsair-repack-updated",
@@ -1109,7 +1143,7 @@
       "reason": "standalone-patch",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "memecoin-in-my-name",
@@ -1121,7 +1155,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "mining-donation-option-changed",
@@ -1143,7 +1177,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "missing-pushes",
@@ -1153,7 +1187,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "monero-protocol-upgraded",
@@ -1165,7 +1199,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "more-donation-options-added",
@@ -1189,7 +1223,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "my-little-comment-on-crackwatch-regarding-how-repacks-work",
@@ -1199,7 +1233,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "my-statement-about-empress",
@@ -1209,7 +1243,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "nba-2k17-repack-installer-bugfix",
@@ -1219,7 +1253,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad",
@@ -1229,7 +1263,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "new-birchpunk-video",
@@ -1239,7 +1273,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "test",
@@ -1251,7 +1285,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "new-google-drive-test",
@@ -1261,7 +1295,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "new-rar-splitting-sizes",
@@ -1271,7 +1305,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "new-compression-algorithm",
@@ -1281,7 +1315,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "no-rmw-today",
@@ -1291,6 +1325,18 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
+      "action": "excluded-new"
+    },
+    {
+      "id": "oldies-here",
+      "title": "Oldies here?",
+      "source_url": "https://fitgirl-repacks.site/oldies-here/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
       "action": "removed-existing"
     },
     {
@@ -1303,7 +1349,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "only-64-denuvo-games-left-uncracked",
@@ -1313,7 +1359,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "outer-wilds-repack-updated",
@@ -1326,6 +1372,18 @@
       "action": "excluded-new"
     },
     {
+      "id": "people-like-this-really-exist",
+      "title": "People like this really exist",
+      "source_url": "https://fitgirl-repacks.site/people-like-this-really-exist/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "pink-paw-award",
       "title": "Pink Paw Award",
       "source_url": "https://fitgirl-repacks.site/pink-paw-award/",
@@ -1333,7 +1391,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "please-stop-your-donation-miners",
@@ -1353,7 +1411,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "process-lasso-the-program-everyone-must-use",
@@ -1365,7 +1423,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "push-notifications",
@@ -1375,7 +1433,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "push-notifications-follow-up",
@@ -1385,7 +1443,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "push-notifications-ii-the-pushing-day",
@@ -1397,7 +1455,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "puyo-puyo-tetris-codex-crack-added",
@@ -1410,6 +1468,18 @@
       "action": "excluded-new"
     },
     {
+      "id": "racing-sir-mostly-racing",
+      "title": "Racing, sir. Mostly racing.",
+      "source_url": "https://fitgirl-repacks.site/racing-sir-mostly-racing/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "regarding-fresh-windows-10-update",
       "title": "Regarding fresh Windows 10 update",
       "source_url": "https://fitgirl-repacks.site/regarding-fresh-windows-10-update/",
@@ -1417,7 +1487,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "repackers-pain",
@@ -1429,7 +1499,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "repacks-of-uncracked-games-vote-now",
@@ -1441,7 +1511,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "restoring-uploads-list",
@@ -1453,7 +1523,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "retrogames-is-up-and-running",
@@ -1465,6 +1535,16 @@
       "signals": [
         "image"
       ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "russian-cyberpunk-farm",
+      "title": "Russian Cyberpunk Farm",
+      "source_url": "https://fitgirl-repacks.site/russian-cyberpunk-farm/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
       "action": "removed-existing"
     },
     {
@@ -1477,7 +1557,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-10",
@@ -1489,7 +1569,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-11",
@@ -1501,7 +1581,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-12",
@@ -1513,7 +1593,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-13",
@@ -1525,7 +1605,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-14",
@@ -1537,7 +1617,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-15",
@@ -1549,7 +1629,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-16",
@@ -1561,7 +1641,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-17",
@@ -1573,7 +1653,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-18",
@@ -1585,7 +1665,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-19",
@@ -1597,7 +1677,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-2",
@@ -1609,7 +1689,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-21",
@@ -1621,7 +1701,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-22",
@@ -1633,7 +1713,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-23",
@@ -1645,7 +1725,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-24",
@@ -1657,7 +1737,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-25",
@@ -1669,7 +1749,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-26",
@@ -1681,7 +1761,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-27",
@@ -1693,7 +1773,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-3",
@@ -1703,7 +1783,7 @@
       "reason": "movie-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-4",
@@ -1713,7 +1793,7 @@
       "reason": "movie-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-5",
@@ -1725,7 +1805,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-6",
@@ -1737,7 +1817,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-7",
@@ -1749,7 +1829,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-weekend-8",
@@ -1762,7 +1842,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "ssl-disabled",
@@ -1772,7 +1852,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "ssl-is-now-required-for-visiting-my-site",
@@ -1782,7 +1862,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "scamming-scammers-videos",
@@ -1792,7 +1872,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "senran-kagura-estival-versus-not",
@@ -1802,7 +1882,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "september-3rd",
@@ -1812,7 +1892,7 @@
       "reason": "anniversary-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "september-3rd-2",
@@ -1822,7 +1902,7 @@
       "reason": "anniversary-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "september-3rd-2023",
@@ -1832,7 +1912,7 @@
       "reason": "anniversary-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "september-3rd-3",
@@ -1842,7 +1922,7 @@
       "reason": "anniversary-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "september-3rd-4",
@@ -1852,7 +1932,7 @@
       "reason": "anniversary-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "shadow-warrior-2-patch-v1-1-2-0",
@@ -1874,7 +1954,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "people-just-cant-fixed",
@@ -1898,7 +1978,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "steam-fixed-denuvo-bypass",
@@ -1908,7 +1988,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "temporary-mining-stop",
@@ -1918,7 +1998,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "testers-amd-wanted",
@@ -1928,7 +2008,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "that-which-does-not-kill-us-makes-us-stronger",
@@ -1940,7 +2020,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "day-requests-may-13-mark-calendar",
@@ -1992,7 +2072,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "the-sims-4-bug-test",
@@ -2002,7 +2082,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "world-much-bigger-village",
@@ -2014,7 +2094,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "tiny-compression-test",
@@ -2046,7 +2126,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "trials-of-mana-denuvoless-build-added",
@@ -2056,7 +2136,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "ubisoft-is-adding-denuvo-to-previously-unprotected-games",
@@ -2068,7 +2148,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "upcoming-repacks-10",
@@ -9729,7 +9809,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "watch-dogs-2-repack-poll",
@@ -9739,7 +9819,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "welcome-team-apex",
@@ -9751,7 +9831,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "when-will-you-upload-the-repack-for-n",
@@ -9763,7 +9843,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "who-are-you",
@@ -9775,7 +9855,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "why-gog-offline-installers-suck",
@@ -9787,7 +9867,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "why-i-dont-repack-final-fantasy-xv",
@@ -9797,7 +9877,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "winners-day-requests",
@@ -9817,7 +9897,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "woff-woff-woff",
@@ -9837,7 +9917,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "yawobfr",
@@ -9849,7 +9929,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "yet-another-compression-test",
@@ -9889,7 +9969,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "age-of-wonders-3-eternal-lords",
@@ -9913,16 +9993,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "birchpunk-special-ai-vanich-in-the-russian-cyberfarm",
-      "title": "BIRCHPUNK SPECIAL – AI-VANICH IN THE RUSSIAN CYBERFARM",
-      "source_url": "https://fitgirl-repacks.site/birchpunk-special-ai-vanich-in-the-russian-cyberfarm/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -9953,18 +10023,6 @@
       "id": "battle-fantasia-revised-edition",
       "title": "Battle Fantasia -Revised Edition-",
       "source_url": "https://fitgirl-repacks.site/battle-fantasia-revised-edition/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "believers",
-      "title": "Believers",
-      "source_url": "https://fitgirl-repacks.site/believers/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10247,18 +10305,6 @@
       "action": "review-retained"
     },
     {
-      "id": "looks-familiar",
-      "title": "Looks familiar?",
-      "source_url": "https://fitgirl-repacks.site/looks-familiar/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "mordheim-city-of-the-damned-v1-3-4-2-5-dlc",
       "title": "Mordheim: City of the Damned v1.3.4.2 + 5 DLC",
       "source_url": "https://fitgirl-repacks.site/mordheim-city-of-the-damned-v1-3-4-2-5-dlc/",
@@ -10295,30 +10341,6 @@
       "action": "review-retained"
     },
     {
-      "id": "oldies-here",
-      "title": "Oldies here?",
-      "source_url": "https://fitgirl-repacks.site/oldies-here/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "people-like-this-really-exist",
-      "title": "People like this really exist",
-      "source_url": "https://fitgirl-repacks.site/people-like-this-really-exist/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "pro-cycling-manager-2015",
       "title": "Pro Cycling Manager 2015",
       "source_url": "https://fitgirl-repacks.site/pro-cycling-manager-2015/",
@@ -10334,18 +10356,6 @@
       "id": "pro-evolution-soccer-2016-v1-05-data-pack-4-0",
       "title": "Pro Evolution Soccer 2016 v1.05 + Data Pack 4.0",
       "source_url": "https://fitgirl-repacks.site/pro-evolution-soccer-2016-v1-05-data-pack-4-0/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "racing-sir-mostly-racing",
-      "title": "Racing, sir. Mostly racing.",
-      "source_url": "https://fitgirl-repacks.site/racing-sir-mostly-racing/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10412,16 +10422,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-cyberpunk-farm",
-      "title": "Russian Cyberpunk Farm",
-      "source_url": "https://fitgirl-repacks.site/russian-cyberpunk-farm/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {

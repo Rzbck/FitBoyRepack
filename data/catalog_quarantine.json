@@ -179,7 +179,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "because-why-not",
@@ -201,7 +201,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "black-ops-3-repack-status",
@@ -1061,7 +1061,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "loved-kat-help-them-to-get-back",
@@ -1337,7 +1337,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "onedrive-as-a-hosting-speed-test",
@@ -1381,7 +1381,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "pink-paw-award",
@@ -1477,7 +1477,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "regarding-fresh-windows-10-update",
@@ -1545,7 +1545,7 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "russian-movies-9",

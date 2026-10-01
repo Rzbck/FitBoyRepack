@@ -46,14 +46,20 @@ def main() -> None:
     )
     assert picked is None
 
+    assert fast._retry_after_seconds("7", 0) == 7.0
+    assert fast._retry_after_seconds(None, 0) >= 5.0
+
     original_fetch = fast.fetch_one
 
-    def fake_fetch(game_id: str, title: str, candidate_limit: int):
+    def fake_fetch(game_id: str, title: str, candidate_limit: int, request_interval: float):
+        del candidate_limit, request_interval
         if game_id == "1":
             return game_id, title, [candidate(title, "Q1")], None
         if game_id == "2":
             return game_id, title, [], None
-        return game_id, title, None, "temporary network failure"
+        if game_id == "3":
+            return game_id, title, None, "permanent malformed response"
+        return game_id, title, None, "transient: HTTP 429 after retries; retry_after=5.0s"
 
     fast.fetch_one = fake_fetch
     try:
@@ -63,28 +69,36 @@ def main() -> None:
             games = [
                 game("1", "Example Game"),
                 game("2", "Unknown Indie"),
-                game("3", "Network Error Game"),
+                game("3", "Permanent Error Game"),
+                game("4", "Rate Limited Game"),
             ]
             initialize_queue(conn, games)
             stats = fast.run_fast_batch(
                 conn,
-                limit=3,
+                limit=4,
                 workers=2,
                 candidate_limit=3,
                 threshold=0.90,
                 margin=0.08,
+                request_interval=0.0,
             )
             assert stats == {
-                "processed": 3,
+                "processed": 4,
                 "done": 1,
                 "review": 1,
                 "failed": 1,
+                "deferred": 1,
                 "cache_hits": 0,
             }
             counts = queue_counts(conn)
             assert counts["done"] == 1
             assert counts["review"] == 1
             assert counts["failed"] == 1
+            assert counts["pending"] == 1
+            transient = conn.execute(
+                "SELECT status,last_error FROM jobs WHERE game_id='4'"
+            ).fetchone()
+            assert transient["status"] == "pending" and "429" in transient["last_error"]
 
             row = conn.execute(
                 "SELECT canonical_title,release_date,description_fr,notes FROM results WHERE game_id='1'"
@@ -94,7 +108,9 @@ def main() -> None:
             assert row["description_fr"] is None
             assert "French description pending" in row["notes"]
 
-            conn.execute("UPDATE jobs SET status='pending',last_error=NULL WHERE game_id='1'")
+            conn.execute(
+                "UPDATE jobs SET status='pending',last_error=NULL,queued_at='1970-01-01T00:00:00+00:00' WHERE game_id='1'"
+            )
             conn.commit()
 
             def should_not_fetch(*_args):
@@ -108,6 +124,7 @@ def main() -> None:
                 candidate_limit=3,
                 threshold=0.90,
                 margin=0.08,
+                request_interval=0.0,
             )
             assert cached["done"] == 1 and cached["cache_hits"] == 1
             conn.close()

@@ -6,18 +6,44 @@ UNKNOWN_SIZE_VALUES = {"", "N/A", "NA", "UNKNOWN", "-", "NONE"}
 
 # Editorial/site posts are rejected only when the record does not otherwise
 # have enough game metadata. Generic words such as Update/Fix/DLC are never
-# sufficient on their own.
+# sufficient on their own. Keep these patterns descriptive of a post *about*
+# the catalog/site rather than a game title.
 EDITORIAL_PATTERNS = (
     (re.compile(r"\bupdates digest\b", re.IGNORECASE), "updates-digest"),
     (re.compile(r"\bupcoming repacks\b", re.IGNORECASE), "upcoming-repacks"),
     (re.compile(r"\bdonations?\b", re.IGNORECASE), "donation-post"),
+    (re.compile(r"\bbrowser mining\b", re.IGNORECASE), "donation-post"),
     (re.compile(r"\bstatus update\b", re.IGNORECASE), "status-update"),
+    (re.compile(r"\brepacks? status\b", re.IGNORECASE), "repack-status"),
+    (re.compile(r"\brepack vote\b", re.IGNORECASE), "repack-vote"),
+    (re.compile(r"\brip or repack\?", re.IGNORECASE), "repack-poll"),
+    (re.compile(r"\brepack details\s*$", re.IGNORECASE), "repack-info-post"),
     (re.compile(r"^about\s+.+\bcracks?\b", re.IGNORECASE), "crack-editorial"),
+    (re.compile(r"^about\s+.+\brelease\s*$", re.IGNORECASE), "release-editorial"),
+    (re.compile(r"^about compression speed\s*$", re.IGNORECASE), "compression-editorial"),
     (re.compile(r"\bproper cracks?\s+added\b", re.IGNORECASE), "crack-update"),
     (re.compile(r"\bcracks?\s+added\b", re.IGNORECASE), "crack-update"),
+    (re.compile(r"\bcrackfix\b", re.IGNORECASE), "crack-update"),
+    (re.compile(r"\bcracked\b.*\bcracks?\b", re.IGNORECASE), "crack-news"),
+    (re.compile(r"^cpy is on fire!?$", re.IGNORECASE), "crack-news"),
+    (re.compile(r"\bdenuvo\b.*\bversus\b", re.IGNORECASE), "crack-news"),
     (re.compile(r"\brepack\s+updated\b", re.IGNORECASE), "repack-update-post"),
     (re.compile(r"\bupdates?\s+posted\b", re.IGNORECASE), "update-post"),
     (re.compile(r"\bupdated\s+repack\s+test\b", re.IGNORECASE), "repack-test-post"),
+    (re.compile(r"\bpatch to v?\d", re.IGNORECASE), "patch-post"),
+    (re.compile(r"\b(?:decompression|compression) test\b", re.IGNORECASE), "compression-test"),
+    (re.compile(r"\bwanted for testing\b", re.IGNORECASE), "testing-request"),
+    (re.compile(r"^a warning to\b", re.IGNORECASE), "site-warning"),
+    (re.compile(r"\bddos\b", re.IGNORECASE), "site-incident"),
+    (re.compile(r"^dns problems?\s*$", re.IGNORECASE), "site-incident"),
+    (re.compile(r"^all genres/tags are now links!?$", re.IGNORECASE), "site-feature-post"),
+    (re.compile(r"^all game uploads restored!?$", re.IGNORECASE), "upload-status"),
+    (re.compile(r"\bday of requests\b", re.IGNORECASE), "request-event"),
+    (re.compile(r"^delays in repacking\s*$", re.IGNORECASE), "repack-status"),
+    (re.compile(r"\bmining faq\b", re.IGNORECASE), "site-faq"),
+    (re.compile(r"\bneeds your help\b", re.IGNORECASE), "community-post"),
+    (re.compile(r"\brip,?\s+anyone need it\??", re.IGNORECASE), "repack-poll"),
+    (re.compile(r"^amelie report\b", re.IGNORECASE), "site-report"),
     (
         re.compile(
             r"(?:\bissue\b.*\bdirect download links?\b|\bdirect download links?\b.*\b(?:issue|fixed)\b)",

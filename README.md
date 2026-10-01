@@ -2,6 +2,10 @@
 
 Lightweight static game metadata catalog.
 
+## Live site
+
+**GitHub Pages:** https://rzbck.github.io/FitBoyRepack/
+
 ## Architecture
 
 The repository keeps one rich source catalog for the robots, while the public site is built into lightweight browser payloads:

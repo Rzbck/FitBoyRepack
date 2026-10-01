@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import io
+from contextlib import redirect_stdout
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -85,15 +87,26 @@ def main() -> None:
             conn = connect_db(db)
             initialize_queue(conn, [game("1", "Example Game"), game("2", "Unknown Indie")])
 
-            stats = batched.run_batched(
-                conn,
-                limit=2,
-                candidate_limit=3,
-                request_interval=0.0,
-                maxlag=10,
-                threshold=0.90,
-                margin=0.08,
-            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                stats = batched.run_batched(
+                    conn,
+                    limit=2,
+                    candidate_limit=3,
+                    request_interval=0.0,
+                    maxlag=10,
+                    threshold=0.90,
+                    margin=0.08,
+                    progress_every=1,
+                )
+            progress = output.getvalue()
+            assert "[PROGRESS] phase=prepare" in progress
+            assert "[PROGRESS] phase=search 1/2" in progress
+            assert "[PROGRESS] phase=candidate_entities" in progress
+            assert "[PROGRESS] phase=linked_labels" in progress
+            assert "[PROGRESS] phase=results" in progress
+            assert "[PROGRESS] phase=complete" in progress
+
             assert stats["done"] == 1
             assert stats["review"] == 1
             assert stats["deferred"] == 0
@@ -116,15 +129,19 @@ def main() -> None:
             db = Path(tmp) / "transient.sqlite3"
             conn = connect_db(db)
             initialize_queue(conn, [game("3", "Rate Limited Game")])
-            stats = batched.run_batched(
-                conn,
-                limit=1,
-                candidate_limit=3,
-                request_interval=0.0,
-                maxlag=10,
-                threshold=0.90,
-                margin=0.08,
-            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                stats = batched.run_batched(
+                    conn,
+                    limit=1,
+                    candidate_limit=3,
+                    request_interval=0.0,
+                    maxlag=10,
+                    threshold=0.90,
+                    margin=0.08,
+                    progress_every=1,
+                )
+            assert "[PROGRESS] phase=deferred" in output.getvalue()
             assert stats["deferred"] == 1
             assert stats["failed"] == 0
             row = conn.execute("SELECT status,last_error FROM jobs WHERE game_id='3'").fetchone()

@@ -95,6 +95,17 @@ def extract_genres(article):
     return []
 
 
+def article_content(article):
+    """Return only the post body used for card metadata.
+
+    WordPress listing articles can contain header/footer/navigation markup and
+    editorial posts can embed rich references to other games. Keeping metadata
+    extraction inside the entry body avoids accidentally reading neighboring
+    article chrome while title/date still come from the article wrapper.
+    """
+    return article.select_one(".entry-content, .post-content") or article
+
+
 def parse_article(article):
     link = article.select_one("h1.entry-title a, h2.entry-title a")
     if not link or not link.get("href"):
@@ -104,15 +115,16 @@ def parse_article(article):
         return None
 
     source = link["href"].replace("http://", "https://")
-    size_match = SIZE_RE.search(article.get_text(" ", strip=True))
+    content = article_content(article)
+    size_match = SIZE_RE.search(content.get_text(" ", strip=True))
     time_tag = article.find("time")
     return {
         "id": post_id(source),
         "title": title,
         "source_url": source,
-        "image_url": image_url(article.find("img")),
+        "image_url": image_url(content.find("img")),
         "post_date": time_tag.get("datetime") if time_tag else None,
-        "genres": extract_genres(article),
+        "genres": extract_genres(content),
         "repack_size": size_match.group(1).replace(",", ".") if size_match else "N/A",
     }
 

@@ -1,4 +1,5023 @@
 {
   "version": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "a-call-for-donations",
+      "title": "A Call for Donations",
+      "source_url": "https://fitgirl-repacks.site/a-call-for-donations/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "a-call-for-donations-2",
+      "title": "A Call for Donations",
+      "source_url": "https://fitgirl-repacks.site/a-call-for-donations-2/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "about-hypervisor-cracks",
+      "title": "About Hypervisor Cracks",
+      "source_url": "https://fitgirl-repacks.site/about-hypervisor-cracks/",
+      "classification": "non_game",
+      "reason": "crack-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "bo-path-of-the-teal-lotus",
+      "title": "Bō: Path of the Teal Lotus – Soundtrack Bundle , v1.2.7 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/bo-path-of-the-teal-lotus/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 10,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "captain-contraptions-chocolate-factory",
+      "title": "Captain Contraption’s Chocolate Factory – Soundtrack Bundle, v1.22 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/captain-contraptions-chocolate-factory/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 10,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "dqh2-twwh2-proper-cracks-added",
+      "title": "DQH2 & TWWH2 Proper Cracks Added",
+      "source_url": "https://fitgirl-repacks.site/dqh2-twwh2-proper-cracks-added/",
+      "classification": "non_game",
+      "reason": "crack-update",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "detroit-become-human-updated-repack-test",
+      "title": "Detroit: Become Human – Updated Repack test",
+      "source_url": "https://fitgirl-repacks.site/detroit-become-human-updated-repack-test/",
+      "classification": "non_game",
+      "reason": "repack-test-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "donation-mining-resumed",
+      "title": "Donation Mining Resumed",
+      "source_url": "https://fitgirl-repacks.site/donation-mining-resumed/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "donations-page-updonated",
+      "title": "Donations page updonated",
+      "source_url": "https://fitgirl-repacks.site/donations-page-updonated/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fallout-4-high-resolution-texture-pack",
+      "title": "Fallout 4: High Resolution Texture Pack – for v1.10.980.0+",
+      "source_url": "https://fitgirl-repacks.site/fallout-4-high-resolution-texture-pack/",
+      "classification": "non_game",
+      "reason": "standalone-texture-pack",
+      "score": 10,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "hellblade-senuas-sacrifice-repack-updated",
+      "title": "Hellblade: Senua’s Sacrifice Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/hellblade-senuas-sacrifice-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "homura-hime",
+      "title": "Homura Hime: Soundtrack Bundle, v1.0.8 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/homura-hime/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 7,
+      "signals": [
+        "genres",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "horizon-forbidden-west-complete-edition-updates-posted",
+      "title": "Horizon: Forbidden West – Complete Edition  Updates posted",
+      "source_url": "https://fitgirl-repacks.site/horizon-forbidden-west-complete-edition-updates-posted/",
+      "classification": "non_game",
+      "reason": "update-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "hypervisor-cracks-status-update",
+      "title": "HyperVisor Cracks – Status Update",
+      "source_url": "https://fitgirl-repacks.site/hypervisor-cracks-status-update/",
+      "classification": "non_game",
+      "reason": "status-update",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "installer-fixes",
+      "title": "Installer fixes",
+      "source_url": "https://fitgirl-repacks.site/installer-fixes/",
+      "classification": "non_game",
+      "reason": "installer-fix-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "keylocker-turn-based-cyberpunk-action",
+      "title": "Keylocker: Turn Based Cyberpunk Action – Soundtrack Bundle, Build 16635931 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/keylocker-turn-based-cyberpunk-action/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 7,
+      "signals": [
+        "genres",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "man-o-war-corsair-repack-updated",
+      "title": "Man O’ War: Corsair Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/man-o-war-corsair-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "mining-donation-option-changed",
+      "title": "Mining Donation Option Changed",
+      "source_url": "https://fitgirl-repacks.site/mining-donation-option-changed/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "more-donation-options-added",
+      "title": "More Donation Options Added",
+      "source_url": "https://fitgirl-repacks.site/more-donation-options-added/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "outer-wilds-repack-updated",
+      "title": "Outer Wilds Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/outer-wilds-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "please-stop-your-donation-miners",
+      "title": "Please stop your Donation Miners",
+      "source_url": "https://fitgirl-repacks.site/please-stop-your-donation-miners/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "puyo-puyo-tetris-codex-crack-added",
+      "title": "Puyo Puyo Tetris CODEX Crack Added",
+      "source_url": "https://fitgirl-repacks.site/puyo-puyo-tetris-codex-crack-added/",
+      "classification": "non_game",
+      "reason": "crack-update",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "robotics-notes-elite",
+      "title": "ROBOTICS;NOTES ELITE + Mini-soundtrack",
+      "source_url": "https://fitgirl-repacks.site/robotics-notes-elite/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 10,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "republic-of-pirates",
+      "title": "Republic of Pirates: Soundtrack Bundle – v0.24.3 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/republic-of-pirates/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 7,
+      "signals": [
+        "genres",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "people-just-cant-fixed",
+      "title": "Some people just can’t be fixed",
+      "source_url": "https://fitgirl-repacks.site/people-just-cant-fixed/",
+      "classification": "non_game",
+      "reason": "editorial-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "the-tag-along-obsession",
+      "title": "THE TAG-ALONG OBSESSION: Soundtrack Bundle, Update 10/04 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/the-tag-along-obsession/",
+      "classification": "non_game",
+      "reason": "standalone-soundtrack",
+      "score": 10,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image",
+        "description",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "the-issue-with-direct-download-links-should-be-fixed-now",
+      "title": "The Issue with Direct Download Links Should Be Fixed Now",
+      "source_url": "https://fitgirl-repacks.site/the-issue-with-direct-download-links-should-be-fixed-now/",
+      "classification": "non_game",
+      "reason": "site-link-status",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "updates-digest-for-april-1-2025",
+      "title": "Updates Digest for April 1, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-1-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-april-17-2026",
+      "title": "Updates Digest for April 17, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-17-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-april-25-2026",
+      "title": "Updates Digest for April 25, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-25-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-april-29-2026",
+      "title": "Updates Digest for April 29, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-29-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-april-5-2025",
+      "title": "Updates Digest for April 5, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-5-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-april-7-2025",
+      "title": "Updates Digest for April 7, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-7-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-10-2024",
+      "title": "Updates Digest for August 10, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-10-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-12-2024",
+      "title": "Updates Digest for August 12, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-12-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-14-2024",
+      "title": "Updates Digest for August 14, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-14-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-15-2025",
+      "title": "Updates Digest for August 15, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-15-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-16-2024",
+      "title": "Updates Digest for August 16, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-16-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-17-2024",
+      "title": "Updates Digest for August 17, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-17-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-18-2024",
+      "title": "Updates Digest for August 18, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-18-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-19-2024",
+      "title": "Updates Digest for August 19, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-19-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-2-2024",
+      "title": "Updates Digest for August 2, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-2-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-20-2024",
+      "title": "Updates Digest for August 20, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-20-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-20-2026",
+      "title": "Updates Digest for August 20, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-20-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-22-2024",
+      "title": "Updates Digest for August 22, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-22-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-25-2024",
+      "title": "Updates Digest for August 25, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-25-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-26-2024",
+      "title": "Updates Digest for August 26, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-26-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-29-2024",
+      "title": "Updates Digest for August 29, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-29-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-3-2025",
+      "title": "Updates Digest for August 3, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-3-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-31-2024",
+      "title": "Updates Digest for August 31, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-31-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-4-2024",
+      "title": "Updates Digest for August 4, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-4-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-6-2024",
+      "title": "Updates Digest for August 6, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-6-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-8-2026",
+      "title": "Updates Digest for August 8, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-8-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-august-9-2024",
+      "title": "Updates Digest for August 9, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-9-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-december-17-2024",
+      "title": "Updates Digest for December 17, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-17-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-december-23-2025",
+      "title": "Updates Digest for December 23, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-23-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-december-27-2025",
+      "title": "Updates Digest for December 27, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-27-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-december-30-2024",
+      "title": "Updates Digest for December 30, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-30-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-december-31-2025",
+      "title": "Updates Digest for December 31, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-31-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-december-7-2025",
+      "title": "Updates Digest for December 7, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-7-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-february-19-2025",
+      "title": "Updates Digest for February 19, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-19-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-february-21-2026",
+      "title": "Updates Digest for February 21, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-21-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-february-24-2025",
+      "title": "Updates Digest for February 24, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-24-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-february-27-2025",
+      "title": "Updates Digest for February 27, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-27-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-february-3-2026",
+      "title": "Updates Digest for February 3, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-3-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-february-5-2025",
+      "title": "Updates Digest for February 5, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-5-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-january-15-2025",
+      "title": "Updates Digest for January 15, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-15-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-1-2026",
+      "title": "Updates Digest for July 1, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-1-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-10-2024",
+      "title": "Updates Digest for July 10, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-10-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-11-2024",
+      "title": "Updates Digest for July 11, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-11-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-12-2024",
+      "title": "Updates Digest for July 12, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-12-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-13-2024",
+      "title": "Updates Digest for July 13, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-13-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-13-2026",
+      "title": "Updates Digest for July 13, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-13-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-14-2024",
+      "title": "Updates Digest for July 14, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-14-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-15-2026",
+      "title": "Updates Digest for July 15, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-15-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-16-2024",
+      "title": "Updates Digest for July 16, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-16-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-18-2024",
+      "title": "Updates Digest for July 18, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-18-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-2-2024",
+      "title": "Updates Digest for July 2, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-2-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-20-2024",
+      "title": "Updates Digest for July 20, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-20-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-21-2024",
+      "title": "Updates Digest for July 21, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-21-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-22-2024",
+      "title": "Updates Digest for July 22, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-22-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-24-2024",
+      "title": "Updates Digest for July 24, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-24-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-25-2024",
+      "title": "Updates Digest for July 25, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-25-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-26-2024",
+      "title": "Updates Digest for July 26, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-26-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-28-2024",
+      "title": "Updates Digest for July 28, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-28-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-28-2026",
+      "title": "Updates Digest for July 28, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-28-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-3-2024",
+      "title": "Updates Digest for July 3, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-3-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-30-2024",
+      "title": "Updates Digest for July 30, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-30-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-31-2024",
+      "title": "Updates Digest for July 31, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-31-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-31-2026",
+      "title": "Updates Digest for July 31, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-31-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-4-2024",
+      "title": "Updates Digest for July 4, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-4-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-5-2024",
+      "title": "Updates Digest for July 5, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-5-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-5-2026",
+      "title": "Updates Digest for July 5, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-5-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-6-2024",
+      "title": "Updates Digest for July 6, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-6-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-july-8-2024",
+      "title": "Updates Digest for July 8, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-8-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-1-2024",
+      "title": "Updates Digest for June 1, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-1-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-10-2024",
+      "title": "Updates Digest for June 10, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-10-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-12-2024",
+      "title": "Updates Digest for June 12, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-12-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-12-2026",
+      "title": "Updates Digest for June 12, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-12-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-13-2024",
+      "title": "Updates Digest for June 13, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-13-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-16-2024",
+      "title": "Updates Digest for June 16, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-16-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-17-2024",
+      "title": "Updates Digest for June 17, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-17-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-19-2024",
+      "title": "Updates Digest for June 19, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-19-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-21-2024",
+      "title": "Updates Digest for June 21, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-21-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-23-2024",
+      "title": "Updates Digest for June 23, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-23-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-25-2024",
+      "title": "Updates Digest for June 25, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-25-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-25-2025",
+      "title": "Updates Digest for June 25, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-25-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-26-2024",
+      "title": "Updates Digest for June 26, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-26-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-27-2024",
+      "title": "Updates Digest for June 27, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-27-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-29-2024",
+      "title": "Updates Digest for June 29, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-29-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-29-2026",
+      "title": "Updates Digest for June 29, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-29-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-3-2024",
+      "title": "Updates Digest for June 3, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-3-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-4-2024",
+      "title": "Updates Digest for June 4, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-4-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-5-2024",
+      "title": "Updates Digest for June 5, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-5-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-7-2024",
+      "title": "Updates Digest for June 7, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-7-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-8-2024",
+      "title": "Updates Digest for June 8, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-8-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-june-9-2024",
+      "title": "Updates Digest for June 9, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-9-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-march-10-2026",
+      "title": "Updates Digest for March 10, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-10-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-march-18-2026",
+      "title": "Updates Digest for March 18, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-18-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-march-2-2026",
+      "title": "Updates Digest for March 2, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-2-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-10-2024",
+      "title": "Updates Digest for May 10, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-10-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-12-2024",
+      "title": "Updates Digest for May 12, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-12-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-13-2024",
+      "title": "Updates Digest for May 13, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-13-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-14-2024",
+      "title": "Updates Digest for May 14, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-14-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-15-2024",
+      "title": "Updates Digest for May 15, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-15-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-15-2026",
+      "title": "Updates Digest for May 15, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-15-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-17-2024",
+      "title": "Updates Digest for May 17, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-17-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-19-2024",
+      "title": "Updates Digest for May 19, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-19-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-21-2024",
+      "title": "Updates Digest for May 21, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-21-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-21-2025",
+      "title": "Updates Digest for May 21, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-21-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-22-2024",
+      "title": "Updates Digest for May 22, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-22-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-23-2024",
+      "title": "Updates Digest for May 23, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-23-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-24-2024",
+      "title": "Updates Digest for May 24, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-24-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-24-2025",
+      "title": "Updates Digest for May 24, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-24-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-26-2024",
+      "title": "Updates Digest for May 26, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-26-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-27-2024",
+      "title": "Updates Digest for May 27, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-27-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-28-2024",
+      "title": "Updates Digest for May 28, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-28-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-29-2024",
+      "title": "Updates Digest for May 29, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-29-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-3-2026",
+      "title": "Updates Digest for May 3, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-3-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-30-2024",
+      "title": "Updates Digest for May 30, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-30-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-31-2024",
+      "title": "Updates Digest for May 31, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-31-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-7-2024",
+      "title": "Updates Digest for May 7, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-7-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-8-2024",
+      "title": "Updates Digest for May 8, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-8-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-may-9-2024",
+      "title": "Updates Digest for May 9, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-9-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-november-11-2025",
+      "title": "Updates Digest for November 11, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-11-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-november-20-2025",
+      "title": "Updates Digest for November 20, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-20-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-november-3-2024",
+      "title": "Updates Digest for November 3, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-3-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-november-8-2024",
+      "title": "Updates Digest for November 8, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-8-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-1-2024",
+      "title": "Updates Digest for October 1, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-1-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-10-2024",
+      "title": "Updates Digest for October 10, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-10-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-10-2025",
+      "title": "Updates Digest for October 10, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-10-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-11-2024",
+      "title": "Updates Digest for October 11, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-11-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-16-2025",
+      "title": "Updates Digest for October 16, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-16-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-3-2024",
+      "title": "Updates Digest for October 3, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-3-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-5-2024",
+      "title": "Updates Digest for October 5, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-5-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-5-2025",
+      "title": "Updates Digest for October 5, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-5-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-6-2024",
+      "title": "Updates Digest for October 6, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-6-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-7-2024",
+      "title": "Updates Digest for October 7, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-7-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-8-2024",
+      "title": "Updates Digest for October 8, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-8-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-9-2024",
+      "title": "Updates Digest for October 9, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-9-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-10-2024",
+      "title": "Updates Digest for September 10, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-10-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-11-2024",
+      "title": "Updates Digest for September 11, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-11-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-12-2024",
+      "title": "Updates Digest for September 12, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-12-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-14-2024",
+      "title": "Updates Digest for September 14, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-14-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-17-2024",
+      "title": "Updates Digest for September 17, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-17-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-18-2025",
+      "title": "Updates Digest for September 18, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-18-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-19-2024",
+      "title": "Updates Digest for September 19, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-19-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-19-2025",
+      "title": "Updates Digest for September 19, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-19-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-2-2024",
+      "title": "Updates Digest for September 2, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-2-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-2-2025",
+      "title": "Updates Digest for September 2, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-2-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-20-2024",
+      "title": "Updates Digest for September 20, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-20-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-21-2024",
+      "title": "Updates Digest for September 21, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-21-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-22-2024",
+      "title": "Updates Digest for September 22, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-22-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-24-2024",
+      "title": "Updates Digest for September 24, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-24-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-26-2024",
+      "title": "Updates Digest for September 26, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-26-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-26-2026",
+      "title": "Updates Digest for September 26, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-26-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-27-2024",
+      "title": "Updates Digest for September 27, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-27-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-28-2024",
+      "title": "Updates Digest for September 28, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-28-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-29-2024",
+      "title": "Updates Digest for September 29, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-29-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-29-2025",
+      "title": "Updates Digest for September 29, 2025",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-29-2025/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-3-2024",
+      "title": "Updates Digest for September 3, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-3-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-4-2024",
+      "title": "Updates Digest for September 4, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-4-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-8-2024",
+      "title": "Updates Digest for September 8, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-8-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-9-2024",
+      "title": "Updates Digest for September 9, 2024",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-9-2024/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-september-9-2026",
+      "title": "Updates Digest for September 9, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-9-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "woff-woff-woff",
+      "title": "World of Final Fantasy Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/woff-woff-woff/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "yet-another-fix-mea-repack",
+      "title": "Yet another fix for MEA repack :)",
+      "source_url": "https://fitgirl-repacks.site/yet-another-fix-mea-repack/",
+      "classification": "non_game",
+      "reason": "fix-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "a-call-for-ho-ho-honations",
+      "title": "A Call for Ho-Ho-Honations",
+      "source_url": "https://fitgirl-repacks.site/a-call-for-ho-ho-honations/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "warning-megaupload-users",
+      "title": "A warning to all MegaUpload users!",
+      "source_url": "https://fitgirl-repacks.site/warning-megaupload-users/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "amd-old-intel-cpu-owners-wanted-testing",
+      "title": "AMD (and old Intel) CPU owners wanted for testing",
+      "source_url": "https://fitgirl-repacks.site/amd-old-intel-cpu-owners-wanted-testing/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "about-pragmata-release",
+      "title": "About PRAGMATA Release",
+      "source_url": "https://fitgirl-repacks.site/about-pragmata-release/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "about-compression-speed",
+      "title": "About compression speed",
+      "source_url": "https://fitgirl-repacks.site/about-compression-speed/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "age-of-wonders-3-eternal-lords",
+      "title": "Age of Wonders 3: Eternal Lords",
+      "source_url": "https://fitgirl-repacks.site/age-of-wonders-3-eternal-lords/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "agents-of-mayhem-patch-to-v1-03",
+      "title": "Agents of Mayhem, Patch to v1.03",
+      "source_url": "https://fitgirl-repacks.site/agents-of-mayhem-patch-to-v1-03/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "all-genres-tags-are-now-links",
+      "title": "All Genres/Tags Are Now Links",
+      "source_url": "https://fitgirl-repacks.site/all-genres-tags-are-now-links/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "all-sp-denuvo-games-are-cracked-bypassed",
+      "title": "All SP/Non-VR Denuvo Games are cracked/bypassed",
+      "source_url": "https://fitgirl-repacks.site/all-sp-denuvo-games-are-cracked-bypassed/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "all-game-uploads-restored",
+      "title": "All game uploads restored!",
+      "source_url": "https://fitgirl-repacks.site/all-game-uploads-restored/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "amelie-report-october-2021",
+      "title": "Amelie Report October 2021",
+      "source_url": "https://fitgirl-repacks.site/amelie-report-october-2021/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 2,
+      "signals": [
+        "image",
+        "media"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "anno-1800-crackfix-empress",
+      "title": "Anno.1800.Crackfix-EMPRESS",
+      "source_url": "https://fitgirl-repacks.site/anno-1800-crackfix-empress/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "another-ddos",
+      "title": "Another DDoS",
+      "source_url": "https://fitgirl-repacks.site/another-ddos/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "ashes-of-the-singularity",
+      "title": "Ashes of the Singularity",
+      "source_url": "https://fitgirl-repacks.site/ashes-of-the-singularity/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "assassins-creed-origins-repack-vote",
+      "title": "Assassin’s Creed: Origins Repack Vote",
+      "source_url": "https://fitgirl-repacks.site/assassins-creed-origins-repack-vote/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "birchpunk-special-ai-vanich-in-the-russian-cyberfarm",
+      "title": "BIRCHPUNK SPECIAL – AI-VANICH IN THE RUSSIAN CYBERFARM",
+      "source_url": "https://fitgirl-repacks.site/birchpunk-special-ai-vanich-in-the-russian-cyberfarm/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "bladestorm-nightmare",
+      "title": "BLADESTORM: Nightmare",
+      "source_url": "https://fitgirl-repacks.site/bladestorm-nightmare/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "batman-arkham-knight",
+      "title": "Batman: Arkham Knight",
+      "source_url": "https://fitgirl-repacks.site/batman-arkham-knight/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "battle-fantasia-revised-edition",
+      "title": "Battle Fantasia -Revised Edition-",
+      "source_url": "https://fitgirl-repacks.site/battle-fantasia-revised-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "because-why-not",
+      "title": "Because why not",
+      "source_url": "https://fitgirl-repacks.site/because-why-not/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "believers",
+      "title": "Believers",
+      "source_url": "https://fitgirl-repacks.site/believers/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "black-ops-3-repack-status",
+      "title": "Black Ops 3 Repack Status",
+      "source_url": "https://fitgirl-repacks.site/black-ops-3-repack-status/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "browser-mining-faq-added",
+      "title": "Browser Mining FAQ Added",
+      "source_url": "https://fitgirl-repacks.site/browser-mining-faq-added/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "browser-mining-as-a-way-of-donating",
+      "title": "Browser Mining as a Way of Donating",
+      "source_url": "https://fitgirl-repacks.site/browser-mining-as-a-way-of-donating/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "cpy-cracked-rottr-i-guess-more-cracks-incoming",
+      "title": "CPY cracked RotTR, I guess more cracks incoming",
+      "source_url": "https://fitgirl-repacks.site/cpy-cracked-rottr-i-guess-more-cracks-incoming/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "cpy-is-on-fire",
+      "title": "CPY is on fire!",
+      "source_url": "https://fitgirl-repacks.site/cpy-is-on-fire/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "cs-rin-ru-needs-your-help",
+      "title": "CS.RIN.RU Needs Your Help",
+      "source_url": "https://fitgirl-repacks.site/cs-rin-ru-needs-your-help/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "cod-black-ops-3-repack-status",
+      "title": "CoD Black Ops 3 Repack Status",
+      "source_url": "https://fitgirl-repacks.site/cod-black-ops-3-repack-status/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "cod-wwii-rip-or-repack",
+      "title": "CoD: WWII – rip or repack?",
+      "source_url": "https://fitgirl-repacks.site/cod-wwii-rip-or-repack/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "cods-repacks-status",
+      "title": "CoDs repacks status",
+      "source_url": "https://fitgirl-repacks.site/cods-repacks-status/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "cosmonautica-a-space-trading-adventure",
+      "title": "Cosmonautica: A Space Trading Adventure",
+      "source_url": "https://fitgirl-repacks.site/cosmonautica-a-space-trading-adventure/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "crusader-kings-2-horse-lords-v2-4-1-57-dlcs",
+      "title": "Crusader Kings 2: Horse Lords v2.4.1 + 57 DLCs",
+      "source_url": "https://fitgirl-repacks.site/crusader-kings-2-horse-lords-v2-4-1-57-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "cyberpunk-2077-inquery",
+      "title": "Cyberpunk 2077 Inquery",
+      "source_url": "https://fitgirl-repacks.site/cyberpunk-2077-inquery/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "dmc5-related-decompression-test",
+      "title": "DMC5-related Decompression Test",
+      "source_url": "https://fitgirl-repacks.site/dmc5-related-decompression-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "dns-problems",
+      "title": "DNS Problems",
+      "source_url": "https://fitgirl-repacks.site/dns-problems/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "doom-rip-anyone-need",
+      "title": "DOOM Rip, anyone need it?",
+      "source_url": "https://fitgirl-repacks.site/doom-rip-anyone-need/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "doom-iddqd-repack-details",
+      "title": "DOOM: IDDQD Repack details",
+      "source_url": "https://fitgirl-repacks.site/doom-iddqd-repack-details/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "danganronpa-trigger-happy-havoc-limited-edition",
+      "title": "Danganronpa: Trigger Happy Havoc – Limited Edition",
+      "source_url": "https://fitgirl-repacks.site/danganronpa-trigger-happy-havoc-limited-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "danger-gazers-1-1-0-developer-shotx-official-developers-torrent",
+      "title": "Danger.Gazers.1.1.0.Developer.ShotX (Official Developer’s Torrent)",
+      "source_url": "https://fitgirl-repacks.site/danger-gazers-1-1-0-developer-shotx-official-developers-torrent/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "darksiders-2-deathinitive-edition-update-2",
+      "title": "Darksiders 2: Deathinitive Edition + Update 2",
+      "source_url": "https://fitgirl-repacks.site/darksiders-2-deathinitive-edition-update-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "darksiders-2-the-complete-edition",
+      "title": "Darksiders 2: The Complete Edition",
+      "source_url": "https://fitgirl-repacks.site/darksiders-2-the-complete-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "day-of-requests-results",
+      "title": "Day of Requests Results",
+      "source_url": "https://fitgirl-repacks.site/day-of-requests-results/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "day-of-requests-stage-1",
+      "title": "Day of Requests: Stage 1",
+      "source_url": "https://fitgirl-repacks.site/day-of-requests-stage-1/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "day-of-requests-stage-2",
+      "title": "Day of Requests: Stage 2",
+      "source_url": "https://fitgirl-repacks.site/day-of-requests-stage-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "dead-rising-2-complete-pack",
+      "title": "Dead Rising 2: Complete Pack",
+      "source_url": "https://fitgirl-repacks.site/dead-rising-2-complete-pack/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "decompression-test",
+      "title": "Decompression Test",
+      "source_url": "https://fitgirl-repacks.site/decompression-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "decompression-test-2-stress",
+      "title": "Decompression Test #2 – STRESS IT!",
+      "source_url": "https://fitgirl-repacks.site/decompression-test-2-stress/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "delays-in-repacking",
+      "title": "Delays in repacking",
+      "source_url": "https://fitgirl-repacks.site/delays-in-repacking/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "denuvo-versus-voksi",
+      "title": "Denuvo versus Voksi",
+      "source_url": "https://fitgirl-repacks.site/denuvo-versus-voksi/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "dirt-3-complete-edition",
+      "title": "DiRT 3: Complete Edition",
+      "source_url": "https://fitgirl-repacks.site/dirt-3-complete-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 2,
+      "signals": [
+        "image",
+        "media"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "diablo-2-resurrected-pc",
+      "title": "Diablo II: Resurrected – v1.3.70409 (v2.4.3)",
+      "source_url": "https://fitgirl-repacks.site/diablo-2-resurrected-pc/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "dishonored-2-spanish-video-patch",
+      "title": "Dishonored 2 Spanish Video Patch",
+      "source_url": "https://fitgirl-repacks.site/dishonored-2-spanish-video-patch/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "divinity-original-sin-digital-collectors-edition-v1-0-252-0",
+      "title": "Divinity: Original Sin – Digital Collector’s Edition, v1.0.252.0",
+      "source_url": "https://fitgirl-repacks.site/divinity-original-sin-digital-collectors-edition-v1-0-252-0/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "do-you-want-developers-build-of-atomic-heart-to-be-repacked",
+      "title": "Do you want Developers Build of Atomic Heart to be repacked?",
+      "source_url": "https://fitgirl-repacks.site/do-you-want-developers-build-of-atomic-heart-to-be-repacked/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "domain-issue-resolved",
+      "title": "Domain Issue Resolved",
+      "source_url": "https://fitgirl-repacks.site/domain-issue-resolved/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "doom-rottr",
+      "title": "Doom & RotTR",
+      "source_url": "https://fitgirl-repacks.site/doom-rottr/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "dragon-quest-heroes-slime-edition",
+      "title": "Dragon Quest Heroes: Slime Edition",
+      "source_url": "https://fitgirl-repacks.site/dragon-quest-heroes-slime-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "dying-light-v1-6-0-all-dlcs",
+      "title": "Dying Light v1.6.0 + All DLCs",
+      "source_url": "https://fitgirl-repacks.site/dying-light-v1-6-0-all-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "emergency-2016",
+      "title": "Emergency 2016",
+      "source_url": "https://fitgirl-repacks.site/emergency-2016/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "evolve",
+      "title": "Evolve",
+      "source_url": "https://fitgirl-repacks.site/evolve/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "fifa-15-ultimate-team-edition",
+      "title": "FIFA 15: Ultimate Team Edition",
+      "source_url": "https://fitgirl-repacks.site/fifa-15-ultimate-team-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "fifa-19-repack-poll",
+      "title": "FIFA 19 Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/fifa-19-repack-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "fifa-19-turtle-repack-poll",
+      "title": "FIFA 19 Turtle Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/fifa-19-turtle-repack-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "facebook-imposters",
+      "title": "Facebook Imposters",
+      "source_url": "https://fitgirl-repacks.site/facebook-imposters/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "fallout-4-witcher-3",
+      "title": "Fallout 4 or Witcher 3?",
+      "source_url": "https://fitgirl-repacks.site/fallout-4-witcher-3/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "farewell-extratorrent",
+      "title": "Farewell, ExtraTorrent",
+      "source_url": "https://fitgirl-repacks.site/farewell-extratorrent/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "faster-installation-vote-now",
+      "title": "Faster Installation? Vote now!",
+      "source_url": "https://fitgirl-repacks.site/faster-installation-vote-now/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "final-fantasy-type-0-hd",
+      "title": "Final Fantasy Type-0 HD",
+      "source_url": "https://fitgirl-repacks.site/final-fantasy-type-0-hd/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "fitgirl-recommends-russian-movies",
+      "title": "FitGirl Recommends Russian Movies #1",
+      "source_url": "https://fitgirl-repacks.site/fitgirl-recommends-russian-movies/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "fitgirl-repacks-11-years-in-service",
+      "title": "FitGirl Repacks – 11 Years in Service",
+      "source_url": "https://fitgirl-repacks.site/fitgirl-repacks-11-years-in-service/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "fitgirl-repacks-belated-x-anniversary",
+      "title": "FitGirl Repacks – Belated X Anniversary",
+      "source_url": "https://fitgirl-repacks.site/fitgirl-repacks-belated-x-anniversary/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "fitgirls-browser-miner-is-online",
+      "title": "FitGirl’s Browser Miner is Online",
+      "source_url": "https://fitgirl-repacks.site/fitgirls-browser-miner-is-online/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "from-repacking-to-hacking",
+      "title": "From repacking to hacking",
+      "source_url": "https://fitgirl-repacks.site/from-repacking-to-hacking/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "gta-v-ultra-repack-v2-1x-details",
+      "title": "GTA V Ultra Repack v2.1x Details",
+      "source_url": "https://fitgirl-repacks.site/gta-v-ultra-repack-v2-1x-details/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "guilty-gear-xrd-sign",
+      "title": "GUILTY GEAR Xrd -SIGN-",
+      "source_url": "https://fitgirl-repacks.site/guilty-gear-xrd-sign/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "games-re-repacking",
+      "title": "Games for re-repacking",
+      "source_url": "https://fitgirl-repacks.site/games-re-repacking/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "games4up-mirrors-virus-warning",
+      "title": "Games4Up Mirrors – VIRUS WARNING!",
+      "source_url": "https://fitgirl-repacks.site/games4up-mirrors-virus-warning/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "gears-of-war-ultimate-edition-repack-poll",
+      "title": "Gears of War: Ultimate Edition Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/gears-of-war-ultimate-edition-repack-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "good-read-about-hypervisor",
+      "title": "Good read about Hypervisor",
+      "source_url": "https://fitgirl-repacks.site/good-read-about-hypervisor/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "goodbye-codex",
+      "title": "Goodbye, CODEX",
+      "source_url": "https://fitgirl-repacks.site/goodbye-codex/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "got-problems-fitgirl-rescue",
+      "title": "Got problems? FitGirl to the rescue!",
+      "source_url": "https://fitgirl-repacks.site/got-problems-fitgirl-rescue/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "grand-theft-auto-6-an-extended-look-2026-2160p-h-265",
+      "title": "Grand Theft Auto 6: An Extended Look – 2026, 2160p H.265",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-6-an-extended-look-2026-2160p-h-265/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "grand-theft-auto-v-fitgirl-corepack",
+      "title": "Grand Theft Auto V – FitGirl CorePack",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-v-fitgirl-corepack/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "grand-theft-auto-vi-trailer-1",
+      "title": "Grand Theft Auto VI Trailer 1",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-vi-trailer-1/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "grand-theft-auto-vi-trailer-2",
+      "title": "Grand Theft Auto VI Trailer 2",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-vi-trailer-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "guns-gore-cannoli",
+      "title": "Guns, Gore & Cannoli",
+      "source_url": "https://fitgirl-repacks.site/guns-gore-cannoli/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "happy-new-year-4",
+      "title": "HAPPY NEW YEAR!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-4/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "hdd-or-ssd",
+      "title": "HDD or SSD?",
+      "source_url": "https://fitgirl-repacks.site/hdd-or-ssd/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "hdd-or-ssd-version-2025",
+      "title": "HDD or SSD? Version 2025",
+      "source_url": "https://fitgirl-repacks.site/hdd-or-ssd-version-2025/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "happy-new-year",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "happy-new-year-2",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "happy-new-year-3",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-3/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "happy-new-year-5",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-5/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "happy-new-year-6",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-6/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "hard-west",
+      "title": "Hard West",
+      "source_url": "https://fitgirl-repacks.site/hard-west/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "hello-world",
+      "title": "Hello, crowd!",
+      "source_url": "https://fitgirl-repacks.site/hello-world/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "help",
+      "title": "Help!",
+      "source_url": "https://fitgirl-repacks.site/help/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "heroskeep-the-malware-distributor",
+      "title": "Heroskeep: The Malware Distributor",
+      "source_url": "https://fitgirl-repacks.site/heroskeep-the-malware-distributor/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "history-drm-copy-protection-computer-games",
+      "title": "History of DRM & Copy Protection in Computer Games",
+      "source_url": "https://fitgirl-repacks.site/history-drm-copy-protection-computer-games/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "hitman-fast-or-small",
+      "title": "Hitman – Fast or Small?",
+      "source_url": "https://fitgirl-repacks.site/hitman-fast-or-small/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "hoster-upgrade",
+      "title": "Hoster Upgrade",
+      "source_url": "https://fitgirl-repacks.site/hoster-upgrade/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "how-many-threads-does-your-cpu-have",
+      "title": "How many THREADS does your CPU have?",
+      "source_url": "https://fitgirl-repacks.site/how-many-threads-does-your-cpu-have/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "hyperdimension-neptunia-u-action-unleashed",
+      "title": "Hyperdimension Neptunia U: Action Unleashed",
+      "source_url": "https://fitgirl-repacks.site/hyperdimension-neptunia-u-action-unleashed/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "i-need-technical-help",
+      "title": "I need technical help",
+      "source_url": "https://fitgirl-repacks.site/i-need-technical-help/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "im-stopping-windows-7-support",
+      "title": "I’m Stopping Windows 7 Support",
+      "source_url": "https://fitgirl-repacks.site/im-stopping-windows-7-support/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "im-that-popular",
+      "title": "I’m THAT popular?!",
+      "source_url": "https://fitgirl-repacks.site/im-that-popular/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "kat-is-back",
+      "title": "KAT is back!",
+      "source_url": "https://fitgirl-repacks.site/kat-is-back/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "lego-jurassic-world-update-1-all-dlcs",
+      "title": "LEGO Jurassic World + Update 1 + All DLCs",
+      "source_url": "https://fitgirl-repacks.site/lego-jurassic-world-update-1-all-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "lets-support-baldman",
+      "title": "Let’s support BALDMAN!",
+      "source_url": "https://fitgirl-repacks.site/lets-support-baldman/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "lightning-returns-final-fantasy-xiii",
+      "title": "Lightning Returns: Final Fantasy XIII",
+      "source_url": "https://fitgirl-repacks.site/lightning-returns-final-fantasy-xiii/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "livelock-poll",
+      "title": "Livelock Poll",
+      "source_url": "https://fitgirl-repacks.site/livelock-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "lolly-decompression-test",
+      "title": "Lolly Decompression Test",
+      "source_url": "https://fitgirl-repacks.site/lolly-decompression-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "looking-new-seedboxes",
+      "title": "Looking for new seedboxes",
+      "source_url": "https://fitgirl-repacks.site/looking-new-seedboxes/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "looks-familiar",
+      "title": "Looks familiar?",
+      "source_url": "https://fitgirl-repacks.site/looks-familiar/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "loved-kat-help-them-to-get-back",
+      "title": "Loved KAT? Help them to get back!",
+      "source_url": "https://fitgirl-repacks.site/loved-kat-help-them-to-get-back/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "mafia-2-cod-mw2",
+      "title": "Mafia 2 or CoD: MW2?",
+      "source_url": "https://fitgirl-repacks.site/mafia-2-cod-mw2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "mafia-3-cracked",
+      "title": "Mafia 3 Cracked",
+      "source_url": "https://fitgirl-repacks.site/mafia-3-cracked/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "mafia-3-news",
+      "title": "Mafia 3 News",
+      "source_url": "https://fitgirl-repacks.site/mafia-3-news/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "mafia-3-poll",
+      "title": "Mafia 3 Poll",
+      "source_url": "https://fitgirl-repacks.site/mafia-3-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "malware-analysis-help-needed",
+      "title": "Malware Analysis Help Needed",
+      "source_url": "https://fitgirl-repacks.site/malware-analysis-help-needed/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "mass-effect-andromeda-standalone-patch-v1-04-v1-05",
+      "title": "Mass Effect: Andromeda – Standalone Patch from v1.04 to v1.05",
+      "source_url": "https://fitgirl-repacks.site/mass-effect-andromeda-standalone-patch-v1-04-v1-05/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "memecoin-in-my-name",
+      "title": "MemeCoin in My Name",
+      "source_url": "https://fitgirl-repacks.site/memecoin-in-my-name/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "mirrors-edge-catalyst-progress-report",
+      "title": "Mirror’s Edge: Catalyst – Progress Report",
+      "source_url": "https://fitgirl-repacks.site/mirrors-edge-catalyst-progress-report/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "missing-pushes",
+      "title": "Missing Pushes",
+      "source_url": "https://fitgirl-repacks.site/missing-pushes/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "monero-protocol-upgraded",
+      "title": "Monero Protocol Upgraded",
+      "source_url": "https://fitgirl-repacks.site/monero-protocol-upgraded/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "mordheim-city-of-the-damned-v1-3-4-2-5-dlc",
+      "title": "Mordheim: City of the Damned v1.3.4.2 + 5 DLC",
+      "source_url": "https://fitgirl-repacks.site/mordheim-city-of-the-damned-v1-3-4-2-5-dlc/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "mugen-souls",
+      "title": "Mugen Souls",
+      "source_url": "https://fitgirl-repacks.site/mugen-souls/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "my-new-record",
+      "title": "My New Record!",
+      "source_url": "https://fitgirl-repacks.site/my-new-record/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "my-little-comment-on-crackwatch-regarding-how-repacks-work",
+      "title": "My little comment on CrackWatch regarding how repacks work",
+      "source_url": "https://fitgirl-repacks.site/my-little-comment-on-crackwatch-regarding-how-repacks-work/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "my-statement-about-empress",
+      "title": "My statement about EMPRESS",
+      "source_url": "https://fitgirl-repacks.site/my-statement-about-empress/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "nba-2k16-update-1",
+      "title": "NBA 2K16 + Update 1",
+      "source_url": "https://fitgirl-repacks.site/nba-2k16-update-1/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "nba-2k17-repack-installer-bugfix",
+      "title": "NBA 2K17 Repack Installer Bugfix",
+      "source_url": "https://fitgirl-repacks.site/nba-2k17-repack-installer-bugfix/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad",
+      "title": "Need for Speed: Heat P2P Crack is actually a stolen CODEX one. And why it’s bad",
+      "source_url": "https://fitgirl-repacks.site/need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "new-birchpunk-video",
+      "title": "New Birchpunk Video",
+      "source_url": "https://fitgirl-repacks.site/new-birchpunk-video/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "test",
+      "title": "New Browser Miner – Test Version",
+      "source_url": "https://fitgirl-repacks.site/test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "new-google-drive-test",
+      "title": "New Google Drive Test",
+      "source_url": "https://fitgirl-repacks.site/new-google-drive-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "new-rar-splitting-sizes",
+      "title": "New RAR-splitting sizes",
+      "source_url": "https://fitgirl-repacks.site/new-rar-splitting-sizes/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "new-compression-algorithm",
+      "title": "New compression algorithm",
+      "source_url": "https://fitgirl-repacks.site/new-compression-algorithm/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "no-rmw-today",
+      "title": "No RMW today",
+      "source_url": "https://fitgirl-repacks.site/no-rmw-today/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "oldies-here",
+      "title": "Oldies here?",
+      "source_url": "https://fitgirl-repacks.site/oldies-here/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "onedrive-as-a-hosting-speed-test",
+      "title": "OneDrive-as-a-Hosting Speed Test",
+      "source_url": "https://fitgirl-repacks.site/onedrive-as-a-hosting-speed-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "only-64-denuvo-games-left-uncracked",
+      "title": "Only 64 Denuvo games left uncracked",
+      "source_url": "https://fitgirl-repacks.site/only-64-denuvo-games-left-uncracked/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "people-like-this-really-exist",
+      "title": "People like this really exist",
+      "source_url": "https://fitgirl-repacks.site/people-like-this-really-exist/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "pink-paw-award",
+      "title": "Pink Paw Award",
+      "source_url": "https://fitgirl-repacks.site/pink-paw-award/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "possible-site-downtime-or-domain-change",
+      "title": "Possible Site Downtime or Domain Change",
+      "source_url": "https://fitgirl-repacks.site/possible-site-downtime-or-domain-change/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "pro-cycling-manager-2015",
+      "title": "Pro Cycling Manager 2015",
+      "source_url": "https://fitgirl-repacks.site/pro-cycling-manager-2015/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "pro-evolution-soccer-2016-v1-05-data-pack-4-0",
+      "title": "Pro Evolution Soccer 2016 v1.05 + Data Pack 4.0",
+      "source_url": "https://fitgirl-repacks.site/pro-evolution-soccer-2016-v1-05-data-pack-4-0/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "process-lasso-the-program-everyone-must-use",
+      "title": "Process Lasso – The program everyone must use",
+      "source_url": "https://fitgirl-repacks.site/process-lasso-the-program-everyone-must-use/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "push-notifications",
+      "title": "Push Notifications",
+      "source_url": "https://fitgirl-repacks.site/push-notifications/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "push-notifications-follow-up",
+      "title": "Push Notifications Follow-up",
+      "source_url": "https://fitgirl-repacks.site/push-notifications-follow-up/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "push-notifications-ii-the-pushing-day",
+      "title": "Push Notifications II: The Pushing Day",
+      "source_url": "https://fitgirl-repacks.site/push-notifications-ii-the-pushing-day/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "racing-sir-mostly-racing",
+      "title": "Racing, sir. Mostly racing.",
+      "source_url": "https://fitgirl-repacks.site/racing-sir-mostly-racing/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "ravens-cry-digital-deluxe-edition",
+      "title": "Raven’s Cry: Digital Deluxe Edition",
+      "source_url": "https://fitgirl-repacks.site/ravens-cry-digital-deluxe-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "regarding-fresh-windows-10-update",
+      "title": "Regarding fresh Windows 10 update",
+      "source_url": "https://fitgirl-repacks.site/regarding-fresh-windows-10-update/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "repackers-pain",
+      "title": "Repacker’s Pain",
+      "source_url": "https://fitgirl-repacks.site/repackers-pain/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "repacks-of-uncracked-games-vote-now",
+      "title": "Repacks of uncracked games – Poll Closed!",
+      "source_url": "https://fitgirl-repacks.site/repacks-of-uncracked-games-vote-now/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "resident-evil-hd-remaster",
+      "title": "Resident Evil HD Remaster",
+      "source_url": "https://fitgirl-repacks.site/resident-evil-hd-remaster/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "resident-evil-zero-hd-remaster-510-dlc",
+      "title": "Resident Evil Zero: HD Remaster + 5/10 DLC",
+      "source_url": "https://fitgirl-repacks.site/resident-evil-zero-hd-remaster-510-dlc/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "resident-evil-revelations-2-all-episodes-patch-v4-0",
+      "title": "Resident Evil: Revelations 2 – All Episodes + Patch v4.0",
+      "source_url": "https://fitgirl-repacks.site/resident-evil-revelations-2-all-episodes-patch-v4-0/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "restoring-uploads-list",
+      "title": "Restoring uploads list",
+      "source_url": "https://fitgirl-repacks.site/restoring-uploads-list/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "retrogames-is-up-and-running",
+      "title": "RetroGames is up and running!",
+      "source_url": "https://fitgirl-repacks.site/retrogames-is-up-and-running/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "risen-3-titan-lords-enhanced-edition",
+      "title": "Risen 3: Titan Lords – Enhanced Edition",
+      "source_url": "https://fitgirl-repacks.site/risen-3-titan-lords-enhanced-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-cyberpunk-farm",
+      "title": "Russian Cyberpunk Farm",
+      "source_url": "https://fitgirl-repacks.site/russian-cyberpunk-farm/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-9",
+      "title": "Russian Movies #9",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-9/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-10",
+      "title": "Russian Movies Weekend #10",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-10/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-11",
+      "title": "Russian Movies Weekend #11",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-11/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-12",
+      "title": "Russian Movies Weekend #12",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-12/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-13",
+      "title": "Russian Movies Weekend #13",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-13/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-14",
+      "title": "Russian Movies Weekend #14",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-14/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-15",
+      "title": "Russian Movies Weekend #15",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-15/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-16",
+      "title": "Russian Movies Weekend #16",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-16/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-17",
+      "title": "Russian Movies Weekend #17",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-17/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-18",
+      "title": "Russian Movies Weekend #18",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-18/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-19",
+      "title": "Russian Movies Weekend #19",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-19/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-2",
+      "title": "Russian Movies Weekend #2",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-21",
+      "title": "Russian Movies Weekend #21",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-21/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-22",
+      "title": "Russian Movies Weekend #22",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-22/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-23",
+      "title": "Russian Movies Weekend #23",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-23/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-24",
+      "title": "Russian Movies Weekend #24",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-24/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-25",
+      "title": "Russian Movies Weekend #25",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-25/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-26",
+      "title": "Russian Movies Weekend #26",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-26/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-27",
+      "title": "Russian Movies Weekend #27",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-27/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-3",
+      "title": "Russian Movies Weekend #3",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-3/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-4",
+      "title": "Russian Movies Weekend #4",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-4/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-5",
+      "title": "Russian Movies Weekend #5",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-5/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-6",
+      "title": "Russian Movies Weekend #6",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-6/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "russian-movies-weekend-7",
+      "title": "Russian Movies Weekend #7",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-7/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "ryse-son-of-rome-legendary-edition",
+      "title": "Ryse: Son of Rome – Legendary Edition",
+      "source_url": "https://fitgirl-repacks.site/ryse-son-of-rome-legendary-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "ssl-disabled",
+      "title": "SSL Disabled",
+      "source_url": "https://fitgirl-repacks.site/ssl-disabled/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "ssl-is-now-required-for-visiting-my-site",
+      "title": "SSL is now required for visiting my site",
+      "source_url": "https://fitgirl-repacks.site/ssl-is-now-required-for-visiting-my-site/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "saint-seiya-soldiers-soul",
+      "title": "Saint Seiya: Soldiers’ Soul",
+      "source_url": "https://fitgirl-repacks.site/saint-seiya-soldiers-soul/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "samurai-warriors-4-ii",
+      "title": "Samurai Warriors 4-II",
+      "source_url": "https://fitgirl-repacks.site/samurai-warriors-4-ii/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "scamming-scammers-videos",
+      "title": "Scamming scammers videos",
+      "source_url": "https://fitgirl-repacks.site/scamming-scammers-videos/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "senran-kagura-estival-versus-not",
+      "title": "Senran Kagura: Estival Versus – To Be or Not to Be?",
+      "source_url": "https://fitgirl-repacks.site/senran-kagura-estival-versus-not/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "september-3rd",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "september-3rd-2",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "september-3rd-2023",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-2023/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "september-3rd-3",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-3/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "september-3rd-4",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-4/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "shadow-warrior-2-patch-v1-1-2-0",
+      "title": "Shadow Warrior 2 Patch to v1.1.2.0",
+      "source_url": "https://fitgirl-repacks.site/shadow-warrior-2-patch-v1-1-2-0/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "shadow-warrior-special-edition-v1-5-0",
+      "title": "Shadow Warrior: Special Edition v1.5.0",
+      "source_url": "https://fitgirl-repacks.site/shadow-warrior-special-edition-v1-5-0/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "sid-meiers-civilization-beyond-earth-2-dlc",
+      "title": "Sid Meier’s Civilization: Beyond Earth + 2 DLC",
+      "source_url": "https://fitgirl-repacks.site/sid-meiers-civilization-beyond-earth-2-dlc/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "some-stats",
+      "title": "Some Stats",
+      "source_url": "https://fitgirl-repacks.site/some-stats/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "sonic-lost-world",
+      "title": "Sonic: Lost World",
+      "source_url": "https://fitgirl-repacks.site/sonic-lost-world/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "soundcheck",
+      "title": "Soundcheck. Results.",
+      "source_url": "https://fitgirl-repacks.site/soundcheck/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "starcraft-2-the-trilogy",
+      "title": "StarCraft 2: The Trilogy",
+      "source_url": "https://fitgirl-repacks.site/starcraft-2-the-trilogy/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "steam-fixed-denuvo-bypass",
+      "title": "Steam fixed Denuvo bypass",
+      "source_url": "https://fitgirl-repacks.site/steam-fixed-denuvo-bypass/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "tales-of-symphonia-update-3",
+      "title": "Tales of Symphonia + Update 3",
+      "source_url": "https://fitgirl-repacks.site/tales-of-symphonia-update-3/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "tales-of-zestiria-v1-4-dlcs",
+      "title": "Tales of Zestiria v1.4 + DLCs",
+      "source_url": "https://fitgirl-repacks.site/tales-of-zestiria-v1-4-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "temporary-mining-stop",
+      "title": "Temporary Mining Stop",
+      "source_url": "https://fitgirl-repacks.site/temporary-mining-stop/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "testers-amd-wanted",
+      "title": "Testers with AMD wanted",
+      "source_url": "https://fitgirl-repacks.site/testers-amd-wanted/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "that-which-does-not-kill-us-makes-us-stronger",
+      "title": "That which does not kill us makes us stronger",
+      "source_url": "https://fitgirl-repacks.site/that-which-does-not-kill-us-makes-us-stronger/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "the-banner-saga-v2-18-08-2-dlc",
+      "title": "The Banner Saga v2.18.08 + 2 DLC",
+      "source_url": "https://fitgirl-repacks.site/the-banner-saga-v2-18-08-2-dlc/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "the-book-of-unwritten-tales-2",
+      "title": "The Book of Unwritten Tales 2",
+      "source_url": "https://fitgirl-repacks.site/the-book-of-unwritten-tales-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 2,
+      "signals": [
+        "image",
+        "media"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "the-bureau-xcom-declassified-the-complete-edition-all-dlcs",
+      "title": "The Bureau : XCOM Declassified – The Complete Edition (+All DLCs)",
+      "source_url": "https://fitgirl-repacks.site/the-bureau-xcom-declassified-the-complete-edition-all-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "day-requests-may-13-mark-calendar",
+      "title": "The Day of Requests on May 13, mark your calendar",
+      "source_url": "https://fitgirl-repacks.site/day-requests-may-13-mark-calendar/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "day-requests-part-1",
+      "title": "The Day of Requests: Part 1",
+      "source_url": "https://fitgirl-repacks.site/day-requests-part-1/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "day-requests-poll",
+      "title": "The Day of Requests: Poll",
+      "source_url": "https://fitgirl-repacks.site/day-requests-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "the-incredible-adventures-of-van-helsing-final-cut-v1-0-4",
+      "title": "The Incredible Adventures of Van Helsing: Final Cut – v1.0.4",
+      "source_url": "https://fitgirl-repacks.site/the-incredible-adventures-of-van-helsing-final-cut-v1-0-4/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "the-season-has-begun",
+      "title": "The Season Has Begun",
+      "source_url": "https://fitgirl-repacks.site/the-season-has-begun/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "the-sims-4-bug-test",
+      "title": "The Sims 4 Bug Test",
+      "source_url": "https://fitgirl-repacks.site/the-sims-4-bug-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "world-much-bigger-village",
+      "title": "The world is much bigger than your village",
+      "source_url": "https://fitgirl-repacks.site/world-much-bigger-village/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "there-came-an-echo-v1-0-6",
+      "title": "There Came an Echo v1.0.6",
+      "source_url": "https://fitgirl-repacks.site/there-came-an-echo-v1-0-6/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "tiny-compression-test",
+      "title": "Tiny Compression Test",
+      "source_url": "https://fitgirl-repacks.site/tiny-compression-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "tiny-compression-test-2",
+      "title": "Tiny Compression Test",
+      "source_url": "https://fitgirl-repacks.site/tiny-compression-test-2/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "tomorrow-disqus-commenting-system-will-stop-working-on-my-site",
+      "title": "Tomorrow Disqus Commenting System will stop working on my site",
+      "source_url": "https://fitgirl-repacks.site/tomorrow-disqus-commenting-system-will-stop-working-on-my-site/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "toukiden-kiwami-v1-0-1",
+      "title": "Toukiden Kiwami v1.0.1",
+      "source_url": "https://fitgirl-repacks.site/toukiden-kiwami-v1-0-1/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "trials-of-mana-denuvoless-build-added",
+      "title": "Trials of Mana – Denuvoless Build Added",
+      "source_url": "https://fitgirl-repacks.site/trials-of-mana-denuvoless-build-added/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "tropico-5-espionage-original-game-all-dlcs",
+      "title": "Tropico 5: Espionage, Original Game + All DLCs",
+      "source_url": "https://fitgirl-repacks.site/tropico-5-espionage-original-game-all-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "ubisoft-is-adding-denuvo-to-previously-unprotected-games",
+      "title": "Ubisoft is adding Denuvo to previously unprotected games",
+      "source_url": "https://fitgirl-repacks.site/ubisoft-is-adding-denuvo-to-previously-unprotected-games/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "upcoming-witcher-3-repack-details",
+      "title": "Upcoming Witcher 3 Repack Details",
+      "source_url": "https://fitgirl-repacks.site/upcoming-witcher-3-repack-details/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "valentino-rossi-the-game",
+      "title": "Valentino Rossi: The Game",
+      "source_url": "https://fitgirl-repacks.site/valentino-rossi-the-game/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "vote-for-the-next-denuvo-game-crack",
+      "title": "Vote for the next Denuvo game crack!",
+      "source_url": "https://fitgirl-repacks.site/vote-for-the-next-denuvo-game-crack/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "watch-dogs-2-repack-poll",
+      "title": "Watch Dogs 2 Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/watch-dogs-2-repack-poll/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "watch-dogs-v1-06-329-all-dlcs",
+      "title": "Watch Dogs v1.06.329 + All DLCs",
+      "source_url": "https://fitgirl-repacks.site/watch-dogs-v1-06-329-all-dlcs/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "welcome-team-apex",
+      "title": "Welcome Team APEX!",
+      "source_url": "https://fitgirl-repacks.site/welcome-team-apex/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "when-will-you-upload-the-repack-for-n",
+      "title": "When will you upload the repack for N?",
+      "source_url": "https://fitgirl-repacks.site/when-will-you-upload-the-repack-for-n/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "who-are-you",
+      "title": "Who are you?",
+      "source_url": "https://fitgirl-repacks.site/who-are-you/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "why-gog-offline-installers-suck",
+      "title": "Why GOG Offline Installers Suck",
+      "source_url": "https://fitgirl-repacks.site/why-gog-offline-installers-suck/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "why-i-dont-repack-final-fantasy-xv",
+      "title": "Why I don’t repack Final Fantasy XV?",
+      "source_url": "https://fitgirl-repacks.site/why-i-dont-repack-final-fantasy-xv/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "winners-day-requests",
+      "title": "Winners of The Day of Requests",
+      "source_url": "https://fitgirl-repacks.site/winners-day-requests/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "winter-is-coming",
+      "title": "Winter Is Coming",
+      "source_url": "https://fitgirl-repacks.site/winter-is-coming/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "world-in-conflict-complete-edition",
+      "title": "World in Conflict: Complete Edition",
+      "source_url": "https://fitgirl-repacks.site/world-in-conflict-complete-edition/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "xatab-has-passed-away",
+      "title": "Xatab has passed away",
+      "source_url": "https://fitgirl-repacks.site/xatab-has-passed-away/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "yawobfr",
+      "title": "YAWOBFR!",
+      "source_url": "https://fitgirl-repacks.site/yawobfr/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "yet-another-compression-test",
+      "title": "Yet Another Compression Test",
+      "source_url": "https://fitgirl-repacks.site/yet-another-compression-test/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "ys-vi-the-ark-of-napishtim",
+      "title": "Ys VI: The Ark of Napishtim",
+      "source_url": "https://fitgirl-repacks.site/ys-vi-the-ark-of-napishtim/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "review-retained"
+    },
+    {
+      "id": "zombie-army-4-dead-war-crackfix-v3-empress-released",
+      "title": "Zombie.Army.4.Dead.War.Crackfix.V3-EMPRESS released",
+      "source_url": "https://fitgirl-repacks.site/zombie-army-4-dead-war-crackfix-v3-empress-released/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    },
+    {
+      "id": "my-discord-channel",
+      "title": "‘My’ Discord Channel",
+      "source_url": "https://fitgirl-repacks.site/my-discord-channel/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "review-retained"
+    }
+  ]
 }

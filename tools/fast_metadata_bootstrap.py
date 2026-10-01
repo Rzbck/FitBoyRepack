@@ -4,6 +4,10 @@
 The first pass intentionally avoids Wikipedia extracts and the local LLM. It
 scores compact structured Wikidata candidates and stores only high-confidence
 matches. Ambiguous/no-match rows go to review for a later LLM fallback.
+
+Wikimedia public API access is globally paced across worker threads. HTTP 429,
+5xx and maxlag responses are retried with Retry-After/exponential backoff and
+remain pending if the transient condition persists.
 """
 from __future__ import annotations
 
@@ -14,8 +18,11 @@ import json
 import re
 import sqlite3
 import threading
+import time
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 
@@ -25,7 +32,6 @@ from ai_catalog_bootstrap import (
     AI_VERSION,
     DEFAULT_CATALOG,
     DEFAULT_DB,
-    USER_AGENT,
     WIKIDATA_API,
     _claim_entity_ids,
     _claim_times,
@@ -40,6 +46,16 @@ from ai_catalog_bootstrap import (
 VIDEO_GAME_QID = "Q7889"
 DEFAULT_THRESHOLD = 0.90
 DEFAULT_MARGIN = 0.08
+DEFAULT_REQUEST_INTERVAL = 0.80
+DEFAULT_MAX_RETRIES = 4
+FAST_USER_AGENT = "FitBoyRepack-MetadataWorker/1.1 (https://github.com/Rzbck/FitBoyRepack)"
+
+_REQUEST_LOCK = threading.Lock()
+_NEXT_REQUEST_AT = 0.0
+
+
+class TransientWikidataError(RuntimeError):
+    """A rate-limit/service/network condition that should be retried later."""
 
 
 def clean_fast_title(title: str) -> str:
@@ -134,21 +150,98 @@ def choose_candidate(
     )
 
 
+def _wait_for_request_slot(interval: float) -> None:
+    global _NEXT_REQUEST_AT
+    with _REQUEST_LOCK:
+        now = time.monotonic()
+        delay = max(0.0, _NEXT_REQUEST_AT - now)
+        if delay:
+            time.sleep(delay)
+        _NEXT_REQUEST_AT = time.monotonic() + max(0.0, interval)
+
+
+def _apply_global_backoff(seconds: float) -> None:
+    global _NEXT_REQUEST_AT
+    seconds = max(1.0, seconds)
+    with _REQUEST_LOCK:
+        _NEXT_REQUEST_AT = max(_NEXT_REQUEST_AT, time.monotonic() + seconds)
+
+
+def _retry_after_seconds(value: str | None, attempt: int) -> float:
+    if value:
+        try:
+            return max(1.0, float(value))
+        except ValueError:
+            try:
+                parsed = parsedate_to_datetime(value)
+                if parsed.tzinfo is None:
+                    parsed = parsed.replace(tzinfo=timezone.utc)
+                return max(1.0, (parsed - datetime.now(timezone.utc)).total_seconds())
+            except (TypeError, ValueError, OverflowError):
+                pass
+    return min(60.0, 5.0 * (2**attempt))
+
+
 class FastWikidataRetriever:
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        *,
+        request_interval: float = DEFAULT_REQUEST_INTERVAL,
+        max_retries: int = DEFAULT_MAX_RETRIES,
+    ) -> None:
+        self.request_interval = max(0.0, request_interval)
+        self.max_retries = max(0, max_retries)
         self.client = httpx.Client(
-            timeout=httpx.Timeout(12.0, connect=5.0),
+            timeout=httpx.Timeout(15.0, connect=5.0),
             follow_redirects=True,
-            headers={"User-Agent": USER_AGENT},
+            headers={"User-Agent": FAST_USER_AGENT},
         )
 
     def _get(self, params: dict[str, Any]) -> dict[str, Any]:
-        response = self.client.get(WIKIDATA_API, params=params)
-        response.raise_for_status()
-        data = response.json()
-        if not isinstance(data, dict):
-            raise RuntimeError("unexpected Wikidata response")
-        return data
+        request_params = dict(params)
+        request_params.setdefault("format", "json")
+        request_params.setdefault("maxlag", 5)
+
+        for attempt in range(self.max_retries + 1):
+            _wait_for_request_slot(self.request_interval)
+            try:
+                response = self.client.get(WIKIDATA_API, params=request_params)
+            except httpx.TransportError as exc:
+                delay = _retry_after_seconds(None, attempt)
+                _apply_global_backoff(delay)
+                if attempt >= self.max_retries:
+                    raise TransientWikidataError(f"network error after retries: {exc}") from exc
+                continue
+
+            if response.status_code == 429 or 500 <= response.status_code < 600:
+                delay = _retry_after_seconds(response.headers.get("Retry-After"), attempt)
+                _apply_global_backoff(delay)
+                if attempt >= self.max_retries:
+                    raise TransientWikidataError(
+                        f"HTTP {response.status_code} after retries; retry_after={delay:.1f}s"
+                    )
+                continue
+
+            response.raise_for_status()
+            data = response.json()
+            if not isinstance(data, dict):
+                raise RuntimeError("unexpected Wikidata response")
+
+            error = data.get("error")
+            if isinstance(error, dict) and error.get("code") == "maxlag":
+                delay = _retry_after_seconds(None, attempt)
+                try:
+                    delay = max(delay, float(error.get("lag") or 0.0))
+                except (TypeError, ValueError):
+                    pass
+                _apply_global_backoff(delay)
+                if attempt >= self.max_retries:
+                    raise TransientWikidataError(f"maxlag after retries; retry_after={delay:.1f}s")
+                continue
+
+            return data
+
+        raise TransientWikidataError("Wikidata retry budget exhausted")
 
     def _search(self, query: str, limit: int) -> list[str]:
         data = self._get({
@@ -158,7 +251,6 @@ class FastWikidataRetriever:
             "uselang": "en",
             "type": "item",
             "limit": limit,
-            "format": "json",
         })
         return [
             str(item["id"])
@@ -174,7 +266,6 @@ class FastWikidataRetriever:
             "ids": "|".join(ids),
             "props": props,
             "languages": "en|fr",
-            "format": "json",
         })
         entities = data.get("entities")
         return entities if isinstance(entities, dict) else {}
@@ -253,13 +344,22 @@ class FastWikidataRetriever:
 _thread = threading.local()
 
 
-def fetch_one(game_id: str, title: str, candidate_limit: int) -> tuple[str, str, list[dict[str, Any]] | None, str | None]:
+def fetch_one(
+    game_id: str,
+    title: str,
+    candidate_limit: int,
+    request_interval: float,
+) -> tuple[str, str, list[dict[str, Any]] | None, str | None]:
     try:
         retriever = getattr(_thread, "retriever", None)
-        if retriever is None:
-            retriever = FastWikidataRetriever()
+        if retriever is None or retriever.request_interval != request_interval:
+            retriever = FastWikidataRetriever(request_interval=request_interval)
             _thread.retriever = retriever
         return game_id, title, retriever.fetch(title, candidate_limit), None
+    except TransientWikidataError as exc:
+        return game_id, title, None, f"transient: {exc}"
+    except httpx.TransportError as exc:
+        return game_id, title, None, f"transient: network error: {exc}"
     except Exception as exc:
         return game_id, title, None, str(exc)[:1200]
 
@@ -315,13 +415,26 @@ def set_status(conn: sqlite3.Connection, game_id: str, status: str, error: str |
     )
 
 
+def requeue_transient(conn: sqlite3.Connection, game_id: str, error: str) -> None:
+    now = utcnow()
+    conn.execute(
+        """
+        UPDATE jobs
+        SET status='pending',last_error=?,started_at=NULL,finished_at=NULL,
+            queued_at=?,updated_at=?
+        WHERE game_id=?
+        """,
+        (error[:1200], now, now, game_id),
+    )
+
+
 def store_match(conn: sqlite3.Connection, game_id: str, candidate: dict[str, Any], confidence: float) -> None:
     checked = utcnow()
     releases = candidate.get("release_dates") or []
     developers = candidate.get("developers") or []
     publishers = candidate.get("publishers") or []
     evidence = [candidate["url"]] if candidate.get("url") else []
-    raw = {"method": "fast_wikidata_v1", "candidate": candidate, "confidence": confidence}
+    raw = {"method": "fast_wikidata_v2", "candidate": candidate, "confidence": confidence}
     conn.execute(
         """
         INSERT INTO results(
@@ -387,12 +500,13 @@ def run_fast_batch(
     candidate_limit: int,
     threshold: float,
     margin: float,
+    request_interval: float = DEFAULT_REQUEST_INTERVAL,
 ) -> dict[str, int]:
     ensure_cache(conn)
     claimed = claim_pending(conn, limit)
     evidence_by_id: dict[str, list[dict[str, Any]]] = {}
     misses: list[tuple[str, str]] = []
-    cache_hits = failed = 0
+    cache_hits = failed = deferred = 0
 
     for game_id, title in claimed:
         cached = cached_evidence(conn, title)
@@ -402,13 +516,20 @@ def run_fast_batch(
             cache_hits += 1
             evidence_by_id[game_id] = cached
 
-    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
-        futures = [pool.submit(fetch_one, game_id, title, candidate_limit) for game_id, title in misses]
+    with ThreadPoolExecutor(max_workers=max(1, min(workers, 3))) as pool:
+        futures = [
+            pool.submit(fetch_one, game_id, title, candidate_limit, request_interval)
+            for game_id, title in misses
+        ]
         for future in as_completed(futures):
             game_id, title, evidence, error = future.result()
             if error:
-                set_status(conn, game_id, "failed", f"wikidata: {error}")
-                failed += 1
+                if error.startswith("transient:"):
+                    requeue_transient(conn, game_id, f"wikidata: {error}")
+                    deferred += 1
+                else:
+                    set_status(conn, game_id, "failed", f"wikidata: {error}")
+                    failed += 1
                 continue
             evidence_by_id[game_id] = evidence or []
             store_cache(conn, title, evidence or [])
@@ -416,7 +537,7 @@ def run_fast_batch(
     done = review = 0
     for game_id, title in claimed:
         status = conn.execute("SELECT status FROM jobs WHERE game_id=?", (game_id,)).fetchone()
-        if status is None or status["status"] == "failed":
+        if status is None or status["status"] != "processing":
             continue
         match, confidence, reason = choose_candidate(
             clean_fast_title(title),
@@ -437,6 +558,7 @@ def run_fast_batch(
         "done": done,
         "review": review,
         "failed": failed,
+        "deferred": deferred,
         "cache_hits": cache_hits,
     }
 
@@ -464,16 +586,24 @@ def main() -> None:
     parser.add_argument("--retry-failed", action="store_true")
     parser.add_argument("--retry-review", action="store_true")
     parser.add_argument("--limit", type=int, default=100)
-    parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--workers", type=int, default=2)
     parser.add_argument("--candidate-limit", type=int, default=3)
     parser.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
     parser.add_argument("--margin", type=float, default=DEFAULT_MARGIN)
+    parser.add_argument(
+        "--request-interval",
+        type=float,
+        default=DEFAULT_REQUEST_INTERVAL,
+        help="minimum seconds between all Wikidata requests across worker threads",
+    )
     args = parser.parse_args()
 
     if not any((args.init, args.run, args.status, args.retry_failed, args.retry_review)):
         parser.error("choose at least one action")
     if args.limit <= 0 or args.workers <= 0:
         parser.error("--limit and --workers must be greater than 0")
+    if args.request_interval < 0:
+        parser.error("--request-interval must be >= 0")
     if not 0 <= args.threshold <= 1:
         parser.error("--threshold must be between 0 and 1")
 
@@ -491,10 +621,11 @@ def main() -> None:
             print("fast run:", compact_json(run_fast_batch(
                 conn,
                 limit=args.limit,
-                workers=min(args.workers, 12),
+                workers=min(args.workers, 3),
                 candidate_limit=max(1, min(args.candidate_limit, 5)),
                 threshold=args.threshold,
                 margin=max(0.0, args.margin),
+                request_interval=args.request_interval,
             )))
         if args.status or args.run or args.init:
             print("queue:", compact_json(queue_counts(conn)))

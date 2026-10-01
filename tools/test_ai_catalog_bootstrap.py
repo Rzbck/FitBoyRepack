@@ -97,6 +97,12 @@ def main():
         assert refresh["changed"] == 1
         assert conn.execute("SELECT status FROM jobs WHERE game_id='1'").fetchone()["status"] == "pending"
         assert conn.execute("SELECT 1 FROM results WHERE game_id='1'").fetchone() is None
+
+        conn.execute("UPDATE jobs SET status='processing' WHERE game_id='1'")
+        conn.commit()
+        recovered = initialize_queue(conn, changed)
+        assert recovered["recovered"] == 1
+        assert conn.execute("SELECT status FROM jobs WHERE game_id='1'").fetchone()["status"] == "pending"
         conn.close()
 
     allowed = {"https://www.wikidata.org/wiki/Q1"}

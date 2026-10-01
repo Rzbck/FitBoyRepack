@@ -38,6 +38,34 @@ for title in (
     "Installer fixes",
     "Updates Digest #42",
     "Upcoming Repacks",
+    "A warning to all MegaUpload users!",
+    "AMD (and old Intel) CPU owners wanted for testing",
+    "About PRAGMATA Release",
+    "About compression speed",
+    "Agents of Mayhem, Patch to v1.03",
+    "All Genres/Tags Are Now Links",
+    "All game uploads restored!",
+    "Anno.1800.Crackfix-EMPRESS",
+    "Another DDoS",
+    "Assassin’s Creed: Origins Repack Vote",
+    "Black Ops 3 Repack Status",
+    "Browser Mining FAQ Added",
+    "Browser Mining as a Way of Donating",
+    "CPY cracked RotTR, I guess more cracks incoming",
+    "CPY is on fire!",
+    "CS.RIN.RU Needs Your Help",
+    "CoD: WWII – rip or repack?",
+    "CoDs repacks status",
+    "DMC5-related Decompression Test",
+    "DNS Problems",
+    "DOOM Rip, anyone need it?",
+    "DOOM: IDDQD Repack details",
+    "Day of Requests Results",
+    "Day of Requests: Stage 1",
+    "Decompression Test #2 – STRESS IT!",
+    "Delays in repacking",
+    "Denuvo versus Voksi",
+    "Amelie Report October 2021",
 ):
     expect(title, "non_game")
 
@@ -68,6 +96,31 @@ for title in (
         media=[{"type": "image", "url": "https://example.invalid/shot.jpg"}],
     )
 
+for title in (
+    "Age of Wonders 3: Eternal Lords",
+    "Ashes of the Singularity",
+    "BLADESTORM: Nightmare",
+    "Batman: Arkham Knight",
+    "Battle Fantasia -Revised Edition-",
+    "Cosmonautica: A Space Trading Adventure",
+    "Crusader Kings 2: Horse Lords v2.4.1 + 57 DLCs",
+    "Danganronpa: Trigger Happy Havoc – Limited Edition",
+    "Darksiders 2: Deathinitive Edition + Update 2",
+    "DiRT 3: Complete Edition",
+):
+    # Old listing records may only have a cover. They stay in review rather
+    # than being deleted because their titles themselves look like game names.
+    expect(title, "review", image="https://example.invalid/cover.jpg")
+
+# Strong metadata always wins over an editorial-looking title except for the
+# deliberately tiny set of proven standalone assets.
+expect(
+    "Example Game Repack Status",
+    "game",
+    genres=["Action"],
+    size="12 GB",
+    description="A complete gameplay description.",
+)
 expect(
     "eFootball PES 2021 Season Update – v1.01.00 Data Pack 1.00",
     "game",

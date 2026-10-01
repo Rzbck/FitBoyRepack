@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./assets/performance.css">
   <link rel="stylesheet" href="./assets/filter-sidebar.css">
   <link rel="stylesheet" href="./assets/catalog-v2.css">
+  <link rel="stylesheet" href="./assets/catalog-focus-v3.css">
 </head>
 <body>
   <header class="topbar compact-topbar">
@@ -45,59 +46,69 @@
         <div class="sidebar-mobile-head"><strong>Filtres</strong><button id="closeFilters" type="button" class="ghost-btn" aria-label="Fermer les filtres">×</button></div>
 
         <section class="sidebar-filter quick-filter-panel">
-          <div class="sidebar-filter-heading"><div><p class="eyebrow">Catalogue</p><h2>Filtres rapides</h2></div><button id="resetFilters" class="ghost-btn compact-reset" type="button">Tout effacer</button></div>
+          <div class="sidebar-filter-heading"><h2>Filtrer</h2><button id="resetFilters" class="ghost-btn compact-reset" type="button">Effacer</button></div>
           <div class="filter-select-grid">
             <label><span>Année</span><select id="yearFilter"><option value="">Toutes</option></select></label>
             <label><span>Taille</span><select id="sizeFilter"><option value="">Toutes</option><option value="lt1">&lt; 1 Go</option><option value="1-10">1–10 Go</option><option value="10-50">10–50 Go</option><option value="50plus">50+ Go</option></select></label>
           </div>
           <div class="quick-toggle-grid">
-            <button id="newOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Nouveautés <small>30 j</small></button>
-            <button id="detailsOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Avec description</button>
-            <button id="mediaOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Avec médias</button>
+            <button id="newOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Nouveaux <small>30 j</small></button>
+            <button id="detailsOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Description</button>
+            <button id="mediaOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Médias</button>
           </div>
         </section>
 
-        <section class="sidebar-filter library-panel">
-          <div class="sidebar-filter-heading"><div><p class="eyebrow">Local</p><h2>Ma bibliothèque</h2></div></div>
-          <div class="library-buttons">
-            <button class="library-filter" data-library="favorites" type="button" aria-pressed="false">♥ Favoris <small id="favoritesCount">0</small></button>
-            <button class="library-filter" data-library="backlog" type="button" aria-pressed="false">＋ À jouer <small id="backlogCount">0</small></button>
-            <button class="library-filter" data-library="completed" type="button" aria-pressed="false">✓ Terminé <small id="completedCount">0</small></button>
-          </div>
-          <div class="library-transfer"><button id="exportLibrary" class="ghost-btn" type="button">Exporter</button><button id="importLibraryButton" class="ghost-btn" type="button">Importer</button><input id="importLibrary" type="file" accept="application/json,.json" hidden></div>
-        </section>
-
-        <section id="tagFilter" class="tag-filter sidebar-filter">
-          <div class="sidebar-filter-heading"><div><p class="eyebrow">Affiner</p><h2>Tags</h2></div><strong id="selectedTagCount" class="sidebar-selected-count">0</strong></div>
-          <div class="tag-popover sidebar-tag-panel">
-            <div class="tag-controls sidebar-tag-controls">
-              <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
-              <select id="tagMode" hidden aria-hidden="true" tabindex="-1"><option value="all" selected>Tous les tags</option></select>
-              <button id="clearTags" class="ghost-btn reset-tags" type="button">Effacer les tags</button>
+        <details class="sidebar-filter sidebar-collapsible library-panel">
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Bibliothèque</strong><small>Favoris · À jouer · Terminé</small></span></summary>
+          <div class="sidebar-collapse-body">
+            <div class="library-buttons">
+              <button class="library-filter" data-library="favorites" type="button" aria-pressed="false">♥ Favoris <small id="favoritesCount">0</small></button>
+              <button class="library-filter" data-library="backlog" type="button" aria-pressed="false">＋ À jouer <small id="backlogCount">0</small></button>
+              <button class="library-filter" data-library="completed" type="button" aria-pressed="false">✓ Terminé <small id="completedCount">0</small></button>
             </div>
-            <div id="selectedTagsBar" class="selected-tags-bar" hidden></div>
-            <div class="tag-result-summary" aria-live="polite"><span>Résultat</span><strong id="tagResultCount">0 jeux</strong></div>
-            <p class="sidebar-filter-help">Les tags s’additionnent. Les combinaisons impossibles disparaissent.</p>
-            <div id="tagList" class="tag-list sidebar-tag-list" aria-label="Liste des tags"></div>
+            <div class="library-transfer"><button id="exportLibrary" class="ghost-btn" type="button">Exporter</button><button id="importLibraryButton" class="ghost-btn" type="button">Importer</button><input id="importLibrary" type="file" accept="application/json,.json" hidden></div>
           </div>
-        </section>
+        </details>
 
-        <section id="healthPanel" class="sidebar-filter health-panel" hidden>
-          <div class="sidebar-filter-heading"><div><p class="eyebrow">Robots</p><h2>État du catalogue</h2></div></div>
-          <div class="health-grid"><span>Jeux <strong id="healthTotal">—</strong></span><span>Descriptions <strong id="healthDescriptions">—</strong></span><span>Galeries <strong id="healthGalleries">—</strong></span><span>GIF <strong id="healthGifs">—</strong></span></div>
-          <p id="healthMeta" class="sidebar-filter-help"></p>
-        </section>
+        <details id="tagFilter" class="tag-filter sidebar-filter sidebar-collapsible">
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Tags</strong><small>Genres et catégories</small></span><strong id="selectedTagCount" class="sidebar-selected-count">0</strong></summary>
+          <div class="sidebar-collapse-body">
+            <div class="tag-popover sidebar-tag-panel">
+              <div class="tag-controls sidebar-tag-controls">
+                <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
+                <select id="tagMode" hidden aria-hidden="true" tabindex="-1"><option value="all" selected>Tous les tags</option></select>
+                <button id="clearTags" class="ghost-btn reset-tags" type="button">Effacer les tags</button>
+              </div>
+              <div id="selectedTagsBar" class="selected-tags-bar" hidden></div>
+              <div class="tag-result-summary" aria-live="polite"><span>Résultat</span><strong id="tagResultCount">0 jeux</strong></div>
+              <div id="tagList" class="tag-list sidebar-tag-list" aria-label="Liste des tags"></div>
+            </div>
+          </div>
+        </details>
+
+        <details id="healthPanel" class="sidebar-filter sidebar-collapsible health-panel" hidden>
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Catalogue</strong><small>État des données</small></span></summary>
+          <div class="sidebar-collapse-body">
+            <div class="health-grid"><span>Jeux <strong id="healthTotal">—</strong></span><span>Descriptions <strong id="healthDescriptions">—</strong></span><span>Galeries <strong id="healthGalleries">—</strong></span><span>GIF <strong id="healthGifs">—</strong></span></div>
+            <p id="healthMeta" class="sidebar-filter-help"></p>
+          </div>
+        </details>
       </aside>
 
       <div class="catalog-content">
         <div id="activeState" class="active-state active-filter-chips" hidden></div>
 
-        <section id="newSection" class="home-strip" hidden><div class="section-heading"><div><p class="eyebrow">Fraîchement ajouté</p><h2>Nouveautés</h2></div></div><div id="newGrid" class="home-card-row"></div></section>
-        <section id="updatedSection" class="home-strip" hidden><div class="section-heading"><div><p class="eyebrow">Fiches enrichies</p><h2>Récemment mis à jour</h2></div></div><div id="updatedGrid" class="home-card-row"></div></section>
-        <section id="librarySection" class="home-strip" hidden><div class="section-heading"><div><p class="eyebrow">Ta liste locale</p><h2>À jouer</h2></div></div><div id="libraryGrid" class="home-card-row"></div></section>
-        <section id="recommendationSection" class="recommendations" hidden><div class="section-heading"><div><p class="eyebrow">Ton profil local</p><h2>Pour toi</h2></div><p id="recommendationMeta" class="section-note"></p></div><div id="recommendationGrid" class="home-card-row recommendation-grid"></div></section>
+        <details id="discoveryShell" class="discovery-shell">
+          <summary class="discovery-summary"><span class="discovery-summary-copy"><strong>Découvrir</strong><small>Nouveautés · Mises à jour · À jouer · Pour toi</small></span></summary>
+          <div class="discovery-content">
+            <section id="newSection" class="home-strip" hidden><div class="section-heading"><h2>Nouveautés</h2></div><div id="newGrid" class="home-card-row"></div></section>
+            <section id="updatedSection" class="home-strip" hidden><div class="section-heading"><h2>Mis à jour</h2></div><div id="updatedGrid" class="home-card-row"></div></section>
+            <section id="librarySection" class="home-strip" hidden><div class="section-heading"><h2>À jouer</h2></div><div id="libraryGrid" class="home-card-row"></div></section>
+            <section id="recommendationSection" class="recommendations" hidden><div class="section-heading"><h2>Pour toi</h2><p id="recommendationMeta" class="section-note" hidden></p></div><div id="recommendationGrid" class="home-card-row recommendation-grid"></div></section>
+          </div>
+        </details>
 
-        <div class="section-heading catalog-heading"><div><p class="eyebrow">Tous les jeux</p><h2>Catalogue</h2></div></div>
+        <div class="section-heading catalog-heading"><h2>Catalogue</h2></div>
         <section id="gameGrid" class="game-grid" aria-live="polite"></section>
         <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"><span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span></div>
         <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
@@ -111,9 +122,10 @@
     <article class="game-card"><button class="favorite-btn" type="button" aria-label="Ajouter aux favoris">♡</button><button class="card-open" type="button"><div class="cover-wrap"><img class="cover" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="cover-fallback" aria-hidden="true"></div><span class="new-badge" hidden>Nouveau</span></div><div class="card-body"><h2 class="card-title"></h2><div class="card-meta"><span class="card-date"></span><span class="card-size"></span></div><div class="genre-row"></div></div></button></article>
   </template>
 
-  <footer><span>FitBoyRepack</span><span>Catalogue statique • actualisé automatiquement • bibliothèque locale exportable</span></footer>
+  <footer><span>FitBoyRepack</span><span>Catalogue statique · bibliothèque locale</span></footer>
   <script type="module" src="./assets/app.js"></script>
   <script type="module" src="./assets/details.js"></script>
   <script src="./assets/media-sanitize.js"></script>
+  <script src="./assets/layout-v3.js" defer></script>
 </body>
 </html>

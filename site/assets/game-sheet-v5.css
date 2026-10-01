@@ -218,7 +218,8 @@
 /* Full-screen viewer: GIFs get a real display canvas instead of intrinsic tiny pixels. */
 .media-lightbox{position:fixed!important;inset:0!important;z-index:2147483000}
 .media-lightbox-stage{min-width:0;min-height:0}
-.media-lightbox-stage img[data-media-kind="gif"]{
+.media-lightbox-stage img[data-media-kind="gif"],
+.media-lightbox-stage img[src*=".gif"]{
   width:min(82vw,1280px);
   height:min(82dvh,720px);
   max-width:82vw;
@@ -255,5 +256,6 @@
   .media-showcase-v5{grid-template-rows:minmax(165px,1fr) 76px}
   .media-thumbnails-v5 .media-grid{height:76px}
   .media-thumbnails-v5 .media-item{height:70px;flex-basis:124px}
-  .media-lightbox-stage img[data-media-kind="gif"]{width:90vw;height:72dvh;max-width:90vw;max-height:72dvh}
+  .media-lightbox-stage img[data-media-kind="gif"],
+  .media-lightbox-stage img[src*=".gif"]{width:90vw;height:72dvh;max-width:90vw;max-height:72dvh}
 }

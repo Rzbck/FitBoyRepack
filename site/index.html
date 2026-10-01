@@ -13,19 +13,24 @@
   <link rel="stylesheet" href="./assets/compact-header.css">
   <link rel="stylesheet" href="./assets/performance.css">
   <link rel="stylesheet" href="./assets/filter-sidebar.css">
+  <link rel="stylesheet" href="./assets/service-v2.css">
 </head>
 <body>
   <header class="topbar compact-topbar">
     <a class="brand" href="./" aria-label="FitBoyRepack — accueil"><span>FitBoy</span><strong>Repack</strong></a>
 
     <section class="header-toolbar" aria-label="Recherche et tri du catalogue">
-      <label class="search-box">
-        <span class="sr-only">Rechercher</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-        <input id="searchInput" type="search" autocomplete="off" placeholder="Rechercher un jeu, un tag, une taille…">
-      </label>
+      <div class="search-shell">
+        <label class="search-box">
+          <span class="sr-only">Rechercher</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <input id="searchInput" type="search" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="searchSuggestions" placeholder="Titre, tag, version, DLC…">
+        </label>
+        <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
+      </div>
 
-      <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Plus récents</option><option value="date_asc">Plus anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
+      <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Plus récents</option><option value="updated_desc">Récemment enrichis</option><option value="date_asc">Plus anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
+      <button id="filterDrawerToggle" class="ghost-btn filter-drawer-toggle" type="button" aria-controls="filterSidebar" aria-expanded="false">Filtres</button>
     </section>
 
     <div class="topbar-meta compact-meta">
@@ -38,12 +43,28 @@
   <main class="page-shell compact-shell">
     <div class="catalog-layout">
       <aside id="filterSidebar" class="filter-sidebar" aria-label="Filtres du catalogue">
+        <div class="filter-drawer-head">
+          <strong>Filtres</strong>
+          <button id="filterDrawerClose" class="ghost-btn" type="button" aria-label="Fermer les filtres">×</button>
+        </div>
+
+        <section class="sidebar-filter quick-filter-panel" aria-labelledby="quickFilterTitle">
+          <div class="sidebar-filter-heading">
+            <div><p class="eyebrow">Affiner</p><h2 id="quickFilterTitle">Catalogue</h2></div>
+            <button id="resetFilters" class="ghost-btn compact-reset" type="button">Reset</button>
+          </div>
+          <div class="quick-filter-grid">
+            <label><span>Année</span><select id="yearFilter"><option value="">Toutes</option></select></label>
+            <label><span>Taille</span><select id="sizeFilter"><option value="">Toutes</option><option value="lt5">&lt; 5 Go</option><option value="5-20">5–20 Go</option><option value="20-50">20–50 Go</option><option value="50-100">50–100 Go</option><option value="gte100">100+ Go</option></select></label>
+          </div>
+          <label class="toggle-row"><input id="newOnlyFilter" type="checkbox"><span>Nouveautés (14 jours)</span></label>
+          <label class="toggle-row"><input id="mediaOnlyFilter" type="checkbox"><span>Avec screenshots / GIF</span></label>
+          <label class="toggle-row"><input id="descriptionOnlyFilter" type="checkbox"><span>Avec description</span></label>
+        </section>
+
         <section id="tagFilter" class="tag-filter sidebar-filter">
           <div class="sidebar-filter-heading">
-            <div>
-              <p class="eyebrow">Filtres</p>
-              <h2>Tags</h2>
-            </div>
+            <div><p class="eyebrow">Filtres</p><h2>Tags</h2></div>
             <strong id="selectedTagCount" class="sidebar-selected-count">0</strong>
           </div>
 
@@ -51,34 +72,63 @@
             <div class="tag-controls sidebar-tag-controls">
               <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
               <select id="tagMode" hidden aria-hidden="true" tabindex="-1"><option value="all" selected>Tous les tags</option></select>
-              <button id="clearTags" class="ghost-btn reset-tags" type="button" title="Retirer tous les tags et vider la recherche">Réinitialiser</button>
+              <button id="clearTags" class="ghost-btn reset-tags" type="button" title="Retirer tous les tags et vider la recherche">Effacer les tags</button>
             </div>
-            <div class="tag-result-summary" aria-live="polite">
-              <span>Résultat</span>
-              <strong id="tagResultCount">0 jeux</strong>
-            </div>
-            <p class="sidebar-filter-help">Chaque tag ajouté affine le résultat. Les tags sans résultat sont masqués.</p>
+            <div class="tag-result-summary" aria-live="polite"><span>Résultat</span><strong id="tagResultCount">0 jeux</strong></div>
+            <p class="sidebar-filter-help">Chaque tag ajouté affine le résultat. Les tags impossibles sont masqués.</p>
             <div id="tagList" class="tag-list sidebar-tag-list" aria-label="Liste des tags"></div>
           </div>
+        </section>
+
+        <section class="sidebar-filter library-panel" aria-labelledby="libraryTitle">
+          <div class="sidebar-filter-heading"><div><p class="eyebrow">Local</p><h2 id="libraryTitle">Ma bibliothèque</h2></div></div>
+          <div id="librarySummary" class="library-summary">Chargement…</div>
+          <div class="library-tools">
+            <button id="newCollectionButton" class="ghost-btn" type="button">+ Collection</button>
+            <button id="exportProfileButton" class="ghost-btn" type="button">Exporter</button>
+            <button id="importProfileButton" class="ghost-btn" type="button">Importer</button>
+            <input id="importProfileInput" type="file" accept="application/json,.json" hidden>
+          </div>
+        </section>
+
+        <section id="catalogHealth" class="sidebar-filter health-panel" aria-live="polite">
+          <div class="sidebar-filter-heading"><div><p class="eyebrow">Robots</p><h2>État du catalogue</h2></div></div>
+          <div class="health-grid">
+            <span><strong data-health="total">—</strong><small>jeux</small></span>
+            <span><strong data-health="descriptions">—</strong><small>descriptions</small></span>
+            <span><strong data-health="galleries">—</strong><small>galeries</small></span>
+            <span><strong data-health="gifs">—</strong><small>GIF</small></span>
+          </div>
+          <p id="healthUpdatedAt" class="sidebar-filter-help">Lecture de l’état…</p>
         </section>
       </aside>
 
       <div class="catalog-content">
         <div id="activeState" class="active-state" hidden></div>
 
-        <section id="recommendationSection" class="recommendations" hidden>
-          <div class="section-heading">
-            <div><p class="eyebrow">Ton profil local</p><h2>Pour toi</h2></div>
-            <p id="recommendationMeta" class="section-note"></p>
-          </div>
+        <section id="newSection" class="recommendations discovery-section" hidden>
+          <div class="section-heading"><div><p class="eyebrow">À l’instant</p><h2>Nouveautés</h2></div><p id="newMeta" class="section-note"></p></div>
+          <div id="newGrid" class="recommendation-grid"></div>
+        </section>
+
+        <section id="recentSection" class="recommendations discovery-section" hidden>
+          <div class="section-heading"><div><p class="eyebrow">Robots</p><h2>Récemment mis à jour</h2></div><p id="recentMeta" class="section-note"></p></div>
+          <div id="recentGrid" class="recommendation-grid"></div>
+        </section>
+
+        <section id="favoritesSection" class="recommendations discovery-section" hidden>
+          <div class="section-heading"><div><p class="eyebrow">Ton profil local</p><h2>Tes favoris</h2></div><p id="favoritesMeta" class="section-note"></p></div>
+          <div id="favoritesGrid" class="recommendation-grid"></div>
+        </section>
+
+        <section id="recommendationSection" class="recommendations discovery-section" hidden>
+          <div class="section-heading"><div><p class="eyebrow">Ton profil local</p><h2>Pour toi</h2></div><p id="recommendationMeta" class="section-note"></p></div>
           <div id="recommendationGrid" class="recommendation-grid"></div>
         </section>
 
         <div class="section-heading catalog-heading"><div><p class="eyebrow">Tous les jeux</p><h2>Catalogue</h2></div></div>
         <section id="gameGrid" class="game-grid" aria-live="polite"></section>
-        <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true">
-          <span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span>
-        </div>
+        <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"><span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span></div>
         <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
       </div>
     </div>
@@ -99,10 +149,12 @@
     </article>
   </template>
 
-  <footer><span>FitBoyRepack</span><span>Catalogue statique • actualisé automatiquement • profil et favoris stockés localement</span></footer>
+  <footer><span>FitBoyRepack</span><span>Catalogue statique • fiches chargées à la demande • profil local exportable</span></footer>
   <script type="module" src="./assets/app.js"></script>
   <script type="module" src="./assets/tag-facets.js"></script>
   <script type="module" src="./assets/details.js"></script>
+  <script type="module" src="./assets/library.js"></script>
+  <script type="module" src="./assets/health.js"></script>
   <script src="./assets/media-sanitize.js"></script>
 </body>
 </html>

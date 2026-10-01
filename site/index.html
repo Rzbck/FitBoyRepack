@@ -59,12 +59,17 @@
         </section>
 
         <details class="sidebar-filter sidebar-collapsible library-panel">
-          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Bibliothèque</strong><small>Favoris · À jouer · Terminé</small></span></summary>
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Bibliothèque</strong><small>Favoris · À jouer · Terminé · Perso</small></span></summary>
           <div class="sidebar-collapse-body">
             <div class="library-buttons">
               <button class="library-filter" data-library="favorites" type="button" aria-pressed="false">♥ Favoris <small id="favoritesCount">0</small></button>
               <button class="library-filter" data-library="backlog" type="button" aria-pressed="false">＋ À jouer <small id="backlogCount">0</small></button>
               <button class="library-filter" data-library="completed" type="button" aria-pressed="false">✓ Terminé <small id="completedCount">0</small></button>
+            </div>
+            <div class="custom-collections">
+              <div class="library-subheading"><span>Collections perso</span><button id="createCollection" class="ghost-btn" type="button">＋ Nouvelle</button></div>
+              <div id="customCollectionList" class="custom-collection-list" aria-live="polite"></div>
+              <p id="customCollectionEmpty" class="custom-collection-empty">Aucune collection perso.</p>
             </div>
             <div class="library-transfer"><button id="exportLibrary" class="ghost-btn" type="button">Exporter</button><button id="importLibraryButton" class="ghost-btn" type="button">Importer</button><input id="importLibrary" type="file" accept="application/json,.json" hidden></div>
           </div>

@@ -6,9 +6,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 CATALOG_VERSION = 2
-CURRENT_MEDIA_VERSION = 4
+CURRENT_MEDIA_VERSION = 7
 CURRENT_DETAILS_VERSION = 1
-LEGACY_MEDIA_VERSIONS = {None, 2, 3}
+LEGACY_MEDIA_VERSIONS = {None, 2, 3, 4, 5, 6}
 META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
 P = Path("site/data/games.json")
 data = json.loads(P.read_text(encoding="utf-8"))
@@ -68,6 +68,14 @@ for i, game in enumerate(data["games"]):
         assert isinstance(url, str) and url.startswith("https://"), f"invalid media URL in {game['id']}"
         parsed = urlparse(url)
         assert parsed.netloc, f"invalid media host in {game['id']}"
+
+        preview_url = item.get("preview_url")
+        if preview_url is not None:
+            assert media_version == CURRENT_MEDIA_VERSION, f"preview_url requires media v{CURRENT_MEDIA_VERSION} in {game['id']}"
+            assert isinstance(preview_url, str) and preview_url.startswith("https://"), f"invalid preview URL in {game['id']}"
+            parsed_preview = urlparse(preview_url)
+            assert parsed_preview.netloc, f"invalid preview host in {game['id']}"
+
         assert url not in media_seen, f"duplicate media URL in {game['id']}"
         media_seen.add(url)
         if item.get("type") == "gif":

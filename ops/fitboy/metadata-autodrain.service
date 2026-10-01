@@ -1,0 +1,31 @@
+[Unit]
+Description=FitBoyRepack autonomous V2 metadata drain
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=fitboy
+Group=fitboy
+WorkingDirectory=/opt/FitBoyRepack
+Environment=HOME=/var/lib/fitboy
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/opt/FitBoyRepack/tools
+
+# Pull the catalog/code snapshot first. If GitHub is temporarily unavailable,
+# this activation fails without touching the queue; the timer retries later.
+ExecStartPre=/usr/bin/git -C /opt/FitBoyRepack fetch origin main
+ExecStartPre=/usr/bin/git -C /opt/FitBoyRepack reset --hard origin/main
+
+ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/metadata_autodrain.py --catalog /opt/FitBoyRepack/site/data/games.json --db /var/lib/fitboy/ai/catalog_enrichment.sqlite3 --batch-size 500 --candidate-limit 3 --request-interval 0.40 --maxlag 10 --threshold 0.90 --margin 0.08 --progress-every 20 --cooldown 10 --transient-cooldown 120 --max-stagnant 3
+
+Nice=15
+CPUQuota=50%
+MemoryMax=1G
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

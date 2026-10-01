@@ -1,0 +1,32 @@
+name: Metadata autodrain
+
+on:
+  pull_request:
+    paths:
+      - 'tools/metadata_autodrain.py'
+      - 'tools/test_metadata_autodrain.py'
+      - 'tools/batched_metadata_bootstrap.py'
+      - 'tools/batched_metadata_bootstrap_v2.py'
+      - 'tools/fast_metadata_bootstrap.py'
+      - 'tools/ai_catalog_bootstrap.py'
+      - 'ops/fitboy/metadata-autodrain.service'
+      - 'ops/fitboy/metadata-autodrain.timer'
+      - 'requirements.txt'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile tools/metadata_autodrain.py tools/test_metadata_autodrain.py
+      - run: python tools/test_metadata_autodrain.py
+      - name: Validate systemd templates
+        run: |
+          grep -q 'ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/metadata_autodrain.py' ops/fitboy/metadata-autodrain.service
+          grep -q 'OnUnitInactiveSec=15min' ops/fitboy/metadata-autodrain.timer

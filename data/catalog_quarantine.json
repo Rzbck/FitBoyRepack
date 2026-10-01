@@ -26,6 +26,18 @@
       "action": "excluded-new"
     },
     {
+      "id": "a-call-for-ho-ho-honations",
+      "title": "A Call for Ho-Ho-Honations",
+      "source_url": "https://fitgirl-repacks.site/a-call-for-ho-ho-honations/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "warning-megaupload-users",
       "title": "A warning to all MegaUpload users!",
       "source_url": "https://fitgirl-repacks.site/warning-megaupload-users/",
@@ -96,6 +108,18 @@
       "action": "excluded-new"
     },
     {
+      "id": "all-sp-denuvo-games-are-cracked-bypassed",
+      "title": "All SP/Non-VR Denuvo Games are cracked/bypassed",
+      "source_url": "https://fitgirl-repacks.site/all-sp-denuvo-games-are-cracked-bypassed/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "all-game-uploads-restored",
       "title": "All game uploads restored!",
       "source_url": "https://fitgirl-repacks.site/all-game-uploads-restored/",
@@ -146,6 +170,16 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "because-why-not",
+      "title": "Because why not",
+      "source_url": "https://fitgirl-repacks.site/because-why-not/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "black-ops-3-repack-status",
@@ -242,6 +276,18 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "cyberpunk-2077-inquery",
+      "title": "Cyberpunk 2077 Inquery",
+      "source_url": "https://fitgirl-repacks.site/cyberpunk-2077-inquery/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
     },
     {
       "id": "dmc5-related-decompression-test",
@@ -378,6 +424,38 @@
       "action": "excluded-new"
     },
     {
+      "id": "dishonored-2-spanish-video-patch",
+      "title": "Dishonored 2 Spanish Video Patch",
+      "source_url": "https://fitgirl-repacks.site/dishonored-2-spanish-video-patch/",
+      "classification": "non_game",
+      "reason": "standalone-language-patch",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "do-you-want-developers-build-of-atomic-heart-to-be-repacked",
+      "title": "Do you want Developers Build of Atomic Heart to be repacked?",
+      "source_url": "https://fitgirl-repacks.site/do-you-want-developers-build-of-atomic-heart-to-be-repacked/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "domain-issue-resolved",
+      "title": "Domain Issue Resolved",
+      "source_url": "https://fitgirl-repacks.site/domain-issue-resolved/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "donation-mining-resumed",
       "title": "Donation Mining Resumed",
       "source_url": "https://fitgirl-repacks.site/donation-mining-resumed/",
@@ -402,6 +480,58 @@
       "action": "excluded-new"
     },
     {
+      "id": "doom-rottr",
+      "title": "Doom & RotTR",
+      "source_url": "https://fitgirl-repacks.site/doom-rottr/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fifa-19-repack-poll",
+      "title": "FIFA 19 Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/fifa-19-repack-poll/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fifa-19-turtle-repack-poll",
+      "title": "FIFA 19 Turtle Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/fifa-19-turtle-repack-poll/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "facebook-imposters",
+      "title": "Facebook Imposters",
+      "source_url": "https://fitgirl-repacks.site/facebook-imposters/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fallout-4-witcher-3",
+      "title": "Fallout 4 or Witcher 3?",
+      "source_url": "https://fitgirl-repacks.site/fallout-4-witcher-3/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "fallout-4-high-resolution-texture-pack",
       "title": "Fallout 4: High Resolution Texture Pack – for v1.10.980.0+",
       "source_url": "https://fitgirl-repacks.site/fallout-4-high-resolution-texture-pack/",
@@ -416,6 +546,286 @@
       "action": "excluded-new"
     },
     {
+      "id": "farewell-extratorrent",
+      "title": "Farewell, ExtraTorrent",
+      "source_url": "https://fitgirl-repacks.site/farewell-extratorrent/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "faster-installation-vote-now",
+      "title": "Faster Installation? Vote now!",
+      "source_url": "https://fitgirl-repacks.site/faster-installation-vote-now/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fitgirl-recommends-russian-movies",
+      "title": "FitGirl Recommends Russian Movies #1",
+      "source_url": "https://fitgirl-repacks.site/fitgirl-recommends-russian-movies/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fitgirl-repacks-11-years-in-service",
+      "title": "FitGirl Repacks – 11 Years in Service",
+      "source_url": "https://fitgirl-repacks.site/fitgirl-repacks-11-years-in-service/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fitgirl-repacks-belated-x-anniversary",
+      "title": "FitGirl Repacks – Belated X Anniversary",
+      "source_url": "https://fitgirl-repacks.site/fitgirl-repacks-belated-x-anniversary/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "fitgirls-browser-miner-is-online",
+      "title": "FitGirl’s Browser Miner is Online",
+      "source_url": "https://fitgirl-repacks.site/fitgirls-browser-miner-is-online/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "from-repacking-to-hacking",
+      "title": "From repacking to hacking",
+      "source_url": "https://fitgirl-repacks.site/from-repacking-to-hacking/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "gta-v-ultra-repack-v2-1x-details",
+      "title": "GTA V Ultra Repack v2.1x Details",
+      "source_url": "https://fitgirl-repacks.site/gta-v-ultra-repack-v2-1x-details/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "games-re-repacking",
+      "title": "Games for re-repacking",
+      "source_url": "https://fitgirl-repacks.site/games-re-repacking/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "games4up-mirrors-virus-warning",
+      "title": "Games4Up Mirrors – VIRUS WARNING!",
+      "source_url": "https://fitgirl-repacks.site/games4up-mirrors-virus-warning/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "gears-of-war-ultimate-edition-repack-poll",
+      "title": "Gears of War: Ultimate Edition Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/gears-of-war-ultimate-edition-repack-poll/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "good-read-about-hypervisor",
+      "title": "Good read about Hypervisor",
+      "source_url": "https://fitgirl-repacks.site/good-read-about-hypervisor/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "goodbye-codex",
+      "title": "Goodbye, CODEX",
+      "source_url": "https://fitgirl-repacks.site/goodbye-codex/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "got-problems-fitgirl-rescue",
+      "title": "Got problems? FitGirl to the rescue!",
+      "source_url": "https://fitgirl-repacks.site/got-problems-fitgirl-rescue/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "grand-theft-auto-6-an-extended-look-2026-2160p-h-265",
+      "title": "Grand Theft Auto 6: An Extended Look – 2026, 2160p H.265",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-6-an-extended-look-2026-2160p-h-265/",
+      "classification": "non_game",
+      "reason": "video-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "grand-theft-auto-vi-trailer-1",
+      "title": "Grand Theft Auto VI Trailer 1",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-vi-trailer-1/",
+      "classification": "non_game",
+      "reason": "trailer-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "grand-theft-auto-vi-trailer-2",
+      "title": "Grand Theft Auto VI Trailer 2",
+      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-vi-trailer-2/",
+      "classification": "non_game",
+      "reason": "trailer-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "happy-new-year-4",
+      "title": "HAPPY NEW YEAR!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-4/",
+      "classification": "non_game",
+      "reason": "seasonal-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "hdd-or-ssd",
+      "title": "HDD or SSD?",
+      "source_url": "https://fitgirl-repacks.site/hdd-or-ssd/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "hdd-or-ssd-version-2025",
+      "title": "HDD or SSD? Version 2025",
+      "source_url": "https://fitgirl-repacks.site/hdd-or-ssd-version-2025/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "happy-new-year",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year/",
+      "classification": "non_game",
+      "reason": "seasonal-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "happy-new-year-2",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-2/",
+      "classification": "non_game",
+      "reason": "seasonal-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "happy-new-year-3",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-3/",
+      "classification": "non_game",
+      "reason": "seasonal-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "happy-new-year-5",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-5/",
+      "classification": "non_game",
+      "reason": "seasonal-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "happy-new-year-6",
+      "title": "Happy New Year!",
+      "source_url": "https://fitgirl-repacks.site/happy-new-year-6/",
+      "classification": "non_game",
+      "reason": "seasonal-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "hellblade-senuas-sacrifice-repack-updated",
       "title": "Hellblade: Senua’s Sacrifice Repack Updated",
       "source_url": "https://fitgirl-repacks.site/hellblade-senuas-sacrifice-repack-updated/",
@@ -424,6 +834,60 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "hello-world",
+      "title": "Hello, crowd!",
+      "source_url": "https://fitgirl-repacks.site/hello-world/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "help",
+      "title": "Help!",
+      "source_url": "https://fitgirl-repacks.site/help/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "heroskeep-the-malware-distributor",
+      "title": "Heroskeep: The Malware Distributor",
+      "source_url": "https://fitgirl-repacks.site/heroskeep-the-malware-distributor/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "history-drm-copy-protection-computer-games",
+      "title": "History of DRM & Copy Protection in Computer Games",
+      "source_url": "https://fitgirl-repacks.site/history-drm-copy-protection-computer-games/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "hitman-fast-or-small",
+      "title": "Hitman – Fast or Small?",
+      "source_url": "https://fitgirl-repacks.site/hitman-fast-or-small/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "horizon-forbidden-west-complete-edition-updates-posted",
@@ -436,6 +900,28 @@
       "action": "excluded-new"
     },
     {
+      "id": "hoster-upgrade",
+      "title": "Hoster Upgrade",
+      "source_url": "https://fitgirl-repacks.site/hoster-upgrade/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "how-many-threads-does-your-cpu-have",
+      "title": "How many THREADS does your CPU have?",
+      "source_url": "https://fitgirl-repacks.site/how-many-threads-does-your-cpu-have/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "hypervisor-cracks-status-update",
       "title": "HyperVisor Cracks – Status Update",
       "source_url": "https://fitgirl-repacks.site/hypervisor-cracks-status-update/",
@@ -444,6 +930,16 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "i-need-technical-help",
+      "title": "I need technical help",
+      "source_url": "https://fitgirl-repacks.site/i-need-technical-help/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "installer-fixes",
@@ -456,6 +952,64 @@
       "action": "excluded-new"
     },
     {
+      "id": "im-stopping-windows-7-support",
+      "title": "I’m Stopping Windows 7 Support",
+      "source_url": "https://fitgirl-repacks.site/im-stopping-windows-7-support/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "im-that-popular",
+      "title": "I’m THAT popular?!",
+      "source_url": "https://fitgirl-repacks.site/im-that-popular/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "kat-is-back",
+      "title": "KAT is back!",
+      "source_url": "https://fitgirl-repacks.site/kat-is-back/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "lets-support-baldman",
+      "title": "Let’s support BALDMAN!",
+      "source_url": "https://fitgirl-repacks.site/lets-support-baldman/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "livelock-poll",
+      "title": "Livelock Poll",
+      "source_url": "https://fitgirl-repacks.site/livelock-poll/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "lolly-decompression-test",
       "title": "Lolly Decompression Test",
       "source_url": "https://fitgirl-repacks.site/lolly-decompression-test/",
@@ -466,6 +1020,78 @@
       "action": "excluded-new"
     },
     {
+      "id": "looking-new-seedboxes",
+      "title": "Looking for new seedboxes",
+      "source_url": "https://fitgirl-repacks.site/looking-new-seedboxes/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "loved-kat-help-them-to-get-back",
+      "title": "Loved KAT? Help them to get back!",
+      "source_url": "https://fitgirl-repacks.site/loved-kat-help-them-to-get-back/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "mafia-2-cod-mw2",
+      "title": "Mafia 2 or CoD: MW2?",
+      "source_url": "https://fitgirl-repacks.site/mafia-2-cod-mw2/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "mafia-3-cracked",
+      "title": "Mafia 3 Cracked",
+      "source_url": "https://fitgirl-repacks.site/mafia-3-cracked/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "mafia-3-news",
+      "title": "Mafia 3 News",
+      "source_url": "https://fitgirl-repacks.site/mafia-3-news/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "mafia-3-poll",
+      "title": "Mafia 3 Poll",
+      "source_url": "https://fitgirl-repacks.site/mafia-3-poll/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "malware-analysis-help-needed",
+      "title": "Malware Analysis Help Needed",
+      "source_url": "https://fitgirl-repacks.site/malware-analysis-help-needed/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "man-o-war-corsair-repack-updated",
       "title": "Man O’ War: Corsair Repack Updated",
       "source_url": "https://fitgirl-repacks.site/man-o-war-corsair-repack-updated/",
@@ -474,6 +1100,28 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "mass-effect-andromeda-standalone-patch-v1-04-v1-05",
+      "title": "Mass Effect: Andromeda – Standalone Patch from v1.04 to v1.05",
+      "source_url": "https://fitgirl-repacks.site/mass-effect-andromeda-standalone-patch-v1-04-v1-05/",
+      "classification": "non_game",
+      "reason": "standalone-patch",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "memecoin-in-my-name",
+      "title": "MemeCoin in My Name",
+      "source_url": "https://fitgirl-repacks.site/memecoin-in-my-name/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
     },
     {
       "id": "mining-donation-option-changed",
@@ -488,6 +1136,38 @@
       "action": "excluded-new"
     },
     {
+      "id": "mirrors-edge-catalyst-progress-report",
+      "title": "Mirror’s Edge: Catalyst – Progress Report",
+      "source_url": "https://fitgirl-repacks.site/mirrors-edge-catalyst-progress-report/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "missing-pushes",
+      "title": "Missing Pushes",
+      "source_url": "https://fitgirl-repacks.site/missing-pushes/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "monero-protocol-upgraded",
+      "title": "Monero Protocol Upgraded",
+      "source_url": "https://fitgirl-repacks.site/monero-protocol-upgraded/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "more-donation-options-added",
       "title": "More Donation Options Added",
       "source_url": "https://fitgirl-repacks.site/more-donation-options-added/",
@@ -500,6 +1180,142 @@
       "action": "excluded-new"
     },
     {
+      "id": "my-new-record",
+      "title": "My New Record!",
+      "source_url": "https://fitgirl-repacks.site/my-new-record/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "my-little-comment-on-crackwatch-regarding-how-repacks-work",
+      "title": "My little comment on CrackWatch regarding how repacks work",
+      "source_url": "https://fitgirl-repacks.site/my-little-comment-on-crackwatch-regarding-how-repacks-work/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "my-statement-about-empress",
+      "title": "My statement about EMPRESS",
+      "source_url": "https://fitgirl-repacks.site/my-statement-about-empress/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "nba-2k17-repack-installer-bugfix",
+      "title": "NBA 2K17 Repack Installer Bugfix",
+      "source_url": "https://fitgirl-repacks.site/nba-2k17-repack-installer-bugfix/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad",
+      "title": "Need for Speed: Heat P2P Crack is actually a stolen CODEX one. And why it’s bad",
+      "source_url": "https://fitgirl-repacks.site/need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "new-birchpunk-video",
+      "title": "New Birchpunk Video",
+      "source_url": "https://fitgirl-repacks.site/new-birchpunk-video/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "test",
+      "title": "New Browser Miner – Test Version",
+      "source_url": "https://fitgirl-repacks.site/test/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "new-google-drive-test",
+      "title": "New Google Drive Test",
+      "source_url": "https://fitgirl-repacks.site/new-google-drive-test/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "new-rar-splitting-sizes",
+      "title": "New RAR-splitting sizes",
+      "source_url": "https://fitgirl-repacks.site/new-rar-splitting-sizes/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "new-compression-algorithm",
+      "title": "New compression algorithm",
+      "source_url": "https://fitgirl-repacks.site/new-compression-algorithm/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "no-rmw-today",
+      "title": "No RMW today",
+      "source_url": "https://fitgirl-repacks.site/no-rmw-today/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "onedrive-as-a-hosting-speed-test",
+      "title": "OneDrive-as-a-Hosting Speed Test",
+      "source_url": "https://fitgirl-repacks.site/onedrive-as-a-hosting-speed-test/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "only-64-denuvo-games-left-uncracked",
+      "title": "Only 64 Denuvo games left uncracked",
+      "source_url": "https://fitgirl-repacks.site/only-64-denuvo-games-left-uncracked/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "outer-wilds-repack-updated",
       "title": "Outer Wilds Repack Updated",
       "source_url": "https://fitgirl-repacks.site/outer-wilds-repack-updated/",
@@ -508,6 +1324,16 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "pink-paw-award",
+      "title": "Pink Paw Award",
+      "source_url": "https://fitgirl-repacks.site/pink-paw-award/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "please-stop-your-donation-miners",
@@ -520,6 +1346,60 @@
       "action": "excluded-new"
     },
     {
+      "id": "possible-site-downtime-or-domain-change",
+      "title": "Possible Site Downtime or Domain Change",
+      "source_url": "https://fitgirl-repacks.site/possible-site-downtime-or-domain-change/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "process-lasso-the-program-everyone-must-use",
+      "title": "Process Lasso – The program everyone must use",
+      "source_url": "https://fitgirl-repacks.site/process-lasso-the-program-everyone-must-use/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "push-notifications",
+      "title": "Push Notifications",
+      "source_url": "https://fitgirl-repacks.site/push-notifications/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "push-notifications-follow-up",
+      "title": "Push Notifications Follow-up",
+      "source_url": "https://fitgirl-repacks.site/push-notifications-follow-up/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "push-notifications-ii-the-pushing-day",
+      "title": "Push Notifications II: The Pushing Day",
+      "source_url": "https://fitgirl-repacks.site/push-notifications-ii-the-pushing-day/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "puyo-puyo-tetris-codex-crack-added",
       "title": "Puyo Puyo Tetris CODEX Crack Added",
       "source_url": "https://fitgirl-repacks.site/puyo-puyo-tetris-codex-crack-added/",
@@ -528,6 +1408,451 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "regarding-fresh-windows-10-update",
+      "title": "Regarding fresh Windows 10 update",
+      "source_url": "https://fitgirl-repacks.site/regarding-fresh-windows-10-update/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "repackers-pain",
+      "title": "Repacker’s Pain",
+      "source_url": "https://fitgirl-repacks.site/repackers-pain/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "repacks-of-uncracked-games-vote-now",
+      "title": "Repacks of uncracked games – Poll Closed!",
+      "source_url": "https://fitgirl-repacks.site/repacks-of-uncracked-games-vote-now/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "restoring-uploads-list",
+      "title": "Restoring uploads list",
+      "source_url": "https://fitgirl-repacks.site/restoring-uploads-list/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "retrogames-is-up-and-running",
+      "title": "RetroGames is up and running!",
+      "source_url": "https://fitgirl-repacks.site/retrogames-is-up-and-running/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-9",
+      "title": "Russian Movies #9",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-9/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-10",
+      "title": "Russian Movies Weekend #10",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-10/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-11",
+      "title": "Russian Movies Weekend #11",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-11/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-12",
+      "title": "Russian Movies Weekend #12",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-12/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-13",
+      "title": "Russian Movies Weekend #13",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-13/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-14",
+      "title": "Russian Movies Weekend #14",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-14/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-15",
+      "title": "Russian Movies Weekend #15",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-15/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-16",
+      "title": "Russian Movies Weekend #16",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-16/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-17",
+      "title": "Russian Movies Weekend #17",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-17/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-18",
+      "title": "Russian Movies Weekend #18",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-18/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-19",
+      "title": "Russian Movies Weekend #19",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-19/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-2",
+      "title": "Russian Movies Weekend #2",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-2/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-21",
+      "title": "Russian Movies Weekend #21",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-21/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-22",
+      "title": "Russian Movies Weekend #22",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-22/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-23",
+      "title": "Russian Movies Weekend #23",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-23/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-24",
+      "title": "Russian Movies Weekend #24",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-24/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-25",
+      "title": "Russian Movies Weekend #25",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-25/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-26",
+      "title": "Russian Movies Weekend #26",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-26/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-27",
+      "title": "Russian Movies Weekend #27",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-27/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-3",
+      "title": "Russian Movies Weekend #3",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-3/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-4",
+      "title": "Russian Movies Weekend #4",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-4/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-5",
+      "title": "Russian Movies Weekend #5",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-5/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-6",
+      "title": "Russian Movies Weekend #6",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-6/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-7",
+      "title": "Russian Movies Weekend #7",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-7/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "russian-movies-weekend-8",
+      "title": "Russian Movies Weekend #8",
+      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-8/",
+      "classification": "non_game",
+      "reason": "movie-editorial",
+      "score": 4,
+      "signals": [
+        "genres",
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "ssl-disabled",
+      "title": "SSL Disabled",
+      "source_url": "https://fitgirl-repacks.site/ssl-disabled/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "ssl-is-now-required-for-visiting-my-site",
+      "title": "SSL is now required for visiting my site",
+      "source_url": "https://fitgirl-repacks.site/ssl-is-now-required-for-visiting-my-site/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "scamming-scammers-videos",
+      "title": "Scamming scammers videos",
+      "source_url": "https://fitgirl-repacks.site/scamming-scammers-videos/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "senran-kagura-estival-versus-not",
+      "title": "Senran Kagura: Estival Versus – To Be or Not to Be?",
+      "source_url": "https://fitgirl-repacks.site/senran-kagura-estival-versus-not/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "september-3rd",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd/",
+      "classification": "non_game",
+      "reason": "anniversary-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "september-3rd-2",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-2/",
+      "classification": "non_game",
+      "reason": "anniversary-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "september-3rd-2023",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-2023/",
+      "classification": "non_game",
+      "reason": "anniversary-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "september-3rd-3",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-3/",
+      "classification": "non_game",
+      "reason": "anniversary-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "september-3rd-4",
+      "title": "September 3rd",
+      "source_url": "https://fitgirl-repacks.site/september-3rd-4/",
+      "classification": "non_game",
+      "reason": "anniversary-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "shadow-warrior-2-patch-v1-1-2-0",
@@ -540,6 +1865,18 @@
       "action": "excluded-new"
     },
     {
+      "id": "some-stats",
+      "title": "Some Stats",
+      "source_url": "https://fitgirl-repacks.site/some-stats/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "people-just-cant-fixed",
       "title": "Some people just can’t be fixed",
       "source_url": "https://fitgirl-repacks.site/people-just-cant-fixed/",
@@ -550,6 +1887,60 @@
         "image"
       ],
       "action": "excluded-new"
+    },
+    {
+      "id": "soundcheck",
+      "title": "Soundcheck. Results.",
+      "source_url": "https://fitgirl-repacks.site/soundcheck/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "steam-fixed-denuvo-bypass",
+      "title": "Steam fixed Denuvo bypass",
+      "source_url": "https://fitgirl-repacks.site/steam-fixed-denuvo-bypass/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "temporary-mining-stop",
+      "title": "Temporary Mining Stop",
+      "source_url": "https://fitgirl-repacks.site/temporary-mining-stop/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "testers-amd-wanted",
+      "title": "Testers with AMD wanted",
+      "source_url": "https://fitgirl-repacks.site/testers-amd-wanted/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "that-which-does-not-kill-us-makes-us-stronger",
+      "title": "That which does not kill us makes us stronger",
+      "source_url": "https://fitgirl-repacks.site/that-which-does-not-kill-us-makes-us-stronger/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
     },
     {
       "id": "day-requests-may-13-mark-calendar",
@@ -594,6 +1985,38 @@
       "action": "excluded-new"
     },
     {
+      "id": "the-season-has-begun",
+      "title": "The Season Has Begun",
+      "source_url": "https://fitgirl-repacks.site/the-season-has-begun/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "the-sims-4-bug-test",
+      "title": "The Sims 4 Bug Test",
+      "source_url": "https://fitgirl-repacks.site/the-sims-4-bug-test/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "world-much-bigger-village",
+      "title": "The world is much bigger than your village",
+      "source_url": "https://fitgirl-repacks.site/world-much-bigger-village/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "tiny-compression-test",
       "title": "Tiny Compression Test",
       "source_url": "https://fitgirl-repacks.site/tiny-compression-test/",
@@ -614,6 +2037,40 @@
       "action": "excluded-new"
     },
     {
+      "id": "tomorrow-disqus-commenting-system-will-stop-working-on-my-site",
+      "title": "Tomorrow Disqus Commenting System will stop working on my site",
+      "source_url": "https://fitgirl-repacks.site/tomorrow-disqus-commenting-system-will-stop-working-on-my-site/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "trials-of-mana-denuvoless-build-added",
+      "title": "Trials of Mana – Denuvoless Build Added",
+      "source_url": "https://fitgirl-repacks.site/trials-of-mana-denuvoless-build-added/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "ubisoft-is-adding-denuvo-to-previously-unprotected-games",
+      "title": "Ubisoft is adding Denuvo to previously unprotected games",
+      "source_url": "https://fitgirl-repacks.site/ubisoft-is-adding-denuvo-to-previously-unprotected-games/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "upcoming-repacks-10",
       "title": "Upcoming Repacks",
       "source_url": "https://fitgirl-repacks.site/upcoming-repacks-10/",
@@ -625,7 +2082,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "upcoming-witcher-3-repack-details",
@@ -661,7 +2118,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-10-2025",
@@ -675,7 +2132,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-10-2026",
@@ -689,7 +2146,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-11-2025",
@@ -703,7 +2160,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-13-2025",
@@ -717,7 +2174,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-13-2026",
@@ -731,7 +2188,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-15-2025",
@@ -745,7 +2202,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-15-2026",
@@ -759,7 +2216,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-17-2025",
@@ -772,7 +2229,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-17-2026",
@@ -798,7 +2255,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-19-2026",
@@ -812,7 +2269,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-20-2025",
@@ -826,7 +2283,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-21-2026",
@@ -840,7 +2297,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-22-2026",
@@ -854,7 +2311,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-23-2025",
@@ -868,7 +2325,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-25-2025",
@@ -882,7 +2339,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-25-2026",
@@ -908,7 +2365,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-27-2025",
@@ -922,7 +2379,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-28-2026",
@@ -936,7 +2393,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-29-2026",
@@ -962,7 +2419,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-30-2025",
@@ -976,7 +2433,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-30-2026",
@@ -990,7 +2447,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-4-2025",
@@ -1004,7 +2461,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-5-2025",
@@ -1030,7 +2487,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-6-2025",
@@ -1044,7 +2501,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-6-2026",
@@ -1058,7 +2515,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-7-2025",
@@ -1084,7 +2541,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-8-2026",
@@ -1098,7 +2555,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-9-2025",
@@ -1112,7 +2569,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-1-2026",
@@ -1126,7 +2583,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-10-2024",
@@ -1152,7 +2609,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-12-2024",
@@ -1178,7 +2635,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-12-2026",
@@ -1192,7 +2649,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-13-2026",
@@ -1206,7 +2663,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-14-2024",
@@ -1232,7 +2689,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-15-2025",
@@ -1258,7 +2715,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-16-2024",
@@ -1284,7 +2741,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-17-2024",
@@ -1310,7 +2767,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-18-2024",
@@ -1336,7 +2793,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-19-2024",
@@ -1362,7 +2819,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-19-2026",
@@ -1376,7 +2833,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-2-2024",
@@ -1402,7 +2859,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-2-2026",
@@ -1416,7 +2873,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-20-2024",
@@ -1442,7 +2899,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-20-2026",
@@ -1468,7 +2925,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-21-2026",
@@ -1482,7 +2939,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-22-2024",
@@ -1508,7 +2965,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-22-2026",
@@ -1522,7 +2979,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-23-2025",
@@ -1536,7 +2993,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-23-2026",
@@ -1550,7 +3007,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-24-2025",
@@ -1564,7 +3021,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-24-2026",
@@ -1578,7 +3035,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-25-2024",
@@ -1603,7 +3060,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-26-2024",
@@ -1629,7 +3086,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-26-2026",
@@ -1643,7 +3100,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-27-2026",
@@ -1657,7 +3114,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-28-2025",
@@ -1671,7 +3128,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-29-2024",
@@ -1697,7 +3154,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-3-2025",
@@ -1723,7 +3180,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-30-2025",
@@ -1737,7 +3194,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-30-2026",
@@ -1751,7 +3208,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-31-2024",
@@ -1777,7 +3234,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-4-2024",
@@ -1803,7 +3260,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-5-2026",
@@ -1817,7 +3274,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-6-2024",
@@ -1843,7 +3300,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-6-2026",
@@ -1857,7 +3314,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-8-2025",
@@ -1871,7 +3328,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-8-2026",
@@ -1909,7 +3366,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-august-9-2026",
@@ -1923,7 +3380,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-1-2024",
@@ -1937,7 +3394,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-1-2025",
@@ -1951,7 +3408,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-11-2024",
@@ -1965,7 +3422,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-11-2025",
@@ -1979,7 +3436,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-12-2025",
@@ -1993,7 +3450,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-13-2024",
@@ -2007,7 +3464,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-13-2025",
@@ -2021,7 +3478,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-14-2025",
@@ -2035,7 +3492,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-15-2024",
@@ -2049,7 +3506,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-16-2025",
@@ -2063,7 +3520,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-17-2024",
@@ -2089,7 +3546,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-19-2024",
@@ -2103,7 +3560,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-19-2025",
@@ -2117,7 +3574,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-2-2024",
@@ -2131,7 +3588,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-2-2025",
@@ -2145,7 +3602,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-20-2025",
@@ -2159,7 +3616,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-23-2024",
@@ -2173,7 +3630,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-23-2025",
@@ -2199,7 +3656,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-25-2024",
@@ -2213,7 +3670,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-26-2024",
@@ -2227,7 +3684,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-26-2025",
@@ -2241,7 +3698,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-27-2024",
@@ -2255,7 +3712,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-27-2025",
@@ -2281,7 +3738,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-3-2024",
@@ -2295,7 +3752,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-30-2024",
@@ -2321,7 +3778,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-31-2025",
@@ -2347,7 +3804,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-4-2025",
@@ -2361,7 +3818,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-6-2025",
@@ -2375,7 +3832,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-7-2024",
@@ -2389,7 +3846,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-7-2025",
@@ -2415,7 +3872,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-december-9-2025",
@@ -2429,7 +3886,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-1-2026",
@@ -2443,7 +3900,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-10-2025",
@@ -2457,7 +3914,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-10-2026",
@@ -2471,7 +3928,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-12-2025",
@@ -2485,7 +3942,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-12-2026",
@@ -2498,7 +3955,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-14-2025",
@@ -2512,7 +3969,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-14-2026",
@@ -2525,7 +3982,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-15-2025",
@@ -2539,7 +3996,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-16-2025",
@@ -2553,7 +4010,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-16-2026",
@@ -2567,7 +4024,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-17-2025",
@@ -2581,7 +4038,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-18-2026",
@@ -2595,7 +4052,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-19-2025",
@@ -2621,7 +4078,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-20-2025",
@@ -2635,7 +4092,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-20-2026",
@@ -2649,7 +4106,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-21-2025",
@@ -2663,7 +4120,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-21-2026",
@@ -2689,7 +4146,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-23-2026",
@@ -2703,7 +4160,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-24-2025",
@@ -2729,7 +4186,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-26-2026",
@@ -2743,7 +4200,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-27-2025",
@@ -2769,7 +4226,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-3-2025",
@@ -2783,7 +4240,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-3-2026",
@@ -2809,7 +4266,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-5-2025",
@@ -2835,7 +4292,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-6-2026",
@@ -2849,7 +4306,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-7-2025",
@@ -2863,7 +4320,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-7-2026",
@@ -2877,7 +4334,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-february-9-2025",
@@ -2891,7 +4348,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-10-2025",
@@ -2905,7 +4362,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-11-2025",
@@ -2919,7 +4376,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-11-2026",
@@ -2933,7 +4390,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-13-2026",
@@ -2947,7 +4404,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-14-2025",
@@ -2961,7 +4418,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-15-2025",
@@ -2987,7 +4444,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-16-2026",
@@ -3001,7 +4458,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-17-2025",
@@ -3015,7 +4472,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-17-2026",
@@ -3029,7 +4486,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-18-2025",
@@ -3043,7 +4500,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-18-2026",
@@ -3057,7 +4514,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-19-2026",
@@ -3071,7 +4528,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-2-2025",
@@ -3085,7 +4542,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-2-2026",
@@ -3099,7 +4556,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-20-2026",
@@ -3113,7 +4570,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-21-2025",
@@ -3127,7 +4584,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-21-2026",
@@ -3141,7 +4598,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-22-2025",
@@ -3155,7 +4612,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-22-2026",
@@ -3169,7 +4626,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-23-2025",
@@ -3183,7 +4640,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-24-2025",
@@ -3197,7 +4654,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-24-2026",
@@ -3211,7 +4668,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-25-2026",
@@ -3225,7 +4682,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-27-2025",
@@ -3239,7 +4696,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-27-2026",
@@ -3253,7 +4710,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-29-2025",
@@ -3267,7 +4724,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-29-2026",
@@ -3281,7 +4738,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-30-2026",
@@ -3295,7 +4752,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-31-2025",
@@ -3309,7 +4766,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-4-2025",
@@ -3323,7 +4780,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-4-2026",
@@ -3337,7 +4794,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-5-2026",
@@ -3351,7 +4808,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-7-2025",
@@ -3365,7 +4822,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-7-2026",
@@ -3379,7 +4836,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-january-9-2026",
@@ -3393,7 +4850,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-1-2025",
@@ -3407,7 +4864,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-1-2026",
@@ -3445,7 +4902,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-11-2024",
@@ -3471,7 +4928,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-11-2026",
@@ -3485,7 +4942,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-12-2024",
@@ -3511,7 +4968,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-13-2024",
@@ -3537,7 +4994,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-13-2026",
@@ -3575,7 +5032,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-15-2026",
@@ -3613,7 +5070,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-16-2026",
@@ -3627,7 +5084,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-17-2025",
@@ -3641,7 +5098,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-18-2024",
@@ -3667,7 +5124,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-18-2026",
@@ -3681,7 +5138,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-19-2026",
@@ -3695,7 +5152,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-2-2024",
@@ -3721,7 +5178,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-2-2026",
@@ -3735,7 +5192,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-20-2024",
@@ -3761,7 +5218,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-21-2024",
@@ -3786,7 +5243,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-21-2026",
@@ -3800,7 +5257,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-22-2024",
@@ -3826,7 +5283,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-22-2026",
@@ -3840,7 +5297,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-23-2025",
@@ -3854,7 +5311,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-23-2026",
@@ -3868,7 +5325,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-24-2024",
@@ -3894,7 +5351,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-25-2024",
@@ -3920,7 +5377,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-25-2026",
@@ -3933,7 +5390,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-26-2024",
@@ -3959,7 +5416,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-27-2025",
@@ -3973,7 +5430,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-27-2026",
@@ -3987,7 +5444,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-28-2024",
@@ -4025,7 +5482,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-29-2026",
@@ -4039,7 +5496,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-3-2024",
@@ -4065,7 +5522,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-30-2024",
@@ -4103,7 +5560,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-31-2026",
@@ -4141,7 +5598,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-5-2024",
@@ -4167,7 +5624,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-5-2026",
@@ -4205,7 +5662,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-6-2026",
@@ -4219,7 +5676,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-7-2025",
@@ -4233,7 +5690,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-7-2026",
@@ -4247,7 +5704,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-8-2024",
@@ -4273,7 +5730,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-9-2025",
@@ -4287,7 +5744,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-july-9-2026",
@@ -4301,7 +5758,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-1-2024",
@@ -4327,7 +5784,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-1-2026",
@@ -4341,7 +5798,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-10-2024",
@@ -4367,7 +5824,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-11-2025",
@@ -4381,7 +5838,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-11-2026",
@@ -4395,7 +5852,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-12-2024",
@@ -4421,7 +5878,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-12-2026",
@@ -4459,7 +5916,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-13-2026",
@@ -4473,7 +5930,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-14-2026",
@@ -4487,7 +5944,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-15-2025",
@@ -4501,7 +5958,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-16-2024",
@@ -4527,7 +5984,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-16-2026",
@@ -4541,7 +5998,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-17-2024",
@@ -4567,7 +6024,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-17-2026",
@@ -4581,7 +6038,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-18-2025",
@@ -4595,7 +6052,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-19-2024",
@@ -4621,7 +6078,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-19-2026",
@@ -4635,7 +6092,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-2-2025",
@@ -4649,7 +6106,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-20-2025",
@@ -4663,7 +6120,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-21-2024",
@@ -4689,7 +6146,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-23-2024",
@@ -4715,7 +6172,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-24-2026",
@@ -4729,7 +6186,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-25-2024",
@@ -4779,7 +6236,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-26-2026",
@@ -4793,7 +6250,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-27-2024",
@@ -4819,7 +6276,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-28-2025",
@@ -4833,7 +6290,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-29-2024",
@@ -4883,7 +6340,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-30-2026",
@@ -4897,7 +6354,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-4-2024",
@@ -4923,7 +6380,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-5-2024",
@@ -4949,7 +6406,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-6-2025",
@@ -4963,7 +6420,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-7-2024",
@@ -4989,7 +6446,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-7-2026",
@@ -5003,7 +6460,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-8-2024",
@@ -5029,7 +6486,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-june-9-2024",
@@ -5055,7 +6512,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-1-2025",
@@ -5069,7 +6526,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-1-2026",
@@ -5083,7 +6540,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-10-2026",
@@ -5109,7 +6566,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-12-2026",
@@ -5123,7 +6580,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-13-2025",
@@ -5137,7 +6594,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-13-2026",
@@ -5151,7 +6608,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-14-2025",
@@ -5165,7 +6622,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-14-2026",
@@ -5179,7 +6636,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-15-2025",
@@ -5193,7 +6650,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-16-2025",
@@ -5207,7 +6664,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-17-2026",
@@ -5221,7 +6678,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-18-2025",
@@ -5235,7 +6692,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-18-2026",
@@ -5261,7 +6718,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-19-2026",
@@ -5275,7 +6732,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-2-2026",
@@ -5301,7 +6758,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-21-2025",
@@ -5315,7 +6772,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-22-2026",
@@ -5329,7 +6786,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-23-2025",
@@ -5343,7 +6800,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-25-2025",
@@ -5356,7 +6813,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-25-2026",
@@ -5370,7 +6827,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-27-2025",
@@ -5384,7 +6841,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-28-2026",
@@ -5398,7 +6855,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-29-2025",
@@ -5412,7 +6869,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-3-2026",
@@ -5426,7 +6883,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-30-2026",
@@ -5440,7 +6897,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-31-2025",
@@ -5454,7 +6911,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-5-2025",
@@ -5468,7 +6925,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-5-2026",
@@ -5482,7 +6939,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-7-2025",
@@ -5496,7 +6953,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-7-2026",
@@ -5510,7 +6967,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-8-2025",
@@ -5524,7 +6981,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-march-9-2026",
@@ -5538,7 +6995,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-1-2025",
@@ -5552,7 +7009,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-1-2026",
@@ -5566,7 +7023,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-10-2024",
@@ -5592,7 +7049,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-10-2026",
@@ -5606,7 +7063,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-12-2024",
@@ -5632,7 +7089,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-12-2026",
@@ -5646,7 +7103,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-13-2024",
@@ -5672,7 +7129,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-14-2024",
@@ -5698,7 +7155,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-15-2024",
@@ -5724,7 +7181,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-15-2026",
@@ -5750,7 +7207,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-17-2024",
@@ -5776,7 +7233,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-18-2025",
@@ -5790,7 +7247,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-18-2026",
@@ -5804,7 +7261,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-19-2024",
@@ -5830,7 +7287,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-19-2026",
@@ -5844,7 +7301,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-2-2025",
@@ -5858,7 +7315,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-2-2026",
@@ -5872,7 +7329,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-21-2024",
@@ -5910,7 +7367,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-22-2024",
@@ -5936,7 +7393,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-22-2026",
@@ -5950,7 +7407,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-23-2024",
@@ -6000,7 +7457,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-25-2026",
@@ -6014,7 +7471,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-26-2024",
@@ -6052,7 +7509,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-27-2026",
@@ -6066,7 +7523,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-28-2024",
@@ -6092,7 +7549,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-29-2024",
@@ -6118,7 +7575,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-29-2026",
@@ -6132,7 +7589,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-3-2026",
@@ -6170,7 +7627,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-31-2024",
@@ -6196,7 +7653,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-4-2026",
@@ -6210,7 +7667,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-5-2025",
@@ -6224,7 +7681,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-6-2026",
@@ -6238,7 +7695,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-7-2024",
@@ -6264,7 +7721,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-8-2024",
@@ -6290,7 +7747,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-8-2026",
@@ -6304,7 +7761,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-9-2024",
@@ -6330,7 +7787,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-may-9-2026",
@@ -6344,7 +7801,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-1-2024",
@@ -6358,7 +7815,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-1-2025",
@@ -6372,7 +7829,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-10-2024",
@@ -6386,7 +7843,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-10-2025",
@@ -6400,7 +7857,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-11-2025",
@@ -6426,7 +7883,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-13-2024",
@@ -6440,7 +7897,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-13-2025",
@@ -6454,7 +7911,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-14-2025",
@@ -6468,7 +7925,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-15-2024",
@@ -6482,7 +7939,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-16-2024",
@@ -6496,7 +7953,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-17-2025",
@@ -6510,7 +7967,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-18-2024",
@@ -6524,7 +7981,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-19-2024",
@@ -6538,7 +7995,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-19-2025",
@@ -6552,7 +8009,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-2-2025",
@@ -6566,7 +8023,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-20-2025",
@@ -6592,7 +8049,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-21-2025",
@@ -6606,7 +8063,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-22-2024",
@@ -6620,7 +8077,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-23-2025",
@@ -6634,7 +8091,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-24-2024",
@@ -6648,7 +8105,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-25-2025",
@@ -6662,7 +8119,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-26-2024",
@@ -6676,7 +8133,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-27-2025",
@@ -6690,7 +8147,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-28-2024",
@@ -6704,7 +8161,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-28-2025",
@@ -6718,7 +8175,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-29-2025",
@@ -6732,7 +8189,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-3-2024",
@@ -6758,7 +8215,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-5-2024",
@@ -6772,7 +8229,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-5-2025",
@@ -6786,7 +8243,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-6-2024",
@@ -6800,7 +8257,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-6-2025",
@@ -6814,7 +8271,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-7-2024",
@@ -6828,7 +8285,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-8-2024",
@@ -6854,7 +8311,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-november-9-2024",
@@ -6868,7 +8325,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-1-2024",
@@ -6894,7 +8351,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-10-2024",
@@ -6944,7 +8401,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-12-2024",
@@ -6958,7 +8415,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-12-2025",
@@ -6972,7 +8429,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-13-2025",
@@ -6986,7 +8443,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-14-2024",
@@ -7000,7 +8457,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-15-2024",
@@ -7014,7 +8471,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-15-2025",
@@ -7028,7 +8485,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-16-2025",
@@ -7054,7 +8511,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-18-2025",
@@ -7068,7 +8525,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-19-2024",
@@ -7082,7 +8539,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-19-2025",
@@ -7096,7 +8553,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-2-2025",
@@ -7110,7 +8567,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-20-2024",
@@ -7124,7 +8581,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-21-2024",
@@ -7137,7 +8594,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-23-2025",
@@ -7151,7 +8608,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-24-2024",
@@ -7165,7 +8622,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-24-2025",
@@ -7179,7 +8636,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-25-2024",
@@ -7193,7 +8650,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-26-2025",
@@ -7207,7 +8664,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-28-2024",
@@ -7221,7 +8678,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-28-2025",
@@ -7235,7 +8692,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-29-2024",
@@ -7249,7 +8706,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-29-2025",
@@ -7263,7 +8720,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-3-2024",
@@ -7289,7 +8746,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-30-2024",
@@ -7303,7 +8760,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-30-2025",
@@ -7317,7 +8774,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-31-2025",
@@ -7331,7 +8788,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-4-2025",
@@ -7345,7 +8802,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-5-2024",
@@ -7395,7 +8852,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-7-2024",
@@ -7433,7 +8890,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-october-9-2024",
@@ -7459,7 +8916,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-10-2024",
@@ -7485,7 +8942,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-11-2024",
@@ -7511,7 +8968,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-11-2026",
@@ -7524,7 +8981,7 @@
         "genres",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-12-2024",
@@ -7550,7 +9007,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-13-2025",
@@ -7564,7 +9021,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-14-2024",
@@ -7590,7 +9047,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-15-2026",
@@ -7604,7 +9061,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-16-2026",
@@ -7618,7 +9075,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-17-2024",
@@ -7644,7 +9101,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-17-2026",
@@ -7658,7 +9115,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-18-2025",
@@ -7684,7 +9141,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-19-2024",
@@ -7722,7 +9179,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-2-2024",
@@ -7760,7 +9217,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-20-2024",
@@ -7786,7 +9243,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-20-2026",
@@ -7800,7 +9257,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-21-2024",
@@ -7826,7 +9283,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-22-2024",
@@ -7852,7 +9309,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-23-2026",
@@ -7866,7 +9323,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-24-2024",
@@ -7892,7 +9349,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-24-2026",
@@ -7906,7 +9363,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-25-2025",
@@ -7920,7 +9377,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-25-2026",
@@ -7934,7 +9391,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-26-2024",
@@ -7960,7 +9417,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-26-2026",
@@ -7998,7 +9455,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-28-2024",
@@ -8024,7 +9481,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-28-2026",
@@ -8038,7 +9495,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-29-2024",
@@ -8088,7 +9545,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-3-2026",
@@ -8102,7 +9559,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-30-2025",
@@ -8116,7 +9573,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-4-2024",
@@ -8142,7 +9599,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-6-2026",
@@ -8156,7 +9613,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-7-2025",
@@ -8170,7 +9627,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-7-2026",
@@ -8184,7 +9641,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-8-2024",
@@ -8210,7 +9667,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-8-2026",
@@ -8224,7 +9681,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-9-2024",
@@ -8250,7 +9707,7 @@
         "repack-size",
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-september-9-2026",
@@ -8265,6 +9722,84 @@
       "action": "excluded-new"
     },
     {
+      "id": "vote-for-the-next-denuvo-game-crack",
+      "title": "Vote for the next Denuvo game crack!",
+      "source_url": "https://fitgirl-repacks.site/vote-for-the-next-denuvo-game-crack/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "watch-dogs-2-repack-poll",
+      "title": "Watch Dogs 2 Repack Poll",
+      "source_url": "https://fitgirl-repacks.site/watch-dogs-2-repack-poll/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "welcome-team-apex",
+      "title": "Welcome Team APEX!",
+      "source_url": "https://fitgirl-repacks.site/welcome-team-apex/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "when-will-you-upload-the-repack-for-n",
+      "title": "When will you upload the repack for N?",
+      "source_url": "https://fitgirl-repacks.site/when-will-you-upload-the-repack-for-n/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "who-are-you",
+      "title": "Who are you?",
+      "source_url": "https://fitgirl-repacks.site/who-are-you/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "why-gog-offline-installers-suck",
+      "title": "Why GOG Offline Installers Suck",
+      "source_url": "https://fitgirl-repacks.site/why-gog-offline-installers-suck/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "why-i-dont-repack-final-fantasy-xv",
+      "title": "Why I don’t repack Final Fantasy XV?",
+      "source_url": "https://fitgirl-repacks.site/why-i-dont-repack-final-fantasy-xv/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "winners-day-requests",
       "title": "Winners of The Day of Requests",
       "source_url": "https://fitgirl-repacks.site/winners-day-requests/",
@@ -8275,6 +9810,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "winter-is-coming",
+      "title": "Winter Is Coming",
+      "source_url": "https://fitgirl-repacks.site/winter-is-coming/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "woff-woff-woff",
       "title": "World of Final Fantasy Repack Updated",
       "source_url": "https://fitgirl-repacks.site/woff-woff-woff/",
@@ -8283,6 +9828,28 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "xatab-has-passed-away",
+      "title": "Xatab has passed away",
+      "source_url": "https://fitgirl-repacks.site/xatab-has-passed-away/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "yawobfr",
+      "title": "YAWOBFR!",
+      "source_url": "https://fitgirl-repacks.site/yawobfr/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
     },
     {
       "id": "yet-another-compression-test",
@@ -8315,33 +9882,19 @@
       "action": "excluded-new"
     },
     {
-      "id": "a-call-for-ho-ho-honations",
-      "title": "A Call for Ho-Ho-Honations",
-      "source_url": "https://fitgirl-repacks.site/a-call-for-ho-ho-honations/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
+      "id": "my-discord-channel",
+      "title": "‘My’ Discord Channel",
+      "source_url": "https://fitgirl-repacks.site/my-discord-channel/",
+      "classification": "non_game",
+      "reason": "audited-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "age-of-wonders-3-eternal-lords",
       "title": "Age of Wonders 3: Eternal Lords",
       "source_url": "https://fitgirl-repacks.site/age-of-wonders-3-eternal-lords/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "all-sp-denuvo-games-are-cracked-bypassed",
-      "title": "All SP/Non-VR Denuvo Games are cracked/bypassed",
-      "source_url": "https://fitgirl-repacks.site/all-sp-denuvo-games-are-cracked-bypassed/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -8409,16 +9962,6 @@
       "action": "review-retained"
     },
     {
-      "id": "because-why-not",
-      "title": "Because why not",
-      "source_url": "https://fitgirl-repacks.site/because-why-not/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "believers",
       "title": "Believers",
       "source_url": "https://fitgirl-repacks.site/believers/",
@@ -8446,18 +9989,6 @@
       "id": "crusader-kings-2-horse-lords-v2-4-1-57-dlcs",
       "title": "Crusader Kings 2: Horse Lords v2.4.1 + 57 DLCs",
       "source_url": "https://fitgirl-repacks.site/crusader-kings-2-horse-lords-v2-4-1-57-dlcs/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "cyberpunk-2077-inquery",
-      "title": "Cyberpunk 2077 Inquery",
-      "source_url": "https://fitgirl-repacks.site/cyberpunk-2077-inquery/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -8548,53 +10079,9 @@
       "action": "review-retained"
     },
     {
-      "id": "dishonored-2-spanish-video-patch",
-      "title": "Dishonored 2 Spanish Video Patch",
-      "source_url": "https://fitgirl-repacks.site/dishonored-2-spanish-video-patch/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "divinity-original-sin-digital-collectors-edition-v1-0-252-0",
       "title": "Divinity: Original Sin – Digital Collector’s Edition, v1.0.252.0",
       "source_url": "https://fitgirl-repacks.site/divinity-original-sin-digital-collectors-edition-v1-0-252-0/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "do-you-want-developers-build-of-atomic-heart-to-be-repacked",
-      "title": "Do you want Developers Build of Atomic Heart to be repacked?",
-      "source_url": "https://fitgirl-repacks.site/do-you-want-developers-build-of-atomic-heart-to-be-repacked/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "domain-issue-resolved",
-      "title": "Domain Issue Resolved",
-      "source_url": "https://fitgirl-repacks.site/domain-issue-resolved/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "doom-rottr",
-      "title": "Doom & RotTR",
-      "source_url": "https://fitgirl-repacks.site/doom-rottr/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -8664,68 +10151,6 @@
       "action": "review-retained"
     },
     {
-      "id": "fifa-19-repack-poll",
-      "title": "FIFA 19 Repack Poll",
-      "source_url": "https://fitgirl-repacks.site/fifa-19-repack-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "fifa-19-turtle-repack-poll",
-      "title": "FIFA 19 Turtle Repack Poll",
-      "source_url": "https://fitgirl-repacks.site/fifa-19-turtle-repack-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "facebook-imposters",
-      "title": "Facebook Imposters",
-      "source_url": "https://fitgirl-repacks.site/facebook-imposters/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "fallout-4-witcher-3",
-      "title": "Fallout 4 or Witcher 3?",
-      "source_url": "https://fitgirl-repacks.site/fallout-4-witcher-3/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "farewell-extratorrent",
-      "title": "Farewell, ExtraTorrent",
-      "source_url": "https://fitgirl-repacks.site/farewell-extratorrent/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "faster-installation-vote-now",
-      "title": "Faster Installation? Vote now!",
-      "source_url": "https://fitgirl-repacks.site/faster-installation-vote-now/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "final-fantasy-type-0-hd",
       "title": "Final Fantasy Type-0 HD",
       "source_url": "https://fitgirl-repacks.site/final-fantasy-type-0-hd/",
@@ -8738,155 +10163,9 @@
       "action": "review-retained"
     },
     {
-      "id": "fitgirl-recommends-russian-movies",
-      "title": "FitGirl Recommends Russian Movies #1",
-      "source_url": "https://fitgirl-repacks.site/fitgirl-recommends-russian-movies/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "fitgirl-repacks-11-years-in-service",
-      "title": "FitGirl Repacks – 11 Years in Service",
-      "source_url": "https://fitgirl-repacks.site/fitgirl-repacks-11-years-in-service/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "fitgirl-repacks-belated-x-anniversary",
-      "title": "FitGirl Repacks – Belated X Anniversary",
-      "source_url": "https://fitgirl-repacks.site/fitgirl-repacks-belated-x-anniversary/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "fitgirls-browser-miner-is-online",
-      "title": "FitGirl’s Browser Miner is Online",
-      "source_url": "https://fitgirl-repacks.site/fitgirls-browser-miner-is-online/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "from-repacking-to-hacking",
-      "title": "From repacking to hacking",
-      "source_url": "https://fitgirl-repacks.site/from-repacking-to-hacking/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "gta-v-ultra-repack-v2-1x-details",
-      "title": "GTA V Ultra Repack v2.1x Details",
-      "source_url": "https://fitgirl-repacks.site/gta-v-ultra-repack-v2-1x-details/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "guilty-gear-xrd-sign",
       "title": "GUILTY GEAR Xrd -SIGN-",
       "source_url": "https://fitgirl-repacks.site/guilty-gear-xrd-sign/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "games-re-repacking",
-      "title": "Games for re-repacking",
-      "source_url": "https://fitgirl-repacks.site/games-re-repacking/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "games4up-mirrors-virus-warning",
-      "title": "Games4Up Mirrors – VIRUS WARNING!",
-      "source_url": "https://fitgirl-repacks.site/games4up-mirrors-virus-warning/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "gears-of-war-ultimate-edition-repack-poll",
-      "title": "Gears of War: Ultimate Edition Repack Poll",
-      "source_url": "https://fitgirl-repacks.site/gears-of-war-ultimate-edition-repack-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "good-read-about-hypervisor",
-      "title": "Good read about Hypervisor",
-      "source_url": "https://fitgirl-repacks.site/good-read-about-hypervisor/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "goodbye-codex",
-      "title": "Goodbye, CODEX",
-      "source_url": "https://fitgirl-repacks.site/goodbye-codex/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "got-problems-fitgirl-rescue",
-      "title": "Got problems? FitGirl to the rescue!",
-      "source_url": "https://fitgirl-repacks.site/got-problems-fitgirl-rescue/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "grand-theft-auto-6-an-extended-look-2026-2160p-h-265",
-      "title": "Grand Theft Auto 6: An Extended Look – 2026, 2160p H.265",
-      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-6-an-extended-look-2026-2160p-h-265/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -8908,121 +10187,9 @@
       "action": "review-retained"
     },
     {
-      "id": "grand-theft-auto-vi-trailer-1",
-      "title": "Grand Theft Auto VI Trailer 1",
-      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-vi-trailer-1/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "grand-theft-auto-vi-trailer-2",
-      "title": "Grand Theft Auto VI Trailer 2",
-      "source_url": "https://fitgirl-repacks.site/grand-theft-auto-vi-trailer-2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "guns-gore-cannoli",
       "title": "Guns, Gore & Cannoli",
       "source_url": "https://fitgirl-repacks.site/guns-gore-cannoli/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "happy-new-year-4",
-      "title": "HAPPY NEW YEAR!",
-      "source_url": "https://fitgirl-repacks.site/happy-new-year-4/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "hdd-or-ssd",
-      "title": "HDD or SSD?",
-      "source_url": "https://fitgirl-repacks.site/hdd-or-ssd/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "hdd-or-ssd-version-2025",
-      "title": "HDD or SSD? Version 2025",
-      "source_url": "https://fitgirl-repacks.site/hdd-or-ssd-version-2025/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "happy-new-year",
-      "title": "Happy New Year!",
-      "source_url": "https://fitgirl-repacks.site/happy-new-year/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "happy-new-year-2",
-      "title": "Happy New Year!",
-      "source_url": "https://fitgirl-repacks.site/happy-new-year-2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "happy-new-year-3",
-      "title": "Happy New Year!",
-      "source_url": "https://fitgirl-repacks.site/happy-new-year-3/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "happy-new-year-5",
-      "title": "Happy New Year!",
-      "source_url": "https://fitgirl-repacks.site/happy-new-year-5/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "happy-new-year-6",
-      "title": "Happy New Year!",
-      "source_url": "https://fitgirl-repacks.site/happy-new-year-6/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -9044,131 +10211,9 @@
       "action": "review-retained"
     },
     {
-      "id": "hello-world",
-      "title": "Hello, crowd!",
-      "source_url": "https://fitgirl-repacks.site/hello-world/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "help",
-      "title": "Help!",
-      "source_url": "https://fitgirl-repacks.site/help/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "heroskeep-the-malware-distributor",
-      "title": "Heroskeep: The Malware Distributor",
-      "source_url": "https://fitgirl-repacks.site/heroskeep-the-malware-distributor/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "history-drm-copy-protection-computer-games",
-      "title": "History of DRM & Copy Protection in Computer Games",
-      "source_url": "https://fitgirl-repacks.site/history-drm-copy-protection-computer-games/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "hitman-fast-or-small",
-      "title": "Hitman – Fast or Small?",
-      "source_url": "https://fitgirl-repacks.site/hitman-fast-or-small/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "hoster-upgrade",
-      "title": "Hoster Upgrade",
-      "source_url": "https://fitgirl-repacks.site/hoster-upgrade/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "how-many-threads-does-your-cpu-have",
-      "title": "How many THREADS does your CPU have?",
-      "source_url": "https://fitgirl-repacks.site/how-many-threads-does-your-cpu-have/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "hyperdimension-neptunia-u-action-unleashed",
       "title": "Hyperdimension Neptunia U: Action Unleashed",
       "source_url": "https://fitgirl-repacks.site/hyperdimension-neptunia-u-action-unleashed/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "i-need-technical-help",
-      "title": "I need technical help",
-      "source_url": "https://fitgirl-repacks.site/i-need-technical-help/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "im-stopping-windows-7-support",
-      "title": "I’m Stopping Windows 7 Support",
-      "source_url": "https://fitgirl-repacks.site/im-stopping-windows-7-support/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "im-that-popular",
-      "title": "I’m THAT popular?!",
-      "source_url": "https://fitgirl-repacks.site/im-that-popular/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "kat-is-back",
-      "title": "KAT is back!",
-      "source_url": "https://fitgirl-repacks.site/kat-is-back/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -9190,18 +10235,6 @@
       "action": "review-retained"
     },
     {
-      "id": "lets-support-baldman",
-      "title": "Let’s support BALDMAN!",
-      "source_url": "https://fitgirl-repacks.site/lets-support-baldman/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "lightning-returns-final-fantasy-xiii",
       "title": "Lightning Returns: Final Fantasy XIII",
       "source_url": "https://fitgirl-repacks.site/lightning-returns-final-fantasy-xiii/",
@@ -9214,145 +10247,9 @@
       "action": "review-retained"
     },
     {
-      "id": "livelock-poll",
-      "title": "Livelock Poll",
-      "source_url": "https://fitgirl-repacks.site/livelock-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "looking-new-seedboxes",
-      "title": "Looking for new seedboxes",
-      "source_url": "https://fitgirl-repacks.site/looking-new-seedboxes/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "looks-familiar",
       "title": "Looks familiar?",
       "source_url": "https://fitgirl-repacks.site/looks-familiar/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "loved-kat-help-them-to-get-back",
-      "title": "Loved KAT? Help them to get back!",
-      "source_url": "https://fitgirl-repacks.site/loved-kat-help-them-to-get-back/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "mafia-2-cod-mw2",
-      "title": "Mafia 2 or CoD: MW2?",
-      "source_url": "https://fitgirl-repacks.site/mafia-2-cod-mw2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "mafia-3-cracked",
-      "title": "Mafia 3 Cracked",
-      "source_url": "https://fitgirl-repacks.site/mafia-3-cracked/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "mafia-3-news",
-      "title": "Mafia 3 News",
-      "source_url": "https://fitgirl-repacks.site/mafia-3-news/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "mafia-3-poll",
-      "title": "Mafia 3 Poll",
-      "source_url": "https://fitgirl-repacks.site/mafia-3-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "malware-analysis-help-needed",
-      "title": "Malware Analysis Help Needed",
-      "source_url": "https://fitgirl-repacks.site/malware-analysis-help-needed/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "mass-effect-andromeda-standalone-patch-v1-04-v1-05",
-      "title": "Mass Effect: Andromeda – Standalone Patch from v1.04 to v1.05",
-      "source_url": "https://fitgirl-repacks.site/mass-effect-andromeda-standalone-patch-v1-04-v1-05/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "memecoin-in-my-name",
-      "title": "MemeCoin in My Name",
-      "source_url": "https://fitgirl-repacks.site/memecoin-in-my-name/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "mirrors-edge-catalyst-progress-report",
-      "title": "Mirror’s Edge: Catalyst – Progress Report",
-      "source_url": "https://fitgirl-repacks.site/mirrors-edge-catalyst-progress-report/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "missing-pushes",
-      "title": "Missing Pushes",
-      "source_url": "https://fitgirl-repacks.site/missing-pushes/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "monero-protocol-upgraded",
-      "title": "Monero Protocol Upgraded",
-      "source_url": "https://fitgirl-repacks.site/monero-protocol-upgraded/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -9386,38 +10283,6 @@
       "action": "review-retained"
     },
     {
-      "id": "my-new-record",
-      "title": "My New Record!",
-      "source_url": "https://fitgirl-repacks.site/my-new-record/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "my-little-comment-on-crackwatch-regarding-how-repacks-work",
-      "title": "My little comment on CrackWatch regarding how repacks work",
-      "source_url": "https://fitgirl-repacks.site/my-little-comment-on-crackwatch-regarding-how-repacks-work/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "my-statement-about-empress",
-      "title": "My statement about EMPRESS",
-      "source_url": "https://fitgirl-repacks.site/my-statement-about-empress/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "nba-2k16-update-1",
       "title": "NBA 2K16 + Update 1",
       "source_url": "https://fitgirl-repacks.site/nba-2k16-update-1/",
@@ -9427,88 +10292,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "nba-2k17-repack-installer-bugfix",
-      "title": "NBA 2K17 Repack Installer Bugfix",
-      "source_url": "https://fitgirl-repacks.site/nba-2k17-repack-installer-bugfix/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad",
-      "title": "Need for Speed: Heat P2P Crack is actually a stolen CODEX one. And why it’s bad",
-      "source_url": "https://fitgirl-repacks.site/need-for-speed-heat-p2p-crack-is-actually-a-stolen-codex-one-and-why-its-bad/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "new-birchpunk-video",
-      "title": "New Birchpunk Video",
-      "source_url": "https://fitgirl-repacks.site/new-birchpunk-video/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "test",
-      "title": "New Browser Miner – Test Version",
-      "source_url": "https://fitgirl-repacks.site/test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "new-google-drive-test",
-      "title": "New Google Drive Test",
-      "source_url": "https://fitgirl-repacks.site/new-google-drive-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "new-rar-splitting-sizes",
-      "title": "New RAR-splitting sizes",
-      "source_url": "https://fitgirl-repacks.site/new-rar-splitting-sizes/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "new-compression-algorithm",
-      "title": "New compression algorithm",
-      "source_url": "https://fitgirl-repacks.site/new-compression-algorithm/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "no-rmw-today",
-      "title": "No RMW today",
-      "source_url": "https://fitgirl-repacks.site/no-rmw-today/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -9524,28 +10307,6 @@
       "action": "review-retained"
     },
     {
-      "id": "onedrive-as-a-hosting-speed-test",
-      "title": "OneDrive-as-a-Hosting Speed Test",
-      "source_url": "https://fitgirl-repacks.site/onedrive-as-a-hosting-speed-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "only-64-denuvo-games-left-uncracked",
-      "title": "Only 64 Denuvo games left uncracked",
-      "source_url": "https://fitgirl-repacks.site/only-64-denuvo-games-left-uncracked/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "people-like-this-really-exist",
       "title": "People like this really exist",
       "source_url": "https://fitgirl-repacks.site/people-like-this-really-exist/",
@@ -9555,26 +10316,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "pink-paw-award",
-      "title": "Pink Paw Award",
-      "source_url": "https://fitgirl-repacks.site/pink-paw-award/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "possible-site-downtime-or-domain-change",
-      "title": "Possible Site Downtime or Domain Change",
-      "source_url": "https://fitgirl-repacks.site/possible-site-downtime-or-domain-change/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -9602,50 +10343,6 @@
       "action": "review-retained"
     },
     {
-      "id": "process-lasso-the-program-everyone-must-use",
-      "title": "Process Lasso – The program everyone must use",
-      "source_url": "https://fitgirl-repacks.site/process-lasso-the-program-everyone-must-use/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "push-notifications",
-      "title": "Push Notifications",
-      "source_url": "https://fitgirl-repacks.site/push-notifications/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "push-notifications-follow-up",
-      "title": "Push Notifications Follow-up",
-      "source_url": "https://fitgirl-repacks.site/push-notifications-follow-up/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "push-notifications-ii-the-pushing-day",
-      "title": "Push Notifications II: The Pushing Day",
-      "source_url": "https://fitgirl-repacks.site/push-notifications-ii-the-pushing-day/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "racing-sir-mostly-racing",
       "title": "Racing, sir. Mostly racing.",
       "source_url": "https://fitgirl-repacks.site/racing-sir-mostly-racing/",
@@ -9661,40 +10358,6 @@
       "id": "ravens-cry-digital-deluxe-edition",
       "title": "Raven’s Cry: Digital Deluxe Edition",
       "source_url": "https://fitgirl-repacks.site/ravens-cry-digital-deluxe-edition/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "regarding-fresh-windows-10-update",
-      "title": "Regarding fresh Windows 10 update",
-      "source_url": "https://fitgirl-repacks.site/regarding-fresh-windows-10-update/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "repackers-pain",
-      "title": "Repacker’s Pain",
-      "source_url": "https://fitgirl-repacks.site/repackers-pain/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "repacks-of-uncracked-games-vote-now",
-      "title": "Repacks of uncracked games – Poll Closed!",
-      "source_url": "https://fitgirl-repacks.site/repacks-of-uncracked-games-vote-now/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -9740,30 +10403,6 @@
       "action": "review-retained"
     },
     {
-      "id": "restoring-uploads-list",
-      "title": "Restoring uploads list",
-      "source_url": "https://fitgirl-repacks.site/restoring-uploads-list/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "retrogames-is-up-and-running",
-      "title": "RetroGames is up and running!",
-      "source_url": "https://fitgirl-repacks.site/retrogames-is-up-and-running/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "risen-3-titan-lords-enhanced-edition",
       "title": "Risen 3: Titan Lords – Enhanced Edition",
       "source_url": "https://fitgirl-repacks.site/risen-3-titan-lords-enhanced-edition/",
@@ -9786,290 +10425,6 @@
       "action": "review-retained"
     },
     {
-      "id": "russian-movies-9",
-      "title": "Russian Movies #9",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-9/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-10",
-      "title": "Russian Movies Weekend #10",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-10/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-11",
-      "title": "Russian Movies Weekend #11",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-11/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-12",
-      "title": "Russian Movies Weekend #12",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-12/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-13",
-      "title": "Russian Movies Weekend #13",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-13/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-14",
-      "title": "Russian Movies Weekend #14",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-14/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-15",
-      "title": "Russian Movies Weekend #15",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-15/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-16",
-      "title": "Russian Movies Weekend #16",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-16/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-17",
-      "title": "Russian Movies Weekend #17",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-17/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-18",
-      "title": "Russian Movies Weekend #18",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-18/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-19",
-      "title": "Russian Movies Weekend #19",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-19/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-2",
-      "title": "Russian Movies Weekend #2",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-21",
-      "title": "Russian Movies Weekend #21",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-21/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-22",
-      "title": "Russian Movies Weekend #22",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-22/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-23",
-      "title": "Russian Movies Weekend #23",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-23/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-24",
-      "title": "Russian Movies Weekend #24",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-24/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-25",
-      "title": "Russian Movies Weekend #25",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-25/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-26",
-      "title": "Russian Movies Weekend #26",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-26/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-27",
-      "title": "Russian Movies Weekend #27",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-27/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-3",
-      "title": "Russian Movies Weekend #3",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-3/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-4",
-      "title": "Russian Movies Weekend #4",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-4/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-5",
-      "title": "Russian Movies Weekend #5",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-5/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-6",
-      "title": "Russian Movies Weekend #6",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-6/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "russian-movies-weekend-7",
-      "title": "Russian Movies Weekend #7",
-      "source_url": "https://fitgirl-repacks.site/russian-movies-weekend-7/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "ryse-son-of-rome-legendary-edition",
       "title": "Ryse: Son of Rome – Legendary Edition",
       "source_url": "https://fitgirl-repacks.site/ryse-son-of-rome-legendary-edition/",
@@ -10079,26 +10434,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "ssl-disabled",
-      "title": "SSL Disabled",
-      "source_url": "https://fitgirl-repacks.site/ssl-disabled/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "ssl-is-now-required-for-visiting-my-site",
-      "title": "SSL is now required for visiting my site",
-      "source_url": "https://fitgirl-repacks.site/ssl-is-now-required-for-visiting-my-site/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -10126,76 +10461,6 @@
       "action": "review-retained"
     },
     {
-      "id": "scamming-scammers-videos",
-      "title": "Scamming scammers videos",
-      "source_url": "https://fitgirl-repacks.site/scamming-scammers-videos/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "senran-kagura-estival-versus-not",
-      "title": "Senran Kagura: Estival Versus – To Be or Not to Be?",
-      "source_url": "https://fitgirl-repacks.site/senran-kagura-estival-versus-not/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "september-3rd",
-      "title": "September 3rd",
-      "source_url": "https://fitgirl-repacks.site/september-3rd/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "september-3rd-2",
-      "title": "September 3rd",
-      "source_url": "https://fitgirl-repacks.site/september-3rd-2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "september-3rd-2023",
-      "title": "September 3rd",
-      "source_url": "https://fitgirl-repacks.site/september-3rd-2023/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "september-3rd-3",
-      "title": "September 3rd",
-      "source_url": "https://fitgirl-repacks.site/september-3rd-3/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "september-3rd-4",
-      "title": "September 3rd",
-      "source_url": "https://fitgirl-repacks.site/september-3rd-4/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "shadow-warrior-special-edition-v1-5-0",
       "title": "Shadow Warrior: Special Edition v1.5.0",
       "source_url": "https://fitgirl-repacks.site/shadow-warrior-special-edition-v1-5-0/",
@@ -10220,33 +10485,9 @@
       "action": "review-retained"
     },
     {
-      "id": "some-stats",
-      "title": "Some Stats",
-      "source_url": "https://fitgirl-repacks.site/some-stats/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "sonic-lost-world",
       "title": "Sonic: Lost World",
       "source_url": "https://fitgirl-repacks.site/sonic-lost-world/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "soundcheck",
-      "title": "Soundcheck. Results.",
-      "source_url": "https://fitgirl-repacks.site/soundcheck/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10268,16 +10509,6 @@
       "action": "review-retained"
     },
     {
-      "id": "steam-fixed-denuvo-bypass",
-      "title": "Steam fixed Denuvo bypass",
-      "source_url": "https://fitgirl-repacks.site/steam-fixed-denuvo-bypass/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "tales-of-symphonia-update-3",
       "title": "Tales of Symphonia + Update 3",
       "source_url": "https://fitgirl-repacks.site/tales-of-symphonia-update-3/",
@@ -10293,38 +10524,6 @@
       "id": "tales-of-zestiria-v1-4-dlcs",
       "title": "Tales of Zestiria v1.4 + DLCs",
       "source_url": "https://fitgirl-repacks.site/tales-of-zestiria-v1-4-dlcs/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "temporary-mining-stop",
-      "title": "Temporary Mining Stop",
-      "source_url": "https://fitgirl-repacks.site/temporary-mining-stop/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "testers-amd-wanted",
-      "title": "Testers with AMD wanted",
-      "source_url": "https://fitgirl-repacks.site/testers-amd-wanted/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "that-which-does-not-kill-us-makes-us-stronger",
-      "title": "That which does not kill us makes us stronger",
-      "source_url": "https://fitgirl-repacks.site/that-which-does-not-kill-us-makes-us-stronger/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10383,53 +10582,9 @@
       "action": "review-retained"
     },
     {
-      "id": "the-season-has-begun",
-      "title": "The Season Has Begun",
-      "source_url": "https://fitgirl-repacks.site/the-season-has-begun/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "the-sims-4-bug-test",
-      "title": "The Sims 4 Bug Test",
-      "source_url": "https://fitgirl-repacks.site/the-sims-4-bug-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "world-much-bigger-village",
-      "title": "The world is much bigger than your village",
-      "source_url": "https://fitgirl-repacks.site/world-much-bigger-village/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
       "id": "there-came-an-echo-v1-0-6",
       "title": "There Came an Echo v1.0.6",
       "source_url": "https://fitgirl-repacks.site/there-came-an-echo-v1-0-6/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "tomorrow-disqus-commenting-system-will-stop-working-on-my-site",
-      "title": "Tomorrow Disqus Commenting System will stop working on my site",
-      "source_url": "https://fitgirl-repacks.site/tomorrow-disqus-commenting-system-will-stop-working-on-my-site/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10451,31 +10606,9 @@
       "action": "review-retained"
     },
     {
-      "id": "trials-of-mana-denuvoless-build-added",
-      "title": "Trials of Mana – Denuvoless Build Added",
-      "source_url": "https://fitgirl-repacks.site/trials-of-mana-denuvoless-build-added/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "tropico-5-espionage-original-game-all-dlcs",
       "title": "Tropico 5: Espionage, Original Game + All DLCs",
       "source_url": "https://fitgirl-repacks.site/tropico-5-espionage-original-game-all-dlcs/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "ubisoft-is-adding-denuvo-to-previously-unprotected-games",
-      "title": "Ubisoft is adding Denuvo to previously unprotected games",
-      "source_url": "https://fitgirl-repacks.site/ubisoft-is-adding-denuvo-to-previously-unprotected-games/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10497,26 +10630,6 @@
       "action": "review-retained"
     },
     {
-      "id": "vote-for-the-next-denuvo-game-crack",
-      "title": "Vote for the next Denuvo game crack!",
-      "source_url": "https://fitgirl-repacks.site/vote-for-the-next-denuvo-game-crack/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "watch-dogs-2-repack-poll",
-      "title": "Watch Dogs 2 Repack Poll",
-      "source_url": "https://fitgirl-repacks.site/watch-dogs-2-repack-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "watch-dogs-v1-06-329-all-dlcs",
       "title": "Watch Dogs v1.06.329 + All DLCs",
       "source_url": "https://fitgirl-repacks.site/watch-dogs-v1-06-329-all-dlcs/",
@@ -10529,99 +10642,9 @@
       "action": "review-retained"
     },
     {
-      "id": "welcome-team-apex",
-      "title": "Welcome Team APEX!",
-      "source_url": "https://fitgirl-repacks.site/welcome-team-apex/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "when-will-you-upload-the-repack-for-n",
-      "title": "When will you upload the repack for N?",
-      "source_url": "https://fitgirl-repacks.site/when-will-you-upload-the-repack-for-n/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "who-are-you",
-      "title": "Who are you?",
-      "source_url": "https://fitgirl-repacks.site/who-are-you/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "why-gog-offline-installers-suck",
-      "title": "Why GOG Offline Installers Suck",
-      "source_url": "https://fitgirl-repacks.site/why-gog-offline-installers-suck/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "why-i-dont-repack-final-fantasy-xv",
-      "title": "Why I don’t repack Final Fantasy XV?",
-      "source_url": "https://fitgirl-repacks.site/why-i-dont-repack-final-fantasy-xv/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "winter-is-coming",
-      "title": "Winter Is Coming",
-      "source_url": "https://fitgirl-repacks.site/winter-is-coming/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "world-in-conflict-complete-edition",
       "title": "World in Conflict: Complete Edition",
       "source_url": "https://fitgirl-repacks.site/world-in-conflict-complete-edition/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "xatab-has-passed-away",
-      "title": "Xatab has passed away",
-      "source_url": "https://fitgirl-repacks.site/xatab-has-passed-away/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "yawobfr",
-      "title": "YAWOBFR!",
-      "source_url": "https://fitgirl-repacks.site/yawobfr/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -10640,16 +10663,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "my-discord-channel",
-      "title": "‘My’ Discord Channel",
-      "source_url": "https://fitgirl-repacks.site/my-discord-channel/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     }
   ]

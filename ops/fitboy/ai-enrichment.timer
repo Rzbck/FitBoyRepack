@@ -1,0 +1,11 @@
+[Unit]
+Description=Schedule FitBoyRepack AI metadata enrichment
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=6h
+Persistent=true
+Unit=ai-enrichment.service
+
+[Install]
+WantedBy=timers.target

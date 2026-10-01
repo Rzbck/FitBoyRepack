@@ -1,0 +1,25 @@
+[Unit]
+Description=Reusable local llama.cpp OpenAI-compatible LLM service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=llm
+Group=llm
+EnvironmentFile=/etc/llm/llm.env
+ExecStart=/usr/local/bin/llama-server --model ${MODEL_PATH} --host ${LLM_HOST} --port ${LLM_PORT} --ctx-size ${CTX_SIZE} --threads ${THREADS} --parallel ${PARALLEL}
+Restart=on-failure
+RestartSec=5
+Nice=10
+CPUQuota=150%
+MemoryHigh=5G
+MemoryMax=6G
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/var/lib/llm
+
+[Install]
+WantedBy=multi-user.target

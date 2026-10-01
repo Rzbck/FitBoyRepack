@@ -106,7 +106,10 @@ function initCatalogFocus() {
     if (galleryTitle && galleryTitle.textContent !== 'Galerie') galleryTitle.textContent = 'Galerie';
     const count = gallery?.querySelector('.dialog-subheading span');
     const mediaCount = grid?.querySelectorAll('.media-item').length || 0;
-    if (count && mediaCount) count.textContent = `${mediaCount} média${mediaCount > 1 ? 's' : ''}`;
+    if (count && mediaCount) {
+      const nextCount = `${mediaCount} média${mediaCount > 1 ? 's' : ''}`;
+      if (count.textContent !== nextCount) count.textContent = nextCount;
+    }
   }
 
   if (dialogContent) {

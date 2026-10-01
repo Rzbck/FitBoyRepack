@@ -6,6 +6,10 @@ linked-entity reads are then grouped into wbgetentities batches (up to 50 IDs).
 If Wikimedia signals rate limiting, maxlag or a transient service/network error,
 the affected jobs are returned to pending immediately: this command never sits
 through minute-long retry sleeps.
+
+Optional progress output is intentionally unbuffered so long VPS runs show their
+actual phase (search, candidate entity batches, linked labels, result scoring)
+in real time.
 """
 from __future__ import annotations
 
@@ -146,7 +150,6 @@ class BatchWikidataClient:
         return entities if isinstance(entities, dict) else {}
 
 
-
 def entity_label(entity: dict[str, Any]) -> str | None:
     labels = entity.get("labels") if isinstance(entity.get("labels"), dict) else {}
     for language in ("en", "fr"):
@@ -225,6 +228,24 @@ def build_candidate(qid: str, entity: dict[str, Any], linked_labels: dict[str, s
     return candidate
 
 
+def _emit_progress(
+    progress_every: int,
+    phase: str,
+    current: int,
+    total: int,
+    detail: str = "",
+    *,
+    force: bool = False,
+) -> None:
+    if progress_every <= 0:
+        return
+    should_print = force or current == 0 or current == total or current % progress_every == 0
+    if not should_print:
+        return
+    suffix = f" {detail}" if detail else ""
+    print(f"[PROGRESS] phase={phase} {current}/{total}{suffix}", flush=True)
+
+
 def run_batched(
     conn: sqlite3.Connection,
     *,
@@ -234,10 +255,12 @@ def run_batched(
     maxlag: int,
     threshold: float,
     margin: float,
+    progress_every: int = 0,
 ) -> dict[str, int]:
     ensure_cache(conn)
     claimed = claim_pending(conn, limit)
     if not claimed:
+        _emit_progress(progress_every, "prepare", 0, 0, "no pending jobs", force=True)
         return {"processed": 0, "done": 0, "review": 0, "failed": 0, "deferred": 0, "cache_hits": 0, "search_requests": 0, "entity_requests": 0}
 
     cached_by_id: dict[str, list[dict[str, Any]]] = {}
@@ -249,6 +272,15 @@ def run_batched(
         else:
             cached_by_id[game_id] = cached
 
+    _emit_progress(
+        progress_every,
+        "prepare",
+        len(claimed),
+        len(claimed),
+        f"cache_hits={len(cached_by_id)} network={len(misses)}",
+        force=True,
+    )
+
     ids_by_game: dict[str, list[str]] = {}
     entities: dict[str, Any] = {}
     linked_labels: dict[str, str] = {}
@@ -258,26 +290,65 @@ def run_batched(
 
     with BatchWikidataClient(request_interval=request_interval, maxlag=maxlag) as api:
         # Search is the only inherently per-title operation. There are no retry sleeps.
-        for index, (game_id, title) in enumerate(misses):
+        for index, (game_id, title) in enumerate(misses, start=1):
             try:
                 ids_by_game[game_id] = api.search(title, candidate_limit)
                 search_requests += 1
+                _emit_progress(
+                    progress_every,
+                    "search",
+                    index,
+                    len(misses),
+                    f"matches={len(ids_by_game[game_id])} title={clean_fast_title(title)[:72]!r}",
+                )
             except TransientStop as exc:
                 # Wikimedia explicitly asks clients to stop after throttling. Defer every
                 # uncached job from this run and exit the network phase immediately.
                 deferred_ids.update(game for game, _ in misses)
                 defer_jobs(conn, list(deferred_ids), f"wikidata transient: {exc}")
+                _emit_progress(
+                    progress_every,
+                    "deferred",
+                    index,
+                    len(misses),
+                    f"reason={exc} jobs={len(deferred_ids)}",
+                    force=True,
+                )
                 break
             except Exception as exc:
                 review_job(conn, game_id, f"wikidata search error: {exc}")
                 ids_by_game[game_id] = []
+                _emit_progress(
+                    progress_every,
+                    "search",
+                    index,
+                    len(misses),
+                    f"search_error={type(exc).__name__} title={clean_fast_title(title)[:72]!r}",
+                )
 
         if not deferred_ids and ids_by_game:
             all_ids = sorted({qid for ids in ids_by_game.values() for qid in ids})
+            candidate_batches = list(chunks(all_ids, 50))
             try:
-                for batch in chunks(all_ids, 50):
+                for batch_index, batch in enumerate(candidate_batches, start=1):
+                    _emit_progress(
+                        progress_every,
+                        "candidate_entities",
+                        batch_index - 1,
+                        len(candidate_batches),
+                        f"next_ids={len(batch)}",
+                        force=True,
+                    )
                     entities.update(api.entities(batch, "labels|descriptions|claims"))
                     entity_requests += 1
+                    _emit_progress(
+                        progress_every,
+                        "candidate_entities",
+                        batch_index,
+                        len(candidate_batches),
+                        f"loaded={len(entities)}",
+                        force=True,
+                    )
 
                 linked_ids: set[str] = set()
                 for entity in entities.values():
@@ -287,15 +358,40 @@ def run_batched(
                     for prop in ("P136", "P178", "P123", "P400"):
                         linked_ids.update(_claim_entity_ids(claims, prop))
 
-                for batch in chunks(sorted(linked_ids), 50):
+                label_batches = list(chunks(sorted(linked_ids), 50))
+                for batch_index, batch in enumerate(label_batches, start=1):
+                    _emit_progress(
+                        progress_every,
+                        "linked_labels",
+                        batch_index - 1,
+                        len(label_batches),
+                        f"next_ids={len(batch)}",
+                        force=True,
+                    )
                     label_entities = api.entities(batch, "labels")
                     entity_requests += 1
                     for qid, entity in label_entities.items():
                         if isinstance(entity, dict):
                             linked_labels[qid] = entity_label(entity) or qid
+                    _emit_progress(
+                        progress_every,
+                        "linked_labels",
+                        batch_index,
+                        len(label_batches),
+                        f"loaded={len(linked_labels)}",
+                        force=True,
+                    )
             except TransientStop as exc:
                 deferred_ids.update(game_id for game_id, _ in misses)
                 defer_jobs(conn, list(deferred_ids), f"wikidata transient: {exc}")
+                _emit_progress(
+                    progress_every,
+                    "deferred",
+                    len(ids_by_game),
+                    len(misses),
+                    f"reason={exc} jobs={len(deferred_ids)}",
+                    force=True,
+                )
 
     evidence_by_id = dict(cached_by_id)
     if not deferred_ids:
@@ -310,6 +406,8 @@ def run_batched(
         conn.commit()
 
     done = review = failed = 0
+    result_total = len(claimed) - len(deferred_ids)
+    result_index = 0
     for game_id, title in claimed:
         if game_id in deferred_ids:
             continue
@@ -319,6 +417,14 @@ def run_batched(
             status = conn.execute("SELECT status FROM jobs WHERE game_id=?", (game_id,)).fetchone()
             if status and status["status"] == "review":
                 review += 1
+            result_index += 1
+            _emit_progress(
+                progress_every,
+                "results",
+                result_index,
+                result_total,
+                f"done={done} review={review} failed={failed}",
+            )
             continue
         match, confidence, reason = choose_candidate(
             clean_fast_title(title), evidence, threshold=threshold, margin=margin
@@ -329,8 +435,24 @@ def run_batched(
         else:
             store_match(conn, game_id, match, confidence)
             done += 1
+        result_index += 1
+        _emit_progress(
+            progress_every,
+            "results",
+            result_index,
+            result_total,
+            f"done={done} review={review} failed={failed}",
+        )
 
     conn.commit()
+    _emit_progress(
+        progress_every,
+        "complete",
+        len(claimed),
+        len(claimed),
+        f"done={done} review={review} failed={failed} deferred={len(deferred_ids)}",
+        force=True,
+    )
     return {
         "processed": len(claimed),
         "done": done,
@@ -358,23 +480,31 @@ def main() -> None:
     parser.add_argument("--maxlag", type=int, default=DEFAULT_MAXLAG)
     parser.add_argument("--threshold", type=float, default=0.90)
     parser.add_argument("--margin", type=float, default=0.08)
+    parser.add_argument(
+        "--progress-every",
+        type=int,
+        default=0,
+        help="print live progress every N titles/results; 0 disables progress output",
+    )
     args = parser.parse_args()
 
     if not any((args.init, args.run, args.status, args.retry_failed, args.retry_review)):
         parser.error("choose at least one action")
     if args.limit <= 0 or args.candidate_limit <= 0:
         parser.error("--limit and --candidate-limit must be greater than zero")
+    if args.progress_every < 0:
+        parser.error("--progress-every must be zero or greater")
 
     games = load_games(args.catalog)
     conn = connect_db(args.db)
     try:
         ensure_cache(conn)
         if args.init:
-            print("queue init:", compact_json(initialize_queue(conn, games)))
+            print("queue init:", compact_json(initialize_queue(conn, games)), flush=True)
         if args.retry_failed:
-            print("requeued failed:", reset_status(conn, "failed"))
+            print("requeued failed:", reset_status(conn, "failed"), flush=True)
         if args.retry_review:
-            print("requeued review:", reset_status(conn, "review"))
+            print("requeued review:", reset_status(conn, "review"), flush=True)
         if args.run:
             print("batched run:", compact_json(run_batched(
                 conn,
@@ -384,9 +514,10 @@ def main() -> None:
                 maxlag=max(1, args.maxlag),
                 threshold=min(1.0, max(0.0, args.threshold)),
                 margin=max(0.0, args.margin),
-            )))
+                progress_every=args.progress_every,
+            )), flush=True)
         if args.status or args.run or args.init:
-            print("queue:", compact_json(queue_counts(conn)))
+            print("queue:", compact_json(queue_counts(conn)), flush=True)
     finally:
         conn.close()
 

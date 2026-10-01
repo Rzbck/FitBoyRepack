@@ -45,26 +45,37 @@ jobs:
           WORKERS: ${{ github.event.inputs.workers || '8' }}
         run: python tools/update_catalog.py --pages "$PAGES" --workers "$WORKERS"
       - name: Validate generated catalog
-        run: python tools/validate_catalog.py
+        run: |
+          python tools/validate_catalog.py
+          python tools/check_catalog_classification.py
       - name: Commit catalog safely
         id: commit
         shell: bash
         run: |
           echo 'changed=false' >> "$GITHUB_OUTPUT"
-          if git diff --quiet -- site/data/games.json; then
-            echo 'No catalog change'
+          echo 'catalog_changed=false' >> "$GITHUB_OUTPUT"
+
+          catalog_changed=false
+          quarantine_changed=false
+          git diff --quiet -- site/data/games.json || catalog_changed=true
+          git diff --quiet -- data/catalog_quarantine.json || quarantine_changed=true
+
+          if [ "$catalog_changed" = false ] && [ "$quarantine_changed" = false ]; then
+            echo 'No catalog/classification change'
             exit 0
           fi
+
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site/data/games.json
-          git commit -m 'data: refresh catalog'
+          git add site/data/games.json data/catalog_quarantine.json
+          git commit -m 'data: refresh catalog classification'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
           echo 'changed=true' >> "$GITHUB_OUTPUT"
+          echo "catalog_changed=$catalog_changed" >> "$GITHUB_OUTPUT"
       - name: Trigger immediate enrichment and deploy
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.catalog_changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash

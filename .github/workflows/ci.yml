@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python tools/test_catalog_classifier.py
       - run: python tools/validate_catalog.py
       - run: python tools/build_site_data.py
       - name: Verify split catalog, health and lazy payloads
@@ -131,7 +132,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py
+      - run: python -m py_compile tools/update_catalog.py tools/catalog_classifier.py tools/check_catalog_classification.py tools/test_catalog_classifier.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py
 
   security-boundary:
     name: Robot · forbidden-link guard

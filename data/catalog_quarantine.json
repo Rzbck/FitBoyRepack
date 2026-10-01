@@ -11,7 +11,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "a-call-for-donations-2",
@@ -23,7 +23,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "about-hypervisor-cracks",
@@ -33,39 +33,7 @@
       "reason": "crack-editorial",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
-    },
-    {
-      "id": "bo-path-of-the-teal-lotus",
-      "title": "Bō: Path of the Teal Lotus – Soundtrack Bundle , v1.2.7 + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/bo-path-of-the-teal-lotus/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 10,
-      "signals": [
-        "genres",
-        "repack-size",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
-    },
-    {
-      "id": "captain-contraptions-chocolate-factory",
-      "title": "Captain Contraption’s Chocolate Factory – Soundtrack Bundle, v1.22 + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/captain-contraptions-chocolate-factory/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 10,
-      "signals": [
-        "genres",
-        "repack-size",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "dqh2-twwh2-proper-cracks-added",
@@ -75,7 +43,7 @@
       "reason": "crack-update",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "detroit-become-human-updated-repack-test",
@@ -85,7 +53,7 @@
       "reason": "repack-test-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "donation-mining-resumed",
@@ -97,7 +65,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "donations-page-updonated",
@@ -109,7 +77,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "fallout-4-high-resolution-texture-pack",
@@ -117,15 +85,13 @@
       "source_url": "https://fitgirl-repacks.site/fallout-4-high-resolution-texture-pack/",
       "classification": "non_game",
       "reason": "standalone-texture-pack",
-      "score": 10,
+      "score": 7,
       "signals": [
         "genres",
         "repack-size",
-        "image",
-        "description",
-        "media"
+        "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hellblade-senuas-sacrifice-repack-updated",
@@ -135,22 +101,7 @@
       "reason": "repack-update-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
-    },
-    {
-      "id": "homura-hime",
-      "title": "Homura Hime: Soundtrack Bundle, v1.0.8 + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/homura-hime/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 7,
-      "signals": [
-        "genres",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "horizon-forbidden-west-complete-edition-updates-posted",
@@ -160,7 +111,7 @@
       "reason": "update-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "hypervisor-cracks-status-update",
@@ -170,7 +121,7 @@
       "reason": "status-update",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "installer-fixes",
@@ -180,22 +131,7 @@
       "reason": "installer-fix-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
-    },
-    {
-      "id": "keylocker-turn-based-cyberpunk-action",
-      "title": "Keylocker: Turn Based Cyberpunk Action – Soundtrack Bundle, Build 16635931 + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/keylocker-turn-based-cyberpunk-action/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 7,
-      "signals": [
-        "genres",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "man-o-war-corsair-repack-updated",
@@ -205,7 +141,7 @@
       "reason": "repack-update-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "mining-donation-option-changed",
@@ -217,7 +153,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "more-donation-options-added",
@@ -229,7 +165,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "outer-wilds-repack-updated",
@@ -239,7 +175,7 @@
       "reason": "repack-update-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "please-stop-your-donation-miners",
@@ -249,7 +185,7 @@
       "reason": "donation-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "puyo-puyo-tetris-codex-crack-added",
@@ -259,38 +195,7 @@
       "reason": "crack-update",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
-    },
-    {
-      "id": "robotics-notes-elite",
-      "title": "ROBOTICS;NOTES ELITE + Mini-soundtrack",
-      "source_url": "https://fitgirl-repacks.site/robotics-notes-elite/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 10,
-      "signals": [
-        "genres",
-        "repack-size",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
-    },
-    {
-      "id": "republic-of-pirates",
-      "title": "Republic of Pirates: Soundtrack Bundle – v0.24.3 + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/republic-of-pirates/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 7,
-      "signals": [
-        "genres",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "people-just-cant-fixed",
@@ -302,23 +207,7 @@
       "signals": [
         "image"
       ],
-      "action": "removed-existing"
-    },
-    {
-      "id": "the-tag-along-obsession",
-      "title": "THE TAG-ALONG OBSESSION: Soundtrack Bundle, Update 10/04 + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/the-tag-along-obsession/",
-      "classification": "non_game",
-      "reason": "standalone-soundtrack",
-      "score": 10,
-      "signals": [
-        "genres",
-        "repack-size",
-        "image",
-        "description",
-        "media"
-      ],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "the-issue-with-direct-download-links-should-be-fixed-now",
@@ -328,7 +217,7 @@
       "reason": "site-link-status",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "updates-digest-for-april-1-2025",
@@ -2234,7 +2123,7 @@
       "reason": "repack-update-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "yet-another-fix-mea-repack",
@@ -2244,7 +2133,7 @@
       "reason": "fix-post",
       "score": 0,
       "signals": [],
-      "action": "removed-existing"
+      "action": "excluded-new"
     },
     {
       "id": "a-call-for-ho-ho-honations",

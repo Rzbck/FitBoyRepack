@@ -52,12 +52,10 @@ jobs:
             echo 'No catalog change'
             exit 0
           fi
-
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add site/data/games.json
           git commit -m 'data: refresh catalog'
-
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
@@ -68,5 +66,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          gh workflow run enrich-media.yml --ref main -f batch=180 -f workers=12 -f refresh=false
+          gh workflow run enrich-media.yml --ref main -f batch=480 -f workers=12 -f rounds=2 -f refresh=false
           gh workflow run pages.yml --ref main

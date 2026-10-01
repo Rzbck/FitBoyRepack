@@ -6,18 +6,27 @@ on:
   workflow_dispatch:
     inputs:
       batch:
-        description: 'Maximum games to enrich in this run'
+        description: 'Maximum games per enrichment round'
         required: false
-        default: '360'
+        default: '480'
       workers:
         description: 'Parallel detail-page workers'
         required: false
         default: '12'
+      rounds:
+        description: 'Maximum consecutive rounds before yielding the writer lock'
+        required: false
+        default: '6'
       refresh:
         description: 'Recheck already enriched games'
         required: false
         type: boolean
         default: false
+  push:
+    branches: [main]
+    paths:
+      - 'tools/enrich_media.py'
+      - '.github/workflows/enrich-media.yml'
 
 permissions:
   contents: write
@@ -30,7 +39,7 @@ concurrency:
 jobs:
   enrich:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,16 +50,37 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Enrich screenshots, GIFs and public details
+      - name: Enrich screenshots, GIFs and public details in accelerated rounds
         env:
-          BATCH: ${{ github.event.inputs.batch || '360' }}
+          BATCH: ${{ github.event.inputs.batch || '480' }}
           WORKERS: ${{ github.event.inputs.workers || '12' }}
+          ROUNDS: ${{ github.event.inputs.rounds || '6' }}
           REFRESH: ${{ github.event.inputs.refresh || 'false' }}
         shell: bash
         run: |
-          ARGS=(--batch "$BATCH" --workers "$WORKERS")
-          if [ "$REFRESH" = "true" ]; then ARGS+=(--refresh); fi
-          python tools/enrich_media.py "${ARGS[@]}"
+          set -euo pipefail
+          for round in $(seq 1 "$ROUNDS"); do
+            echo "=== enrichment round ${round}/${ROUNDS} ==="
+            args=(--batch "$BATCH" --workers "$WORKERS")
+            if [ "$REFRESH" = "true" ]; then args+=(--refresh); fi
+            python tools/enrich_media.py "${args[@]}"
+
+            if [ "$REFRESH" = "true" ]; then
+              break
+            fi
+
+            remaining=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('site/data/games.json').read_text(encoding='utf-8'))
+          games=p.get('games',[])
+          pending=sum(1 for g in games if g.get('source_url') and (g.get('media_version') != 3 or g.get('details_version') != 1))
+          print(pending)
+          PY
+            )
+            echo "pending enrichment after round ${round}: ${remaining}"
+            if [ "$remaining" -eq 0 ]; then break; fi
+          done
       - name: Validate generated catalog
         run: python tools/validate_catalog.py
       - name: Commit media safely

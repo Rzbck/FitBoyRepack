@@ -4,6 +4,13 @@ import re
 GAME_SCORE_THRESHOLD = 3
 UNKNOWN_SIZE_VALUES = {"", "N/A", "NA", "UNKNOWN", "-", "NONE"}
 
+# Aggregate/editorial pages can embed complete metadata from games they mention.
+# These known aggregate titles must therefore win over every positive game signal.
+HARD_EDITORIAL_PATTERNS = (
+    (re.compile(r"^updates digest\b", re.IGNORECASE), "updates-digest"),
+    (re.compile(r"^upcoming repacks\b", re.IGNORECASE), "upcoming-repacks"),
+)
+
 # Editorial/site posts are rejected only when the record does not otherwise
 # have enough game metadata. Generic words such as Update/Fix/DLC are never
 # sufficient on their own. Keep these patterns descriptive of a post *about*
@@ -112,8 +119,22 @@ def score_game_signals(record):
     return score, signals
 
 
+def _normalized_title(title):
+    return re.sub(r"\s+", " ", _text(title))
+
+
+def hard_editorial_reason(title):
+    normalized = _normalized_title(title)
+    if not normalized:
+        return None
+    for pattern, reason in HARD_EDITORIAL_PATTERNS:
+        if pattern.search(normalized):
+            return reason
+    return None
+
+
 def explicit_non_game_reason(title):
-    normalized = re.sub(r"\s+", " ", _text(title))
+    normalized = _normalized_title(title)
     if not normalized:
         return None
     for pattern, reason in STANDALONE_CONTENT_PATTERNS:
@@ -123,7 +144,7 @@ def explicit_non_game_reason(title):
 
 
 def editorial_reason(title):
-    normalized = re.sub(r"\s+", " ", _text(title))
+    normalized = _normalized_title(title)
     if not normalized:
         return None
     for pattern, reason in EDITORIAL_PATTERNS:
@@ -139,7 +160,7 @@ def classify_record(record):
     if not title:
         return {"kind": "review", "reason": "missing-title", "score": score, "signals": signals}
 
-    hard_reason = explicit_non_game_reason(title)
+    hard_reason = hard_editorial_reason(title) or explicit_non_game_reason(title)
     if hard_reason:
         return {"kind": "non_game", "reason": hard_reason, "score": score, "signals": signals}
 

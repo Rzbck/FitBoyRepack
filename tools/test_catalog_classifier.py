@@ -69,6 +69,22 @@ for title in (
 ):
     expect(title, "non_game")
 
+# Aggregate posts may contain perfectly valid metadata copied from games they
+# mention. They must still be excluded, which is the regression seen in prod.
+for title in (
+    "Upcoming Repacks",
+    "Updates Digest for September 28, 2026",
+):
+    expect(
+        title,
+        "non_game",
+        genres=["Management", "Strategy", "Item crafting"],
+        size="10.3 GB",
+        image="https://example.invalid/embedded-game-cover.jpg",
+        description="Rich editorial content mentioning several games.",
+        media=[{"type": "image", "url": "https://example.invalid/embedded-shot.jpg"}],
+    )
+
 expect(
     "Fallout 4: High Resolution Texture Pack – for v1.10.980.0+",
     "non_game",
@@ -112,8 +128,8 @@ for title in (
     # than being deleted because their titles themselves look like game names.
     expect(title, "review", image="https://example.invalid/cover.jpg")
 
-# Strong metadata always wins over an editorial-looking title except for the
-# deliberately tiny set of proven standalone assets.
+# Strong metadata still wins for generic editorial-looking phrases that are not
+# known aggregate pages.
 expect(
     "Example Game Repack Status",
     "game",

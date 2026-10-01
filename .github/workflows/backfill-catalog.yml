@@ -30,6 +30,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # A queued writer must start from the current main branch, not from
+          # the workflow event SHA captured before another writer finished.
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:

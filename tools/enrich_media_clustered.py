@@ -5,10 +5,10 @@ from datetime import datetime, timezone
 
 import httpx
 
-import enrich_media_v6 as v6
+import enrich_media_v7 as v7
 
-base = v6.base
-MEDIA_VERSION = v6.MEDIA_VERSION
+base = v7.base
+MEDIA_VERSION = v7.MEDIA_VERSION
 DETAILS_VERSION = base.DETAILS_VERSION
 MAX_TOTAL_WORKERS = 24
 DEFAULT_TOTAL_WORKERS = 20

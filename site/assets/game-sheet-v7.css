@@ -1,0 +1,31 @@
+/* V7 polish: keep the close control clear of tab content. */
+.game-dialog > .dialog-close{
+  top:12px;
+  right:12px;
+  z-index:2147482500;
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:1px solid rgba(255,255,255,.28);
+  background:#0a1120;
+  color:#fff;
+  box-shadow:0 8px 24px rgba(0,0,0,.38);
+}
+
+.game-dialog > .dialog-close:hover,
+.game-dialog > .dialog-close:focus-visible{
+  border-color:rgba(132,177,255,.9);
+  background:#13213a;
+  outline:none;
+}
+
+.game-dialog .dialog-layout.rich-details .detail-tab-nav{
+  padding-right:64px!important;
+}
+
+@media(max-width:900px){
+  .game-dialog > .dialog-close{top:10px;right:10px}
+  .game-dialog .dialog-layout.rich-details .detail-tab-nav{padding-right:58px!important}
+}

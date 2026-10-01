@@ -26,6 +26,7 @@ on:
     branches: [main]
     paths:
       - 'tools/enrich_media.py'
+      - 'tools/enrich_media_v4.py'
       - '.github/workflows/enrich-media.yml'
 
 permissions:
@@ -53,7 +54,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Enrich screenshots, GIFs and public details in accelerated rounds
+      - name: Enrich full-size screenshots, GIFs and public details
         env:
           BATCH: ${{ github.event.inputs.batch || '480' }}
           WORKERS: ${{ github.event.inputs.workers || '12' }}
@@ -66,7 +67,7 @@ jobs:
             echo "=== enrichment round ${round}/${ROUNDS} ==="
             args=(--batch "$BATCH" --workers "$WORKERS")
             if [ "$REFRESH" = "true" ]; then args+=(--refresh); fi
-            python tools/enrich_media.py "${args[@]}"
+            python tools/enrich_media_v4.py "${args[@]}"
 
             if [ "$REFRESH" = "true" ]; then
               break
@@ -77,7 +78,7 @@ jobs:
           from pathlib import Path
           p=json.loads(Path('site/data/games.json').read_text(encoding='utf-8'))
           games=p.get('games',[])
-          pending=sum(1 for g in games if g.get('source_url') and (g.get('media_version') != 3 or g.get('details_version') != 1))
+          pending=sum(1 for g in games if g.get('source_url') and (g.get('media_version') != 4 or g.get('details_version') != 1))
           print(pending)
           PY
             )

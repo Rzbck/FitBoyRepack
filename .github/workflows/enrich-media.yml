@@ -31,6 +31,7 @@ on:
     paths:
       - 'tools/enrich_media.py'
       - 'tools/enrich_media_v4.py'
+      - 'tools/enrich_media_v5.py'
       - 'tools/enrich_media_clustered.py'
       - '.github/workflows/enrich-media.yml'
 
@@ -84,7 +85,7 @@ jobs:
           from pathlib import Path
           p=json.loads(Path('site/data/games.json').read_text(encoding='utf-8'))
           games=p.get('games',[])
-          pending=sum(1 for g in games if g.get('source_url') and (g.get('media_version') != 4 or g.get('details_version') != 1))
+          pending=sum(1 for g in games if g.get('source_url') and (g.get('media_version') != 5 or g.get('details_version') != 1))
           print(pending)
           PY
             )

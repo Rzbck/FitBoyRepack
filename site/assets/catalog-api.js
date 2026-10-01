@@ -1,8 +1,10 @@
 const CATALOG_URL = './data/catalog.json';
+const SEARCH_INDEX_URL = './data/search-index.json';
 const HEALTH_URL = './data/health.json';
 const DETAIL_CACHE_LIMIT = 24;
 
 let catalogPromise = null;
+let searchIndexPromise = null;
 let healthPromise = null;
 const detailCache = new Map();
 
@@ -21,6 +23,18 @@ export function loadCatalogPayload() {
     }).catch(error => { catalogPromise = null; throw error; });
   }
   return catalogPromise;
+}
+
+export function loadSearchIndexPayload() {
+  if (!searchIndexPromise) {
+    searchIndexPromise = fetchJson(SEARCH_INDEX_URL, 'Search index').then(payload => {
+      if (!payload || typeof payload.count !== 'number' || !payload.prefixes || !payload.grams) {
+        throw new Error('Invalid static search index payload');
+      }
+      return payload;
+    }).catch(error => { searchIndexPromise = null; throw error; });
+  }
+  return searchIndexPromise;
 }
 
 export function loadHealthPayload() {

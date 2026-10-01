@@ -1,4 +1,4 @@
-import { loadCatalogPayload, loadHealthPayload } from './catalog-api.js';
+import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload } from './catalog-api.js';
 
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
@@ -45,7 +45,7 @@ function saveLibrary() {
 }
 
 const state = {
-  games: [], byId:new Map(), filtered:[], visible:PAGE_SIZE, selectedTags:new Set(), tagCounts:new Map(),
+  games: [], byId:new Map(), filtered:[], visible:PAGE_SIZE, selectedTags:new Set(), tagCounts:new Map(), searchIndex:null,
   library:readLibrary(), libraryFilter:'', quick:{ newOnly:false, detailsOnly:false, mediaOnly:false },
   dialogGameId:null, dialogScrollY:0, dialogOpener:null, loadingMore:false, lastLoadAt:0, searchTimer:0, suggestionIndex:-1
 };
@@ -54,6 +54,20 @@ function normalized(value='') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
 }
 function tokens(value='') { return normalized(value).split(' ').filter(Boolean); }
+function searchGrams(token,size=3){const out=[];if(token.length<size)return out;for(let i=0;i<=token.length-size;i++){const gram=token.slice(i,i+size);if(!out.includes(gram))out.push(gram);}return out;}
+function indexedTokenCandidates(token){
+  const index=state.searchIndex;if(!index||token.length<2)return null;
+  const prefixMax=Math.max(2,Number(index.prefix_max)||6),prefixKey=token.slice(0,Math.min(prefixMax,token.length));
+  const candidates=new Set(index.prefixes?.[prefixKey]||[]);
+  if(token.length>=4){const grams=searchGrams(token,Number(index.gram_size)||3),hits=new Map();for(const gram of grams)for(const ordinal of index.grams?.[gram]||[])hits.set(ordinal,(hits.get(ordinal)||0)+1);const threshold=Math.max(1,Math.ceil(grams.length*.4));for(const [ordinal,count] of hits)if(count>=threshold)candidates.add(ordinal);}
+  return candidates;
+}
+function searchCandidateIndexes(rawQuery){
+  if(!state.searchIndex)return null;const qTokens=tokens(rawQuery).filter(token=>token.length>=2);if(!qTokens.length)return null;let result=null;
+  for(const token of qTokens){const candidates=indexedTokenCandidates(token);if(!candidates)continue;result=result===null?candidates:new Set([...result].filter(index=>candidates.has(index)));if(!result.size)break;}
+  return result;
+}
+function searchPool(rawQuery){const indexes=searchCandidateIndexes(rawQuery);if(!indexes||!indexes.size)return state.games;return [...indexes].map(index=>state.games[index]).filter(Boolean);}
 function getTags(game) {
   const value = game?.genres ?? game?.genre ?? [];
   return (Array.isArray(value) ? value : String(value || '').split(',')).map(v => String(v).trim()).filter(Boolean);
@@ -135,8 +149,8 @@ function nonTagMatches(game, query, tagQuery) {
 }
 
 function applyFilters() {
-  const query=els.search.value.trim(); const tagQuery=normalized(els.tagSearch.value); const selected=[...state.selectedTags];
-  state.filtered=state.games.filter(game=>nonTagMatches(game,query,tagQuery) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
+  const query=els.search.value.trim(); const tagQuery=normalized(els.tagSearch.value); const selected=[...state.selectedTags]; const pool=query?searchPool(query):state.games;
+  state.filtered=pool.filter(game=>nonTagMatches(game,query,tagQuery) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
   const sort=els.sort.value;
   state.filtered.sort((a,b)=>{
     if (sort==='relevance' && query) return queryScore(b,query)-queryScore(a,query) || gameDate(b)-gameDate(a);
@@ -178,8 +192,8 @@ function updateTagUI() {
 
 function updateTagFacets() {
   if (!state.games.length) return;
-  const query=els.search.value.trim(), tagQuery=normalized(els.tagSearch.value), selected=[...state.selectedTags];
-  const pool=state.games.filter(game=>nonTagMatches(game,query,tagQuery) && selected.every(tag=>game.__tagKeySet.has(tag)));
+  const query=els.search.value.trim(), tagQuery=normalized(els.tagSearch.value), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
+  const pool=searchBase.filter(game=>nonTagMatches(game,query,tagQuery) && selected.every(tag=>game.__tagKeySet.has(tag)));
   const counts=new Map(); for (const game of pool) for (const tag of game.__tagKeySet) counts.set(tag,(counts.get(tag)||0)+1);
   const searchTag=normalized(els.tagSearch.value);
   els.tagList.querySelectorAll('.tag-chip').forEach(btn=>{
@@ -230,7 +244,7 @@ function renderHighlights(){const newest=[...state.games].sort((a,b)=>gameDate(b
 
 function renderSuggestions(){
   const q=els.search.value.trim(); if(q.length<2){els.suggestions.hidden=true;els.suggestions.replaceChildren();state.suggestionIndex=-1;return;}
-  const picks=state.games.map(game=>({game,score:queryScore(game,q)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||gameDate(b.game)-gameDate(a.game)).slice(0,8); if(!picks.length){els.suggestions.hidden=true;return;}
+  const picks=searchPool(q).map(game=>({game,score:queryScore(game,q)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||gameDate(b.game)-gameDate(a.game)).slice(0,8); if(!picks.length){els.suggestions.hidden=true;return;}
   const f=document.createDocumentFragment();picks.forEach(({game},i)=>{const b=document.createElement('button');b.type='button';b.className='search-suggestion';b.setAttribute('role','option');b.dataset.index=String(i);b.innerHTML=`<span></span><small></small>`;b.querySelector('span').textContent=game.title;b.querySelector('small').textContent=[game.__year,...getTags(game).slice(0,2)].filter(Boolean).join(' • ');b.addEventListener('click',()=>{els.suggestions.hidden=true;openDialog(game,{syncUrl:true});});f.append(b);});els.suggestions.replaceChildren(f);els.suggestions.hidden=false;state.suggestionIndex=-1;
 }
 function stepSuggestion(delta){const items=$$('.search-suggestion');if(!items.length)return;state.suggestionIndex=(state.suggestionIndex+delta+items.length)%items.length;items.forEach((b,i)=>b.classList.toggle('active',i===state.suggestionIndex));items[state.suggestionIndex].scrollIntoView({block:'nearest'});}
@@ -268,7 +282,7 @@ function openHashGame(){const id=gameHashId();if(!id)return;const game=state.byI
 
 function renderHealth(health){els.healthPanel.hidden=false;els.healthBadge.hidden=false;els.healthBadge.textContent=`${health.coverage?.details||0}% fiches`;els.healthTotal.textContent=health.total_games.toLocaleString('fr-FR');els.healthDescriptions.textContent=health.with_description.toLocaleString('fr-FR');els.healthGalleries.textContent=health.with_gallery.toLocaleString('fr-FR');els.healthGifs.textContent=health.with_gif.toLocaleString('fr-FR');const when=health.generated_at?new Intl.DateTimeFormat('fr-FR',{dateStyle:'short',timeStyle:'short'}).format(new Date(health.generated_at)):'';els.healthMeta.textContent=`${health.enrichment_pending.toLocaleString('fr-FR')} fiches restent à enrichir${when?` • synchro ${when}`:''}.`;}
 
-async function loadCatalog(){try{const payload=await loadCatalogPayload();state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);state.byId=new Map(state.games.map(g=>[g.id,g]));const generated=payload.generated_at;els.status.textContent=generated?`Mis à jour ${new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeStyle:'short'}).format(new Date(generated))}`:`${state.games.length.toLocaleString('fr-FR')} jeux`;populateYears();buildTagIndex();updateLibraryUI();applyFilters();renderHighlights();renderRecommendations();openHashGame();loadHealthPayload().then(renderHealth).catch(e=>console.warn('Health unavailable',e));}catch(error){console.error(error);els.status.textContent='Catalogue indisponible';els.empty.hidden=false;els.empty.querySelector('strong').textContent='Impossible de charger le catalogue';}}
+async function loadCatalog(){try{const payload=await loadCatalogPayload();state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);state.byId=new Map(state.games.map(g=>[g.id,g]));const generated=payload.generated_at;els.status.textContent=generated?`Mis à jour ${new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeStyle:'short'}).format(new Date(generated))}`:`${state.games.length.toLocaleString('fr-FR')} jeux`;populateYears();buildTagIndex();updateLibraryUI();applyFilters();renderHighlights();renderRecommendations();openHashGame();loadSearchIndexPayload().then(index=>{if(index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);state.searchIndex=index;if(els.search.value.trim())applyFilters();}).catch(e=>console.warn('Search index unavailable, using full scan',e));loadHealthPayload().then(renderHealth).catch(e=>console.warn('Health unavailable',e));}catch(error){console.error(error);els.status.textContent='Catalogue indisponible';els.empty.hidden=false;els.empty.querySelector('strong').textContent='Impossible de charger le catalogue';}}
 
 els.search.addEventListener('input',()=>{clearTimeout(state.searchTimer);state.searchTimer=setTimeout(applyFilters,SEARCH_DEBOUNCE_MS);});
 els.search.addEventListener('keydown',event=>{if(!els.suggestions.hidden&&(event.key==='ArrowDown'||event.key==='ArrowUp')){event.preventDefault();stepSuggestion(event.key==='ArrowDown'?1:-1);return;}if(event.key==='Enter'&&state.suggestionIndex>=0){event.preventDefault();$$('.search-suggestion')[state.suggestionIndex]?.click();}});

@@ -201,7 +201,7 @@ function renderMediaGallery(info, game) {
     link.rel = 'noopener noreferrer';
 
     const img = document.createElement('img');
-    img.src = item.url;
+    img.src = item.preview_url || item.url;
     img.alt = `Capture de ${game.title}`;
     img.loading = 'lazy';
     img.decoding = 'async';
@@ -243,7 +243,7 @@ function renderGameplayPreview(info, game) {
   button.className = 'gameplay-preview-button';
   button.dataset.mediaUrl = gif.url;
   const img = document.createElement('img');
-  img.src = gif.url;
+  img.src = gif.preview_url || gif.url;
   img.alt = `Gameplay de ${game.title}`;
   img.loading = 'lazy';
   img.decoding = 'async';

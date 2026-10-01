@@ -8,15 +8,19 @@ on:
       batch:
         description: 'Maximum games per enrichment round'
         required: false
-        default: '480'
+        default: '720'
       workers:
-        description: 'Parallel detail-page workers'
+        description: 'Total parallel detail-page workers across all groups'
         required: false
-        default: '12'
+        default: '20'
+      groups:
+        description: 'Parallel connection-pool groups'
+        required: false
+        default: '4'
       rounds:
         description: 'Maximum consecutive rounds before yielding the writer lock'
         required: false
-        default: '6'
+        default: '5'
       refresh:
         description: 'Recheck already enriched games'
         required: false
@@ -27,6 +31,7 @@ on:
     paths:
       - 'tools/enrich_media.py'
       - 'tools/enrich_media_v4.py'
+      - 'tools/enrich_media_clustered.py'
       - '.github/workflows/enrich-media.yml'
 
 permissions:
@@ -54,20 +59,21 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Enrich full-size screenshots, GIFs and public details
+      - name: Enrich full-size screenshots, GIFs and public details in parallel groups
         env:
-          BATCH: ${{ github.event.inputs.batch || '480' }}
-          WORKERS: ${{ github.event.inputs.workers || '12' }}
-          ROUNDS: ${{ github.event.inputs.rounds || '6' }}
+          BATCH: ${{ github.event.inputs.batch || '720' }}
+          WORKERS: ${{ github.event.inputs.workers || '20' }}
+          GROUPS: ${{ github.event.inputs.groups || '4' }}
+          ROUNDS: ${{ github.event.inputs.rounds || '5' }}
           REFRESH: ${{ github.event.inputs.refresh || 'false' }}
         shell: bash
         run: |
           set -euo pipefail
           for round in $(seq 1 "$ROUNDS"); do
-            echo "=== enrichment round ${round}/${ROUNDS} ==="
-            args=(--batch "$BATCH" --workers "$WORKERS")
+            echo "=== clustered enrichment round ${round}/${ROUNDS} ==="
+            args=(--batch "$BATCH" --workers "$WORKERS" --groups "$GROUPS")
             if [ "$REFRESH" = "true" ]; then args+=(--refresh); fi
-            python tools/enrich_media_v4.py "${args[@]}"
+            python tools/enrich_media_clustered.py "${args[@]}"
 
             if [ "$REFRESH" = "true" ]; then
               break

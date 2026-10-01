@@ -1,9 +1,77 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-01T00:17:51.827209+00:00",
+  "generated_at": "2026-10-01T00:25:26.990494+00:00",
   "source_pages": 805,
   "last_full_scan_at": "2026-09-30T20:56:31.079880+00:00",
   "games": [
+    {
+      "id": "eastern-era",
+      "title": "Eastern Era – v1.2.0",
+      "source_url": "https://fitgirl-repacks.site/eastern-era/",
+      "image_url": "https://i8.imageban.ru/out/2026/04/13/b80bb1f3dfb93956665544d50eff0fd3.jpg",
+      "post_date": "2026-10-01T01:00:22+03:00",
+      "genres": [
+        "Management",
+        "Strategy",
+        "Item crafting",
+        "Top",
+        "3D",
+        "Middle Ages"
+      ],
+      "repack_size": "6.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/dc/5a/dc5a7073-0174-4d0e-86ae-d72ee0b3e2a8.jpg.240p.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/83/81/8381e593-5071-49ee-bc96-d6e03ecfdace.jpg.240p.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7d/b1/7db177dd-7726-4743-be30-abb90f007d23.jpg.240p.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/bf/09bff904-ba7b-4e4e-a0ed-b143a3911077.jpg.240p.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b0/82/b082d087-8a40-475c-baa8-7172a126ba91.jpg.240p.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9c/6b/9c6b5217-e01c-4f75-8f56-eda3620f4273.jpg.240p.jpg",
+          "type": "image"
+        }
+      ],
+      "media_version": 3,
+      "media_checked_at": "2026-09-30T20:57:49.475978+00:00",
+      "details": {
+        "description": "In this martial arts-themed management simulation game, assume the role of a sect leader. As a member of a declining sect, you must flee with your disciples and survive in a desolate world, striving to rejuvenate your sect.\nNavigate challenges posed by food shortages and harsh weather, hunt dangerous beasts, lift the spirits of your disciples, and manually construct all necessary facilities brick by brick. Recruit talents from the wilderness or cities to become your disciples, train their martial skills, and gradually restore your sect’s strength, rebuilding your unique sect headquarters.\nForge alliances or sow discord among other sects, stirring up turbulent conflicts in this martial-dominated world. Seize power, defeat century-old formidable sects, conquer the JiangHu, and become the new legend.",
+        "game_features": [
+          "Detailed Interactive World – Explore vast forests, snowy plains, and deserts where every plant and tree can be collected and processed into resources for crafting and constructing everything necessary for survival. Your ultimate goal is to revive your sect. Travel through the Central Plains, explore other sects and ancient ruins, and seek clues to legendary martial arts manuals and mythical weapons. Train exceptional disciples and command them to defend, attack, and compete against other sects. ",
+          "Flesh and Reality – In the desolate yet vibrant primal landscapes, disciples will be challenged by needs such as hunger, sleep, and entertainment. They must also withstand the ever-changing weather and natural disasters, maintaining morale against the elements to avoid breakdowns. Disciples not yet trained in martial arts must tread carefully, as even a single beast can leave lifelong scars on their bodies. However, the body is the foundation of martial arts. As disciples master internal skills ",
+          "Martial Arts and Combining Techniques – The ultimate pursuit of martial arts mastery is the greatest desire for those in the martial world. Each disciple begins their journey by reinforcing their foundation and enduring the arduous process of opening their dantian, before training in coveted internal skills and techniques. However, mastering martial arts is just the first step; diligent practice forms only the foundation of progress. Advancing on the martial path requires providing disciples wit",
+          "Building Your Unique Sect – Collect resources and study construction, manufacturing, and art to choose a cultivation path that aligns with your sect’s development. Leverage architectural knowledge to build grand halls, lofts, and pavilions, integrating them with disciples’ daily life facilities to exhibit your appreciation for Eastern architecture. Ensure thoughtful design of storage spaces to prevent damage to materials under poor conditions and high temperatures. Provide suitable living quarte",
+          "Competition or Cooperation – Develop independently in the martial world, or seek reliable allies. By engaging with other factions, you can influence events across the martial landscape, gaining advantages in both offense and defense. You can dispatch disciples to attack other sects’ bases and cities, conquering them openly through the prowess of your skilled disciples amidst the bloody turmoil for power. Alternatively, use strategic diplomacy to safeguard your interests, or manipulate other sect"
+        ],
+        "repack_features": [
+          "Based on Eastern.Era-RUNE ISO release: rune-eastern.era.iso (7,756,414,976 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 7.2 to 5 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 7.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-09-30T20:57:49.475978+00:00"
+    },
     {
       "id": "the-witcher-3-wild-hunt-remastered",
       "title": "The Witcher 3: Wild Hunt – Remastered, v5.00b (Steam/GOG) + All DLCs + Bonus Content",
@@ -56010,74 +56078,6 @@
           "Installation takes 2-6 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 24.3 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-09-30T20:57:49.475978+00:00"
-    },
-    {
-      "id": "eastern-era",
-      "title": "Eastern Era",
-      "source_url": "https://fitgirl-repacks.site/eastern-era/",
-      "image_url": "https://i8.imageban.ru/out/2026/04/13/b80bb1f3dfb93956665544d50eff0fd3.jpg",
-      "post_date": "2026-04-13T02:12:22+03:00",
-      "genres": [
-        "Management",
-        "Strategy",
-        "Item crafting",
-        "Top",
-        "3D",
-        "Middle Ages"
-      ],
-      "repack_size": "5 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/dc/5a/dc5a7073-0174-4d0e-86ae-d72ee0b3e2a8.jpg.240p.jpg",
-          "type": "image"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/83/81/8381e593-5071-49ee-bc96-d6e03ecfdace.jpg.240p.jpg",
-          "type": "image"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/7d/b1/7db177dd-7726-4743-be30-abb90f007d23.jpg.240p.jpg",
-          "type": "image"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/09/bf/09bff904-ba7b-4e4e-a0ed-b143a3911077.jpg.240p.jpg",
-          "type": "image"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b0/82/b082d087-8a40-475c-baa8-7172a126ba91.jpg.240p.jpg",
-          "type": "image"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9c/6b/9c6b5217-e01c-4f75-8f56-eda3620f4273.jpg.240p.jpg",
-          "type": "image"
-        }
-      ],
-      "media_version": 3,
-      "media_checked_at": "2026-09-30T20:57:49.475978+00:00",
-      "details": {
-        "description": "In this martial arts-themed management simulation game, assume the role of a sect leader. As a member of a declining sect, you must flee with your disciples and survive in a desolate world, striving to rejuvenate your sect.\nNavigate challenges posed by food shortages and harsh weather, hunt dangerous beasts, lift the spirits of your disciples, and manually construct all necessary facilities brick by brick. Recruit talents from the wilderness or cities to become your disciples, train their martial skills, and gradually restore your sect’s strength, rebuilding your unique sect headquarters.\nForge alliances or sow discord among other sects, stirring up turbulent conflicts in this martial-dominated world. Seize power, defeat century-old formidable sects, conquer the JiangHu, and become the new legend.",
-        "game_features": [
-          "Detailed Interactive World – Explore vast forests, snowy plains, and deserts where every plant and tree can be collected and processed into resources for crafting and constructing everything necessary for survival. Your ultimate goal is to revive your sect. Travel through the Central Plains, explore other sects and ancient ruins, and seek clues to legendary martial arts manuals and mythical weapons. Train exceptional disciples and command them to defend, attack, and compete against other sects. ",
-          "Flesh and Reality – In the desolate yet vibrant primal landscapes, disciples will be challenged by needs such as hunger, sleep, and entertainment. They must also withstand the ever-changing weather and natural disasters, maintaining morale against the elements to avoid breakdowns. Disciples not yet trained in martial arts must tread carefully, as even a single beast can leave lifelong scars on their bodies. However, the body is the foundation of martial arts. As disciples master internal skills ",
-          "Martial Arts and Combining Techniques – The ultimate pursuit of martial arts mastery is the greatest desire for those in the martial world. Each disciple begins their journey by reinforcing their foundation and enduring the arduous process of opening their dantian, before training in coveted internal skills and techniques. However, mastering martial arts is just the first step; diligent practice forms only the foundation of progress. Advancing on the martial path requires providing disciples wit",
-          "Building Your Unique Sect – Collect resources and study construction, manufacturing, and art to choose a cultivation path that aligns with your sect’s development. Leverage architectural knowledge to build grand halls, lofts, and pavilions, integrating them with disciples’ daily life facilities to exhibit your appreciation for Eastern architecture. Ensure thoughtful design of storage spaces to prevent damage to materials under poor conditions and high temperatures. Provide suitable living quarte",
-          "Competition or Cooperation – Develop independently in the martial world, or seek reliable allies. By engaging with other factions, you can influence events across the martial landscape, gaining advantages in both offense and defense. You can dispatch disciples to attack other sects’ bases and cities, conquering them openly through the prowess of your skilled disciples amidst the bloody turmoil for power. Alternatively, use strategic diplomacy to safeguard your interests, or manipulate other sect"
-        ],
-        "repack_features": [
-          "Based on Eastern.Era-RUNE ISO release: rune-eastern.era.iso (7,756,414,976 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 7.2 to 5 GB)",
-          "Installation takes 1-4 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 7.9 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

@@ -13,6 +13,8 @@ on:
     branches: [main]
     paths:
       - 'tools/update_catalog.py'
+      - 'tools/catalog_classifier.py'
+      - 'tools/check_catalog_classification.py'
       - '.github/workflows/backfill-catalog.yml'
 
 permissions:
@@ -45,26 +47,37 @@ jobs:
           WORKERS: ${{ github.event.inputs.workers || '12' }}
         run: python tools/update_catalog.py --full-scan --workers "$WORKERS"
       - name: Validate generated catalog
-        run: python tools/validate_catalog.py
+        run: |
+          python tools/validate_catalog.py
+          python tools/check_catalog_classification.py
       - name: Commit full catalog safely
         id: commit
         shell: bash
         run: |
           echo 'changed=false' >> "$GITHUB_OUTPUT"
-          if git diff --quiet -- site/data/games.json; then
-            echo 'Full scan found no catalog change'
+          echo 'catalog_changed=false' >> "$GITHUB_OUTPUT"
+
+          catalog_changed=false
+          quarantine_changed=false
+          git diff --quiet -- site/data/games.json || catalog_changed=true
+          git diff --quiet -- data/catalog_quarantine.json || quarantine_changed=true
+
+          if [ "$catalog_changed" = false ] && [ "$quarantine_changed" = false ]; then
+            echo 'Full scan found no catalog/classification change'
             exit 0
           fi
+
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site/data/games.json
-          git commit -m 'data: full catalog backfill'
+          git add site/data/games.json data/catalog_quarantine.json
+          git commit -m 'data: full catalog classification backfill'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
           echo 'changed=true' >> "$GITHUB_OUTPUT"
+          echo "catalog_changed=$catalog_changed" >> "$GITHUB_OUTPUT"
       - name: Kick off accelerated enrichment and deploy
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.catalog_changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash

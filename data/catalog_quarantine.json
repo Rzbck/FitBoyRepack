@@ -26,6 +26,26 @@
       "action": "excluded-new"
     },
     {
+      "id": "warning-megaupload-users",
+      "title": "A warning to all MegaUpload users!",
+      "source_url": "https://fitgirl-repacks.site/warning-megaupload-users/",
+      "classification": "non_game",
+      "reason": "site-warning",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "amd-old-intel-cpu-owners-wanted-testing",
+      "title": "AMD (and old Intel) CPU owners wanted for testing",
+      "source_url": "https://fitgirl-repacks.site/amd-old-intel-cpu-owners-wanted-testing/",
+      "classification": "non_game",
+      "reason": "testing-request",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "about-hypervisor-cracks",
       "title": "About Hypervisor Cracks",
       "source_url": "https://fitgirl-repacks.site/about-hypervisor-cracks/",
@@ -36,6 +56,237 @@
       "action": "excluded-new"
     },
     {
+      "id": "about-pragmata-release",
+      "title": "About PRAGMATA Release",
+      "source_url": "https://fitgirl-repacks.site/about-pragmata-release/",
+      "classification": "non_game",
+      "reason": "release-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "about-compression-speed",
+      "title": "About compression speed",
+      "source_url": "https://fitgirl-repacks.site/about-compression-speed/",
+      "classification": "non_game",
+      "reason": "compression-editorial",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "agents-of-mayhem-patch-to-v1-03",
+      "title": "Agents of Mayhem, Patch to v1.03",
+      "source_url": "https://fitgirl-repacks.site/agents-of-mayhem-patch-to-v1-03/",
+      "classification": "non_game",
+      "reason": "patch-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "all-genres-tags-are-now-links",
+      "title": "All Genres/Tags Are Now Links",
+      "source_url": "https://fitgirl-repacks.site/all-genres-tags-are-now-links/",
+      "classification": "non_game",
+      "reason": "site-feature-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "all-game-uploads-restored",
+      "title": "All game uploads restored!",
+      "source_url": "https://fitgirl-repacks.site/all-game-uploads-restored/",
+      "classification": "non_game",
+      "reason": "upload-status",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "amelie-report-october-2021",
+      "title": "Amelie Report October 2021",
+      "source_url": "https://fitgirl-repacks.site/amelie-report-october-2021/",
+      "classification": "non_game",
+      "reason": "site-report",
+      "score": 2,
+      "signals": [
+        "image",
+        "media"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "anno-1800-crackfix-empress",
+      "title": "Anno.1800.Crackfix-EMPRESS",
+      "source_url": "https://fitgirl-repacks.site/anno-1800-crackfix-empress/",
+      "classification": "non_game",
+      "reason": "crack-update",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "another-ddos",
+      "title": "Another DDoS",
+      "source_url": "https://fitgirl-repacks.site/another-ddos/",
+      "classification": "non_game",
+      "reason": "site-incident",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "assassins-creed-origins-repack-vote",
+      "title": "Assassin’s Creed: Origins Repack Vote",
+      "source_url": "https://fitgirl-repacks.site/assassins-creed-origins-repack-vote/",
+      "classification": "non_game",
+      "reason": "repack-vote",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "black-ops-3-repack-status",
+      "title": "Black Ops 3 Repack Status",
+      "source_url": "https://fitgirl-repacks.site/black-ops-3-repack-status/",
+      "classification": "non_game",
+      "reason": "repack-status",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "browser-mining-faq-added",
+      "title": "Browser Mining FAQ Added",
+      "source_url": "https://fitgirl-repacks.site/browser-mining-faq-added/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "browser-mining-as-a-way-of-donating",
+      "title": "Browser Mining as a Way of Donating",
+      "source_url": "https://fitgirl-repacks.site/browser-mining-as-a-way-of-donating/",
+      "classification": "non_game",
+      "reason": "donation-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "cpy-cracked-rottr-i-guess-more-cracks-incoming",
+      "title": "CPY cracked RotTR, I guess more cracks incoming",
+      "source_url": "https://fitgirl-repacks.site/cpy-cracked-rottr-i-guess-more-cracks-incoming/",
+      "classification": "non_game",
+      "reason": "crack-news",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "cpy-is-on-fire",
+      "title": "CPY is on fire!",
+      "source_url": "https://fitgirl-repacks.site/cpy-is-on-fire/",
+      "classification": "non_game",
+      "reason": "crack-news",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "cs-rin-ru-needs-your-help",
+      "title": "CS.RIN.RU Needs Your Help",
+      "source_url": "https://fitgirl-repacks.site/cs-rin-ru-needs-your-help/",
+      "classification": "non_game",
+      "reason": "community-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "cod-black-ops-3-repack-status",
+      "title": "CoD Black Ops 3 Repack Status",
+      "source_url": "https://fitgirl-repacks.site/cod-black-ops-3-repack-status/",
+      "classification": "non_game",
+      "reason": "repack-status",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "cod-wwii-rip-or-repack",
+      "title": "CoD: WWII – rip or repack?",
+      "source_url": "https://fitgirl-repacks.site/cod-wwii-rip-or-repack/",
+      "classification": "non_game",
+      "reason": "repack-poll",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "cods-repacks-status",
+      "title": "CoDs repacks status",
+      "source_url": "https://fitgirl-repacks.site/cods-repacks-status/",
+      "classification": "non_game",
+      "reason": "repack-status",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "dmc5-related-decompression-test",
+      "title": "DMC5-related Decompression Test",
+      "source_url": "https://fitgirl-repacks.site/dmc5-related-decompression-test/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "dns-problems",
+      "title": "DNS Problems",
+      "source_url": "https://fitgirl-repacks.site/dns-problems/",
+      "classification": "non_game",
+      "reason": "site-incident",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "doom-rip-anyone-need",
+      "title": "DOOM Rip, anyone need it?",
+      "source_url": "https://fitgirl-repacks.site/doom-rip-anyone-need/",
+      "classification": "non_game",
+      "reason": "repack-poll",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "doom-iddqd-repack-details",
+      "title": "DOOM: IDDQD Repack details",
+      "source_url": "https://fitgirl-repacks.site/doom-iddqd-repack-details/",
+      "classification": "non_game",
+      "reason": "repack-info-post",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
       "id": "dqh2-twwh2-proper-cracks-added",
       "title": "DQH2 & TWWH2 Proper Cracks Added",
       "source_url": "https://fitgirl-repacks.site/dqh2-twwh2-proper-cracks-added/",
@@ -44,6 +295,78 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "day-of-requests-results",
+      "title": "Day of Requests Results",
+      "source_url": "https://fitgirl-repacks.site/day-of-requests-results/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "day-of-requests-stage-1",
+      "title": "Day of Requests: Stage 1",
+      "source_url": "https://fitgirl-repacks.site/day-of-requests-stage-1/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "day-of-requests-stage-2",
+      "title": "Day of Requests: Stage 2",
+      "source_url": "https://fitgirl-repacks.site/day-of-requests-stage-2/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "decompression-test",
+      "title": "Decompression Test",
+      "source_url": "https://fitgirl-repacks.site/decompression-test/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "decompression-test-2-stress",
+      "title": "Decompression Test #2 – STRESS IT!",
+      "source_url": "https://fitgirl-repacks.site/decompression-test-2-stress/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "delays-in-repacking",
+      "title": "Delays in repacking",
+      "source_url": "https://fitgirl-repacks.site/delays-in-repacking/",
+      "classification": "non_game",
+      "reason": "repack-status",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "denuvo-versus-voksi",
+      "title": "Denuvo versus Voksi",
+      "source_url": "https://fitgirl-repacks.site/denuvo-versus-voksi/",
+      "classification": "non_game",
+      "reason": "crack-news",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "detroit-become-human-updated-repack-test",
@@ -134,6 +457,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "lolly-decompression-test",
+      "title": "Lolly Decompression Test",
+      "source_url": "https://fitgirl-repacks.site/lolly-decompression-test/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "man-o-war-corsair-repack-updated",
       "title": "Man O’ War: Corsair Repack Updated",
       "source_url": "https://fitgirl-repacks.site/man-o-war-corsair-repack-updated/",
@@ -198,6 +531,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "shadow-warrior-2-patch-v1-1-2-0",
+      "title": "Shadow Warrior 2 Patch to v1.1.2.0",
+      "source_url": "https://fitgirl-repacks.site/shadow-warrior-2-patch-v1-1-2-0/",
+      "classification": "non_game",
+      "reason": "patch-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "people-just-cant-fixed",
       "title": "Some people just can’t be fixed",
       "source_url": "https://fitgirl-repacks.site/people-just-cant-fixed/",
@@ -210,6 +553,38 @@
       "action": "excluded-new"
     },
     {
+      "id": "day-requests-may-13-mark-calendar",
+      "title": "The Day of Requests on May 13, mark your calendar",
+      "source_url": "https://fitgirl-repacks.site/day-requests-may-13-mark-calendar/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 1,
+      "signals": [
+        "image"
+      ],
+      "action": "removed-existing"
+    },
+    {
+      "id": "day-requests-part-1",
+      "title": "The Day of Requests: Part 1",
+      "source_url": "https://fitgirl-repacks.site/day-requests-part-1/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "day-requests-poll",
+      "title": "The Day of Requests: Poll",
+      "source_url": "https://fitgirl-repacks.site/day-requests-poll/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "the-issue-with-direct-download-links-should-be-fixed-now",
       "title": "The Issue with Direct Download Links Should Be Fixed Now",
       "source_url": "https://fitgirl-repacks.site/the-issue-with-direct-download-links-should-be-fixed-now/",
@@ -218,6 +593,36 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "tiny-compression-test",
+      "title": "Tiny Compression Test",
+      "source_url": "https://fitgirl-repacks.site/tiny-compression-test/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "tiny-compression-test-2",
+      "title": "Tiny Compression Test",
+      "source_url": "https://fitgirl-repacks.site/tiny-compression-test-2/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
+      "id": "upcoming-witcher-3-repack-details",
+      "title": "Upcoming Witcher 3 Repack Details",
+      "source_url": "https://fitgirl-repacks.site/upcoming-witcher-3-repack-details/",
+      "classification": "non_game",
+      "reason": "repack-info-post",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "updates-digest-for-april-1-2025",
@@ -2116,6 +2521,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "winners-day-requests",
+      "title": "Winners of The Day of Requests",
+      "source_url": "https://fitgirl-repacks.site/winners-day-requests/",
+      "classification": "non_game",
+      "reason": "request-event",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "woff-woff-woff",
       "title": "World of Final Fantasy Repack Updated",
       "source_url": "https://fitgirl-repacks.site/woff-woff-woff/",
@@ -2124,6 +2539,16 @@
       "score": 0,
       "signals": [],
       "action": "excluded-new"
+    },
+    {
+      "id": "yet-another-compression-test",
+      "title": "Yet Another Compression Test",
+      "source_url": "https://fitgirl-repacks.site/yet-another-compression-test/",
+      "classification": "non_game",
+      "reason": "compression-test",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
     },
     {
       "id": "yet-another-fix-mea-repack",
@@ -2136,6 +2561,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "zombie-army-4-dead-war-crackfix-v3-empress-released",
+      "title": "Zombie.Army.4.Dead.War.Crackfix.V3-EMPRESS released",
+      "source_url": "https://fitgirl-repacks.site/zombie-army-4-dead-war-crackfix-v3-empress-released/",
+      "classification": "non_game",
+      "reason": "crack-update",
+      "score": 0,
+      "signals": [],
+      "action": "removed-existing"
+    },
+    {
       "id": "a-call-for-ho-ho-honations",
       "title": "A Call for Ho-Ho-Honations",
       "source_url": "https://fitgirl-repacks.site/a-call-for-ho-ho-honations/",
@@ -2145,46 +2580,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "warning-megaupload-users",
-      "title": "A warning to all MegaUpload users!",
-      "source_url": "https://fitgirl-repacks.site/warning-megaupload-users/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "amd-old-intel-cpu-owners-wanted-testing",
-      "title": "AMD (and old Intel) CPU owners wanted for testing",
-      "source_url": "https://fitgirl-repacks.site/amd-old-intel-cpu-owners-wanted-testing/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "about-pragmata-release",
-      "title": "About PRAGMATA Release",
-      "source_url": "https://fitgirl-repacks.site/about-pragmata-release/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "about-compression-speed",
-      "title": "About compression speed",
-      "source_url": "https://fitgirl-repacks.site/about-compression-speed/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -2200,26 +2595,6 @@
       "action": "review-retained"
     },
     {
-      "id": "agents-of-mayhem-patch-to-v1-03",
-      "title": "Agents of Mayhem, Patch to v1.03",
-      "source_url": "https://fitgirl-repacks.site/agents-of-mayhem-patch-to-v1-03/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "all-genres-tags-are-now-links",
-      "title": "All Genres/Tags Are Now Links",
-      "source_url": "https://fitgirl-repacks.site/all-genres-tags-are-now-links/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "all-sp-denuvo-games-are-cracked-bypassed",
       "title": "All SP/Non-VR Denuvo Games are cracked/bypassed",
       "source_url": "https://fitgirl-repacks.site/all-sp-denuvo-games-are-cracked-bypassed/",
@@ -2232,49 +2607,6 @@
       "action": "review-retained"
     },
     {
-      "id": "all-game-uploads-restored",
-      "title": "All game uploads restored!",
-      "source_url": "https://fitgirl-repacks.site/all-game-uploads-restored/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "amelie-report-october-2021",
-      "title": "Amelie Report October 2021",
-      "source_url": "https://fitgirl-repacks.site/amelie-report-october-2021/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 2,
-      "signals": [
-        "image",
-        "media"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "anno-1800-crackfix-empress",
-      "title": "Anno.1800.Crackfix-EMPRESS",
-      "source_url": "https://fitgirl-repacks.site/anno-1800-crackfix-empress/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "another-ddos",
-      "title": "Another DDoS",
-      "source_url": "https://fitgirl-repacks.site/another-ddos/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "ashes-of-the-singularity",
       "title": "Ashes of the Singularity",
       "source_url": "https://fitgirl-repacks.site/ashes-of-the-singularity/",
@@ -2284,16 +2616,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "assassins-creed-origins-repack-vote",
-      "title": "Assassin’s Creed: Origins Repack Vote",
-      "source_url": "https://fitgirl-repacks.site/assassins-creed-origins-repack-vote/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -2365,102 +2687,6 @@
       "action": "review-retained"
     },
     {
-      "id": "black-ops-3-repack-status",
-      "title": "Black Ops 3 Repack Status",
-      "source_url": "https://fitgirl-repacks.site/black-ops-3-repack-status/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "browser-mining-faq-added",
-      "title": "Browser Mining FAQ Added",
-      "source_url": "https://fitgirl-repacks.site/browser-mining-faq-added/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "browser-mining-as-a-way-of-donating",
-      "title": "Browser Mining as a Way of Donating",
-      "source_url": "https://fitgirl-repacks.site/browser-mining-as-a-way-of-donating/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "cpy-cracked-rottr-i-guess-more-cracks-incoming",
-      "title": "CPY cracked RotTR, I guess more cracks incoming",
-      "source_url": "https://fitgirl-repacks.site/cpy-cracked-rottr-i-guess-more-cracks-incoming/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "cpy-is-on-fire",
-      "title": "CPY is on fire!",
-      "source_url": "https://fitgirl-repacks.site/cpy-is-on-fire/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "cs-rin-ru-needs-your-help",
-      "title": "CS.RIN.RU Needs Your Help",
-      "source_url": "https://fitgirl-repacks.site/cs-rin-ru-needs-your-help/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "cod-black-ops-3-repack-status",
-      "title": "CoD Black Ops 3 Repack Status",
-      "source_url": "https://fitgirl-repacks.site/cod-black-ops-3-repack-status/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "cod-wwii-rip-or-repack",
-      "title": "CoD: WWII – rip or repack?",
-      "source_url": "https://fitgirl-repacks.site/cod-wwii-rip-or-repack/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "cods-repacks-status",
-      "title": "CoDs repacks status",
-      "source_url": "https://fitgirl-repacks.site/cods-repacks-status/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "cosmonautica-a-space-trading-adventure",
       "title": "Cosmonautica: A Space Trading Adventure",
       "source_url": "https://fitgirl-repacks.site/cosmonautica-a-space-trading-adventure/",
@@ -2488,48 +2714,6 @@
       "id": "cyberpunk-2077-inquery",
       "title": "Cyberpunk 2077 Inquery",
       "source_url": "https://fitgirl-repacks.site/cyberpunk-2077-inquery/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "dmc5-related-decompression-test",
-      "title": "DMC5-related Decompression Test",
-      "source_url": "https://fitgirl-repacks.site/dmc5-related-decompression-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "dns-problems",
-      "title": "DNS Problems",
-      "source_url": "https://fitgirl-repacks.site/dns-problems/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "doom-rip-anyone-need",
-      "title": "DOOM Rip, anyone need it?",
-      "source_url": "https://fitgirl-repacks.site/doom-rip-anyone-need/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "doom-iddqd-repack-details",
-      "title": "DOOM: IDDQD Repack details",
-      "source_url": "https://fitgirl-repacks.site/doom-iddqd-repack-details/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 1,
@@ -2585,38 +2769,6 @@
       "action": "review-retained"
     },
     {
-      "id": "day-of-requests-results",
-      "title": "Day of Requests Results",
-      "source_url": "https://fitgirl-repacks.site/day-of-requests-results/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "day-of-requests-stage-1",
-      "title": "Day of Requests: Stage 1",
-      "source_url": "https://fitgirl-repacks.site/day-of-requests-stage-1/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "day-of-requests-stage-2",
-      "title": "Day of Requests: Stage 2",
-      "source_url": "https://fitgirl-repacks.site/day-of-requests-stage-2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "dead-rising-2-complete-pack",
       "title": "Dead Rising 2: Complete Pack",
       "source_url": "https://fitgirl-repacks.site/dead-rising-2-complete-pack/",
@@ -2626,46 +2778,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "decompression-test",
-      "title": "Decompression Test",
-      "source_url": "https://fitgirl-repacks.site/decompression-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "decompression-test-2-stress",
-      "title": "Decompression Test #2 – STRESS IT!",
-      "source_url": "https://fitgirl-repacks.site/decompression-test-2-stress/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "delays-in-repacking",
-      "title": "Delays in repacking",
-      "source_url": "https://fitgirl-repacks.site/delays-in-repacking/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "denuvo-versus-voksi",
-      "title": "Denuvo versus Voksi",
-      "source_url": "https://fitgirl-repacks.site/denuvo-versus-voksi/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -3361,16 +3473,6 @@
       "id": "livelock-poll",
       "title": "Livelock Poll",
       "source_url": "https://fitgirl-repacks.site/livelock-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "lolly-decompression-test",
-      "title": "Lolly Decompression Test",
-      "source_url": "https://fitgirl-repacks.site/lolly-decompression-test/",
       "classification": "review",
       "reason": "insufficient-game-signals",
       "score": 0,
@@ -4350,16 +4452,6 @@
       "action": "review-retained"
     },
     {
-      "id": "shadow-warrior-2-patch-v1-1-2-0",
-      "title": "Shadow Warrior 2 Patch to v1.1.2.0",
-      "source_url": "https://fitgirl-repacks.site/shadow-warrior-2-patch-v1-1-2-0/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "shadow-warrior-special-edition-v1-5-0",
       "title": "Shadow Warrior: Special Edition v1.5.0",
       "source_url": "https://fitgirl-repacks.site/shadow-warrior-special-edition-v1-5-0/",
@@ -4535,38 +4627,6 @@
       "action": "review-retained"
     },
     {
-      "id": "day-requests-may-13-mark-calendar",
-      "title": "The Day of Requests on May 13, mark your calendar",
-      "source_url": "https://fitgirl-repacks.site/day-requests-may-13-mark-calendar/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
-      "action": "review-retained"
-    },
-    {
-      "id": "day-requests-part-1",
-      "title": "The Day of Requests: Part 1",
-      "source_url": "https://fitgirl-repacks.site/day-requests-part-1/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "day-requests-poll",
-      "title": "The Day of Requests: Poll",
-      "source_url": "https://fitgirl-repacks.site/day-requests-poll/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "the-incredible-adventures-of-van-helsing-final-cut-v1-0-4",
       "title": "The Incredible Adventures of Van Helsing: Final Cut – v1.0.4",
       "source_url": "https://fitgirl-repacks.site/the-incredible-adventures-of-van-helsing-final-cut-v1-0-4/",
@@ -4620,26 +4680,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "tiny-compression-test",
-      "title": "Tiny Compression Test",
-      "source_url": "https://fitgirl-repacks.site/tiny-compression-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
-      "id": "tiny-compression-test-2",
-      "title": "Tiny Compression Test",
-      "source_url": "https://fitgirl-repacks.site/tiny-compression-test-2/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -4698,16 +4738,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "upcoming-witcher-3-repack-details",
-      "title": "Upcoming Witcher 3 Repack Details",
-      "source_url": "https://fitgirl-repacks.site/upcoming-witcher-3-repack-details/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {
@@ -4813,16 +4843,6 @@
       "action": "review-retained"
     },
     {
-      "id": "winners-day-requests",
-      "title": "Winners of The Day of Requests",
-      "source_url": "https://fitgirl-repacks.site/winners-day-requests/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "winter-is-coming",
       "title": "Winter Is Coming",
       "source_url": "https://fitgirl-repacks.site/winter-is-coming/",
@@ -4867,16 +4887,6 @@
       "action": "review-retained"
     },
     {
-      "id": "yet-another-compression-test",
-      "title": "Yet Another Compression Test",
-      "source_url": "https://fitgirl-repacks.site/yet-another-compression-test/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
-      "action": "review-retained"
-    },
-    {
       "id": "ys-vi-the-ark-of-napishtim",
       "title": "Ys VI: The Ark of Napishtim",
       "source_url": "https://fitgirl-repacks.site/ys-vi-the-ark-of-napishtim/",
@@ -4886,16 +4896,6 @@
       "signals": [
         "image"
       ],
-      "action": "review-retained"
-    },
-    {
-      "id": "zombie-army-4-dead-war-crackfix-v3-empress-released",
-      "title": "Zombie.Army.4.Dead.War.Crackfix.V3-EMPRESS released",
-      "source_url": "https://fitgirl-repacks.site/zombie-army-4-dead-war-crackfix-v3-empress-released/",
-      "classification": "review",
-      "reason": "insufficient-game-signals",
-      "score": 0,
-      "signals": [],
       "action": "review-retained"
     },
     {

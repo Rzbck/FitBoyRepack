@@ -43,6 +43,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # The run may wait behind another catalog writer. Resolve main only
+          # after the queue slot is acquired so enrichment never starts stale.
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:

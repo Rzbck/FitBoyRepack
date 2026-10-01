@@ -1,0 +1,36 @@
+name: Review LLM stage
+
+on:
+  pull_request:
+    paths:
+      - 'tools/review_llm_autodrain.py'
+      - 'tools/test_review_llm_autodrain.py'
+      - 'ops/fitboy/review-llm.service'
+      - 'ops/fitboy/review-llm.timer'
+      - '.github/workflows/review-llm-test.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile tools/review_llm_autodrain.py tools/test_review_llm_autodrain.py
+      - run: PYTHONPATH=tools python tools/test_review_llm_autodrain.py
+      - name: Validate systemd templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -Fq 'EnvironmentFile=/etc/llm/llm.env' ops/fitboy/review-llm.service
+          grep -Fq 'IPAddressAllow=localhost' ops/fitboy/review-llm.service
+          grep -Fq -- '--limit 12' ops/fitboy/review-llm.service
+          grep -Fq 'OnUnitInactiveSec=30min' ops/fitboy/review-llm.timer

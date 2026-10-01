@@ -5,11 +5,12 @@ function initCatalogFocus() {
   const dialog = document.querySelector('#gameDialog');
   const dialogContent = document.querySelector('#dialogContent');
 
-  if (!document.querySelector('link[data-game-sheet-v4]')) {
+  if (!document.querySelector('link[data-game-sheet-v5]')) {
+    document.querySelector('link[data-game-sheet-v4]')?.remove();
     const sheet = document.createElement('link');
     sheet.rel = 'stylesheet';
-    sheet.href = './assets/game-sheet-v4.css';
-    sheet.dataset.gameSheetV4 = 'true';
+    sheet.href = './assets/game-sheet-v5.css';
+    sheet.dataset.gameSheetV5 = 'true';
     document.head.append(sheet);
   }
 
@@ -71,6 +72,30 @@ function initCatalogFocus() {
     if (anchor.nextElementSibling !== node) anchor.after(node);
   }
 
+  function structureMediaGallery(gallery, grid, preview, previewButton) {
+    if (!gallery || !grid || !previewButton) return;
+
+    let showcase = gallery.querySelector('.media-showcase-v5');
+    if (!showcase) {
+      showcase = document.createElement('div');
+      showcase.className = 'media-showcase-v5';
+
+      const stage = document.createElement('div');
+      stage.className = 'media-stage-v5';
+      const thumbs = document.createElement('div');
+      thumbs.className = 'media-thumbnails-v5';
+      showcase.append(stage, thumbs);
+      gallery.append(showcase);
+    }
+
+    const stage = showcase.querySelector('.media-stage-v5');
+    const thumbs = showcase.querySelector('.media-thumbnails-v5');
+    if (previewButton.parentElement !== stage) stage.append(previewButton);
+    if (grid.parentElement !== thumbs) thumbs.append(grid);
+    gallery.classList.add('has-featured-gif');
+    preview?.remove();
+  }
+
   function compactDialogMedia() {
     if (!dialogContent) return;
     const layout = dialogContent.querySelector('.dialog-layout');
@@ -95,17 +120,15 @@ function initCatalogFocus() {
       else if (sourceLink.parentElement !== cover) cover.append(sourceLink);
     }
 
-    if (grid && previewButton) {
-      previewButton.classList.add('media-item', 'media-item-featured');
-      previewButton.dataset.mediaKind = 'gif';
-      if (grid.firstElementChild !== previewButton) grid.prepend(previewButton);
-      if (preview?.isConnected) preview.remove();
+    if (gallery && grid && previewButton) {
+      structureMediaGallery(gallery, grid, preview, previewButton);
     }
 
     const galleryTitle = gallery?.querySelector('.dialog-subheading h3');
     if (galleryTitle && galleryTitle.textContent !== 'Galerie') galleryTitle.textContent = 'Galerie';
     const count = gallery?.querySelector('.dialog-subheading span');
-    const mediaCount = grid?.querySelectorAll('.media-item').length || 0;
+    const imageCount = grid?.querySelectorAll('.media-item').length || 0;
+    const mediaCount = imageCount + (gallery?.classList.contains('has-featured-gif') ? 1 : 0);
     if (count && mediaCount) {
       const nextCount = `${mediaCount} média${mediaCount > 1 ? 's' : ''}`;
       if (count.textContent !== nextCount) count.textContent = nextCount;

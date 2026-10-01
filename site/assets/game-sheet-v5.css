@@ -1,0 +1,261 @@
+/* Game sheet V5: fixed information zone + dedicated media stage + thumbnail rail. */
+.game-dialog{
+  width:min(1480px,calc(100vw - 56px));
+  height:clamp(650px,86dvh,880px);
+  max-height:calc(100dvh - 28px);
+  overflow:hidden;
+}
+
+.dialog-layout,
+.dialog-layout.rich-details{
+  height:100%;
+  min-height:0;
+  display:grid;
+  grid-template-columns:minmax(300px,350px) minmax(0,1fr);
+  overflow:hidden;
+}
+
+.dialog-layout .dialog-cover,
+.dialog-layout.rich-details .dialog-cover{
+  height:100%;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  padding:14px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#0b1020,#0f1728);
+  border-right:1px solid rgba(255,255,255,.07);
+}
+
+.dialog-layout .dialog-cover>img,
+.dialog-layout.rich-details .dialog-cover>img{
+  flex:0 0 auto;
+  width:100%;
+  height:min(36vh,300px);
+  min-height:165px;
+  max-height:300px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:12px;
+  background:#080d18;
+  box-shadow:0 16px 34px rgba(0,0,0,.26);
+}
+
+/* Identity actions stay fixed on the left. */
+.dialog-cover .dialog-actions{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:6px;
+  width:100%;
+  margin:0;
+}
+.dialog-cover .dialog-action{
+  display:grid;
+  place-items:center;
+  width:100%;
+  min-width:0;
+  height:38px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:9px;
+  background:rgba(255,255,255,.035);
+  color:#aeb9cf;
+  cursor:pointer;
+}
+.dialog-cover .dialog-action svg{
+  width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;pointer-events:none;
+}
+.dialog-cover .dialog-action:hover,
+.dialog-cover .dialog-action:focus-visible{
+  color:#fff;border-color:rgba(103,155,255,.58);background:rgba(69,120,230,.13);
+}
+.dialog-cover .dialog-action.active,
+.dialog-cover .dialog-action[aria-pressed="true"]{
+  color:#fff;border-color:rgba(114,133,255,.72);
+  background:linear-gradient(135deg,rgba(107,88,241,.42),rgba(55,112,222,.38));
+}
+.dialog-cover .dialog-action[data-copied="true"]{
+  color:#9fe6bf;border-color:rgba(95,203,143,.5);background:rgba(70,178,118,.12);
+}
+.dialog-cover .source-link{
+  display:flex;align-items:center;justify-content:center;width:100%;min-height:36px;margin:0;
+  padding:8px 11px;border:1px solid rgba(80,153,255,.72);border-radius:9px;
+  background:linear-gradient(135deg,#2168d8,#315eea);color:#fff;font-size:.72rem;font-weight:750;
+  text-decoration:none;box-shadow:0 7px 20px rgba(37,99,235,.20);
+}
+.dialog-cover .source-link:hover,
+.dialog-cover .source-link:focus-visible{filter:brightness(1.12);border-color:#89b7ff}
+
+/* The right side has two stable zones: text first, media gets the remaining room. */
+.dialog-layout.rich-details .dialog-info{
+  height:100%;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  overscroll-behavior:contain;
+  padding:22px 24px 20px;
+}
+.dialog-layout.rich-details .detail-tabs{
+  flex:0 0 clamp(260px,38%,330px);
+  min-height:260px;
+  display:flex;
+  flex-direction:column;
+  margin:0 0 12px;
+  overflow:hidden;
+}
+.dialog-layout.rich-details .detail-tab-nav{flex:0 0 auto}
+.dialog-layout.rich-details .detail-tab-body{
+  flex:1 1 auto;
+  min-height:0;
+  max-height:none;
+  overflow:auto;
+  padding:14px 16px;
+  scrollbar-gutter:stable;
+}
+
+/* Structured gallery: one real stage, then a compact filmstrip. */
+.dialog-media{
+  flex:1 1 auto;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  padding-top:12px;
+  overflow:hidden;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.dialog-media .dialog-subheading{flex:0 0 auto;margin-bottom:8px}
+.media-showcase-v5{
+  flex:1 1 auto;
+  min-height:0;
+  display:grid;
+  grid-template-rows:minmax(150px,1fr) 82px;
+  gap:8px;
+}
+.media-stage-v5{
+  min-height:0;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:11px;
+  background:radial-gradient(circle at 50% 45%,rgba(31,45,70,.55),#080d18 72%);
+}
+.media-stage-v5 .gameplay-preview-button{
+  position:relative;
+  width:100%;
+  height:100%;
+  max-height:none;
+  padding:0;
+  overflow:hidden;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  cursor:zoom-in;
+}
+.media-stage-v5 .gameplay-preview-button img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-height:none;
+  object-fit:contain;
+  background:#080d18;
+}
+.media-stage-v5 .gameplay-preview-button::before{
+  content:'GIF';position:absolute;z-index:2;left:10px;top:10px;padding:4px 7px;border-radius:999px;
+  background:rgba(3,8,18,.82);color:#fff;font-size:.58rem;font-weight:800;letter-spacing:.06em;
+}
+.media-stage-v5 .gameplay-preview-button::after{
+  content:'Agrandir';position:absolute;z-index:2;right:10px;bottom:10px;padding:4px 7px;border-radius:7px;
+  background:rgba(3,8,18,.82);color:#fff;font-size:.58rem;font-weight:750;
+}
+.media-thumbnails-v5{min-width:0;min-height:0;overflow:hidden}
+.media-thumbnails-v5 .media-grid{
+  height:82px;
+  display:flex;
+  gap:7px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:0 0 3px;
+  scrollbar-width:thin;
+  scroll-snap-type:x proximity;
+}
+.media-thumbnails-v5 .media-item{
+  position:relative;
+  flex:0 0 clamp(118px,15vw,172px);
+  width:auto;
+  height:76px;
+  min-height:0;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:8px;
+  background:#080d18;
+  cursor:zoom-in;
+  scroll-snap-align:start;
+}
+.media-thumbnails-v5 .media-item img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Games without a GIF keep a compact adaptive image wall. */
+.dialog-media:not(.has-featured-gif) .media-grid{
+  flex:1 1 auto;
+  min-height:0;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-auto-rows:minmax(80px,1fr);
+  gap:7px;
+  overflow:auto;
+}
+.dialog-media:not(.has-featured-gif) .media-item{
+  min-height:80px;overflow:hidden;border-radius:8px;
+}
+.dialog-media:not(.has-featured-gif) .media-item img{width:100%;height:100%;object-fit:cover}
+.dialog-cover .gameplay-preview{display:none!important}
+
+/* Full-screen viewer: GIFs get a real display canvas instead of intrinsic tiny pixels. */
+.media-lightbox{position:fixed!important;inset:0!important;z-index:2147483000}
+.media-lightbox-stage{min-width:0;min-height:0}
+.media-lightbox-stage img[data-media-kind="gif"],
+.media-lightbox-stage img[src*=".gif"]{
+  width:min(82vw,1280px);
+  height:min(82dvh,720px);
+  max-width:82vw;
+  max-height:82dvh;
+  object-fit:contain;
+  background:#050910;
+}
+
+@media(max-width:1180px){
+  .dialog-layout,.dialog-layout.rich-details{grid-template-columns:minmax(275px,320px) minmax(0,1fr)}
+  .dialog-layout.rich-details .detail-tabs{flex-basis:290px;min-height:250px}
+  .dialog-media:not(.has-featured-gif) .media-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+@media(max-width:900px){
+  .game-dialog{width:calc(100vw - 12px);height:calc(100dvh - 16px);max-height:calc(100dvh - 16px)}
+  .dialog-layout,.dialog-layout.rich-details{display:block;height:100%;overflow-y:auto}
+  .dialog-layout .dialog-cover,.dialog-layout.rich-details .dialog-cover{
+    height:auto;min-height:auto;overflow:visible;border-right:0;border-bottom:1px solid rgba(255,255,255,.07)
+  }
+  .dialog-layout .dialog-cover>img,.dialog-layout.rich-details .dialog-cover>img{height:auto;min-height:0;max-height:38dvh}
+  .dialog-layout.rich-details .dialog-info{height:auto;display:block;overflow:visible}
+  .dialog-layout.rich-details .detail-tabs{height:310px;min-height:310px;margin-bottom:12px}
+  .dialog-media{height:390px;min-height:390px}
+  .media-showcase-v5{grid-template-rows:minmax(190px,1fr) 82px}
+  .dialog-media:not(.has-featured-gif) .media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:620px){
+  .game-dialog{width:calc(100vw - 6px);height:calc(100dvh - 8px);max-height:calc(100dvh - 8px)}
+  .dialog-cover .dialog-action{height:36px}
+  .dialog-layout.rich-details .detail-tabs{height:300px;min-height:300px}
+  .dialog-media{height:350px;min-height:350px}
+  .media-showcase-v5{grid-template-rows:minmax(165px,1fr) 76px}
+  .media-thumbnails-v5 .media-grid{height:76px}
+  .media-thumbnails-v5 .media-item{height:70px;flex-basis:124px}
+  .media-lightbox-stage img[data-media-kind="gif"],
+  .media-lightbox-stage img[src*=".gif"]{width:90vw;height:72dvh;max-width:90vw;max-height:72dvh}
+}

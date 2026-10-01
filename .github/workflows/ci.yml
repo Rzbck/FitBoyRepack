@@ -31,6 +31,7 @@ jobs:
           catalog=json.load(open('site/data/catalog.json',encoding='utf-8'))
           health=json.load(open('site/data/health.json',encoding='utf-8'))
           assert catalog['count']==len(catalog['games'])==health['total_games']
+          assert health['expected_versions']['media']==5
           assert all((pathlib.Path('site')/g['detail_path']).exists() for g in catalog['games'])
           assert all('year' in g and 'size_mb' in g and 'has_description' in g and 'media_count' in g for g in catalog['games'])
           print('split payloads',catalog['count'],'pending enrichment',health['enrichment_pending'])
@@ -53,6 +54,12 @@ jobs:
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: python tools/check_site.py
+      - name: Verify structured media UI contract
+        run: |
+          grep -q 'game-sheet-v5.css' site/assets/layout-v3.js
+          grep -q 'media-showcase-v5' site/assets/layout-v3.js
+          grep -q 'media-stage-v5' site/assets/game-sheet-v5.css
+          grep -q 'media-thumbnails-v5' site/assets/game-sheet-v5.css
 
   browser-runtime:
     name: Robot · real browser runtime
@@ -105,6 +112,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python tools/test_media_filter.py
       - run: python tools/test_media_v4.py
+      - run: python tools/test_media_v5.py
 
   python:
     name: Robot · Python syntax
@@ -114,7 +122,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/enrich_media_v4.py tools/check_feed.py tools/build_site_data.py tools/test_media_filter.py tools/test_media_v4.py tools/validate_catalog.py tools/check_site.py
+      - run: python -m py_compile tools/update_catalog.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/validate_catalog.py tools/check_site.py
 
   security-boundary:
     name: Robot · forbidden-link guard

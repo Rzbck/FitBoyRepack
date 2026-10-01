@@ -60,7 +60,7 @@ jobs:
           grep -q 'media-gif-v6' site/assets/layout-v3.js
           grep -q 'overflow-x:hidden' site/assets/game-sheet-v6.css
           grep -q 'grid-column:span 2' site/assets/game-sheet-v6.css
-          ! grep -q 'media-showcase-v5' site/assets/layout-v3.js
+          ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
 
   browser-runtime:
     name: Robot · real browser runtime

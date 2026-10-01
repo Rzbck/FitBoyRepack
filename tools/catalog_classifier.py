@@ -4,9 +4,9 @@ import re
 GAME_SCORE_THRESHOLD = 3
 UNKNOWN_SIZE_VALUES = {"", "N/A", "NA", "UNKNOWN", "-", "NONE"}
 
-# These are editorial/site posts, but only rejected automatically when the
-# record does not otherwise look like a real game. This avoids false positives
-# for legitimate titles containing generic words such as "Update" or "Fix".
+# Editorial/site posts are rejected only when the record does not otherwise
+# have enough game metadata. Generic words such as Update/Fix/DLC are never
+# sufficient on their own.
 EDITORIAL_PATTERNS = (
     (re.compile(r"\bupdates digest\b", re.IGNORECASE), "updates-digest"),
     (re.compile(r"\bupcoming repacks\b", re.IGNORECASE), "upcoming-repacks"),
@@ -32,30 +32,16 @@ EDITORIAL_PATTERNS = (
     (re.compile(r"\btest post\b", re.IGNORECASE), "test-post"),
 )
 
-# These are standalone assets/tools rather than the actual game. They are
-# intentionally narrow: "+ HD Texture Pack" on a real game still passes.
+# High-confidence standalone content. Keep this list deliberately tiny.
+# Soundtrack Bundle, Artbook and Dedicated Server are NOT safe title-only
+# exclusions: the source commonly uses those words in complete game repacks.
 STANDALONE_CONTENT_PATTERNS = (
     (
         re.compile(
-            r"(?::|[–—-])\s*(?:high[- ]resolution|hd|4k)\s+texture\s+pack\b",
+            r"(?::|[–—-])\s*(?:high[- ]resolution|hd|4k)\s+texture\s+pack\s*[–—-]\s*for\s+v?\d",
             re.IGNORECASE,
         ),
         "standalone-texture-pack",
-    ),
-    (
-        re.compile(
-            r"(?::|[–—-])\s*(?:original\s+)?soundtrack(?:\s+pack|\s+bundle)?\s*(?:[,–—-]|$)",
-            re.IGNORECASE,
-        ),
-        "standalone-soundtrack",
-    ),
-    (
-        re.compile(r"(?::|[–—-])\s*(?:digital\s+)?artbook\s*(?:[,–—-]|$)", re.IGNORECASE),
-        "standalone-artbook",
-    ),
-    (
-        re.compile(r"(?::|[–—-])\s*dedicated\s+server\b", re.IGNORECASE),
-        "standalone-dedicated-server",
     ),
 )
 
@@ -104,11 +90,9 @@ def explicit_non_game_reason(title):
     normalized = re.sub(r"\s+", " ", _text(title))
     if not normalized:
         return None
-
     for pattern, reason in STANDALONE_CONTENT_PATTERNS:
         if pattern.search(normalized):
             return reason
-
     return None
 
 
@@ -116,11 +100,9 @@ def editorial_reason(title):
     normalized = re.sub(r"\s+", " ", _text(title))
     if not normalized:
         return None
-
     for pattern, reason in EDITORIAL_PATTERNS:
         if pattern.search(normalized):
             return reason
-
     return None
 
 
@@ -129,38 +111,18 @@ def classify_record(record):
     score, signals = score_game_signals(record)
 
     if not title:
-        return {
-            "kind": "review",
-            "reason": "missing-title",
-            "score": score,
-            "signals": signals,
-        }
+        return {"kind": "review", "reason": "missing-title", "score": score, "signals": signals}
 
     hard_reason = explicit_non_game_reason(title)
     if hard_reason:
-        return {
-            "kind": "non_game",
-            "reason": hard_reason,
-            "score": score,
-            "signals": signals,
-        }
+        return {"kind": "non_game", "reason": hard_reason, "score": score, "signals": signals}
 
     soft_reason = editorial_reason(title)
     if soft_reason and score < GAME_SCORE_THRESHOLD:
-        return {
-            "kind": "non_game",
-            "reason": soft_reason,
-            "score": score,
-            "signals": signals,
-        }
+        return {"kind": "non_game", "reason": soft_reason, "score": score, "signals": signals}
 
     if score >= GAME_SCORE_THRESHOLD:
-        return {
-            "kind": "game",
-            "reason": "game-signals",
-            "score": score,
-            "signals": signals,
-        }
+        return {"kind": "game", "reason": "game-signals", "score": score, "signals": signals}
 
     return {
         "kind": "review",

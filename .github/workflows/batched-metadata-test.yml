@@ -1,0 +1,37 @@
+name: Batched metadata bootstrap
+
+on:
+  pull_request:
+    paths:
+      - 'tools/batched_metadata_bootstrap.py'
+      - 'tools/test_batched_metadata_bootstrap.py'
+      - 'tools/fast_metadata_bootstrap.py'
+      - 'tools/ai_catalog_bootstrap.py'
+      - 'requirements.txt'
+      - '.github/workflows/batched-metadata-test.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/batched_metadata_bootstrap.py'
+      - 'tools/test_batched_metadata_bootstrap.py'
+      - 'tools/fast_metadata_bootstrap.py'
+      - 'tools/ai_catalog_bootstrap.py'
+      - 'requirements.txt'
+      - '.github/workflows/batched-metadata-test.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile tools/batched_metadata_bootstrap.py tools/test_batched_metadata_bootstrap.py
+      - run: python tools/test_batched_metadata_bootstrap.py

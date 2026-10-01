@@ -29,6 +29,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Scheduled/queued writers must resolve the branch when they start,
+          # otherwise an older event SHA can conflict with the previous writer.
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:

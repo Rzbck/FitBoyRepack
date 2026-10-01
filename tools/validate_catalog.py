@@ -6,9 +6,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 CATALOG_VERSION = 2
-CURRENT_MEDIA_VERSION = 3
+CURRENT_MEDIA_VERSION = 4
 CURRENT_DETAILS_VERSION = 1
-LEGACY_MEDIA_VERSIONS = {None, 2}
+LEGACY_MEDIA_VERSIONS = {None, 2, 3}
 META_LABEL_RE = re.compile(r"\b(?:Company|Companies|Languages|Original Size|Repack Size):", re.IGNORECASE)
 P = Path("site/data/games.json")
 data = json.loads(P.read_text(encoding="utf-8"))

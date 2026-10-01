@@ -29,10 +29,14 @@ function initCatalogFocus() {
     }
 
     const previewTitle = preview?.querySelector('.dialog-subheading h3');
-    if (previewTitle) previewTitle.textContent = 'Gameplay';
+    if (previewTitle && previewTitle.textContent !== 'Gameplay') {
+      previewTitle.textContent = 'Gameplay';
+    }
 
     const galleryTitle = dialogContent.querySelector('.dialog-media .dialog-subheading h3');
-    if (galleryTitle) galleryTitle.textContent = 'Galerie';
+    if (galleryTitle && galleryTitle.textContent !== 'Galerie') {
+      galleryTitle.textContent = 'Galerie';
+    }
   }
 
   if (dialogContent) {

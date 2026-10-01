@@ -4,18 +4,25 @@ import hashlib
 import json
 import re
 import shutil
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_SOURCE = Path("site/data/games.json")
 DEFAULT_SITE_ROOT = Path("site")
 CATALOG_FILENAME = "catalog.json"
+SEARCH_INDEX_FILENAME = "search-index.json"
 HEALTH_FILENAME = "health.json"
 DETAILS_DIRNAME = "games"
 EXPECTED_MEDIA_VERSION = 7
 EXPECTED_DETAILS_VERSION = 1
+SEARCH_INDEX_VERSION = 1
+SEARCH_PREFIX_MIN = 2
+SEARCH_PREFIX_MAX = 6
+SEARCH_GRAM_SIZE = 3
 LIGHT_FIELDS = ("id", "title", "source_url", "image_url", "post_date", "genres", "repack_size")
 SIZE_RE = re.compile(r"([0-9]+(?:[.,][0-9]+)?)\s*(TB|TiB|GB|GiB|MB|MiB)", re.I)
+SEARCH_CLEAN_RE = re.compile(r"[^a-z0-9]+")
 
 
 def parse_args():
@@ -61,6 +68,48 @@ def newest_iso(*values):
     return max(valid) if valid else None
 
 
+def normalize_search(value):
+    decomposed = unicodedata.normalize("NFD", str(value or ""))
+    asciiish = "".join(char for char in decomposed if not unicodedata.combining(char)).lower()
+    return re.sub(r"\s+", " ", SEARCH_CLEAN_RE.sub(" ", asciiish)).strip()
+
+
+def game_tags(game):
+    value = game.get("genres", game.get("genre", []))
+    if isinstance(value, list):
+        raw = value
+    else:
+        raw = str(value or "").split(",")
+    return [str(item).strip() for item in raw if str(item).strip()]
+
+
+def search_tokens(game):
+    text = normalize_search(" ".join([str(game.get("title") or ""), *game_tags(game)]))
+    return list(dict.fromkeys(token for token in text.split(" ") if token))
+
+
+def add_posting(index, key, ordinal):
+    if not key:
+        return
+    bucket = index.setdefault(key, [])
+    if not bucket or bucket[-1] != ordinal:
+        bucket.append(ordinal)
+
+
+def index_game(prefixes, grams, game, ordinal):
+    for token in search_tokens(game):
+        for length in range(SEARCH_PREFIX_MIN, min(SEARCH_PREFIX_MAX, len(token)) + 1):
+            add_posting(prefixes, token[:length], ordinal)
+        if len(token) >= SEARCH_GRAM_SIZE:
+            seen = set()
+            for offset in range(len(token) - SEARCH_GRAM_SIZE + 1):
+                gram = token[offset : offset + SEARCH_GRAM_SIZE]
+                if gram in seen:
+                    continue
+                seen.add(gram)
+                add_posting(grams, gram, ordinal)
+
+
 def main():
     args = parse_args()
     source_payload = json.loads(args.source.read_text(encoding="utf-8"))
@@ -70,6 +119,7 @@ def main():
     data_dir = args.site_root / "data"
     details_dir = data_dir / DETAILS_DIRNAME
     catalog_path = data_dir / CATALOG_FILENAME
+    search_index_path = data_dir / SEARCH_INDEX_FILENAME
     health_path = data_dir / HEALTH_FILENAME
     data_dir.mkdir(parents=True, exist_ok=True)
     if details_dir.exists():
@@ -77,6 +127,8 @@ def main():
     details_dir.mkdir(parents=True, exist_ok=True)
 
     catalog_games = []
+    search_prefixes = {}
+    search_grams = {}
     filenames = set()
     stats = {
         "total_games": 0,
@@ -121,7 +173,9 @@ def main():
             "has_gif": has_gif,
             "detail_updated_at": newest_iso(game.get("details_checked_at"), game.get("media_checked_at")),
         })
+        ordinal = len(catalog_games)
         catalog_games.append(light)
+        index_game(search_prefixes, search_grams, game, ordinal)
         compact_dump(details_dir / filename, game)
 
         stats["total_games"] += 1
@@ -141,6 +195,18 @@ def main():
     }
     compact_dump(catalog_path, catalog_payload)
 
+    search_index_payload = {
+        "search_index_version": SEARCH_INDEX_VERSION,
+        "generated_at": generated_at,
+        "count": len(catalog_games),
+        "prefix_min": SEARCH_PREFIX_MIN,
+        "prefix_max": SEARCH_PREFIX_MAX,
+        "gram_size": SEARCH_GRAM_SIZE,
+        "prefixes": search_prefixes,
+        "grams": search_grams,
+    }
+    compact_dump(search_index_path, search_index_payload)
+
     total = max(1, stats["total_games"])
     health_payload = {
         "generated_at": generated_at,
@@ -157,8 +223,13 @@ def main():
 
     source_bytes = args.source.stat().st_size
     catalog_bytes = catalog_path.stat().st_size
+    search_bytes = search_index_path.stat().st_size
     ratio = (catalog_bytes / source_bytes) if source_bytes else 0
-    print(f"site data built: {len(catalog_games)} games; catalog={catalog_bytes / 1024:.1f} KiB; source={source_bytes / 1024:.1f} KiB; ratio={ratio:.3f}")
+    print(
+        f"site data built: {len(catalog_games)} games; "
+        f"catalog={catalog_bytes / 1024:.1f} KiB; search-index={search_bytes / 1024:.1f} KiB; "
+        f"source={source_bytes / 1024:.1f} KiB; ratio={ratio:.3f}"
+    )
     print(
         "catalog health: "
         f"descriptions={stats['with_description']}/{stats['total_games']}; "

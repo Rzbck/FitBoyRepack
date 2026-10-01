@@ -23,20 +23,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
+        with: { ref: main }
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+        with: { python-version: '3.12' }
       - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+        with: { node-version: '22' }
       - run: python tools/validate_catalog.py
       - run: python tools/build_site_data.py
       - run: python tools/check_site.py
       - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/app.js
-      - run: node --check site/assets/tag-facets.js
       - run: node --check site/assets/details.js
 
   deploy:
@@ -50,12 +46,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
+        with: { ref: main }
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Build lightweight catalog and lazy game payloads
+        with: { python-version: '3.12' }
+      - name: Build lightweight catalog, health and lazy game payloads
         run: python tools/build_site_data.py
       - name: Remove rich source monolith from public artifact
         run: rm site/data/games.json
@@ -64,17 +58,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          sha="$(git rev-parse HEAD)"
-          built_at="$(date -u +%FT%TZ)"
+          sha="$(git rev-parse HEAD)"; built_at="$(date -u +%FT%TZ)"
           printf '{"commit":"%s","built_at":"%s"}\n' "$sha" "$built_at" > site/version.json
           echo "sha=$sha" >> "$GITHUB_OUTPUT"
-      - name: Enable/configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      - uses: actions/configure-pages@v5
+        with: { enablement: true }
       - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
+        with: { path: site }
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
@@ -84,52 +74,36 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Verify public site, lightweight catalog and one lazy detail payload
+      - name: Verify public V2 site, health and lazy detail payload
         shell: bash
         env:
           PAGE_URL: ${{ needs.deploy.outputs.page_url }}
           EXPECTED_SHA: ${{ needs.deploy.outputs.commit_sha }}
         run: |
           set -euo pipefail
-          base="${PAGE_URL%/}"
-          nonce="${EXPECTED_SHA:0:12}-$(date +%s)"
-
-          fetch() {
-            local path="$1"
-            local output="$2"
-            echo "GET ${base}/${path}?health=${nonce}"
-            curl --fail --silent --show-error --location \
-              --retry 10 --retry-delay 3 --retry-all-errors \
-              --connect-timeout 10 --max-time 45 \
-              -H 'Cache-Control: no-cache, no-store, max-age=0' \
-              -H 'Pragma: no-cache' \
-              "${base}/${path}?health=${nonce}" -o "$output"
-          }
-
+          base="${PAGE_URL%/}"; nonce="${EXPECTED_SHA:0:12}-$(date +%s)"
+          fetch(){ echo "GET ${base}/$1?health=${nonce}"; curl --fail --silent --show-error --location --retry 10 --retry-delay 3 --retry-all-errors --connect-timeout 10 --max-time 45 -H 'Cache-Control: no-cache, no-store, max-age=0' "${base}/$1?health=${nonce}" -o "$2"; }
           fetch index.html /tmp/index.html
           fetch assets/app.js /tmp/app.js
-          fetch assets/catalog-api.js /tmp/catalog-api.js
-          fetch assets/compact-header.css /tmp/compact-header.css
+          fetch assets/catalog-api.js /tmp/api.js
+          fetch assets/catalog-v2.css /tmp/v2.css
           fetch data/catalog.json /tmp/catalog.json
+          fetch data/health.json /tmp/health.json
           fetch version.json /tmp/version.json
-
           detail_path=$(python - <<'PY'
           import json
-          payload=json.load(open('/tmp/catalog.json', encoding='utf-8'))
-          assert payload.get('count') == len(payload.get('games', [])) and payload['games']
-          print(payload['games'][0]['detail_path'])
+          c=json.load(open('/tmp/catalog.json')); h=json.load(open('/tmp/health.json'))
+          assert c['count']==len(c['games'])==h['total_games'] and c['games']
+          assert 'coverage' in h and 'enrichment_pending' in h
+          print(c['games'][0]['detail_path'])
           PY
           )
-          fetch "$detail_path" /tmp/game-detail.json
-
-          grep -q 'FitBoyRepack' /tmp/index.html
-          grep -q 'scrollSentinel' /tmp/index.html
-          grep -q 'IntersectionObserver' /tmp/app.js
-          grep -q 'catalog.json' /tmp/catalog-api.js
-          grep -q 'compact-topbar' /tmp/compact-header.css
-          grep -q '"detail_path"' /tmp/catalog.json
-          grep -q '"source_url"' /tmp/game-detail.json
+          fetch "$detail_path" /tmp/detail.json
+          grep -q 'searchSuggestions' /tmp/index.html
+          grep -q 'queryScore' /tmp/app.js
+          grep -q 'health.json' /tmp/api.js
+          grep -q 'home-card-row' /tmp/v2.css
+          grep -q '"source_url"' /tmp/detail.json
           grep -Fq "$EXPECTED_SHA" /tmp/version.json
-
-          echo "Production Pages is live on split-data revision $EXPECTED_SHA"
-          cat /tmp/version.json
+          echo "Production Pages V2 healthy on $EXPECTED_SHA"
+          cat /tmp/health.json

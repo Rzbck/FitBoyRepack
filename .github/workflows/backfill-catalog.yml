@@ -9,9 +9,6 @@ on:
         description: 'Parallel listing-page workers'
         required: false
         default: '12'
-  # Intentionally the only catalog writer started by code pushes. This lets a
-  # newly deployed scraper perform one complete backfill before the fast jobs
-  # resume their normal schedules.
   push:
     branches: [main]
     paths:
@@ -55,7 +52,6 @@ jobs:
             echo 'Full scan found no catalog change'
             exit 0
           fi
-
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add site/data/games.json
@@ -70,5 +66,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          gh workflow run enrich-media.yml --ref main -f batch=480 -f workers=12 -f refresh=false
+          gh workflow run enrich-media.yml --ref main -f batch=480 -f workers=12 -f rounds=6 -f refresh=false
           gh workflow run pages.yml --ref main

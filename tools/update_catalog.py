@@ -11,11 +11,15 @@ from urllib.parse import urlparse
 import httpx
 from bs4 import BeautifulSoup
 
+from catalog_classifier import classify_record, quarantine_entry
+
 BASE_URL = "https://fitgirl-repacks.site"
 OUTPUT = Path("site/data/games.json")
+QUARANTINE_OUTPUT = Path("data/catalog_quarantine.json")
 CATALOG_VERSION = 2
+QUARANTINE_VERSION = 1
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackCatalog/2.1)",
+    "User-Agent": "Mozilla/5.0 (compatible; FitBoyRepackCatalog/2.2)",
     "Accept-Language": "en-US,en;q=0.8",
 }
 SIZE_RE = re.compile(r"Repack Size:\s*(?:from\s*)?([\d.,]+\s*(?:KB|MB|GB|TB))", re.IGNORECASE)
@@ -45,6 +49,18 @@ def load_existing():
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
     if isinstance(payload, list):
         return {"catalog_version": None, "generated_at": None, "games": payload}
+    return payload
+
+
+def load_quarantine():
+    if not QUARANTINE_OUTPUT.exists():
+        return {"version": QUARANTINE_VERSION, "entries": []}
+    try:
+        payload = json.loads(QUARANTINE_OUTPUT.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {"version": QUARANTINE_VERSION, "entries": []}
+    if not isinstance(payload, dict) or not isinstance(payload.get("entries"), list):
+        return {"version": QUARANTINE_VERSION, "entries": []}
     return payload
 
 
@@ -84,7 +100,7 @@ def parse_article(article):
     if not link or not link.get("href"):
         return None
     title = link.get_text(" ", strip=True)
-    if not title or "Updates Digest" in title or "Upcoming Repacks" in title:
+    if not title:
         return None
 
     source = link["href"].replace("http://", "https://")
@@ -131,11 +147,17 @@ def fetch_page(client, page):
     html = request_text(client, url)
     articles = BeautifulSoup(html, "lxml").find_all("article")
     games = []
+    held = []
     for article in articles:
-        game = parse_article(article)
-        if game:
-            games.append(game)
-    return page, games
+        candidate = parse_article(article)
+        if not candidate:
+            continue
+        decision = classify_record(candidate)
+        if decision["kind"] == "game":
+            games.append(candidate)
+        else:
+            held.append(quarantine_entry(candidate, decision, "excluded-new"))
+    return page, games, held
 
 
 def scan_pages(client, pages, workers, full_scan=False):
@@ -148,16 +170,20 @@ def scan_pages(client, pages, workers, full_scan=False):
     )
 
     found = {}
+    held = {}
     failures = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {executor.submit(fetch_page, client, page): page for page in page_numbers}
         for future in as_completed(futures):
             page = futures[future]
             try:
-                _, games = future.result()
-                print(f"page {page}: {len(games)} games")
+                _, games, quarantined = future.result()
+                print(f"page {page}: {len(games)} games; {len(quarantined)} held")
                 for game in games:
                     found[game["id"]] = game
+                for item in quarantined:
+                    if item.get("id"):
+                        held[item["id"]] = item
             except Exception as exc:
                 failures.append(page)
                 print(f"page {page}: ERROR {type(exc).__name__}: {exc}")
@@ -166,12 +192,49 @@ def scan_pages(client, pages, workers, full_scan=False):
         raise RuntimeError("all requested listing pages failed")
     if failures:
         print(f"listing page failures: {len(failures)}/{requested}: {sorted(failures)}")
-    return list(found.values()), total_pages, failures
+    return list(found.values()), list(held.values()), total_pages, failures
+
+
+def merge_quarantine(previous, detections, accepted_ids):
+    entries = {
+        str(item.get("id")): item
+        for item in previous.get("entries", [])
+        if isinstance(item, dict) and item.get("id")
+    }
+
+    for game_id in accepted_ids:
+        entries.pop(str(game_id), None)
+
+    for item in detections:
+        game_id = str(item.get("id") or "")
+        if game_id:
+            entries[game_id] = item
+
+    ordered = sorted(
+        entries.values(),
+        key=lambda item: (
+            item.get("classification") or "",
+            item.get("title") or "",
+            item.get("id") or "",
+        ),
+    )
+    return {"version": QUARANTINE_VERSION, "entries": ordered}
+
+
+def write_json_if_changed(path, payload):
+    text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    current = path.read_text(encoding="utf-8") if path.exists() else ""
+    if current == text:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+    return True
 
 
 def main():
     args = parse_args()
     current = load_existing()
+    previous_quarantine = load_quarantine()
     old_games = current.get("games", [])
     needs_rebuild = current.get("catalog_version") != CATALOG_VERSION
 
@@ -195,9 +258,37 @@ def main():
         follow_redirects=True,
         http2=True,
     ) as client:
-        fresh, total_pages, failures = scan_pages(client, args.pages, workers, full_scan=full_scan)
+        fresh, fresh_held, total_pages, failures = scan_pages(
+            client, args.pages, workers, full_scan=full_scan
+        )
 
-    merged = {} if args.replace else {str(game.get("id")): game for game in old_games if game.get("id")}
+    detections = list(fresh_held)
+    accepted_ids = {game["id"] for game in fresh if game.get("id")}
+    merged = {}
+
+    removed_existing = 0
+    review_retained = 0
+    for game in old_games:
+        game_id = str(game.get("id") or "")
+        if not game_id:
+            continue
+        decision = classify_record(game)
+        if decision["kind"] == "non_game":
+            detections.append(quarantine_entry(game, decision, "removed-existing"))
+            removed_existing += 1
+            continue
+        if decision["kind"] == "review":
+            action = "review-dropped-on-replace" if args.replace else "review-retained"
+            detections.append(quarantine_entry(game, decision, action))
+            review_retained += 1
+            if args.replace:
+                continue
+        else:
+            accepted_ids.add(game_id)
+
+        if not args.replace:
+            merged[game_id] = game
+
     for game in fresh:
         merged[game["id"]] = {**merged.get(game["id"], {}), **game}
 
@@ -205,6 +296,8 @@ def main():
     if args.limit > 0:
         games = games[: args.limit]
         print(f"WARNING: emergency catalog cap enabled: {args.limit}")
+
+    quarantine = merge_quarantine(previous_quarantine, detections, accepted_ids)
 
     now = datetime.now(timezone.utc).isoformat()
     last_full_scan_at = current.get("last_full_scan_at")
@@ -216,23 +309,35 @@ def main():
         current.get("source_pages") != total_pages
         or current.get("last_full_scan_at") != last_full_scan_at
     )
-    if not games_changed and not metadata_changed:
-        print(f"No catalog changes ({len(games)} games).")
+
+    catalog_written = False
+    if games_changed or metadata_changed:
+        payload = {
+            "catalog_version": CATALOG_VERSION,
+            "generated_at": now,
+            "source_pages": total_pages,
+            "last_full_scan_at": last_full_scan_at,
+            "games": games,
+        }
+        catalog_written = write_json_if_changed(OUTPUT, payload)
+
+    quarantine_written = write_json_if_changed(QUARANTINE_OUTPUT, quarantine)
+
+    if not catalog_written and not quarantine_written:
+        print(
+            f"No catalog/classification changes ({len(games)} games; "
+            f"{len(quarantine['entries'])} quarantine entries)."
+        )
         return
 
-    payload = {
-        "catalog_version": CATALOG_VERSION,
-        "generated_at": now,
-        "source_pages": total_pages,
-        "last_full_scan_at": last_full_scan_at,
-        "games": games,
-    }
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
         f"Catalog updated: {len(old_games)} -> {len(games)} games; "
-        f"{len(fresh)} scanned; source pages={total_pages}; failures={len(failures)}."
+        f"{len(fresh)} accepted from scan; {len(fresh_held)} held; "
+        f"{removed_existing} historical non-games removed; "
+        f"{review_retained} historical low-signal records reviewed; "
+        f"source pages={total_pages}; failures={len(failures)}."
     )
+    print(f"Quarantine entries: {len(quarantine['entries'])}")
 
 
 if __name__ == "__main__":

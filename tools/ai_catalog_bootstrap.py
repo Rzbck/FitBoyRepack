@@ -17,7 +17,7 @@ import sqlite3
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 from urllib.parse import quote
 
 import httpx
@@ -31,13 +31,6 @@ DEFAULT_THRESHOLD = 0.80
 USER_AGENT = "FitBoyRepack-MetadataWorker/1.0 (personal metadata enrichment)"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
-ENTITY_PROPERTIES = {
-    "P577": "release_dates",
-    "P136": "genres",
-    "P178": "developers",
-    "P123": "publishers",
-    "P400": "platforms",
-}
 FORBIDDEN_OUTPUT_KEYS = {
     "magnet", "magnets", "torrent", "torrents", "torrent_links",
     "download", "downloads", "download_url", "download_mirrors",
@@ -117,9 +110,10 @@ def connect_db(path: Path) -> sqlite3.Connection:
 
 
 def initialize_queue(conn: sqlite3.Connection, games: list[dict[str, Any]]) -> dict[str, int]:
+    """Sync the queue with the catalog and recover interrupted jobs safely."""
     now = utcnow()
     current_ids: set[str] = set()
-    created = changed = unchanged = 0
+    created = changed = unchanged = recovered = 0
     conn.execute("UPDATE jobs SET active=0")
     for game in games:
         game_id = str(game["id"])
@@ -140,13 +134,23 @@ def initialize_queue(conn: sqlite3.Connection, games: list[dict[str, Any]]) -> d
             )
             conn.execute("DELETE FROM results WHERE game_id=?", (game_id,))
             changed += 1
+        elif existing["status"] in {"processing", "removed"}:
+            conn.execute(
+                "UPDATE jobs SET title=?,status='pending',active=1,last_error=NULL,queued_at=?,started_at=NULL,finished_at=NULL,updated_at=? WHERE game_id=?",
+                (title, now, now, game_id),
+            )
+            conn.execute("DELETE FROM results WHERE game_id=?", (game_id,))
+            recovered += 1
         else:
             conn.execute("UPDATE jobs SET title=?,active=1,updated_at=? WHERE game_id=?", (title, now, game_id))
             unchanged += 1
     conn.execute("UPDATE jobs SET status='removed',updated_at=? WHERE active=0 AND status!='removed'", (now,))
     conn.commit()
     removed = conn.execute("SELECT COUNT(*) FROM jobs WHERE active=0").fetchone()[0]
-    return {"created": created, "changed": changed, "unchanged": unchanged, "removed": removed, "total": len(current_ids)}
+    return {
+        "created": created, "changed": changed, "recovered": recovered,
+        "unchanged": unchanged, "removed": removed, "total": len(current_ids),
+    }
 
 
 def queue_counts(conn: sqlite3.Connection) -> dict[str, int]:
@@ -191,6 +195,8 @@ def _claim_times(claims: dict[str, Any], prop: str) -> list[str]:
 
 
 class EvidenceRetriever:
+    """Fetch compact, keyless evidence from Wikidata and Wikipedia."""
+
     def __init__(self, client: httpx.Client | None = None):
         self._owns_client = client is None
         self.client = client or httpx.Client(timeout=20.0, follow_redirects=True, headers={"User-Agent": USER_AGENT})
@@ -421,11 +427,13 @@ def run_batch(
             break
         game_id = row["game_id"]
         started = utcnow()
-        conn.execute(
+        claimed = conn.execute(
             "UPDATE jobs SET status='processing',attempts=attempts+1,started_at=?,last_error=NULL,updated_at=? WHERE game_id=? AND status='pending'",
             (started, started, game_id),
         )
         conn.commit()
+        if claimed.rowcount != 1:
+            continue
         try:
             game = find_game(games_by_id, game_id)
             evidence = retriever.fetch(game, candidate_limit=candidate_limit)
@@ -434,7 +442,8 @@ def run_batch(
             system, prompt = build_prompt(game, evidence)
             raw = llm.chat_json(prompt, system=system, temperature=0.05, max_tokens=1600)
             cleaned = validate_ai_result(raw, evidence_urls(evidence))
-            status = "done" if cleaned["canonical_title"] and cleaned["evidence_urls"] and cleaned["confidence"] >= threshold else "review"
+            core_complete = bool(cleaned["canonical_title"] and cleaned["release_date"] and cleaned["genres"] and cleaned["evidence_urls"])
+            status = "done" if core_complete and cleaned["confidence"] >= threshold else "review"
             checked = utcnow()
             conn.execute(
                 """
@@ -486,7 +495,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Bootstrap clean game metadata through a reusable local LLM.")
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
-    parser.add_argument("--init", action="store_true", help="queue new/changed games from the rich catalog")
+    parser.add_argument("--init", action="store_true", help="queue new/changed games and recover interrupted jobs")
     parser.add_argument("--run", action="store_true", help="process pending jobs")
     parser.add_argument("--status", action="store_true", help="print queue counts")
     parser.add_argument("--retry-failed", action="store_true")

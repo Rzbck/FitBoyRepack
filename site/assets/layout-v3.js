@@ -2,6 +2,7 @@ function initCatalogFocus() {
   const discovery = document.querySelector('#discoveryShell');
   const search = document.querySelector('#searchInput');
   const sidebarSections = [...document.querySelectorAll('.filter-sidebar details.sidebar-collapsible')];
+  const dialog = document.querySelector('#gameDialog');
   const dialogContent = document.querySelector('#dialogContent');
 
   if (discovery && search) {
@@ -24,25 +25,34 @@ function initCatalogFocus() {
     const layout = dialogContent.querySelector('.dialog-layout');
     const cover = layout?.querySelector('.dialog-cover');
     const preview = dialogContent.querySelector('.gameplay-preview');
+    const sourceLink = dialogContent.querySelector('.source-link');
+
+    if (cover && sourceLink && sourceLink.parentElement !== cover) {
+      cover.append(sourceLink);
+    }
     if (cover && preview && preview.parentElement !== cover) {
       cover.append(preview);
     }
 
     const previewTitle = preview?.querySelector('.dialog-subheading h3');
-    if (previewTitle && previewTitle.textContent !== 'Gameplay') {
-      previewTitle.textContent = 'Gameplay';
-    }
+    if (previewTitle && previewTitle.textContent !== 'Gameplay') previewTitle.textContent = 'Gameplay';
 
     const galleryTitle = dialogContent.querySelector('.dialog-media .dialog-subheading h3');
-    if (galleryTitle && galleryTitle.textContent !== 'Galerie') {
-      galleryTitle.textContent = 'Galerie';
-    }
+    if (galleryTitle && galleryTitle.textContent !== 'Galerie') galleryTitle.textContent = 'Galerie';
   }
 
   if (dialogContent) {
     const observer = new MutationObserver(compactDialogMedia);
     observer.observe(dialogContent, { childList:true, subtree:true });
     document.addEventListener('fitboy:game-open', () => requestAnimationFrame(compactDialogMedia));
+  }
+
+  if (dialog) {
+    dialog.addEventListener('click', event => {
+      if (event.target?.classList?.contains('media-lightbox-stage')) {
+        dialog.querySelector('.media-lightbox-close')?.click();
+      }
+    });
   }
 }
 

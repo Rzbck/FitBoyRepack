@@ -70,6 +70,55 @@ function metadataSourceLabel(url) {
   return host;
 }
 
+function cleanMetadataScalar(value) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (!text || /^Q\d+$/i.test(text)) return '';
+  return text;
+}
+
+function cleanPlatformLabel(value) {
+  const text = cleanMetadataScalar(value);
+  if (!text) return '';
+  const aliases = new Map([
+    ['microsoft windows', 'Windows'],
+    ['windows', 'Windows'],
+    ['mac os', 'macOS'],
+    ['macos', 'macOS'],
+    ['mac', 'macOS'],
+    ['xbox series x and series s', 'Xbox Series X/S'],
+    ['xbox series x/s', 'Xbox Series X/S'],
+    ['playstation 5', 'PlayStation 5'],
+    ['playstation 4', 'PlayStation 4'],
+    ['nintendo switch', 'Nintendo Switch'],
+  ]);
+  return aliases.get(text.toLowerCase()) || text;
+}
+
+function cleanGenreLabel(value) {
+  return cleanMetadataScalar(value)
+    .replace(/\s+video game$/i, '')
+    .replace(/\s+game$/i, '')
+    .trim();
+}
+
+function cleanMetadataList(value, cleaner = cleanMetadataScalar) {
+  const out = [];
+  const seen = new Set();
+  for (const item of metadataList(value)) {
+    const cleaned = cleaner(item);
+    const key = cleaned.toLocaleLowerCase('fr');
+    if (!cleaned || seen.has(key)) continue;
+    seen.add(key);
+    out.push(cleaned);
+  }
+  return out;
+}
+
+function compactList(values, maximum = 4) {
+  if (values.length <= maximum) return values.join(' · ');
+  return `${values.slice(0, maximum).join(' · ')} · +${values.length - maximum}`;
+}
+
 function appendMetadataRow(list, label, value) {
   if (!value) return;
   const row = document.createElement('div');
@@ -82,12 +131,12 @@ function appendMetadataRow(list, label, value) {
   list.append(row);
 }
 
-function makeMetadataPanel(game) {
+function makeMetadataSummary(game) {
   const metadata = verifiedMetadata(game);
   if (!metadata) return null;
 
   const panel = document.createElement('section');
-  panel.className = 'detail-text-panel game-metadata-panel';
+  panel.className = 'cover-metadata-summary';
 
   const heading = document.createElement('div');
   heading.className = 'metadata-heading';
@@ -98,44 +147,40 @@ function makeMetadataPanel(game) {
   const confidence = Number(metadata.confidence);
   badge.textContent = Number.isFinite(confidence)
     ? `Enrichi · ${Math.round(confidence * 100)} %`
-    : 'Métadonnées enrichies';
+    : 'Enrichi';
   heading.append(title, badge);
   panel.append(heading);
 
   const list = document.createElement('dl');
-  list.className = 'metadata-grid';
+  list.className = 'metadata-list';
 
-  const canonical = String(metadata.canonical_title || '').trim();
-  if (canonical && canonical.localeCompare(String(game.title || '').trim(), undefined, { sensitivity:'accent' }) !== 0) {
+  const canonical = cleanMetadataScalar(metadata.canonical_title);
+  const displayedTitle = cleanMetadataScalar(titleParts(game.title).name);
+  if (canonical && canonical.localeCompare(displayedTitle, undefined, { sensitivity:'accent' }) !== 0) {
     appendMetadataRow(list, 'Titre canonique', canonical);
   }
+
   appendMetadataRow(list, 'Sortie du jeu', metadata.release_date ? formatDate(metadata.release_date) : '');
-  appendMetadataRow(list, 'Développeur', String(metadata.developer || '').trim());
-  appendMetadataRow(list, 'Éditeur', String(metadata.publisher || '').trim());
+  appendMetadataRow(list, 'Développeur', cleanMetadataScalar(metadata.developer));
+  appendMetadataRow(list, 'Éditeur', cleanMetadataScalar(metadata.publisher));
 
-  const platforms = metadataList(metadata.platforms);
-  appendMetadataRow(list, 'Plateformes', platforms.join(' · '));
+  const platforms = cleanMetadataList(metadata.platforms, cleanPlatformLabel);
+  appendMetadataRow(list, 'Plateformes', compactList(platforms, 4));
 
-  panel.append(list);
+  if (list.childElementCount) panel.append(list);
 
-  const genres = metadataList(metadata.genres);
+  const genres = cleanMetadataList(metadata.genres, cleanGenreLabel).slice(0, 4);
   if (genres.length) {
-    const genreBox = document.createElement('div');
-    genreBox.className = 'metadata-genres';
-    const label = document.createElement('span');
-    label.className = 'metadata-label';
-    label.textContent = 'Genres';
     const pills = document.createElement('div');
     pills.className = 'metadata-pills';
     genres.forEach(genre => pills.append(createPill(genre)));
-    genreBox.append(label, pills);
-    panel.append(genreBox);
+    panel.append(pills);
   }
 
   const sources = metadataList(metadata.evidence_urls)
     .map(safeHttpsUrl)
     .filter(Boolean)
-    .slice(0, 3);
+    .slice(0, 2);
   if (sources.length) {
     const sourceBox = document.createElement('div');
     sourceBox.className = 'metadata-sources';
@@ -191,11 +236,13 @@ function renderCoverDetails(layout, game) {
   }
   card.append(meta);
 
-  const tags = getTags(game);
+  const metadata = verifiedMetadata(game);
+  const enrichedGenres = metadata ? cleanMetadataList(metadata.genres, cleanGenreLabel) : [];
+  const tags = enrichedGenres.length ? enrichedGenres : getTags(game);
   if (tags.length) {
     const tagBox = document.createElement('div');
     tagBox.className = 'cover-tags';
-    tags.forEach(tag => tagBox.append(createPill(tag)));
+    tags.slice(0, 4).forEach(tag => tagBox.append(createPill(tag)));
     card.append(tagBox);
   }
 
@@ -210,6 +257,9 @@ function renderCoverDetails(layout, game) {
     version.textContent = parts.version;
     card.append(version);
   }
+
+  const metadataSummary = makeMetadataSummary(game);
+  if (metadataSummary) card.append(metadataSummary);
 
   cover.append(card);
   info.querySelector(':scope > h2')?.classList.add('details-moved');
@@ -249,7 +299,6 @@ function renderDescriptionTabs(info, game) {
   if (info.querySelector('.detail-tabs')) return;
   const details = game.details || {};
   const panels = [
-    ['Infos', makeMetadataPanel(game)],
     ['Description', makeTextPanel('Description', details.description)],
     ['Game Features', makeListPanel('Game Features', details.game_features)],
     ['Repack Features', makeListPanel('Repack Features', details.repack_features)],

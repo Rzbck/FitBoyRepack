@@ -26,6 +26,23 @@ API_VERSION = "2022-11-28"
 USER_AGENT = "FitBoyRepack-MetadataPublisher/1.0"
 
 
+def _request_bytes(
+    url: str,
+    *,
+    token: str,
+    accept: str = "application/vnd.github.raw+json",
+) -> bytes:
+    headers = {
+        "Accept": accept,
+        "Authorization": f"Bearer {token}",
+        "X-GitHub-Api-Version": API_VERSION,
+        "User-Agent": USER_AGENT,
+    }
+    request = Request(url, headers=headers, method="GET")
+    with urlopen(request, timeout=30) as response:
+        return response.read()
+
+
 def _request_json(
     url: str,
     *,
@@ -77,13 +94,21 @@ def _remote_content(
 
     sha = str(payload.get("sha") or "").strip() or None
     encoded = payload.get("content")
-    if isinstance(encoded, str):
+    encoding = str(payload.get("encoding") or "").lower()
+
+    content: bytes | None = None
+    if isinstance(encoded, str) and encoded and encoding != "none":
         try:
             content = base64.b64decode(encoded.replace("\n", ""), validate=False)
         except ValueError:
             content = None
-    else:
-        content = None
+
+    # GitHub's Contents API omits inline content for files larger than 1 MiB
+    # unless the raw media type is requested. Our public snapshot is ~2 MiB,
+    # so fetch the raw bytes before deciding whether a republish is needed.
+    if content is None and sha:
+        content = _request_bytes(url, token=token)
+
     return sha, content
 
 

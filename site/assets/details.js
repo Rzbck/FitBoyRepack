@@ -176,6 +176,21 @@ function validMedia(game) {
     .slice(0, 12);
 }
 
+function hasRenderableDetails(game) {
+  const details = game?.details || {};
+  const hasText = Boolean(String(details.description || '').trim());
+  const hasGameFeatures = Array.isArray(details.game_features) && details.game_features.some(item => String(item || '').trim());
+  const hasRepackFeatures = Array.isArray(details.repack_features) && details.repack_features.some(item => String(item || '').trim());
+  return hasText || hasGameFeatures || hasRepackFeatures || validMedia(game).length > 0;
+}
+
+function setDetailStatus(info, text, state = 'empty') {
+  const status = info?.querySelector('[data-detail-status]');
+  if (!status) return;
+  status.dataset.detailStatus = state;
+  status.textContent = text;
+}
+
 function renderMediaGallery(info, game) {
   if (info.querySelector('.dialog-media')) return;
   const media = validMedia(game);
@@ -340,6 +355,16 @@ function enhanceDialog(game, gameId) {
   const layout = currentLayout(gameId);
   const info = layout?.querySelector('.dialog-info');
   if (!layout || !info || layout.dataset.enhanced === 'true') return;
+
+  if (!hasRenderableDetails(game)) {
+    setDetailStatus(
+      info,
+      'Aucun détail enrichi disponible pour cette fiche pour le moment.',
+      'empty',
+    );
+    return;
+  }
+
   layout.dataset.enhanced = 'true';
   info.querySelector('[data-detail-status]')?.remove();
   renderCoverDetails(layout, game);
@@ -350,7 +375,12 @@ function enhanceDialog(game, gameId) {
 
 async function loadDetailsForOpenGame(gameId, detailPath) {
   const requestId = ++detailRequestId;
-  if (!detailPath) return;
+  if (!detailPath) {
+    const layout = currentLayout(gameId);
+    const info = layout?.querySelector('.dialog-info');
+    setDetailStatus(info, 'Fiche détaillée indisponible pour cette entrée.', 'missing');
+    return;
+  }
 
   try {
     const game = await loadGameDetail(detailPath);

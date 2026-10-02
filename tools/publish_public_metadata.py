@@ -87,6 +87,32 @@ def _remote_content(
     return sha, content
 
 
+def _snapshot_semantic_payload(content: bytes | None) -> dict[str, object] | None:
+    if content is None:
+        return None
+    try:
+        payload = json.loads(content.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return None
+    if not isinstance(payload, dict):
+        return None
+    # generated_at is intentionally volatile: the exporter runs every activation,
+    # but a new timestamp alone must never create a Git commit / Pages deploy.
+    comparable = dict(payload)
+    comparable.pop("generated_at", None)
+    return comparable
+
+
+def _same_snapshot(left: bytes | None, right: bytes | None) -> bool:
+    left_payload = _snapshot_semantic_payload(left)
+    right_payload = _snapshot_semantic_payload(right)
+    return (
+        left_payload is not None
+        and right_payload is not None
+        and left_payload == right_payload
+    )
+
+
 def publish_snapshot(
     input_path: Path,
     *,
@@ -109,7 +135,7 @@ def publish_snapshot(
 
     for attempt in range(1, retries + 1):
         sha, remote = _remote_content(repository, path, branch, token)
-        if remote == content:
+        if remote == content or _same_snapshot(remote, content):
             return {
                 "changed": False,
                 "count": payload["count"],

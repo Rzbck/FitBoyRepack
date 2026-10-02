@@ -63,3 +63,114 @@
     right:10px;
   }
 }
+
+
+/* Verified metadata exported by the VPS enrichment pipeline. */
+.game-dialog .game-metadata-panel{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.game-dialog .metadata-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.game-dialog .metadata-heading h3{
+  margin:0;
+}
+
+.game-dialog .metadata-badge{
+  flex:0 0 auto;
+  padding:5px 8px;
+  border:1px solid rgba(94,225,169,.28);
+  border-radius:999px;
+  background:rgba(94,225,169,.09);
+  color:#a9f4d4;
+  font-size:.68rem;
+  font-weight:750;
+  white-space:nowrap;
+}
+
+.game-dialog .metadata-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  margin:0;
+}
+
+.game-dialog .metadata-row{
+  min-width:0;
+  padding:10px 11px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:10px;
+  background:rgba(255,255,255,.025);
+}
+
+.game-dialog .metadata-row dt,
+.game-dialog .metadata-label{
+  display:block;
+  margin:0 0 4px;
+  color:#8493ad;
+  font-size:.66rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.game-dialog .metadata-row dd{
+  margin:0;
+  color:#e8edf7;
+  font-size:.82rem;
+  line-height:1.4;
+  overflow-wrap:anywhere;
+}
+
+.game-dialog .metadata-genres,
+.game-dialog .metadata-sources{
+  display:grid;
+  gap:7px;
+}
+
+.game-dialog .metadata-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.game-dialog .metadata-sources{
+  grid-template-columns:auto 1fr;
+  align-items:center;
+  gap:8px 12px;
+}
+
+.game-dialog .metadata-sources .metadata-label{
+  margin:0;
+}
+
+.game-dialog .metadata-sources a{
+  width:max-content;
+  max-width:100%;
+  color:#8eb9ff;
+  font-size:.76rem;
+  text-decoration:none;
+}
+
+.game-dialog .metadata-sources a:hover,
+.game-dialog .metadata-sources a:focus-visible{
+  color:#c5dcff;
+  text-decoration:underline;
+}
+
+@media(max-width:620px){
+  .game-dialog .metadata-heading{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .game-dialog .metadata-grid{
+    grid-template-columns:1fr;
+  }
+}

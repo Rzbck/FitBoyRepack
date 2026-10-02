@@ -13,9 +13,11 @@ DEFAULT_SITE_ROOT = Path("site")
 CATALOG_FILENAME = "catalog.json"
 SEARCH_INDEX_FILENAME = "search-index.json"
 HEALTH_FILENAME = "health.json"
+METADATA_FILENAME = "metadata-enrichment.json"
 DETAILS_DIRNAME = "games"
 EXPECTED_MEDIA_VERSION = 7
 EXPECTED_DETAILS_VERSION = 1
+EXPECTED_METADATA_VERSION = 1
 SEARCH_INDEX_VERSION = 1
 SEARCH_PREFIX_MIN = 2
 SEARCH_PREFIX_MAX = 6
@@ -29,6 +31,12 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Build lightweight browser catalog + lazy per-game detail payloads.")
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     parser.add_argument("--site-root", type=Path, default=DEFAULT_SITE_ROOT)
+    parser.add_argument(
+        "--metadata",
+        type=Path,
+        default=None,
+        help="optional sanitized metadata snapshot; defaults beside the source catalog",
+    )
     return parser.parse_args()
 
 
@@ -38,6 +46,25 @@ def detail_filename(game_id):
 
 def compact_dump(path, payload):
     path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+
+
+def load_public_metadata(path):
+    if not path.exists():
+        return {}, None
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or payload.get("metadata_version") != EXPECTED_METADATA_VERSION:
+        raise RuntimeError("public metadata snapshot has an unsupported version")
+    games = payload.get("games")
+    if not isinstance(games, dict):
+        raise RuntimeError("public metadata snapshot must contain games: {}")
+    if payload.get("count") != len(games):
+        raise RuntimeError("public metadata snapshot count mismatch")
+    cleaned = {
+        str(game_id): value
+        for game_id, value in games.items()
+        if str(game_id).strip() and isinstance(value, dict)
+    }
+    return cleaned, payload.get("generated_at")
 
 
 def parse_size_mb(value):
@@ -83,8 +110,24 @@ def game_tags(game):
     return [str(item).strip() for item in raw if str(item).strip()]
 
 
+def metadata_tags(game):
+    metadata = game.get("verified_metadata") if isinstance(game.get("verified_metadata"), dict) else {}
+    value = metadata.get("genres") if isinstance(metadata.get("genres"), list) else []
+    return [str(item).strip() for item in value if str(item).strip()]
+
+
 def search_tokens(game):
-    text = normalize_search(" ".join([str(game.get("title") or ""), *game_tags(game)]))
+    metadata = game.get("verified_metadata") if isinstance(game.get("verified_metadata"), dict) else {}
+    text = normalize_search(
+        " ".join(
+            [
+                str(game.get("title") or ""),
+                str(metadata.get("canonical_title") or ""),
+                *game_tags(game),
+                *metadata_tags(game),
+            ]
+        )
+    )
     return list(dict.fromkeys(token for token in text.split(" ") if token))
 
 
@@ -116,6 +159,9 @@ def main():
     if not isinstance(source_payload, dict) or not isinstance(source_payload.get("games"), list):
         raise RuntimeError("source catalog must be an object with games: []")
 
+    metadata_path = args.metadata or args.source.with_name(METADATA_FILENAME)
+    public_metadata, metadata_generated_at = load_public_metadata(metadata_path)
+
     data_dir = args.site_root / "data"
     details_dir = data_dir / DETAILS_DIRNAME
     catalog_path = data_dir / CATALOG_FILENAME
@@ -130,6 +176,7 @@ def main():
     search_prefixes = {}
     search_grams = {}
     filenames = set()
+    used_metadata_ids = set()
     stats = {
         "total_games": 0,
         "details_ready": 0,
@@ -138,6 +185,7 @@ def main():
         "with_gif": 0,
         "media_items": 0,
         "enrichment_pending": 0,
+        "metadata_verified": 0,
     }
 
     for game in source_payload["games"]:
@@ -149,6 +197,12 @@ def main():
         if filename in filenames:
             raise RuntimeError(f"detail filename collision for {game_id}")
         filenames.add(filename)
+
+        verified_metadata = public_metadata.get(game_id)
+        detail_game = dict(game)
+        if verified_metadata:
+            detail_game["verified_metadata"] = verified_metadata
+            used_metadata_ids.add(game_id)
 
         media = game.get("media") if isinstance(game.get("media"), list) else []
         details = game.get("details") if isinstance(game.get("details"), dict) else {}
@@ -171,12 +225,18 @@ def main():
             "has_description": bool(description),
             "media_count": media_count,
             "has_gif": has_gif,
-            "detail_updated_at": newest_iso(game.get("details_checked_at"), game.get("media_checked_at")),
+            "metadata_ready": bool(verified_metadata),
+            "game_release_date": verified_metadata.get("release_date") if verified_metadata else None,
+            "detail_updated_at": newest_iso(
+                game.get("details_checked_at"),
+                game.get("media_checked_at"),
+                verified_metadata.get("checked_at") if verified_metadata else None,
+            ),
         })
         ordinal = len(catalog_games)
         catalog_games.append(light)
-        index_game(search_prefixes, search_grams, game, ordinal)
-        compact_dump(details_dir / filename, game)
+        index_game(search_prefixes, search_grams, detail_game, ordinal)
+        compact_dump(details_dir / filename, detail_game)
 
         stats["total_games"] += 1
         stats["details_ready"] += int(details_ready)
@@ -185,11 +245,13 @@ def main():
         stats["with_gif"] += int(has_gif)
         stats["media_items"] += media_count
         stats["enrichment_pending"] += int(pending)
+        stats["metadata_verified"] += int(bool(verified_metadata))
 
     generated_at = source_payload.get("generated_at") or datetime.now(timezone.utc).isoformat()
     catalog_payload = {
         "catalog_version": source_payload.get("catalog_version"),
         "generated_at": generated_at,
+        "metadata_generated_at": metadata_generated_at,
         "count": len(catalog_games),
         "games": catalog_games,
     }
@@ -198,6 +260,7 @@ def main():
     search_index_payload = {
         "search_index_version": SEARCH_INDEX_VERSION,
         "generated_at": generated_at,
+        "metadata_generated_at": metadata_generated_at,
         "count": len(catalog_games),
         "prefix_min": SEARCH_PREFIX_MIN,
         "prefix_max": SEARCH_PREFIX_MAX,
@@ -210,14 +273,22 @@ def main():
     total = max(1, stats["total_games"])
     health_payload = {
         "generated_at": generated_at,
+        "metadata_generated_at": metadata_generated_at,
         **stats,
+        "metadata_snapshot_count": len(public_metadata),
+        "metadata_unmatched": len(public_metadata) - len(used_metadata_ids),
         "coverage": {
             "details": round(stats["details_ready"] * 100 / total, 1),
             "descriptions": round(stats["with_description"] * 100 / total, 1),
             "galleries": round(stats["with_gallery"] * 100 / total, 1),
             "gifs": round(stats["with_gif"] * 100 / total, 1),
+            "metadata": round(stats["metadata_verified"] * 100 / total, 1),
         },
-        "expected_versions": {"details": EXPECTED_DETAILS_VERSION, "media": EXPECTED_MEDIA_VERSION},
+        "expected_versions": {
+            "details": EXPECTED_DETAILS_VERSION,
+            "media": EXPECTED_MEDIA_VERSION,
+            "metadata": EXPECTED_METADATA_VERSION,
+        },
     }
     compact_dump(health_path, health_payload)
 
@@ -235,6 +306,7 @@ def main():
         f"descriptions={stats['with_description']}/{stats['total_games']}; "
         f"galleries={stats['with_gallery']}/{stats['total_games']}; "
         f"gifs={stats['with_gif']}/{stats['total_games']}; "
+        f"metadata={stats['metadata_verified']}/{stats['total_games']}; "
         f"pending={stats['enrichment_pending']}"
     )
 

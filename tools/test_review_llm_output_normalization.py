@@ -34,6 +34,31 @@ def main() -> None:
     else:
         raise AssertionError("unsupported candidate must be rejected")
 
+    qid3, confidence3, reason3 = worker.parse_decision_response(
+        "Candidate: Q100\nConfidence: 97%\nReason: same base game",
+        {"Q100", "Q200"},
+    )
+    assert qid3 == "Q100"
+    assert confidence3 == 0.97
+    assert "same base game" in reason3
+
+    qid4, confidence4, _ = worker.parse_decision_response(
+        "candidate_id: null; confidence: 40%; insufficient evidence",
+        {"Q100"},
+    )
+    assert qid4 is None
+    assert confidence4 == 0.40
+
+    try:
+        worker.parse_decision_response(
+            "Candidate: Q100 or Q200; Confidence: 99%",
+            {"Q100", "Q200"},
+        )
+    except ValueError as exc:
+        assert "multiple supplied candidates" in str(exc)
+    else:
+        raise AssertionError("ambiguous text fallback must be rejected")
+
     system, _ = worker.build_decision_prompt(
         {"title": "Example Game Deluxe", "genres": ["Adventure"]},
         [{

@@ -24,11 +24,11 @@
         <label class="search-box">
           <span class="sr-only">Rechercher</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-          <input id="searchInput" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions" placeholder="Titre, tag, DLC, version…">
+          <input id="searchInput" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions" placeholder="Titre, genre, année de sortie…">
         </label>
         <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
       </div>
-      <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Plus récents</option><option value="relevance">Pertinence</option><option value="date_asc">Plus anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
+      <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Ajouts récents</option><option value="release_desc">Sorties récentes</option><option value="release_asc">Sorties anciennes</option><option value="relevance">Pertinence</option><option value="date_asc">Ajouts anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
       <button id="mobileFiltersButton" class="ghost-btn mobile-filters-button" type="button" aria-expanded="false" aria-controls="filterSidebar">Filtres</button>
     </section>
     <div class="topbar-meta compact-meta">
@@ -48,11 +48,12 @@
         <section class="sidebar-filter quick-filter-panel">
           <div class="sidebar-filter-heading"><h2>Filtrer</h2><button id="resetFilters" class="ghost-btn compact-reset" type="button">Effacer</button></div>
           <div class="filter-select-grid">
-            <label><span>Année</span><select id="yearFilter"><option value="">Toutes</option></select></label>
+            <label><span>Année de sortie</span><select id="yearFilter"><option value="">Toutes</option></select></label>
             <label><span>Taille</span><select id="sizeFilter"><option value="">Toutes</option><option value="lt1">&lt; 1 Go</option><option value="1-10">1–10 Go</option><option value="10-50">10–50 Go</option><option value="50plus">50+ Go</option></select></label>
+            <label class="release-period-field"><span>Période de sortie</span><select id="releasePeriodFilter"><option value="">Toutes</option><option value="this-week">Cette semaine</option><option value="last-week">Semaine dernière</option><option value="7d">7 derniers jours</option><option value="30d">30 derniers jours</option><option value="90d">90 derniers jours</option><option value="this-year">Cette année</option></select></label>
           </div>
           <div class="quick-toggle-grid">
-            <button id="newOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Nouveaux <small>30 j</small></button>
+            <button id="newOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Ajoutés <small>30 j</small></button>
             <button id="detailsOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Description</button>
             <button id="mediaOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Médias</button>
           </div>
@@ -70,21 +71,14 @@
           </div>
         </details>
 
-        <details id="tagFilter" class="tag-filter sidebar-filter sidebar-collapsible">
-          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Tags</strong><small>Genres et catégories</small></span><strong id="selectedTagCount" class="sidebar-selected-count">0</strong></summary>
-          <div class="sidebar-collapse-body">
-            <div class="tag-popover sidebar-tag-panel">
-              <div class="tag-controls sidebar-tag-controls">
-                <label class="mini-search"><span class="sr-only">Rechercher un tag</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un tag…"></label>
-                <select id="tagMode" hidden aria-hidden="true" tabindex="-1"><option value="all" selected>Tous les tags</option></select>
-                <button id="clearTags" class="ghost-btn reset-tags" type="button">Effacer les tags</button>
-              </div>
-              <div id="selectedTagsBar" class="selected-tags-bar" hidden></div>
-              <div class="tag-result-summary" aria-live="polite"><span>Résultat</span><strong id="tagResultCount">0 jeux</strong></div>
-              <div id="tagList" class="tag-list sidebar-tag-list" aria-label="Liste des tags"></div>
-            </div>
+        <section id="tagFilter" class="sidebar-filter compact-tag-filter">
+          <div class="compact-tag-heading">
+            <span><strong>Genres</strong><small>Filtres enrichis inclus</small></span>
+            <strong id="selectedTagCount" class="sidebar-selected-count">0</strong>
           </div>
-        </details>
+          <div id="selectedTagsBar" class="selected-tags-bar compact-selected-tags" hidden></div>
+          <button id="openTagPicker" class="ghost-btn tag-picker-trigger" type="button">Choisir les genres</button>
+        </section>
 
         <details id="healthPanel" class="sidebar-filter sidebar-collapsible health-panel" hidden>
           <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Catalogue</strong><small>État des données</small></span></summary>
@@ -115,6 +109,19 @@
       </div>
     </div>
   </main>
+
+  <dialog id="tagPickerDialog" class="tag-picker-dialog">
+    <div class="tag-picker-head">
+      <div><strong>Genres et catégories</strong><small>Recherche dans les tags du catalogue et les genres enrichis</small></div>
+      <button id="closeTagPicker" class="ghost-btn tag-picker-close" type="button" aria-label="Fermer">×</button>
+    </div>
+    <div class="tag-picker-toolbar">
+      <label class="mini-search"><span class="sr-only">Rechercher un genre</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un genre…"></label>
+      <button id="clearTags" class="ghost-btn reset-tags" type="button">Tout effacer</button>
+    </div>
+    <div class="tag-result-summary" aria-live="polite"><span>Résultat courant</span><strong id="tagResultCount">0 jeux</strong></div>
+    <div id="tagList" class="tag-list tag-picker-list" aria-label="Liste des genres"></div>
+  </dialog>
 
   <dialog id="gameDialog" class="game-dialog"><button class="dialog-close" type="button" data-close-dialog aria-label="Fermer">×</button><div id="dialogContent"></div></dialog>
 

@@ -15,7 +15,8 @@ const els = {
   count: $('#visibleCount'), status: $('#catalogStatus'), empty: $('#emptyState'), favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'),
   dialog: $('#gameDialog'), dialogContent: $('#dialogContent'), tagFilter: $('#tagFilter'), tagList: $('#tagList'), tagSearch: $('#tagSearch'),
   clearTags: $('#clearTags'), selectedTagCount: $('#selectedTagCount'), selectedTagsBar: $('#selectedTagsBar'), tagResultCount: $('#tagResultCount'),
-  scrollSentinel: $('#scrollSentinel'), infiniteStatus: $('#infiniteStatus'), yearFilter: $('#yearFilter'), sizeFilter: $('#sizeFilter'),
+  tagPickerDialog: $('#tagPickerDialog'), openTagPicker: $('#openTagPicker'), closeTagPicker: $('#closeTagPicker'),
+  scrollSentinel: $('#scrollSentinel'), infiniteStatus: $('#infiniteStatus'), yearFilter: $('#yearFilter'), releasePeriodFilter: $('#releasePeriodFilter'), sizeFilter: $('#sizeFilter'),
   newOnlyFilter: $('#newOnlyFilter'), detailsOnlyFilter: $('#detailsOnlyFilter'), mediaOnlyFilter: $('#mediaOnlyFilter'), resetFilters: $('#resetFilters'),
   mobileFiltersButton: $('#mobileFiltersButton'), filterSidebar: $('#filterSidebar'), filterOverlay: $('#filterOverlay'), closeFilters: $('#closeFilters'),
   exportLibrary: $('#exportLibrary'), importLibraryButton: $('#importLibraryButton'), importLibrary: $('#importLibrary'),
@@ -81,13 +82,32 @@ function cleanDisplayGenre(value) {
     .replace(/\s+game$/i,'')
     .trim();
   const aliases = new Map([
-    ['grand strategy wargame','Grand strategy'],
+    ['grand strategy wargame','Grand Strategy'],
     ['role-playing','RPG'],
     ['role-playing video','RPG'],
+    ['real-time strategy','Real-Time Strategy'],
+    ['turn-based strategy','Turn-Based Strategy'],
+    ['first-person shooter','First-Person Shooter'],
+    ['third-person shooter','Third-Person Shooter'],
   ]);
   const alias = aliases.get(cleaned.toLowerCase());
   if (alias) return alias;
   return cleaned.replace(/(^|[-\s])\p{L}/gu, match => match.toLocaleUpperCase('fr'));
+}
+function effectiveTags(game) {
+  const source=[
+    ...(Array.isArray(game?.metadata_genres)?game.metadata_genres:[]),
+    ...getTags(game),
+  ];
+  const out=[]; const seen=new Set();
+  for(const value of source){
+    const label=cleanDisplayGenre(value);
+    const key=normalized(label);
+    if(!label||!key||seen.has(key))continue;
+    seen.add(key);
+    out.push(label);
+  }
+  return out;
 }
 function cardDisplayTitle(game) {
   return String(game?.canonical_title || game?.title || '').trim();
@@ -102,21 +122,34 @@ function cardEditionLabel(game) {
   return '';
 }
 function cardDisplayTags(game) {
-  const source = Array.isArray(game?.metadata_genres) && game.metadata_genres.length
-    ? game.metadata_genres
-    : getTags(game);
-  const out=[]; const seen=new Set();
-  for (const value of source) {
-    const label=cleanDisplayGenre(value);
-    const key=normalized(label);
-    if (!label || seen.has(key)) continue;
-    seen.add(key); out.push(label);
-  }
-  return out;
+  return effectiveTags(game);
 }
 function gameDate(game) { const t=Date.parse(game.post_date||''); return Number.isFinite(t)?t:0; }
+function releaseDate(game) { const t=Date.parse(game.game_release_date||''); return Number.isFinite(t)?t:0; }
 function formatDate(value) { const t=Date.parse(value||''); return Number.isFinite(t)?new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',year:'numeric'}).format(t):'Date inconnue'; }
 function isNew(game, days=14) { const t=gameDate(game); return Boolean(t && Date.now()-t < days*86400000); }
+function startOfLocalWeek(time=Date.now()) {
+  const date=new Date(time);
+  const day=(date.getDay()+6)%7;
+  date.setHours(0,0,0,0);
+  date.setDate(date.getDate()-day);
+  return date.getTime();
+}
+function releasePeriodMatches(game, period) {
+  if(!period)return true;
+  const t=releaseDate(game);
+  if(!t)return false;
+  const now=Date.now();
+  const day=86400000;
+  if(period==='7d')return t>=now-7*day && t<=now;
+  if(period==='30d')return t>=now-30*day && t<=now;
+  if(period==='90d')return t>=now-90*day && t<=now;
+  if(period==='this-year')return new Date(t).getFullYear()===new Date(now).getFullYear();
+  const thisWeek=startOfLocalWeek(now);
+  if(period==='this-week')return t>=thisWeek && t<=now;
+  if(period==='last-week')return t>=thisWeek-7*day && t<thisWeek;
+  return true;
+}
 function sizeMatches(game, bucket) {
   if (!bucket) return true;
   const mb = Number(game.size_mb);
@@ -171,37 +204,43 @@ function queryScore(game, rawQuery) {
 
 function prepareGame(raw) {
   const game={...raw,id:String(raw.id)};
-  const tags=getTags(game); game.__tagKeys=tags.map(normalized); game.__tagKeySet=new Set(game.__tagKeys);
-  const enrichedTags=Array.isArray(game.metadata_genres)?game.metadata_genres.map(v=>String(v).trim()).filter(Boolean):[];
+  const tags=effectiveTags(game);
+  game.__tagLabels=tags;
+  game.__tagKeys=tags.map(normalized);
+  game.__tagKeySet=new Set(game.__tagKeys);
   const canonical=String(game.canonical_title||'').trim();
-  const searchable=[game.title,canonical,game.repack_size,...tags,...enrichedTags];
-  game.__titleNorm=normalized(game.title); game.__searchText=normalized(searchable.join(' '));
-  game.__searchTokens=[...new Set(tokens([game.title,canonical,...tags,...enrichedTags].join(' ')))];
-  game.__year=String(game.year||new Date(game.post_date||0).getUTCFullYear()||'');
+  const releaseYear=/^(20\d{2})/.exec(String(game.game_release_date||''))?.[1]||'';
+  const searchable=[game.title,canonical,game.repack_size,releaseYear,...tags];
+  game.__titleNorm=normalized(canonical||game.title);
+  game.__searchText=normalized(searchable.join(' '));
+  game.__searchTokens=[...new Set(tokens(searchable.join(' ')))];
+  game.__releaseYear=releaseYear;
   return game;
 }
 
-function nonTagMatches(game, query, tagQuery) {
+function nonTagMatches(game, query) {
   if (state.libraryFilter && !state.library[state.libraryFilter]?.has(game.id)) return false;
-  if (els.yearFilter.value && game.__year!==els.yearFilter.value) return false;
+  if (els.yearFilter.value && game.__releaseYear!==els.yearFilter.value) return false;
+  if (!releasePeriodMatches(game,els.releasePeriodFilter.value)) return false;
   if (!sizeMatches(game,els.sizeFilter.value)) return false;
   if (state.quick.newOnly && !isNew(game,30)) return false;
   if (state.quick.detailsOnly && !game.has_description) return false;
   if (state.quick.mediaOnly && !(game.media_count>0)) return false;
-  if (tagQuery && !game.__tagKeys.some(tag=>tag.includes(tagQuery))) return false;
   if (query && !queryScore(game,query)) return false;
   return true;
 }
 
 function applyFilters() {
-  const query=els.search.value.trim(); const tagQuery=normalized(els.tagSearch.value); const selected=[...state.selectedTags]; const pool=query?searchPool(query):state.games;
-  state.filtered=pool.filter(game=>nonTagMatches(game,query,tagQuery) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
+  const query=els.search.value.trim(); const selected=[...state.selectedTags]; const pool=query?searchPool(query):state.games;
+  state.filtered=pool.filter(game=>nonTagMatches(game,query) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
   const sort=els.sort.value;
   state.filtered.sort((a,b)=>{
     if (sort==='relevance' && query) return queryScore(b,query)-queryScore(a,query) || gameDate(b)-gameDate(a);
+    if (sort==='release_desc') return releaseDate(b)-releaseDate(a) || gameDate(b)-gameDate(a);
+    if (sort==='release_asc') return releaseDate(a)-releaseDate(b) || gameDate(a)-gameDate(b);
     if (sort==='date_asc') return gameDate(a)-gameDate(b);
-    if (sort==='name_asc') return a.title.localeCompare(b.title,'fr',{sensitivity:'base'});
-    if (sort==='name_desc') return b.title.localeCompare(a.title,'fr',{sensitivity:'base'});
+    if (sort==='name_asc') return cardDisplayTitle(a).localeCompare(cardDisplayTitle(b),'fr',{sensitivity:'base'});
+    if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),'fr',{sensitivity:'base'});
     return gameDate(b)-gameDate(a);
   });
   state.visible=Math.min(PAGE_SIZE,state.filtered.length); state.loadingMore=false;
@@ -210,7 +249,7 @@ function applyFilters() {
 
 function buildTagIndex() {
   const canonical=new Map(), counts=new Map();
-  for (const game of state.games) for (const tag of getTags(game)) {
+  for (const game of state.games) for (const tag of game.__tagLabels) {
     const key=normalized(tag); if (!key) continue; if (!canonical.has(key)) canonical.set(key,tag);
     counts.set(key,(counts.get(key)||0)+1);
   }
@@ -237,14 +276,15 @@ function updateTagUI() {
 
 function updateTagFacets() {
   if (!state.games.length) return;
-  const query=els.search.value.trim(), tagQuery=normalized(els.tagSearch.value), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
-  const pool=searchBase.filter(game=>nonTagMatches(game,query,tagQuery) && selected.every(tag=>game.__tagKeySet.has(tag)));
+  const query=els.search.value.trim(), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
+  const pool=searchBase.filter(game=>nonTagMatches(game,query) && selected.every(tag=>game.__tagKeySet.has(tag)));
   const counts=new Map(); for (const game of pool) for (const tag of game.__tagKeySet) counts.set(tag,(counts.get(tag)||0)+1);
   const searchTag=normalized(els.tagSearch.value);
   els.tagList.querySelectorAll('.tag-chip').forEach(btn=>{
     const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0), visibleBySearch=active||!searchTag||normalized(btn.dataset.tagLabel).includes(searchTag);
     btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=next.toLocaleString('fr-FR');
   });
+  els.tagResultCount.textContent=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`;
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}
@@ -269,7 +309,7 @@ function renderCard(game,compact=false){
 function updateCatalogMeta(){
   const label=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`; els.count.textContent=state.filtered.length.toLocaleString('fr-FR'); els.tagResultCount.textContent=label; els.empty.hidden=state.filtered.length!==0;
   const hasMore=state.visible<state.filtered.length; els.scrollSentinel.hidden=!hasMore; if(!hasMore)els.infiniteStatus.hidden=true;
-  const active=[]; if(els.search.value.trim())active.push(`Recherche : ${els.search.value.trim()}`); if(state.selectedTags.size)active.push(`${state.selectedTags.size} tag${state.selectedTags.size>1?'s':''}`); if(els.yearFilter.value)active.push(`Année ${els.yearFilter.value}`); if(els.sizeFilter.value)active.push(`Taille ${els.sizeFilter.options[els.sizeFilter.selectedIndex].text}`); if(state.quick.newOnly)active.push('Nouveautés'); if(state.quick.detailsOnly)active.push('Description'); if(state.quick.mediaOnly)active.push('Médias'); if(state.libraryFilter)active.push($('.library-filter[aria-pressed="true"]')?.textContent.trim()||state.libraryFilter);
+  const active=[]; if(els.search.value.trim())active.push(`Recherche : ${els.search.value.trim()}`); if(state.selectedTags.size)active.push(`${state.selectedTags.size} genre${state.selectedTags.size>1?'s':''}`); if(els.yearFilter.value)active.push(`Sortie ${els.yearFilter.value}`); if(els.releasePeriodFilter.value)active.push(els.releasePeriodFilter.options[els.releasePeriodFilter.selectedIndex].text); if(els.sizeFilter.value)active.push(`Taille ${els.sizeFilter.options[els.sizeFilter.selectedIndex].text}`); if(state.quick.newOnly)active.push('Ajoutés récemment'); if(state.quick.detailsOnly)active.push('Description'); if(state.quick.mediaOnly)active.push('Médias'); if(state.libraryFilter)active.push($('.library-filter[aria-pressed="true"]')?.textContent.trim()||state.libraryFilter);
   els.activeState.hidden=!active.length; els.activeState.textContent=active.length?`${active.join(' • ')} • ${label}`:'';
   els.favoritesToggle.classList.toggle('active',state.libraryFilter==='favorites'); els.favoritesToggle.setAttribute('aria-pressed',String(state.libraryFilter==='favorites'));
 }
@@ -295,7 +335,7 @@ function renderHighlights(){const newest=[...state.games].sort((a,b)=>gameDate(b
 function renderSuggestions(){
   const q=els.search.value.trim(); if(q.length<2){els.suggestions.hidden=true;els.suggestions.replaceChildren();state.suggestionIndex=-1;return;}
   const picks=searchPool(q).map(game=>({game,score:queryScore(game,q)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||gameDate(b.game)-gameDate(a.game)).slice(0,8); if(!picks.length){els.suggestions.hidden=true;return;}
-  const f=document.createDocumentFragment();picks.forEach(({game},i)=>{const b=document.createElement('button');b.type='button';b.className='search-suggestion';b.setAttribute('role','option');b.dataset.index=String(i);b.innerHTML=`<span></span><small></small>`;b.querySelector('span').textContent=game.title;b.querySelector('small').textContent=[game.__year,...getTags(game).slice(0,2)].filter(Boolean).join(' • ');b.addEventListener('click',()=>{els.suggestions.hidden=true;openDialog(game,{syncUrl:true});});f.append(b);});els.suggestions.replaceChildren(f);els.suggestions.hidden=false;state.suggestionIndex=-1;
+  const f=document.createDocumentFragment();picks.forEach(({game},i)=>{const b=document.createElement('button');b.type='button';b.className='search-suggestion';b.setAttribute('role','option');b.dataset.index=String(i);b.innerHTML=`<span></span><small></small>`;b.querySelector('span').textContent=cardDisplayTitle(game);b.querySelector('small').textContent=[game.__releaseYear,...game.__tagLabels.slice(0,2)].filter(Boolean).join(' • ');b.addEventListener('click',()=>{els.suggestions.hidden=true;openDialog(game,{syncUrl:true});});f.append(b);});els.suggestions.replaceChildren(f);els.suggestions.hidden=false;state.suggestionIndex=-1;
 }
 function stepSuggestion(delta){const items=$$('.search-suggestion');if(!items.length)return;state.suggestionIndex=(state.suggestionIndex+delta+items.length)%items.length;items.forEach((b,i)=>b.classList.toggle('active',i===state.suggestionIndex));items[state.suggestionIndex].scrollIntoView({block:'nearest'});}
 
@@ -305,9 +345,11 @@ function exportLibrary(){const blob=new Blob([JSON.stringify({version:2,exported
 async function importLibrary(file){try{const data=JSON.parse(await file.text());for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderHighlights();renderRecommendations();applyFilters();}catch(error){console.error(error);alert('Fichier de bibliothèque invalide.');}finally{els.importLibrary.value='';}}
 
 function toggleQuick(key,button){state.quick[key]=!state.quick[key];button.setAttribute('aria-pressed',String(state.quick[key]));button.classList.toggle('active',state.quick[key]);applyFilters();}
-function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();}
-function populateYears(){const years=[...new Set(state.games.map(g=>g.__year).filter(y=>/^20\d\d$/.test(y)))].sort((a,b)=>b-a);for(const year of years){const o=document.createElement('option');o.value=year;o.textContent=year;els.yearFilter.append(o);}}
+function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.releasePeriodFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();}
+function populateYears(){const years=[...new Set(state.games.map(g=>g.__releaseYear).filter(y=>/^20\d\d$/.test(y)))].sort((a,b)=>b-a);for(const year of years){const o=document.createElement('option');o.value=year;o.textContent=year;els.yearFilter.append(o);}}
 
+function openTagPicker(){if(!els.tagPickerDialog.open)els.tagPickerDialog.showModal();requestAnimationFrame(()=>els.tagSearch.focus());}
+function closeTagPicker(){if(els.tagPickerDialog.open)els.tagPickerDialog.close();}
 function openMobileFilters(){els.filterSidebar.classList.add('mobile-open');els.filterOverlay.hidden=false;els.mobileFiltersButton.setAttribute('aria-expanded','true');}
 function closeMobileFilters(){els.filterSidebar.classList.remove('mobile-open');els.filterOverlay.hidden=true;els.mobileFiltersButton.setAttribute('aria-expanded','false');}
 
@@ -473,12 +515,13 @@ async function loadCatalog(){try{const payload=await loadCatalogPayload();state.
 els.search.addEventListener('input',()=>{clearTimeout(state.searchTimer);state.searchTimer=setTimeout(applyFilters,SEARCH_DEBOUNCE_MS);});
 els.search.addEventListener('keydown',event=>{if(!els.suggestions.hidden&&(event.key==='ArrowDown'||event.key==='ArrowUp')){event.preventDefault();stepSuggestion(event.key==='ArrowDown'?1:-1);return;}if(event.key==='Enter'&&state.suggestionIndex>=0){event.preventDefault();$$('.search-suggestion')[state.suggestionIndex]?.click();}});
 els.search.addEventListener('blur',()=>setTimeout(()=>{els.suggestions.hidden=true;},150));
-els.tagSearch.addEventListener('input',applyFilters);els.clearTags.addEventListener('click',()=>{state.selectedTags.clear();els.tagSearch.value='';updateTagUI();applyFilters();});els.sort.addEventListener('change',applyFilters);els.yearFilter.addEventListener('change',applyFilters);els.sizeFilter.addEventListener('change',applyFilters);
+els.tagSearch.addEventListener('input',updateTagFacets);els.clearTags.addEventListener('click',()=>{state.selectedTags.clear();els.tagSearch.value='';updateTagUI();applyFilters();});els.sort.addEventListener('change',applyFilters);els.yearFilter.addEventListener('change',applyFilters);els.releasePeriodFilter.addEventListener('change',applyFilters);els.sizeFilter.addEventListener('change',applyFilters);
 els.newOnlyFilter.addEventListener('click',()=>toggleQuick('newOnly',els.newOnlyFilter));els.detailsOnlyFilter.addEventListener('click',()=>toggleQuick('detailsOnly',els.detailsOnlyFilter));els.mediaOnlyFilter.addEventListener('click',()=>toggleQuick('mediaOnly',els.mediaOnlyFilter));els.resetFilters.addEventListener('click',resetFilters);
 $$('.library-filter').forEach(b=>b.addEventListener('click',()=>setLibraryFilter(b.dataset.library)));els.favoritesToggle.addEventListener('click',()=>setLibraryFilter('favorites'));els.exportLibrary.addEventListener('click',exportLibrary);els.importLibraryButton.addEventListener('click',()=>els.importLibrary.click());els.importLibrary.addEventListener('change',()=>{if(els.importLibrary.files[0])importLibrary(els.importLibrary.files[0]);});
+els.openTagPicker.addEventListener('click',openTagPicker);els.closeTagPicker.addEventListener('click',closeTagPicker);els.tagPickerDialog.addEventListener('click',event=>{if(event.target===els.tagPickerDialog)closeTagPicker();});
 els.mobileFiltersButton.addEventListener('click',openMobileFilters);els.closeFilters.addEventListener('click',closeMobileFilters);els.filterOverlay.addEventListener('click',closeMobileFilters);
 els.dialog.addEventListener('click',e=>{if(e.target===els.dialog||e.target.closest('[data-close-dialog]'))els.dialog.close();});els.dialog.addEventListener('close',restoreCatalogPosition);
 window.addEventListener('hashchange',()=>{const id=gameHashId();if(!id&&els.dialog.open)els.dialog.close();else if(id&&state.byId.has(id)&&id!==state.dialogGameId)openDialog(state.byId.get(id),{syncUrl:false});});
-document.addEventListener('keydown',event=>{const typing=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName);if(els.dialog.open&&!typing&&!isLightboxOpen()){if(event.key==='ArrowLeft'){event.preventDefault();navigateDialog(-1);return;}if(event.key==='ArrowRight'){event.preventDefault();navigateDialog(1);return;}}if(event.key==='/'&&!typing){event.preventDefault();els.search.focus();}if(event.key==='Escape')closeMobileFilters();});
+document.addEventListener('keydown',event=>{const typing=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName);if(els.dialog.open&&!typing&&!isLightboxOpen()){if(event.key==='ArrowLeft'){event.preventDefault();navigateDialog(-1);return;}if(event.key==='ArrowRight'){event.preventDefault();navigateDialog(1);return;}}if(event.key==='/'&&!typing){event.preventDefault();els.search.focus();}if(event.key==='Escape'){if(els.tagPickerDialog.open)closeTagPicker();else closeMobileFilters();}});
 window.addEventListener('resize',armInfiniteObserver,{passive:true});
 loadCatalog();

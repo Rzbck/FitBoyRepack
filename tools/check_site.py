@@ -11,6 +11,7 @@ app=(ROOT/'assets/app.js').read_text(encoding='utf-8')
 api=(ROOT/'assets/catalog-api.js').read_text(encoding='utf-8')
 details=(ROOT/'assets/details.js').read_text(encoding='utf-8')
 v2css=(ROOT/'assets/catalog-v2.css').read_text(encoding='utf-8')
+focuscss=(ROOT/'assets/catalog-focus-v3.css').read_text(encoding='utf-8')
 
 class P(HTMLParser):
     def __init__(self): super().__init__(); self.ids=set(); self.scripts=[]; self.links=[]
@@ -23,8 +24,9 @@ p=P();p.feed(html)
 required={
 'gameGrid','cardTemplate','searchInput','searchSuggestions','sortControl','gameDialog','catalogStatus','visibleCount',
 'tagFilter','tagList','tagSearch','clearTags','selectedTagCount','selectedTagsBar','tagResultCount','filterSidebar',
-'recommendationSection','recommendationGrid','recommendationMeta','scrollSentinel','infiniteStatus','yearFilter','sizeFilter',
+'recommendationSection','recommendationGrid','recommendationMeta','scrollSentinel','infiniteStatus','yearFilter','releasePeriodFilter','sizeFilter',
 'newOnlyFilter','detailsOnlyFilter','mediaOnlyFilter','resetFilters','mobileFiltersButton','filterOverlay','closeFilters',
+'tagPickerDialog','openTagPicker','closeTagPicker',
 'exportLibrary','importLibraryButton','importLibrary','newSection','newGrid','updatedSection','updatedGrid','librarySection','libraryGrid',
 'healthBadge','healthPanel','healthTotal','healthDescriptions','healthGalleries','healthGifs','healthMeta'
 }
@@ -69,7 +71,7 @@ for ordinal,game in enumerate(catalog['games']):
         gram=token[:search['gram_size']]
         assert ordinal in search['grams'].get(gram,[]), f'missing gram posting for {game["id"]}'
 
-for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','cardDisplayTitle','cardDisplayTags','cleanDisplayGenre','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
+for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','cardDisplayTitle','cardDisplayTags','cleanDisplayGenre','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
@@ -77,6 +79,8 @@ for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','lo
     assert token in details, f'missing detail behavior: {token}'
 for token in ('.search-suggestions','.quick-filter-panel','.library-panel','.home-card-row','.dialog-actions','.filter-sidebar.mobile-open','.health-grid'):
     assert token in v2css, f'missing V2 CSS contract: {token}'
+for token in ('.compact-tag-filter','.tag-picker-dialog','.tag-picker-list','.release-period-field','max-height:none'):
+    assert token in focuscss, f'missing compact filter CSS contract: {token}'
 assert "title.textContent=game.title;info.append(title)" not in app.replace(" ", ""), 'legacy dialog title flash returned'
 assert 'Chargement de la fiche détaillée…' in app, 'accessible loading status missing'
 assert 'magnet:?' not in app.lower() and 'torrent_links' not in app.lower()

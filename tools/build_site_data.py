@@ -116,15 +116,35 @@ def metadata_tags(game):
     return [str(item).strip() for item in value if str(item).strip()]
 
 
+def display_genre(value):
+    text = re.sub(r"\s+", " ", str(value or "")).strip()
+    if not text:
+        return ""
+    text = re.sub(r"\s+(?:video|computer)?\s*game$", "", text, flags=re.I).strip()
+    aliases = {
+        "grand strategy wargame": "Grand Strategy",
+        "role-playing": "RPG",
+        "role-playing video": "RPG",
+        "real-time strategy": "Real-Time Strategy",
+        "turn-based strategy": "Turn-Based Strategy",
+        "first-person shooter": "First-Person Shooter",
+        "third-person shooter": "Third-Person Shooter",
+    }
+    return aliases.get(text.lower(), text)
+
+
 def search_tokens(game):
     metadata = game.get("verified_metadata") if isinstance(game.get("verified_metadata"), dict) else {}
+    raw_tags = [*game_tags(game), *metadata_tags(game)]
+    release_year = year_from_date(metadata.get("release_date"))
     text = normalize_search(
         " ".join(
             [
                 str(game.get("title") or ""),
                 str(metadata.get("canonical_title") or ""),
-                *game_tags(game),
-                *metadata_tags(game),
+                str(release_year or ""),
+                *raw_tags,
+                *(display_genre(tag) for tag in raw_tags),
             ]
         )
     )

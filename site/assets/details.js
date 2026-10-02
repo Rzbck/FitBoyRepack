@@ -43,6 +43,120 @@ function formatDate(value) {
     : 'Date inconnue';
 }
 
+function verifiedMetadata(game) {
+  const value = game?.verified_metadata;
+  return value && typeof value === 'object' && !Array.isArray(value) ? value : null;
+}
+
+function metadataList(value) {
+  return Array.isArray(value)
+    ? value.map(item => String(item || '').trim()).filter(Boolean)
+    : [];
+}
+
+function safeHttpsUrl(value) {
+  try {
+    const url = new URL(String(value || ''));
+    return url.protocol === 'https:' ? url : null;
+  } catch {
+    return null;
+  }
+}
+
+function metadataSourceLabel(url) {
+  const host = url.hostname.toLowerCase();
+  if (host === 'www.wikidata.org') return 'Wikidata';
+  if (host.endsWith('.wikipedia.org')) return 'Wikipedia';
+  return host;
+}
+
+function appendMetadataRow(list, label, value) {
+  if (!value) return;
+  const row = document.createElement('div');
+  row.className = 'metadata-row';
+  const term = document.createElement('dt');
+  term.textContent = label;
+  const description = document.createElement('dd');
+  description.textContent = value;
+  row.append(term, description);
+  list.append(row);
+}
+
+function makeMetadataPanel(game) {
+  const metadata = verifiedMetadata(game);
+  if (!metadata) return null;
+
+  const panel = document.createElement('section');
+  panel.className = 'detail-text-panel game-metadata-panel';
+
+  const heading = document.createElement('div');
+  heading.className = 'metadata-heading';
+  const title = document.createElement('h3');
+  title.textContent = 'Informations du jeu';
+  const badge = document.createElement('span');
+  badge.className = 'metadata-badge';
+  const confidence = Number(metadata.confidence);
+  badge.textContent = Number.isFinite(confidence)
+    ? `Enrichi · ${Math.round(confidence * 100)} %`
+    : 'Métadonnées enrichies';
+  heading.append(title, badge);
+  panel.append(heading);
+
+  const list = document.createElement('dl');
+  list.className = 'metadata-grid';
+
+  const canonical = String(metadata.canonical_title || '').trim();
+  if (canonical && canonical.localeCompare(String(game.title || '').trim(), undefined, { sensitivity:'accent' }) !== 0) {
+    appendMetadataRow(list, 'Titre canonique', canonical);
+  }
+  appendMetadataRow(list, 'Sortie du jeu', metadata.release_date ? formatDate(metadata.release_date) : '');
+  appendMetadataRow(list, 'Développeur', String(metadata.developer || '').trim());
+  appendMetadataRow(list, 'Éditeur', String(metadata.publisher || '').trim());
+
+  const platforms = metadataList(metadata.platforms);
+  appendMetadataRow(list, 'Plateformes', platforms.join(' · '));
+
+  panel.append(list);
+
+  const genres = metadataList(metadata.genres);
+  if (genres.length) {
+    const genreBox = document.createElement('div');
+    genreBox.className = 'metadata-genres';
+    const label = document.createElement('span');
+    label.className = 'metadata-label';
+    label.textContent = 'Genres';
+    const pills = document.createElement('div');
+    pills.className = 'metadata-pills';
+    genres.forEach(genre => pills.append(createPill(genre)));
+    genreBox.append(label, pills);
+    panel.append(genreBox);
+  }
+
+  const sources = metadataList(metadata.evidence_urls)
+    .map(safeHttpsUrl)
+    .filter(Boolean)
+    .slice(0, 3);
+  if (sources.length) {
+    const sourceBox = document.createElement('div');
+    sourceBox.className = 'metadata-sources';
+    const label = document.createElement('span');
+    label.className = 'metadata-label';
+    label.textContent = 'Sources';
+    sourceBox.append(label);
+    sources.forEach(url => {
+      const link = document.createElement('a');
+      link.href = url.href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = `${metadataSourceLabel(url)} ↗`;
+      sourceBox.append(link);
+    });
+    panel.append(sourceBox);
+  }
+
+  return panel;
+}
+
 function currentLayout(gameId = '') {
   const layout = dialogContent.querySelector('.dialog-layout');
   if (!layout) return null;
@@ -135,6 +249,7 @@ function renderDescriptionTabs(info, game) {
   if (info.querySelector('.detail-tabs')) return;
   const details = game.details || {};
   const panels = [
+    ['Infos', makeMetadataPanel(game)],
     ['Description', makeTextPanel('Description', details.description)],
     ['Game Features', makeListPanel('Game Features', details.game_features)],
     ['Repack Features', makeListPanel('Repack Features', details.repack_features)],
@@ -181,7 +296,7 @@ function hasRenderableDetails(game) {
   const hasText = Boolean(String(details.description || '').trim());
   const hasGameFeatures = Array.isArray(details.game_features) && details.game_features.some(item => String(item || '').trim());
   const hasRepackFeatures = Array.isArray(details.repack_features) && details.repack_features.some(item => String(item || '').trim());
-  return hasText || hasGameFeatures || hasRepackFeatures || validMedia(game).length > 0;
+  return Boolean(verifiedMetadata(game)) || hasText || hasGameFeatures || hasRepackFeatures || validMedia(game).length > 0;
 }
 
 function setDetailStatus(info, text, state = 'empty') {

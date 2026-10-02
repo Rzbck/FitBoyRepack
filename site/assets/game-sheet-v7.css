@@ -65,44 +65,48 @@
 }
 
 
-/* Verified metadata belongs to the compact identity column, not the content tabs. */
+/* Verified facts are part of the identity itself: no nested metadata card. */
 .game-dialog .dialog-layout.rich-details .dialog-cover>img{
-  height:min(27vh,220px);
-  min-height:135px;
-  max-height:220px;
+  height:min(30vh,245px);
+  min-height:145px;
+  max-height:245px;
 }
 
 .game-dialog .dialog-layout.rich-details .cover-details{
   gap:8px;
-  padding-bottom:2px;
+  padding:0 1px 2px;
 }
 
 .game-dialog .dialog-layout.rich-details .cover-details-meta{
+  grid-template-columns:repeat(auto-fit,minmax(82px,1fr));
   gap:6px;
 }
 
 .game-dialog .dialog-layout.rich-details .cover-details-meta span{
+  min-width:0;
   padding:7px 8px;
   border-radius:8px;
 }
 
-.game-dialog .dialog-layout.rich-details .cover-game-title{
-  margin-top:0;
-  font-size:1.22rem;
-  line-height:1.08;
+.game-dialog .dialog-layout.rich-details .cover-details-meta small{
+  font-size:.56rem;
+  letter-spacing:.045em;
 }
 
-.game-dialog .dialog-layout.rich-details .cover-game-version{
-  margin-top:-3px;
-  font-size:.82rem;
+.game-dialog .dialog-layout.rich-details .cover-details-meta strong{
+  font-size:.72rem;
+  overflow:visible;
+  text-overflow:clip;
+  white-space:normal;
+  line-height:1.25;
 }
 
 .game-dialog .dialog-layout.rich-details .cover-tags{
   gap:5px;
+  margin:1px 0 0;
 }
 
-.game-dialog .dialog-layout.rich-details .cover-tags .genre-pill,
-.game-dialog .cover-metadata-summary .genre-pill{
+.game-dialog .dialog-layout.rich-details .cover-tags .genre-pill{
   max-width:100%;
   padding:4px 7px;
   overflow:hidden;
@@ -111,79 +115,65 @@
   font-size:.6rem;
 }
 
-.game-dialog .cover-metadata-summary{
+.game-dialog .dialog-layout.rich-details .cover-game-title{
+  margin:1px 0 0;
+  font-size:1.34rem;
+  line-height:1.03;
+  letter-spacing:-.035em;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-edition-title{
+  margin:-2px 0 0;
+  color:#9eabc2;
+  font-size:.72rem;
+  line-height:1.32;
+  font-weight:600;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+}
+
+.game-dialog .cover-identity-facts{
   display:flex;
   flex-direction:column;
   gap:7px;
   margin-top:2px;
-  padding:9px 10px;
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:10px;
-  background:rgba(255,255,255,.025);
+  padding-top:8px;
+  border-top:1px solid rgba(255,255,255,.07);
 }
 
-.game-dialog .metadata-heading{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:8px;
-}
-
-.game-dialog .metadata-heading h3{
+.game-dialog .identity-fact-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:6px 12px;
   margin:0;
-  color:#cbd5e7;
-  font-size:.68rem;
-  font-weight:800;
+}
+
+.game-dialog .identity-fact{
+  min-width:0;
+}
+
+.game-dialog .identity-fact:last-child:nth-child(odd){
+  grid-column:1/-1;
+}
+
+.game-dialog .identity-fact dt{
+  margin:0 0 2px;
+  color:#77869f;
+  font-size:.54rem;
+  font-weight:760;
+  line-height:1.25;
   letter-spacing:.045em;
   text-transform:uppercase;
 }
 
-.game-dialog .metadata-badge{
-  flex:0 0 auto;
-  padding:3px 6px;
-  border:1px solid rgba(94,225,169,.28);
-  border-radius:999px;
-  background:rgba(94,225,169,.09);
-  color:#a9f4d4;
-  font-size:.58rem;
-  font-weight:800;
-  white-space:nowrap;
-}
-
-.game-dialog .metadata-list{
-  display:grid;
-  gap:4px;
-  margin:0;
-}
-
-.game-dialog .cover-metadata-summary .metadata-row{
-  min-width:0;
-  display:grid;
-  grid-template-columns:78px minmax(0,1fr);
-  align-items:start;
-  gap:7px;
-  padding:0;
-  border:0;
-  background:transparent;
-}
-
-.game-dialog .cover-metadata-summary .metadata-row dt,
-.game-dialog .cover-metadata-summary .metadata-label{
-  margin:0;
-  color:#7f8da7;
-  font-size:.56rem;
-  font-weight:750;
-  line-height:1.35;
-  letter-spacing:.035em;
-  text-transform:uppercase;
-}
-
-.game-dialog .cover-metadata-summary .metadata-row dd{
+.game-dialog .identity-fact dd{
   min-width:0;
   margin:0;
-  color:#e2e8f4;
-  font-size:.7rem;
-  line-height:1.35;
+  color:#dce4f2;
+  font-size:.68rem;
+  line-height:1.32;
   overflow-wrap:anywhere;
   display:-webkit-box;
   -webkit-box-orient:vertical;
@@ -191,37 +181,27 @@
   overflow:hidden;
 }
 
-.game-dialog .cover-metadata-summary .metadata-pills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:4px;
-}
-
-.game-dialog .cover-metadata-summary .metadata-sources{
+.game-dialog .identity-evidence{
   display:flex;
   align-items:center;
   flex-wrap:wrap;
-  gap:5px 8px;
-  padding-top:2px;
+  gap:4px 8px;
+  color:#66758f;
+  font-size:.58rem;
 }
 
-.game-dialog .cover-metadata-summary .metadata-sources .metadata-label{
-  margin:0;
-}
-
-.game-dialog .cover-metadata-summary .metadata-sources a{
-  color:#8eb9ff;
-  font-size:.64rem;
+.game-dialog .identity-evidence a{
+  color:#86aff1;
   text-decoration:none;
 }
 
-.game-dialog .cover-metadata-summary .metadata-sources a:hover,
-.game-dialog .cover-metadata-summary .metadata-sources a:focus-visible{
+.game-dialog .identity-evidence a:hover,
+.game-dialog .identity-evidence a:focus-visible{
   color:#c5dcff;
   text-decoration:underline;
 }
 
-/* The content pane is now only for real content: description/features/media. */
+/* The right pane is reserved for description/features/media only. */
 .game-dialog .dialog-layout.rich-details .detail-tabs{
   flex-basis:clamp(300px,40dvh,380px);
   min-height:300px;
@@ -232,11 +212,15 @@
   .game-dialog .dialog-layout.rich-details .dialog-cover>img{
     height:auto;
     min-height:0;
-    max-height:34dvh;
+    max-height:36dvh;
   }
 
-  .game-dialog .cover-metadata-summary .metadata-row{
-    grid-template-columns:96px minmax(0,1fr);
+  .game-dialog .dialog-layout.rich-details .cover-details-meta{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  .game-dialog .identity-fact-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
   .game-dialog .dialog-layout.rich-details .detail-tabs{
@@ -247,11 +231,15 @@
 }
 
 @media(max-width:620px){
-  .game-dialog .cover-metadata-summary{
-    padding:8px 9px;
+  .game-dialog .dialog-layout.rich-details .cover-details-meta{
+    grid-template-columns:repeat(auto-fit,minmax(82px,1fr));
   }
 
-  .game-dialog .cover-metadata-summary .metadata-row{
-    grid-template-columns:82px minmax(0,1fr);
+  .game-dialog .identity-fact-list{
+    grid-template-columns:1fr;
+  }
+
+  .game-dialog .identity-fact:last-child:nth-child(odd){
+    grid-column:auto;
   }
 }

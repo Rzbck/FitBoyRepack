@@ -114,15 +114,10 @@ function cleanMetadataList(value, cleaner = cleanMetadataScalar) {
   return out;
 }
 
-function compactList(values, maximum = 4) {
-  if (values.length <= maximum) return values.join(' · ');
-  return `${values.slice(0, maximum).join(' · ')} · +${values.length - maximum}`;
-}
-
-function appendMetadataRow(list, label, value) {
+function appendIdentityFact(list, label, value) {
   if (!value) return;
   const row = document.createElement('div');
-  row.className = 'metadata-row';
+  row.className = 'identity-fact';
   const term = document.createElement('dt');
   term.textContent = label;
   const description = document.createElement('dd');
@@ -131,75 +126,60 @@ function appendMetadataRow(list, label, value) {
   list.append(row);
 }
 
-function makeMetadataSummary(game) {
+function editionLabel(sourceTitle, canonicalTitle) {
+  const source = cleanMetadataScalar(sourceTitle);
+  const canonical = cleanMetadataScalar(canonicalTitle);
+  if (!source || !canonical) return '';
+  if (source.localeCompare(canonical, undefined, { sensitivity:'accent' }) === 0) return '';
+
+  const sourceLower = source.toLocaleLowerCase('fr');
+  const canonicalLower = canonical.toLocaleLowerCase('fr');
+  if (sourceLower.startsWith(canonicalLower)) {
+    return source.slice(canonical.length).replace(/^[\s:–—-]+/, '').trim();
+  }
+  return source;
+}
+
+function makeIdentityFacts(game) {
   const metadata = verifiedMetadata(game);
   if (!metadata) return null;
 
-  const panel = document.createElement('section');
-  panel.className = 'cover-metadata-summary';
-
-  const heading = document.createElement('div');
-  heading.className = 'metadata-heading';
-  const title = document.createElement('h3');
-  title.textContent = 'Informations du jeu';
-  const badge = document.createElement('span');
-  badge.className = 'metadata-badge';
-  const confidence = Number(metadata.confidence);
-  badge.textContent = Number.isFinite(confidence)
-    ? `Enrichi · ${Math.round(confidence * 100)} %`
-    : 'Enrichi';
-  heading.append(title, badge);
-  panel.append(heading);
+  const facts = document.createElement('section');
+  facts.className = 'cover-identity-facts';
 
   const list = document.createElement('dl');
-  list.className = 'metadata-list';
+  list.className = 'identity-fact-list';
 
-  const canonical = cleanMetadataScalar(metadata.canonical_title);
-  const displayedTitle = cleanMetadataScalar(titleParts(game.title).name);
-  if (canonical && canonical.localeCompare(displayedTitle, undefined, { sensitivity:'accent' }) !== 0) {
-    appendMetadataRow(list, 'Titre canonique', canonical);
-  }
-
-  appendMetadataRow(list, 'Sortie du jeu', metadata.release_date ? formatDate(metadata.release_date) : '');
-  appendMetadataRow(list, 'Développeur', cleanMetadataScalar(metadata.developer));
-  appendMetadataRow(list, 'Éditeur', cleanMetadataScalar(metadata.publisher));
+  appendIdentityFact(list, 'Développeur', cleanMetadataScalar(metadata.developer));
+  appendIdentityFact(list, 'Éditeur', cleanMetadataScalar(metadata.publisher));
 
   const platforms = cleanMetadataList(metadata.platforms, cleanPlatformLabel);
-  appendMetadataRow(list, 'Plateformes', compactList(platforms, 4));
+  appendIdentityFact(list, 'Plateformes', platforms.slice(0, 5).join(' · '));
 
-  if (list.childElementCount) panel.append(list);
-
-  const genres = cleanMetadataList(metadata.genres, cleanGenreLabel).slice(0, 4);
-  if (genres.length) {
-    const pills = document.createElement('div');
-    pills.className = 'metadata-pills';
-    genres.forEach(genre => pills.append(createPill(genre)));
-    panel.append(pills);
-  }
+  if (list.childElementCount) facts.append(list);
 
   const sources = metadataList(metadata.evidence_urls)
     .map(safeHttpsUrl)
     .filter(Boolean)
     .slice(0, 2);
   if (sources.length) {
-    const sourceBox = document.createElement('div');
-    sourceBox.className = 'metadata-sources';
-    const label = document.createElement('span');
-    label.className = 'metadata-label';
-    label.textContent = 'Sources';
-    sourceBox.append(label);
+    const sourceLine = document.createElement('div');
+    sourceLine.className = 'identity-evidence';
+    const prefix = document.createElement('span');
+    prefix.textContent = 'Données vérifiées';
+    sourceLine.append(prefix);
     sources.forEach(url => {
       const link = document.createElement('a');
       link.href = url.href;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       link.textContent = `${metadataSourceLabel(url)} ↗`;
-      sourceBox.append(link);
+      sourceLine.append(link);
     });
-    panel.append(sourceBox);
+    facts.append(sourceLine);
   }
 
-  return panel;
+  return facts;
 }
 
 function currentLayout(gameId = '') {
@@ -224,11 +204,20 @@ function renderCoverDetails(layout, game) {
   const card = document.createElement('div');
   card.className = 'cover-details';
 
+  const metadata = verifiedMetadata(game);
   const meta = document.createElement('div');
   meta.className = 'cover-details-meta';
-  const date = document.createElement('span');
-  date.innerHTML = `<small>Publié</small><strong>${formatDate(game.post_date)}</strong>`;
-  meta.append(date);
+
+  const published = document.createElement('span');
+  published.innerHTML = `<small>Publié</small><strong>${formatDate(game.post_date)}</strong>`;
+  meta.append(published);
+
+  if (metadata?.release_date) {
+    const release = document.createElement('span');
+    release.innerHTML = `<small>Sortie du jeu</small><strong>${formatDate(metadata.release_date)}</strong>`;
+    meta.append(release);
+  }
+
   if (game.repack_size && game.repack_size !== 'N/A') {
     const size = document.createElement('span');
     size.innerHTML = `<small>Taille repack</small><strong>${game.repack_size}</strong>`;
@@ -236,7 +225,6 @@ function renderCoverDetails(layout, game) {
   }
   card.append(meta);
 
-  const metadata = verifiedMetadata(game);
   const enrichedGenres = metadata ? cleanMetadataList(metadata.genres, cleanGenreLabel) : [];
   const tags = enrichedGenres.length ? enrichedGenres : getTags(game);
   if (tags.length) {
@@ -247,19 +235,24 @@ function renderCoverDetails(layout, game) {
   }
 
   const parts = titleParts(game.title);
+  const canonical = cleanMetadataScalar(metadata?.canonical_title);
+  const primaryTitle = canonical || parts.name;
+
   const h2 = document.createElement('h2');
   h2.className = 'cover-game-title';
-  h2.textContent = parts.name;
+  h2.textContent = primaryTitle;
   card.append(h2);
-  if (parts.version) {
+
+  const edition = canonical ? editionLabel(game.title, canonical) : parts.version;
+  if (edition) {
     const version = document.createElement('p');
-    version.className = 'cover-game-version';
-    version.textContent = parts.version;
+    version.className = 'cover-game-version cover-edition-title';
+    version.textContent = edition;
     card.append(version);
   }
 
-  const metadataSummary = makeMetadataSummary(game);
-  if (metadataSummary) card.append(metadataSummary);
+  const identityFacts = makeIdentityFacts(game);
+  if (identityFacts) card.append(identityFacts);
 
   cover.append(card);
   info.querySelector(':scope > h2')?.classList.add('details-moved');

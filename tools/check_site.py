@@ -69,7 +69,7 @@ for ordinal,game in enumerate(catalog['games']):
         gram=token[:search['gram_size']]
         assert ordinal in search['grams'].get(gram,[]), f'missing gram posting for {game["id"]}'
 
-for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','cardDisplayTitle','cardDisplayTags','cleanDisplayGenre'):
+for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','cardDisplayTitle','cardDisplayTags','cleanDisplayGenre','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
@@ -77,5 +77,7 @@ for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','lo
     assert token in details, f'missing detail behavior: {token}'
 for token in ('.search-suggestions','.quick-filter-panel','.library-panel','.home-card-row','.dialog-actions','.filter-sidebar.mobile-open','.health-grid'):
     assert token in v2css, f'missing V2 CSS contract: {token}'
+assert "title.textContent=game.title;info.append(title)" not in app.replace(" ", ""), 'legacy dialog title flash returned'
+assert 'Chargement de la fiche détaillée…' in app, 'accessible loading status missing'
 assert 'magnet:?' not in app.lower() and 'torrent_links' not in app.lower()
 print('site V2 smoke OK')

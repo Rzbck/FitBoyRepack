@@ -95,10 +95,26 @@ function cleanPlatformLabel(value) {
 }
 
 function cleanGenreLabel(value) {
-  return cleanMetadataScalar(value)
+  const cleaned = cleanMetadataScalar(value)
     .replace(/\s+video game$/i, '')
+    .replace(/\s+computer game$/i, '')
     .replace(/\s+game$/i, '')
     .trim();
+  if (!cleaned) return '';
+
+  const aliases = new Map([
+    ['grand strategy wargame', 'Grand Strategy'],
+    ['role-playing', 'RPG'],
+    ['role-playing video', 'RPG'],
+    ['real-time strategy', 'Real-Time Strategy'],
+    ['turn-based strategy', 'Turn-Based Strategy'],
+    ['first-person shooter', 'First-Person Shooter'],
+    ['third-person shooter', 'Third-Person Shooter'],
+  ]);
+  const alias = aliases.get(cleaned.toLowerCase());
+  if (alias) return alias;
+
+  return cleaned.replace(/(^|[-\s])\p{L}/gu, match => match.toLocaleUpperCase('fr'));
 }
 
 function cleanMetadataList(value, cleaner = cleanMetadataScalar) {

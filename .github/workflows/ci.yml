@@ -69,7 +69,8 @@ jobs:
           grep -q 'grid-column:span 2' site/assets/game-sheet-v6.css
           grep -q 'detail-tab-nav' site/assets/game-sheet-v7.css
           grep -q 'metadata-badge' site/assets/game-sheet-v7.css
-          grep -q 'makeMetadataPanel' site/assets/details.js
+          grep -q 'makeMetadataSummary' site/assets/details.js
+          grep -q 'cover-metadata-summary' site/assets/game-sheet-v7.css
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
@@ -102,7 +103,7 @@ jobs:
                       'genres':['Action','Adventure'],
                       'developer':'CI Studio',
                       'publisher':'CI Publisher',
-                      'platforms':['Windows'],
+                      'platforms':['Microsoft Windows','Q63184502','Xbox Series X and Series S'],
                       'confidence':0.99,
                       'evidence_urls':['https://www.wikidata.org/wiki/Q123'],
                       'checked_at':'2026-10-02T12:00:00+00:00',
@@ -141,9 +142,13 @@ jobs:
           grep -q 'class="dialog-layout' /tmp/game.html
           grep -Fq "data-game-id=\"${first_id}\"" /tmp/game.html
           grep -q 'dialog-actions' /tmp/game.html
+          grep -Fq 'cover-metadata-summary' /tmp/game.html
           grep -Fq 'Informations du jeu' /tmp/game.html
           grep -Fq 'CI Studio' /tmp/game.html
           grep -Fq 'Sortie du jeu' /tmp/game.html
+          grep -Fq 'Xbox Series X/S' /tmp/game.html
+          ! grep -Fq 'Q63184502' /tmp/game.html
+          ! grep -Fq '>Infos</button>' /tmp/game.html
 
           # Regression: legacy payloads can be structurally ready while containing
           # no description/features/media. They must keep the lightweight modal

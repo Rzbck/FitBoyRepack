@@ -252,7 +252,7 @@ function renderCard(game,compact=false){
   card.querySelector('.new-badge').hidden=!isNew(game);
   const tagRow=card.querySelector('.genre-row'), tags=cardDisplayTags(game);
   tags.slice(0,2).forEach(tag=>tagRow.append(pill(tag)));
-  if(tags.length>2){const more=pill(`+${tags.length-2}`);more.classList.add('genre-more');more.title=tags.slice(2).join(' · ');tagRow.append(more);}
+  if(tags.length>2) tagRow.title=tags.join(' · ');
   const active=state.library.favorites.has(game.id); favorite.classList.toggle('active',active); favorite.textContent=active?'♥':'♡'; favorite.setAttribute('aria-label',active?'Retirer des favoris':'Ajouter aux favoris'); favorite.addEventListener('click',e=>{e.stopPropagation();toggleFavorite(game.id);});
   open.addEventListener('click',()=>openDialog(game,{syncUrl:true})); return card;
 }

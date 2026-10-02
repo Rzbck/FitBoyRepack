@@ -68,9 +68,9 @@ jobs:
           grep -q 'overflow-x:hidden' site/assets/game-sheet-v6.css
           grep -q 'grid-column:span 2' site/assets/game-sheet-v6.css
           grep -q 'detail-tab-nav' site/assets/game-sheet-v7.css
-          grep -q 'metadata-badge' site/assets/game-sheet-v7.css
-          grep -q 'makeMetadataSummary' site/assets/details.js
-          grep -q 'cover-metadata-summary' site/assets/game-sheet-v7.css
+          grep -q 'makeIdentityFacts' site/assets/details.js
+          grep -q 'cover-identity-facts' site/assets/game-sheet-v7.css
+          grep -q 'cover-details-meta' site/assets/game-sheet-v7.css
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
@@ -142,12 +142,15 @@ jobs:
           grep -q 'class="dialog-layout' /tmp/game.html
           grep -Fq "data-game-id=\"${first_id}\"" /tmp/game.html
           grep -q 'dialog-actions' /tmp/game.html
-          grep -Fq 'cover-metadata-summary' /tmp/game.html
-          grep -Fq 'Informations du jeu' /tmp/game.html
+          grep -Fq 'cover-identity-facts' /tmp/game.html
+          grep -Fq 'CI Canonical Game' /tmp/game.html
           grep -Fq 'CI Studio' /tmp/game.html
           grep -Fq 'Sortie du jeu' /tmp/game.html
           grep -Fq 'Xbox Series X/S' /tmp/game.html
+          grep -Fq 'Données vérifiées' /tmp/game.html
           ! grep -Fq 'Q63184502' /tmp/game.html
+          ! grep -Fq 'Informations du jeu' /tmp/game.html
+          ! grep -Fq 'Enrichi ·' /tmp/game.html
           ! grep -Fq '>Infos</button>' /tmp/game.html
 
           # Regression: legacy payloads can be structurally ready while containing

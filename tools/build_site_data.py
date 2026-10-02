@@ -226,7 +226,9 @@ def main():
             "media_count": media_count,
             "has_gif": has_gif,
             "metadata_ready": bool(verified_metadata),
+            "canonical_title": verified_metadata.get("canonical_title") if verified_metadata else None,
             "game_release_date": verified_metadata.get("release_date") if verified_metadata else None,
+            "metadata_genres": verified_metadata.get("genres", []) if verified_metadata else [],
             "detail_updated_at": newest_iso(
                 game.get("details_checked_at"),
                 game.get("media_checked_at"),

@@ -74,6 +74,10 @@ jobs:
           grep -q 'cardDisplayTitle' site/assets/app.js
           grep -q 'cardDisplayTags' site/assets/app.js
           grep -q 'canonical title first' site/assets/catalog-focus-v3.css
+          grep -q 'buildInitialCoverIdentity' site/assets/app.js
+          grep -q 'buildDetailLoadingShell' site/assets/app.js
+          grep -q 'detail-loading-shell' site/assets/game-sheet-v7.css
+          grep -q 'cover-details-initial' site/assets/details.js
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js

@@ -5,6 +5,7 @@ on:
     paths:
       - 'tools/review_llm_autodrain.py'
       - 'tools/test_review_llm_autodrain.py'
+      - 'tools/test_review_llm_output_normalization.py'
       - 'ops/fitboy/review-llm.service'
       - 'ops/fitboy/review-llm.timer'
       - '.github/workflows/review-llm-test.yml'
@@ -24,8 +25,9 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - run: python -m py_compile tools/review_llm_autodrain.py tools/test_review_llm_autodrain.py
+      - run: python -m py_compile tools/review_llm_autodrain.py tools/test_review_llm_autodrain.py tools/test_review_llm_output_normalization.py
       - run: PYTHONPATH=tools python tools/test_review_llm_autodrain.py
+      - run: PYTHONPATH=tools python tools/test_review_llm_output_normalization.py
       - name: Validate systemd templates
         shell: bash
         run: |

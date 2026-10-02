@@ -117,6 +117,7 @@ def _candidate_payload(candidate: dict[str, Any]) -> dict[str, Any]:
 
 def build_decision_prompt(game: dict[str, Any], candidates: list[dict[str, Any]]) -> tuple[str, str]:
     system = (
+        "/no_think\n"
         "You resolve video-game identity using ONLY the supplied candidate list. "
         "Choose one candidate_id only when the catalog title clearly refers to that game. "
         "Ignore packaging/version/update/DLC/bonus/repack suffixes, but do not ignore meaningful game subtitles. "
@@ -141,18 +142,67 @@ def build_decision_prompt(game: dict[str, Any], candidates: list[dict[str, Any]]
     return system, user
 
 
-def validate_decision(raw: dict[str, Any], allowed_ids: set[str]) -> tuple[str | None, float, str]:
-    candidate_value = raw.get("candidate_id")
-    candidate_id = None if candidate_value is None else str(candidate_value).strip() or None
-    if candidate_id is not None and candidate_id not in allowed_ids:
-        raise ValueError("LLM selected a candidate outside the supplied evidence")
-    try:
-        confidence = float(raw.get("confidence"))
-    except (TypeError, ValueError) as exc:
-        raise ValueError("LLM confidence is missing or invalid") from exc
+def _normalize_candidate_id(value: Any, allowed_ids: set[str]) -> str | None:
+    if value is None:
+        return None
+    text = str(value).strip()
+    if not text or text.casefold() in {"null", "none", "unknown", "n/a"}:
+        return None
+    if text in allowed_ids:
+        return text
+
+    by_upper = {item.upper(): item for item in allowed_ids}
+    matches = {
+        match.upper()
+        for match in re.findall(r"\bQ\d+\b", text, flags=re.I)
+        if match.upper() in by_upper
+    }
+    if len(matches) == 1:
+        return by_upper[next(iter(matches))]
+    raise ValueError("LLM selected a candidate outside the supplied evidence")
+
+
+def _normalize_confidence(value: Any) -> float:
+    if isinstance(value, str):
+        text = value.strip().replace(",", ".")
+        if text.endswith("%"):
+            try:
+                confidence = float(text[:-1].strip()) / 100.0
+            except ValueError as exc:
+                raise ValueError("LLM confidence is missing or invalid") from exc
+        else:
+            try:
+                confidence = float(text)
+            except ValueError as exc:
+                raise ValueError("LLM confidence is missing or invalid") from exc
+    else:
+        try:
+            confidence = float(value)
+        except (TypeError, ValueError) as exc:
+            raise ValueError("LLM confidence is missing or invalid") from exc
+
     if not 0.0 <= confidence <= 1.0:
         raise ValueError("LLM confidence must be between 0 and 1")
-    reason = re.sub(r"\s+", " ", str(raw.get("reason") or "")).strip()[:600]
+    return confidence
+
+
+def validate_decision(raw: dict[str, Any], allowed_ids: set[str]) -> tuple[str | None, float, str]:
+    candidate_value = raw.get("candidate_id")
+    if candidate_value is None:
+        candidate_value = raw.get("candidate")
+    if candidate_value is None:
+        candidate_value = raw.get("id")
+    candidate_id = _normalize_candidate_id(candidate_value, allowed_ids)
+
+    confidence_value = raw.get("confidence")
+    if confidence_value is None:
+        confidence_value = raw.get("confidence_score")
+    confidence = _normalize_confidence(confidence_value)
+
+    reason_value = raw.get("reason")
+    if reason_value is None:
+        reason_value = raw.get("rationale")
+    reason = re.sub(r"\s+", " ", str(reason_value or "")).strip()[:600]
     return candidate_id, confidence, reason
 
 
@@ -425,8 +475,10 @@ def run_reviews(
             )
             conn.commit()
             errors += 1
+            detail = re.sub(r"\s+", " ", str(exc)).strip()[:240] or "unspecified"
             print(
-                f"[LLM-REVIEW] game_id={game_id} outcome=error type={type(exc).__name__}",
+                f"[LLM-REVIEW] game_id={game_id} outcome=error "
+                f"type={type(exc).__name__} detail={detail!r}",
                 flush=True,
             )
 

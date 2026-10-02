@@ -25,6 +25,7 @@ jobs:
       - run: python tools/test_catalog_classifier.py
       - run: python tools/validate_catalog.py
       - run: python tools/build_site_data.py
+      - run: PYTHONPATH=tools python tools/test_public_metadata_export.py
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'
@@ -35,6 +36,8 @@ jobs:
           assert health['expected_versions']['media']==7
           assert all((pathlib.Path('site')/g['detail_path']).exists() for g in catalog['games'])
           assert all('year' in g and 'size_mb' in g and 'has_description' in g and 'media_count' in g for g in catalog['games'])
+          assert all('metadata_ready' in g and 'canonical_title' in g and 'metadata_genres' in g for g in catalog['games'])
+          assert health['expected_versions']['metadata']==1
           print('split payloads',catalog['count'],'pending enrichment',health['enrichment_pending'])
           PY
 
@@ -65,6 +68,8 @@ jobs:
           grep -q 'overflow-x:hidden' site/assets/game-sheet-v6.css
           grep -q 'grid-column:span 2' site/assets/game-sheet-v6.css
           grep -q 'detail-tab-nav' site/assets/game-sheet-v7.css
+          grep -q 'metadata-badge' site/assets/game-sheet-v7.css
+          grep -q 'makeMetadataPanel' site/assets/details.js
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
@@ -77,6 +82,36 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+      - name: Seed a verified metadata record for browser contract
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          source=json.load(open('site/data/games.json',encoding='utf-8'))
+          first=source['games'][0]
+          payload={
+              'metadata_version':1,
+              'generated_at':'2026-10-02T12:00:00+00:00',
+              'minimum_confidence':0.9,
+              'count':1,
+              'games':{
+                  str(first['id']):{
+                      'canonical_title':'CI Canonical Game',
+                      'release_date':'2024-01-02',
+                      'genres':['Action','Adventure'],
+                      'developer':'CI Studio',
+                      'publisher':'CI Publisher',
+                      'platforms':['Windows'],
+                      'confidence':0.99,
+                      'evidence_urls':['https://www.wikidata.org/wiki/Q123'],
+                      'checked_at':'2026-10-02T12:00:00+00:00',
+                      'wikidata_id':'Q123',
+                  }
+              }
+          }
+          Path('site/data/metadata-enrichment.json').write_text(json.dumps(payload,separators=(',',':'))+'\n',encoding='utf-8')
+          PY
       - name: Build deploy-shaped site data
         run: python tools/build_site_data.py
       - name: Boot site in headless Chrome and require V2 UI + deep link
@@ -106,6 +141,9 @@ jobs:
           grep -q 'class="dialog-layout' /tmp/game.html
           grep -Fq "data-game-id=\"${first_id}\"" /tmp/game.html
           grep -q 'dialog-actions' /tmp/game.html
+          grep -Fq 'Informations du jeu' /tmp/game.html
+          grep -Fq 'CI Studio' /tmp/game.html
+          grep -Fq 'Sortie du jeu' /tmp/game.html
 
           # Regression: legacy payloads can be structurally ready while containing
           # no description/features/media. They must keep the lightweight modal
@@ -191,7 +229,7 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/catalog_classifier.py tools/check_catalog_classification.py tools/test_catalog_classifier.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py tools/llm_client.py tools/test_llm_client.py tools/ai_catalog_bootstrap.py tools/test_ai_catalog_bootstrap.py tools/fast_metadata_bootstrap.py tools/test_fast_metadata_bootstrap.py
+      - run: python -m py_compile tools/update_catalog.py tools/catalog_classifier.py tools/check_catalog_classification.py tools/test_catalog_classifier.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/export_public_metadata.py tools/publish_public_metadata.py tools/test_public_metadata_export.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py tools/llm_client.py tools/test_llm_client.py tools/ai_catalog_bootstrap.py tools/test_ai_catalog_bootstrap.py tools/fast_metadata_bootstrap.py tools/test_fast_metadata_bootstrap.py
 
   security-boundary:
     name: Robot · forbidden-link guard

@@ -43,6 +43,9 @@ search=json.loads((ROOT/'data/search-index.json').read_text(encoding='utf-8'))
 health=json.loads((ROOT/'data/health.json').read_text(encoding='utf-8'))
 assert health['total_games'] >= health['with_description'] >= 0
 assert health['total_games'] >= health['with_gallery'] >= 0
+assert health['total_games'] >= health.get('metadata_verified', 0) >= 0
+assert health.get('expected_versions', {}).get('metadata') == 1
+assert all('metadata_ready' in game and 'canonical_title' in game and 'metadata_genres' in game for game in catalog['games'])
 assert search['search_index_version'] == 1
 assert search['count'] == catalog['count'] == len(catalog['games'])
 assert search['prefix_min'] == 2 and search['prefix_max'] >= search['prefix_min']
@@ -70,7 +73,7 @@ for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPoo
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
-for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail'):
+for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','makeMetadataPanel','verifiedMetadata','Informations du jeu'):
     assert token in details, f'missing detail behavior: {token}'
 for token in ('.search-suggestions','.quick-filter-panel','.library-panel','.home-card-row','.dialog-actions','.filter-sidebar.mobile-open','.health-grid'):
     assert token in v2css, f'missing V2 CSS contract: {token}'

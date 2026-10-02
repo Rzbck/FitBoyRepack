@@ -90,13 +90,18 @@ jobs:
           fetch data/catalog.json /tmp/catalog.json
           fetch data/search-index.json /tmp/search-index.json
           fetch data/health.json /tmp/health.json
+          fetch data/metadata-enrichment.json /tmp/metadata-enrichment.json
           fetch version.json /tmp/version.json
           detail_path=$(python - <<'PY'
           import json
           c=json.load(open('/tmp/catalog.json')); s=json.load(open('/tmp/search-index.json')); h=json.load(open('/tmp/health.json'))
+          m=json.load(open('/tmp/metadata-enrichment.json'))
           assert c['count']==len(c['games'])==s['count']==h['total_games'] and c['games']
           assert s['search_index_version']==1 and s['prefixes'] and s['grams']
-          assert 'coverage' in h and 'enrichment_pending' in h
+          assert 'coverage' in h and 'enrichment_pending' in h and 'metadata' in h['coverage']
+          assert h['expected_versions']['metadata']==1
+          assert m['metadata_version']==1 and m['count']==len(m['games'])
+          assert all('metadata_ready' in game for game in c['games'])
           print(c['games'][0]['detail_path'])
           PY
           )
@@ -108,5 +113,5 @@ jobs:
           grep -q 'home-card-row' /tmp/v2.css
           grep -q '"source_url"' /tmp/detail.json
           grep -Fq "$EXPECTED_SHA" /tmp/version.json
-          echo "Production Pages V2 + search index healthy on $EXPECTED_SHA"
+          echo "Production Pages V2 + verified metadata healthy on $EXPECTED_SHA"
           cat /tmp/health.json

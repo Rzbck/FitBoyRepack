@@ -73,6 +73,9 @@ jobs:
           grep -q 'cover-details-meta' site/assets/game-sheet-v7.css
           grep -q 'cardDisplayTitle' site/assets/app.js
           grep -q 'cardDisplayTags' site/assets/app.js
+          grep -q 'effectiveTags' site/assets/app.js
+          grep -q 'releasePeriodMatches' site/assets/app.js
+          grep -q 'tag-picker-dialog' site/assets/catalog-focus-v3.css
           grep -q 'canonical title first' site/assets/catalog-focus-v3.css
           grep -q 'buildInitialCoverIdentity' site/assets/app.js
           grep -q 'buildDetailLoadingShell' site/assets/app.js
@@ -107,7 +110,7 @@ jobs:
                   str(first['id']):{
                       'canonical_title':'CI Canonical Game',
                       'release_date':'2024-01-02',
-                      'genres':['Action','Adventure'],
+                      'genres':['turn-based strategy video game','role-playing'],
                       'developer':'CI Studio',
                       'publisher':'CI Publisher',
                       'platforms':['Microsoft Windows','Q63184502','Xbox Series X and Series S'],
@@ -141,6 +144,10 @@ jobs:
           test "$cards" -ge 20
           grep -q 'id="healthPanel"' /tmp/dom.html
           grep -q 'id="yearFilter"' /tmp/dom.html
+          grep -q 'id="releasePeriodFilter"' /tmp/dom.html
+          grep -q 'id="tagPickerDialog"' /tmp/dom.html
+          grep -Fq 'Turn-Based Strategy' /tmp/dom.html
+          grep -Fq '>RPG<' /tmp/dom.html
           grep -q 'id="discoveryShell"' /tmp/dom.html
           ! grep -q 'id="catalogStatus" class="catalog-status">Chargement' /tmp/dom.html
           first_id=$(python -c "import json; print(json.load(open('site/data/catalog.json',encoding='utf-8'))['games'][0]['id'])")
@@ -152,6 +159,8 @@ jobs:
           grep -Fq 'cover-identity-facts' /tmp/game.html
           grep -Fq 'CI Canonical Game' /tmp/game.html
           grep -Fq 'CI Studio' /tmp/game.html
+          grep -Fq 'Turn-Based Strategy' /tmp/game.html
+          grep -Fq 'RPG' /tmp/game.html
           grep -Fq 'Sortie du jeu' /tmp/game.html
           grep -Fq 'Xbox Series X/S' /tmp/game.html
           grep -Fq 'Données vérifiées' /tmp/game.html

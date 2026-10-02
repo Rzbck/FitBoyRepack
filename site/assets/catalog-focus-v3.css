@@ -31,3 +31,27 @@
 @media(max-width:900px){.catalog-layout{grid-template-columns:1fr}.filter-sidebar{max-height:none;overflow:auto}.discovery-content{max-height:58vh}.game-dialog{width:calc(100vw - 12px);height:calc(100dvh - 16px);max-height:calc(100dvh - 16px)}.dialog-layout.rich-details{display:block;overflow-y:auto}.dialog-layout.rich-details .dialog-cover{height:auto;min-height:auto;overflow:visible}.dialog-layout.rich-details .dialog-cover>img{height:auto;min-height:0;max-height:38dvh}.dialog-info{height:auto;overflow:visible;padding:20px 18px 22px}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.media-lightbox-stage img{max-width:calc(100vw - 92px)}}
 @media(max-width:620px){.quick-toggle-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.discovery-summary-copy small{display:none}.discovery-summary{padding-block:10px}.discovery-content{padding:10px}.discovery-content .home-card-row{grid-auto-columns:minmax(128px,43vw)}.game-dialog{width:calc(100vw - 6px);height:calc(100dvh - 8px);max-height:calc(100dvh - 8px);border-radius:12px}.dialog-layout.rich-details .dialog-cover{padding:10px}.dialog-cover .gameplay-preview-button{height:78px}.dialog-info{padding:18px 14px 20px}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.media-lightbox{grid-template-columns:40px minmax(0,1fr) 40px;grid-template-rows:44px minmax(0,1fr)}.media-lightbox-stage{padding:4px}.media-lightbox-stage img{max-width:calc(100vw - 84px);max-height:calc(100dvh - 54px)}.media-lightbox-nav{width:32px;height:48px}}
 @media(prefers-reduced-motion:reduce){.discovery-summary::after{transition:none}}
+
+
+/* Card identity: canonical title first, two readable enriched genres max. */
+.game-card .card-title{
+  min-height:2.48em;
+}
+
+.game-card .genre-row{
+  min-width:0;
+  min-height:22px;
+  gap:5px;
+  overflow:hidden;
+}
+
+.game-card .genre-row .genre-pill{
+  flex:0 1 auto;
+  min-width:0;
+  max-width:calc(50% - 3px);
+  padding:4px 7px;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+

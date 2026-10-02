@@ -189,7 +189,31 @@ def main() -> None:
         assert publish_stats["changed"] is False
         assert writes == []
 
-    print("public metadata export + front merge + idempotent publish OK")
+        # GitHub's Contents API returns no inline content for snapshots above
+        # 1 MiB. The publisher must fall back to the raw media response.
+        original_json = publisher._request_json
+        original_bytes = publisher._request_bytes
+        try:
+            publisher._request_json = lambda *_args, **_kwargs: {
+                "sha": "large-file-sha",
+                "content": "",
+                "encoding": "none",
+            }
+            publisher._request_bytes = lambda *_args, **_kwargs: remote_bytes
+            remote_sha, large_remote = publisher._remote_content(
+                "Rzbck/FitBoyRepack",
+                "site/data/metadata-enrichment.json",
+                "main",
+                "test-token",
+            )
+        finally:
+            publisher._request_json = original_json
+            publisher._request_bytes = original_bytes
+
+        assert remote_sha == "large-file-sha"
+        assert large_remote == remote_bytes
+
+    print("public metadata export + front merge + idempotent large-snapshot publish OK")
 
 
 if __name__ == "__main__":

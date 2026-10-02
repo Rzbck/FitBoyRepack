@@ -253,3 +253,60 @@
     grid-column:auto;
   }
 }
+
+
+/* Stable first frame: the lazy detail load must never flash the retired legacy sheet. */
+.game-dialog .dialog-loading .dialog-info{
+  position:relative;
+}
+
+.game-dialog .detail-loading-shell{
+  height:100%;
+  min-height:0;
+  display:grid;
+  grid-template-rows:54px minmax(170px,34%) minmax(180px,1fr);
+  gap:12px;
+  padding-top:0;
+  overflow:hidden;
+  opacity:.72;
+}
+
+.game-dialog .detail-loading-shell > div{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.045);
+  border-radius:12px;
+  background:rgba(255,255,255,.025);
+}
+
+.game-dialog .detail-loading-shell > div::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  transform:translateX(-110%);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.035),transparent);
+  animation:fitboy-detail-loading 1.15s ease-in-out infinite;
+}
+
+.game-dialog .detail-loading-tabs{
+  max-width:440px;
+}
+
+.game-dialog .detail-loading-copy{
+  max-width:760px;
+}
+
+@keyframes fitboy-detail-loading{
+  to{transform:translateX(110%)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .game-dialog .detail-loading-shell > div::after{animation:none}
+}
+
+@media(max-width:900px){
+  .game-dialog .detail-loading-shell{
+    min-height:360px;
+    grid-template-rows:48px 150px 180px;
+  }
+}

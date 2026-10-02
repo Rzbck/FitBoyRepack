@@ -74,6 +74,10 @@ jobs:
           grep -q 'cardDisplayTitle' site/assets/app.js
           grep -q 'cardDisplayTags' site/assets/app.js
           grep -q 'canonical title first' site/assets/catalog-focus-v3.css
+          grep -q 'buildInitialCoverIdentity' site/assets/app.js
+          grep -q 'buildDetailLoadingShell' site/assets/app.js
+          grep -q 'detail-loading-shell' site/assets/game-sheet-v7.css
+          grep -q 'cover-details-initial' site/assets/details.js
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
@@ -156,9 +160,8 @@ jobs:
           ! grep -Fq 'Enrichi ·' /tmp/game.html
           ! grep -Fq '>Infos</button>' /tmp/game.html
 
-          # Regression: legacy payloads can be structurally ready while containing
-          # no description/features/media. They must keep the lightweight modal
-          # instead of switching to an empty rich layout.
+          # Regression: empty legacy payloads still use the stable final geometry,
+          # but must exit the loading shell and show the explicit empty state.
           legacy_id=$(python - <<'PY'
           import json
           from pathlib import Path
@@ -193,7 +196,9 @@ jobs:
           grep -Fq "data-game-id=\"${legacy_id}\"" /tmp/legacy-game.html
           grep -Fq 'Aucun détail enrichi disponible pour cette fiche pour le moment.' /tmp/legacy-game.html
           ! grep -Fq 'Chargement de la fiche détaillée…' /tmp/legacy-game.html
-          ! grep -q 'class="dialog-layout rich-details"' /tmp/legacy-game.html
+          grep -q 'class="dialog-layout rich-details' /tmp/legacy-game.html
+          ! grep -q 'class="dialog-layout rich-details dialog-loading"' /tmp/legacy-game.html
+          ! grep -q 'class="detail-loading-shell"' /tmp/legacy-game.html
 
   media-filter:
     name: Robot · details/media parser regression

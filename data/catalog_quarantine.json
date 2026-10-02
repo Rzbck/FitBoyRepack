@@ -1022,6 +1022,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "little-nightmares-iii-repack-updated-2",
+      "title": "Little Nightmares III Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/little-nightmares-iii-repack-updated-2/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "livelock-poll",
       "title": "Livelock Poll",
       "source_url": "https://fitgirl-repacks.site/livelock-poll/",
@@ -9215,10 +9225,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-18-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9253,8 +9261,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-19-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9329,10 +9339,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-20-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9395,8 +9403,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-23-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9461,10 +9471,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-25-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

@@ -72,6 +72,39 @@ function getTags(game) {
   const value = game?.genres ?? game?.genre ?? [];
   return (Array.isArray(value) ? value : String(value || '').split(',')).map(v => String(v).trim()).filter(Boolean);
 }
+function cleanDisplayGenre(value) {
+  const raw = String(value || '').replace(/\s+/g,' ').trim();
+  if (!raw) return '';
+  const cleaned = raw
+    .replace(/\s+video game$/i,'')
+    .replace(/\s+computer game$/i,'')
+    .replace(/\s+game$/i,'')
+    .trim();
+  const aliases = new Map([
+    ['grand strategy wargame','Grand strategy'],
+    ['role-playing','RPG'],
+    ['role-playing video','RPG'],
+  ]);
+  const alias = aliases.get(cleaned.toLowerCase());
+  if (alias) return alias;
+  return cleaned.replace(/(^|[-\s])\p{L}/gu, match => match.toLocaleUpperCase('fr'));
+}
+function cardDisplayTitle(game) {
+  return String(game?.canonical_title || game?.title || '').trim();
+}
+function cardDisplayTags(game) {
+  const source = Array.isArray(game?.metadata_genres) && game.metadata_genres.length
+    ? game.metadata_genres
+    : getTags(game);
+  const out=[]; const seen=new Set();
+  for (const value of source) {
+    const label=cleanDisplayGenre(value);
+    const key=normalized(label);
+    if (!label || seen.has(key)) continue;
+    seen.add(key); out.push(label);
+  }
+  return out;
+}
 function gameDate(game) { const t=Date.parse(game.post_date||''); return Number.isFinite(t)?t:0; }
 function formatDate(value) { const t=Date.parse(value||''); return Number.isFinite(t)?new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',year:'numeric'}).format(t):'Date inconnue'; }
 function isNew(game, days=14) { const t=gameDate(game); return Boolean(t && Date.now()-t < days*86400000); }
@@ -212,9 +245,14 @@ function snapshotLibrary(){return Object.fromEntries(Object.entries(state.librar
 
 function renderCard(game,compact=false){
   const card=els.template.content.firstElementChild.cloneNode(true), image=card.querySelector('.cover'), open=card.querySelector('.card-open'), favorite=card.querySelector('.favorite-btn'); card.dataset.gameId=game.id; if(compact)card.classList.add('compact-card');
-  card.querySelector('.card-title').textContent=game.title; card.querySelector('.card-date').textContent=formatDate(game.post_date); card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
-  if(game.image_url){image.fetchPriority='low';image.src=game.image_url;image.alt=`Illustration de ${game.title}`;image.addEventListener('error',()=>{image.style.display='none';},{once:true});}else image.style.display='none';
-  card.querySelector('.new-badge').hidden=!isNew(game); for(const tag of getTags(game).slice(0,3))card.querySelector('.genre-row').append(pill(tag));
+  const displayTitle=cardDisplayTitle(game);
+  card.querySelector('.card-title').textContent=displayTitle; card.querySelector('.card-date').textContent=formatDate(game.post_date); card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
+  if(displayTitle && displayTitle!==game.title) card.title=game.title;
+  if(game.image_url){image.fetchPriority='low';image.src=game.image_url;image.alt=`Illustration de ${displayTitle||game.title}`;image.addEventListener('error',()=>{image.style.display='none';},{once:true});}else image.style.display='none';
+  card.querySelector('.new-badge').hidden=!isNew(game);
+  const tagRow=card.querySelector('.genre-row'), tags=cardDisplayTags(game);
+  tags.slice(0,2).forEach(tag=>tagRow.append(pill(tag)));
+  if(tags.length>2){const more=pill(`+${tags.length-2}`);more.classList.add('genre-more');more.title=tags.slice(2).join(' · ');tagRow.append(more);}
   const active=state.library.favorites.has(game.id); favorite.classList.toggle('active',active); favorite.textContent=active?'♥':'♡'; favorite.setAttribute('aria-label',active?'Retirer des favoris':'Ajouter aux favoris'); favorite.addEventListener('click',e=>{e.stopPropagation();toggleFavorite(game.id);});
   open.addEventListener('click',()=>openDialog(game,{syncUrl:true})); return card;
 }

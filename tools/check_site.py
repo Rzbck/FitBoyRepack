@@ -73,7 +73,7 @@ for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPoo
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
-for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','makeMetadataSummary','cleanPlatformLabel','verifiedMetadata','Informations du jeu'):
+for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','makeIdentityFacts','editionLabel','cleanPlatformLabel','verifiedMetadata','Sortie du jeu','Données vérifiées'):
     assert token in details, f'missing detail behavior: {token}'
 for token in ('.search-suggestions','.quick-filter-panel','.library-panel','.home-card-row','.dialog-actions','.filter-sidebar.mobile-open','.health-grid'):
     assert token in v2css, f'missing V2 CSS contract: {token}'

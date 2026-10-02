@@ -162,6 +162,8 @@ def main() -> None:
         assert health["coverage"]["metadata"] == 50.0
         assert health["metadata_unmatched"] == 0
         assert 0 in search["prefixes"]["prime"]
+        assert 0 in search["prefixes"]["2024"]
+        assert 0 in search["prefixes"]["action"]
 
         # A fresh export changes generated_at every run. The publisher must not
         # create a Git commit / Pages deployment when metadata itself is identical.

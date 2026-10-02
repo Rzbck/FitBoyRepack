@@ -218,7 +218,7 @@ function prepareGame(raw) {
   return game;
 }
 
-function nonTagMatches(game, query, tagQuery) {
+function nonTagMatches(game, query) {
   if (state.libraryFilter && !state.library[state.libraryFilter]?.has(game.id)) return false;
   if (els.yearFilter.value && game.__releaseYear!==els.yearFilter.value) return false;
   if (!releasePeriodMatches(game,els.releasePeriodFilter.value)) return false;
@@ -226,14 +226,13 @@ function nonTagMatches(game, query, tagQuery) {
   if (state.quick.newOnly && !isNew(game,30)) return false;
   if (state.quick.detailsOnly && !game.has_description) return false;
   if (state.quick.mediaOnly && !(game.media_count>0)) return false;
-  if (tagQuery && !game.__tagKeys.some(tag=>tag.includes(tagQuery))) return false;
   if (query && !queryScore(game,query)) return false;
   return true;
 }
 
 function applyFilters() {
-  const query=els.search.value.trim(); const tagQuery=normalized(els.tagSearch.value); const selected=[...state.selectedTags]; const pool=query?searchPool(query):state.games;
-  state.filtered=pool.filter(game=>nonTagMatches(game,query,tagQuery) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
+  const query=els.search.value.trim(); const selected=[...state.selectedTags]; const pool=query?searchPool(query):state.games;
+  state.filtered=pool.filter(game=>nonTagMatches(game,query) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
   const sort=els.sort.value;
   state.filtered.sort((a,b)=>{
     if (sort==='relevance' && query) return queryScore(b,query)-queryScore(a,query) || gameDate(b)-gameDate(a);
@@ -277,14 +276,15 @@ function updateTagUI() {
 
 function updateTagFacets() {
   if (!state.games.length) return;
-  const query=els.search.value.trim(), tagQuery=normalized(els.tagSearch.value), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
-  const pool=searchBase.filter(game=>nonTagMatches(game,query,tagQuery) && selected.every(tag=>game.__tagKeySet.has(tag)));
+  const query=els.search.value.trim(), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
+  const pool=searchBase.filter(game=>nonTagMatches(game,query) && selected.every(tag=>game.__tagKeySet.has(tag)));
   const counts=new Map(); for (const game of pool) for (const tag of game.__tagKeySet) counts.set(tag,(counts.get(tag)||0)+1);
   const searchTag=normalized(els.tagSearch.value);
   els.tagList.querySelectorAll('.tag-chip').forEach(btn=>{
     const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0), visibleBySearch=active||!searchTag||normalized(btn.dataset.tagLabel).includes(searchTag);
     btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=next.toLocaleString('fr-FR');
   });
+  els.tagResultCount.textContent=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`;
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}
@@ -335,7 +335,7 @@ function renderHighlights(){const newest=[...state.games].sort((a,b)=>gameDate(b
 function renderSuggestions(){
   const q=els.search.value.trim(); if(q.length<2){els.suggestions.hidden=true;els.suggestions.replaceChildren();state.suggestionIndex=-1;return;}
   const picks=searchPool(q).map(game=>({game,score:queryScore(game,q)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||gameDate(b.game)-gameDate(a.game)).slice(0,8); if(!picks.length){els.suggestions.hidden=true;return;}
-  const f=document.createDocumentFragment();picks.forEach(({game},i)=>{const b=document.createElement('button');b.type='button';b.className='search-suggestion';b.setAttribute('role','option');b.dataset.index=String(i);b.innerHTML=`<span></span><small></small>`;b.querySelector('span').textContent=game.title;b.querySelector('small').textContent=[game.__year,...getTags(game).slice(0,2)].filter(Boolean).join(' • ');b.addEventListener('click',()=>{els.suggestions.hidden=true;openDialog(game,{syncUrl:true});});f.append(b);});els.suggestions.replaceChildren(f);els.suggestions.hidden=false;state.suggestionIndex=-1;
+  const f=document.createDocumentFragment();picks.forEach(({game},i)=>{const b=document.createElement('button');b.type='button';b.className='search-suggestion';b.setAttribute('role','option');b.dataset.index=String(i);b.innerHTML=`<span></span><small></small>`;b.querySelector('span').textContent=cardDisplayTitle(game);b.querySelector('small').textContent=[game.__releaseYear,...game.__tagLabels.slice(0,2)].filter(Boolean).join(' • ');b.addEventListener('click',()=>{els.suggestions.hidden=true;openDialog(game,{syncUrl:true});});f.append(b);});els.suggestions.replaceChildren(f);els.suggestions.hidden=false;state.suggestionIndex=-1;
 }
 function stepSuggestion(delta){const items=$$('.search-suggestion');if(!items.length)return;state.suggestionIndex=(state.suggestionIndex+delta+items.length)%items.length;items.forEach((b,i)=>b.classList.toggle('active',i===state.suggestionIndex));items[state.suggestionIndex].scrollIntoView({block:'nearest'});}
 

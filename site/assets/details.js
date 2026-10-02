@@ -192,9 +192,14 @@ function currentLayout(gameId = '') {
 function renderCoverDetails(layout, game) {
   const cover = layout.querySelector('.dialog-cover');
   const info = layout.querySelector('.dialog-info');
-  if (!cover || !info || cover.querySelector('.cover-details')) return;
+  if (!cover || !info) return;
+
+  const initial = cover.querySelector('.cover-details-initial');
+  if (initial) initial.remove();
+  else if (cover.querySelector('.cover-details')) return;
 
   layout.classList.add('rich-details');
+  layout.classList.remove('dialog-loading');
   const coverImg = cover.querySelector(':scope > img');
   if (coverImg) {
     coverImg.alt = `Jaquette de ${game.title}`;
@@ -514,6 +519,8 @@ function enhanceDialog(game, gameId) {
   if (!layout || !info || layout.dataset.enhanced === 'true') return;
 
   if (!hasRenderableDetails(game)) {
+    layout.classList.remove('dialog-loading');
+    info.querySelector('.detail-loading-shell')?.remove();
     setDetailStatus(
       info,
       'Aucun détail enrichi disponible pour cette fiche pour le moment.',
@@ -523,6 +530,7 @@ function enhanceDialog(game, gameId) {
   }
 
   layout.dataset.enhanced = 'true';
+  info.querySelector('.detail-loading-shell')?.remove();
   info.querySelector('[data-detail-status]')?.remove();
   renderCoverDetails(layout, game);
   renderDescriptionTabs(info, game);

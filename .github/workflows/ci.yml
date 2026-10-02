@@ -107,6 +107,45 @@ jobs:
           grep -Fq "data-game-id=\"${first_id}\"" /tmp/game.html
           grep -q 'dialog-actions' /tmp/game.html
 
+          # Regression: legacy payloads can be structurally ready while containing
+          # no description/features/media. They must keep the lightweight modal
+          # instead of switching to an empty rich layout.
+          legacy_id=$(python - <<'PY'
+          import json
+          from pathlib import Path
+
+          catalog=json.load(open('site/data/catalog.json',encoding='utf-8'))
+          root=Path('site')
+          found=None
+          for item in catalog['games']:
+              if not item.get('details_ready'):
+                  continue
+              detail=json.load(open(root/item['detail_path'],encoding='utf-8'))
+              details=detail.get('details') if isinstance(detail.get('details'),dict) else {}
+              text=str(details.get('description') or '').strip()
+              game_features=[str(x or '').strip() for x in details.get('game_features') or []]
+              repack_features=[str(x or '').strip() for x in details.get('repack_features') or []]
+              media=[
+                  x for x in (detail.get('media') or [])
+                  if isinstance(x,dict)
+                  and isinstance(x.get('url'),str)
+                  and x['url'].startswith('https://')
+                  and x.get('type') in ('image','gif')
+              ]
+              if not text and not any(game_features) and not any(repack_features) and not media:
+                  found=item['id']
+                  break
+          assert found, 'no legacy empty-detail regression candidate found'
+          print(found)
+          PY
+          )
+          encoded_legacy_id=$(python -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1],safe=''))" "$legacy_id")
+          run_chrome "http://127.0.0.1:4173/#game=${encoded_legacy_id}" > /tmp/legacy-game.html
+          grep -Fq "data-game-id=\"${legacy_id}\"" /tmp/legacy-game.html
+          grep -Fq 'Aucun détail enrichi disponible pour cette fiche pour le moment.' /tmp/legacy-game.html
+          ! grep -Fq 'Chargement de la fiche détaillée…' /tmp/legacy-game.html
+          ! grep -q 'class="dialog-layout rich-details"' /tmp/legacy-game.html
+
   media-filter:
     name: Robot · details/media parser regression
     runs-on: ubuntu-latest

@@ -9,6 +9,7 @@ import tempfile
 from pathlib import Path
 
 from export_public_metadata import export_snapshot
+import publish_public_metadata as publisher
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -162,7 +163,33 @@ def main() -> None:
         assert health["metadata_unmatched"] == 0
         assert 0 in search["prefixes"]["prime"]
 
-    print("public metadata export + front merge OK")
+        # A fresh export changes generated_at every run. The publisher must not
+        # create a Git commit / Pages deployment when metadata itself is identical.
+        remote_payload = dict(public)
+        remote_payload["generated_at"] = "2026-10-02T12:00:00+00:00"
+        remote_bytes = (json.dumps(remote_payload, ensure_ascii=False, separators=(",", ":")) + "\n").encode("utf-8")
+
+        original_remote = publisher._remote_content
+        original_request = publisher._request_json
+        writes = []
+        try:
+            publisher._remote_content = lambda *_args, **_kwargs: ("remote-sha", remote_bytes)
+            publisher._request_json = lambda *_args, **_kwargs: writes.append((_args, _kwargs)) or {}
+            publish_stats = publisher.publish_snapshot(
+                snapshot,
+                repository="Rzbck/FitBoyRepack",
+                path="site/data/metadata-enrichment.json",
+                branch="main",
+                token="test-token",
+            )
+        finally:
+            publisher._remote_content = original_remote
+            publisher._request_json = original_request
+
+        assert publish_stats["changed"] is False
+        assert writes == []
+
+    print("public metadata export + front merge + idempotent publish OK")
 
 
 if __name__ == "__main__":

@@ -52,9 +52,13 @@ def _request_json(
     return parsed
 
 
-def _content_url(repository: str, path: str, branch: str) -> str:
+def _contents_url(repository: str, path: str) -> str:
     safe_path = "/".join(quote(part, safe="") for part in path.split("/"))
-    return f"https://api.github.com/repos/{repository}/contents/{safe_path}?ref={quote(branch, safe='')}"
+    return f"https://api.github.com/repos/{repository}/contents/{safe_path}"
+
+
+def _content_read_url(repository: str, path: str, branch: str) -> str:
+    return f"{_contents_url(repository, path)}?ref={quote(branch, safe='')}"
 
 
 def _remote_content(
@@ -63,7 +67,7 @@ def _remote_content(
     branch: str,
     token: str,
 ) -> tuple[str | None, bytes | None]:
-    url = _content_url(repository, path, branch)
+    url = _content_read_url(repository, path, branch)
     try:
         payload = _request_json(url, token=token)
     except HTTPError as exc:
@@ -101,7 +105,7 @@ def publish_snapshot(
         raise RuntimeError("public metadata snapshot count mismatch")
 
     digest = hashlib.sha256(content).hexdigest()
-    api_url = _content_url(repository, path, branch)
+    api_url = _contents_url(repository, path)
 
     for attempt in range(1, retries + 1):
         sha, remote = _remote_content(repository, path, branch, token)

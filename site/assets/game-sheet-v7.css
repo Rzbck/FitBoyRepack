@@ -65,11 +65,20 @@
 }
 
 
+@media(min-width:1181px){
+  .game-dialog .dialog-layout.rich-details{
+    grid-template-columns:minmax(350px,390px) minmax(0,1fr);
+  }
+}
+
 /* Verified facts are part of the identity itself: no nested metadata card. */
 .game-dialog .dialog-layout.rich-details .dialog-cover>img{
-  height:min(30vh,245px);
-  min-height:145px;
-  max-height:245px;
+  flex:1 1 300px;
+  width:100%;
+  height:auto;
+  min-height:190px;
+  max-height:380px;
+  object-fit:contain;
 }
 
 .game-dialog .dialog-layout.rich-details .cover-details{
@@ -210,9 +219,10 @@
 
 @media(max-width:900px){
   .game-dialog .dialog-layout.rich-details .dialog-cover>img{
+    flex:0 0 auto;
     height:auto;
     min-height:0;
-    max-height:36dvh;
+    max-height:42dvh;
   }
 
   .game-dialog .dialog-layout.rich-details .cover-details-meta{

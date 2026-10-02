@@ -1,0 +1,31 @@
+[Unit]
+Description=FitBoyRepack sanitized metadata snapshot publisher
+After=network-online.target metadata-autodrain.service review-llm.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=fitboy
+Group=fitboy
+WorkingDirectory=/opt/FitBoyRepack
+Environment=HOME=/var/lib/fitboy
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+EnvironmentFile=/etc/fitboy/metadata-publisher.env
+
+ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/export_public_metadata.py --db /var/lib/fitboy/ai/catalog_enrichment.sqlite3 --output /var/lib/fitboy/ai/metadata-enrichment.json --min-confidence 0.90
+ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/publish_public_metadata.py --input /var/lib/fitboy/ai/metadata-enrichment.json --repository Rzbck/FitBoyRepack --path site/data/metadata-enrichment.json --branch main
+
+Nice=15
+CPUQuota=25%
+MemoryMax=256M
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/fitboy/ai
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

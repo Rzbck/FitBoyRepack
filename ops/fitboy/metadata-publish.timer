@@ -1,0 +1,12 @@
+[Unit]
+Description=Schedule FitBoyRepack public metadata snapshot publication
+
+[Timer]
+OnBootSec=35min
+OnUnitInactiveSec=1h
+RandomizedDelaySec=5min
+Persistent=true
+Unit=metadata-publish.service
+
+[Install]
+WantedBy=timers.target

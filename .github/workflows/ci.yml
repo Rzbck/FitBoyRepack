@@ -71,6 +71,9 @@ jobs:
           grep -q 'makeIdentityFacts' site/assets/details.js
           grep -q 'cover-identity-facts' site/assets/game-sheet-v7.css
           grep -q 'cover-details-meta' site/assets/game-sheet-v7.css
+          grep -q 'cardDisplayTitle' site/assets/app.js
+          grep -q 'cardDisplayTags' site/assets/app.js
+          grep -q 'canonical title first' site/assets/catalog-focus-v3.css
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js

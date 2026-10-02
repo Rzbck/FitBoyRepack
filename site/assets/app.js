@@ -92,6 +92,15 @@ function cleanDisplayGenre(value) {
 function cardDisplayTitle(game) {
   return String(game?.canonical_title || game?.title || '').trim();
 }
+function cardEditionLabel(game) {
+  const source=String(game?.title||'').replace(/\s+/g,' ').trim();
+  const canonical=String(game?.canonical_title||'').replace(/\s+/g,' ').trim();
+  if(!source||!canonical||normalized(source)===normalized(canonical))return '';
+  const sourceLower=source.toLocaleLowerCase('fr');
+  const canonicalLower=canonical.toLocaleLowerCase('fr');
+  if(sourceLower.startsWith(canonicalLower))return source.slice(canonical.length).replace(/^[\s:–—-]+/,'').trim();
+  return '';
+}
 function cardDisplayTags(game) {
   const source = Array.isArray(game?.metadata_genres) && game.metadata_genres.length
     ? game.metadata_genres
@@ -309,12 +318,148 @@ function syncGameHash(id){const hash=`#game=${encodeURIComponent(id)}`;if(window
 function clearGameHash(){if(gameHashId())history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}`);}
 
 function collectionButton(label,list,gameId){const b=document.createElement('button');b.type='button';b.className='dialog-action';const refresh=()=>{const on=state.library[list].has(gameId);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.textContent=`${on?'✓ ':''}${label}`;};refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(list==='favorites')renderCatalog();});return b;}
+
+function appendInitialIdentityFact(meta,label,value){
+  if(!value)return;
+  const box=document.createElement('span');
+  const small=document.createElement('small');
+  small.textContent=label;
+  const strong=document.createElement('strong');
+  strong.textContent=value;
+  box.append(small,strong);
+  meta.append(box);
+}
+
+function buildInitialCoverIdentity(cover,game){
+  const card=document.createElement('div');
+  card.className='cover-details cover-details-initial';
+
+  const meta=document.createElement('div');
+  meta.className='cover-details-meta';
+  appendInitialIdentityFact(meta,'Publié',formatDate(game.post_date));
+  if(game.game_release_date)appendInitialIdentityFact(meta,'Sortie du jeu',formatDate(game.game_release_date));
+  if(game.repack_size&&game.repack_size!=='N/A')appendInitialIdentityFact(meta,'Taille repack',game.repack_size);
+  card.append(meta);
+
+  const tags=cardDisplayTags(game);
+  if(tags.length){
+    const tagBox=document.createElement('div');
+    tagBox.className='cover-tags';
+    tags.slice(0,4).forEach(tag=>tagBox.append(pill(tag)));
+    card.append(tagBox);
+  }
+
+  const title=document.createElement('h2');
+  title.className='cover-game-title';
+  title.textContent=cardDisplayTitle(game)||game.title;
+  card.append(title);
+
+  const edition=cardEditionLabel(game);
+  if(edition){
+    const subtitle=document.createElement('p');
+    subtitle.className='cover-game-version cover-edition-title';
+    subtitle.textContent=edition;
+    card.append(subtitle);
+  }
+
+  cover.append(card);
+}
+
+function buildDetailLoadingShell(){
+  const shell=document.createElement('div');
+  shell.className='detail-loading-shell';
+  shell.setAttribute('aria-busy','true');
+  shell.setAttribute('aria-label','Chargement de la fiche');
+  for(const cls of ['detail-loading-tabs','detail-loading-copy','detail-loading-media']){
+    const block=document.createElement('div');
+    block.className=cls;
+    shell.append(block);
+  }
+  return shell;
+}
+
 function openDialog(game,{syncUrl=true}={}){
-  const first=!els.dialog.open;if(first){state.dialogOpener=document.activeElement instanceof HTMLElement?document.activeElement:null;lockCatalogScroll();}state.dialogGameId=game.id;
-  const layout=document.createElement('div');layout.className='dialog-layout';layout.dataset.gameId=game.id;layout.dataset.detailPath=game.detail_path||'';const cover=document.createElement('div');cover.className='dialog-cover';if(game.image_url){const img=document.createElement('img');img.src=game.image_url;img.alt='';img.referrerPolicy='no-referrer';img.addEventListener('error',()=>img.remove(),{once:true});cover.append(img);}
-  const info=document.createElement('div');info.className='dialog-info';const title=document.createElement('h2');title.textContent=game.title;info.append(title);const meta=document.createElement('div');meta.className='dialog-meta';const date=document.createElement('span');date.textContent=formatDate(game.post_date);meta.append(date);if(game.repack_size&&game.repack_size!=='N/A'){const size=document.createElement('span');size.textContent=`Taille : ${game.repack_size}`;meta.append(size);}info.append(meta);const tags=getTags(game);if(tags.length){const box=document.createElement('div');box.className='dialog-genres';tags.forEach(t=>box.append(pill(t)));info.append(box);}
-  const actions=document.createElement('div');actions.className='dialog-actions';actions.append(collectionButton('Favori','favorites',game.id),collectionButton('À jouer','backlog',game.id),collectionButton('Terminé','completed',game.id));const share=document.createElement('button');share.type='button';share.className='dialog-action';share.textContent='Partager';share.addEventListener('click',async()=>{const url=`${location.origin}${location.pathname}#game=${encodeURIComponent(game.id)}`;try{await navigator.clipboard.writeText(url);share.textContent='Lien copié ✓';setTimeout(()=>share.textContent='Partager',1500);}catch{prompt('Copier ce lien :',url);}});actions.append(share);info.append(actions);
-  const source=game.source_url||'';if(source){const link=document.createElement('a');link.className='source-link';link.href=source;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Voir la page source ↗';info.append(link);}const detailStatus=document.createElement('p');detailStatus.className='dialog-note';detailStatus.dataset.detailStatus='loading';detailStatus.textContent=(game.details_ready||game.metadata_ready)?'Chargement de la fiche détaillée…':'Fiche détaillée en cours d’enrichissement.';info.append(detailStatus);layout.append(cover,info);els.dialogContent.replaceChildren(layout);if(first)els.dialog.showModal();if(syncUrl)syncGameHash(game.id);document.dispatchEvent(new CustomEvent('fitboy:game-open',{detail:{gameId:game.id,detailPath:game.detail_path||''}}));
+  const first=!els.dialog.open;
+  if(first){
+    state.dialogOpener=document.activeElement instanceof HTMLElement?document.activeElement:null;
+    lockCatalogScroll();
+  }
+  state.dialogGameId=game.id;
+
+  const layout=document.createElement('div');
+  layout.className='dialog-layout rich-details dialog-loading';
+  layout.dataset.gameId=game.id;
+  layout.dataset.detailPath=game.detail_path||'';
+
+  const cover=document.createElement('div');
+  cover.className='dialog-cover';
+
+  if(game.image_url){
+    const img=document.createElement('img');
+    img.src=game.image_url;
+    img.alt=`Jaquette de ${cardDisplayTitle(game)||game.title}`;
+    img.loading='eager';
+    img.referrerPolicy='no-referrer';
+    img.addEventListener('error',()=>img.remove(),{once:true});
+    cover.append(img);
+  }
+
+  buildInitialCoverIdentity(cover,game);
+
+  const actions=document.createElement('div');
+  actions.className='dialog-actions';
+  actions.append(
+    collectionButton('Favori','favorites',game.id),
+    collectionButton('À jouer','backlog',game.id),
+    collectionButton('Terminé','completed',game.id),
+  );
+
+  const share=document.createElement('button');
+  share.type='button';
+  share.className='dialog-action';
+  share.textContent='Partager';
+  share.addEventListener('click',async()=>{
+    const url=`${location.origin}${location.pathname}#game=${encodeURIComponent(game.id)}`;
+    try{
+      await navigator.clipboard.writeText(url);
+      share.textContent='Lien copié ✓';
+      setTimeout(()=>share.textContent='Partager',1500);
+    }catch{
+      prompt('Copier ce lien :',url);
+    }
+  });
+  actions.append(share);
+  cover.append(actions);
+
+  const source=game.source_url||'';
+  if(source){
+    const link=document.createElement('a');
+    link.className='source-link';
+    link.href=source;
+    link.target='_blank';
+    link.rel='noopener noreferrer';
+    link.textContent='Voir la page source ↗';
+    cover.append(link);
+  }
+
+  const info=document.createElement('div');
+  info.className='dialog-info';
+  info.append(buildDetailLoadingShell());
+
+  const detailStatus=document.createElement('p');
+  detailStatus.className='dialog-note sr-only';
+  detailStatus.dataset.detailStatus='loading';
+  detailStatus.textContent=(game.details_ready||game.metadata_ready)?'Chargement de la fiche détaillée…':'Fiche détaillée en cours d’enrichissement.';
+  info.append(detailStatus);
+
+  layout.append(cover,info);
+  els.dialogContent.replaceChildren(layout);
+  if(first)els.dialog.showModal();
+  if(syncUrl)syncGameHash(game.id);
+
+  document.dispatchEvent(new CustomEvent('fitboy:game-open',{
+    detail:{gameId:game.id,detailPath:game.detail_path||''}
+  }));
 }
 function isLightboxOpen(){const box=els.dialog.querySelector('.media-lightbox');return Boolean(box&&!box.hidden);}
 function navigateDialog(delta){if(!els.dialog.open||isLightboxOpen()||state.filtered.length<2)return;const current=state.filtered.findIndex(g=>g.id===state.dialogGameId);if(current<0)return;openDialog(state.filtered[(current+delta+state.filtered.length)%state.filtered.length],{syncUrl:true});}

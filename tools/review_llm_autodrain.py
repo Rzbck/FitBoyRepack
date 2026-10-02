@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import fcntl
+import json
 import os
 import re
 import sqlite3
@@ -204,6 +205,59 @@ def validate_decision(raw: dict[str, Any], allowed_ids: set[str]) -> tuple[str |
         reason_value = raw.get("rationale")
     reason = re.sub(r"\s+", " ", str(reason_value or "")).strip()[:600]
     return candidate_id, confidence, reason
+
+
+def parse_decision_response(text: str, allowed_ids: set[str]) -> tuple[str | None, float, str]:
+    value = text.strip()
+    if not value:
+        raise ValueError("LLM response is empty")
+
+    unfenced = re.sub(r"^\x60\x60\x60(?:json)?\s*", "", value, flags=re.I)
+    unfenced = re.sub(r"\s*\x60\x60\x60$", "", unfenced)
+
+    parsed: Any = None
+    try:
+        parsed = json.loads(unfenced)
+    except json.JSONDecodeError:
+        start = unfenced.find("{")
+        end = unfenced.rfind("}")
+        if start >= 0 and end > start:
+            try:
+                parsed = json.loads(unfenced[start : end + 1])
+            except json.JSONDecodeError:
+                parsed = None
+
+    if isinstance(parsed, dict):
+        return validate_decision(parsed, allowed_ids)
+
+    compact = re.sub(r"\s+", " ", unfenced).strip()
+    qids = {
+        match.upper()
+        for match in re.findall(r"\bQ\d+\b", compact, flags=re.I)
+        if match.upper() in {item.upper() for item in allowed_ids}
+    }
+    if len(qids) > 1:
+        raise ValueError("LLM text response mentions multiple supplied candidates")
+
+    candidate_id: str | None
+    if len(qids) == 1:
+        by_upper = {item.upper(): item for item in allowed_ids}
+        candidate_id = by_upper[next(iter(qids))]
+    elif re.search(r"\b(?:candidate(?:_id)?\s*[:=]?\s*)?(?:null|none|unknown|n/a)\b", compact, flags=re.I):
+        candidate_id = None
+    else:
+        raise ValueError("LLM text response contains no usable supplied candidate")
+
+    confidence_match = re.search(
+        r"\bconfidence(?:_score)?\s*[:=]?\s*(\d+(?:[.,]\d+)?\s*%?)",
+        compact,
+        flags=re.I,
+    )
+    if confidence_match is None:
+        raise ValueError("LLM text response is missing explicit confidence")
+    confidence = _normalize_confidence(confidence_match.group(1))
+
+    return candidate_id, confidence, compact[:600]
 
 
 def record_state(
@@ -419,13 +473,16 @@ def run_reviews(
         system, prompt = build_decision_prompt(game, candidates)
         try:
             llm_calls += 1
-            raw = llm.chat_json(
+            response_text = llm.chat(
                 prompt,
                 system=system,
                 temperature=0.0,
                 max_tokens=240,
             )
-            candidate_id, confidence, reason = validate_decision(raw, set(allowed))
+            candidate_id, confidence, reason = parse_decision_response(
+                response_text,
+                set(allowed),
+            )
             if candidate_id is not None and confidence >= confidence_threshold:
                 candidate = allowed[candidate_id]
                 store_resolved_match(

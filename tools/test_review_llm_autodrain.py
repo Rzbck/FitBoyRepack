@@ -13,11 +13,12 @@ class FakeLLM:
         self.responses = list(responses)
         self.calls = 0
 
-    def chat_json(self, *_args, **_kwargs):
+    def chat(self, *_args, **_kwargs):
         self.calls += 1
         if not self.responses:
             raise AssertionError("unexpected LLM call")
-        return self.responses.pop(0)
+        value = self.responses.pop(0)
+        return json.dumps(value) if isinstance(value, dict) else str(value)
 
 
 def candidate(qid: str, label: str) -> dict:

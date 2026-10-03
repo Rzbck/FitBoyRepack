@@ -26,6 +26,8 @@ jobs:
       - run: python tools/validate_catalog.py
       - run: python tools/build_site_data.py
       - run: PYTHONPATH=tools python tools/test_public_metadata_export.py
+      - run: PYTHONPATH=tools python tools/test_translation_pipeline.py
+      - run: bash -n ops/fitboy/install_translation_runtime.sh
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'
@@ -254,7 +256,7 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/catalog_classifier.py tools/check_catalog_classification.py tools/test_catalog_classifier.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/export_public_metadata.py tools/publish_public_metadata.py tools/test_public_metadata_export.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py tools/llm_client.py tools/test_llm_client.py tools/ai_catalog_bootstrap.py tools/test_ai_catalog_bootstrap.py tools/fast_metadata_bootstrap.py tools/test_fast_metadata_bootstrap.py
+      - run: python -m py_compile tools/update_catalog.py tools/catalog_classifier.py tools/check_catalog_classification.py tools/test_catalog_classifier.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/export_public_metadata.py tools/publish_public_metadata.py tools/test_public_metadata_export.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py tools/llm_client.py tools/test_llm_client.py tools/ai_catalog_bootstrap.py tools/test_ai_catalog_bootstrap.py tools/fast_metadata_bootstrap.py tools/test_fast_metadata_bootstrap.py tools/translation_autodrain.py tools/export_public_translations.py tools/publish_public_translations.py tools/test_translation_pipeline.py
 
   security-boundary:
     name: Robot · forbidden-link guard

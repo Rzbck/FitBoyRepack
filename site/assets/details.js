@@ -532,21 +532,46 @@ function currentMediaItems() {
   return result;
 }
 
-function enhanceDialog(game, gameId) {
+async function localizedGameForCurrentLanguage(game) {
+  if (currentLanguage() !== 'fr') return game;
+  try {
+    const payload = await loadTranslationsFrPayload();
+    return await localizeGameProse(game, payload, 'fr');
+  } catch (error) {
+    console.debug('French translations unavailable; using English source', error);
+    return game;
+  }
+}
+
+function refreshLocalizedChrome(info) {
+  const gallery = info?.querySelector('.dialog-media');
+  const galleryTitle = gallery?.querySelector('.dialog-subheading h3');
+  if (galleryTitle) galleryTitle.textContent = t('detail.gallery');
+  const count = gallery?.querySelector('.dialog-subheading span');
+  const mediaCount = gallery?.querySelectorAll('.media-item').length || 0;
+  if (count && mediaCount >= 0) count.textContent = mediaCountLabel(mediaCount);
+  applyTranslations(info || document);
+  if (!dialog.querySelector('.media-lightbox')?.hidden) updateLightbox();
+}
+function enhanceDialog(game, gameId, { refresh = false } = {}) {
   const layout = currentLayout(gameId);
   const info = layout?.querySelector('.dialog-info');
-  if (!layout || !info || layout.dataset.enhanced === 'true') return;
+  if (!layout || !info) return;
+
+  if (layout.dataset.enhanced === 'true' && refresh) {
+    renderDescriptionTabs(info, game, { replace:true });
+    refreshLocalizedChrome(info);
+    applyTranslations(layout);
+    return;
+  }
+  if (layout.dataset.enhanced === 'true') return;
 
   if (!hasRenderableDetails(game)) {
     layout.classList.remove('dialog-loading');
     info.querySelector('.detail-loading-shell')?.remove();
     const status = info.querySelector('[data-detail-status]');
     status?.classList.remove('sr-only');
-    setDetailStatus(
-      info,
-      'Aucun détail enrichi disponible pour cette fiche pour le moment.',
-      'empty',
-    );
+    setDetailStatus(info, t('detail.noDetails'), 'empty');
     return;
   }
 
@@ -557,9 +582,11 @@ function enhanceDialog(game, gameId) {
   renderDescriptionTabs(info, game);
   renderMediaGallery(info, game);
   renderGameplayPreview(info, game);
+  refreshLocalizedChrome(info);
+  applyTranslations(layout);
 }
 
-async function loadDetailsForOpenGame(gameId, detailPath) {
+async function loadDetailsForOpenGame(gameId, detailPath, { refresh = false } = {}) {
   const requestId = ++detailRequestId;
   if (!detailPath) {
     const layout = currentLayout(gameId);
@@ -568,14 +595,18 @@ async function loadDetailsForOpenGame(gameId, detailPath) {
     info?.querySelector('.detail-loading-shell')?.remove();
     const status = info?.querySelector('[data-detail-status]');
     status?.classList.remove('sr-only');
-    setDetailStatus(info, 'Fiche détaillée indisponible pour cette entrée.', 'missing');
+    setDetailStatus(info, t('detail.missing'), 'missing');
     return;
   }
 
   try {
-    const game = await loadGameDetail(detailPath);
+    const sourceGame = await loadGameDetail(detailPath);
     if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
-    enhanceDialog(game, gameId);
+    currentSourceGame = sourceGame;
+    currentSourceGameId = String(gameId);
+    const game = await localizedGameForCurrentLanguage(sourceGame);
+    if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
+    enhanceDialog(game, gameId, { refresh });
   } catch (error) {
     if (requestId !== detailRequestId || !currentLayout(gameId)) return;
     console.error('Game details unavailable', error);
@@ -587,7 +618,7 @@ async function loadDetailsForOpenGame(gameId, detailPath) {
     if (status) {
       status.classList.remove('sr-only');
       status.dataset.detailStatus = 'error';
-      status.textContent = 'La fiche détaillée est momentanément indisponible.';
+      status.textContent = t('detail.error');
     }
   }
 }

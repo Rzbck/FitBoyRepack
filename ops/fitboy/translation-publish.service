@@ -1,0 +1,35 @@
+[Unit]
+Description=FitBoyRepack sanitized French translation publisher
+After=network-online.target translation-autodrain.service
+Wants=network-online.target
+ConditionPathExists=/var/lib/fitboy/translation/translations.sqlite3
+
+[Service]
+Type=oneshot
+User=fitboy
+Group=fitboy
+WorkingDirectory=/opt/FitBoyRepack
+Environment=HOME=/var/lib/fitboy
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+EnvironmentFile=/etc/fitboy/metadata-publisher.env
+
+ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/export_public_translations.py --db /var/lib/fitboy/translation/translations.sqlite3 --output /var/lib/fitboy/translation/translations-fr.json
+ExecStart=/opt/FitBoyRepack/.venv/bin/python -u tools/publish_public_translations.py --input /var/lib/fitboy/translation/translations-fr.json --repository Rzbck/FitBoyRepack --path site/data/translations-fr.json --branch main
+
+Nice=19
+CPUQuota=20%
+CPUWeight=10
+MemoryMax=256M
+IOSchedulingClass=idle
+IOWeight=10
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/fitboy/translation
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

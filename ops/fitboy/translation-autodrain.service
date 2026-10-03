@@ -1,0 +1,47 @@
+[Unit]
+Description=FitBoyRepack background French translation worker
+After=network-online.target metadata-autodrain.service review-llm.service
+Wants=network-online.target
+ConditionPathExists=/opt/fitboy-translation/.venv/bin/python
+ConditionPathExists=/var/lib/fitboy/translation/model-int8/model.bin
+ConditionPathExists=/var/lib/fitboy/translation/tokenizer/tokenizer_config.json
+
+[Service]
+Type=oneshot
+User=fitboy
+Group=fitboy
+WorkingDirectory=/opt/FitBoyRepack
+Environment=HOME=/var/lib/fitboy
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONPATH=/opt/FitBoyRepack/tools
+Environment=HF_HUB_OFFLINE=1
+Environment=TRANSFORMERS_OFFLINE=1
+Environment=TOKENIZERS_PARALLELISM=false
+Environment=OMP_NUM_THREADS=1
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=MKL_NUM_THREADS=1
+Environment=NUMEXPR_NUM_THREADS=1
+
+ExecStart=/opt/fitboy-translation/.venv/bin/python -u tools/translation_autodrain.py --catalog /opt/FitBoyRepack/site/data/games.json --metadata /opt/FitBoyRepack/site/data/metadata-enrichment.json --db /var/lib/fitboy/translation/translations.sqlite3 --model /var/lib/fitboy/translation/model-int8 --tokenizer /var/lib/fitboy/translation/tokenizer --limit 24 --max-error-attempts 3
+
+TimeoutStartSec=30min
+Nice=19
+CPUQuota=60%
+CPUWeight=10
+MemoryHigh=1200M
+MemoryMax=1500M
+OOMScoreAdjust=700
+IOSchedulingClass=idle
+IOWeight=10
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/fitboy/translation
+RestrictAddressFamilies=AF_UNIX
+IPAddressDeny=any
+
+[Install]
+WantedBy=multi-user.target

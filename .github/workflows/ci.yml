@@ -184,6 +184,46 @@ jobs:
           PY
       - name: Build deploy-shaped site data
         run: python tools/build_site_data.py
+      - name: Seed a verified French translation for browser contract
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib, json, re
+          from pathlib import Path
+
+          catalog=json.load(open('site/data/catalog.json',encoding='utf-8'))
+          root=Path('site')
+          chosen=None
+          for item in catalog['games']:
+              detail=json.load(open(root/item['detail_path'],encoding='utf-8'))
+              details=detail.get('details') if isinstance(detail.get('details'),dict) else {}
+              source=re.sub(r'\s+',' ',str(details.get('description') or '')).strip()
+              if source:
+                  chosen=(str(item['id']),source)
+                  break
+          assert chosen, 'no description available for translation browser contract'
+          game_id,source=chosen
+          digest=hashlib.sha256(source.encode('utf-8')).hexdigest()
+          payload={
+              'translation_version':1,
+              'language':'fr',
+              'model':'CI',
+              'worker_version':1,
+              'generated_at':'2026-10-03T10:00:00+00:00',
+              'count':1,
+              'field_count':1,
+              'games':{
+                  game_id:{
+                      'description':{
+                          'source_sha256':digest,
+                          'text':'TRADUCTION FRANÇAISE CI — description vérifiée.'
+                      }
+                  }
+              }
+          }
+          Path('site/data/translations-fr.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+          print('translation browser fixture',game_id)
+          PY
       - name: Boot site in headless Chrome and require V2 UI + deep link
         shell: bash
         run: |

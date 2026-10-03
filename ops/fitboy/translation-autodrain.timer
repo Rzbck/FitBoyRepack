@@ -3,8 +3,8 @@ Description=Schedule FitBoyRepack background French translation
 
 [Timer]
 OnBootSec=40min
-OnUnitInactiveSec=45min
-RandomizedDelaySec=5min
+OnUnitInactiveSec=5min
+RandomizedDelaySec=60
 Persistent=true
 Unit=translation-autodrain.service
 

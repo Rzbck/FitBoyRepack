@@ -82,10 +82,7 @@ function effectiveTags(game) {
   return effectiveGenreLabels(game);
 }
 function cardDisplayTitle(game) {
-  return identityDisplayTitle(game);
-}
-function cardEditionLabel(game) {
-  return identityEditionTitle(game);
+  return String(game?.canonical_title || game?.title || '').trim();
 }
 function cardDisplayTags(game) {
   return effectiveGenreLabels(game);
@@ -359,10 +356,10 @@ function buildInitialCoverIdentity(cover,game){
 
   const title=document.createElement('h2');
   title.className='cover-game-title';
-  title.textContent=cardDisplayTitle(game)||game.title;
+  title.textContent=identityDisplayTitle(game)||game.title;
   card.append(title);
 
-  const edition=cardEditionLabel(game);
+  const edition=identityEditionTitle(game);
   if(edition){
     const subtitle=document.createElement('p');
     subtitle.className='cover-game-version cover-edition-title';
@@ -405,7 +402,7 @@ function openDialog(game,{syncUrl=true}={}){
   if(game.image_url){
     const img=document.createElement('img');
     img.src=game.image_url;
-    img.alt=`Jaquette de ${cardDisplayTitle(game)||game.title}`;
+    img.alt=`Jaquette de ${identityDisplayTitle(game)||game.title}`;
     img.loading='eager';
     img.referrerPolicy='no-referrer';
     img.addEventListener('error',()=>img.remove(),{once:true});

@@ -44,7 +44,14 @@
 }
 
 .game-dialog .dialog-layout.rich-details .detail-tab-nav{
-  padding-right:72px!important;
+  padding:5px!important;
+  overflow:hidden;
+}
+
+.game-dialog .dialog-layout.rich-details .detail-tab-btn{
+  flex:1 1 0;
+  min-width:0;
+  text-align:center;
 }
 
 @media(max-width:900px){
@@ -54,7 +61,7 @@
     width:40px;
     height:40px;
   }
-  .game-dialog .dialog-layout.rich-details .detail-tab-nav{padding-right:64px!important}
+  .game-dialog .dialog-layout.rich-details .detail-tab-nav{padding:5px!important}
 }
 
 @media(max-width:620px){

@@ -42,7 +42,7 @@ python tools/ai_catalog_bootstrap.py --retry-failed --run --limit 0 --status --d
 python tools/ai_catalog_bootstrap.py --retry-review --run --limit 0 --status --db /var/lib/fitboy/ai/catalog_enrichment.sqlite3
 ```
 
-The worker uses Wikidata and English Wikipedia over HTTPS with no account/API key. Python retrieves compact evidence; the local LLM matches the game, normalizes metadata and translates the existing source description into French without inventing unsupported facts.
+The metadata worker uses Wikidata and English Wikipedia over HTTPS with no account/API key. Python retrieves compact evidence and the local LLM is used only to resolve ambiguous game identity from supplied candidates. French prose translation is handled separately by the dedicated translation worker below.
 
 
 ## Publication des métadonnées vérifiées vers le front
@@ -102,3 +102,64 @@ sudo systemctl enable --now metadata-publish.timer
 Le publisher compare le snapshot distant avant d'écrire. S'il n'y a aucun changement, aucun commit
 n'est créé et GitHub Pages n'est pas redéployé inutilement. En cas de changement, la mise à jour de
 `site/data/metadata-enrichment.json` déclenche automatiquement le workflow Pages.
+
+
+## Traduction française automatique
+
+La traduction est indépendante du LLM générique. Elle utilise le modèle spécialisé
+`Helsinki-NLP/opus-mt-tc-big-en-fr` converti en CTranslate2 INT8 et exécuté uniquement
+sur CPU, en tâche de fond.
+
+Le worker `translation-autodrain.service` :
+
+- traduit uniquement `details.description` et `details.game_features` ;
+- ne traduit jamais `repack_features`, les URLs source ou des données de téléchargement ;
+- conserve l'anglais d'origine intact dans `games.json` ;
+- met en cache chaque champ par empreinte SHA-256 dans
+  `/var/lib/fitboy/translation/translations.sqlite3` ;
+- ne recharge pas le modèle lorsqu'il n'y a aucun travail en attente ;
+- se met en retrait si les workers metadata ou review sont déjà actifs ;
+- utilise un seul thread CTranslate2, une faible priorité CPU/IO et des limites mémoire ;
+- rejette une sortie qui échoue aux validations déterministes au lieu de publier un texte cassé.
+
+Les traductions publiques sont exportées séparément dans
+`site/data/translations-fr.json`. Le snapshot ne contient ni texte source anglais,
+ni erreurs internes, ni état de file d'attente. Le publisher est idempotent et ignore
+`generated_at` pour éviter les commits sans changement sémantique.
+
+### Installation propre du runtime
+
+Le script d'installation construit le modèle dans un espace temporaire, installe
+uniquement le runtime minimal persistant, puis supprime automatiquement les poids
+source, le venv de conversion et le cache Hugging Face :
+
+```bash
+sudo bash ops/fitboy/install_translation_runtime.sh
+```
+
+Les seuls éléments persistants sont :
+
+```text
+/opt/fitboy-translation/.venv
+/var/lib/fitboy/translation/model-int8
+/var/lib/fitboy/translation/tokenizer
+/var/lib/fitboy/translation/translations.sqlite3
+```
+
+Le script installe et active aussi `translation-autodrain.timer` et
+`translation-publish.timer`. Le publisher réutilise le même fichier secret local
+`/etc/fitboy/metadata-publisher.env`; aucun nouveau token n'est créé ou committé.
+
+Commandes utiles :
+
+```bash
+systemctl status translation-autodrain.timer translation-publish.timer
+journalctl -u translation-autodrain.service -n 100 --no-pager
+journalctl -u translation-publish.service -n 100 --no-pager
+
+# Lancer une petite activation manuelle
+sudo systemctl start translation-autodrain.service
+
+# Publier le snapshot déjà traduit
+sudo systemctl start translation-publish.service
+```

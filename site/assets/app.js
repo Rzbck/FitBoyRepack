@@ -515,9 +515,63 @@ function navigateDialog(delta){if(!els.dialog.open||isLightboxOpen()||state.filt
 function restoreCatalogPosition(){const opener=state.dialogOpener;state.dialogGameId=null;state.dialogOpener=null;clearGameHash();unlockCatalogScroll();requestAnimationFrame(()=>{try{if(opener?.isConnected)opener.focus({preventScroll:true});}catch{}});}
 function openHashGame(){const id=gameHashId();if(!id)return;const game=state.byId.get(id);if(game)openDialog(game,{syncUrl:false});}
 
-function renderHealth(health){els.healthPanel.hidden=false;els.healthBadge.hidden=false;els.healthBadge.textContent=`${health.coverage?.details||0}% fiches`;els.healthTotal.textContent=health.total_games.toLocaleString('fr-FR');els.healthDescriptions.textContent=health.with_description.toLocaleString('fr-FR');els.healthGalleries.textContent=health.with_gallery.toLocaleString('fr-FR');els.healthGifs.textContent=health.with_gif.toLocaleString('fr-FR');const when=health.generated_at?new Intl.DateTimeFormat('fr-FR',{dateStyle:'short',timeStyle:'short'}).format(new Date(health.generated_at)):'';els.healthMeta.textContent=`${health.enrichment_pending.toLocaleString('fr-FR')} fiches restent à enrichir${when?` • synchro ${when}`:''}.`;}
+function renderHealth(health){
+  els.healthPanel.hidden=false;
+  els.healthBadge.hidden=false;
+  els.healthBadge.textContent=`${health.coverage?.details||0}% ${currentLanguage()==='fr'?'fiches':'details'}`;
+  els.healthTotal.textContent=formatNumber(health.total_games);
+  els.healthDescriptions.textContent=formatNumber(health.with_description);
+  els.healthGalleries.textContent=formatNumber(health.with_gallery);
+  els.healthGifs.textContent=formatNumber(health.with_gif);
+  const when=health.generated_at?formatDateValue(health.generated_at,{dateStyle:'short',timeStyle:'short'}):'';
+  const sync=when?t('health.sync',{value:when}):'';
+  els.healthMeta.textContent=t('health.remaining',{count:formatNumber(health.enrichment_pending),sync});
+}
 
-async function loadCatalog(){try{const payload=await loadCatalogPayload();state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);state.byId=new Map(state.games.map(g=>[g.id,g]));const generated=payload.generated_at;els.status.textContent=generated?`Mis à jour ${new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeStyle:'short'}).format(new Date(generated))}`:`${state.games.length.toLocaleString('fr-FR')} jeux`;populateYears();buildTagIndex();updateLibraryUI();applyFilters();renderHighlights();renderRecommendations();openHashGame();loadSearchIndexPayload().then(index=>{if(index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);state.searchIndex=index;if(els.search.value.trim())applyFilters();}).catch(e=>console.warn('Search index unavailable, using full scan',e));loadHealthPayload().then(renderHealth).catch(e=>console.warn('Health unavailable',e));}catch(error){console.error(error);els.status.textContent='Catalogue indisponible';els.empty.hidden=false;els.empty.querySelector('strong').textContent='Impossible de charger le catalogue';}}
+let lastCatalogPayload=null;
+let lastHealthPayload=null;
+async function loadCatalog(){
+  try{
+    const payload=await loadCatalogPayload();
+    lastCatalogPayload=payload;
+    state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);
+    state.byId=new Map(state.games.map(g=>[g.id,g]));
+    const generated=payload.generated_at;
+    els.status.textContent=generated
+      ?t('catalog.updated',{value:formatDateValue(generated,{dateStyle:'medium',timeStyle:'short'})})
+      :gameCountLabel(state.games.length);
+    populateYears();
+    buildTagIndex();
+    updateLibraryUI();
+    applyFilters();
+    renderHighlights();
+    renderRecommendations();
+    openHashGame();
+    loadSearchIndexPayload().then(index=>{
+      if(index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);
+      state.searchIndex=index;
+      if(els.search.value.trim())applyFilters();
+    }).catch(e=>console.warn('Search index unavailable, using full scan',e));
+    loadHealthPayload().then(health=>{lastHealthPayload=health;renderHealth(health);}).catch(e=>console.warn('Health unavailable',e));
+  }catch(error){
+    console.error(error);
+    els.status.textContent=t('catalog.unavailable');
+    els.empty.hidden=false;
+    els.empty.querySelector('strong').textContent=t('catalog.loadFailed');
+  }
+}
+
+document.addEventListener('fitboy:language-change',()=>{
+  applyTranslations(document);
+  if(lastCatalogPayload?.generated_at){
+    els.status.textContent=t('catalog.updated',{value:formatDateValue(lastCatalogPayload.generated_at,{dateStyle:'medium',timeStyle:'short'})});
+  }
+  if(lastHealthPayload)renderHealth(lastHealthPayload);
+  buildTagIndex();
+  applyFilters();
+  renderHighlights();
+  renderRecommendations();
+});
 
 els.search.addEventListener('input',()=>{clearTimeout(state.searchTimer);state.searchTimer=setTimeout(applyFilters,SEARCH_DEBOUNCE_MS);});
 els.search.addEventListener('keydown',event=>{if(!els.suggestions.hidden&&(event.key==='ArrowDown'||event.key==='ArrowUp')){event.preventDefault();stepSuggestion(event.key==='ArrowDown'?1:-1);return;}if(event.key==='Enter'&&state.suggestionIndex>=0){event.preventDefault();$$('.search-suggestion')[state.suggestionIndex]?.click();}});

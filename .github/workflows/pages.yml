@@ -109,7 +109,14 @@ jobs:
           assert h['expected_versions']['metadata']==1
           assert m['metadata_version']==1 and m['count']==len(m['games'])
           assert t['translation_version']==1 and t['language']=='fr' and t['count']==len(t['games'])
-          assert all('metadata_ready' in game for game in c['games'])
+          assert all(
+              'metadata_ready' in game
+              and 'metadata_developer' in game
+              and 'metadata_publisher' in game
+              and 'metadata_platforms' in game
+              and 'metadata_evidence_urls' in game
+              for game in c['games']
+          )
           print(c['games'][0]['detail_path'])
           PY
           )
@@ -117,6 +124,8 @@ jobs:
           grep -q 'searchSuggestions' /tmp/index.html
           grep -q 'searchCandidateIndexes' /tmp/app.js
           grep -q 'effectiveGenreLabels' /tmp/identity.js
+          grep -q 'metadata_developer' /tmp/app.js
+          grep -q 'metadata_publisher' /tmp/app.js
           grep -q 'fitboyrepack:language:v1' /tmp/i18n.js
           grep -q 'source_sha256' /tmp/translations.js
           grep -q 'translations-fr.json' /tmp/api.js

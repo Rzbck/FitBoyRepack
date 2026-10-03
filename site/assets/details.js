@@ -532,11 +532,11 @@ function currentMediaItems() {
   return result;
 }
 
-async function localizedGameForCurrentLanguage(game) {
+async function localizedGameForCurrentLanguage(game, payload = null) {
   if (currentLanguage() !== 'fr') return game;
   try {
-    const payload = await loadTranslationsFrPayload();
-    return await localizeGameProse(game, payload, 'fr');
+    const translations = payload || await loadTranslationsFrPayload();
+    return await localizeGameProse(game, translations, 'fr');
   } catch (error) {
     console.debug('French translations unavailable; using English source', error);
     return game;
@@ -600,11 +600,22 @@ async function loadDetailsForOpenGame(gameId, detailPath, { refresh = false } = 
   }
 
   try {
-    const sourceGame = await loadGameDetail(detailPath);
+    const translationPromise = currentLanguage() === 'fr'
+      ? loadTranslationsFrPayload().catch(error => {
+          console.debug('French translation snapshot unavailable; using English source', error);
+          return null;
+        })
+      : Promise.resolve(null);
+    const [sourceGame, translationPayload] = await Promise.all([
+      loadGameDetail(detailPath),
+      translationPromise,
+    ]);
     if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
     currentSourceGame = sourceGame;
     currentSourceGameId = String(gameId);
-    const game = await localizedGameForCurrentLanguage(sourceGame);
+    const game = translationPayload
+      ? await localizedGameForCurrentLanguage(sourceGame, translationPayload)
+      : sourceGame;
     if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
     enhanceDialog(game, gameId, { refresh });
   } catch (error) {

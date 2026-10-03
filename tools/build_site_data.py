@@ -142,6 +142,8 @@ def search_tokens(game):
             [
                 str(game.get("title") or ""),
                 str(metadata.get("canonical_title") or ""),
+                str(metadata.get("developer") or ""),
+                str(metadata.get("publisher") or ""),
                 str(release_year or ""),
                 *raw_tags,
                 *(display_genre(tag) for tag in raw_tags),
@@ -249,6 +251,10 @@ def main():
             "canonical_title": verified_metadata.get("canonical_title") if verified_metadata else None,
             "game_release_date": verified_metadata.get("release_date") if verified_metadata else None,
             "metadata_genres": verified_metadata.get("genres", []) if verified_metadata else [],
+            "metadata_developer": verified_metadata.get("developer") if verified_metadata else None,
+            "metadata_publisher": verified_metadata.get("publisher") if verified_metadata else None,
+            "metadata_platforms": verified_metadata.get("platforms", []) if verified_metadata else [],
+            "metadata_evidence_urls": verified_metadata.get("evidence_urls", [])[:2] if verified_metadata else [],
             "detail_updated_at": newest_iso(
                 game.get("details_checked_at"),
                 game.get("media_checked_at"),

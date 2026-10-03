@@ -628,6 +628,15 @@ document.addEventListener('fitboy:game-open', event => {
   loadDetailsForOpenGame(String(gameId || ''), detailPath || '');
 });
 
+document.addEventListener('fitboy:language-change', () => {
+  applyTranslations(document);
+  const layout = currentLayout();
+  if (!dialog.open || !layout) return;
+  const gameId = String(layout.dataset.gameId || currentSourceGameId || '');
+  const detailPath = layout.dataset.detailPath || '';
+  loadDetailsForOpenGame(gameId, detailPath, { refresh:true });
+});
+
 dialog.addEventListener('click', event => {
   const preview = event.target.closest('.gameplay-preview-button');
   if (preview) {

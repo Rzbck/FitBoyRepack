@@ -239,10 +239,71 @@ def connect_db(path: Path) -> sqlite3.Connection:
         );
         CREATE INDEX IF NOT EXISTS idx_translation_jobs_work
           ON translation_jobs(active, status, attempts, updated_at);
+        CREATE TABLE IF NOT EXISTS translation_meta (
+            key TEXT PRIMARY KEY,
+            value TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        );
         """
     )
     conn.commit()
     return conn
+
+
+def file_sha256(path: Path) -> str:
+    if not path.exists():
+        return "missing"
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def input_fingerprint(catalog_path: Path, metadata_path: Path) -> str:
+    payload = (
+        f"worker={WORKER_VERSION}\n"
+        f"catalog={file_sha256(catalog_path)}\n"
+        f"metadata={file_sha256(metadata_path)}\n"
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def meta_value(conn: sqlite3.Connection, key: str) -> str | None:
+    row = conn.execute(
+        "SELECT value FROM translation_meta WHERE key=?",
+        (key,),
+    ).fetchone()
+    return str(row["value"]) if row is not None else None
+
+
+def set_meta_value(conn: sqlite3.Connection, key: str, value: str) -> None:
+    conn.execute(
+        """
+        INSERT INTO translation_meta(key,value,updated_at)
+        VALUES(?,?,?)
+        ON CONFLICT(key) DO UPDATE SET
+          value=excluded.value,
+          updated_at=excluded.updated_at
+        """,
+        (key, value, utcnow()),
+    )
+    conn.commit()
+
+
+def recover_interrupted(conn: sqlite3.Connection) -> int:
+    cursor = conn.execute(
+        """
+        UPDATE translation_jobs
+        SET status='pending',
+            last_error='interrupted activation',
+            updated_at=?
+        WHERE status='processing'
+        """,
+        (utcnow(),),
+    )
+    conn.commit()
+    return int(cursor.rowcount or 0)
 
 
 def sync_queue(
@@ -252,11 +313,6 @@ def sync_queue(
 ) -> dict[str, int]:
     now = utcnow()
     conn.execute("UPDATE translation_jobs SET active=0")
-    # A killed oneshot cannot still own its in-process state. Retry interrupted rows.
-    conn.execute(
-        "UPDATE translation_jobs SET status='pending', last_error='interrupted activation' "
-        "WHERE status='processing'"
-    )
 
     seen = queued = changed = unchanged = 0
     for game in games:
@@ -483,7 +539,9 @@ def pending_rows(
             status='pending'
             OR (status='error' AND attempts < ?)
           )
-        ORDER BY updated_at,game_id,field_key
+        ORDER BY
+          CASE WHEN field_key='description' THEN 0 ELSE 1 END,
+          updated_at,game_id,field_key
         LIMIT ?
         """,
         (max_error_attempts, limit),
@@ -608,16 +666,27 @@ def main() -> int:
             print(f"[TRANSLATE] deferred busy_services={','.join(busy)}", flush=True)
             return 0
 
-    source_payload = load_json(args.catalog)
-    games = source_payload.get("games")
-    if not isinstance(games, list):
-        raise RuntimeError("catalog must contain games: []")
-    metadata_games = load_metadata(args.metadata)
-
     conn = connect_db(args.db)
     try:
-        stats = sync_queue(conn, games, metadata_games)
-        print("[TRANSLATE] sync=" + json.dumps(stats, separators=(",", ":")), flush=True)
+        recovered = recover_interrupted(conn)
+        if recovered:
+            print(f"[TRANSLATE] recovered_interrupted={recovered}", flush=True)
+
+        inputs = input_fingerprint(args.catalog, args.metadata)
+        previous_inputs = meta_value(conn, "inputs_fingerprint")
+
+        if previous_inputs != inputs:
+            source_payload = load_json(args.catalog)
+            games = source_payload.get("games")
+            if not isinstance(games, list):
+                raise RuntimeError("catalog must contain games: []")
+            metadata_games = load_metadata(args.metadata)
+            stats = sync_queue(conn, games, metadata_games)
+            set_meta_value(conn, "inputs_fingerprint", inputs)
+            print("[TRANSLATE] sync=" + json.dumps(stats, separators=(",", ":")), flush=True)
+        else:
+            print("[TRANSLATE] sync=skipped inputs_unchanged=yes", flush=True)
+
         print("[TRANSLATE] queue_before=" + json.dumps(queue_counts(conn), separators=(",", ":")), flush=True)
 
         rows = pending_rows(

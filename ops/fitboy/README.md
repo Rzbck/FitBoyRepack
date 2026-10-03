@@ -160,3 +160,16 @@ journalctl -u translation-publish.service -n 100 --no-pager
 sudo systemctl start translation-autodrain.service
 sudo systemctl start translation-publish.service
 ```
+
+
+### Cadence de remplissage initial
+
+Le worker vérifie sa file toutes les ~5 minutes, mais ne retraduit jamais un champ déjà
+validé et ne resynchronise le catalogue complet que lorsque le catalogue ou le snapshot
+de métadonnées a réellement changé. Les descriptions sont prioritaires sur les listes de
+features afin d'obtenir rapidement une couverture utile du catalogue.
+
+La publication GitHub des traductions est volontairement regroupée toutes les ~3 heures
+pendant le remplissage initial afin d'éviter des commits, CI et déploiements Pages inutiles
+à chaque petit lot. Une fois la file vidée, les activations deviennent quasi gratuites :
+si les entrées n'ont pas changé, le modèle reste déchargé et le worker quitte immédiatement.

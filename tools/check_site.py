@@ -52,7 +52,16 @@ assert health['total_games'] >= health['with_description'] >= 0
 assert health['total_games'] >= health['with_gallery'] >= 0
 assert health['total_games'] >= health.get('metadata_verified', 0) >= 0
 assert health.get('expected_versions', {}).get('metadata') == 1
-assert all('metadata_ready' in game and 'canonical_title' in game and 'metadata_genres' in game for game in catalog['games'])
+assert all(
+    'metadata_ready' in game
+    and 'canonical_title' in game
+    and 'metadata_genres' in game
+    and 'metadata_developer' in game
+    and 'metadata_publisher' in game
+    and 'metadata_platforms' in game
+    and 'metadata_evidence_urls' in game
+    for game in catalog['games']
+)
 assert search['search_index_version'] == 1
 assert search['count'] == catalog['count'] == len(catalog['games'])
 assert search['prefix_min'] == 2 and search['prefix_max'] >= search['prefix_min']
@@ -80,7 +89,7 @@ for ordinal,game in enumerate(catalog['games']):
         gram=token[:search['gram_size']]
         assert ordinal in search['grams'].get(gram,[]), f'missing gram posting for {game["id"]}'
 
-for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
+for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','metadata_developer','metadata_publisher','buildInitialVerifiedIdentity','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','translations-fr.json','loadSearchIndexPayload','loadHealthPayload','loadTranslationsFrPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'

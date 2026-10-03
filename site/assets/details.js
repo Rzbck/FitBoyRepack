@@ -277,24 +277,26 @@ function renderCoverDetails(layout, game) {
   info.querySelector(':scope > .dialog-genres')?.classList.add('details-moved');
 }
 
-function makeTextPanel(title, text) {
+function makeTextPanel(titleKey, text) {
   if (!text) return null;
   const panel = document.createElement('section');
   panel.className = 'detail-text-panel';
   const heading = document.createElement('h3');
-  heading.textContent = title;
+  heading.dataset.i18n = titleKey;
+  heading.textContent = t(titleKey);
   const body = document.createElement('p');
   body.textContent = text;
   panel.append(heading, body);
   return panel;
 }
 
-function makeListPanel(title, items) {
+function makeListPanel(titleKey, items) {
   if (!Array.isArray(items) || !items.length) return null;
   const panel = document.createElement('section');
   panel.className = 'detail-text-panel';
   const heading = document.createElement('h3');
-  heading.textContent = title;
+  heading.dataset.i18n = titleKey;
+  heading.textContent = t(titleKey);
   const list = document.createElement('ul');
   items.forEach(item => {
     const li = document.createElement('li');
@@ -305,13 +307,15 @@ function makeListPanel(title, items) {
   return panel;
 }
 
-function renderDescriptionTabs(info, game) {
-  if (info.querySelector('.detail-tabs')) return;
+function renderDescriptionTabs(info, game, { replace = false } = {}) {
+  const existing = info.querySelector('.detail-tabs');
+  if (existing && !replace) return;
+  existing?.remove();
   const details = game.details || {};
   const panels = [
-    ['Description', makeTextPanel('Description', details.description)],
-    ['Game Features', makeListPanel('Game Features', details.game_features)],
-    ['Repack Features', makeListPanel('Repack Features', details.repack_features)],
+    ['detail.description', makeTextPanel('detail.description', details.description)],
+    ['detail.gameFeatures', makeListPanel('detail.gameFeatures', details.game_features)],
+    ['detail.repackFeatures', makeListPanel('detail.repackFeatures', details.repack_features)],
   ].filter(([, panel]) => panel);
   if (!panels.length) return;
 
@@ -322,11 +326,12 @@ function renderDescriptionTabs(info, game) {
   const body = document.createElement('div');
   body.className = 'detail-tab-body';
 
-  panels.forEach(([label, panel], index) => {
+  panels.forEach(([labelKey, panel], index) => {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'detail-tab-btn';
-    button.textContent = label;
+    button.dataset.i18n = labelKey;
+    button.textContent = t(labelKey);
     button.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
     panel.hidden = index !== 0;
     button.addEventListener('click', () => {
@@ -342,7 +347,6 @@ function renderDescriptionTabs(info, game) {
   section.append(nav, body);
   info.prepend(section);
 }
-
 function validMedia(game) {
   if (!Array.isArray(game.media)) return [];
   return game.media
@@ -375,9 +379,10 @@ function renderMediaGallery(info, game) {
   const heading = document.createElement('div');
   heading.className = 'dialog-subheading';
   const title = document.createElement('h3');
-  title.textContent = 'Images & GIFs';
+  title.dataset.i18n = 'detail.imagesGifs';
+  title.textContent = t('detail.imagesGifs');
   const count = document.createElement('span');
-  count.textContent = `${media.length} média${media.length > 1 ? 's' : ''}`;
+  count.textContent = mediaCountLabel(media.length);
   heading.append(title, count);
 
   const grid = document.createElement('div');
@@ -391,7 +396,7 @@ function renderMediaGallery(info, game) {
 
     const img = document.createElement('img');
     img.src = item.preview_url || item.url;
-    img.alt = `Capture de ${game.title}`;
+    img.alt = currentLanguage()==='fr'?`Capture de ${game.title}`:`Screenshot of ${game.title}`;
     img.loading = 'lazy';
     img.decoding = 'async';
     img.referrerPolicy = 'no-referrer';
@@ -423,7 +428,8 @@ function renderGameplayPreview(info, game) {
   const heading = document.createElement('div');
   heading.className = 'dialog-subheading';
   const h3 = document.createElement('h3');
-  h3.textContent = 'Gameplay Preview';
+  h3.dataset.i18n = 'detail.gameplay';
+  h3.textContent = t('detail.gameplay');
   const hint = document.createElement('span');
   hint.textContent = 'GIF';
   heading.append(h3, hint);
@@ -433,7 +439,7 @@ function renderGameplayPreview(info, game) {
   button.dataset.mediaUrl = gif.url;
   const img = document.createElement('img');
   img.src = gif.preview_url || gif.url;
-  img.alt = `Gameplay de ${game.title}`;
+  img.alt = currentLanguage()==='fr'?`Gameplay de ${game.title}`:`Gameplay from ${game.title}`;
   img.loading = 'lazy';
   img.decoding = 'async';
   img.referrerPolicy = 'no-referrer';
@@ -449,7 +455,7 @@ function renderGameplayPreview(info, game) {
   });
   const count = info.querySelector('.dialog-media .dialog-subheading span');
   const remaining = info.querySelectorAll('.dialog-media .media-item').length;
-  if (count) count.textContent = `${remaining} image${remaining > 1 ? 's' : ''}`;
+  if (count) count.textContent = mediaCountLabel(remaining);
 }
 
 function ensureLightbox() {

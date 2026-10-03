@@ -10,6 +10,7 @@ html=(ROOT/'index.html').read_text(encoding='utf-8')
 app=(ROOT/'assets/app.js').read_text(encoding='utf-8')
 api=(ROOT/'assets/catalog-api.js').read_text(encoding='utf-8')
 details=(ROOT/'assets/details.js').read_text(encoding='utf-8')
+identity=(ROOT/'assets/game-identity.js').read_text(encoding='utf-8')
 v2css=(ROOT/'assets/catalog-v2.css').read_text(encoding='utf-8')
 focuscss=(ROOT/'assets/catalog-focus-v3.css').read_text(encoding='utf-8')
 
@@ -71,12 +72,14 @@ for ordinal,game in enumerate(catalog['games']):
         gram=token[:search['gram_size']]
         assert ordinal in search['grams'].get(gram,[]), f'missing gram posting for {game["id"]}'
 
-for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','cardDisplayTitle','cardDisplayTags','cleanDisplayGenre','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
+for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','cardDisplayTitle','cardDisplayTags','identityDisplayTitle','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
-for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','makeIdentityFacts','editionLabel','cleanPlatformLabel','verifiedMetadata','Sortie du jeu','Données vérifiées'):
+for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','makeIdentityFacts','identityStable','cleanPlatformLabel','verifiedMetadata','Sortie du jeu','Données vérifiées'):
     assert token in details, f'missing detail behavior: {token}'
+for token in ('displayTitle','editionTitle','effectiveGenreLabels','cleanGenreLabel','titleParts'):
+    assert token in identity, f'missing shared identity behavior: {token}'
 for token in ('.search-suggestions','.quick-filter-panel','.library-panel','.home-card-row','.dialog-actions','.filter-sidebar.mobile-open','.health-grid'):
     assert token in v2css, f'missing V2 CSS contract: {token}'
 for token in ('.compact-tag-filter','.tag-picker-dialog','.tag-picker-list','.release-period-field','max-height:none'):

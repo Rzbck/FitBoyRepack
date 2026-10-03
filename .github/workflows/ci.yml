@@ -26,6 +26,7 @@ jobs:
       - run: python tools/validate_catalog.py
       - run: python tools/build_site_data.py
       - run: PYTHONPATH=tools python tools/test_public_metadata_export.py
+      - run: PYTHONPATH=tools python tools/test_translation_pipeline.py
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'
@@ -239,7 +240,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python tools/test_llm_client.py
       - run: python tools/test_ai_catalog_bootstrap.py
-      - run: python tools/test_fast_metadata_bootstrap.py
+      - run: python tools/test_fast_metadata_bootstrap.py tools/translation_autodrain.py tools/export_public_translations.py tools/publish_public_translations.py tools/test_translation_pipeline.py
       - name: Verify reusable localhost-only service template
         run: |
           grep -q 'LLM_HOST=127.0.0.1' ops/llm/llm.env.example

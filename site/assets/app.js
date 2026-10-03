@@ -268,25 +268,53 @@ function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorit
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
 function renderCard(game,compact=false){
-  const card=els.template.content.firstElementChild.cloneNode(true), image=card.querySelector('.cover'), open=card.querySelector('.card-open'), favorite=card.querySelector('.favorite-btn'); card.dataset.gameId=game.id; if(compact)card.classList.add('compact-card');
+  const card=els.template.content.firstElementChild.cloneNode(true), image=card.querySelector('.cover'), open=card.querySelector('.card-open'), favorite=card.querySelector('.favorite-btn');
+  card.dataset.gameId=game.id;
+  if(compact)card.classList.add('compact-card');
+  applyTranslations(card);
   const displayTitle=cardDisplayTitle(game);
-  card.querySelector('.card-title').textContent=displayTitle; card.querySelector('.card-date').textContent=formatDate(game.post_date); card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
+  card.querySelector('.card-title').textContent=displayTitle;
+  card.querySelector('.card-date').textContent=formatDate(game.post_date);
+  card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
   if(displayTitle && displayTitle!==game.title) card.title=game.title;
-  if(game.image_url){image.fetchPriority='low';image.src=game.image_url;image.alt=`Illustration de ${displayTitle||game.title}`;image.addEventListener('error',()=>{image.style.display='none';},{once:true});}else image.style.display='none';
+  if(game.image_url){
+    image.fetchPriority='low'; image.src=game.image_url;
+    image.alt=currentLanguage()==='fr'?`Illustration de ${displayTitle||game.title}`:`Cover art for ${displayTitle||game.title}`;
+    image.addEventListener('error',()=>{image.style.display='none';},{once:true});
+  }else image.style.display='none';
   card.querySelector('.new-badge').hidden=!isNew(game);
   const tagRow=card.querySelector('.genre-row'), tags=cardDisplayTags(game);
   tags.slice(0,2).forEach(tag=>tagRow.append(pill(tag)));
   if(tags.length>2) tagRow.title=tags.join(' · ');
-  const active=state.library.favorites.has(game.id); favorite.classList.toggle('active',active); favorite.textContent=active?'♥':'♡'; favorite.setAttribute('aria-label',active?'Retirer des favoris':'Ajouter aux favoris'); favorite.addEventListener('click',e=>{e.stopPropagation();toggleFavorite(game.id);});
-  open.addEventListener('click',()=>openDialog(game,{syncUrl:true})); return card;
+  const active=state.library.favorites.has(game.id);
+  favorite.classList.toggle('active',active); favorite.textContent=active?'♥':'♡';
+  favorite.setAttribute('aria-label',t(active?'card.removeFavorite':'card.addFavorite'));
+  favorite.addEventListener('click',e=>{e.stopPropagation();toggleFavorite(game.id);});
+  open.addEventListener('click',()=>openDialog(game,{syncUrl:true}));
+  return card;
 }
-
 function updateCatalogMeta(){
-  const label=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`; els.count.textContent=state.filtered.length.toLocaleString('fr-FR'); els.tagResultCount.textContent=label; els.empty.hidden=state.filtered.length!==0;
-  const hasMore=state.visible<state.filtered.length; els.scrollSentinel.hidden=!hasMore; if(!hasMore)els.infiniteStatus.hidden=true;
-  const active=[]; if(els.search.value.trim())active.push(`Recherche : ${els.search.value.trim()}`); if(state.selectedTags.size)active.push(`${state.selectedTags.size} genre${state.selectedTags.size>1?'s':''}`); if(els.yearFilter.value)active.push(`Sortie ${els.yearFilter.value}`); if(els.releasePeriodFilter.value)active.push(els.releasePeriodFilter.options[els.releasePeriodFilter.selectedIndex].text); if(els.sizeFilter.value)active.push(`Taille ${els.sizeFilter.options[els.sizeFilter.selectedIndex].text}`); if(state.quick.newOnly)active.push('Ajoutés récemment'); if(state.quick.detailsOnly)active.push('Description'); if(state.quick.mediaOnly)active.push('Médias'); if(state.libraryFilter)active.push($('.library-filter[aria-pressed="true"]')?.textContent.trim()||state.libraryFilter);
-  els.activeState.hidden=!active.length; els.activeState.textContent=active.length?`${active.join(' • ')} • ${label}`:'';
-  els.favoritesToggle.classList.toggle('active',state.libraryFilter==='favorites'); els.favoritesToggle.setAttribute('aria-pressed',String(state.libraryFilter==='favorites'));
+  const label=gameCountLabel(state.filtered.length);
+  els.count.textContent=formatNumber(state.filtered.length);
+  els.tagResultCount.textContent=label;
+  els.empty.hidden=state.filtered.length!==0;
+  const hasMore=state.visible<state.filtered.length;
+  els.scrollSentinel.hidden=!hasMore;
+  if(!hasMore)els.infiniteStatus.hidden=true;
+  const active=[];
+  if(els.search.value.trim())active.push(t('filter.searchPrefix',{value:els.search.value.trim()}));
+  if(state.selectedTags.size)active.push(t(state.selectedTags.size===1?'filter.genreCount.one':'filter.genreCount.other',{count:state.selectedTags.size}));
+  if(els.yearFilter.value)active.push(t('filter.releasePrefix',{value:els.yearFilter.value}));
+  if(els.releasePeriodFilter.value)active.push(els.releasePeriodFilter.options[els.releasePeriodFilter.selectedIndex].text);
+  if(els.sizeFilter.value)active.push(t('filter.sizePrefix',{value:els.sizeFilter.options[els.sizeFilter.selectedIndex].text}));
+  if(state.quick.newOnly)active.push(t('filter.addedRecently'));
+  if(state.quick.detailsOnly)active.push(t('filter.description'));
+  if(state.quick.mediaOnly)active.push(t('filter.media'));
+  if(state.libraryFilter)active.push(t(state.libraryFilter==='favorites'?'library.favorite':state.libraryFilter==='backlog'?'library.backlog':'library.completed'));
+  els.activeState.hidden=!active.length;
+  els.activeState.textContent=active.length?`${active.join(' • ')} • ${label}`:'';
+  els.favoritesToggle.classList.toggle('active',state.libraryFilter==='favorites');
+  els.favoritesToggle.setAttribute('aria-pressed',String(state.libraryFilter==='favorites'));
 }
 function renderCatalog({append=false,start=0}={}){const end=Math.min(state.visible,state.filtered.length),fragment=document.createDocumentFragment();for(let i=start;i<end;i++)fragment.append(renderCard(state.filtered[i]));append?els.grid.append(fragment):els.grid.replaceChildren(fragment);updateCatalogMeta();}
 

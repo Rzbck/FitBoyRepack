@@ -4,6 +4,18 @@ import {
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
 } from './game-identity.js';
+import {
+  applyTranslations,
+  currentLanguage,
+  formatDateValue,
+  formatNumber,
+  gameCountLabel,
+  initI18n,
+  locale,
+  t,
+} from './i18n.js';
+
+initI18n();
 
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
@@ -89,7 +101,7 @@ function cardDisplayTags(game) {
 }
 function gameDate(game) { const t=Date.parse(game.post_date||''); return Number.isFinite(t)?t:0; }
 function releaseDate(game) { const t=Date.parse(game.game_release_date||''); return Number.isFinite(t)?t:0; }
-function formatDate(value) { const t=Date.parse(value||''); return Number.isFinite(t)?new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',year:'numeric'}).format(t):'Date inconnue'; }
+function formatDate(value) { return formatDateValue(value) || (currentLanguage()==='fr'?'Date inconnue':'Unknown date'); }
 function isNew(game, days=14) { const t=gameDate(game); return Boolean(t && Date.now()-t < days*86400000); }
 function startOfLocalWeek(time=Date.now()) {
   const date=new Date(time);
@@ -202,8 +214,8 @@ function applyFilters() {
     if (sort==='release_desc') return releaseDate(b)-releaseDate(a) || gameDate(b)-gameDate(a);
     if (sort==='release_asc') return releaseDate(a)-releaseDate(b) || gameDate(a)-gameDate(b);
     if (sort==='date_asc') return gameDate(a)-gameDate(b);
-    if (sort==='name_asc') return cardDisplayTitle(a).localeCompare(cardDisplayTitle(b),'fr',{sensitivity:'base'});
-    if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),'fr',{sensitivity:'base'});
+    if (sort==='name_asc') return cardDisplayTitle(a).localeCompare(cardDisplayTitle(b),locale(),{sensitivity:'base'});
+    if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),locale(),{sensitivity:'base'});
     return gameDate(b)-gameDate(a);
   });
   state.visible=Math.min(PAGE_SIZE,state.filtered.length); state.loadingMore=false;
@@ -218,9 +230,9 @@ function buildTagIndex() {
   }
   state.tagCounts=counts;
   const fragment=document.createDocumentFragment();
-  [...canonical.entries()].map(([key,label])=>({key,label,count:counts.get(key)||0})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,'fr')).forEach(tag=>{
+  [...canonical.entries()].map(([key,label])=>({key,label,count:counts.get(key)||0})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,locale(),{sensitivity:'base'})).forEach(tag=>{
     const button=document.createElement('button'); button.type='button'; button.className='tag-chip'; button.dataset.tagKey=tag.key; button.dataset.tagLabel=tag.label;
-    const label=document.createElement('span'); label.textContent=tag.label; const count=document.createElement('small'); count.textContent=tag.count.toLocaleString('fr-FR'); button.append(label,count);
+    const label=document.createElement('span'); label.textContent=tag.label; const count=document.createElement('small'); count.textContent=formatNumber(tag.count); button.append(label,count);
     button.addEventListener('click',()=>{ state.selectedTags.has(tag.key)?state.selectedTags.delete(tag.key):state.selectedTags.add(tag.key); updateTagUI(); applyFilters(); });
     fragment.append(button);
   });
@@ -245,9 +257,9 @@ function updateTagFacets() {
   const searchTag=normalized(els.tagSearch.value);
   els.tagList.querySelectorAll('.tag-chip').forEach(btn=>{
     const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0), visibleBySearch=active||!searchTag||normalized(btn.dataset.tagLabel).includes(searchTag);
-    btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=next.toLocaleString('fr-FR');
+    btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=formatNumber(next);
   });
-  els.tagResultCount.textContent=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`;
+  els.tagResultCount.textContent=gameCountLabel(state.filtered.length);
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}

@@ -57,11 +57,14 @@ jobs:
       - run: python tools/build_site_data.py
       - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/game-identity.js
+      - run: node --check site/assets/i18n.js
+      - run: node --check site/assets/translations.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: node --check site/assets/media-preview-v7.js
       - run: python tools/check_site.py
+      - run: node tools/test_frontend_i18n.mjs
       - name: Verify stable game identity semantics
         shell: bash
         run: |

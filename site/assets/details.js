@@ -1,9 +1,17 @@
-import { loadGameDetail } from './catalog-api.js';
+import { loadGameDetail, loadTranslationsFrPayload } from './catalog-api.js';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
 } from './game-identity.js';
+import {
+  applyTranslations,
+  currentLanguage,
+  formatDateValue,
+  mediaCountLabel,
+  t,
+} from './i18n.js';
+import { localizeGameProse } from './translations.js';
 
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');
@@ -11,6 +19,8 @@ const dialogContent = document.querySelector('#dialogContent');
 let lightboxItems = [];
 let lightboxIndex = 0;
 let detailRequestId = 0;
+let currentSourceGame = null;
+let currentSourceGameId = '';
 
 function normalizedUrl(value = '') {
   try {
@@ -30,10 +40,7 @@ function createPill(text) {
 }
 
 function formatDate(value) {
-  const time = Date.parse(value || '');
-  return Number.isFinite(time)
-    ? new Intl.DateTimeFormat('fr-FR', { day:'2-digit', month:'short', year:'numeric' }).format(time)
-    : 'Date inconnue';
+  return formatDateValue(value) || (currentLanguage()==='fr'?'Date inconnue':'Unknown date');
 }
 
 function verifiedMetadata(game) {

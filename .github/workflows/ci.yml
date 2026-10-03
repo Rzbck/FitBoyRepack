@@ -56,11 +56,63 @@ jobs:
           node-version: '22'
       - run: python tools/build_site_data.py
       - run: node --check site/assets/catalog-api.js
+      - run: node --check site/assets/game-identity.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: node --check site/assets/media-preview-v7.js
       - run: python tools/check_site.py
+      - name: Verify stable game identity semantics
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import {
+            displayTitle,
+            editionTitle,
+            effectiveGenreLabels,
+          } from './site/assets/game-identity.js';
+
+          const lightLegacy = {
+            title: 'Eastern Era – v1.2.0',
+            genres: ['Action', 'RPG'],
+          };
+          const detailLegacy = {
+            title: 'Eastern Era – v1.2.0',
+            genres: ['Action', 'RPG'],
+            details: { description: 'Example' },
+          };
+          assert.equal(displayTitle(lightLegacy), 'Eastern Era');
+          assert.equal(displayTitle(detailLegacy), 'Eastern Era');
+          assert.equal(editionTitle(lightLegacy), 'v1.2.0');
+          assert.equal(editionTitle(detailLegacy), 'v1.2.0');
+          assert.deepEqual(effectiveGenreLabels(lightLegacy), effectiveGenreLabels(detailLegacy));
+
+          const lightEnriched = {
+            title: 'Example Game – Deluxe Edition',
+            canonical_title: 'Example Game',
+            metadata_genres: ['simulation video game', 'role-playing'],
+            genres: ['Lifestyle', 'Simulation'],
+          };
+          const detailEnriched = {
+            title: 'Example Game – Deluxe Edition',
+            verified_metadata: {
+              canonical_title: 'Example Game',
+              genres: ['simulation video game', 'role-playing'],
+            },
+            genres: ['Lifestyle', 'Simulation'],
+          };
+          assert.equal(displayTitle(lightEnriched), displayTitle(detailEnriched));
+          assert.equal(editionTitle(lightEnriched), editionTitle(detailEnriched));
+          assert.deepEqual(
+            effectiveGenreLabels(lightEnriched),
+            ['Simulation', 'RPG', 'Lifestyle'],
+          );
+          assert.deepEqual(
+            effectiveGenreLabels(lightEnriched),
+            effectiveGenreLabels(detailEnriched),
+          );
+          JS
       - name: Verify fixed media grid and preview/full contract
         run: |
           grep -q 'game-sheet-v6.css' site/assets/layout-v3.js
@@ -75,6 +127,8 @@ jobs:
           grep -q 'cover-details-meta' site/assets/game-sheet-v7.css
           grep -q 'cardDisplayTitle' site/assets/app.js
           grep -q 'cardDisplayTags' site/assets/app.js
+          grep -q 'game-identity.js' site/assets/app.js
+          grep -q 'identityStable' site/assets/details.js
           grep -q 'effectiveTags' site/assets/app.js
           grep -q 'releasePeriodMatches' site/assets/app.js
           grep -q 'tag-picker-dialog' site/assets/catalog-focus-v3.css
@@ -166,6 +220,7 @@ jobs:
           grep -Fq 'Sortie du jeu' /tmp/game.html
           grep -Fq 'Xbox Series X/S' /tmp/game.html
           grep -Fq 'Données vérifiées' /tmp/game.html
+          grep -Fq 'data-identity-stable="true"' /tmp/game.html
           ! grep -Fq 'Q63184502' /tmp/game.html
           ! grep -Fq 'Informations du jeu' /tmp/game.html
           ! grep -Fq 'Enrichi ·' /tmp/game.html

@@ -1,4 +1,9 @@
 import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload } from './catalog-api.js';
+import {
+  displayTitle as identityDisplayTitle,
+  editionTitle as identityEditionTitle,
+  effectiveGenreLabels,
+} from './game-identity.js';
 
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
@@ -73,56 +78,14 @@ function getTags(game) {
   const value = game?.genres ?? game?.genre ?? [];
   return (Array.isArray(value) ? value : String(value || '').split(',')).map(v => String(v).trim()).filter(Boolean);
 }
-function cleanDisplayGenre(value) {
-  const raw = String(value || '').replace(/\s+/g,' ').trim();
-  if (!raw) return '';
-  const cleaned = raw
-    .replace(/\s+video game$/i,'')
-    .replace(/\s+computer game$/i,'')
-    .replace(/\s+game$/i,'')
-    .trim();
-  const aliases = new Map([
-    ['grand strategy wargame','Grand Strategy'],
-    ['role-playing','RPG'],
-    ['role-playing video','RPG'],
-    ['real-time strategy','Real-Time Strategy'],
-    ['turn-based strategy','Turn-Based Strategy'],
-    ['first-person shooter','First-Person Shooter'],
-    ['third-person shooter','Third-Person Shooter'],
-  ]);
-  const alias = aliases.get(cleaned.toLowerCase());
-  if (alias) return alias;
-  return cleaned.replace(/(^|[-\s])\p{L}/gu, match => match.toLocaleUpperCase('fr'));
-}
 function effectiveTags(game) {
-  const source=[
-    ...(Array.isArray(game?.metadata_genres)?game.metadata_genres:[]),
-    ...getTags(game),
-  ];
-  const out=[]; const seen=new Set();
-  for(const value of source){
-    const label=cleanDisplayGenre(value);
-    const key=normalized(label);
-    if(!label||!key||seen.has(key))continue;
-    seen.add(key);
-    out.push(label);
-  }
-  return out;
+  return effectiveGenreLabels(game);
 }
 function cardDisplayTitle(game) {
   return String(game?.canonical_title || game?.title || '').trim();
 }
-function cardEditionLabel(game) {
-  const source=String(game?.title||'').replace(/\s+/g,' ').trim();
-  const canonical=String(game?.canonical_title||'').replace(/\s+/g,' ').trim();
-  if(!source||!canonical||normalized(source)===normalized(canonical))return '';
-  const sourceLower=source.toLocaleLowerCase('fr');
-  const canonicalLower=canonical.toLocaleLowerCase('fr');
-  if(sourceLower.startsWith(canonicalLower))return source.slice(canonical.length).replace(/^[\s:–—-]+/,'').trim();
-  return '';
-}
 function cardDisplayTags(game) {
-  return effectiveTags(game);
+  return effectiveGenreLabels(game);
 }
 function gameDate(game) { const t=Date.parse(game.post_date||''); return Number.isFinite(t)?t:0; }
 function releaseDate(game) { const t=Date.parse(game.game_release_date||''); return Number.isFinite(t)?t:0; }
@@ -387,16 +350,16 @@ function buildInitialCoverIdentity(cover,game){
   if(tags.length){
     const tagBox=document.createElement('div');
     tagBox.className='cover-tags';
-    tags.slice(0,4).forEach(tag=>tagBox.append(pill(tag)));
+    tags.forEach(tag=>tagBox.append(pill(tag)));
     card.append(tagBox);
   }
 
   const title=document.createElement('h2');
   title.className='cover-game-title';
-  title.textContent=cardDisplayTitle(game)||game.title;
+  title.textContent=identityDisplayTitle(game)||game.title;
   card.append(title);
 
-  const edition=cardEditionLabel(game);
+  const edition=identityEditionTitle(game);
   if(edition){
     const subtitle=document.createElement('p');
     subtitle.className='cover-game-version cover-edition-title';
@@ -439,7 +402,7 @@ function openDialog(game,{syncUrl=true}={}){
   if(game.image_url){
     const img=document.createElement('img');
     img.src=game.image_url;
-    img.alt=`Jaquette de ${cardDisplayTitle(game)||game.title}`;
+    img.alt=`Jaquette de ${identityDisplayTitle(game)||game.title}`;
     img.loading='eager';
     img.referrerPolicy='no-referrer';
     img.addEventListener('error',()=>img.remove(),{once:true});

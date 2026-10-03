@@ -237,7 +237,24 @@ jobs:
           run_chrome() {
             timeout 50s "$chrome" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --blink-settings=imagesEnabled=false --virtual-time-budget=8000 --dump-dom "$1"
           }
-          run_chrome http://127.0.0.1:4173/ > /tmp/dom.html
+          run_lang() {
+            mode="$1"; target="$2"; output="$3"
+            MODE="$mode" TARGET="$target" python - <<'PY'
+          import json, os
+          from pathlib import Path
+          mode=os.environ['MODE']
+          target=os.environ['TARGET']
+          Path('site/__ci-lang.html').write_text(
+              '<!doctype html><meta charset="utf-8"><script>'
+              + 'localStorage.setItem("fitboyrepack:language:v1",' + json.dumps(mode) + ');'
+              + 'location.replace(' + json.dumps(target) + ');'
+              + '</script>',
+              encoding='utf-8',
+          )
+          PY
+            run_chrome http://127.0.0.1:4173/__ci-lang.html > "$output"
+          }
+          run_lang en "./" /tmp/dom.html
           cards=$(grep -o 'data-game-id=' /tmp/dom.html | wc -l | tr -d ' ')
           echo "Rendered cards: $cards"
           test "$cards" -ge 20

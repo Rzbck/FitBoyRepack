@@ -444,7 +444,7 @@ function openDialog(game,{syncUrl=true}={}){
   if(game.image_url){
     const img=document.createElement('img');
     img.src=game.image_url;
-    img.alt=`Jaquette de ${identityDisplayTitle(game)||game.title}`;
+    img.alt=currentLanguage()==='fr'?`Jaquette de ${identityDisplayTitle(game)||game.title}`:`Cover of ${identityDisplayTitle(game)||game.title}`;
     img.loading='eager';
     img.referrerPolicy='no-referrer';
     img.addEventListener('error',()=>img.remove(),{once:true});
@@ -456,23 +456,25 @@ function openDialog(game,{syncUrl=true}={}){
   const actions=document.createElement('div');
   actions.className='dialog-actions';
   actions.append(
-    collectionButton('Favori','favorites',game.id),
-    collectionButton('À jouer','backlog',game.id),
-    collectionButton('Terminé','completed',game.id),
+    collectionButton('detail.favorite','favorites',game.id,'favorite'),
+    collectionButton('detail.backlog','backlog',game.id,'backlog'),
+    collectionButton('detail.completed','completed',game.id,'completed'),
   );
 
   const share=document.createElement('button');
   share.type='button';
   share.className='dialog-action';
-  share.textContent='Partager';
+  share.dataset.actionType='share';
+  share.textContent=t('detail.share');
   share.addEventListener('click',async()=>{
     const url=`${location.origin}${location.pathname}#game=${encodeURIComponent(game.id)}`;
     try{
       await navigator.clipboard.writeText(url);
-      share.textContent='Lien copié ✓';
-      setTimeout(()=>share.textContent='Partager',1500);
+      share.dataset.copied='true';
+      share.textContent=t('detail.shareCopied');
+      setTimeout(()=>{share.dataset.copied='false';share.textContent=t('detail.share');},1500);
     }catch{
-      prompt('Copier ce lien :',url);
+      prompt(t('detail.copyPrompt'),url);
     }
   });
   actions.append(share);
@@ -485,7 +487,7 @@ function openDialog(game,{syncUrl=true}={}){
     link.href=source;
     link.target='_blank';
     link.rel='noopener noreferrer';
-    link.textContent='Voir la page source ↗';
+    link.textContent=t('detail.source');
     cover.append(link);
   }
 
@@ -496,7 +498,7 @@ function openDialog(game,{syncUrl=true}={}){
   const detailStatus=document.createElement('p');
   detailStatus.className='dialog-note sr-only';
   detailStatus.dataset.detailStatus='loading';
-  detailStatus.textContent=(game.details_ready||game.metadata_ready)?'Chargement de la fiche détaillée…':'Fiche détaillée en cours d’enrichissement.';
+  detailStatus.textContent=(game.details_ready||game.metadata_ready)?t('detail.loading'):t('detail.enriching');
   info.append(detailStatus);
 
   layout.append(cover,info);

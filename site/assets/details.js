@@ -107,12 +107,13 @@ function cleanMetadataList(value, cleaner = cleanMetadataScalar) {
   return out;
 }
 
-function appendIdentityFact(list, label, value) {
+function appendIdentityFact(list, labelKey, value) {
   if (!value) return;
   const row = document.createElement('div');
   row.className = 'identity-fact';
   const term = document.createElement('dt');
-  term.textContent = label;
+  term.dataset.i18n = labelKey;
+  term.textContent = t(labelKey);
   const description = document.createElement('dd');
   description.textContent = value;
   row.append(term, description);
@@ -129,11 +130,11 @@ function makeIdentityFacts(game) {
   const list = document.createElement('dl');
   list.className = 'identity-fact-list';
 
-  appendIdentityFact(list, 'Développeur', cleanMetadataScalar(metadata.developer));
-  appendIdentityFact(list, 'Éditeur', cleanMetadataScalar(metadata.publisher));
+  appendIdentityFact(list, 'detail.developer', cleanMetadataScalar(metadata.developer));
+  appendIdentityFact(list, 'detail.publisher', cleanMetadataScalar(metadata.publisher));
 
   const platforms = cleanMetadataList(metadata.platforms, cleanPlatformLabel);
-  appendIdentityFact(list, 'Plateformes', platforms.slice(0, 5).join(' · '));
+  appendIdentityFact(list, 'detail.platforms', platforms.slice(0, 5).join(' · '));
 
   if (list.childElementCount) facts.append(list);
 
@@ -145,7 +146,8 @@ function makeIdentityFacts(game) {
     const sourceLine = document.createElement('div');
     sourceLine.className = 'identity-evidence';
     const prefix = document.createElement('span');
-    prefix.textContent = 'Données vérifiées';
+    prefix.dataset.i18n = 'detail.verified';
+    prefix.textContent = t('detail.verified');
     sourceLine.append(prefix);
     sources.forEach(url => {
       const link = document.createElement('a');

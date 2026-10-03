@@ -3,7 +3,8 @@ const MODES = new Set(['auto', 'fr', 'en']);
 
 const STRINGS = {
   fr: {
-    'app.home': 'accueil',
+    'app.home': 'FitBoyRepack — accueil',
+    'app.metaDescription': 'FitBoyRepack — catalogue léger, filtrable et actualisé automatiquement.',
     'app.searchSort': 'Recherche et tri du catalogue',
     'app.search': 'Rechercher',
     'app.searchPlaceholder': 'Titre, genre, année de sortie…',
@@ -27,6 +28,10 @@ const STRINGS = {
     'app.clear': 'Effacer',
     'filter.releaseYear': 'Année de sortie',
     'filter.size': 'Taille',
+    'filter.sizeLt1': '< 1 Go',
+    'filter.size1to10': '1–10 Go',
+    'filter.size10to50': '10–50 Go',
+    'filter.size50plus': '50+ Go',
     'filter.releasePeriod': 'Période de sortie',
     'filter.all': 'Toutes',
     'filter.thisWeek': 'Cette semaine',
@@ -132,7 +137,8 @@ const STRINGS = {
     'language.label': 'Langue',
   },
   en: {
-    'app.home': 'home',
+    'app.home': 'FitBoyRepack — home',
+    'app.metaDescription': 'FitBoyRepack — a lightweight, filterable catalog updated automatically.',
     'app.searchSort': 'Catalog search and sorting',
     'app.search': 'Search',
     'app.searchPlaceholder': 'Title, genre, release year…',
@@ -156,6 +162,10 @@ const STRINGS = {
     'app.clear': 'Clear',
     'filter.releaseYear': 'Release year',
     'filter.size': 'Size',
+    'filter.sizeLt1': '< 1 GB',
+    'filter.size1to10': '1–10 GB',
+    'filter.size10to50': '10–50 GB',
+    'filter.size50plus': '50+ GB',
     'filter.releasePeriod': 'Release period',
     'filter.all': 'All',
     'filter.thisWeek': 'This week',
@@ -344,6 +354,10 @@ export function applyTranslations(root = document) {
   root.querySelectorAll?.('[data-i18n-title]').forEach(node => {
     const key = node.dataset.i18nTitle;
     if (key) node.setAttribute('title', t(key));
+  });
+  root.querySelectorAll?.('[data-i18n-content]').forEach(node => {
+    const key = node.dataset.i18nContent;
+    if (key) node.setAttribute('content', t(key));
   });
   root.querySelectorAll?.('[data-i18n-date]').forEach(node => {
     const value = node.dataset.i18nDate;

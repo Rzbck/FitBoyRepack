@@ -38,7 +38,16 @@ jobs:
           assert health['expected_versions']['media']==7
           assert all((pathlib.Path('site')/g['detail_path']).exists() for g in catalog['games'])
           assert all('year' in g and 'size_mb' in g and 'has_description' in g and 'media_count' in g for g in catalog['games'])
-          assert all('metadata_ready' in g and 'canonical_title' in g and 'metadata_genres' in g for g in catalog['games'])
+          assert all(
+              'metadata_ready' in g
+              and 'canonical_title' in g
+              and 'metadata_genres' in g
+              and 'metadata_developer' in g
+              and 'metadata_publisher' in g
+              and 'metadata_platforms' in g
+              and 'metadata_evidence_urls' in g
+              for g in catalog['games']
+          )
           assert health['expected_versions']['metadata']==1
           print('split payloads',catalog['count'],'pending enrichment',health['enrichment_pending'])
           PY
@@ -140,6 +149,10 @@ jobs:
           grep -q 'buildDetailLoadingShell' site/assets/app.js
           grep -q 'detail-loading-shell' site/assets/game-sheet-v7.css
           grep -q 'cover-details-initial' site/assets/details.js
+          grep -q 'buildInitialVerifiedIdentity' site/assets/app.js
+          grep -q 'metadata_developer' tools/build_site_data.py
+          grep -q 'metadata_publisher' tools/build_site_data.py
+          grep -q 'flex:1 1 0' site/assets/game-sheet-v7.css
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
@@ -224,6 +237,22 @@ jobs:
           Path('site/data/translations-fr.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
           print('translation browser fixture',game_id)
           PY
+      - name: Verify developer/publisher search postings
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          catalog=json.load(open('site/data/catalog.json',encoding='utf-8'))
+          search=json.load(open('site/data/search-index.json',encoding='utf-8'))
+          first=catalog['games'][0]
+          assert first['metadata_developer']=='CI Studio'
+          assert first['metadata_publisher']=='CI Publisher'
+          assert first['metadata_platforms']
+          assert first['metadata_evidence_urls']
+          assert 0 in search['prefixes'].get('studio',[])
+          assert 0 in search['prefixes'].get('publis',[])
+          print('developer/publisher static search postings OK')
+          PY
       - name: Boot site in headless Chrome and require V2 UI + deep link
         shell: bash
         run: |
@@ -284,6 +313,7 @@ jobs:
           grep -Fq 'Sortie du jeu' /tmp/game.html
           grep -Fq 'Xbox Series X/S' /tmp/game.html
           grep -Fq 'Données vérifiées' /tmp/game.html
+          grep -Fq 'data-initial-verified="true"' /tmp/game.html
           grep -Fq 'data-identity-stable="true"' /tmp/game.html
           ! grep -Fq 'Q63184502' /tmp/game.html
           ! grep -Fq 'Informations du jeu' /tmp/game.html

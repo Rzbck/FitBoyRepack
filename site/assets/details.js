@@ -1,4 +1,9 @@
 import { loadGameDetail } from './catalog-api.js';
+import {
+  displayTitle as identityDisplayTitle,
+  editionTitle as identityEditionTitle,
+  effectiveGenreLabels,
+} from './game-identity.js';
 
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');
@@ -17,23 +22,11 @@ function normalizedUrl(value = '') {
   }
 }
 
-function titleParts(title = '') {
-  const parts = String(title).split(/\s+[–—]\s+/, 2);
-  return { name: parts[0]?.trim() || title, version: parts[1]?.trim() || '' };
-}
-
 function createPill(text) {
   const span = document.createElement('span');
   span.className = 'genre-pill';
   span.textContent = text;
   return span;
-}
-
-function getTags(game) {
-  const value = game?.genres ?? game?.genre ?? [];
-  return (Array.isArray(value) ? value : String(value || '').split(','))
-    .map(item => String(item).trim())
-    .filter(Boolean);
 }
 
 function formatDate(value) {
@@ -94,29 +87,6 @@ function cleanPlatformLabel(value) {
   return aliases.get(text.toLowerCase()) || text;
 }
 
-function cleanGenreLabel(value) {
-  const cleaned = cleanMetadataScalar(value)
-    .replace(/\s+video game$/i, '')
-    .replace(/\s+computer game$/i, '')
-    .replace(/\s+game$/i, '')
-    .trim();
-  if (!cleaned) return '';
-
-  const aliases = new Map([
-    ['grand strategy wargame', 'Grand Strategy'],
-    ['role-playing', 'RPG'],
-    ['role-playing video', 'RPG'],
-    ['real-time strategy', 'Real-Time Strategy'],
-    ['turn-based strategy', 'Turn-Based Strategy'],
-    ['first-person shooter', 'First-Person Shooter'],
-    ['third-person shooter', 'Third-Person Shooter'],
-  ]);
-  const alias = aliases.get(cleaned.toLowerCase());
-  if (alias) return alias;
-
-  return cleaned.replace(/(^|[-\s])\p{L}/gu, match => match.toLocaleUpperCase('fr'));
-}
-
 function cleanMetadataList(value, cleaner = cleanMetadataScalar) {
   const out = [];
   const seen = new Set();
@@ -140,20 +110,6 @@ function appendIdentityFact(list, label, value) {
   description.textContent = value;
   row.append(term, description);
   list.append(row);
-}
-
-function editionLabel(sourceTitle, canonicalTitle) {
-  const source = cleanMetadataScalar(sourceTitle);
-  const canonical = cleanMetadataScalar(canonicalTitle);
-  if (!source || !canonical) return '';
-  if (source.localeCompare(canonical, undefined, { sensitivity:'accent' }) === 0) return '';
-
-  const sourceLower = source.toLocaleLowerCase('fr');
-  const canonicalLower = canonical.toLocaleLowerCase('fr');
-  if (sourceLower.startsWith(canonicalLower)) {
-    return source.slice(canonical.length).replace(/^[\s:–—-]+/, '').trim();
-  }
-  return source;
 }
 
 function makeIdentityFacts(game) {
@@ -210,18 +166,36 @@ function renderCoverDetails(layout, game) {
   const info = layout.querySelector('.dialog-info');
   if (!cover || !info) return;
 
-  const initial = cover.querySelector('.cover-details-initial');
-  if (initial) initial.remove();
-  else if (cover.querySelector('.cover-details')) return;
-
   layout.classList.add('rich-details');
   layout.classList.remove('dialog-loading');
+
   const coverImg = cover.querySelector(':scope > img');
   if (coverImg) {
-    coverImg.alt = `Jaquette de ${game.title}`;
+    const visibleTitle = cover.querySelector('.cover-game-title')?.textContent?.trim()
+      || identityDisplayTitle(game)
+      || game.title;
+    coverImg.alt = `Jaquette de ${visibleTitle}`;
     coverImg.loading = 'eager';
   }
 
+  // The lightweight catalog already contains the identity fields required for
+  // the first paint (canonical title, release date and merged genres). Keep
+  // that exact DOM node when lazy details arrive so the user never sees a
+  // second title/tag version replace the first one.
+  const existing = cover.querySelector('.cover-details');
+  if (existing) {
+    existing.classList.remove('cover-details-initial');
+    layout.dataset.identityStable = 'true';
+
+    if (!existing.querySelector('.cover-identity-facts')) {
+      const identityFacts = makeIdentityFacts(game);
+      if (identityFacts) existing.append(identityFacts);
+    }
+    return;
+  }
+
+  // Defensive fallback for a malformed/legacy shell. It uses the exact same
+  // shared identity rules as app.js, including merged metadata + legacy genres.
   const card = document.createElement('div');
   card.className = 'cover-details';
 
@@ -246,25 +220,20 @@ function renderCoverDetails(layout, game) {
   }
   card.append(meta);
 
-  const enrichedGenres = metadata ? cleanMetadataList(metadata.genres, cleanGenreLabel) : [];
-  const tags = enrichedGenres.length ? enrichedGenres : getTags(game);
+  const tags = effectiveGenreLabels(game);
   if (tags.length) {
     const tagBox = document.createElement('div');
     tagBox.className = 'cover-tags';
-    tags.slice(0, 4).forEach(tag => tagBox.append(createPill(tag)));
+    tags.forEach(tag => tagBox.append(createPill(tag)));
     card.append(tagBox);
   }
 
-  const parts = titleParts(game.title);
-  const canonical = cleanMetadataScalar(metadata?.canonical_title);
-  const primaryTitle = canonical || parts.name;
-
   const h2 = document.createElement('h2');
   h2.className = 'cover-game-title';
-  h2.textContent = primaryTitle;
+  h2.textContent = identityDisplayTitle(game) || game.title;
   card.append(h2);
 
-  const edition = canonical ? editionLabel(game.title, canonical) : parts.version;
+  const edition = identityEditionTitle(game);
   if (edition) {
     const version = document.createElement('p');
     version.className = 'cover-game-version cover-edition-title';
@@ -276,6 +245,7 @@ function renderCoverDetails(layout, game) {
   if (identityFacts) card.append(identityFacts);
 
   cover.append(card);
+  layout.dataset.identityStable = 'fallback';
   info.querySelector(':scope > h2')?.classList.add('details-moved');
   info.querySelector(':scope > .dialog-meta')?.classList.add('details-moved');
   info.querySelector(':scope > .dialog-genres')?.classList.add('details-moved');

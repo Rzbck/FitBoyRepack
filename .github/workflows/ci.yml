@@ -27,6 +27,7 @@ jobs:
       - run: python tools/build_site_data.py
       - run: PYTHONPATH=tools python tools/test_public_metadata_export.py
       - run: PYTHONPATH=tools python tools/test_translation_pipeline.py
+      - run: bash -n ops/fitboy/install_translation_runtime.sh
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'

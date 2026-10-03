@@ -3,8 +3,8 @@ Description=Schedule FitBoyRepack French translation publication
 
 [Timer]
 OnBootSec=55min
-OnUnitInactiveSec=1h
-RandomizedDelaySec=5min
+OnUnitInactiveSec=3h
+RandomizedDelaySec=10min
 Persistent=true
 Unit=translation-publish.service
 

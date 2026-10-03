@@ -468,11 +468,12 @@ function ensureLightbox() {
   box.innerHTML = `
     <div class="media-lightbox-toolbar">
       <span class="media-lightbox-count"></span>
-      <button type="button" class="media-lightbox-close" aria-label="Fermer l’image">×</button>
+      <button type="button" class="media-lightbox-close" aria-label="${t('detail.closeImage')}" data-i18n-aria-label="detail.closeImage">×</button>
     </div>
-    <button type="button" class="media-lightbox-nav media-lightbox-prev" aria-label="Image précédente">‹</button>
+    <button type="button" class="media-lightbox-nav media-lightbox-prev" aria-label="${t('detail.prevImage')}" data-i18n-aria-label="detail.prevImage">‹</button>
     <figure class="media-lightbox-stage"><img alt=""><figcaption></figcaption></figure>
-    <button type="button" class="media-lightbox-nav media-lightbox-next" aria-label="Image suivante">›</button>`;
+    <button type="button" class="media-lightbox-nav media-lightbox-next" aria-label="${t('detail.nextImage')}" data-i18n-aria-label="detail.nextImage">›</button>`;
+  applyTranslations(box);
   dialog.append(box);
 
   box.querySelector('.media-lightbox-close').addEventListener('click', closeLightbox);
@@ -488,9 +489,9 @@ function updateLightbox() {
   if (!item) return closeLightbox();
   const img = box.querySelector('.media-lightbox-stage img');
   img.src = item.url;
-  img.alt = item.alt || 'Média du jeu';
+  img.alt = item.alt || t('detail.gameMedia');
   box.querySelector('.media-lightbox-count').textContent = `${lightboxIndex + 1} / ${lightboxItems.length}`;
-  box.querySelector('figcaption').textContent = item.kind === 'gif' ? 'GIF gameplay' : 'Capture du jeu';
+  box.querySelector('figcaption').textContent = item.kind === 'gif' ? 'GIF gameplay' : t('detail.gameCapture');
   const hasMany = lightboxItems.length > 1;
   box.querySelector('.media-lightbox-prev').hidden = !hasMany;
   box.querySelector('.media-lightbox-next').hidden = !hasMany;

@@ -117,15 +117,13 @@ def title_variants(title: str) -> list[str]:
     if not title:
         return []
 
-    values = {title}
     base = re.split(
         r"\s+[–—-]\s+(?=(?:v?\d|build\b|complete\b|deluxe\b|definitive\b|\d+\s+DLC))",
         title,
         maxsplit=1,
         flags=re.I,
     )[0].strip()
-    if 3 < len(base) < len(title):
-        values.add(base)
+    values = {base or title}
 
     if ":" in base:
         left = clean(base.split(":", 1)[0])

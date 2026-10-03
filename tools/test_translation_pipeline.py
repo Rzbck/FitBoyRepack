@@ -139,6 +139,47 @@ def test_queue_and_export(temp: Path) -> None:
     assert "last_error" not in serialized
 
 
+
+def test_input_fingerprint_and_priority(temp: Path) -> None:
+    catalog = temp / "games.json"
+    metadata = temp / "metadata.json"
+    catalog.write_text('{"games":[]}', encoding="utf-8")
+    metadata.write_text('{"games":{}}', encoding="utf-8")
+
+    first = worker.input_fingerprint(catalog, metadata)
+    second = worker.input_fingerprint(catalog, metadata)
+    assert first == second
+
+    metadata.write_text('{"games":{"alpha":{}}}', encoding="utf-8")
+    assert worker.input_fingerprint(catalog, metadata) != first
+
+    db = temp / "priority.sqlite3"
+    conn = worker.connect_db(db)
+    try:
+        game = sample_game(
+            "This description contains enough English words to be queued for translation."
+        )
+        worker.sync_queue(conn, [game], {})
+        rows = worker.pending_rows(conn, limit=3, max_error_attempts=3)
+        assert rows
+        assert rows[0]["field_key"] == "description"
+
+        worker.set_meta_value(conn, "inputs_fingerprint", "abc")
+        assert worker.meta_value(conn, "inputs_fingerprint") == "abc"
+
+        conn.execute(
+            "UPDATE translation_jobs SET status='processing' WHERE field_key='description'"
+        )
+        conn.commit()
+        assert worker.recover_interrupted(conn) == 1
+        status = conn.execute(
+            "SELECT status FROM translation_jobs WHERE field_key='description'"
+        ).fetchone()[0]
+        assert status == "pending"
+    finally:
+        conn.close()
+
+
 def test_publisher_semantic_noop(temp: Path) -> None:
     snapshot = temp / "translations-fr.json"
     payload = {
@@ -197,6 +238,7 @@ def main() -> None:
     with tempfile.TemporaryDirectory() as temp_dir:
         temp = Path(temp_dir)
         test_queue_and_export(temp)
+        test_input_fingerprint_and_priority(temp)
         test_publisher_semantic_noop(temp)
     print("French translation queue + export + idempotent publish OK")
 

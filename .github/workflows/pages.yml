@@ -32,6 +32,7 @@ jobs:
       - run: python tools/build_site_data.py
       - run: python tools/check_site.py
       - run: node --check site/assets/catalog-api.js
+      - run: node --check site/assets/game-identity.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/details.js
 
@@ -85,6 +86,7 @@ jobs:
           fetch(){ echo "GET ${base}/$1?health=${nonce}"; curl --fail --silent --show-error --location --retry 10 --retry-delay 3 --retry-all-errors --connect-timeout 10 --max-time 45 -H 'Cache-Control: no-cache, no-store, max-age=0' "${base}/$1?health=${nonce}" -o "$2"; }
           fetch index.html /tmp/index.html
           fetch assets/app.js /tmp/app.js
+          fetch assets/game-identity.js /tmp/identity.js
           fetch assets/catalog-api.js /tmp/api.js
           fetch assets/catalog-v2.css /tmp/v2.css
           fetch data/catalog.json /tmp/catalog.json
@@ -108,6 +110,7 @@ jobs:
           fetch "$detail_path" /tmp/detail.json
           grep -q 'searchSuggestions' /tmp/index.html
           grep -q 'searchCandidateIndexes' /tmp/app.js
+          grep -q 'effectiveGenreLabels' /tmp/identity.js
           grep -q 'search-index.json' /tmp/api.js
           grep -q 'health.json' /tmp/api.js
           grep -q 'home-card-row' /tmp/v2.css

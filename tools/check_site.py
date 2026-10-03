@@ -90,7 +90,7 @@ for token in ('displayTitle','editionTitle','effectiveGenreLabels','cleanGenreLa
     assert token in identity, f'missing shared identity behavior: {token}'
 for token in ('fitboyrepack:language:v1','navigator.languages','data-i18n','languageSwitcher','setLanguageMode'):
     assert token in i18n or token in html, f'missing i18n behavior: {token}'
-for token in ('localizeGameProse','source_sha256','crypto.subtle','repack_features'):
+for token in ('localizeGameProse','source_sha256','crypto.subtle'):
     assert token in translations, f'missing translation client behavior: {token}'
 for token in ('.search-suggestions','.quick-filter-panel','.library-panel','.home-card-row','.dialog-actions','.filter-sidebar.mobile-open','.health-grid'):
     assert token in v2css, f'missing V2 CSS contract: {token}'

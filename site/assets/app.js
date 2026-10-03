@@ -487,6 +487,7 @@ function openDialog(game,{syncUrl=true}={}){
     link.href=source;
     link.target='_blank';
     link.rel='noopener noreferrer';
+    link.dataset.i18n='detail.source';
     link.textContent=t('detail.source');
     cover.append(link);
   }

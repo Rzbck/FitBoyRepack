@@ -295,7 +295,7 @@ jobs:
           grep -Fq '>RPG<' /tmp/dom.html
           grep -q 'id="discoveryShell"' /tmp/dom.html
           grep -Fq 'data-language="en"' /tmp/dom.html
-          grep -Fq 'Title, genre, release year…' /tmp/dom.html
+          grep -Fq 'Title, genre, developer, publisher…' /tmp/dom.html
           grep -Fq 'data-language-mode="en" aria-pressed="true"' /tmp/dom.html
           ! grep -q 'class="i18n-pending"' /tmp/dom.html
           ! grep -q 'id="catalogStatus" class="catalog-status">Chargement' /tmp/dom.html

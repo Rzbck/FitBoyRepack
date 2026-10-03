@@ -185,7 +185,16 @@ function prepareGame(raw) {
   game.__tagKeySet=new Set(game.__tagKeys);
   const canonical=String(game.canonical_title||'').trim();
   const releaseYear=/^(20\d{2})/.exec(String(game.game_release_date||''))?.[1]||'';
-  const searchable=[game.title,canonical,game.repack_size,releaseYear,...tags];
+  const searchable=[
+    game.title,
+    canonical,
+    game.repack_size,
+    releaseYear,
+    game.metadata_developer,
+    game.metadata_publisher,
+    ...(Array.isArray(game.metadata_platforms)?game.metadata_platforms:[]),
+    ...tags,
+  ];
   game.__titleNorm=normalized(canonical||game.title);
   game.__searchText=normalized(searchable.join(' '));
   game.__searchTokens=[...new Set(tokens(searchable.join(' ')))];
@@ -377,6 +386,111 @@ function appendInitialIdentityFact(meta,labelKey,value,{dateValue=''}={}){
   meta.append(box);
 }
 
+function cleanInitialMetadataScalar(value){
+  const text=String(value||'').replace(/\s+/g,' ').trim();
+  return text && !/^Q\d+$/i.test(text) ? text : '';
+}
+
+function cleanInitialPlatformLabel(value){
+  const text=cleanInitialMetadataScalar(value);
+  if(!text)return '';
+  const aliases=new Map([
+    ['microsoft windows','Windows'],
+    ['windows','Windows'],
+    ['mac os','macOS'],
+    ['macos','macOS'],
+    ['mac','macOS'],
+    ['xbox series x and series s','Xbox Series X/S'],
+    ['xbox series x/s','Xbox Series X/S'],
+    ['playstation 5','PlayStation 5'],
+    ['playstation 4','PlayStation 4'],
+    ['nintendo switch','Nintendo Switch'],
+  ]);
+  return aliases.get(text.toLowerCase())||text;
+}
+
+function cleanInitialList(value,cleaner=cleanInitialMetadataScalar){
+  const out=[];
+  const seen=new Set();
+  for(const item of Array.isArray(value)?value:[]){
+    const cleaned=cleaner(item);
+    const key=normalized(cleaned);
+    if(!cleaned||!key||seen.has(key))continue;
+    seen.add(key);
+    out.push(cleaned);
+  }
+  return out;
+}
+
+function safeInitialHttpsUrl(value){
+  try{
+    const url=new URL(String(value||''));
+    return url.protocol==='https:'?url:null;
+  }catch{return null;}
+}
+
+function initialMetadataSourceLabel(url){
+  const host=url.hostname.toLowerCase();
+  if(host==='www.wikidata.org')return 'Wikidata';
+  if(host.endsWith('.wikipedia.org'))return 'Wikipedia';
+  return host;
+}
+
+function buildInitialVerifiedIdentity(game){
+  if(!game?.metadata_ready)return null;
+  const developer=cleanInitialMetadataScalar(game.metadata_developer);
+  const publisher=cleanInitialMetadataScalar(game.metadata_publisher);
+  const platforms=cleanInitialList(game.metadata_platforms,cleanInitialPlatformLabel).slice(0,5);
+  const sources=(Array.isArray(game.metadata_evidence_urls)?game.metadata_evidence_urls:[])
+    .map(safeInitialHttpsUrl).filter(Boolean).slice(0,2);
+  if(!developer&&!publisher&&!platforms.length&&!sources.length)return null;
+
+  const facts=document.createElement('section');
+  facts.className='cover-identity-facts';
+  facts.dataset.initialVerified='true';
+
+  const list=document.createElement('dl');
+  list.className='identity-fact-list';
+
+  const appendFact=(labelKey,value)=>{
+    if(!value)return;
+    const row=document.createElement('div');
+    row.className='identity-fact';
+    const term=document.createElement('dt');
+    term.dataset.i18n=labelKey;
+    term.textContent=t(labelKey);
+    const description=document.createElement('dd');
+    description.textContent=value;
+    row.append(term,description);
+    list.append(row);
+  };
+
+  appendFact('detail.developer',developer);
+  appendFact('detail.publisher',publisher);
+  appendFact('detail.platforms',platforms.join(' · '));
+  if(list.childElementCount)facts.append(list);
+
+  if(sources.length){
+    const sourceLine=document.createElement('div');
+    sourceLine.className='identity-evidence';
+    const prefix=document.createElement('span');
+    prefix.dataset.i18n='detail.verified';
+    prefix.textContent=t('detail.verified');
+    sourceLine.append(prefix);
+    for(const url of sources){
+      const link=document.createElement('a');
+      link.href=url.href;
+      link.target='_blank';
+      link.rel='noopener noreferrer';
+      link.textContent=`${initialMetadataSourceLabel(url)} ↗`;
+      sourceLine.append(link);
+    }
+    facts.append(sourceLine);
+  }
+
+  return facts;
+}
+
 function buildInitialCoverIdentity(cover,game){
   const card=document.createElement('div');
   card.className='cover-details cover-details-initial';
@@ -408,6 +522,9 @@ function buildInitialCoverIdentity(cover,game){
     subtitle.textContent=edition;
     card.append(subtitle);
   }
+
+  const verifiedIdentity=buildInitialVerifiedIdentity(game);
+  if(verifiedIdentity)card.append(verifiedIdentity);
 
   cover.append(card);
 }

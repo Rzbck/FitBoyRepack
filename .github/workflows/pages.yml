@@ -33,6 +33,8 @@ jobs:
       - run: python tools/check_site.py
       - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/game-identity.js
+      - run: node --check site/assets/i18n.js
+      - run: node --check site/assets/translations.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/details.js
 
@@ -87,22 +89,26 @@ jobs:
           fetch index.html /tmp/index.html
           fetch assets/app.js /tmp/app.js
           fetch assets/game-identity.js /tmp/identity.js
+          fetch assets/i18n.js /tmp/i18n.js
+          fetch assets/translations.js /tmp/translations.js
           fetch assets/catalog-api.js /tmp/api.js
           fetch assets/catalog-v2.css /tmp/v2.css
           fetch data/catalog.json /tmp/catalog.json
           fetch data/search-index.json /tmp/search-index.json
           fetch data/health.json /tmp/health.json
           fetch data/metadata-enrichment.json /tmp/metadata-enrichment.json
+          fetch data/translations-fr.json /tmp/translations-fr.json
           fetch version.json /tmp/version.json
           detail_path=$(python - <<'PY'
           import json
           c=json.load(open('/tmp/catalog.json')); s=json.load(open('/tmp/search-index.json')); h=json.load(open('/tmp/health.json'))
-          m=json.load(open('/tmp/metadata-enrichment.json'))
+          m=json.load(open('/tmp/metadata-enrichment.json')); t=json.load(open('/tmp/translations-fr.json'))
           assert c['count']==len(c['games'])==s['count']==h['total_games'] and c['games']
           assert s['search_index_version']==1 and s['prefixes'] and s['grams']
           assert 'coverage' in h and 'enrichment_pending' in h and 'metadata' in h['coverage']
           assert h['expected_versions']['metadata']==1
           assert m['metadata_version']==1 and m['count']==len(m['games'])
+          assert t['translation_version']==1 and t['language']=='fr' and t['count']==len(t['games'])
           assert all('metadata_ready' in game for game in c['games'])
           print(c['games'][0]['detail_path'])
           PY
@@ -111,10 +117,13 @@ jobs:
           grep -q 'searchSuggestions' /tmp/index.html
           grep -q 'searchCandidateIndexes' /tmp/app.js
           grep -q 'effectiveGenreLabels' /tmp/identity.js
+          grep -q 'fitboyrepack:language:v1' /tmp/i18n.js
+          grep -q 'source_sha256' /tmp/translations.js
+          grep -q 'translations-fr.json' /tmp/api.js
           grep -q 'search-index.json' /tmp/api.js
           grep -q 'health.json' /tmp/api.js
           grep -q 'home-card-row' /tmp/v2.css
           grep -q '"source_url"' /tmp/detail.json
           grep -Fq "$EXPECTED_SHA" /tmp/version.json
-          echo "Production Pages V2 + verified metadata healthy on $EXPECTED_SHA"
+          echo "Production Pages V2 + verified metadata + FR translation frontend healthy on $EXPECTED_SHA"
           cat /tmp/health.json

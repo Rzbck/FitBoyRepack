@@ -4,6 +4,18 @@ import {
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
 } from './game-identity.js';
+import {
+  applyTranslations,
+  currentLanguage,
+  formatDateValue,
+  formatNumber,
+  gameCountLabel,
+  initI18n,
+  locale,
+  t,
+} from './i18n.js';
+
+initI18n();
 
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
@@ -89,7 +101,7 @@ function cardDisplayTags(game) {
 }
 function gameDate(game) { const t=Date.parse(game.post_date||''); return Number.isFinite(t)?t:0; }
 function releaseDate(game) { const t=Date.parse(game.game_release_date||''); return Number.isFinite(t)?t:0; }
-function formatDate(value) { const t=Date.parse(value||''); return Number.isFinite(t)?new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',year:'numeric'}).format(t):'Date inconnue'; }
+function formatDate(value) { return formatDateValue(value) || (currentLanguage()==='fr'?'Date inconnue':'Unknown date'); }
 function isNew(game, days=14) { const t=gameDate(game); return Boolean(t && Date.now()-t < days*86400000); }
 function startOfLocalWeek(time=Date.now()) {
   const date=new Date(time);
@@ -202,8 +214,8 @@ function applyFilters() {
     if (sort==='release_desc') return releaseDate(b)-releaseDate(a) || gameDate(b)-gameDate(a);
     if (sort==='release_asc') return releaseDate(a)-releaseDate(b) || gameDate(a)-gameDate(b);
     if (sort==='date_asc') return gameDate(a)-gameDate(b);
-    if (sort==='name_asc') return cardDisplayTitle(a).localeCompare(cardDisplayTitle(b),'fr',{sensitivity:'base'});
-    if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),'fr',{sensitivity:'base'});
+    if (sort==='name_asc') return cardDisplayTitle(a).localeCompare(cardDisplayTitle(b),locale(),{sensitivity:'base'});
+    if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),locale(),{sensitivity:'base'});
     return gameDate(b)-gameDate(a);
   });
   state.visible=Math.min(PAGE_SIZE,state.filtered.length); state.loadingMore=false;
@@ -218,9 +230,9 @@ function buildTagIndex() {
   }
   state.tagCounts=counts;
   const fragment=document.createDocumentFragment();
-  [...canonical.entries()].map(([key,label])=>({key,label,count:counts.get(key)||0})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,'fr')).forEach(tag=>{
+  [...canonical.entries()].map(([key,label])=>({key,label,count:counts.get(key)||0})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,locale(),{sensitivity:'base'})).forEach(tag=>{
     const button=document.createElement('button'); button.type='button'; button.className='tag-chip'; button.dataset.tagKey=tag.key; button.dataset.tagLabel=tag.label;
-    const label=document.createElement('span'); label.textContent=tag.label; const count=document.createElement('small'); count.textContent=tag.count.toLocaleString('fr-FR'); button.append(label,count);
+    const label=document.createElement('span'); label.textContent=tag.label; const count=document.createElement('small'); count.textContent=formatNumber(tag.count); button.append(label,count);
     button.addEventListener('click',()=>{ state.selectedTags.has(tag.key)?state.selectedTags.delete(tag.key):state.selectedTags.add(tag.key); updateTagUI(); applyFilters(); });
     fragment.append(button);
   });
@@ -245,9 +257,9 @@ function updateTagFacets() {
   const searchTag=normalized(els.tagSearch.value);
   els.tagList.querySelectorAll('.tag-chip').forEach(btn=>{
     const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0), visibleBySearch=active||!searchTag||normalized(btn.dataset.tagLabel).includes(searchTag);
-    btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=next.toLocaleString('fr-FR');
+    btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=formatNumber(next);
   });
-  els.tagResultCount.textContent=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`;
+  els.tagResultCount.textContent=gameCountLabel(state.filtered.length);
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}
@@ -256,25 +268,53 @@ function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorit
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
 function renderCard(game,compact=false){
-  const card=els.template.content.firstElementChild.cloneNode(true), image=card.querySelector('.cover'), open=card.querySelector('.card-open'), favorite=card.querySelector('.favorite-btn'); card.dataset.gameId=game.id; if(compact)card.classList.add('compact-card');
+  const card=els.template.content.firstElementChild.cloneNode(true), image=card.querySelector('.cover'), open=card.querySelector('.card-open'), favorite=card.querySelector('.favorite-btn');
+  card.dataset.gameId=game.id;
+  if(compact)card.classList.add('compact-card');
+  applyTranslations(card);
   const displayTitle=cardDisplayTitle(game);
-  card.querySelector('.card-title').textContent=displayTitle; card.querySelector('.card-date').textContent=formatDate(game.post_date); card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
+  card.querySelector('.card-title').textContent=displayTitle;
+  card.querySelector('.card-date').textContent=formatDate(game.post_date);
+  card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
   if(displayTitle && displayTitle!==game.title) card.title=game.title;
-  if(game.image_url){image.fetchPriority='low';image.src=game.image_url;image.alt=`Illustration de ${displayTitle||game.title}`;image.addEventListener('error',()=>{image.style.display='none';},{once:true});}else image.style.display='none';
+  if(game.image_url){
+    image.fetchPriority='low'; image.src=game.image_url;
+    image.alt=currentLanguage()==='fr'?`Illustration de ${displayTitle||game.title}`:`Cover art for ${displayTitle||game.title}`;
+    image.addEventListener('error',()=>{image.style.display='none';},{once:true});
+  }else image.style.display='none';
   card.querySelector('.new-badge').hidden=!isNew(game);
   const tagRow=card.querySelector('.genre-row'), tags=cardDisplayTags(game);
   tags.slice(0,2).forEach(tag=>tagRow.append(pill(tag)));
   if(tags.length>2) tagRow.title=tags.join(' · ');
-  const active=state.library.favorites.has(game.id); favorite.classList.toggle('active',active); favorite.textContent=active?'♥':'♡'; favorite.setAttribute('aria-label',active?'Retirer des favoris':'Ajouter aux favoris'); favorite.addEventListener('click',e=>{e.stopPropagation();toggleFavorite(game.id);});
-  open.addEventListener('click',()=>openDialog(game,{syncUrl:true})); return card;
+  const active=state.library.favorites.has(game.id);
+  favorite.classList.toggle('active',active); favorite.textContent=active?'♥':'♡';
+  favorite.setAttribute('aria-label',t(active?'card.removeFavorite':'card.addFavorite'));
+  favorite.addEventListener('click',e=>{e.stopPropagation();toggleFavorite(game.id);});
+  open.addEventListener('click',()=>openDialog(game,{syncUrl:true}));
+  return card;
 }
-
 function updateCatalogMeta(){
-  const label=`${state.filtered.length.toLocaleString('fr-FR')} jeu${state.filtered.length>1?'x':''}`; els.count.textContent=state.filtered.length.toLocaleString('fr-FR'); els.tagResultCount.textContent=label; els.empty.hidden=state.filtered.length!==0;
-  const hasMore=state.visible<state.filtered.length; els.scrollSentinel.hidden=!hasMore; if(!hasMore)els.infiniteStatus.hidden=true;
-  const active=[]; if(els.search.value.trim())active.push(`Recherche : ${els.search.value.trim()}`); if(state.selectedTags.size)active.push(`${state.selectedTags.size} genre${state.selectedTags.size>1?'s':''}`); if(els.yearFilter.value)active.push(`Sortie ${els.yearFilter.value}`); if(els.releasePeriodFilter.value)active.push(els.releasePeriodFilter.options[els.releasePeriodFilter.selectedIndex].text); if(els.sizeFilter.value)active.push(`Taille ${els.sizeFilter.options[els.sizeFilter.selectedIndex].text}`); if(state.quick.newOnly)active.push('Ajoutés récemment'); if(state.quick.detailsOnly)active.push('Description'); if(state.quick.mediaOnly)active.push('Médias'); if(state.libraryFilter)active.push($('.library-filter[aria-pressed="true"]')?.textContent.trim()||state.libraryFilter);
-  els.activeState.hidden=!active.length; els.activeState.textContent=active.length?`${active.join(' • ')} • ${label}`:'';
-  els.favoritesToggle.classList.toggle('active',state.libraryFilter==='favorites'); els.favoritesToggle.setAttribute('aria-pressed',String(state.libraryFilter==='favorites'));
+  const label=gameCountLabel(state.filtered.length);
+  els.count.textContent=formatNumber(state.filtered.length);
+  els.tagResultCount.textContent=label;
+  els.empty.hidden=state.filtered.length!==0;
+  const hasMore=state.visible<state.filtered.length;
+  els.scrollSentinel.hidden=!hasMore;
+  if(!hasMore)els.infiniteStatus.hidden=true;
+  const active=[];
+  if(els.search.value.trim())active.push(t('filter.searchPrefix',{value:els.search.value.trim()}));
+  if(state.selectedTags.size)active.push(t(state.selectedTags.size===1?'filter.genreCount.one':'filter.genreCount.other',{count:state.selectedTags.size}));
+  if(els.yearFilter.value)active.push(t('filter.releasePrefix',{value:els.yearFilter.value}));
+  if(els.releasePeriodFilter.value)active.push(els.releasePeriodFilter.options[els.releasePeriodFilter.selectedIndex].text);
+  if(els.sizeFilter.value)active.push(t('filter.sizePrefix',{value:els.sizeFilter.options[els.sizeFilter.selectedIndex].text}));
+  if(state.quick.newOnly)active.push(t('filter.addedRecently'));
+  if(state.quick.detailsOnly)active.push(t('filter.description'));
+  if(state.quick.mediaOnly)active.push(t('filter.media'));
+  if(state.libraryFilter)active.push(t(state.libraryFilter==='favorites'?'library.favorite':state.libraryFilter==='backlog'?'library.backlog':'library.completed'));
+  els.activeState.hidden=!active.length;
+  els.activeState.textContent=active.length?`${active.join(' • ')} • ${label}`:'';
+  els.favoritesToggle.classList.toggle('active',state.libraryFilter==='favorites');
+  els.favoritesToggle.setAttribute('aria-pressed',String(state.libraryFilter==='favorites'));
 }
 function renderCatalog({append=false,start=0}={}){const end=Math.min(state.visible,state.filtered.length),fragment=document.createDocumentFragment();for(let i=start;i<end;i++)fragment.append(renderCard(state.filtered[i]));append?els.grid.append(fragment):els.grid.replaceChildren(fragment);updateCatalogMeta();}
 
@@ -292,7 +332,7 @@ function recommendationScores(){
   return scored.sort((a,b)=>b.score-a.score||b.shared-a.shared||gameDate(b.game)-gameDate(a.game));
 }
 function renderRow(grid,games){const f=document.createDocumentFragment();for(const game of games.slice(0,HOME_LIMIT))f.append(renderCard(game,true));grid.replaceChildren(f);}
-function renderRecommendations(){const picks=recommendationScores().slice(0,RECOMMENDATION_LIMIT);els.recommendationSection.hidden=!picks.length;if(!picks.length){els.recommendationGrid.replaceChildren();return;}renderRow(els.recommendationGrid,picks.map(x=>x.game));const n=state.library.favorites.size+state.library.backlog.size;els.recommendationMeta.textContent=`Profil local basé sur ${n} choix, tags rares, fraîcheur et proximité des titres.`;}
+function renderRecommendations(){const picks=recommendationScores().slice(0,RECOMMENDATION_LIMIT);els.recommendationSection.hidden=!picks.length;if(!picks.length){els.recommendationGrid.replaceChildren();return;}renderRow(els.recommendationGrid,picks.map(x=>x.game));const n=state.library.favorites.size+state.library.backlog.size;els.recommendationMeta.textContent=t('recommendation.profile',{count:n});}
 function renderHighlights(){const newest=[...state.games].sort((a,b)=>gameDate(b)-gameDate(a)).filter(g=>isNew(g,30));els.newSection.hidden=!newest.length;if(newest.length)renderRow(els.newGrid,newest);const updated=[...state.games].filter(g=>g.detail_updated_at).sort((a,b)=>Date.parse(b.detail_updated_at)-Date.parse(a.detail_updated_at));els.updatedSection.hidden=!updated.length;if(updated.length)renderRow(els.updatedGrid,updated);const backlog=[...state.library.backlog].map(id=>state.byId.get(id)).filter(Boolean);els.librarySection.hidden=!backlog.length;if(backlog.length)renderRow(els.libraryGrid,backlog);}
 
 function renderSuggestions(){
@@ -305,7 +345,7 @@ function stepSuggestion(delta){const items=$$('.search-suggestion');if(!items.le
 function updateLibraryUI(){els.favoritesCount.textContent=state.library.favorites.size;els.backlogCount.textContent=state.library.backlog.size;els.completedCount.textContent=state.library.completed.size;$$('.library-filter').forEach(b=>{const active=b.dataset.library===state.libraryFilter;b.setAttribute('aria-pressed',String(active));b.classList.toggle('active',active);});}
 function setLibraryFilter(list){state.libraryFilter=state.libraryFilter===list?'':list;updateLibraryUI();applyFilters();closeMobileFilters();}
 function exportLibrary(){const blob=new Blob([JSON.stringify({version:2,exported_at:new Date().toISOString(),...snapshotLibrary()},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fitboyrepack-library.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
-async function importLibrary(file){try{const data=JSON.parse(await file.text());for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderHighlights();renderRecommendations();applyFilters();}catch(error){console.error(error);alert('Fichier de bibliothèque invalide.');}finally{els.importLibrary.value='';}}
+async function importLibrary(file){try{const data=JSON.parse(await file.text());for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderHighlights();renderRecommendations();applyFilters();}catch(error){console.error(error);alert(t('library.invalidFile'));}finally{els.importLibrary.value='';}}
 
 function toggleQuick(key,button){state.quick[key]=!state.quick[key];button.setAttribute('aria-pressed',String(state.quick[key]));button.classList.toggle('active',state.quick[key]);applyFilters();}
 function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.releasePeriodFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();}
@@ -322,15 +362,17 @@ function gameHashId(){return window.location.hash.startsWith('#')?(new URLSearch
 function syncGameHash(id){const hash=`#game=${encodeURIComponent(id)}`;if(window.location.hash!==hash)history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}${hash}`);}
 function clearGameHash(){if(gameHashId())history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}`);}
 
-function collectionButton(label,list,gameId){const b=document.createElement('button');b.type='button';b.className='dialog-action';const refresh=()=>{const on=state.library[list].has(gameId);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.textContent=`${on?'✓ ':''}${label}`;};refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(list==='favorites')renderCatalog();});return b;}
+function collectionButton(labelKey,list,gameId,actionType){const b=document.createElement('button');b.type='button';b.className='dialog-action';b.dataset.actionType=actionType;const refresh=()=>{const on=state.library[list].has(gameId);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.textContent=`${on?'✓ ':''}${t(labelKey)}`;};refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(list==='favorites')renderCatalog();});return b;}
 
-function appendInitialIdentityFact(meta,label,value){
+function appendInitialIdentityFact(meta,labelKey,value,{dateValue=''}={}){
   if(!value)return;
   const box=document.createElement('span');
   const small=document.createElement('small');
-  small.textContent=label;
+  small.dataset.i18n=labelKey;
+  small.textContent=t(labelKey);
   const strong=document.createElement('strong');
   strong.textContent=value;
+  if(dateValue)strong.dataset.i18nDate=dateValue;
   box.append(small,strong);
   meta.append(box);
 }
@@ -341,9 +383,9 @@ function buildInitialCoverIdentity(cover,game){
 
   const meta=document.createElement('div');
   meta.className='cover-details-meta';
-  appendInitialIdentityFact(meta,'Publié',formatDate(game.post_date));
-  if(game.game_release_date)appendInitialIdentityFact(meta,'Sortie du jeu',formatDate(game.game_release_date));
-  if(game.repack_size&&game.repack_size!=='N/A')appendInitialIdentityFact(meta,'Taille repack',game.repack_size);
+  appendInitialIdentityFact(meta,'detail.published',formatDate(game.post_date),{dateValue:game.post_date});
+  if(game.game_release_date)appendInitialIdentityFact(meta,'detail.releaseDate',formatDate(game.game_release_date),{dateValue:game.game_release_date});
+  if(game.repack_size&&game.repack_size!=='N/A')appendInitialIdentityFact(meta,'detail.repackSize',game.repack_size);
   card.append(meta);
 
   const tags=cardDisplayTags(game);
@@ -374,7 +416,7 @@ function buildDetailLoadingShell(){
   const shell=document.createElement('div');
   shell.className='detail-loading-shell';
   shell.setAttribute('aria-busy','true');
-  shell.setAttribute('aria-label','Chargement de la fiche');
+  shell.setAttribute('aria-label',t('detail.loadingAria'));
   for(const cls of ['detail-loading-tabs','detail-loading-copy','detail-loading-media']){
     const block=document.createElement('div');
     block.className=cls;
@@ -402,7 +444,7 @@ function openDialog(game,{syncUrl=true}={}){
   if(game.image_url){
     const img=document.createElement('img');
     img.src=game.image_url;
-    img.alt=`Jaquette de ${identityDisplayTitle(game)||game.title}`;
+    img.alt=currentLanguage()==='fr'?`Jaquette de ${identityDisplayTitle(game)||game.title}`:`Cover of ${identityDisplayTitle(game)||game.title}`;
     img.loading='eager';
     img.referrerPolicy='no-referrer';
     img.addEventListener('error',()=>img.remove(),{once:true});
@@ -414,23 +456,25 @@ function openDialog(game,{syncUrl=true}={}){
   const actions=document.createElement('div');
   actions.className='dialog-actions';
   actions.append(
-    collectionButton('Favori','favorites',game.id),
-    collectionButton('À jouer','backlog',game.id),
-    collectionButton('Terminé','completed',game.id),
+    collectionButton('detail.favorite','favorites',game.id,'favorite'),
+    collectionButton('detail.backlog','backlog',game.id,'backlog'),
+    collectionButton('detail.completed','completed',game.id,'completed'),
   );
 
   const share=document.createElement('button');
   share.type='button';
   share.className='dialog-action';
-  share.textContent='Partager';
+  share.dataset.actionType='share';
+  share.textContent=t('detail.share');
   share.addEventListener('click',async()=>{
     const url=`${location.origin}${location.pathname}#game=${encodeURIComponent(game.id)}`;
     try{
       await navigator.clipboard.writeText(url);
-      share.textContent='Lien copié ✓';
-      setTimeout(()=>share.textContent='Partager',1500);
+      share.dataset.copied='true';
+      share.textContent=t('detail.shareCopied');
+      setTimeout(()=>{share.dataset.copied='false';share.textContent=t('detail.share');},1500);
     }catch{
-      prompt('Copier ce lien :',url);
+      prompt(t('detail.copyPrompt'),url);
     }
   });
   actions.append(share);
@@ -443,7 +487,8 @@ function openDialog(game,{syncUrl=true}={}){
     link.href=source;
     link.target='_blank';
     link.rel='noopener noreferrer';
-    link.textContent='Voir la page source ↗';
+    link.dataset.i18n='detail.source';
+    link.textContent=t('detail.source');
     cover.append(link);
   }
 
@@ -454,7 +499,7 @@ function openDialog(game,{syncUrl=true}={}){
   const detailStatus=document.createElement('p');
   detailStatus.className='dialog-note sr-only';
   detailStatus.dataset.detailStatus='loading';
-  detailStatus.textContent=(game.details_ready||game.metadata_ready)?'Chargement de la fiche détaillée…':'Fiche détaillée en cours d’enrichissement.';
+  detailStatus.textContent=(game.details_ready||game.metadata_ready)?t('detail.loading'):t('detail.enriching');
   info.append(detailStatus);
 
   layout.append(cover,info);
@@ -471,9 +516,63 @@ function navigateDialog(delta){if(!els.dialog.open||isLightboxOpen()||state.filt
 function restoreCatalogPosition(){const opener=state.dialogOpener;state.dialogGameId=null;state.dialogOpener=null;clearGameHash();unlockCatalogScroll();requestAnimationFrame(()=>{try{if(opener?.isConnected)opener.focus({preventScroll:true});}catch{}});}
 function openHashGame(){const id=gameHashId();if(!id)return;const game=state.byId.get(id);if(game)openDialog(game,{syncUrl:false});}
 
-function renderHealth(health){els.healthPanel.hidden=false;els.healthBadge.hidden=false;els.healthBadge.textContent=`${health.coverage?.details||0}% fiches`;els.healthTotal.textContent=health.total_games.toLocaleString('fr-FR');els.healthDescriptions.textContent=health.with_description.toLocaleString('fr-FR');els.healthGalleries.textContent=health.with_gallery.toLocaleString('fr-FR');els.healthGifs.textContent=health.with_gif.toLocaleString('fr-FR');const when=health.generated_at?new Intl.DateTimeFormat('fr-FR',{dateStyle:'short',timeStyle:'short'}).format(new Date(health.generated_at)):'';els.healthMeta.textContent=`${health.enrichment_pending.toLocaleString('fr-FR')} fiches restent à enrichir${when?` • synchro ${when}`:''}.`;}
+function renderHealth(health){
+  els.healthPanel.hidden=false;
+  els.healthBadge.hidden=false;
+  els.healthBadge.textContent=`${health.coverage?.details||0}% ${currentLanguage()==='fr'?'fiches':'details'}`;
+  els.healthTotal.textContent=formatNumber(health.total_games);
+  els.healthDescriptions.textContent=formatNumber(health.with_description);
+  els.healthGalleries.textContent=formatNumber(health.with_gallery);
+  els.healthGifs.textContent=formatNumber(health.with_gif);
+  const when=health.generated_at?formatDateValue(health.generated_at,{dateStyle:'short',timeStyle:'short'}):'';
+  const sync=when?t('health.sync',{value:when}):'';
+  els.healthMeta.textContent=t('health.remaining',{count:formatNumber(health.enrichment_pending),sync});
+}
 
-async function loadCatalog(){try{const payload=await loadCatalogPayload();state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);state.byId=new Map(state.games.map(g=>[g.id,g]));const generated=payload.generated_at;els.status.textContent=generated?`Mis à jour ${new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeStyle:'short'}).format(new Date(generated))}`:`${state.games.length.toLocaleString('fr-FR')} jeux`;populateYears();buildTagIndex();updateLibraryUI();applyFilters();renderHighlights();renderRecommendations();openHashGame();loadSearchIndexPayload().then(index=>{if(index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);state.searchIndex=index;if(els.search.value.trim())applyFilters();}).catch(e=>console.warn('Search index unavailable, using full scan',e));loadHealthPayload().then(renderHealth).catch(e=>console.warn('Health unavailable',e));}catch(error){console.error(error);els.status.textContent='Catalogue indisponible';els.empty.hidden=false;els.empty.querySelector('strong').textContent='Impossible de charger le catalogue';}}
+let lastCatalogPayload=null;
+let lastHealthPayload=null;
+async function loadCatalog(){
+  try{
+    const payload=await loadCatalogPayload();
+    lastCatalogPayload=payload;
+    state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);
+    state.byId=new Map(state.games.map(g=>[g.id,g]));
+    const generated=payload.generated_at;
+    els.status.textContent=generated
+      ?t('catalog.updated',{value:formatDateValue(generated,{dateStyle:'medium',timeStyle:'short'})})
+      :gameCountLabel(state.games.length);
+    populateYears();
+    buildTagIndex();
+    updateLibraryUI();
+    applyFilters();
+    renderHighlights();
+    renderRecommendations();
+    openHashGame();
+    loadSearchIndexPayload().then(index=>{
+      if(index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);
+      state.searchIndex=index;
+      if(els.search.value.trim())applyFilters();
+    }).catch(e=>console.warn('Search index unavailable, using full scan',e));
+    loadHealthPayload().then(health=>{lastHealthPayload=health;renderHealth(health);}).catch(e=>console.warn('Health unavailable',e));
+  }catch(error){
+    console.error(error);
+    els.status.textContent=t('catalog.unavailable');
+    els.empty.hidden=false;
+    els.empty.querySelector('strong').textContent=t('catalog.loadFailed');
+  }
+}
+
+document.addEventListener('fitboy:language-change',()=>{
+  applyTranslations(document);
+  if(lastCatalogPayload?.generated_at){
+    els.status.textContent=t('catalog.updated',{value:formatDateValue(lastCatalogPayload.generated_at,{dateStyle:'medium',timeStyle:'short'})});
+  }
+  if(lastHealthPayload)renderHealth(lastHealthPayload);
+  buildTagIndex();
+  applyFilters();
+  renderHighlights();
+  renderRecommendations();
+});
 
 els.search.addEventListener('input',()=>{clearTimeout(state.searchTimer);state.searchTimer=setTimeout(applyFilters,SEARCH_DEBOUNCE_MS);});
 els.search.addEventListener('keydown',event=>{if(!els.suggestions.hidden&&(event.key==='ArrowDown'||event.key==='ArrowUp')){event.preventDefault();stepSuggestion(event.key==='ArrowDown'?1:-1);return;}if(event.key==='Enter'&&state.suggestionIndex>=0){event.preventDefault();$$('.search-suggestion')[state.suggestionIndex]?.click();}});

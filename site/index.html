@@ -5,8 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="FitBoyRepack — catalogue léger, filtrable et actualisé automatiquement.">
+  <meta name="description" content="FitBoyRepack — catalogue léger, filtrable et actualisé automatiquement." data-i18n-content="app.metaDescription">
   <title>FitBoyRepack</title>
+  <style>html.i18n-pending body{visibility:hidden}</style>
+  <script>
+    (() => {
+      const key='fitboyrepack:language:v1';
+      let mode='auto';
+      try { mode=localStorage.getItem(key)||'auto'; } catch {}
+      if (!['auto','fr','en'].includes(mode)) mode='auto';
+      const langs=[...(navigator.languages||[]),navigator.language].filter(Boolean).map(x=>String(x).toLowerCase());
+      const auto=(langs.find(x=>x.startsWith('fr')||x.startsWith('en'))||'en').startsWith('fr')?'fr':'en';
+      const language=mode==='fr'||mode==='en'?mode:auto;
+      document.documentElement.classList.add('i18n-pending');
+      document.documentElement.dataset.languageMode=mode;
+      document.documentElement.dataset.language=language;
+      document.documentElement.lang=language;
+      setTimeout(()=>document.documentElement.classList.remove('i18n-pending'),3000);
+    })();
+  </script>
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/modal-fix.css">
   <link rel="stylesheet" href="./assets/ux-fixes.css">
@@ -18,72 +35,77 @@
 </head>
 <body>
   <header class="topbar compact-topbar">
-    <a class="brand" href="./" aria-label="FitBoyRepack — accueil"><span>FitBoy</span><strong>Repack</strong></a>
-    <section class="header-toolbar" aria-label="Recherche et tri du catalogue">
+    <a class="brand" href="./" aria-label="FitBoyRepack — accueil" data-i18n-aria-label="app.home"><span>FitBoy</span><strong>Repack</strong></a>
+    <section class="header-toolbar" aria-label="Recherche et tri du catalogue" data-i18n-aria-label="app.searchSort">
       <div class="search-shell">
         <label class="search-box">
-          <span class="sr-only">Rechercher</span>
+          <span class="sr-only" data-i18n="app.search">Rechercher</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-          <input id="searchInput" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions" placeholder="Titre, genre, année de sortie…">
+          <input id="searchInput" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions" placeholder="Titre, genre, année de sortie…" data-i18n-placeholder="app.searchPlaceholder">
         </label>
         <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
       </div>
-      <label class="select-wrap"><span class="sr-only">Tri</span><select id="sortControl"><option value="date_desc">Ajouts récents</option><option value="release_desc">Sorties récentes</option><option value="release_asc">Sorties anciennes</option><option value="relevance">Pertinence</option><option value="date_asc">Ajouts anciens</option><option value="name_asc">Nom A → Z</option><option value="name_desc">Nom Z → A</option></select></label>
-      <button id="mobileFiltersButton" class="ghost-btn mobile-filters-button" type="button" aria-expanded="false" aria-controls="filterSidebar">Filtres</button>
+      <label class="select-wrap"><span class="sr-only" data-i18n="app.sort">Tri</span><select id="sortControl"><option value="date_desc" data-i18n="sort.dateDesc">Ajouts récents</option><option value="release_desc" data-i18n="sort.releaseDesc">Sorties récentes</option><option value="release_asc" data-i18n="sort.releaseAsc">Sorties anciennes</option><option value="relevance" data-i18n="sort.relevance">Pertinence</option><option value="date_asc" data-i18n="sort.dateAsc">Ajouts anciens</option><option value="name_asc" data-i18n="sort.nameAsc">Nom A → Z</option><option value="name_desc" data-i18n="sort.nameDesc">Nom Z → A</option></select></label>
+      <button id="mobileFiltersButton" class="ghost-btn mobile-filters-button" type="button" aria-expanded="false" aria-controls="filterSidebar" data-i18n="app.filters">Filtres</button>
     </section>
     <div class="topbar-meta compact-meta">
-      <span id="catalogStatus" class="catalog-status">Chargement…</span>
-      <span id="healthBadge" class="health-badge" title="État du catalogue" hidden></span>
-      <span class="header-count" aria-live="polite"><strong id="visibleCount">0</strong><span>jeux</span></span>
-      <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ Favoris</button>
+      <div id="languageSwitcher" class="language-switcher" role="group" aria-label="Langue">
+        <button type="button" data-language-mode="auto" aria-pressed="false">Auto</button>
+        <button type="button" data-language-mode="fr" aria-pressed="false">FR</button>
+        <button type="button" data-language-mode="en" aria-pressed="false">EN</button>
+      </div>
+      <span id="catalogStatus" class="catalog-status" data-i18n="app.catalogLoading">Chargement…</span>
+      <span id="healthBadge" class="health-badge" title="État du catalogue" data-i18n-title="app.catalogHealth" hidden></span>
+      <span class="header-count" aria-live="polite"><strong id="visibleCount">0</strong><span data-i18n="app.games">jeux</span></span>
+      <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ <span data-i18n="app.favorites">Favoris</span></button>
     </div>
   </header>
 
   <div id="filterOverlay" class="filter-overlay" hidden></div>
   <main class="page-shell compact-shell">
     <div class="catalog-layout">
-      <aside id="filterSidebar" class="filter-sidebar" aria-label="Filtres du catalogue">
-        <div class="sidebar-mobile-head"><strong>Filtres</strong><button id="closeFilters" type="button" class="ghost-btn" aria-label="Fermer les filtres">×</button></div>
+      <aside id="filterSidebar" class="filter-sidebar" aria-label="Filtres du catalogue" data-i18n-aria-label="app.filterCatalog">
+        <div class="sidebar-mobile-head"><strong data-i18n="app.filters">Filtres</strong><button id="closeFilters" type="button" class="ghost-btn" aria-label="Fermer les filtres" data-i18n-aria-label="app.closeFilters">×</button></div>
 
         <section class="sidebar-filter quick-filter-panel">
-          <div class="sidebar-filter-heading"><h2>Filtrer</h2><button id="resetFilters" class="ghost-btn compact-reset" type="button">Effacer</button></div>
+          <div class="sidebar-filter-heading"><h2 data-i18n="app.filter">Filtrer</h2><button id="resetFilters" class="ghost-btn compact-reset" type="button" data-i18n="app.clear">Effacer</button></div>
           <div class="filter-select-grid">
-            <label><span>Année de sortie</span><select id="yearFilter"><option value="">Toutes</option></select></label>
-            <label><span>Taille</span><select id="sizeFilter"><option value="">Toutes</option><option value="lt1">&lt; 1 Go</option><option value="1-10">1–10 Go</option><option value="10-50">10–50 Go</option><option value="50plus">50+ Go</option></select></label>
-            <label class="release-period-field"><span>Période de sortie</span><select id="releasePeriodFilter"><option value="">Toutes</option><option value="this-week">Cette semaine</option><option value="last-week">Semaine dernière</option><option value="7d">7 derniers jours</option><option value="30d">30 derniers jours</option><option value="90d">90 derniers jours</option><option value="this-year">Cette année</option></select></label>
+            <label><span data-i18n="filter.releaseYear">Année de sortie</span><select id="yearFilter"><option value="" data-i18n="filter.all">Toutes</option></select></label>
+            <label><span data-i18n="filter.size">Taille</span><select id="sizeFilter"><option value="" data-i18n="filter.all">Toutes</option><option value="lt1" data-i18n="filter.sizeLt1">&lt; 1 Go</option><option value="1-10" data-i18n="filter.size1to10">1–10 Go</option><option value="10-50" data-i18n="filter.size10to50">10–50 Go</option><option value="50plus" data-i18n="filter.size50plus">50+ Go</option></select></label>
+            <label class="release-period-field"><span data-i18n="filter.releasePeriod">Période de sortie</span><select id="releasePeriodFilter"><option value="" data-i18n="filter.all">Toutes</option><option value="this-week" data-i18n="filter.thisWeek">Cette semaine</option><option value="last-week" data-i18n="filter.lastWeek">Semaine dernière</option><option value="7d" data-i18n="filter.last7">7 derniers jours</option><option value="30d" data-i18n="filter.last30">30 derniers jours</option><option value="90d" data-i18n="filter.last90">90 derniers jours</option><option value="this-year" data-i18n="filter.thisYear">Cette année</option></select></label>
           </div>
           <div class="quick-toggle-grid">
-            <button id="newOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Ajoutés <small>30 j</small></button>
-            <button id="detailsOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Description</button>
-            <button id="mediaOnlyFilter" class="filter-toggle" type="button" aria-pressed="false">Médias</button>
+            <button id="newOnlyFilter" class="filter-toggle" type="button" aria-pressed="false"><span data-i18n="filter.added">Ajoutés</span> <small data-i18n="filter.days30">30 j</small></button>
+            <button id="detailsOnlyFilter" class="filter-toggle" type="button" aria-pressed="false" data-i18n="filter.description">Description</button>
+            <button id="mediaOnlyFilter" class="filter-toggle" type="button" aria-pressed="false" data-i18n="filter.media">Médias</button>
           </div>
         </section>
 
         <details class="sidebar-filter sidebar-collapsible library-panel">
-          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Bibliothèque</strong><small>Favoris · À jouer · Terminé</small></span></summary>
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong data-i18n="library.title">Bibliothèque</strong><small data-i18n="library.summary">Favoris · À jouer · Terminé</small></span></summary>
           <div class="sidebar-collapse-body">
             <div class="library-buttons">
-              <button class="library-filter" data-library="favorites" type="button" aria-pressed="false">♥ Favoris <small id="favoritesCount">0</small></button>
-              <button class="library-filter" data-library="backlog" type="button" aria-pressed="false">＋ À jouer <small id="backlogCount">0</small></button>
-              <button class="library-filter" data-library="completed" type="button" aria-pressed="false">✓ Terminé <small id="completedCount">0</small></button>
+              <button class="library-filter" data-library="favorites" type="button" aria-pressed="false">♥ <span data-i18n="library.favorite">Favoris</span> <small id="favoritesCount">0</small></button>
+              <button class="library-filter" data-library="backlog" type="button" aria-pressed="false">＋ <span data-i18n="library.backlog">À jouer</span> <small id="backlogCount">0</small></button>
+              <button class="library-filter" data-library="completed" type="button" aria-pressed="false">✓ <span data-i18n="library.completed">Terminé</span> <small id="completedCount">0</small></button>
             </div>
-            <div class="library-transfer"><button id="exportLibrary" class="ghost-btn" type="button">Exporter</button><button id="importLibraryButton" class="ghost-btn" type="button">Importer</button><input id="importLibrary" type="file" accept="application/json,.json" hidden></div>
+            <div class="library-transfer"><button id="exportLibrary" class="ghost-btn" type="button" data-i18n="library.export">Exporter</button><button id="importLibraryButton" class="ghost-btn" type="button" data-i18n="library.import">Importer</button><input id="importLibrary" type="file" accept="application/json,.json" hidden></div>
           </div>
         </details>
 
         <section id="tagFilter" class="sidebar-filter compact-tag-filter">
           <div class="compact-tag-heading">
-            <span><strong>Genres</strong><small>Filtres enrichis inclus</small></span>
+            <span><strong data-i18n="genre.title">Genres</strong><small data-i18n="genre.enriched">Filtres enrichis inclus</small></span>
             <strong id="selectedTagCount" class="sidebar-selected-count">0</strong>
           </div>
           <div id="selectedTagsBar" class="selected-tags-bar compact-selected-tags" hidden></div>
-          <button id="openTagPicker" class="ghost-btn tag-picker-trigger" type="button">Choisir les genres</button>
+          <button id="openTagPicker" class="ghost-btn tag-picker-trigger" type="button" data-i18n="genre.choose">Choisir les genres</button>
         </section>
 
         <details id="healthPanel" class="sidebar-filter sidebar-collapsible health-panel" hidden>
-          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong>Catalogue</strong><small>État des données</small></span></summary>
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong data-i18n="health.catalog">Catalogue</strong><small data-i18n="health.dataState">État des données</small></span></summary>
           <div class="sidebar-collapse-body">
-            <div class="health-grid"><span>Jeux <strong id="healthTotal">—</strong></span><span>Descriptions <strong id="healthDescriptions">—</strong></span><span>Galeries <strong id="healthGalleries">—</strong></span><span>GIF <strong id="healthGifs">—</strong></span></div>
+            <div class="health-grid"><span><span data-i18n="health.games">Jeux</span> <strong id="healthTotal">—</strong></span><span><span data-i18n="health.descriptions">Descriptions</span> <strong id="healthDescriptions">—</strong></span><span><span data-i18n="health.galleries">Galeries</span> <strong id="healthGalleries">—</strong></span><span>GIF <strong id="healthGifs">—</strong></span></div>
             <p id="healthMeta" class="sidebar-filter-help"></p>
           </div>
         </details>
@@ -93,43 +115,43 @@
         <div id="activeState" class="active-state active-filter-chips" hidden></div>
 
         <details id="discoveryShell" class="discovery-shell">
-          <summary class="discovery-summary"><span class="discovery-summary-copy"><strong>Découvrir</strong><small>Nouveautés · Mises à jour · À jouer · Pour toi</small></span></summary>
+          <summary class="discovery-summary"><span class="discovery-summary-copy"><strong data-i18n="discover.title">Découvrir</strong><small data-i18n="discover.summary">Nouveautés · Mises à jour · À jouer · Pour toi</small></span></summary>
           <div class="discovery-content">
-            <section id="newSection" class="home-strip" hidden><div class="section-heading"><h2>Nouveautés</h2></div><div id="newGrid" class="home-card-row"></div></section>
-            <section id="updatedSection" class="home-strip" hidden><div class="section-heading"><h2>Mis à jour</h2></div><div id="updatedGrid" class="home-card-row"></div></section>
-            <section id="librarySection" class="home-strip" hidden><div class="section-heading"><h2>À jouer</h2></div><div id="libraryGrid" class="home-card-row"></div></section>
-            <section id="recommendationSection" class="recommendations" hidden><div class="section-heading"><h2>Pour toi</h2><p id="recommendationMeta" class="section-note" hidden></p></div><div id="recommendationGrid" class="home-card-row recommendation-grid"></div></section>
+            <section id="newSection" class="home-strip" hidden><div class="section-heading"><h2 data-i18n="discover.new">Nouveautés</h2></div><div id="newGrid" class="home-card-row"></div></section>
+            <section id="updatedSection" class="home-strip" hidden><div class="section-heading"><h2 data-i18n="discover.updated">Mis à jour</h2></div><div id="updatedGrid" class="home-card-row"></div></section>
+            <section id="librarySection" class="home-strip" hidden><div class="section-heading"><h2 data-i18n="discover.backlog">À jouer</h2></div><div id="libraryGrid" class="home-card-row"></div></section>
+            <section id="recommendationSection" class="recommendations" hidden><div class="section-heading"><h2 data-i18n="discover.forYou">Pour toi</h2><p id="recommendationMeta" class="section-note" hidden></p></div><div id="recommendationGrid" class="home-card-row recommendation-grid"></div></section>
           </div>
         </details>
 
-        <div class="section-heading catalog-heading"><h2>Catalogue</h2></div>
+        <div class="section-heading catalog-heading"><h2 data-i18n="catalog.title">Catalogue</h2></div>
         <section id="gameGrid" class="game-grid" aria-live="polite"></section>
-        <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"><span id="infiniteStatus" class="infinite-status" hidden>Chargement…</span></div>
-        <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
+        <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"><span id="infiniteStatus" class="infinite-status" hidden data-i18n="app.catalogLoading">Chargement…</span></div>
+        <section id="emptyState" class="empty-state" hidden><strong data-i18n="empty.title">Aucun résultat</strong><span data-i18n="empty.body">Essaie un autre titre ou retire un filtre.</span></section>
       </div>
     </div>
   </main>
 
   <dialog id="tagPickerDialog" class="tag-picker-dialog">
     <div class="tag-picker-head">
-      <div><strong>Genres et catégories</strong><small>Recherche dans les tags du catalogue et les genres enrichis</small></div>
-      <button id="closeTagPicker" class="ghost-btn tag-picker-close" type="button" aria-label="Fermer">×</button>
+      <div><strong data-i18n="genre.dialogTitle">Genres et catégories</strong><small data-i18n="genre.dialogHelp">Recherche dans les tags du catalogue et les genres enrichis</small></div>
+      <button id="closeTagPicker" class="ghost-btn tag-picker-close" type="button" aria-label="Fermer" data-i18n-aria-label="app.close">×</button>
     </div>
     <div class="tag-picker-toolbar">
-      <label class="mini-search"><span class="sr-only">Rechercher un genre</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un genre…"></label>
-      <button id="clearTags" class="ghost-btn reset-tags" type="button">Tout effacer</button>
+      <label class="mini-search"><span class="sr-only" data-i18n="genre.search">Rechercher un genre</span><input id="tagSearch" type="search" autocomplete="off" placeholder="Chercher un genre…" data-i18n-placeholder="genre.searchPlaceholder"></label>
+      <button id="clearTags" class="ghost-btn reset-tags" type="button" data-i18n="genre.clearAll">Tout effacer</button>
     </div>
-    <div class="tag-result-summary" aria-live="polite"><span>Résultat courant</span><strong id="tagResultCount">0 jeux</strong></div>
-    <div id="tagList" class="tag-list tag-picker-list" aria-label="Liste des genres"></div>
+    <div class="tag-result-summary" aria-live="polite"><span data-i18n="genre.currentResult">Résultat courant</span><strong id="tagResultCount">0 jeux</strong></div>
+    <div id="tagList" class="tag-list tag-picker-list" aria-label="Liste des genres" data-i18n-aria-label="genre.list"></div>
   </dialog>
 
-  <dialog id="gameDialog" class="game-dialog"><button class="dialog-close" type="button" data-close-dialog aria-label="Fermer">×</button><div id="dialogContent"></div></dialog>
+  <dialog id="gameDialog" class="game-dialog"><button class="dialog-close" type="button" data-close-dialog aria-label="Fermer" data-i18n-aria-label="app.close">×</button><div id="dialogContent"></div></dialog>
 
   <template id="cardTemplate">
-    <article class="game-card"><button class="favorite-btn" type="button" aria-label="Ajouter aux favoris">♡</button><button class="card-open" type="button"><div class="cover-wrap"><img class="cover" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="cover-fallback" aria-hidden="true"></div><span class="new-badge" hidden>Nouveau</span></div><div class="card-body"><h2 class="card-title"></h2><div class="card-meta"><span class="card-date"></span><span class="card-size"></span></div><div class="genre-row"></div></div></button></article>
+    <article class="game-card"><button class="favorite-btn" type="button" aria-label="Ajouter aux favoris" data-i18n-aria-label="card.addFavorite">♡</button><button class="card-open" type="button"><div class="cover-wrap"><img class="cover" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="cover-fallback" aria-hidden="true"></div><span class="new-badge" hidden data-i18n="card.new">Nouveau</span></div><div class="card-body"><h2 class="card-title"></h2><div class="card-meta"><span class="card-date"></span><span class="card-size"></span></div><div class="genre-row"></div></div></button></article>
   </template>
 
-  <footer><span>FitBoyRepack</span><span>Catalogue statique · bibliothèque locale</span></footer>
+  <footer><span>FitBoyRepack</span><span data-i18n="footer.local">Catalogue statique · bibliothèque locale</span></footer>
   <script type="module" src="./assets/app.js"></script>
   <script type="module" src="./assets/details.js"></script>
   <script src="./assets/media-sanitize.js"></script>

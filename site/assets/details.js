@@ -1,9 +1,17 @@
-import { loadGameDetail } from './catalog-api.js';
+import { loadGameDetail, loadTranslationsFrPayload } from './catalog-api.js';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
 } from './game-identity.js';
+import {
+  applyTranslations,
+  currentLanguage,
+  formatDateValue,
+  mediaCountLabel,
+  t,
+} from './i18n.js';
+import { localizeGameProse } from './translations.js';
 
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');
@@ -11,6 +19,8 @@ const dialogContent = document.querySelector('#dialogContent');
 let lightboxItems = [];
 let lightboxIndex = 0;
 let detailRequestId = 0;
+let currentSourceGame = null;
+let currentSourceGameId = '';
 
 function normalizedUrl(value = '') {
   try {
@@ -30,10 +40,7 @@ function createPill(text) {
 }
 
 function formatDate(value) {
-  const time = Date.parse(value || '');
-  return Number.isFinite(time)
-    ? new Intl.DateTimeFormat('fr-FR', { day:'2-digit', month:'short', year:'numeric' }).format(time)
-    : 'Date inconnue';
+  return formatDateValue(value) || (currentLanguage()==='fr'?'Date inconnue':'Unknown date');
 }
 
 function verifiedMetadata(game) {
@@ -100,12 +107,13 @@ function cleanMetadataList(value, cleaner = cleanMetadataScalar) {
   return out;
 }
 
-function appendIdentityFact(list, label, value) {
+function appendIdentityFact(list, labelKey, value) {
   if (!value) return;
   const row = document.createElement('div');
   row.className = 'identity-fact';
   const term = document.createElement('dt');
-  term.textContent = label;
+  term.dataset.i18n = labelKey;
+  term.textContent = t(labelKey);
   const description = document.createElement('dd');
   description.textContent = value;
   row.append(term, description);
@@ -122,11 +130,11 @@ function makeIdentityFacts(game) {
   const list = document.createElement('dl');
   list.className = 'identity-fact-list';
 
-  appendIdentityFact(list, 'Développeur', cleanMetadataScalar(metadata.developer));
-  appendIdentityFact(list, 'Éditeur', cleanMetadataScalar(metadata.publisher));
+  appendIdentityFact(list, 'detail.developer', cleanMetadataScalar(metadata.developer));
+  appendIdentityFact(list, 'detail.publisher', cleanMetadataScalar(metadata.publisher));
 
   const platforms = cleanMetadataList(metadata.platforms, cleanPlatformLabel);
-  appendIdentityFact(list, 'Plateformes', platforms.slice(0, 5).join(' · '));
+  appendIdentityFact(list, 'detail.platforms', platforms.slice(0, 5).join(' · '));
 
   if (list.childElementCount) facts.append(list);
 
@@ -138,7 +146,8 @@ function makeIdentityFacts(game) {
     const sourceLine = document.createElement('div');
     sourceLine.className = 'identity-evidence';
     const prefix = document.createElement('span');
-    prefix.textContent = 'Données vérifiées';
+    prefix.dataset.i18n = 'detail.verified';
+    prefix.textContent = t('detail.verified');
     sourceLine.append(prefix);
     sources.forEach(url => {
       const link = document.createElement('a');
@@ -204,18 +213,35 @@ function renderCoverDetails(layout, game) {
   meta.className = 'cover-details-meta';
 
   const published = document.createElement('span');
-  published.innerHTML = `<small>Publié</small><strong>${formatDate(game.post_date)}</strong>`;
+  const publishedLabel = document.createElement('small');
+  publishedLabel.dataset.i18n = 'detail.published';
+  publishedLabel.textContent = t('detail.published');
+  const publishedValue = document.createElement('strong');
+  publishedValue.dataset.i18nDate = game.post_date || '';
+  publishedValue.textContent = formatDate(game.post_date);
+  published.append(publishedLabel, publishedValue);
   meta.append(published);
 
   if (metadata?.release_date) {
     const release = document.createElement('span');
-    release.innerHTML = `<small>Sortie du jeu</small><strong>${formatDate(metadata.release_date)}</strong>`;
+    const releaseLabel = document.createElement('small');
+    releaseLabel.dataset.i18n = 'detail.releaseDate';
+    releaseLabel.textContent = t('detail.releaseDate');
+    const releaseValue = document.createElement('strong');
+    releaseValue.dataset.i18nDate = metadata.release_date;
+    releaseValue.textContent = formatDate(metadata.release_date);
+    release.append(releaseLabel, releaseValue);
     meta.append(release);
   }
 
   if (game.repack_size && game.repack_size !== 'N/A') {
     const size = document.createElement('span');
-    size.innerHTML = `<small>Taille repack</small><strong>${game.repack_size}</strong>`;
+    const sizeLabel = document.createElement('small');
+    sizeLabel.dataset.i18n = 'detail.repackSize';
+    sizeLabel.textContent = t('detail.repackSize');
+    const sizeValue = document.createElement('strong');
+    sizeValue.textContent = game.repack_size;
+    size.append(sizeLabel, sizeValue);
     meta.append(size);
   }
   card.append(meta);
@@ -251,24 +277,26 @@ function renderCoverDetails(layout, game) {
   info.querySelector(':scope > .dialog-genres')?.classList.add('details-moved');
 }
 
-function makeTextPanel(title, text) {
+function makeTextPanel(titleKey, text) {
   if (!text) return null;
   const panel = document.createElement('section');
   panel.className = 'detail-text-panel';
   const heading = document.createElement('h3');
-  heading.textContent = title;
+  heading.dataset.i18n = titleKey;
+  heading.textContent = t(titleKey);
   const body = document.createElement('p');
   body.textContent = text;
   panel.append(heading, body);
   return panel;
 }
 
-function makeListPanel(title, items) {
+function makeListPanel(titleKey, items) {
   if (!Array.isArray(items) || !items.length) return null;
   const panel = document.createElement('section');
   panel.className = 'detail-text-panel';
   const heading = document.createElement('h3');
-  heading.textContent = title;
+  heading.dataset.i18n = titleKey;
+  heading.textContent = t(titleKey);
   const list = document.createElement('ul');
   items.forEach(item => {
     const li = document.createElement('li');
@@ -279,13 +307,15 @@ function makeListPanel(title, items) {
   return panel;
 }
 
-function renderDescriptionTabs(info, game) {
-  if (info.querySelector('.detail-tabs')) return;
+function renderDescriptionTabs(info, game, { replace = false } = {}) {
+  const existing = info.querySelector('.detail-tabs');
+  if (existing && !replace) return;
+  existing?.remove();
   const details = game.details || {};
   const panels = [
-    ['Description', makeTextPanel('Description', details.description)],
-    ['Game Features', makeListPanel('Game Features', details.game_features)],
-    ['Repack Features', makeListPanel('Repack Features', details.repack_features)],
+    ['detail.description', makeTextPanel('detail.description', details.description)],
+    ['detail.gameFeatures', makeListPanel('detail.gameFeatures', details.game_features)],
+    ['detail.repackFeatures', makeListPanel('detail.repackFeatures', details.repack_features)],
   ].filter(([, panel]) => panel);
   if (!panels.length) return;
 
@@ -296,11 +326,12 @@ function renderDescriptionTabs(info, game) {
   const body = document.createElement('div');
   body.className = 'detail-tab-body';
 
-  panels.forEach(([label, panel], index) => {
+  panels.forEach(([labelKey, panel], index) => {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'detail-tab-btn';
-    button.textContent = label;
+    button.dataset.i18n = labelKey;
+    button.textContent = t(labelKey);
     button.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
     panel.hidden = index !== 0;
     button.addEventListener('click', () => {
@@ -316,7 +347,6 @@ function renderDescriptionTabs(info, game) {
   section.append(nav, body);
   info.prepend(section);
 }
-
 function validMedia(game) {
   if (!Array.isArray(game.media)) return [];
   return game.media
@@ -349,9 +379,10 @@ function renderMediaGallery(info, game) {
   const heading = document.createElement('div');
   heading.className = 'dialog-subheading';
   const title = document.createElement('h3');
-  title.textContent = 'Images & GIFs';
+  title.dataset.i18n = 'detail.imagesGifs';
+  title.textContent = t('detail.imagesGifs');
   const count = document.createElement('span');
-  count.textContent = `${media.length} média${media.length > 1 ? 's' : ''}`;
+  count.textContent = mediaCountLabel(media.length);
   heading.append(title, count);
 
   const grid = document.createElement('div');
@@ -365,7 +396,7 @@ function renderMediaGallery(info, game) {
 
     const img = document.createElement('img');
     img.src = item.preview_url || item.url;
-    img.alt = `Capture de ${game.title}`;
+    img.alt = currentLanguage()==='fr'?`Capture de ${game.title}`:`Screenshot of ${game.title}`;
     img.loading = 'lazy';
     img.decoding = 'async';
     img.referrerPolicy = 'no-referrer';
@@ -397,7 +428,8 @@ function renderGameplayPreview(info, game) {
   const heading = document.createElement('div');
   heading.className = 'dialog-subheading';
   const h3 = document.createElement('h3');
-  h3.textContent = 'Gameplay Preview';
+  h3.dataset.i18n = 'detail.gameplay';
+  h3.textContent = t('detail.gameplay');
   const hint = document.createElement('span');
   hint.textContent = 'GIF';
   heading.append(h3, hint);
@@ -407,7 +439,7 @@ function renderGameplayPreview(info, game) {
   button.dataset.mediaUrl = gif.url;
   const img = document.createElement('img');
   img.src = gif.preview_url || gif.url;
-  img.alt = `Gameplay de ${game.title}`;
+  img.alt = currentLanguage()==='fr'?`Gameplay de ${game.title}`:`Gameplay from ${game.title}`;
   img.loading = 'lazy';
   img.decoding = 'async';
   img.referrerPolicy = 'no-referrer';
@@ -423,7 +455,7 @@ function renderGameplayPreview(info, game) {
   });
   const count = info.querySelector('.dialog-media .dialog-subheading span');
   const remaining = info.querySelectorAll('.dialog-media .media-item').length;
-  if (count) count.textContent = `${remaining} image${remaining > 1 ? 's' : ''}`;
+  if (count) count.textContent = mediaCountLabel(remaining);
 }
 
 function ensureLightbox() {
@@ -436,11 +468,12 @@ function ensureLightbox() {
   box.innerHTML = `
     <div class="media-lightbox-toolbar">
       <span class="media-lightbox-count"></span>
-      <button type="button" class="media-lightbox-close" aria-label="Fermer l’image">×</button>
+      <button type="button" class="media-lightbox-close" aria-label="${t('detail.closeImage')}" data-i18n-aria-label="detail.closeImage">×</button>
     </div>
-    <button type="button" class="media-lightbox-nav media-lightbox-prev" aria-label="Image précédente">‹</button>
+    <button type="button" class="media-lightbox-nav media-lightbox-prev" aria-label="${t('detail.prevImage')}" data-i18n-aria-label="detail.prevImage">‹</button>
     <figure class="media-lightbox-stage"><img alt=""><figcaption></figcaption></figure>
-    <button type="button" class="media-lightbox-nav media-lightbox-next" aria-label="Image suivante">›</button>`;
+    <button type="button" class="media-lightbox-nav media-lightbox-next" aria-label="${t('detail.nextImage')}" data-i18n-aria-label="detail.nextImage">›</button>`;
+  applyTranslations(box);
   dialog.append(box);
 
   box.querySelector('.media-lightbox-close').addEventListener('click', closeLightbox);
@@ -456,9 +489,9 @@ function updateLightbox() {
   if (!item) return closeLightbox();
   const img = box.querySelector('.media-lightbox-stage img');
   img.src = item.url;
-  img.alt = item.alt || 'Média du jeu';
+  img.alt = item.alt || t('detail.gameMedia');
   box.querySelector('.media-lightbox-count').textContent = `${lightboxIndex + 1} / ${lightboxItems.length}`;
-  box.querySelector('figcaption').textContent = item.kind === 'gif' ? 'GIF gameplay' : 'Capture du jeu';
+  box.querySelector('figcaption').textContent = item.kind === 'gif' ? 'GIF gameplay' : t('detail.gameCapture');
   const hasMany = lightboxItems.length > 1;
   box.querySelector('.media-lightbox-prev').hidden = !hasMany;
   box.querySelector('.media-lightbox-next').hidden = !hasMany;
@@ -499,21 +532,46 @@ function currentMediaItems() {
   return result;
 }
 
-function enhanceDialog(game, gameId) {
+async function localizedGameForCurrentLanguage(game) {
+  if (currentLanguage() !== 'fr') return game;
+  try {
+    const payload = await loadTranslationsFrPayload();
+    return await localizeGameProse(game, payload, 'fr');
+  } catch (error) {
+    console.debug('French translations unavailable; using English source', error);
+    return game;
+  }
+}
+
+function refreshLocalizedChrome(info) {
+  const gallery = info?.querySelector('.dialog-media');
+  const galleryTitle = gallery?.querySelector('.dialog-subheading h3');
+  if (galleryTitle) galleryTitle.textContent = t('detail.gallery');
+  const count = gallery?.querySelector('.dialog-subheading span');
+  const mediaCount = gallery?.querySelectorAll('.media-item').length || 0;
+  if (count && mediaCount >= 0) count.textContent = mediaCountLabel(mediaCount);
+  applyTranslations(info || document);
+  if (!dialog.querySelector('.media-lightbox')?.hidden) updateLightbox();
+}
+function enhanceDialog(game, gameId, { refresh = false } = {}) {
   const layout = currentLayout(gameId);
   const info = layout?.querySelector('.dialog-info');
-  if (!layout || !info || layout.dataset.enhanced === 'true') return;
+  if (!layout || !info) return;
+
+  if (layout.dataset.enhanced === 'true' && refresh) {
+    renderDescriptionTabs(info, game, { replace:true });
+    refreshLocalizedChrome(info);
+    applyTranslations(layout);
+    return;
+  }
+  if (layout.dataset.enhanced === 'true') return;
 
   if (!hasRenderableDetails(game)) {
     layout.classList.remove('dialog-loading');
     info.querySelector('.detail-loading-shell')?.remove();
     const status = info.querySelector('[data-detail-status]');
     status?.classList.remove('sr-only');
-    setDetailStatus(
-      info,
-      'Aucun détail enrichi disponible pour cette fiche pour le moment.',
-      'empty',
-    );
+    setDetailStatus(info, t('detail.noDetails'), 'empty');
     return;
   }
 
@@ -524,9 +582,11 @@ function enhanceDialog(game, gameId) {
   renderDescriptionTabs(info, game);
   renderMediaGallery(info, game);
   renderGameplayPreview(info, game);
+  refreshLocalizedChrome(info);
+  applyTranslations(layout);
 }
 
-async function loadDetailsForOpenGame(gameId, detailPath) {
+async function loadDetailsForOpenGame(gameId, detailPath, { refresh = false } = {}) {
   const requestId = ++detailRequestId;
   if (!detailPath) {
     const layout = currentLayout(gameId);
@@ -535,14 +595,18 @@ async function loadDetailsForOpenGame(gameId, detailPath) {
     info?.querySelector('.detail-loading-shell')?.remove();
     const status = info?.querySelector('[data-detail-status]');
     status?.classList.remove('sr-only');
-    setDetailStatus(info, 'Fiche détaillée indisponible pour cette entrée.', 'missing');
+    setDetailStatus(info, t('detail.missing'), 'missing');
     return;
   }
 
   try {
-    const game = await loadGameDetail(detailPath);
+    const sourceGame = await loadGameDetail(detailPath);
     if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
-    enhanceDialog(game, gameId);
+    currentSourceGame = sourceGame;
+    currentSourceGameId = String(gameId);
+    const game = await localizedGameForCurrentLanguage(sourceGame);
+    if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
+    enhanceDialog(game, gameId, { refresh });
   } catch (error) {
     if (requestId !== detailRequestId || !currentLayout(gameId)) return;
     console.error('Game details unavailable', error);
@@ -554,7 +618,7 @@ async function loadDetailsForOpenGame(gameId, detailPath) {
     if (status) {
       status.classList.remove('sr-only');
       status.dataset.detailStatus = 'error';
-      status.textContent = 'La fiche détaillée est momentanément indisponible.';
+      status.textContent = t('detail.error');
     }
   }
 }
@@ -562,6 +626,15 @@ async function loadDetailsForOpenGame(gameId, detailPath) {
 document.addEventListener('fitboy:game-open', event => {
   const { gameId, detailPath } = event.detail || {};
   loadDetailsForOpenGame(String(gameId || ''), detailPath || '');
+});
+
+document.addEventListener('fitboy:language-change', () => {
+  applyTranslations(document);
+  const layout = currentLayout();
+  if (!dialog.open || !layout) return;
+  const gameId = String(layout.dataset.gameId || currentSourceGameId || '');
+  const detailPath = layout.dataset.detailPath || '';
+  loadDetailsForOpenGame(gameId, detailPath, { refresh:true });
 });
 
 dialog.addEventListener('click', event => {

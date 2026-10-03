@@ -52,27 +52,37 @@ function initCatalogFocus() {
 
   function actionType(button) {
     if (button.dataset.actionType) return button.dataset.actionType;
-    const label = button.textContent.trim().toLocaleLowerCase('fr');
-    if (label.includes('favori')) return 'favorite';
-    if (label.includes('jouer')) return 'backlog';
-    if (label.includes('termin')) return 'completed';
-    if (label.includes('partager') || label.includes('copi')) return 'share';
+    const label = button.textContent.trim().toLocaleLowerCase();
+    if (label.includes('favori') || label.includes('favorite')) return 'favorite';
+    if (label.includes('jouer') || label.includes('play later')) return 'backlog';
+    if (label.includes('termin') || label.includes('completed')) return 'completed';
+    if (label.includes('partager') || label.includes('share') || label.includes('copi')) return 'share';
     return '';
+  }
+
+  function actionLabels(type, active, copied) {
+    const fr = document.documentElement.lang === 'fr';
+    const tables = fr ? {
+      favorite: active ? 'Retirer des favoris' : 'Ajouter aux favoris',
+      backlog: active ? 'Retirer de À jouer' : 'Ajouter à À jouer',
+      completed: active ? 'Retirer de Terminé' : 'Marquer comme terminé',
+      share: copied ? 'Lien copié' : 'Partager la fiche',
+    } : {
+      favorite: active ? 'Remove from favorites' : 'Add to favorites',
+      backlog: active ? 'Remove from Play later' : 'Add to Play later',
+      completed: active ? 'Remove from Completed' : 'Mark as completed',
+      share: copied ? 'Link copied' : 'Share game',
+    };
+    return tables[type] || '';
   }
 
   function decorateDialogAction(button) {
     const type = actionType(button);
     if (!type || !actionIcons[type]) return;
     const raw = button.textContent.trim();
-    const copied = type === 'share' && /copi/i.test(raw);
+    const copied = type === 'share' && (button.dataset.copied === 'true' || /copi|copied/i.test(raw));
     const active = button.getAttribute('aria-pressed') === 'true' || button.classList.contains('active');
-    const labels = {
-      favorite: active ? 'Retirer des favoris' : 'Ajouter aux favoris',
-      backlog: active ? 'Retirer de À jouer' : 'Ajouter à À jouer',
-      completed: active ? 'Retirer de Terminé' : 'Marquer comme terminé',
-      share: copied ? 'Lien copié' : 'Partager la fiche',
-    };
-    const label = labels[type];
+    const label = actionLabels(type, active, copied);
     button.dataset.actionType = type;
     button.dataset.copied = copied ? 'true' : 'false';
     button.title = label;
@@ -129,13 +139,17 @@ function initCatalogFocus() {
       structureMediaGrid(gallery, grid, preview, previewButton);
     }
 
+    const fr = document.documentElement.lang === 'fr';
     const galleryTitle = gallery?.querySelector('.dialog-subheading h3');
-    if (galleryTitle && galleryTitle.textContent !== 'Galerie') galleryTitle.textContent = 'Galerie';
+    const nextTitle = fr ? 'Galerie' : 'Gallery';
+    if (galleryTitle && galleryTitle.textContent !== nextTitle) galleryTitle.textContent = nextTitle;
     const count = gallery?.querySelector('.dialog-subheading span');
     const imageCount = grid?.querySelectorAll('.media-item').length || 0;
     const mediaCount = imageCount + (grid?.querySelector('.media-gif-v6') ? 1 : 0);
     if (count && mediaCount) {
-      const nextCount = `${mediaCount} média${mediaCount > 1 ? 's' : ''}`;
+      const nextCount = fr
+        ? `${mediaCount} média${mediaCount > 1 ? 's' : ''}`
+        : `${mediaCount} media item${mediaCount > 1 ? 's' : ''}`;
       if (count.textContent !== nextCount) count.textContent = nextCount;
     }
   }
@@ -144,6 +158,7 @@ function initCatalogFocus() {
     const observer = new MutationObserver(compactDialogMedia);
     observer.observe(dialogContent, { childList:true, subtree:true });
     document.addEventListener('fitboy:game-open', () => requestAnimationFrame(compactDialogMedia));
+    document.addEventListener('fitboy:language-change', () => requestAnimationFrame(compactDialogMedia));
   }
 
   if (dialog) {

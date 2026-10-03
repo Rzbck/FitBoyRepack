@@ -213,18 +213,35 @@ function renderCoverDetails(layout, game) {
   meta.className = 'cover-details-meta';
 
   const published = document.createElement('span');
-  published.innerHTML = `<small>Publié</small><strong>${formatDate(game.post_date)}</strong>`;
+  const publishedLabel = document.createElement('small');
+  publishedLabel.dataset.i18n = 'detail.published';
+  publishedLabel.textContent = t('detail.published');
+  const publishedValue = document.createElement('strong');
+  publishedValue.dataset.i18nDate = game.post_date || '';
+  publishedValue.textContent = formatDate(game.post_date);
+  published.append(publishedLabel, publishedValue);
   meta.append(published);
 
   if (metadata?.release_date) {
     const release = document.createElement('span');
-    release.innerHTML = `<small>Sortie du jeu</small><strong>${formatDate(metadata.release_date)}</strong>`;
+    const releaseLabel = document.createElement('small');
+    releaseLabel.dataset.i18n = 'detail.releaseDate';
+    releaseLabel.textContent = t('detail.releaseDate');
+    const releaseValue = document.createElement('strong');
+    releaseValue.dataset.i18nDate = metadata.release_date;
+    releaseValue.textContent = formatDate(metadata.release_date);
+    release.append(releaseLabel, releaseValue);
     meta.append(release);
   }
 
   if (game.repack_size && game.repack_size !== 'N/A') {
     const size = document.createElement('span');
-    size.innerHTML = `<small>Taille repack</small><strong>${game.repack_size}</strong>`;
+    const sizeLabel = document.createElement('small');
+    sizeLabel.dataset.i18n = 'detail.repackSize';
+    sizeLabel.textContent = t('detail.repackSize');
+    const sizeValue = document.createElement('strong');
+    sizeValue.textContent = game.repack_size;
+    size.append(sizeLabel, sizeValue);
     meta.append(size);
   }
   card.append(meta);

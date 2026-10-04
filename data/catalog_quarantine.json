@@ -848,6 +848,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "heads-will-roll-reforged-repack-updated-4",
+      "title": "Heads Will Roll: Reforged Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/heads-will-roll-reforged-repack-updated-4/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "hellblade-senuas-sacrifice-repack-updated",
       "title": "Hellblade: Senua’s Sacrifice Repack Updated",
       "source_url": "https://fitgirl-repacks.site/hellblade-senuas-sacrifice-repack-updated/",

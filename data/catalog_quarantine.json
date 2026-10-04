@@ -9618,9 +9618,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-26-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

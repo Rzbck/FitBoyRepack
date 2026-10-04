@@ -1010,6 +1010,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "last-epoch-repack-updated-4",
+      "title": "Last Epoch Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/last-epoch-repack-updated-4/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "lets-support-baldman",
       "title": "Let’s support BALDMAN!",
       "source_url": "https://fitgirl-repacks.site/lets-support-baldman/",

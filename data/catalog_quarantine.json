@@ -8933,10 +8933,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-3-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -10070,6 +10068,16 @@
       "source_url": "https://fitgirl-repacks.site/yet-another-fix-mea-repack/",
       "classification": "non_game",
       "reason": "fix-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
+      "id": "zero-parades-repack-updated",
+      "title": "ZERO PARADES Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/zero-parades-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
       "score": 0,
       "signals": [],
       "action": "excluded-new"

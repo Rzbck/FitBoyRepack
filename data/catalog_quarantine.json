@@ -1188,6 +1188,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "mini-airways-repack-updated-2",
+      "title": "Mini Airways Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/mini-airways-repack-updated-2/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "mining-donation-option-changed",
       "title": "Mining Donation Option Changed",
       "source_url": "https://fitgirl-repacks.site/mining-donation-option-changed/",
@@ -8746,10 +8756,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9637,10 +9645,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-26-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

@@ -2103,6 +2103,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "the-adventures-of-elliot-the-millennium-tales-repack-updated",
+      "title": "The Adventures of Elliot: The Millennium Tales Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/the-adventures-of-elliot-the-millennium-tales-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "day-requests-may-13-mark-calendar",
       "title": "The Day of Requests on May 13, mark your calendar",
       "source_url": "https://fitgirl-repacks.site/day-requests-may-13-mark-calendar/",
@@ -9094,8 +9104,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-6-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

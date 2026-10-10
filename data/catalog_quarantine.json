@@ -1116,6 +1116,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "mx-vs-atv-legends-repack-updated-13",
+      "title": "MX vs ATV Legends Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/mx-vs-atv-legends-repack-updated-13/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "mafia-2-cod-mw2",
       "title": "Mafia 2 or CoD: MW2?",
       "source_url": "https://fitgirl-repacks.site/mafia-2-cod-mw2/",
@@ -9192,6 +9202,20 @@
       "reason": "updates-digest",
       "score": 1,
       "signals": [
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
+      "id": "updates-digest-for-october-9-2026",
+      "title": "Updates Digest for October 9, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-9-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 7,
+      "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

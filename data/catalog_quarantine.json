@@ -1274,6 +1274,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "mount-blade-ii-bannerlord-repack-updated-4",
+      "title": "Mount & Blade II: Bannerlord Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/mount-blade-ii-bannerlord-repack-updated-4/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "my-new-record",
       "title": "My New Record!",
       "source_url": "https://fitgirl-repacks.site/my-new-record/",
@@ -9080,10 +9090,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-5-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

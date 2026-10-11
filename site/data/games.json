@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-11T21:54:30.971632+00:00",
+  "generated_at": "2026-10-11T21:55:07.411089+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-11T10:20:02.080946+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "910 MB"
+      "repack_size": "910 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/45/13/4513e5ca-2252-49c5-abdf-f2eec9c2389e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/45/13/4513e5ca-2252-49c5-abdf-f2eec9c2389e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ee/6b/ee6bf363-6a1c-46ab-91d8-170bf3bde934.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ee/6b/ee6bf363-6a1c-46ab-91d8-170bf3bde934.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/43/a0/43a096f6-792a-402f-b662-1858abc05e7d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/43/a0/43a096f6-792a-402f-b662-1858abc05e7d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d0/3c/d03c1a11-143c-49cd-952c-c75d41fbf4c1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d0/3c/d03c1a11-143c-49cd-952c-c75d41fbf4c1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fa/2d/fa2dc8bc-7845-4c20-8131-48fa3ad9c1ef.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fa/2d/fa2dc8bc-7845-4c20-8131-48fa3ad9c1ef.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d0/85/d08509f6-9736-4890-ae7f-9c9b12e04a12.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d0/85/d08509f6-9736-4890-ae7f-9c9b12e04a12.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-11T21:55:07.408786+00:00",
+      "details": {
+        "description": "You owe a dangerous, mysterious mafia a serious amount of money. They don’t call. They don’t warn you. They kidnap you and make it clear: work it off, or else. Run your pizza shop, take on shady favors, and get to know the people of Hobarey Town while doing the mafia’s dirty work. Learn who to trust, who to use, and who to avoid.\nMaybe you’ll pay off your debt. Maybe you’ll build the right connections to start a new life.\nEXPERIENCE DUAL-LIFE\nManage a pizza shop up front while running illegal jobs out back. Keep both sides operating without drawing police attention or blowing your cover.\nTAKE SHADY JOBS\nComplete illegal favors for NPCs, including cleaning bloody clothes, ordering restricted items from the dark web, disposing of evidence, and even burning bodies in your own oven. Every job increases payout, risk, and police attention.\nBUILD YOUR REPUTATION\nBuild a strong cover by becoming the best pizza shop in town while separately earning trust in the shady underworld. Each side progresses on its own, unlocking different jobs, tools, and risks.\nUPGRADE YOUR OPERATION\nUpgrade your kitchen, hidden workstations, and equipment. Larger setups allow faster production, riskier jobs, and higher payouts.\nDEAL WITH WEIRD NPCs\nInteract with dozens of hand-crafted NPCs, each with their own stories, personalities, and ongoing problems that unfold over time.",
+        "game_features": [],
+        "repack_features": [
+          "Based on I.Know.a.Guy.Shady.Life.Simulator-TENOKE ISO release: tenoke-i.know.a.guy.shady.life.simulator.iso (1,503,447,040 bytes)",
+          "Game version: v1.0 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.4 GB to 910 MB)",
+          "Installation takes less than a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.4 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-11T21:55:07.408786+00:00"
     },
     {
       "id": "hot-wheels-infinite-rush",

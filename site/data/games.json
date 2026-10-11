@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-11T01:55:30.384591+00:00",
+  "generated_at": "2026-10-11T01:56:09.275105+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-10T10:08:38.734740+00:00",
   "games": [
@@ -84,7 +84,62 @@
         "3D",
         "Turn-based"
       ],
-      "repack_size": "3.3 GB"
+      "repack_size": "3.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/3e/56/3e561f6f-7b7b-4eaf-9831-d65e8fb87907.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/56/3e561f6f-7b7b-4eaf-9831-d65e8fb87907.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ff/c5/ffc58a12-9491-4320-ab98-32890c44a923.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ff/c5/ffc58a12-9491-4320-ab98-32890c44a923.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7f/54/7f54ea5e-2fbb-4e17-819b-9ce41331b4bd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7f/54/7f54ea5e-2fbb-4e17-819b-9ce41331b4bd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ea/af/eaafdb3a-067a-478e-9a73-4316162e88e7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ea/af/eaafdb3a-067a-478e-9a73-4316162e88e7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/d8/25d8d348-1cb2-462a-80bc-d67f7e1695bf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/d8/25d8d348-1cb2-462a-80bc-d67f7e1695bf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/21/0e/210e8225-8904-4b02-84aa-983ffb26ecb7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/21/0e/210e8225-8904-4b02-84aa-983ffb26ecb7.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-11T01:56:09.272966+00:00",
+      "details": {
+        "description": "Write your own legend in the Three Kingdoms! ‘Hero’s Ambition: Three Kingdoms’ is a single-player RPG where you take on the role of a hero in the tumultuous late Han and Three Kingdoms era to forge your own path. Play as a loyal general aiding a wise lord to unite the realm, carve out your own domain as a ruler, or roam as a free officer raising private troops to tip the scales of history. Forge sworn brotherhoods, fall in love, marry, and raise heirs. Grow your family, manage properties, or retreat into sacred mountains and great rivers to cultivate martial arts and eloquence alongside your kin. Drill elite legions, experience and rewrite history from diverse perspectives, weave grand diplomatic alliances, or sweep across the land with iron and blood until all under heaven bow before you.\nExplore a meticulously crafted three-tier world spanning the strategic world map, bustling city interfaces, and intimate local scenes. From grand territorial conquests and military maneuvers to vibrant urban architecture and detailed life scenes and dramatic events, immerse yourself in an extraordinarily rich and dynamic Three Kingdoms world.\nThe",
+        "game_features": [
+          "over 20 starting scenarios, spanning pivotal historical milestones from ‘The Yellow Turban Rebellion’ at the era’s beginning to ‘The Battle of Xiling’ at its twilight.",
+          "It builds an expansive world featuring over 1,300 historical officers, brought to life with more than 2,000 full-body animated portraits. You can create your own officers before starting the game, while randomly generated officers will also continuously emerge across the Three Kingdoms as gameplay unfolds."
+        ],
+        "repack_features": [
+          "Based on Heroes.Vow.Three.Kingdoms-TENOKE ISO release: tenoke-heroes.vow.three.kingdoms.iso (9,968,615,424 bytes)",
+          "Game version: v1.0.2",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 9.3 to 3.3 GB)",
+          "Installation takes 3-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9.3 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-11T01:56:09.272966+00:00"
     },
     {
       "id": "mount-blade-2-bannerlord",

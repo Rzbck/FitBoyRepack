@@ -800,6 +800,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "hot-wheels-infinite-rush-repack-updated",
+      "title": "HOT WHEELS Infinite Rush Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/hot-wheels-infinite-rush-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "happy-new-year",
       "title": "Happy New Year!",
       "source_url": "https://fitgirl-repacks.site/happy-new-year/",
@@ -8576,8 +8586,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-1-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8992,9 +9004,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-3-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9087,8 +9100,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-5-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9217,10 +9232,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

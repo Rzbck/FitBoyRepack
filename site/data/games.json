@@ -1,9 +1,91 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-10T21:34:23.833852+00:00",
+  "generated_at": "2026-10-11T01:55:30.384591+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-10T10:08:38.734740+00:00",
   "games": [
+    {
+      "id": "hot-wheels-infinite-rush",
+      "title": "HOT WHEELS Infinite Rush – v1859562 + 6 DLCs",
+      "source_url": "https://fitgirl-repacks.site/hot-wheels-infinite-rush/",
+      "image_url": "https://i6.imageban.ru/out/2026/09/10/ab4209767fcc1cabdfb6a879f1316956.jpg",
+      "post_date": "2026-10-11T04:20:21+03:00",
+      "genres": [
+        "Arcade",
+        "Racing",
+        "Third-person",
+        "3D",
+        "Cars"
+      ],
+      "repack_size": "9.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b8/bb/b8bbbfd6-d2db-4e13-b701-d1acf5dd5f56.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b8/bb/b8bbbfd6-d2db-4e13-b701-d1acf5dd5f56.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/95/43/9543410e-cc3f-45aa-9fbe-3c789ce5769c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/43/9543410e-cc3f-45aa-9fbe-3c789ce5769c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/71/30/71302f7d-c182-49ac-adec-7dc9fe710904.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/71/30/71302f7d-c182-49ac-adec-7dc9fe710904.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0b/d5/0bd56ad5-5592-4328-85d4-d65fc38f2144.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0b/d5/0bd56ad5-5592-4328-85d4-d65fc38f2144.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9c/eb/9ceb7ec5-249a-46df-8fc2-676571c3a5f3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9c/eb/9ceb7ec5-249a-46df-8fc2-676571c3a5f3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/03/70/03701b9f-d773-45ba-8b7f-813f7c97244e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/03/70/03701b9f-d773-45ba-8b7f-813f7c97244e.jpg.240p.jpg"
+        }
+      ],
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "media_version": 7,
+      "details": {
+        "description": "Race beyond the orange track and jump into a Hot Wheels™-sized world with four islands to explore, each with its own vibe and challenges. Roam freely through a world full of adventures, smash obstacles, discover secret items, and take on epic activities.\nBECOME THE RUSH MASTER\nEach island is ruled by a Rush Master – the ultimate boss to defeat. Complete events to unlock their challenge, and beat them to claim their car and title. Once you’ve conquered all four, be crowned the one true Rush Master!\nPICK YOUR RIDE\nMaster four unique vehicle types: all-out Versatiles, massive Titans, agile Drifters, and lightning-fast Speeders. Each offers a different way to race. Choose your favorite rides, build your Rush Squad, and get ready for any challenge. And don’t stop there: show off by customizing your car, right down to the wheels!\nA COLLECTION LIKE NO OTHER\nDiscover and collect 150+ vehicles through events, activities, and challenges. Unlock rare models, fill your garage, and hit the road with some of the most iconic Hot Wheels™ out there.\nMAKE THE WORLD YOUR TRACK\nWith the new Track Builder, create next-level tracks using the world around you. Attach modules to the ground, build around buildings, or race above the city, weaving around towering skyscrapers.\nENDLESS FUN\nTake on a variety of game modes including single-player, split-screen with up to four players, and online multiplayer with full cross-play. Climb the leaderboards, prove your skills, and race your way to the top!",
+        "game_features": [],
+        "repack_features": [
+          "Based on HOT.WHEELS.Infinite.Rush-RUNE ISO release: rune-hot.wheels.infinite.rush.iso (17,810,063,360 bytes)",
+          "Just for Fun Pack DLC is included and activated. Since all other DLCs from Vehicle Pass are not released yet, this repack is not Deluxe nor Ultimate Edition",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 16.6 to 9.5 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 16.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "heroes-vow-three-kingdoms",
+      "title": "Heroes’ Vow: Three Kingdoms – v1.0.2",
+      "source_url": "https://fitgirl-repacks.site/heroes-vow-three-kingdoms/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/11/0e04f4b366638362c55af8a54759c77b.jpg",
+      "post_date": "2026-10-11T03:45:20+03:00",
+      "genres": [
+        "Strategy",
+        "RPG",
+        "3D",
+        "Turn-based"
+      ],
+      "repack_size": "3.3 GB"
+    },
     {
       "id": "mount-blade-2-bannerlord",
       "title": "Mount & Blade II: Bannerlord – Digital Deluxe Edition – v1.4.8.119303 + 3 DLCs/Bonuses",
@@ -9787,74 +9869,6 @@
           "Installation takes from 6 minutes (on 32-threads CPU) up to 24 minutes (on 8-threads CPU)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 31.5 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "hot-wheels-infinite-rush",
-      "title": "HOT WHEELS Infinite Rush + Just for Fun Pack DLC",
-      "source_url": "https://fitgirl-repacks.site/hot-wheels-infinite-rush/",
-      "image_url": "https://i6.imageban.ru/out/2026/09/10/ab4209767fcc1cabdfb6a879f1316956.jpg",
-      "post_date": "2026-09-10T22:10:21+03:00",
-      "genres": [
-        "Arcade",
-        "Racing",
-        "Third-person",
-        "3D",
-        "Cars"
-      ],
-      "repack_size": "9.5 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/b8/bb/b8bbbfd6-d2db-4e13-b701-d1acf5dd5f56.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b8/bb/b8bbbfd6-d2db-4e13-b701-d1acf5dd5f56.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/95/43/9543410e-cc3f-45aa-9fbe-3c789ce5769c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/95/43/9543410e-cc3f-45aa-9fbe-3c789ce5769c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/71/30/71302f7d-c182-49ac-adec-7dc9fe710904.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/71/30/71302f7d-c182-49ac-adec-7dc9fe710904.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0b/d5/0bd56ad5-5592-4328-85d4-d65fc38f2144.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0b/d5/0bd56ad5-5592-4328-85d4-d65fc38f2144.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9c/eb/9ceb7ec5-249a-46df-8fc2-676571c3a5f3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9c/eb/9ceb7ec5-249a-46df-8fc2-676571c3a5f3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/03/70/03701b9f-d773-45ba-8b7f-813f7c97244e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/03/70/03701b9f-d773-45ba-8b7f-813f7c97244e.jpg.240p.jpg"
-        }
-      ],
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "media_version": 7,
-      "details": {
-        "description": "Race beyond the orange track and jump into a Hot Wheels™-sized world with four islands to explore, each with its own vibe and challenges. Roam freely through a world full of adventures, smash obstacles, discover secret items, and take on epic activities.\nBECOME THE RUSH MASTER\nEach island is ruled by a Rush Master – the ultimate boss to defeat. Complete events to unlock their challenge, and beat them to claim their car and title. Once you’ve conquered all four, be crowned the one true Rush Master!\nPICK YOUR RIDE\nMaster four unique vehicle types: all-out Versatiles, massive Titans, agile Drifters, and lightning-fast Speeders. Each offers a different way to race. Choose your favorite rides, build your Rush Squad, and get ready for any challenge. And don’t stop there: show off by customizing your car, right down to the wheels!\nA COLLECTION LIKE NO OTHER\nDiscover and collect 150+ vehicles through events, activities, and challenges. Unlock rare models, fill your garage, and hit the road with some of the most iconic Hot Wheels™ out there.\nMAKE THE WORLD YOUR TRACK\nWith the new Track Builder, create next-level tracks using the world around you. Attach modules to the ground, build around buildings, or race above the city, weaving around towering skyscrapers.\nENDLESS FUN\nTake on a variety of game modes including single-player, split-screen with up to four players, and online multiplayer with full cross-play. Climb the leaderboards, prove your skills, and race your way to the top!",
-        "game_features": [],
-        "repack_features": [
-          "Based on HOT.WHEELS.Infinite.Rush-RUNE ISO release: rune-hot.wheels.infinite.rush.iso (17,810,063,360 bytes)",
-          "Just for Fun Pack DLC is included and activated. Since all other DLCs from Vehicle Pass are not released yet, this repack is not Deluxe nor Ultimate Edition",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 16.6 to 9.5 GB)",
-          "Installation takes 2-5 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 16.9 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

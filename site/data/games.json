@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-11T10:20:02.080946+00:00",
+  "generated_at": "2026-10-11T21:54:30.971632+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-11T10:20:02.080946+00:00",
   "games": [
+    {
+      "id": "i-know-a-guy-shady-life-simulator",
+      "title": "I Know a Guy: Shady Life Simulator – v1.0 (Release)",
+      "source_url": "https://fitgirl-repacks.site/i-know-a-guy-shady-life-simulator/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/11/11b66cb7f0b83a85ba4cd4bcbd07b963.jpg",
+      "post_date": "2026-10-12T00:27:37+03:00",
+      "genres": [
+        "Adventure",
+        "Lifestyle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "910 MB"
+    },
     {
       "id": "hot-wheels-infinite-rush",
       "title": "HOT WHEELS Infinite Rush – v1859562 + 6 DLCs",

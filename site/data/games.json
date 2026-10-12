@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-12T23:33:07.801932+00:00",
+  "generated_at": "2026-10-12T23:33:39.136103+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-12T11:18:04.982142+00:00",
   "games": [
@@ -90,7 +90,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "3.8 GB"
+      "repack_size": "3.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/10/2a/102a48d7-1d83-4e1e-926c-46699351a1b6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/10/2a/102a48d7-1d83-4e1e-926c-46699351a1b6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f4/71/f4716806-0bdc-4074-aa4c-ce6d9e10d917.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/71/f4716806-0bdc-4074-aa4c-ce6d9e10d917.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/34/f1/34f162c2-5566-464d-9f92-9babcfecb5d0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/34/f1/34f162c2-5566-464d-9f92-9babcfecb5d0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/84/41/84411b06-ce9d-4fb9-84bb-ed545578c1c1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/84/41/84411b06-ce9d-4fb9-84bb-ed545578c1c1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fe/cd/fecdd4ac-b1cd-46fd-bf26-a784026e1aee.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/cd/fecdd4ac-b1cd-46fd-bf26-a784026e1aee.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5b/e3/5be302d8-8a77-4968-af22-404828a736df.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5b/e3/5be302d8-8a77-4968-af22-404828a736df.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-12T23:33:39.133761+00:00",
+      "details": {
+        "description": "Welcome back to Route 66. This story starts a little earlier.\nPour beer. Break up brawls. Run pig races. Distill your own liquor. Make deals out back. And when the cops show up, act natural.\nRoadhouse Simulator\nis a standalone prelude to\nGas Station Simulator\n, following Uncle as he takes charge of a rundown roadside bar with more problems than customers — and turns it into the rowdiest stop on the highway.\nYou start at the bottom…keeping the peace, watching the door, and dealing with rival gang members and drunks who can turn a quiet night into a brawl in seconds.\nStep in when you have to. Then build your way up with new stations, staff, and attractions until the whole Road House runs on your terms.\nDifferent brews can affect your customers in different ways, and serving the wrong person at the wrong time can get messy fast.\nDistill your own liquor, keep the beer flowing, the shelves stocked, and the staff paid.\nAnd keep some spare furniture around.\nFire up the slots. Run pig races. Bring in the Hype Girls. Open the Fight Club…just don’t talk about that one.\nThe more Hype you build, the faster the progression.\nBut be careful – more people means more money, but also more chaos.\nYou can’t do everything yourself forever.\nHire bartenders, servers, cleaners, and bouncers to handle the daily grind while you focus on growing the business or having fun with the pigs out back.\nCrime leaves evidence, and when you run the Road House, every mess becomes your problem.\nKeep things clean, earn the law’s trust, pay the price when things go wrong.\nMAIN FEATURES\nFrom Bouncer to Boss\n– serve, manage, fight, and eventually run the whole Road House.\nEvery Drink Has Consequences\n-alcohol comes with risks that can trigger new problems around the Road House.\nDistill Your Own Liquor\n– process, improve, and bottle your own alcohol.\nWork Out the Back\n– stash, package, and deliver questionable cargo.\nDraw a Crowd\n– pig races, gambling, entertainment, and an underground Fight Club.\nBuild a Crew\n– hire bartenders, cleaners, servers, and bouncers.\nDeal With the Law\n– manage inspections, fines, and bribes.\nGrow the Business\n– expand the Road House and turn it into the wildest stop on Route 66",
+        "game_features": [],
+        "repack_features": [
+          "Based on Roadhouse_Simulator-Razor1911 ISO release: rzr-roadhousesimulator.iso (7,200,342,016 bytes)",
+          "Game version: v1.0.2.70192SF",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.7 to 3.8 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-12T23:33:39.133761+00:00"
     },
     {
       "id": "superhero-simulator",
@@ -104,7 +157,59 @@
         "3D",
         "Superheroes"
       ],
-      "repack_size": "4.3 GB"
+      "repack_size": "4.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/a0/6d/a06dfa2f-82fd-4500-b63b-07560c928920.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/6d/a06dfa2f-82fd-4500-b63b-07560c928920.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/db/d3/dbd3d691-42a3-4371-bddb-b7994e08730d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/db/d3/dbd3d691-42a3-4371-bddb-b7994e08730d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/b2/8eb23e52-8f42-4a35-bdcb-1fd6c95304c3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/b2/8eb23e52-8f42-4a35-bdcb-1fd6c95304c3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6f/9d/6f9d1615-6148-4c9a-aa3e-b93d9c075f53.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6f/9d/6f9d1615-6148-4c9a-aa3e-b93d9c075f53.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fe/61/fe61f165-92dd-4ceb-afed-1a23a00b0c1d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/61/fe61f165-92dd-4ceb-afed-1a23a00b0c1d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ff/05/ff058bce-fe30-44e9-bced-bdb6d8eb1fa3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ff/05/ff058bce-fe30-44e9-bced-bdb6d8eb1fa3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-12T23:33:39.133761+00:00",
+      "details": {
+        "description": "Are you ready to protect your city? In\nSuperhero Simulator\n, take on the rising crime rate as you patrol the streets, stop robberies, rescue civilians, and battle powerful villains.\nYour choices shape the city!\nSAVE THE CITY\nStop robberies, rescue civilians, and fight crime your way. Every heroic act unlocks new abilities – become the hero\nGoldpine\nneeds!\nMANAGE YOUR DAILY NEEDS\nBeing a hero doesn’t pay the bills—so you’ll\nneed a job to survive. Drive a taxi, flip burgers, or find other ways\nto\nearn money\nEvery\n“Gollar”\ncounts, whether it’s for food, or upgrading your gear.\nBalance your heroic duties with everyday struggles.\nCUSTOMIZE YOUR HERO\nDesign your perfect superhero AND civilian identity! Mix and match masks, capes, and armor sets to create your signature look. Your hero, your style, your legend.\nRISE OR FALL\nManage your\nhealth, hygiene, mental state, and respect\nto stay at your best. Neglect them, and your journey becomes harder. Every action shapes your legend—will you rise or break under the pressure?",
+        "game_features": [],
+        "repack_features": [
+          "Based on Superhero.Simulator-TENOKE ISO release: tenoke-superhero.simulator.iso (11,510,282,240 bytes)",
+          "Bonus OST is included by default",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 10.7 to 4.3 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 10.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-12T23:33:39.133761+00:00"
     },
     {
       "id": "wild-west-supermarket-simulator",

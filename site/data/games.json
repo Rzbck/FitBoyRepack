@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-12T16:51:47.707709+00:00",
+  "generated_at": "2026-10-12T16:52:25.276484+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-12T11:18:04.982142+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "3D",
         "Cars"
       ],
-      "repack_size": "5.8 GB"
+      "repack_size": "5.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c0/12/c012343b-843b-4f43-9648-b02d6bf4e7dd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c0/12/c012343b-843b-4f43-9648-b02d6bf4e7dd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/c8/58c80cb3-d888-4884-acf7-746d04aeb6b5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/c8/58c80cb3-d888-4884-acf7-746d04aeb6b5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/56/b156bdfd-8910-48f9-8b4a-b7352cbee40b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/56/b156bdfd-8910-48f9-8b4a-b7352cbee40b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/81/f5/81f5d270-9975-4183-8b61-14a20b100f9c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/81/f5/81f5d270-9975-4183-8b61-14a20b100f9c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/63/95/6395fd52-f08f-48d5-9c9e-38ded15395c2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/63/95/6395fd52-f08f-48d5-9c9e-38ded15395c2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7e/7f/7e7fefbf-a2d7-4219-83da-b69ead115087.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7e/7f/7e7fefbf-a2d7-4219-83da-b69ead115087.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-12T16:52:25.274573+00:00",
+      "details": {
+        "description": "Welcome to the world of trading used (or stolen) cars!\nGot little money and nothing to lose? We were waiting for you!\nIn\nUsed Cars Simulator\n, you’ll fix up cars, put them up for sale, grow your business in an old shed, drive around an abandoned city, drink beer, and wander the desert with a metal detector.\nAnd it all starts when you meet a beautiful woman in a red dress at your favorite bar… Are you in?\nFIND A GOOD OFFER\nIn\nUsed Cars Simulator\n, you’ll learn how to make money by trading cars.\nFirst, find a good deal. Check the car’s condition, negotiate the price, and if everything looks good – just buy it.\nFIX THE CAR\nFix the dents, order and install missing parts, wash the car, repaint it, and put it up for sale. If it wasn’t yours, you’d probably want to buy it yourself!\nBE BAD\nIn\nUsed Cars Simulator,\nthere are many ways to get cars. Are they all legal? Sure – as long as the cops don’t catch you.\nHAVE FUN\nAfter work, have some fun – drift, jump, and compare your scores with other players on the leaderboards.\nKey Features of Used Cars Simulator:\nCar Trading & Flipping\nStory & Quests\nPhysics & Sandbox\nIllegal Activities\nPolice Interactions\nWorld Exploration\nUpgrades & Economy",
+        "game_features": [],
+        "repack_features": [
+          "Based on Used.Cars.Simulator-RUNE ISO release: rune-used.cars.simulator.iso (10,211,000,320 bytes)",
+          "Game version: v2026.10.09 (281) / v1.0 Release",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 9.5 to 5.8 GB)",
+          "Installation takes 2-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 16.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-12T16:52:25.274573+00:00"
     },
     {
       "id": "maid-cafe-simulator",

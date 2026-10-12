@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-12T00:33:49.213339+00:00",
+  "generated_at": "2026-10-12T07:19:27.026429+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-11T10:20:02.080946+00:00",
   "games": [
+    {
+      "id": "maid-cafe-simulator",
+      "title": "Maid Cafe Simulator – v1.19.20 + 20 DLCs",
+      "source_url": "https://fitgirl-repacks.site/maid-cafe-simulator/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/12/cfad259d302e4d4cc016e4840c973876.jpg",
+      "post_date": "2026-10-12T06:02:05+03:00",
+      "genres": [
+        "Lifestyle",
+        "First-person",
+        "3D",
+        "Japanese"
+      ],
+      "repack_size": "1.8 GB"
+    },
     {
       "id": "supercar-collection-simulator",
       "title": "Supercar Collection Simulator – Build 25342118",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-12T17:57:13.013458+00:00",
+  "generated_at": "2026-10-12T17:57:48.926616+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-12T11:18:04.982142+00:00",
   "games": [
@@ -15,7 +15,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "2 GB"
+      "repack_size": "2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/9a/d1/9ad15ed6-5465-4e6a-b678-24af6e21c9d3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/d1/9ad15ed6-5465-4e6a-b678-24af6e21c9d3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f0/0e/f00e8ddf-9c51-4ca5-b184-60b2d796bcb1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f0/0e/f00e8ddf-9c51-4ca5-b184-60b2d796bcb1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/88/c6/88c65a66-067d-4f6c-aabd-9b8210dc6b07.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/88/c6/88c65a66-067d-4f6c-aabd-9b8210dc6b07.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/48/2a/482a8464-c4f0-44de-9dd1-799787920c3f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/48/2a/482a8464-c4f0-44de-9dd1-799787920c3f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/87/6e/876efdc1-cc9c-4149-9a55-768c7c94a324.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/87/6e/876efdc1-cc9c-4149-9a55-768c7c94a324.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/59/5f592828-e538-405e-aa6c-1ea30ac2b9f2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/59/5f592828-e538-405e-aa6c-1ea30ac2b9f2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-12T17:57:48.924417+00:00",
+      "details": {
+        "description": "The Wild West during the prime of the Gold Rush. The year is 1850. It was an offer you couldn’t refuse: Take over a prosperous General Store on the main street of a thriving town. What they forgot to mention: The store is a mere shadow of its former self in the middle of a ghost town. After the Gold was gone, so were most of the people. But you want to live the American Dream. And no one can stop you.\nShow your business acumen and iron will to make it to the top. Start stacking shelves, set prices in an ever changing business environment and take care of the supply of goods. Make sure your customers’ evolving needs are satisfied and hire helpers so you can focus on optimizing your profits.\nDid we mention that you can also show your skills as an interior designer when you paint and decorate not only your store but also your home overlooking the town from a hill?\nYour Store, Your Choice\nYou have control over every store element from shelves to interior design. Optimize your displays, so your customers have a pleasant and wholesome shopping experience in your general store and find what they are looking for. A happy customer will be a returning customer. Can you bring back life to the deserted ghost town?\nManage your stock\nOrder your stock from over 70 goods from food items to weapons, tools and furniture. Barter with suppliers and wandering traders in an ever changing economic environment, where supply and demand is in constant flow. Adjust your prices to maximize the profits and react to changing markets and base prices. But don’t overdo it – a lost customer might never return.\nDo-It-Yourself\nUnpack goods, stack the shelves and organize your storage space. Work the cash register and make sure that the customer gets the best service possible. Or hire helpers to help with the daily business.\nExpand your store\nMore is definitely more. Satisfied customers bring more business and a demand for more varied goods. So expand your property or build a second floor to display everything you have to offer.\nYou’ll never know what’cha gonna get\nIncrease product variety and attract more patrons. React to a multitude of events influencing your customers’ needs and shopping behavior.\nMini Games\nParticipate in fun mini-games like the Tomahawk Throwing Contest. Take on the leaderboards and unlock new licences for your shop.\nKeep Your Poker Face\nFrom time to time suppliers old and new might offer you a mystery box that can contain a wide variety of items or an extended amount of goods. The contents can bring a tremendous profit – if you are willing to take a risk.\nMake yourself at home\nYou are not only responsible for the interior of the shop. Overlooking the town from a hill is your house, just waiting to be personalized and decorated.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Wild_West_Supermarket_Simulator-Razor1911 ISO release: rzr-wwssim.iso (3,494,772,736 bytes)",
+          "Game version: v1.0.682a",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.3 to 2 GB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-12T17:57:48.924417+00:00"
     },
     {
       "id": "used-cars-simulator",

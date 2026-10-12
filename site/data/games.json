@@ -1,9 +1,111 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-12T17:57:48.926616+00:00",
+  "generated_at": "2026-10-12T23:33:07.801932+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-12T11:18:04.982142+00:00",
   "games": [
+    {
+      "id": "bubsy-4d",
+      "title": "Bubsy 4D: Digital Pawsome Edition, v1.2.1 + Bonus Content",
+      "source_url": "https://fitgirl-repacks.site/bubsy-4d/",
+      "image_url": "https://i7.imageban.ru/out/2026/05/23/cf5f7885e835fdc69df7a6f2cc710d70.jpg",
+      "post_date": "2026-10-13T00:30:22+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Side",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "692 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/43/57/43570a97-6ced-42ff-a892-fc60f2cf77c6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/43/57/43570a97-6ced-42ff-a892-fc60f2cf77c6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/a0/97a03438-e3e0-4709-b92a-f0c5ca5d13c6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/a0/97a03438-e3e0-4709-b92a-f0c5ca5d13c6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/78/1a/781a9c72-16b4-43f5-9e9c-04e3dd40acc0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/78/1a/781a9c72-16b4-43f5-9e9c-04e3dd40acc0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a1/90/a1900107-ac7b-4c34-a78a-7d4433262631.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a1/90/a1900107-ac7b-4c34-a78a-7d4433262631.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/79/09/7909abe0-edb4-4640-afc5-fe349651e9c0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/79/09/7909abe0-edb4-4640-afc5-fe349651e9c0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b7/59/b7595b6d-1ece-4a29-9f23-4f7b517e66fa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b7/59/b7595b6d-1ece-4a29-9f23-4f7b517e66fa.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Join Bubsy on a new, intergalactic, platforming adventure! Yeah, we couldnвЂ™t believe it either. The worldвЂ™s most infamous, wise-cracking bobcat has returned to 3D with new challenges, new moves, and even more purrsonality вЂ“ in space! Run, jump, glide, and roll across alien planets, battle robotic sheep, and collect tons and tons of yarn. What could possibly go wrong?\nBubsyвЂ™s longstanding enemies, the fleece-obsessed Woolies, have stolen all of the EarthвЂ™s sheep. Oh well, that ainвЂ™t BubsyвЂ™s problem. Until the sheep overthrow their captors and return as deadly BaaBots, empowered by Woolie technology, determined to steal BubsyвЂ™s most prized possession, The Golden Fleece.\nWith the help of his motley crew of acquaintances, Bubsy must journey through space to defeat the BaaBots and take back the Golden Fleece. Luckily, heвЂ™s acquired some new skills to navigate the expansive, craft-themed levels. Bubsy can leap, glide, claw his way up walls, and pounce off enemies. He can also puff up into a new hairball form to roll at blistering speeds.\nThe team at Fabraz crafted this expressive new moveset to cater to beginners and speedrun enthusiasts alike. Once youвЂ™ve mastered BubsyвЂ™s clawsome new moves, show off your skills by uploading your best level times to the online leaderboards for other players to race against!",
+        "game_features": [
+          "Explore intergalactic, craft-themed worlds, each ending in a BaaBot boss battle",
+          "New hairball form allows you to roll, bounce, and launch your way around",
+          "An expressive platforming moveset supports both beginner and advanced levels of play",
+          "Spend yarn to purrchase stylish new outfits, or collect a hidden blueprint in each level to unlock new moves and upgrades",
+          "Tackle each levelвЂ™s time trial, upload your best run, and race against other playersвЂ™ ghost data",
+          "Chat with a cast of furmiliar friends including Terri, Terry, Virgil, and Oblivia",
+          "Pawsitively funky soundtrack by Fat Bard, incorporating elements of jazz, big band, electro-swing and more"
+        ],
+        "repack_features": [
+          "Based on Bubsy.4D-RUNE ISO release: rune-bubsy.4d.iso (1,190,723,584 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.1 GB to 553 MB)",
+          "Installation takes within a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "roadhouse-simulator",
+      "title": "Roadhouse Simulator – v1.0.2.70192SF",
+      "source_url": "https://fitgirl-repacks.site/roadhouse-simulator/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/12/f1d8c7b303735131de91f091410be4a4.jpg",
+      "post_date": "2026-10-12T23:36:09+03:00",
+      "genres": [
+        "Lifestyle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "3.8 GB"
+    },
+    {
+      "id": "superhero-simulator",
+      "title": "Superhero Simulator + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/superhero-simulator/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/12/68dfe41b5c38a0bd9180c242d0cb108d.jpg",
+      "post_date": "2026-10-12T21:16:45+03:00",
+      "genres": [
+        "Lifestyle",
+        "Third-person",
+        "3D",
+        "Superheroes"
+      ],
+      "repack_size": "4.3 GB"
+    },
     {
       "id": "wild-west-supermarket-simulator",
       "title": "Wild West Supermarket Simulator – v1.0.682a",
@@ -49964,81 +50066,6 @@
           "Installation takes 5-12 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 10.4 GB",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "bubsy-4d",
-      "title": "Bubsy 4D",
-      "source_url": "https://fitgirl-repacks.site/bubsy-4d/",
-      "image_url": "https://i7.imageban.ru/out/2026/05/23/cf5f7885e835fdc69df7a6f2cc710d70.jpg",
-      "post_date": "2026-05-23T23:47:22+03:00",
-      "genres": [
-        "Arcade",
-        "Jump and run",
-        "Side",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "553 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/43/57/43570a97-6ced-42ff-a892-fc60f2cf77c6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/43/57/43570a97-6ced-42ff-a892-fc60f2cf77c6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/97/a0/97a03438-e3e0-4709-b92a-f0c5ca5d13c6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/97/a0/97a03438-e3e0-4709-b92a-f0c5ca5d13c6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/78/1a/781a9c72-16b4-43f5-9e9c-04e3dd40acc0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/78/1a/781a9c72-16b4-43f5-9e9c-04e3dd40acc0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a1/90/a1900107-ac7b-4c34-a78a-7d4433262631.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a1/90/a1900107-ac7b-4c34-a78a-7d4433262631.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/79/09/7909abe0-edb4-4640-afc5-fe349651e9c0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/79/09/7909abe0-edb4-4640-afc5-fe349651e9c0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b7/59/b7595b6d-1ece-4a29-9f23-4f7b517e66fa.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b7/59/b7595b6d-1ece-4a29-9f23-4f7b517e66fa.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Join Bubsy on a new, intergalactic, platforming adventure! Yeah, we couldnвЂ™t believe it either. The worldвЂ™s most infamous, wise-cracking bobcat has returned to 3D with new challenges, new moves, and even more purrsonality вЂ“ in space! Run, jump, glide, and roll across alien planets, battle robotic sheep, and collect tons and tons of yarn. What could possibly go wrong?\nBubsyвЂ™s longstanding enemies, the fleece-obsessed Woolies, have stolen all of the EarthвЂ™s sheep. Oh well, that ainвЂ™t BubsyвЂ™s problem. Until the sheep overthrow their captors and return as deadly BaaBots, empowered by Woolie technology, determined to steal BubsyвЂ™s most prized possession, The Golden Fleece.\nWith the help of his motley crew of acquaintances, Bubsy must journey through space to defeat the BaaBots and take back the Golden Fleece. Luckily, heвЂ™s acquired some new skills to navigate the expansive, craft-themed levels. Bubsy can leap, glide, claw his way up walls, and pounce off enemies. He can also puff up into a new hairball form to roll at blistering speeds.\nThe team at Fabraz crafted this expressive new moveset to cater to beginners and speedrun enthusiasts alike. Once youвЂ™ve mastered BubsyвЂ™s clawsome new moves, show off your skills by uploading your best level times to the online leaderboards for other players to race against!",
-        "game_features": [
-          "Explore intergalactic, craft-themed worlds, each ending in a BaaBot boss battle",
-          "New hairball form allows you to roll, bounce, and launch your way around",
-          "An expressive platforming moveset supports both beginner and advanced levels of play",
-          "Spend yarn to purrchase stylish new outfits, or collect a hidden blueprint in each level to unlock new moves and upgrades",
-          "Tackle each levelвЂ™s time trial, upload your best run, and race against other playersвЂ™ ghost data",
-          "Chat with a cast of furmiliar friends including Terri, Terry, Virgil, and Oblivia",
-          "Pawsitively funky soundtrack by Fat Bard, incorporating elements of jazz, big band, electro-swing and more"
-        ],
-        "repack_features": [
-          "Based on Bubsy.4D-RUNE ISO release: rune-bubsy.4d.iso (1,190,723,584 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 1.1 GB to 553 MB)",
-          "Installation takes within a minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 1.5 GB",
-          "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

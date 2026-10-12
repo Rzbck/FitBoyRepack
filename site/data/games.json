@@ -1,9 +1,85 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-11T21:55:07.411089+00:00",
+  "generated_at": "2026-10-12T00:33:49.213339+00:00",
   "source_pages": 809,
   "last_full_scan_at": "2026-10-11T10:20:02.080946+00:00",
   "games": [
+    {
+      "id": "supercar-collection-simulator",
+      "title": "Supercar Collection Simulator – Build 25342118",
+      "source_url": "https://fitgirl-repacks.site/supercar-collection-simulator/",
+      "image_url": "https://i8.imageban.ru/out/2025/09/17/50e7fb16d103e913180ce44357ae0ff4.jpg",
+      "post_date": "2026-10-12T02:20:54+03:00",
+      "genres": [
+        "Lifestyle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ff/89/ff89d98b-70da-4b7d-9938-ccf999b634f2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ff/89/ff89d98b-70da-4b7d-9938-ccf999b634f2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/35/76/3576b4af-c17e-43ce-83db-637c9c670202.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/35/76/3576b4af-c17e-43ce-83db-637c9c670202.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/48/f6/48f60350-4c9f-4838-a36b-24daf3d55d32.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/48/f6/48f60350-4c9f-4838-a36b-24daf3d55d32.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/02/77/02774d6e-c216-40b1-8f00-3eeed35bafa9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/02/77/02774d6e-c216-40b1-8f00-3eeed35bafa9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4b/1b/4b1bc222-59f7-41b8-8feb-e0898d0b45b0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4b/1b/4b1bc222-59f7-41b8-8feb-e0898d0b45b0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/18/bb/18bba7e2-a708-41d5-83b9-f11d99a441d8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/bb/18bba7e2-a708-41d5-83b9-f11d99a441d8.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "Start your own diecast store! Unbox surprise car packs, expand your collection, join exciting races with customers on the tracks, and play online trading games. A world full of speed and excitement is waiting for you in your store!\n“\nSupercar Collection Simulator\n” is a game where you can earn money by selling surprise car boxes, build your own car collection, join exciting races with customers, and play an online card trading game.\nSUPERCAR SERIES – Unlock and sell packages from various Supercar series. Each series has its own unique advantages and rare cars.\nRACING PLATFORMS – Set up racing platforms in your store, offer players the opportunity to race, and earn money from these races. If you want, you can also take to the track! Use skill cards to give your cars unique abilities and leave your competitors behind.\nSHOW YOUR COLLECTION – Place your cars on shelves, set their prices, and sell them to collectors. Or keep rare pieces to complete your collection.\nSTORE MANAGEMENT – Design your own Supercar store. Unlock Supercar series, order surprise boxes, place them on shelves, and start selling. Give your store a unique name and create the perfect place for car collection enthusiasts.\nSUPERCAR COLLECTION – Expand your collection with rare and valuable cars from surprise boxes. Sell them for profit or keep them to complete your collection.\nJOIN THE RACES – Start selling skill card packs! These cards give you an advantage in races, making your cars faster and stronger.\nGROW YOUR BUSINESS – Upgrade your store to attract more customers! Add new shelves, racing platforms, Supercar boxes, and collections to gain new customers and increase your income. Customize your store, change the floor and wall colors, decorate with posters, and more.\nHUNT HOUSE – Enter the Hunt House to find the missing pieces in your collection. Race against time while searching through dozens of cars to find the one you need.\nCAR PAINT – Choose a car, paint it, decorate it with stickers, design its card, give it a name, and put it up for sale. Enjoy the fun of creating your own custom car!",
+        "game_features": [
+          "Sellable products: Racing platforms, car parts, launch pads.",
+          "Store staff: Cashiers, sales clerks, and warehouse workers.",
+          "Warehouse system for stock management.",
+          "Bundle Table to pack and sell extra cars from your collection.",
+          "Vending machine to get surprise cars.",
+          "Store statistics and customer reviews.",
+          "Product price statistics and stock information.",
+          "Store Customization: Personalize your store to suit your style.",
+          "Black Market: Unlock rare cars and exclusive deals.",
+          "Betting Tables: Try your luck with betting tables."
+        ],
+        "repack_features": [
+          "Based on Supercar.Collection.Simulator-TENOKE ISO release: tenoke-supercar.collection.simulator.iso (6,703,503,360 bytes)",
+          "Game version: v1.0 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.2 to 1.4 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.2 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "i-know-a-guy-shady-life-simulator",
       "title": "I Know a Guy: Shady Life Simulator – v1.0 (Release)",
@@ -123478,82 +123554,6 @@
           "HDD space after installation: up to 4.5 MB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "supercar-collection-simulator",
-      "title": "Supercar Collection Simulator – v1.0 (Release)",
-      "source_url": "https://fitgirl-repacks.site/supercar-collection-simulator/",
-      "image_url": "https://i8.imageban.ru/out/2025/09/17/50e7fb16d103e913180ce44357ae0ff4.jpg",
-      "post_date": "2025-09-17T15:47:54+03:00",
-      "genres": [
-        "Lifestyle",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "1.4 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/ff/89/ff89d98b-70da-4b7d-9938-ccf999b634f2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ff/89/ff89d98b-70da-4b7d-9938-ccf999b634f2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/35/76/3576b4af-c17e-43ce-83db-637c9c670202.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/35/76/3576b4af-c17e-43ce-83db-637c9c670202.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/48/f6/48f60350-4c9f-4838-a36b-24daf3d55d32.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/48/f6/48f60350-4c9f-4838-a36b-24daf3d55d32.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/02/77/02774d6e-c216-40b1-8f00-3eeed35bafa9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/02/77/02774d6e-c216-40b1-8f00-3eeed35bafa9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/4b/1b/4b1bc222-59f7-41b8-8feb-e0898d0b45b0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/4b/1b/4b1bc222-59f7-41b8-8feb-e0898d0b45b0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/18/bb/18bba7e2-a708-41d5-83b9-f11d99a441d8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/18/bb/18bba7e2-a708-41d5-83b9-f11d99a441d8.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "Start your own diecast store! Unbox surprise car packs, expand your collection, join exciting races with customers on the tracks, and play online trading games. A world full of speed and excitement is waiting for you in your store!\n“\nSupercar Collection Simulator\n” is a game where you can earn money by selling surprise car boxes, build your own car collection, join exciting races with customers, and play an online card trading game.\nSUPERCAR SERIES – Unlock and sell packages from various Supercar series. Each series has its own unique advantages and rare cars.\nRACING PLATFORMS – Set up racing platforms in your store, offer players the opportunity to race, and earn money from these races. If you want, you can also take to the track! Use skill cards to give your cars unique abilities and leave your competitors behind.\nSHOW YOUR COLLECTION – Place your cars on shelves, set their prices, and sell them to collectors. Or keep rare pieces to complete your collection.\nSTORE MANAGEMENT – Design your own Supercar store. Unlock Supercar series, order surprise boxes, place them on shelves, and start selling. Give your store a unique name and create the perfect place for car collection enthusiasts.\nSUPERCAR COLLECTION – Expand your collection with rare and valuable cars from surprise boxes. Sell them for profit or keep them to complete your collection.\nJOIN THE RACES – Start selling skill card packs! These cards give you an advantage in races, making your cars faster and stronger.\nGROW YOUR BUSINESS – Upgrade your store to attract more customers! Add new shelves, racing platforms, Supercar boxes, and collections to gain new customers and increase your income. Customize your store, change the floor and wall colors, decorate with posters, and more.\nHUNT HOUSE – Enter the Hunt House to find the missing pieces in your collection. Race against time while searching through dozens of cars to find the one you need.\nCAR PAINT – Choose a car, paint it, decorate it with stickers, design its card, give it a name, and put it up for sale. Enjoy the fun of creating your own custom car!",
-        "game_features": [
-          "Sellable products: Racing platforms, car parts, launch pads.",
-          "Store staff: Cashiers, sales clerks, and warehouse workers.",
-          "Warehouse system for stock management.",
-          "Bundle Table to pack and sell extra cars from your collection.",
-          "Vending machine to get surprise cars.",
-          "Store statistics and customer reviews.",
-          "Product price statistics and stock information.",
-          "Store Customization: Personalize your store to suit your style.",
-          "Black Market: Unlock rare cars and exclusive deals.",
-          "Betting Tables: Try your luck with betting tables."
-        ],
-        "repack_features": [
-          "Based on Supercar.Collection.Simulator-TENOKE ISO release: tenoke-supercar.collection.simulator.iso (6,703,503,360 bytes)",
-          "Game version: v1.0 (Release)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 6.2 to 1.4 GB)",
-          "Installation takes 1-2 minutes",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 6.2 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

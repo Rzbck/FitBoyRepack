@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-13T23:05:31.780719+00:00",
+  "generated_at": "2026-10-13T23:06:06.485145+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-13T11:01:39.190093+00:00",
   "games": [
@@ -15,7 +15,61 @@
         "Sandbox",
         "3D"
       ],
-      "repack_size": "1.6 GB"
+      "repack_size": "1.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/bd/41/bd414f78-803d-4f4d-99b0-58bf725f3db2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bd/41/bd414f78-803d-4f4d-99b0-58bf725f3db2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/78/91/78912ef3-a0d7-482b-b902-8aa99785296f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/78/91/78912ef3-a0d7-482b-b902-8aa99785296f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b2/66/b266b518-32eb-4cad-8761-b2de4584877a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/66/b266b518-32eb-4cad-8761-b2de4584877a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/43/55/43553e29-40be-4b55-9488-6e0e1e7af2b6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/43/55/43553e29-40be-4b55-9488-6e0e1e7af2b6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c2/60/c2601c72-589f-4bf5-8041-dd267251e55c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c2/60/c2601c72-589f-4bf5-8041-dd267251e55c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/61/62/61623dac-d2bf-47b7-acc0-32f035d5cd4a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/61/62/61623dac-d2bf-47b7-acc0-32f035d5cd4a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-13T23:06:06.481436+00:00",
+      "details": {
+        "description": "Discover the world’s next best game…or create it yourself! Project Spark unlocks imagination with a powerful yet simple way to build and play your own worlds, stories, and games and share them with the world. It’s the ultimate digital sandbox where you can create the kinds of games you’ve always dreamed of, play games created by a global community, and shape the future of how games are made.\nUNLIMITED CREATION — FREE!\nStun the world with your very own game! Thought you could make it better? Had an idea you’ve never seen before? Quickly and easily turn your idea into a game with Create and Start from Scratch. • Change an entire game as you play! Have you ever wanted to change something about a game as you play it? Now you can with Crossroads! Change the whole game as you play, or just choose your own missions and objective and then take down the bad guys to save the day. Easily mix things up to make the adventure different every time!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Project.Spark-RUNE ISO release: rune-project.spark.iso (2,152,857,600 bytes)",
+          "Game version: v1.21.50909.2",
+          "Installer makes all necessary steps to register the game upon installation, but it it fails, run “InstallApp.exe” in the installed game folder",
+          "To run the game find it with Windows search, desktop icon won’t work",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 2 to 1.6 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.3 GB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-13T23:06:06.481436+00:00"
     },
     {
       "id": "lego-party",

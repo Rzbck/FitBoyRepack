@@ -1,9 +1,89 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-13T11:01:39.190093+00:00",
+  "generated_at": "2026-10-13T21:16:21.289161+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-13T11:01:39.190093+00:00",
   "games": [
+    {
+      "id": "lego-party",
+      "title": "LEGO Party! Soundtrack Edition, v1.6.62 + 2 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/lego-party/",
+      "image_url": "https://i7.imageban.ru/out/2025/10/01/7e3b76229b143b9f2854372cca9e30f0.jpg",
+      "post_date": "2026-10-13T21:20:29+03:00",
+      "genres": [
+        "Arcade",
+        "Party game",
+        "3D"
+      ],
+      "repack_size": "3.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/cb/09/cb091a80-45b5-41e3-b30b-c6af7b1dbece.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cb/09/cb091a80-45b5-41e3-b30b-c6af7b1dbece.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/85/44/85449cf9-1f05-4c09-9ffe-d2f6d044168f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/85/44/85449cf9-1f05-4c09-9ffe-d2f6d044168f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/a0/a9a021b1-511b-4271-ae48-c59e8b017662.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/a0/a9a021b1-511b-4271-ae48-c59e8b017662.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b3/20/b3205bb1-0887-4f30-9560-0911e8904e08.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b3/20/b3205bb1-0887-4f30-9560-0911e8904e08.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c5/f2/c5f2be9c-1dd8-4817-a226-f9174e32c91c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c5/f2/c5f2be9c-1dd8-4817-a226-f9174e32c91c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bd/32/bd32d137-8581-4fd5-8a67-63f79b59a9b8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bd/32/bd32d137-8581-4fd5-8a67-63f79b59a9b8.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "LEGO Party! is a 4-player party game that’s built different!\nCompete against your friends in wacky Challenge Zones and 60 hilarious minigames from across your favorite LEGO sets like LEGO Pirates, LEGO Space, LEGO NINJAGO and more.\nJoin your friends online no matter their platform, or get together for a LEGO Party game night. With multiple game modes and tons of minifigures to unlock, you’ll have all the bricks to build the ultimate party!\nChallenge players near or far, customize your character and compete in a variety of awesome minigames to get as many Golden Bricks as you can, by any means necessary! But beware, watch out for monsters, traps and flying roast turkeys on your way to become the next star of LEGO Party!",
+        "game_features": [
+          "Play your way",
+          ": Bring your friends and enjoy the mayhem in couch multiplayer or with cross-platform online multiplayer for up to 4 players. Whether it’s competing for the perfect score in Rocketball, practicing against that pesky kraken in Kraken Up or boogieing down in Dance Off, you can enjoy",
+          "LEGO Party!",
+          "together or solo!",
+          "Go for the gold",
+          ":",
+          "In LEGO Party!",
+          "you have one goal: to become the player with the most Golden Bricks! Use power-ups to gain the advantage and set up traps to sabotage your opponents across a range of customizable LEGO themed Challenge Zones.",
+          "Everything is awesome",
+          ": Put your speed, wits, and LEGO expertise to the test across a variety of crazy minigames. Race to make dinner for aliens, run through collapsing tombs and skid round the track in rally races and so much more across 60 different wildly fun minigames.",
+          "You do you",
+          ": With over 1 billion minifigure combinations from iconic LEGO sets, you can go with a classic look or design your own unique and outlandish minifigure. Show off your creation at the next party!"
+        ],
+        "repack_features": [
+          "Based on LEGO.Party-RUNE ISO release: rune-lego.party.iso (6,877,904,896 bytes)",
+          "Game version: v1.1.0; Pre-Order Pack DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of Spanish/French/German voiceovers. English VOs are included by default",
+          "Significantly smaller archive size (compressed from 6.4 to 3.4~4.5 GB, depending on selected commponents)",
+          "Installation takes 3-10 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 7.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "paperhead",
       "title": "PAPERHEAD – v47 + 2 DLCs/Bonuses",
@@ -119107,86 +119187,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 19.9 GB",
           "Language can be changed in “Engine\\Binaries\\ThirdParty\\Steamworks\\Steamv157\\Win64\\steam_emu.ini”",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "lego-party",
-      "title": "LEGO Party! – v1.1.0 + Pre-Order Pack DLC",
-      "source_url": "https://fitgirl-repacks.site/lego-party/",
-      "image_url": "https://i7.imageban.ru/out/2025/10/01/7e3b76229b143b9f2854372cca9e30f0.jpg",
-      "post_date": "2025-10-01T01:36:29+03:00",
-      "genres": [
-        "Arcade",
-        "Party game",
-        "3D"
-      ],
-      "repack_size": "3.4 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/cb/09/cb091a80-45b5-41e3-b30b-c6af7b1dbece.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/cb/09/cb091a80-45b5-41e3-b30b-c6af7b1dbece.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/85/44/85449cf9-1f05-4c09-9ffe-d2f6d044168f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/85/44/85449cf9-1f05-4c09-9ffe-d2f6d044168f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a9/a0/a9a021b1-511b-4271-ae48-c59e8b017662.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a9/a0/a9a021b1-511b-4271-ae48-c59e8b017662.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b3/20/b3205bb1-0887-4f30-9560-0911e8904e08.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b3/20/b3205bb1-0887-4f30-9560-0911e8904e08.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c5/f2/c5f2be9c-1dd8-4817-a226-f9174e32c91c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c5/f2/c5f2be9c-1dd8-4817-a226-f9174e32c91c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/bd/32/bd32d137-8581-4fd5-8a67-63f79b59a9b8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/bd/32/bd32d137-8581-4fd5-8a67-63f79b59a9b8.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "LEGO Party! is a 4-player party game that’s built different!\nCompete against your friends in wacky Challenge Zones and 60 hilarious minigames from across your favorite LEGO sets like LEGO Pirates, LEGO Space, LEGO NINJAGO and more.\nJoin your friends online no matter their platform, or get together for a LEGO Party game night. With multiple game modes and tons of minifigures to unlock, you’ll have all the bricks to build the ultimate party!\nChallenge players near or far, customize your character and compete in a variety of awesome minigames to get as many Golden Bricks as you can, by any means necessary! But beware, watch out for monsters, traps and flying roast turkeys on your way to become the next star of LEGO Party!",
-        "game_features": [
-          "Play your way",
-          ": Bring your friends and enjoy the mayhem in couch multiplayer or with cross-platform online multiplayer for up to 4 players. Whether it’s competing for the perfect score in Rocketball, practicing against that pesky kraken in Kraken Up or boogieing down in Dance Off, you can enjoy",
-          "LEGO Party!",
-          "together or solo!",
-          "Go for the gold",
-          ":",
-          "In LEGO Party!",
-          "you have one goal: to become the player with the most Golden Bricks! Use power-ups to gain the advantage and set up traps to sabotage your opponents across a range of customizable LEGO themed Challenge Zones.",
-          "Everything is awesome",
-          ": Put your speed, wits, and LEGO expertise to the test across a variety of crazy minigames. Race to make dinner for aliens, run through collapsing tombs and skid round the track in rally races and so much more across 60 different wildly fun minigames.",
-          "You do you",
-          ": With over 1 billion minifigure combinations from iconic LEGO sets, you can go with a classic look or design your own unique and outlandish minifigure. Show off your creation at the next party!"
-        ],
-        "repack_features": [
-          "Based on LEGO.Party-RUNE ISO release: rune-lego.party.iso (6,877,904,896 bytes)",
-          "Game version: v1.1.0; Pre-Order Pack DLC is included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of Spanish/French/German voiceovers. English VOs are included by default",
-          "Significantly smaller archive size (compressed from 6.4 to 3.4~4.5 GB, depending on selected commponents)",
-          "Installation takes 3-10 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 7.5 GB",
-          "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

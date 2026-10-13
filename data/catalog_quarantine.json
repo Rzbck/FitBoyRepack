@@ -1050,6 +1050,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "lego-party-repack-updated",
+      "title": "LEGO Party! Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/lego-party-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "last-epoch-repack-updated-4",
       "title": "Last Epoch Repack Updated",
       "source_url": "https://fitgirl-repacks.site/last-epoch-repack-updated-4/",
@@ -8689,10 +8699,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-11-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9289,9 +9297,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9974,10 +9983,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-30-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

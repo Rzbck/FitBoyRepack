@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-13T21:16:21.289161+00:00",
+  "generated_at": "2026-10-13T23:05:31.780719+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-13T11:01:39.190093+00:00",
   "games": [
+    {
+      "id": "project-spark",
+      "title": "Project Spark – v1.21.50909.2",
+      "source_url": "https://fitgirl-repacks.site/project-spark/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/13/3a487da635f4007d00c5e016df873f8e.jpg",
+      "post_date": "2026-10-14T01:10:13+03:00",
+      "genres": [
+        "Virtual world",
+        "Sandbox",
+        "3D"
+      ],
+      "repack_size": "1.6 GB"
+    },
     {
       "id": "lego-party",
       "title": "LEGO Party! Soundtrack Edition, v1.6.62 + 2 DLCs/Bonuses",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-13T03:51:57.317232+00:00",
+  "generated_at": "2026-10-13T03:52:29.611059+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-12T11:18:04.982142+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/04/f3/04f3ec17-b62d-4bd4-a156-775382dc7ba7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/04/f3/04f3ec17-b62d-4bd4-a156-775382dc7ba7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/5a/aa5a201f-6706-44e8-b699-8b79cd5626a2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/5a/aa5a201f-6706-44e8-b699-8b79cd5626a2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/64/74/647485ea-8998-4528-93d5-7ec33ef0ed1e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/64/74/647485ea-8998-4528-93d5-7ec33ef0ed1e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e1/e6/e1e654e6-5f01-4068-860b-2c8cdf85b33f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e1/e6/e1e654e6-5f01-4068-860b-2c8cdf85b33f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/63/3763520d-ba57-4711-a550-4afee9d54a2c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/63/3763520d-ba57-4711-a550-4afee9d54a2c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/52/3f/523f0772-bdcb-4b3a-98e1-39e2b2202adc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/52/3f/523f0772-bdcb-4b3a-98e1-39e2b2202adc.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-13T03:52:29.609065+00:00",
+      "details": {
+        "description": "PAPERHEAD\nis a mix of a\nfast-paced movement boomer shooter\nand an\nadventure horror game\n, featuring a\nunique soundtrack\n.\nIn the cute cardboard world, something went horribly wrong.\nExplore the abandoned research facility and uncover the dark truth of\n… WHY WOULD CARDBOARD… BLEED?\nBRUTAL AND SWIFT COMBAT\nToss enemies into the air, kick exploding barrels at them, and jump on their heads like an Italian plumber!\nOr simply blast them to smithereens with a shotgun!\nDRAW YOUR WAY OUT OF\n[REDACTED]\nThe pencil – is not only your weapon but a tool to change the world around you.\nSketch bombs to kick them at your enemies!\nDraw doors to kick down!\nWrite ██████ words on walls – no reason needed!\nCUTE… BUT SCARY\nA charming and cute cardboard world… with more meat than expected. Even paper can instill fear!\nPAPER CAN BE TOUGHER THAN METAL\nAn industrial soundtrack that will pump high-octane cardboard through your veins.\nGo ahead and find out…\nWHY WOULD CARDBOARD… BLEED?\nP.S. And please don’t cut your fingers in the process! 🙂",
+        "game_features": [],
+        "repack_features": [
+          "Based on PAPERHEAD-RUNE ISO release: rune-paperhead.iso (7,506,591,744 bytes)",
+          "Game version: v47; Supporter Pack & Soundtrack DLCs are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST in MP3 format",
+          "Significantly smaller archive size (compressed from 7 to 2.7/2.9 GB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 7.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-13T03:52:29.609065+00:00"
     },
     {
       "id": "bubsy-4d",

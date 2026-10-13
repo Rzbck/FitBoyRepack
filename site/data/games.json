@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-12T23:33:39.136103+00:00",
-  "source_pages": 809,
+  "generated_at": "2026-10-13T03:51:57.317232+00:00",
+  "source_pages": 810,
   "last_full_scan_at": "2026-10-12T11:18:04.982142+00:00",
   "games": [
+    {
+      "id": "paperhead",
+      "title": "PAPERHEAD – v47 + 2 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/paperhead/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/13/75997d3b02cd714e61300cbf066562a9.jpg",
+      "post_date": "2026-10-13T04:48:25+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "bubsy-4d",
       "title": "Bubsy 4D: Digital Pawsome Edition, v1.2.1 + Bonus Content",

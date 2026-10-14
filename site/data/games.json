@@ -1,9 +1,77 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T17:13:28.476166+00:00",
+  "generated_at": "2026-10-14T17:56:44.489575+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
+    {
+      "id": "invincible-vs",
+      "title": "Invincible VS, Season 2 Patch + 22 DLCs",
+      "source_url": "https://fitgirl-repacks.site/invincible-vs/",
+      "image_url": "https://i3.imageban.ru/out/2026/05/04/9860cacf3c2524ba3ddb56789ba0aa2f.jpg",
+      "post_date": "2026-10-14T20:20:08+03:00",
+      "genres": [
+        "Arcade",
+        "Fighting",
+        "Side",
+        "3D"
+      ],
+      "repack_size": "7.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8d/ab/8dab5171-6381-4b2c-941f-00cdf5e574d4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8d/ab/8dab5171-6381-4b2c-941f-00cdf5e574d4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/48/01/4801f998-4cf2-460c-837c-a95251b4cfc4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/48/01/4801f998-4cf2-460c-837c-a95251b4cfc4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f9/f6/f9f6005c-1a39-4063-82af-6c26a426d1e9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f9/f6/f9f6005c-1a39-4063-82af-6c26a426d1e9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/06/83/06833951-1296-435c-9649-6450fd891bd9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/06/83/06833951-1296-435c-9649-6450fd891bd9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/91/fe/91fe2468-f1b5-4bde-ac14-2c8d75a6d792.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/91/fe/91fe2468-f1b5-4bde-ac14-2c8d75a6d792.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/1e/691ec23c-6526-43f7-8139-2ac15f98a0c1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/1e/691ec23c-6526-43f7-8139-2ac15f98a0c1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Invincible VS is a brutal superhero 3v3 tag fighting game set in the Invincible universe, where you can battle to the death as a team of fan-favorite characters in iconic locations. Unleash bone-breaking combos through fast combat and smart defensive tactics to leave a trail of blood and destruction. Land vicious Super moves and Ultimates to leave your opponents in a mess of blood.\nInvincible VS features a variety of game modes including a captivating cinematic story mode with an original narrative from a writer of the animated series. Jump into Arcade and battle with your team, hone your combos in Training mode, and test your skills against the world in competitive and casual multiplayer. Show, comic fans, and fighting game lovers will experience unparalleled heroic brutality, where every earth-shattering blow will leave you feeling… Invincible.\nThis is the debut title from the newly formed Quarter Up – the first in-house studio at Skybound – led by former members of the core Killer Instinct (2013) dev team.\nIncluded DLCs:\nAllen COP\nBattle Beast Invincible Universe\nConquest Breakout\nDigital Deluxe Upgrade\nElla Mental Diamond\nBots & Monsters – Skin Bundle\nDeluxe Edition Profile Cosmetics\nDupli-Kate – Hidden Zero Skin\nThe Immortal – Honest Abe Skin\nTitan – Streetwear Skin\nUndercover and Overdressed – Skin Bundle\nUniversa – GDA Prisoner Skin\nZero Suit Mark Skin\nMark Movincihawk Atom Eve #646\nMonsterGirl Leotard\nPowerplex Prison Break\nRex Splode Towel\nThe Immortal – Additional Fighter\nUniversa – Additional Fighter\nYear 1 Pass is not an actual DLC hence not listed.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Invincible.VS.Season.1-RUNE ISO release: rune-invincible.vs.season.1.iso (10,343,677,952 bytes)",
+          "Game version: Season 1 Patch (Steam BuildID 23878258); 19 DLCs are included and activated. To unlock some DLCs complete one Versus fight against AI",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feauture: you may skip downloading and installing of credits video",
+          "Significantly smaller archive size (compressed from 9.6 to 7.3/7.6 GB)",
+          "Installation takes 5-15 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 9.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "towerfolk",
       "title": "Towerfolk – v1.0 (Release)",
@@ -33667,74 +33735,6 @@
           "Installation takes 5-20 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 23.4 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "invincible-vs",
-      "title": "Invincible VS, Season 1 Patch + 19 DLCs",
-      "source_url": "https://fitgirl-repacks.site/invincible-vs/",
-      "image_url": "https://i3.imageban.ru/out/2026/05/04/9860cacf3c2524ba3ddb56789ba0aa2f.jpg",
-      "post_date": "2026-07-04T01:10:08+03:00",
-      "genres": [
-        "Arcade",
-        "Fighting",
-        "Side",
-        "3D"
-      ],
-      "repack_size": "7.3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/8d/ab/8dab5171-6381-4b2c-941f-00cdf5e574d4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8d/ab/8dab5171-6381-4b2c-941f-00cdf5e574d4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/48/01/4801f998-4cf2-460c-837c-a95251b4cfc4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/48/01/4801f998-4cf2-460c-837c-a95251b4cfc4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f9/f6/f9f6005c-1a39-4063-82af-6c26a426d1e9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f9/f6/f9f6005c-1a39-4063-82af-6c26a426d1e9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/06/83/06833951-1296-435c-9649-6450fd891bd9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/06/83/06833951-1296-435c-9649-6450fd891bd9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/91/fe/91fe2468-f1b5-4bde-ac14-2c8d75a6d792.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/91/fe/91fe2468-f1b5-4bde-ac14-2c8d75a6d792.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/69/1e/691ec23c-6526-43f7-8139-2ac15f98a0c1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/69/1e/691ec23c-6526-43f7-8139-2ac15f98a0c1.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Invincible VS is a brutal superhero 3v3 tag fighting game set in the Invincible universe, where you can battle to the death as a team of fan-favorite characters in iconic locations. Unleash bone-breaking combos through fast combat and smart defensive tactics to leave a trail of blood and destruction. Land vicious Super moves and Ultimates to leave your opponents in a mess of blood.\nInvincible VS features a variety of game modes including a captivating cinematic story mode with an original narrative from a writer of the animated series. Jump into Arcade and battle with your team, hone your combos in Training mode, and test your skills against the world in competitive and casual multiplayer. Show, comic fans, and fighting game lovers will experience unparalleled heroic brutality, where every earth-shattering blow will leave you feeling… Invincible.\nThis is the debut title from the newly formed Quarter Up – the first in-house studio at Skybound – led by former members of the core Killer Instinct (2013) dev team.\nIncluded DLCs:\nAllen COP\nBattle Beast Invincible Universe\nConquest Breakout\nDigital Deluxe Upgrade\nElla Mental Diamond\nBots & Monsters – Skin Bundle\nDeluxe Edition Profile Cosmetics\nDupli-Kate – Hidden Zero Skin\nThe Immortal – Honest Abe Skin\nTitan – Streetwear Skin\nUndercover and Overdressed – Skin Bundle\nUniversa – GDA Prisoner Skin\nZero Suit Mark Skin\nMark Movincihawk Atom Eve #646\nMonsterGirl Leotard\nPowerplex Prison Break\nRex Splode Towel\nThe Immortal – Additional Fighter\nUniversa – Additional Fighter\nYear 1 Pass is not an actual DLC hence not listed.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Invincible.VS.Season.1-RUNE ISO release: rune-invincible.vs.season.1.iso (10,343,677,952 bytes)",
-          "Game version: Season 1 Patch (Steam BuildID 23878258); 19 DLCs are included and activated. To unlock some DLCs complete one Versus fight against AI",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feauture: you may skip downloading and installing of credits video",
-          "Significantly smaller archive size (compressed from 9.6 to 7.3/7.6 GB)",
-          "Installation takes 5-15 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 9.9 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

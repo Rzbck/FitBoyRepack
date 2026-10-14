@@ -1,9 +1,43 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T17:56:44.489575+00:00",
+  "generated_at": "2026-10-14T20:43:04.966785+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
+    {
+      "id": "forza-motorsport-6-apex",
+      "title": "Forza Motorsport 6: Apex – Premium Edition, v2.8.18.1000 + 49 DLCs",
+      "source_url": "https://fitgirl-repacks.site/forza-motorsport-6-apex/",
+      "image_url": "https://i5.imageban.ru/out/2026/10/14/6a8e12bd2f2c2a79007ad7eb6f04c80d.jpg",
+      "post_date": "2026-10-14T23:20:19+03:00",
+      "genres": [
+        "Racing",
+        "Simulation",
+        "First-person",
+        "Third-person",
+        "Cars",
+        "3D"
+      ],
+      "repack_size": "12.6 GB"
+    },
+    {
+      "id": "stick-it-to-the-stickman",
+      "title": "Stick It to the Stickman – v1.0.474",
+      "source_url": "https://fitgirl-repacks.site/stick-it-to-the-stickman/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/14/5d9ac1613fcce881845b93d9c8831a4e.jpg",
+      "post_date": "2026-10-14T22:02:15+03:00",
+      "genres": [
+        "Arcade",
+        "Content randomization",
+        "Physics-based",
+        "Beat 'em up (Brawler)",
+        "Isometric",
+        "Side",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "833 MB"
+    },
     {
       "id": "invincible-vs",
       "title": "Invincible VS, Season 2 Patch + 22 DLCs",

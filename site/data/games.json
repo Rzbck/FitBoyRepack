@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T17:12:56.552911+00:00",
+  "generated_at": "2026-10-14T17:13:28.476166+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
@@ -16,7 +16,55 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "3.1 GB"
+      "repack_size": "3.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/df/9e/df9ee9f2-e7d6-4c29-bfbc-323e6a3155f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/df/9e/df9ee9f2-e7d6-4c29-bfbc-323e6a3155f9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e9/87/e9876ec6-5bc4-401a-b6cb-38e2b7d25915.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e9/87/e9876ec6-5bc4-401a-b6cb-38e2b7d25915.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/46/e7/46e7d770-b0b7-4980-916f-7d29d864340b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/46/e7/46e7d770-b0b7-4980-916f-7d29d864340b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ef/9b/ef9bdc0d-db55-490e-be05-e4e112d8d653.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ef/9b/ef9bdc0d-db55-490e-be05-e4e112d8d653.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0c/1a/0c1adf0c-8d1c-47ca-b655-3a5f3e5d7c96.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/1a/0c1adf0c-8d1c-47ca-b655-3a5f3e5d7c96.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-14T17:13:28.474216+00:00",
+      "details": {
+        "description": "Defend the City Against Bandits\nTrain soldiers to guard your city, construct defensive towers, and strengthen your walls against constant threats. Prepare your forces and stay alert bandit raids can happen at any time. Only a well-defended city will survive and prosper.\nBuild Your City Freely\nExpand your lands and shape your city the way you imagine. Gather resources like stone, wood, and iron, establish production sites, and strengthen your economy. Outbuild your rivals, gain the upper hand, and transform your city into a thriving trade hub.\nGovernance and People’s Happiness\nBuilding a city is not just about raising structures it’s about caring for your people. Provide food, housing, health, and security, while fulfilling royal demands to maintain order. A happy and healthy population is the true foundation of prosperity.\nOrder and Economy\nYour threats aren’t only from outside danger lurks within as well. Keep thieves in check, prevent quarrels among soldiers, and protect your people from hunger. Balance food, shelter, and economy to maintain order and earn the trust of your citizens.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Towerfolk-TENOKE ISO release: tenoke-towerfolk.iso (6,191,323,136 bytes)",
+          "Game version: v1.0 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.8 to 3.1 GB)",
+          "Installation takes 3-10 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-14T17:13:28.474216+00:00"
     },
     {
       "id": "mechwarrior-5-mercenaries",

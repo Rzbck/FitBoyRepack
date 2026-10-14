@@ -1,9 +1,100 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-13T23:06:06.485145+00:00",
+  "generated_at": "2026-10-14T01:52:59.155488+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-13T11:01:39.190093+00:00",
   "games": [
+    {
+      "id": "mechwarrior-5-mercenaries",
+      "title": "MechWarrior 5: Mercenaries – Succession Wars Edition, v1.15.398 + 10 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/mechwarrior-5-mercenaries/",
+      "image_url": "https://i1.imageban.ru/out/2021/09/23/a9129dbd0dbbfde9e7c0e89f5f36b82c.jpg",
+      "post_date": "2026-10-14T03:00:07+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Pirate/Privateer",
+        "First-person",
+        "Third-person",
+        "3D",
+        "Mecha"
+      ],
+      "repack_size": "31.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/52/b6/52b6702d-9372-4ddf-80e4-9a38907c5e82.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/52/b6/52b6702d-9372-4ddf-80e4-9a38907c5e82.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/56/14/5614a1b5-8582-4352-bd96-75d973b7cfca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/56/14/5614a1b5-8582-4352-bd96-75d973b7cfca.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/51/f2/51f29664-0341-4451-a5b2-879fe21542b0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/51/f2/51f29664-0341-4451-a5b2-879fe21542b0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/c4/0fc451d9-5580-4be8-a17c-63ecb516a70e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/c4/0fc451d9-5580-4be8-a17c-63ecb516a70e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/42/2c42a682-736e-43f9-bc91-05fffc154973.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/42/2c42a682-736e-43f9-bc91-05fffc154973.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/be/b1/beb110f3-8b72-4574-bb9c-988f45148021.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/be/b1/beb110f3-8b72-4574-bb9c-988f45148021.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "BE YOUR OWN WEAPON OF WAR:\nWelcome to the year 3015! It’s a hell of a time to be alive.\nHumanity has colonized thousands of star systems spanning a vast region of space known as the Inner Sphere. The golden age of cooperation and advancement is now a distant memory, and humanity has once again splintered into disparate factions all vying for supremacy.\nIn the midst of these Succession Wars, power hungry Mercenaries like yourself are in a privileged position to capitalize big time. It’s dangerous work but that’s why you’re here, right? If you’ve got an itch to blast, wreck, stomp and go all out ballistic, step inside and become your own weapon of war!\nSTORY:\nAs the inheritor of a once-prominent Mercenary company, reborn in the flames of its near destruction at the hands of conspiring factions, your quest for glory and revenge will stretch light-years as you chase threads of interstellar intrigue along your journey to becoming an elite MechWarrior and mercenary commander.\nTHE INNER SPHERE:\nHome to thousands of star systems and an array of stunning biomes, the Inner Sphere is alive with activity, purpose, consequence, and variety. Systems will be captured and reclaimed, major events will unfold, and new technologies will come to light.\nThe rigors of war will be seen with each passing week as your relationships with the various factions fluctuate according to the relentless Succession Wars and your choices as the leader of a Mercenary outfit.",
+        "game_features": [
+          "The battlefields of the future are dominated by BattleMechs, hulking machines of war capable of leveling entire cities. As a BattleMech pilot you’ll rain havoc upon enemy ‘Mechs and targets, including tanks, ground vehicles, aircraft, advanced defenses, and reinforced bases.",
+          "Few things can withstand the power of a ‘Mech for long, and the worlds of the Inner Sphere are veritable playgrounds of destruction awaiting your shielding defense or crushing devastation.",
+          "“With over 50 unique ‘Mech chassis and hundreds of sub-variants, all fully-realized with high-fidelity models, damage states, and equipment, no two ‘Mechs are the same!",
+          "Whether acquired from scouring the markets of the Inner Sphere for rare and valuable chassis and equipment, or salvaging directly from the wreckage of your annihilated enemies and the spoils of war, the maintenance and operation of your BattleMechs will be vital to your success both as a MechWarrior and a Mercenary outfit commander.”",
+          "Off the battlefield, as the leader of a Mercenary company you will need to manage all the key components of running a unit.",
+          "You’ll need to maintain and acquire ‘Mechs and equipment, hire and field MechWarriors from throughout the Inner Sphere to join you on the battlefield, and manage your relationships with the Great Houses of the Inner Sphere, all of whom are vying for your contribution to their staggering war efforts. Of course, with each Contract comes negotiation, and with each victory comes consequence.",
+          "With the vast scope of the Inner Sphere and its complex system of world generation providing huge variety and replayability, the MechWarrior 5: Mercenaries experience offers no end. Outside the campaign, a fully-featured Instant Action system will allow you to customize and kick off isolated missions at any time, free from campaign restrictions.",
+          "With four-player co-op supported both within the campaign and the Instant Action system, you can experience the full breadth of the MechWarrior 5: Mercenaries universe alongside your friends.",
+          "Mods extend your game even further! Unlock the boundless creativity of the community to alter and expand the game in amazing ways. With a full editor and interface supporting gameplay mods out of the box your creativity will know no limits.",
+          "Included DLCs:",
+          "Digital Extras Content",
+          "Heroes of the Inner Sphere",
+          "Legend of the Kestrel Lancers",
+          "Call to Arms",
+          "Rise of Rasalhague",
+          "The Dragon’s Gambit",
+          "Solaris Showdown",
+          "Shadow of Kerensky",
+          "Chaos Reign"
+        ],
+        "repack_features": [
+          "Based on MechWarrior.5.Mercenaries.Chaos.Reign-RUNE ISO release: rune-mechwarrior.5.mercenaries.chaos.reign.iso (44,525,584,384 bytes)",
+          "Game version is: v1.13.387; 9 DLCs and bonuses are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Unused Japanese videos ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading of optional videos back (contains credits background video& Xbox tutorial videos) and bonus content (8 Soundtracks, Technical Manual and Wallpapers)",
+          "Significantly smaller archive size (compressed from 41.5 to 27.4~28.5 GB, depending on selected components)",
+          "Installation takes 7-45 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 95.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "project-spark",
       "title": "Project Spark – v1.21.50909.2",
@@ -47624,97 +47715,6 @@
           "Installation takes 6-15 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 12.6 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "mechwarrior-5-mercenaries",
-      "title": "MechWarrior 5: Mercenaries – Succession Wars Edition, v1.13.387 + 9 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/mechwarrior-5-mercenaries/",
-      "image_url": "https://i1.imageban.ru/out/2021/09/23/a9129dbd0dbbfde9e7c0e89f5f36b82c.jpg",
-      "post_date": "2026-05-30T00:10:07+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "Pirate/Privateer",
-        "First-person",
-        "Third-person",
-        "3D",
-        "Mecha"
-      ],
-      "repack_size": "27.4 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/52/b6/52b6702d-9372-4ddf-80e4-9a38907c5e82.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/52/b6/52b6702d-9372-4ddf-80e4-9a38907c5e82.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/56/14/5614a1b5-8582-4352-bd96-75d973b7cfca.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/56/14/5614a1b5-8582-4352-bd96-75d973b7cfca.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/51/f2/51f29664-0341-4451-a5b2-879fe21542b0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/51/f2/51f29664-0341-4451-a5b2-879fe21542b0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0f/c4/0fc451d9-5580-4be8-a17c-63ecb516a70e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0f/c4/0fc451d9-5580-4be8-a17c-63ecb516a70e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2c/42/2c42a682-736e-43f9-bc91-05fffc154973.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2c/42/2c42a682-736e-43f9-bc91-05fffc154973.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/be/b1/beb110f3-8b72-4574-bb9c-988f45148021.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/be/b1/beb110f3-8b72-4574-bb9c-988f45148021.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "BE YOUR OWN WEAPON OF WAR:\nWelcome to the year 3015! It’s a hell of a time to be alive.\nHumanity has colonized thousands of star systems spanning a vast region of space known as the Inner Sphere. The golden age of cooperation and advancement is now a distant memory, and humanity has once again splintered into disparate factions all vying for supremacy.\nIn the midst of these Succession Wars, power hungry Mercenaries like yourself are in a privileged position to capitalize big time. It’s dangerous work but that’s why you’re here, right? If you’ve got an itch to blast, wreck, stomp and go all out ballistic, step inside and become your own weapon of war!\nSTORY:\nAs the inheritor of a once-prominent Mercenary company, reborn in the flames of its near destruction at the hands of conspiring factions, your quest for glory and revenge will stretch light-years as you chase threads of interstellar intrigue along your journey to becoming an elite MechWarrior and mercenary commander.\nTHE INNER SPHERE:\nHome to thousands of star systems and an array of stunning biomes, the Inner Sphere is alive with activity, purpose, consequence, and variety. Systems will be captured and reclaimed, major events will unfold, and new technologies will come to light.\nThe rigors of war will be seen with each passing week as your relationships with the various factions fluctuate according to the relentless Succession Wars and your choices as the leader of a Mercenary outfit.",
-        "game_features": [
-          "The battlefields of the future are dominated by BattleMechs, hulking machines of war capable of leveling entire cities. As a BattleMech pilot you’ll rain havoc upon enemy ‘Mechs and targets, including tanks, ground vehicles, aircraft, advanced defenses, and reinforced bases.",
-          "Few things can withstand the power of a ‘Mech for long, and the worlds of the Inner Sphere are veritable playgrounds of destruction awaiting your shielding defense or crushing devastation.",
-          "“With over 50 unique ‘Mech chassis and hundreds of sub-variants, all fully-realized with high-fidelity models, damage states, and equipment, no two ‘Mechs are the same!",
-          "Whether acquired from scouring the markets of the Inner Sphere for rare and valuable chassis and equipment, or salvaging directly from the wreckage of your annihilated enemies and the spoils of war, the maintenance and operation of your BattleMechs will be vital to your success both as a MechWarrior and a Mercenary outfit commander.”",
-          "Off the battlefield, as the leader of a Mercenary company you will need to manage all the key components of running a unit.",
-          "You’ll need to maintain and acquire ‘Mechs and equipment, hire and field MechWarriors from throughout the Inner Sphere to join you on the battlefield, and manage your relationships with the Great Houses of the Inner Sphere, all of whom are vying for your contribution to their staggering war efforts. Of course, with each Contract comes negotiation, and with each victory comes consequence.",
-          "With the vast scope of the Inner Sphere and its complex system of world generation providing huge variety and replayability, the MechWarrior 5: Mercenaries experience offers no end. Outside the campaign, a fully-featured Instant Action system will allow you to customize and kick off isolated missions at any time, free from campaign restrictions.",
-          "With four-player co-op supported both within the campaign and the Instant Action system, you can experience the full breadth of the MechWarrior 5: Mercenaries universe alongside your friends.",
-          "Mods extend your game even further! Unlock the boundless creativity of the community to alter and expand the game in amazing ways. With a full editor and interface supporting gameplay mods out of the box your creativity will know no limits.",
-          "Included DLCs:",
-          "Digital Extras Content",
-          "Heroes of the Inner Sphere",
-          "Legend of the Kestrel Lancers",
-          "Call to Arms",
-          "Rise of Rasalhague",
-          "The Dragon’s Gambit",
-          "Solaris Showdown",
-          "Shadow of Kerensky",
-          "Chaos Reign"
-        ],
-        "repack_features": [
-          "Based on MechWarrior.5.Mercenaries.Chaos.Reign-RUNE ISO release: rune-mechwarrior.5.mercenaries.chaos.reign.iso (44,525,584,384 bytes)",
-          "Game version is: v1.13.387; 9 DLCs and bonuses are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Unused Japanese videos ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading of optional videos back (contains credits background video& Xbox tutorial videos) and bonus content (8 Soundtracks, Technical Manual and Wallpapers)",
-          "Significantly smaller archive size (compressed from 41.5 to 27.4~28.5 GB, depending on selected components)",
-          "Installation takes 7-45 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 95.8 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T20:43:04.966785+00:00",
+  "generated_at": "2026-10-14T20:43:39.006697+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
@@ -18,7 +18,63 @@
         "Cars",
         "3D"
       ],
-      "repack_size": "12.6 GB"
+      "repack_size": "12.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f5/8a/f58a2439-cbc4-467f-bc11-530c626fae68.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/8a/f58a2439-cbc4-467f-bc11-530c626fae68.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/c1/1ac1fb58-3003-44b5-91e6-25b26ee11d19.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/c1/1ac1fb58-3003-44b5-91e6-25b26ee11d19.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/60/f560dfb8-8f2f-4957-84f5-06c25bf44739.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/60/f560dfb8-8f2f-4957-84f5-06c25bf44739.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/80/5a/805ad854-6685-48cd-b4b7-c4beb6f11b52.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/80/5a/805ad854-6685-48cd-b4b7-c4beb6f11b52.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ac/a0/aca0d4fe-5ade-464d-96f5-ee586c411d28.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ac/a0/aca0d4fe-5ade-464d-96f5-ee586c411d28.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6d/00/6d00df86-8a71-4d4c-822b-bf3900970e29.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6d/00/6d00df86-8a71-4d4c-822b-bf3900970e29.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-14T20:43:39.003620+00:00",
+      "details": {
+        "description": "Experience the world of Forza on Windows 10 PCs for free, with many of the best racing experiences that “Forza Motorsport 6” has to offer, as well as Forza’s trademark innovations such as Drivatar™ opponents and Forzavista™ cars – each with working cockpits and full damage.\nDiscover new ways to play and compete, including an all-new Showcase Tour, Spotlight Series, in-race bonus objectives and an all-new scoring mechanic.\nRace a diverse selection of more than 60 Forzavista™ cars curated from fan favorites, reflecting a variety of automotive interests, including hot hatch, muscle, touring, exotics, GT racing, track toys, prototypes and hypercars.\nCompete on six tracks based on world-famous tracks, featuring immersive wet-weather and night racing conditions.\nFace unrelenting action at simulation speed with, DirectX 12, the new standard for 3D graphics that enables players to experience gains in performance and overall optimization.\nUnlock the full capabilities of your PC with full HD and breathtaking graphics at up to 4K resolution, powered by ForzaTech™, Turn 10 Studios’ proprietary, state-of-the-art graphics and physics engine, and developed with DirectX 12.\nDelight in the stunning realism and precise detail of every car as the result of the ForzaTech™ engine, bringing the unique aspects that give each car its own unique feel to life.\nIncluded DLCs:\n1969 Pontiac Firebird Trans Am\n1970 Chevrolet Camaro Z28\n1970 Mercury Cougar Eliminator\n1971 Ford Mustang Mach 1\n1973 Pontiac Firebird Trans Am SD-455\n2006 Aston Martin #007 Aston DBR9\n2008 Mitsubishi Lancer Evolution X GSR\n2009 Pagani Zonda Cinque Roadster\n2010 Aston Martin One-77\n2010 Ferrari 599 GTO\n2010 Lexus LF-A\n2010 Nissan 370Z\n2011 Audi #2 Audi Sport Team Joest R15++ TDI\n2011 Bugatti Veyron Super Sport\n2011 Mercedes-Benz #35 Black Falcon SLS AMG GT3\n2011 Peugeot #10 Matmut-Oreca 908\n2012 Ferrari F12berlinetta\n2012 Lamborghini Aventador LP700-4\n2012 Mini John Cooper Works GP\n2012 Pagani Huayra\n2013 Abarth Punto SuperSport\n2013 Aston Martin V12 Vantage S\n2013 Ferrari LaFerrari\n2013 Ford Focus ST\n2013 Hyundai Genesis Coupe 3.8 Track\n2014 Audi #2 Audi Team Joest R18 e-tron quattro\n2014 Audi #45 Flying Lizard Motorsports R8 LMS ultra\n2014 Audi #67 Rotek Racing S3 Saloon\n2014 Bentley #7 M-Sport Bentley Continental GT3\n2014 BMW #5 Ebay Motors 125i M Sport\n2014 BMW #55 BMW Team RLL Z4 GTE\n2014 BMW M235i\n2014 Ferrari #51 AF Corse 458 Italia GTE\n2014 Ferrari California T\n2014 Honda #5 Zengo Motorsport Civic WTCC\n2014 McLaren #60 Bhaitech 12C GT3\n2014 Mercedes-Benz #33 WIX Racing A-Class (A45)\n2014 Toyota #80 Speedworks Motorworks Avensis\n2014 Volvo #1 Volvo Polestar Racing S60 STCC\n2015 Audi TTS Coupe\n2015 Chevrolet Corvette Z06\n2015 McLaren 650S Coupe\n2015 Mercedes-AMG GT S\n2015 Nissan #23 GT-R LM NISMO\n2015 Subaru WRX STI\nHyper Endurance Car Pack\nNurburgring Track Pack\nPower to Weight Car Pack\nPremium Bundle",
+        "game_features": [],
+        "repack_features": [
+          "Based on Forza.Motorsport.6.Apex.Premium.Edition-RUNE ISO release: rune-forza.motorsport.6.apex.premium.edition.iso (22,280,503,296 bytes)",
+          "Game version: v2.8.18.1000; 49 DLCs are included and activated",
+          "Installer makes all necessary steps to register the game upon installation, but it it fails, run “InstallApp.exe” in the installed game folder",
+          "To run the game find it with Windows search, desktop icon won’t work",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional voiceover packs. English VOs are included by default",
+          "Significantly smaller archive size (compressed from 20.8 to 12.6~14.5 GB, depending on selected components)",
+          "Installation takes 7-30 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 21.9 GB",
+          "Language can be changed in “uwp_emu.xml” file",
+          "Repack uses XTool library by Razor12911",
+          "After installation, first run the crack installer from desktop icon. After that you can use an actual game desktop icon to run the game",
+          "At least 6 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-14T20:43:39.003620+00:00"
     },
     {
       "id": "stick-it-to-the-stickman",
@@ -36,7 +92,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "833 MB"
+      "repack_size": "833 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/a7/cf/a7cf5e2b-20ec-422d-90d5-cb94ad978a01.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a7/cf/a7cf5e2b-20ec-422d-90d5-cb94ad978a01.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9d/98/9d98e9d5-0fa7-4a4c-b106-4c71b9f89113.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9d/98/9d98e9d5-0fa7-4a4c-b106-4c71b9f89113.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/be/97be4256-71a5-46a0-81c5-1ac28cfd907c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/be/97be4256-71a5-46a0-81c5-1ac28cfd907c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/54/8f/548f386c-8576-43e2-aa3c-8fed5ee4feb4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/54/8f/548f386c-8576-43e2-aa3c-8fed5ee4feb4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e5/d4/e5d4ae93-89b9-4f2c-a5ef-ea2bc959195f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e5/d4/e5d4ae93-89b9-4f2c-a5ef-ea2bc959195f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/26/aa/26aad025-7b08-41ca-a588-4ab52ac616a2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/26/aa/26aad025-7b08-41ca-a588-4ab52ac616a2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-14T20:43:39.003620+00:00",
+      "details": {
+        "description": "Congratulations on joining The Company!\nAs a new employee, your primary responsibility is to physically depose your supervisors, fight your way to the top of the corporate ladder (literally, with violence), and claim the ultimate title of CEO. In this rogue-lite physics brawler you’ll brutally displace your superiors, ascend to the upper echelons of corporate power, and unlock new workers and game modes to achieve the greatest goal of all – increasing shareholder value.\nStick it to the Stickman is a high-octane, physics-based brawler set in a truly hostile working environment. Fight off co-workers and rival executives looking to steal your job by chaining together combos and choosing from a massive selection of sick moves, deadly weapons, and devastating superpowers. Unlock unique office archetypes – including Temps, Caffeine Addicts, and Ego Maniacs – and add friends to your payroll with couch co-op and remote play.\nAs you punch, kick, stab, staple, and chainsaw your way up the business hierarchy, engage in all manner of lethally profitable corporate operations including navigating OSHA-violating warehouses and dodging rogue forklifts, placing tax-deductible bets on hyper-violent billionaires, installing completely safe brain-chip implants that let you summon telekinetic artillery with your mind, and racing to the bottom of a doomsday bunker to fight the one and only Founder.\nBribe politicians, bust unions, price out local neighborhoods, and suppress protests. In the unregulated free market, there are no moral victories – only profit. Stickmen need jobs, but shareholders need growth, and you will provide that growth at any cost. But don’t get too comfy: once you’ve laid waste to your rivals and been anointed CEO, the board will instantly demote you back to being an intern. Yes, you learned how to tie a tie for nothing.\nTime to clock in.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Stick.It.to.the.Stickman-RUNE ISO release: rune-stick.it.to.the.stickman.iso (1,167,785,984 bytes)",
+          "Game version: v1.0.474",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 1.1 GB to 833 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.8 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-14T20:43:39.003620+00:00"
     },
     {
       "id": "invincible-vs",

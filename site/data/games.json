@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T20:43:39.006697+00:00",
+  "generated_at": "2026-10-14T23:56:31.325909+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
+    {
+      "id": "valor-mortis",
+      "title": "Valor Mortis + DLC",
+      "source_url": "https://fitgirl-repacks.site/valor-mortis/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/14/0757bdfb14e6a15bb566a273f3ad4690.jpg",
+      "post_date": "2026-10-15T02:45:47+03:00",
+      "genres": [
+        "Action",
+        "First-person",
+        "3D",
+        "Supernatural fiction"
+      ],
+      "repack_size": "31.1 GB"
+    },
     {
       "id": "forza-motorsport-6-apex",
       "title": "Forza Motorsport 6: Apex – Premium Edition, v2.8.18.1000 + 49 DLCs",

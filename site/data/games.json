@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T23:56:31.325909+00:00",
+  "generated_at": "2026-10-14T23:57:04.232723+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "3D",
         "Supernatural fiction"
       ],
-      "repack_size": "31.1 GB"
+      "repack_size": "31.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/66/0b/660be7df-bec3-42e7-aca1-f9d5a93e6a66.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/0b/660be7df-bec3-42e7-aca1-f9d5a93e6a66.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6d/4e/6d4ebb30-33de-4541-ba62-df85427c7fd9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6d/4e/6d4ebb30-33de-4541-ba62-df85427c7fd9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f8/70/f870590c-d2b3-4e28-b25f-80b9bd99b93b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f8/70/f870590c-d2b3-4e28-b25f-80b9bd99b93b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f9/1a/f91a3f03-222d-42f6-9888-8c77fba60ec1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f9/1a/f91a3f03-222d-42f6-9888-8c77fba60ec1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c8/24/c8242b6a-417e-493d-bb19-842c45795430.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c8/24/c8242b6a-417e-493d-bb19-842c45795430.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1f/53/1f533016-24fc-4cd1-9a96-01806dbb4c08.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1f/53/1f533016-24fc-4cd1-9a96-01806dbb4c08.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-14T23:57:04.230530+00:00",
+      "details": {
+        "description": "You are William, a soldier of the Grande Armée brought back from a battlefield grave. But the Europe you awaken to is not the one you sacrificed for. A mysterious plague now sweeps the continent, and you have been reborn with its corrupting power pulsing through your veins.\nEach death is a chance to grow stronger. Master a combat system of parries, dashes, and visceral finishers across a variety of weapons. Channel your power to enhance attacks and unlock new supernatural abilities to inflict upon your enemies.\nNavigate a 19th-century alternate history where the costs of endless war have corrupted the landscape. Use your newfound mobility to outmaneuver the plague-ridden abominations of Napoleon’s Eternal Guard and uncover environmental secrets that may increase your chances of survival.\nWitness a compelling story where historical figures and realities intertwine with elements of horror and the supernatural. Explore beyond the dark corners of the world to discover the truth behind the plague and your unholy resurrection.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Valor.Mortis-RUNE ISO release: rune-valor.mortis.iso (42,006,544,384 bytes)",
+          "La Grande Armée Weapon Skin Pack DLC is included and activated. Since no other DLCs have been released yet, this is not a Deluxe Edition",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 39.1 to 31.1 GB)",
+          "Installation takes 12-35 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 42.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-14T23:57:04.230530+00:00"
     },
     {
       "id": "forza-motorsport-6-apex",

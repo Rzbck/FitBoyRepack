@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-15T21:39:55.611358+00:00",
+  "generated_at": "2026-10-15T21:40:33.466683+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "8 GB"
+      "repack_size": "8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8b/e9/8be9328e-9631-40fe-a2d0-7da30d3053c6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8b/e9/8be9328e-9631-40fe-a2d0-7da30d3053c6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5c/31/5c3137c3-d000-46c4-b1d8-28229172bcf5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5c/31/5c3137c3-d000-46c4-b1d8-28229172bcf5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/45/17/4517badb-64f1-4f44-98a7-b38b336e0dfd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/45/17/4517badb-64f1-4f44-98a7-b38b336e0dfd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/3d/973d95a0-81b9-4385-9ea7-7b2845a71ab3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/3d/973d95a0-81b9-4385-9ea7-7b2845a71ab3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/da/29daf39e-fc1b-469d-a592-daaf618d2107.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/da/29daf39e-fc1b-469d-a592-daaf618d2107.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bc/23/bc23835d-bfe7-4b48-802d-9d663e55f629.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bc/23/bc23835d-bfe7-4b48-802d-9d663e55f629.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-15T21:40:33.464736+00:00",
+      "details": {
+        "description": "From legendary director Jonathan Blow (\nBraid\n,\nThe Witness\n) comes\nOrder of the Sinking Star\n, a massive puzzle adventure featuring more than one thousand hand-crafted puzzles designed to put your intellect to the test. You are transported to a realm of curious magic, dangerous contraptions, and vicious monsters. Explore four distinct worlds, each with its own mechanics, characters, and stories, and then watch as they all collide. As the worlds merge, and characters meet one another, puzzle systems intertwine, creating surprising new gameplay possibilities. Explore at your own pace, revisit worlds and return to challenges as you see fit. Discover unique playable characters, master evolving gameplay mechanics, and decipher the deep mysteries of a sprawling, interconnected game world. Blending exploration, storytelling, and ever-progressing mechanics, Order of the Sinking Star invites you into a mysterious, living puzzle unlike anything you’ve played.\nEmbark on an innovative puzzle adventure with dozens of game mechanics and hundreds of hours of unique gameplay. Each puzzle builds on the last, introducing new game mechanics that reward curiosity and persistence.\nExplore four mysterious worlds, each with its own characters, rules, dangers, and secrets waiting to be uncovered. Come and go as you like, you are free to take on the puzzles you discover at your own pace.\nA queen, a thief, a warrior, a wizard, and a talking boat are just some of the heroes of this tale. Each character wields complementary abilities and has captivating stories to tell.\nAs playable characters begin to meet and worlds collide, the mystery untangles. Through gameplay and notes you collect you learn more about this enigmatic realm. Piece by piece and clue by clue, you’ll uncover the secrets of the Order of the Sinking Star.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Order.of.the.Sinking.Star-RUNE ISO release: rune-order.of.the.sinking.star.iso (10,826,874,880 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 10.1 to 8 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 12.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-15T21:40:33.464736+00:00"
     },
     {
       "id": "total-war-shogun-2-complete-edition",

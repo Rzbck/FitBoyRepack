@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-14T23:57:04.232723+00:00",
+  "generated_at": "2026-10-15T04:32:02.886509+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
+    {
+      "id": "total-war-shogun-2-complete-edition",
+      "title": "Total War: SHOGUN 2 – Complete Edition, v1.0.0 Build 87380",
+      "source_url": "https://fitgirl-repacks.site/total-war-shogun-2-complete-edition/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/15/8cdbadfdf443277e2aa6115ca1f61da5.jpg",
+      "post_date": "2026-10-15T04:23:13+03:00",
+      "genres": [
+        "Strategy",
+        "3D",
+        "Real-time",
+        "Turn-based"
+      ],
+      "repack_size": "21.8 GB"
+    },
     {
       "id": "valor-mortis",
       "title": "Valor Mortis + DLC",

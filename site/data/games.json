@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-15T04:32:02.886509+00:00",
+  "generated_at": "2026-10-15T04:32:36.198621+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-14T09:02:07.351728+00:00",
   "games": [
@@ -16,7 +16,69 @@
         "Real-time",
         "Turn-based"
       ],
-      "repack_size": "21.8 GB"
+      "repack_size": "21.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/7c/4a/7c4a0d8b-3104-46a6-be15-78e5c833efab.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7c/4a/7c4a0d8b-3104-46a6-be15-78e5c833efab.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/15/d4/15d4af4f-5158-463d-8594-81f6a641381a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/15/d4/15d4af4f-5158-463d-8594-81f6a641381a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/db/ba/dbbaedfa-20dd-4586-bfda-ef2624c24e26.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/db/ba/dbbaedfa-20dd-4586-bfda-ef2624c24e26.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/9b/0f9b6394-c39b-4a3f-a3c7-1e341398cbb4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/9b/0f9b6394-c39b-4a3f-a3c7-1e341398cbb4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c6/6f/c66fafd7-5313-474a-ae7a-e882677aa735.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c6/6f/c66fafd7-5313-474a-ae7a-e882677aa735.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/d8/69d8e6d9-0407-49e1-bdaf-c80b53f0eee9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/d8/69d8e6d9-0407-49e1-bdaf-c80b53f0eee9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-15T04:32:36.196294+00:00",
+      "details": {
+        "description": "Become Shogun\nExperience the updated, enhanced, and complete version of the grand strategy classic; Total War: SHOGUN 2 and all of its DLC, including the Rise of the Samurai and Fall of the Samurai campaigns. Updates include:\nGrand Strategy\nWage total war, unite Japan and become Shogun. Master Bushido and Chi, war and peace, build alliances, lead massive armies, construct mighty castles and execute acts of cunning subterfuge to fuel your campaigns across the entire Shogun era from the rise of the first Shogun to the fall of the last Samurai.\nTactical Battles\nCommand massed armies of samurai warriors in dramatic real-time tactical battles. Master the tactics of the Shogun era and sweep across the battlefields of Feudal Japan, commanding massive, pitched battles, besieging towering fortresses, and springing devastating ambushes. Glorious victory or shameful defeat will be yours.",
+        "game_features": [
+          "Improved visuals, updated lighting, shadows, and textures",
+          "1440p and 4K UI scaling",
+          "Modernised controls",
+          "New full Japanese and Chinese voice acting and text localisation",
+          "50 + newly playable minor factions",
+          "Integrated in-game mod support using Mod.io",
+          "64 bit upgrade, and more"
+        ],
+        "repack_features": [
+          "Based on Total.War.SHOGUN.2.Complete.Edition-RUNE ISO release: rune-total.war.shogun.2.complete.edition.iso (46,266,253,312 bytes)",
+          "Game version: v1.0.0 Build 87380",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with all voiceovers and optional videos)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional “Old Style” events videos and voiceover packs you don’t need. English VOs are included by default",
+          "Significantly smaller archive size (compressed from 43.1 to 21.8~28.3 GB, depending on selected components)",
+          "Installation takes 11-30 minutes (depending on your system & selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 53.8 GB",
+          "Language can be changed in game settings (UI & Audio in different places)",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-15T04:32:36.196294+00:00"
     },
     {
       "id": "valor-mortis",

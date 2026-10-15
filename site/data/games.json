@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-15T08:38:31.029538+00:00",
+  "generated_at": "2026-10-15T21:39:55.611358+00:00",
   "source_pages": 810,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
+    {
+      "id": "order-of-the-sinking-star",
+      "title": "Order of the Sinking Star",
+      "source_url": "https://fitgirl-repacks.site/order-of-the-sinking-star/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/15/87fa4a405553be9391cf7259fe167bd3.jpg",
+      "post_date": "2026-10-15T23:55:35+03:00",
+      "genres": [
+        "Logic",
+        "Puzzle",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "8 GB"
+    },
     {
       "id": "total-war-shogun-2-complete-edition",
       "title": "Total War: SHOGUN 2 – Complete Edition, v1.0.0 Build 87380",

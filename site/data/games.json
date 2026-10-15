@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-15T23:53:18.082745+00:00",
+  "generated_at": "2026-10-15T23:53:51.822455+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
@@ -17,7 +17,61 @@
         "2D",
         "3D"
       ],
-      "repack_size": "4.1 GB"
+      "repack_size": "4.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ea/2d/ea2d5f3f-a058-4b7b-8b1d-059f689fb86f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ea/2d/ea2d5f3f-a058-4b7b-8b1d-059f689fb86f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4b/f6/4bf67717-006c-4eb0-91dd-14de5536ecff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4b/f6/4bf67717-006c-4eb0-91dd-14de5536ecff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a4/bc/a4bca583-55bb-4dcf-8ff5-023e12bdbb16.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a4/bc/a4bca583-55bb-4dcf-8ff5-023e12bdbb16.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/89/26/89264437-51de-4355-ab26-5b1a8fabaf68.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/89/26/89264437-51de-4355-ab26-5b1a8fabaf68.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/e7/30e7d403-4175-4ca0-9da3-95f2aa3bb3c0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/e7/30e7d403-4175-4ca0-9da3-95f2aa3bb3c0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/94/4e94cab4-29da-43a9-b526-56d1f9d8c9c3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/94/4e94cab4-29da-43a9-b526-56d1f9d8c9c3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-15T23:53:51.820202+00:00",
+      "details": {
+        "description": "Medieval Paris, Where the Tolling Bells Herald the End\n1499. Paris is engulfed in flames as monstrous creatures suddenly emerge from the shadows.\nTrevor Belmont, the hero who defeated Dracula, ventures into the burning streets with his daughter, Rose Belmont. Armed with the legendary holy whip, the Vampire Killer, they hunt down the beasts bleeding from the looming castle.\nRose is soon swept up in the dark conspiracy that lurks beneath. Will she succeed in saving Paris from devastation?\nSatisfying Whip Action\nCastlevania’s iconic whip action is more satisfying than ever!\nCrack your whip to move around freely like a trapeze artist!\nMaster the whip mechanics and be creative to pounce on your prey like a wolf in fast-paced combat!\nDiverse Bosses and the Arcana System\nFace-off against legendary bosses including Death, Medusa and Carmilla in addition to enigmatic new bosses such as Joan of Arc.\nOnce defeated, bosses are sealed into Rose’s tarot cards, turning them into Arcana – use their skills to cast spells and obtain unique special actions.\nCustomize Your Battle Style with Weapons and Relics\nCustomize Rose’s battle style by using a variety of equipment, including weapons spanning seven distinct categories and Relics that trigger powerful effects through both offense and defense.\nCombine equipment you discover through exploration to create your own playstyle!\nIconic Castlevania Atmosphere, Reimagined in New Stages\nFrom iconic Gothic aesthetics to vivid, refined visuals, the game presents a fresh take on the world of Castlevania.\nExplore maps filled with both new features and familiar elements inspired by classic Castlevania titles.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Castlevania.Belmonts.Curse-RUNE ISO release: rune-castlevania.belmonts.curse.iso (6,728,679,424 bytes)",
+          "3 DLCs/Bonuses (Alucard Style Costume, Bonus Contents Pack, Digital Sound & Art Gallery)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content (application)",
+          "Significantly smaller archive size (compressed from 6.3 to 4.1/4.7 GB)",
+          "Installation takes 2-6 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 7.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-15T23:53:51.820202+00:00"
     },
     {
       "id": "order-of-the-sinking-star",

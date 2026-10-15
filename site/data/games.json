@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-15T21:40:33.466683+00:00",
-  "source_pages": 810,
+  "generated_at": "2026-10-15T23:53:18.082745+00:00",
+  "source_pages": 811,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
+    {
+      "id": "castlevania-belmonts-curse",
+      "title": "Castlevania: Belmont’s Curse – Midnight Edition + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/castlevania-belmonts-curse/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/16/1842fa00a50ebc03677a8e61d4d6319a.jpg",
+      "post_date": "2026-10-16T01:49:34+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Side",
+        "2D",
+        "3D"
+      ],
+      "repack_size": "4.1 GB"
+    },
     {
       "id": "order-of-the-sinking-star",
       "title": "Order of the Sinking Star",

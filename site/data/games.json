@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-16T01:23:12.269230+00:00",
+  "generated_at": "2026-10-16T03:49:02.441600+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
+    {
+      "id": "god-of-war-3-remastered",
+      "title": "God of War III Remastered – v1.01/v1.02 (Recompiled for PC v2.3.0)",
+      "source_url": "https://fitgirl-repacks.site/god-of-war-3-remastered/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/16/386560b64fe7181e2b5b0be7362735fa.jpg",
+      "post_date": "2026-10-16T05:11:12+03:00",
+      "genres": [
+        "Action",
+        "Slasher",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "9.8 GB"
+    },
     {
       "id": "warhammer-40000-boltgun-2",
       "title": "Warhammer 40,000: Boltgun 2 – v1.2.0.0+775",

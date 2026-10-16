@@ -1,9 +1,96 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-16T08:30:49.107464+00:00",
+  "generated_at": "2026-10-16T23:37:20.903826+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-16T08:30:49.107464+00:00",
   "games": [
+    {
+      "id": "foundation",
+      "title": "Foundation: Supporter Edition – v1.12.0.12 + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/foundation/",
+      "image_url": "https://i1.imageban.ru/out/2025/02/01/0ff7303df051ad7c11233fac5997bb90.jpg",
+      "post_date": "2026-10-17T01:30:01+03:00",
+      "genres": [
+        "Management",
+        "Strategy",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/690830/extras/gif_villagers.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ab/3f/ab3f0976-a9de-40f7-8cbd-a6ab938f5bf3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ab/3f/ab3f0976-a9de-40f7-8cbd-a6ab938f5bf3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/16/a3166fde-0cf2-4c4e-bfae-6449321b6b71.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/16/a3166fde-0cf2-4c4e-bfae-6449321b6b71.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7a/a3/7aa3deae-f6ca-4c91-a6c5-a782cff13575.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7a/a3/7aa3deae-f6ca-4c91-a6c5-a782cff13575.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/90/a9903926-b81b-4a79-b3fb-dce0a198e8ca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/90/a9903926-b81b-4a79-b3fb-dce0a198e8ca.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e1/a1/e1a10333-3a1d-47b1-a3fb-8e55fd0880f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e1/a1/e1a10333-3a1d-47b1-a3fb-8e55fd0880f9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c2/e9/c2e99af1-7ce0-473e-b8d9-ee8193c06a0d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c2/e9/c2e99af1-7ce0-473e-b8d9-ee8193c06a0d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Foundation is a gridless medieval city builder where you create modular buildings, shape organic cities and manage its villagers!\nBUILD THE ORGANIC MEDIEVAL CITY OF YOUR DREAMS\n– Foundation combines free-building tools and procedural generation to create the ultimate organic city-building experience.\nMANAGE YOUR VILLAGE AND MAKE IT COME TO LIFE\n– Assign jobs, create production chains, establish trade. In Foundation, your creations come to life!\nPLAY AT YOUR PACE, RELAX AND ENJOY THE VIEW!\n– Foundation offers various difficulty levels, so you can play the way you want! Choose an Aspiration to discover new ways to play, or just play in Creative mode, relax and enjoy the view!",
+        "game_features": [
+          "An advanced gridless City Building experience, with unlimited generated maps and almost no construction constraints.",
+          "Free-building tool: Create modular buildings from individual parts, beautify and transform them into majestic monuments!",
+          "Organic development with our unique Painting tool: Guide your villagers by defining areas for building homes, decide where to pave roads and set patrols, designate forest extraction zones, and more!",
+          "Manage your village: Develop production chains, tax your villagers, trade with neighboring villages, or fight for the King. There are multiple ways to create a successful economy!",
+          "Progress with the three Estates of the Realm: Three distinct progress paths await you:",
+          "Labor",
+          ",",
+          "Clergy",
+          "or",
+          "Kingdom",
+          ". You can either specialize in one or combine all three.",
+          "Tailor your gaming experience: Select an Aspiration, adjust the difficulty level or build without constraints by playing in Creative Mode.",
+          "Full modding integration!",
+          "Foundation Original Soundtrack: Immerse yourself in over 100 minutes of atmospheric medieval music crafted by the award-winning composers at Audinity.",
+          "…and much more!"
+        ],
+        "repack_features": [
+          "Based on Foundation.v1.11.0.11-RUNE ISO release: rune-foundation.v1.11.0.11.iso (4,440,817,664 bytes)",
+          "Game version: v1.11.0.11; Guivre Garden & Soundtrack DLCs are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST in MP3 format",
+          "Significantly smaller archive size (compressed from 4.1 to 1.6/1.8 GB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 5.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "god-of-war-3-remastered",
       "title": "God of War III Remastered – v1.01/v1.02 (Recompiled for PC v2.3.0)",
@@ -88850,93 +88937,6 @@
           "Installation takes 6-15 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 27.1 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "foundation",
-      "title": "Foundation: Supporter Edition – v1.11.0.11 + 2 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/foundation/",
-      "image_url": "https://i1.imageban.ru/out/2025/02/01/0ff7303df051ad7c11233fac5997bb90.jpg",
-      "post_date": "2026-01-22T05:00:01+03:00",
-      "genres": [
-        "Management",
-        "Strategy",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/690830/extras/gif_villagers.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ab/3f/ab3f0976-a9de-40f7-8cbd-a6ab938f5bf3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ab/3f/ab3f0976-a9de-40f7-8cbd-a6ab938f5bf3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a3/16/a3166fde-0cf2-4c4e-bfae-6449321b6b71.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a3/16/a3166fde-0cf2-4c4e-bfae-6449321b6b71.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/7a/a3/7aa3deae-f6ca-4c91-a6c5-a782cff13575.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/7a/a3/7aa3deae-f6ca-4c91-a6c5-a782cff13575.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a9/90/a9903926-b81b-4a79-b3fb-dce0a198e8ca.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a9/90/a9903926-b81b-4a79-b3fb-dce0a198e8ca.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e1/a1/e1a10333-3a1d-47b1-a3fb-8e55fd0880f9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e1/a1/e1a10333-3a1d-47b1-a3fb-8e55fd0880f9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c2/e9/c2e99af1-7ce0-473e-b8d9-ee8193c06a0d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c2/e9/c2e99af1-7ce0-473e-b8d9-ee8193c06a0d.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Foundation is a gridless medieval city builder where you create modular buildings, shape organic cities and manage its villagers!\nBUILD THE ORGANIC MEDIEVAL CITY OF YOUR DREAMS\n– Foundation combines free-building tools and procedural generation to create the ultimate organic city-building experience.\nMANAGE YOUR VILLAGE AND MAKE IT COME TO LIFE\n– Assign jobs, create production chains, establish trade. In Foundation, your creations come to life!\nPLAY AT YOUR PACE, RELAX AND ENJOY THE VIEW!\n– Foundation offers various difficulty levels, so you can play the way you want! Choose an Aspiration to discover new ways to play, or just play in Creative mode, relax and enjoy the view!",
-        "game_features": [
-          "An advanced gridless City Building experience, with unlimited generated maps and almost no construction constraints.",
-          "Free-building tool: Create modular buildings from individual parts, beautify and transform them into majestic monuments!",
-          "Organic development with our unique Painting tool: Guide your villagers by defining areas for building homes, decide where to pave roads and set patrols, designate forest extraction zones, and more!",
-          "Manage your village: Develop production chains, tax your villagers, trade with neighboring villages, or fight for the King. There are multiple ways to create a successful economy!",
-          "Progress with the three Estates of the Realm: Three distinct progress paths await you:",
-          "Labor",
-          ",",
-          "Clergy",
-          "or",
-          "Kingdom",
-          ". You can either specialize in one or combine all three.",
-          "Tailor your gaming experience: Select an Aspiration, adjust the difficulty level or build without constraints by playing in Creative Mode.",
-          "Full modding integration!",
-          "Foundation Original Soundtrack: Immerse yourself in over 100 minutes of atmospheric medieval music crafted by the award-winning composers at Audinity.",
-          "…and much more!"
-        ],
-        "repack_features": [
-          "Based on Foundation.v1.11.0.11-RUNE ISO release: rune-foundation.v1.11.0.11.iso (4,440,817,664 bytes)",
-          "Game version: v1.11.0.11; Guivre Garden & Soundtrack DLCs are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in WAV format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus OST in MP3 format",
-          "Significantly smaller archive size (compressed from 4.1 to 1.6/1.8 GB)",
-          "Installation takes 1-2 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 5.3 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

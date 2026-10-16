@@ -658,6 +658,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "foundation-repack-updated-2",
+      "title": "Foundation Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/foundation-repack-updated-2/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "from-repacking-to-hacking",
       "title": "From repacking to hacking",
       "source_url": "https://fitgirl-repacks.site/from-repacking-to-hacking/",
@@ -8784,10 +8794,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-14-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9118,10 +9126,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-3-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9279,10 +9285,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-7-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

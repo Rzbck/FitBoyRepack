@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-16T01:22:34.898842+00:00",
+  "generated_at": "2026-10-16T01:23:12.269230+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
@@ -19,7 +19,61 @@
         "3D",
         "Retro look"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/45/91/45911535-9336-43a3-a184-8d065673dd60.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/45/91/45911535-9336-43a3-a184-8d065673dd60.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/18/5018dd50-afe2-4c26-a118-8cb6694e717e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/18/5018dd50-afe2-4c26-a118-8cb6694e717e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/97/3797840f-d030-4aca-9e76-87c7f22b0922.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/97/3797840f-d030-4aca-9e76-87c7f22b0922.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/b8/97b8b5f1-26e8-413c-8713-497dafe096de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/b8/97b8b5f1-26e8-413c-8713-497dafe096de.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/24/95/24954b19-9c2b-4db3-9561-d75f382e8499.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/24/95/24954b19-9c2b-4db3-9561-d75f382e8499.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/1a/421a32f4-f41b-405d-adb4-fe8b9cdf6b7d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/1a/421a32f4-f41b-405d-adb4-fe8b9cdf6b7d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-16T01:23:12.267228+00:00",
+      "details": {
+        "description": "Warhammer 40,000: Boltgun 2 is the brutal and fast-paced sequel to boomer shooter Warhammer 40,000: Boltgun.\nFollowing directly on from the end of Warhammer 40,000: Boltgun, your duty takes you to new locations in a branching, single-player campaign that effortlessly blends the grim, and dark Warhammer 40,000 universe with a fast-paced first-person shooter.\nLock in as one of two playable characters, each offering their own unique abilities, weapons, and play style.\nDominate combat as the unrelenting force that is Malum Caedo, a formidable Sternguard Veteran with a reputation for purging heretics. Or quickly take control of the battlefield as the swift and nimble Sister of Battle Celestian, Nyra Veyrath, torching enemies and leaving only ashes in her wake.\nTake the fight to never-before-seen worlds and vanquish the foes that lurk there. From the colossal heights of a hive city to the impenetrable mangrove swamps of a jungle, and even to the heart of the Ark of Omen… You’ll need to overcome the challenges of each location to complete your mission.\nBuilt on the explosive combat of Warhammer 40,000: Boltgun, charge headfirst into glorious battle armed with an arsenal of deadly weapons. Shred enemies with your lethal chainsword, blast them into an explosion of pixels and blood with your Shotgun or set them aflame with a torrent of liquid fire from your Flamer!\nAs your arsenal improves, so do the enemies! Eviscerate enemies from the four Chaos god factions (Nurgle, Tzeentch, Khorne, and Slaanesh) in glorious, visceral fashion. The ferocious Bloodletters and their daemonic Juggernauts are a near unstoppable force as they charge into battle hungry for blood! While Daemonettes gracefully leap around the battlefield between the Noise Marines and their devastating sonic weaponry.\nFeatures\nTwo Playable Characters\n– Play as the formidable Malum Caedo or battle-hardened Nyra Veyrath, each with their own playstyle.\nExplosive FPS Gameplay\n– Obliterate foes in high-octane combat.\nBranching Campaign\n– Choose your own path through the campaign with each branch featuring unique levels.\nNEW Enemies\n– Face never-before-seen foes from different factions.\nNEW Weapons\n– Eviscerate hordes of relentless heretical scum with devastating weapons.\nNEW Locations\n– Discover a range of worlds and biomes.\nNavigation Tools (Optional)\n– Effortlessly maneuver across the battlefield with the navigation guide and automap so you’re always at the center of the combat.\nMick Gordon Guest Track\n– Annihilate the final boss to the sound of Mick’s sick riffs.\nAND MORE!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Warhammer.40000.Boltgun.2-RUNE ISO release: rune-warhammer.40000.boltgun.2.iso (10,478,616,576 bytes)",
+          "Game version: v1.2.0.0+775",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of 4K videos. If you skip this bin, only 1080p videos will be installed",
+          "Significantly smaller archive size (compressed from 9.8 to 6.1/6.7 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 9.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-16T01:23:12.267228+00:00"
     },
     {
       "id": "contractville",

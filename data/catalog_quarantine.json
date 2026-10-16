@@ -8821,6 +8821,20 @@
       "action": "excluded-new"
     },
     {
+      "id": "updates-digest-for-october-15-2026",
+      "title": "Updates Digest for October 15, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-15-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 7,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
       "id": "updates-digest-for-october-16-2025",
       "title": "Updates Digest for October 16, 2025",
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-16-2025/",

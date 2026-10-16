@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-16T03:49:02.441600+00:00",
+  "generated_at": "2026-10-16T03:49:37.606859+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-15T08:38:31.029538+00:00",
   "games": [
@@ -16,7 +16,65 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "9.8 GB"
+      "repack_size": "9.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/69/a9/69a92c41-051f-4638-9c3e-e0e078e45523.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/a9/69a92c41-051f-4638-9c3e-e0e078e45523.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0c/1d/0c1d63c1-8307-4f8c-8901-9a1c8d580a1b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/1d/0c1d63c1-8307-4f8c-8901-9a1c8d580a1b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/79/65/79657878-27c0-4e0e-a496-c7ed37da48ef.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/79/65/79657878-27c0-4e0e-a496-c7ed37da48ef.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a6/eb/a6ebfaed-59b7-4896-98f4-37e99f8fe258.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a6/eb/a6ebfaed-59b7-4896-98f4-37e99f8fe258.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/ef/05ef5691-957b-4fe5-943c-b296426aa1d7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/ef/05ef5691-957b-4fe5-943c-b296426aa1d7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fc/24/fc24f1ca-dc3d-420f-945e-36e2c09fcd7a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fc/24/fc24f1ca-dc3d-420f-945e-36e2c09fcd7a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-16T03:49:37.604886+00:00",
+      "details": {
+        "description": "Originally developed by Sony Computer Entertainment’s Santa Monica Studio exclusively for the PLAYSTATION 3 system, God of War III has been remastered for the PLAYSTATION 4 system and gameplay supports 1080p at 60fps. God of War III Remastered will bring epic battles to life with stunning graphics and an elaborate plot that puts Kratos at the center of carnage and destruction as he seeks revenge against the Gods who betrayed him.\nSet in the realm of brutal Greek mythology, God of War III Remastered is the critically acclaimed single-player game that allows players to take on the fearless role of ex-Spartan warrior, Kratos, as he rises from the darkest depths of Hades to scale the very heights of Mt Olympus and seek his bloody revenge on those who have betrayed him. Armed with double-chained blades and an array of new weapons and magic, Kratos must take on mythology’s deadliest creatures while solving intricate puzzles throughout his merciless quest to destroy Olympus.",
+        "game_features": [],
+        "repack_features": [
+          "Based on PS4 CUSA01715 MULTi10 release with v1.01 patch: 50.5 GB",
+          "“gow3_pc” v2.3.0 by FelipePrado0 installed over",
+          "Currently the recompiled game have issues with patch v1.02 installed, so I put it into “_Update to v1.02” folder. You can copy it’s content to the game root, when recompile mature",
+          "Check this page for newer builds if you have issues:",
+          "https://github.com/FelipePrado0/gow3_pc",
+          "When you run the game the first time, select the “game” folder inside the installed repack folder. This folder contains “eboot.bin”, which is required for the recompiler to work",
+          "Adjust all needed settings (graphics, controls, etc) and play. On next runs you can use “gow3-windowsPlay God of War III.exe” instead of the “God of War III.exe” to run the game without a launcher",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional credits/bonus videos and voiceover packs you don’t need. English VOs are included by default",
+          "Significantly smaller archive size (compressed from cumulative 50.7 to 9.8~28 GB, depending on selected components)",
+          "Installation takes 2-20 minutes (depending on your drive speed & selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 50.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-16T03:49:37.604886+00:00"
     },
     {
       "id": "warhammer-40000-boltgun-2",

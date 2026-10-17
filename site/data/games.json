@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-17T04:29:26.445985+00:00",
+  "generated_at": "2026-10-17T04:30:07.993056+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-16T08:30:49.107464+00:00",
   "games": [
@@ -16,7 +16,64 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "14.1 GB"
+      "repack_size": "14.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/32/e2/32e242eb-701a-4765-a886-04377708744e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/32/e2/32e242eb-701a-4765-a886-04377708744e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/dc/d0/dcd0e486-77ed-4e9e-83a8-ea8e251c58db.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/dc/d0/dcd0e486-77ed-4e9e-83a8-ea8e251c58db.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/23/ac/23acde7c-4254-450e-85f6-c48a02fedab1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/23/ac/23acde7c-4254-450e-85f6-c48a02fedab1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9b/38/9b384a92-de5d-4045-b6bd-9f7883de2b66.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9b/38/9b384a92-de5d-4045-b6bd-9f7883de2b66.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/63/75/6375edb8-97fa-409c-b3c3-c6609bdbf6a5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/63/75/6375edb8-97fa-409c-b3c3-c6609bdbf6a5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4d/e1/4de15449-2248-411d-bf27-03026de311e1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4d/e1/4de15449-2248-411d-bf27-03026de311e1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-17T04:30:07.990852+00:00",
+      "details": {
+        "description": "HUNT YOUR NIGHTMARES\nFrom the studio behind Demon’s Souls™ and Dark Souls™ comes the critically acclaimed action RPG beloved by 2 million players worldwide.\nA lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Can you survive the night?\nThis Game of the Year Edition includes The Old Hunters DLC – a new story campaign in which you will unearth the harrowing tale of the hunters who once made Yharnam their playground.\nYou’ll find multiple outfits and new transformable weapons to add to your arsenal, including Simon’s Bowblade for a new experience with ranged combat. Play with dark spells and transform yourself into a horrific beast. Welcome back to Yharnam…",
+        "game_features": [],
+        "repack_features": [
+          "Based on PS4 CUSA-03173 MULTi14 release with v1.09 applied over: 29.3 GB",
+          "“bloodborne_pc” v1.9.6 fork by Supermedo/Jgamrot installed over",
+          "Check this page for newer builds if you have issues:",
+          "https://github.com/Jgamrot/bloodborne_pc",
+          ". Also use this page for getting instructions on online play, they change over time",
+          "When you run the game the first time, select the “game” folder inside the installed repack folder. This folder contains “eboot.bin”, which is required for the recompiler to work",
+          "Adjust all needed settings (graphics, controls, etc) and play. On next runs the game will lanuch directly. To call settings, press “Shift” on your keyboard after the launch when the corresponding message appears",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from cumulative 29.8 to 14.1 GB)",
+          "Installation takes 11-30 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 29.8 GB",
+          "Language can be changed in the launcher settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-17T04:30:07.990852+00:00"
     },
     {
       "id": "frosthaven",
@@ -31,7 +88,64 @@
         "3D",
         "Turn-based"
       ],
-      "repack_size": "14.9 GB"
+      "repack_size": "14.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/56/59/56592f82-99f0-4aa6-8a66-392f94e3ce93.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/56/59/56592f82-99f0-4aa6-8a66-392f94e3ce93.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/27/7e/277e99e2-0f13-45ff-8765-b80277c827d3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/27/7e/277e99e2-0f13-45ff-8765-b80277c827d3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/16/97/1697f764-f96a-42e8-9179-bb6b7bb55673.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/16/97/1697f764-f96a-42e8-9179-bb6b7bb55673.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a2/f2/a2f281e2-bbe4-4836-979c-2a3623adc622.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a2/f2/a2f281e2-bbe4-4836-979c-2a3623adc622.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9a/32/9a3259ab-aa66-419e-aa4a-f732e3f0c06d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/32/9a3259ab-aa66-419e-aa4a-f732e3f0c06d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e2/74/e2749a71-84b7-4196-8c7c-fa3d03df9331.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e2/74/e2749a71-84b7-4196-8c7c-fa3d03df9331.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-17T04:30:07.990852+00:00",
+      "details": {
+        "description": "From the creative mind of Isaac Childres, the highly acclaimed board game moves to the digital realm in the video game adaptation of FROSTHAVEN!\nAn evolution of the FROSTHAVEN board game experience, the dark fantasy tactical RPG serves as a spiritual successor to Gloomhaven and is developed by Snapshot Games. Players can expect deep mechanics and challenging yet immensely satisfying gameplay both in Single Player and Co-Op Online Multiplayer. Seasoned veterans of the original board game or Gloomhaven will feel right at home venturing into the unforgiving and treacherous northern frontier of FROSTHAVEN. Newcomers can start their first adventure with difficulty modes tailored to their skill level. Improved UX and quality-of-life features will ensure all players can enjoy their experience.\nThe brand-new character classes, each featuring unique playstyles and abilities, makes it so that every decision matters. Players must balance risk and reward, working towards the best synergies between the classes comprising their party. Carefully managing resources is paramount to progress through a gripping campaign, set in a vast world filled with menacing enemies and diverse environments.\nFEATURES\nUNIQUE CHARACTERS – Choose from six starting character classes—including the Banner Spear, Boneshaper, Drifter, Geminate, Blinkblade, and Deathwalker\nAdditional classes will be unlocked as you progress your campaign\nEach class features its own unique abilities and playstyle to master\nDEEP, TACTICAL COMBAT – Engage in deep, tactical turn-based combat, testing your skills against an array of new enemies and formidable bosses\nUtilize an ability card system that requires careful planning to unleash devastating attacks, execute powerful combos, and try keeping your party members alive\nBUILD YOUR OUTPOST – Manage the Outpost, constructing and upgrading various buildings, unlocking new",
+        "game_features": [
+          "and mechanics",
+          "A STUNNING WORLD TO EXPLORE – A stunning art style, highly detailed models and textures, and expressive animations all bring the world of FROSTHAVEN to life",
+          "Be ready to explore diverse biomes, changing seasons, and dynamic environments as your adventure progresses"
+        ],
+        "repack_features": [
+          "Based on Frosthaven-RUNE ISO release: rune-frosthaven.iso (30,597,283,840 bytes)",
+          "Game version: v1.0.34024",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 28.5 to 14.9 GB)",
+          "Installation takes 7-20 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 39 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-17T04:30:07.990852+00:00"
     },
     {
       "id": "enshrouded",

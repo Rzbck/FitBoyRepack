@@ -1,9 +1,108 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-17T08:03:09.719081+00:00",
+  "generated_at": "2026-10-17T21:04:39.451721+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-17T08:03:09.719081+00:00",
   "games": [
+    {
+      "id": "vellum",
+      "title": "Vellum – v1.3.3",
+      "source_url": "https://fitgirl-repacks.site/vellum/",
+      "image_url": "https://i6.imageban.ru/out/2025/05/06/c6b806d0e7636996e51422ce651319ea.jpg",
+      "post_date": "2026-10-17T22:00:05+03:00",
+      "genres": [
+        "Action",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "1.7 GB",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/917950/extras/Steam_Header.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/01/94/01942d34-4236-4a33-93f2-9200fdb1673a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/01/94/01942d34-4236-4a33-93f2-9200fdb1673a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1c/81/1c81a300-cb04-4d49-beef-557bf8ebea5d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1c/81/1c81a300-cb04-4d49-beef-557bf8ebea5d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2e/eb/2eeb7204-2eb5-4e8c-a7f9-dad763ea7d48.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2e/eb/2eeb7204-2eb5-4e8c-a7f9-dad763ea7d48.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/ec/a9ec5294-af16-4ae8-b629-b4758a2cd27b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/ec/a9ec5294-af16-4ae8-b629-b4758a2cd27b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/79/2b/792b06f6-9650-4394-81fe-67128d34df9f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/79/2b/792b06f6-9650-4394-81fe-67128d34df9f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/52/c8/52c80c3b-b3ff-4784-8aa0-07f36e9bd7ed.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/52/c8/52c80c3b-b3ff-4784-8aa0-07f36e9bd7ed.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Vellum\nis a co-op, literary roguelike; harness the class-defining colors, master an inspired spellbook, and influence the growth of your enemy – your imagination is key to saving the books! Team up with pen-pals or dive solo into each mechanically-unique Tome where every page is another step toward rule-breaking power! Dip your quills in quick, dynamic adventures full of synergy, discovery, and the ultimate power fantasy!\nIMPROVE YOUR SPELL-ING… WITH COLOR! – Wield colorful, class-defining\nSignature Inks\n– feed your health with vampiric\nRed\n, blot out enemies with endless waves of\nBlue\n, command your Inkling pet with\nGreen\n, and discover the strengths of\nPink, Yellow, Teal, and Orange\n!\nAuthor your own playstyle\nby mixing together a wide roster of ink-fueled\nSpells\n; warp in\nPlanets\nto control an area, lunge forward with sharp\nSwords\n, clobber distant foes with\nDice\n, toss splash-heavy\nPotions\n, summon inky\nFlowers, Lanterns, Shields, Anvils, Ravens\n, and many more heavy-handed metaphors! Color infuses each Spell from the start – in these books, your creative builds and revolutionary ideas will reach untold heights;\nPages of Power\nconstantly offer fresh ways to discover, combine, and master the world-making mysteries of ink. Imagination is your superpower.\nSAVE THE TOMES FROM THE TEAR-ABLE TORN – Dive deep into the myriad\nTomes\n: echoes of familiar tales and fables with unique, run-altering mechanics. Band together with your fellow players to harness thematic, team-wide boons in your fight to preserve these pages. Plot twist –\nThe Torn\nhunger for pages of their own! Play to your strengths by\nchoosing how your foes evolve\n. Save more books from this dynamic foe, apply higher\nBinding Challenges\nto each journey, and overcome even the toughest obstacles to protect the Illuminated Library.\nHOME: FREE TO BE YOUR SHELF – Home, sweet home! Rest and regroup in\nThe Illuminated Library\nbetween adventures. Refine your strengths by researching and enhancing the power of your Ink! There’s always a cozy place to read – especially when you can\nmake one\nyourself! Explore the Library’s secrets, then relax in your personal\nCustomizable Reading Nook\n!",
+        "game_features": [
+          "Swift Tales",
+          ": Approachable, under 30-minute roguelike runs crafted for quick gameplay sessions for 1-4 players.",
+          "Signature Inks",
+          ": Infuse your spells with one of 6",
+          "colorful classes",
+          ", complete with their own unique upgrades and rewarding challenges!",
+          "Scrolls of Power",
+          ": Tear through enemies with over 300 powers for you and your team. All powers can be build-makers, no filler.",
+          "Shaping Your Spellbook",
+          ": Wield and combine an imaginative roster of over 20 spells – conjure Sewing Needles, hurl Anchors, sling Playing Cards – then enhance them with limit-breaking augments!",
+          "Torn Pages",
+          ": With over 100 enemy upgrades and effects to choose from, only you will decide how your foes evolve throughout the course of battle.",
+          "Personal Reading Nooks",
+          ": Show off your style with hundreds of decorations in your customizable corner of the Library!",
+          "The Font",
+          ": Invoke unique",
+          "Tome-themed",
+          "powers as a team in combination with your individual builds.",
+          "Talented Research",
+          ": Enhance the magic of ink between runs to improve your Scribe with customizable talents!",
+          "Brutal Bindings",
+          ": Increase your challenge by affixing bindings to your runs. Greater danger brings greater rewards!",
+          "Rotating Book Club",
+          ": Join other Scribes in tackling fresh, global challenges!",
+          "Two Raid Realms",
+          ": Face the Splice Lord in The Forgery and confront the Raving Lord in The Grey Area!",
+          "Reference Section",
+          ": All the high quality literature puns you could ever desire.",
+          "Endless Appendices",
+          ": Reached the end? Found the perfect build? Face the Appendices and continue the fight!"
+        ],
+        "repack_features": [
+          "Based on Vellum.v1.2.0-TENOKE ISO release: tenoke-vellum.v1.2.0.iso (4,724,760,576 bytes)",
+          "Game version: v1.2.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 4.4 to 1.6 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4.4 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "bloodborne",
       "title": "Bloodborne: Game of the Year Edition, v1.09 + All DLCs + Online (Recompiled for PC v1.9.6)",
@@ -108809,105 +108908,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 18.3 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "vellum",
-      "title": "Vellum – v1.2.0",
-      "source_url": "https://fitgirl-repacks.site/vellum/",
-      "image_url": "https://i6.imageban.ru/out/2025/05/06/c6b806d0e7636996e51422ce651319ea.jpg",
-      "post_date": "2025-11-06T19:10:05+03:00",
-      "genres": [
-        "Action",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "1.6 GB",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/917950/extras/Steam_Header.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/01/94/01942d34-4236-4a33-93f2-9200fdb1673a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/01/94/01942d34-4236-4a33-93f2-9200fdb1673a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1c/81/1c81a300-cb04-4d49-beef-557bf8ebea5d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1c/81/1c81a300-cb04-4d49-beef-557bf8ebea5d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2e/eb/2eeb7204-2eb5-4e8c-a7f9-dad763ea7d48.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2e/eb/2eeb7204-2eb5-4e8c-a7f9-dad763ea7d48.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a9/ec/a9ec5294-af16-4ae8-b629-b4758a2cd27b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a9/ec/a9ec5294-af16-4ae8-b629-b4758a2cd27b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/79/2b/792b06f6-9650-4394-81fe-67128d34df9f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/79/2b/792b06f6-9650-4394-81fe-67128d34df9f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/52/c8/52c80c3b-b3ff-4784-8aa0-07f36e9bd7ed.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/52/c8/52c80c3b-b3ff-4784-8aa0-07f36e9bd7ed.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Vellum\nis a co-op, literary roguelike; harness the class-defining colors, master an inspired spellbook, and influence the growth of your enemy – your imagination is key to saving the books! Team up with pen-pals or dive solo into each mechanically-unique Tome where every page is another step toward rule-breaking power! Dip your quills in quick, dynamic adventures full of synergy, discovery, and the ultimate power fantasy!\nIMPROVE YOUR SPELL-ING… WITH COLOR! – Wield colorful, class-defining\nSignature Inks\n– feed your health with vampiric\nRed\n, blot out enemies with endless waves of\nBlue\n, command your Inkling pet with\nGreen\n, and discover the strengths of\nPink, Yellow, Teal, and Orange\n!\nAuthor your own playstyle\nby mixing together a wide roster of ink-fueled\nSpells\n; warp in\nPlanets\nto control an area, lunge forward with sharp\nSwords\n, clobber distant foes with\nDice\n, toss splash-heavy\nPotions\n, summon inky\nFlowers, Lanterns, Shields, Anvils, Ravens\n, and many more heavy-handed metaphors! Color infuses each Spell from the start – in these books, your creative builds and revolutionary ideas will reach untold heights;\nPages of Power\nconstantly offer fresh ways to discover, combine, and master the world-making mysteries of ink. Imagination is your superpower.\nSAVE THE TOMES FROM THE TEAR-ABLE TORN – Dive deep into the myriad\nTomes\n: echoes of familiar tales and fables with unique, run-altering mechanics. Band together with your fellow players to harness thematic, team-wide boons in your fight to preserve these pages. Plot twist –\nThe Torn\nhunger for pages of their own! Play to your strengths by\nchoosing how your foes evolve\n. Save more books from this dynamic foe, apply higher\nBinding Challenges\nto each journey, and overcome even the toughest obstacles to protect the Illuminated Library.\nHOME: FREE TO BE YOUR SHELF – Home, sweet home! Rest and regroup in\nThe Illuminated Library\nbetween adventures. Refine your strengths by researching and enhancing the power of your Ink! There’s always a cozy place to read – especially when you can\nmake one\nyourself! Explore the Library’s secrets, then relax in your personal\nCustomizable Reading Nook\n!",
-        "game_features": [
-          "Swift Tales",
-          ": Approachable, under 30-minute roguelike runs crafted for quick gameplay sessions for 1-4 players.",
-          "Signature Inks",
-          ": Infuse your spells with one of 6",
-          "colorful classes",
-          ", complete with their own unique upgrades and rewarding challenges!",
-          "Scrolls of Power",
-          ": Tear through enemies with over 300 powers for you and your team. All powers can be build-makers, no filler.",
-          "Shaping Your Spellbook",
-          ": Wield and combine an imaginative roster of over 20 spells – conjure Sewing Needles, hurl Anchors, sling Playing Cards – then enhance them with limit-breaking augments!",
-          "Torn Pages",
-          ": With over 100 enemy upgrades and effects to choose from, only you will decide how your foes evolve throughout the course of battle.",
-          "Personal Reading Nooks",
-          ": Show off your style with hundreds of decorations in your customizable corner of the Library!",
-          "The Font",
-          ": Invoke unique",
-          "Tome-themed",
-          "powers as a team in combination with your individual builds.",
-          "Talented Research",
-          ": Enhance the magic of ink between runs to improve your Scribe with customizable talents!",
-          "Brutal Bindings",
-          ": Increase your challenge by affixing bindings to your runs. Greater danger brings greater rewards!",
-          "Rotating Book Club",
-          ": Join other Scribes in tackling fresh, global challenges!",
-          "Two Raid Realms",
-          ": Face the Splice Lord in The Forgery and confront the Raving Lord in The Grey Area!",
-          "Reference Section",
-          ": All the high quality literature puns you could ever desire.",
-          "Endless Appendices",
-          ": Reached the end? Found the perfect build? Face the Appendices and continue the fight!"
-        ],
-        "repack_features": [
-          "Based on Vellum.v1.2.0-TENOKE ISO release: tenoke-vellum.v1.2.0.iso (4,724,760,576 bytes)",
-          "Game version: v1.2.0",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 4.4 to 1.6 GB)",
-          "Installation takes 1-2 minutes",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 4.4 GB",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

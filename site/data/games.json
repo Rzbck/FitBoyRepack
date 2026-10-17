@@ -1,9 +1,26 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-16T23:37:20.903826+00:00",
+  "generated_at": "2026-10-17T01:11:07.514645+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-16T08:30:49.107464+00:00",
   "games": [
+    {
+      "id": "enshrouded",
+      "title": "Enshrouded: Deluxe Edition – v1.0 (Build 1265863) + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/enshrouded/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/17/4b90732c35ac8ac19de6621581353ec5.jpg",
+      "post_date": "2026-10-17T03:22:52+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Item crafting",
+        "Open world",
+        "Survival",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "foundation",
       "title": "Foundation: Supporter Edition – v1.12.0.12 + 3 DLCs/Bonuses",

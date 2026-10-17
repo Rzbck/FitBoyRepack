@@ -1,9 +1,38 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-17T01:11:42.472937+00:00",
+  "generated_at": "2026-10-17T04:29:26.445985+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-16T08:30:49.107464+00:00",
   "games": [
+    {
+      "id": "bloodborne",
+      "title": "Bloodborne: Game of the Year Edition, v1.09 + All DLCs + Online (Recompiled for PC v1.9.6)",
+      "source_url": "https://fitgirl-repacks.site/bloodborne/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/17/ef851eda6aaae88156a5b1e513661b29.jpg",
+      "post_date": "2026-10-17T05:23:00+03:00",
+      "genres": [
+        "RPG",
+        "Third-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "14.1 GB"
+    },
+    {
+      "id": "frosthaven",
+      "title": "Frosthaven – v1.0.34024",
+      "source_url": "https://fitgirl-repacks.site/frosthaven/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/17/3d18f33b138ba30040585fee5bd87148.jpg",
+      "post_date": "2026-10-17T05:05:21+03:00",
+      "genres": [
+        "Strategy",
+        "Tactics",
+        "Top-down",
+        "3D",
+        "Turn-based"
+      ],
+      "repack_size": "14.9 GB"
+    },
     {
       "id": "enshrouded",
       "title": "Enshrouded: Deluxe Edition – v1.0 (Build 1265863) + 3 DLCs/Bonuses",

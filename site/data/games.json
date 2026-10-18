@@ -1,9 +1,93 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T01:01:08.306079+00:00",
+  "generated_at": "2026-10-18T05:46:24.223830+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-17T08:03:09.719081+00:00",
   "games": [
+    {
+      "id": "gears-of-war-4",
+      "title": "Gears of War 4 – v14.4.0.2",
+      "source_url": "https://fitgirl-repacks.site/gears-of-war-4/",
+      "image_url": "https://i101.fastpic.ru/big/2018/0321/77/2ce0d2818475d2cdad773f67522fc477.jpg",
+      "post_date": "2026-10-18T07:00:04+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Cover-based",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "58.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f4/1d/f41d4589-9187-4c8d-bf50-e257a9f5cda9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/1d/f41d4589-9187-4c8d-bf50-e257a9f5cda9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/60/97609b34-77c7-4165-9c25-b49fc85ac44a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/60/97609b34-77c7-4165-9c25-b49fc85ac44a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/31/03/31039ab2-790f-49f4-abdf-b0e8a4faff26.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/31/03/31039ab2-790f-49f4-abdf-b0e8a4faff26.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f4/93/f493c34d-1ba1-469e-8eb1-189ad5c19922.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/93/f493c34d-1ba1-469e-8eb1-189ad5c19922.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/b4/17b429fa-e992-47bc-a717-0094873c05a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/b4/17b429fa-e992-47bc-a717-0094873c05a0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/98/d4/98d41d99-5878-48ea-b294-a853c977348a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/98/d4/98d41d99-5878-48ea-b294-a853c977348a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T12:02:52.604518+00:00",
+      "details": {
+        "description": "A new saga begins for one of the most acclaimed video game franchises in history. After narrowly escaping an attack on their village, JD Fenix and his friends, Kait and Del, must rescue the ones they love and discover the source of a monstrous new enemy. Never Fight Alone: Enjoy two-player co-op campaign with friends locally via split-screen or over Xbox Live. Player 2 can select either Kait or Del. Horde 3.0: Team up with four others and battle wave after wave of increasingly difficult enemies by choosing your combat class, leveling up your skills and deploying fortifications anywhere on the map. Explosive Versus Multiplayer: Compete online in new and favorite game types, all at 60fps on dedicated servers. A new visible ranking system means fairer matchmaking for social, competitive and professional players alike.",
+        "game_features": [],
+        "repack_features": [
+          "NOTE! This game works ONLY on Windows 10 x64, build 1607 or later. Windows Store, Xbox and Xbox Identity applications must be installed for crack to work. Also virtualization (Hyper-V Support) must be set off either in OS settings and/or in BIOS. If the setup won’t turn on Developer Mode on your OS, turn it on manually",
+          "SUPER NOTE! The game executable MUST be blocked from the Internet or the game will crash on new campaign start",
+          "Based on Gears.of.War.4-CODEX ISO release: codex-gears.of.war.4.iso (119,147,692,032 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (when installed with all optionals)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you can skip downloading and installing of voiceovers and multiplayer files you don’t need",
+          "Significantly smaller archive size (compressed from 111 to 55.3~57.9 GB, depending on selected components)",
+          "Installation takes: ~2 hours on SSD; 3-5 hours on HDD. Make sure you have NO activity on target HDD during installation or it will take much longer than minimum timings I provide",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 125 GB (215 GB during installation)",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack",
+          "If the crack doesn’t work for you, reinstall Windows Store, Xbox and Xbox Identity applications, turn on Developer Mode, turn off Hyper-V support and then run “Install Crack.bat” in game root to reactive the crack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T12:02:52.604518+00:00"
+    },
+    {
+      "id": "thank-you-bus-driver",
+      "title": "Thank You Bus Driver – Update #1",
+      "source_url": "https://fitgirl-repacks.site/thank-you-bus-driver/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/18/ef9d78c32dd69bcbbada2593f19385c8.jpg",
+      "post_date": "2026-10-18T06:31:01+03:00",
+      "genres": [
+        "Arcade",
+        "Driving",
+        "First-person",
+        "3D",
+        "Buses"
+      ],
+      "repack_size": "443 MB"
+    },
     {
       "id": "spellcaster-university",
       "title": "Spellcaster University: Supporter Pack Bundle – v1.08 + 3 DLCs/Bonuses",
@@ -485867,75 +485951,6 @@
           "Language can be changed in game settings",
           "Repack uses pUnity library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T12:02:52.604518+00:00"
-    },
-    {
-      "id": "gears-of-war-4",
-      "title": "Gears of War 4 + Multiplayer with Bots",
-      "source_url": "https://fitgirl-repacks.site/gears-of-war-4/",
-      "image_url": "https://i101.fastpic.ru/big/2018/0321/77/2ce0d2818475d2cdad773f67522fc477.jpg",
-      "post_date": "2018-03-21T20:30:04+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "Cover-based",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "55.3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/f4/1d/f41d4589-9187-4c8d-bf50-e257a9f5cda9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f4/1d/f41d4589-9187-4c8d-bf50-e257a9f5cda9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/97/60/97609b34-77c7-4165-9c25-b49fc85ac44a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/97/60/97609b34-77c7-4165-9c25-b49fc85ac44a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/31/03/31039ab2-790f-49f4-abdf-b0e8a4faff26.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/31/03/31039ab2-790f-49f4-abdf-b0e8a4faff26.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f4/93/f493c34d-1ba1-469e-8eb1-189ad5c19922.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f4/93/f493c34d-1ba1-469e-8eb1-189ad5c19922.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/17/b4/17b429fa-e992-47bc-a717-0094873c05a0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/17/b4/17b429fa-e992-47bc-a717-0094873c05a0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/98/d4/98d41d99-5878-48ea-b294-a853c977348a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/98/d4/98d41d99-5878-48ea-b294-a853c977348a.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T12:02:52.604518+00:00",
-      "details": {
-        "description": "A new saga begins for one of the most acclaimed video game franchises in history. After narrowly escaping an attack on their village, JD Fenix and his friends, Kait and Del, must rescue the ones they love and discover the source of a monstrous new enemy. Never Fight Alone: Enjoy two-player co-op campaign with friends locally via split-screen or over Xbox Live. Player 2 can select either Kait or Del. Horde 3.0: Team up with four others and battle wave after wave of increasingly difficult enemies by choosing your combat class, leveling up your skills and deploying fortifications anywhere on the map. Explosive Versus Multiplayer: Compete online in new and favorite game types, all at 60fps on dedicated servers. A new visible ranking system means fairer matchmaking for social, competitive and professional players alike.",
-        "game_features": [],
-        "repack_features": [
-          "NOTE! This game works ONLY on Windows 10 x64, build 1607 or later. Windows Store, Xbox and Xbox Identity applications must be installed for crack to work. Also virtualization (Hyper-V Support) must be set off either in OS settings and/or in BIOS. If the setup won’t turn on Developer Mode on your OS, turn it on manually",
-          "SUPER NOTE! The game executable MUST be blocked from the Internet or the game will crash on new campaign start",
-          "Based on Gears.of.War.4-CODEX ISO release: codex-gears.of.war.4.iso (119,147,692,032 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (when installed with all optionals)",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you can skip downloading and installing of voiceovers and multiplayer files you don’t need",
-          "Significantly smaller archive size (compressed from 111 to 55.3~57.9 GB, depending on selected components)",
-          "Installation takes: ~2 hours on SSD; 3-5 hours on HDD. Make sure you have NO activity on target HDD during installation or it will take much longer than minimum timings I provide",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 125 GB (215 GB during installation)",
-          "At least 3 GB of free RAM (inc. virtual) required for installing this repack",
-          "If the crack doesn’t work for you, reinstall Windows Store, Xbox and Xbox Identity applications, turn on Developer Mode, turn off Hyper-V support and then run “Install Crack.bat” in game root to reactive the crack"
         ]
       },
       "details_version": 1,

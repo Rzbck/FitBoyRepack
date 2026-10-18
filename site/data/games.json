@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T19:26:21.008753+00:00",
+  "generated_at": "2026-10-18T20:46:19.014153+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
+    {
+      "id": "allogloom",
+      "title": "Allogloom – v1.21",
+      "source_url": "https://fitgirl-repacks.site/allogloom/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/18/5cbdbf6065982f236377972b7af55617.jpg",
+      "post_date": "2026-10-18T23:26:24+03:00",
+      "genres": [
+        "Adventure",
+        "Point-and-click",
+        "Side",
+        "2D",
+        "Horror"
+      ],
+      "repack_size": "2 GB"
+    },
     {
       "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-pc",
       "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles: Ultimate Edition, v1.83 + 22 DLCs",

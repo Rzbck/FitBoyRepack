@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T20:46:19.014153+00:00",
+  "generated_at": "2026-10-18T20:46:54.966769+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "2D",
         "Horror"
       ],
-      "repack_size": "2 GB"
+      "repack_size": "2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/e4/b0/e4b0bcbc-302f-4458-9ee8-49b20b43f676.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e4/b0/e4b0bcbc-302f-4458-9ee8-49b20b43f676.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/53/c7/53c7a9b3-13cd-471b-9d84-56b9245c9f62.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/53/c7/53c7a9b3-13cd-471b-9d84-56b9245c9f62.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a2/77/a277bcd5-8f5d-4315-a8e6-fda9a71d4b61.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a2/77/a277bcd5-8f5d-4315-a8e6-fda9a71d4b61.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/74/30/7430b55d-d63f-41f9-996d-3792edcc5820.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/74/30/7430b55d-d63f-41f9-996d-3792edcc5820.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/e1/29e1de3d-a43c-4b94-84a1-c4772be0cc04.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/e1/29e1de3d-a43c-4b94-84a1-c4772be0cc04.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/28/71/287184ad-596a-4abc-bf7a-91bc58dcffdd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/28/71/287184ad-596a-4abc-bf7a-91bc58dcffdd.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-18T20:46:54.964815+00:00",
+      "details": {
+        "description": "Join Nora on\na strange and unsettling journey of discovery in this point-and-click adventure by solo developer Galactic Ghosty\n. Something is abducting the residents of Gruesome Grove, and bringing them home means uncovering secrets some of the town would rather keep buried.\nWith a note pointing her somewhere forbidden as her only clue, Nora must piece together what happened and why, before there’s no one left to save. She’ll encounter the town’s revered (and ravenous) moths, and navigate the displaced monsters left wandering the wreckage of her home.\nThe deeper she goes, the less certain it is she’ll make it out with everyone she loves.\nThe Gruesome Grove she grew up in has gone. To bring it back, she’ll have to break every rule standing in her way.\nA hand-crafted point-and-click adventure, inspired by the classics\nA lush, detailed world brought to life through art nouveau-inspired illustration\nA charming cast of characters, human, monster, and animal alike\nCombine items and negotiate with characters to solve inventive puzzles\nAn intriguing story full of twists and turns, laced with dark humour\nAn original soundtrack by Kim Miller",
+        "game_features": [],
+        "repack_features": [
+          "Based on Allogloom-Razor1911 ISO release: rzr-allogloom.iso (6,932,267,008 bytes)",
+          "Game version: v1.21",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.5 to 2 GB)",
+          "Installation takes 3-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 7.4 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-18T20:46:54.964815+00:00"
     },
     {
       "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-pc",

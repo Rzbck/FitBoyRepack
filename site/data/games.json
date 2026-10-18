@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T05:46:24.223830+00:00",
+  "generated_at": "2026-10-18T05:47:01.679670+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-17T08:03:09.719081+00:00",
   "games": [
@@ -86,7 +86,60 @@
         "3D",
         "Buses"
       ],
-      "repack_size": "443 MB"
+      "repack_size": "443 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/29/bf/29bf9ece-b1cb-485a-87af-d02e150ca5bb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/bf/29bf9ece-b1cb-485a-87af-d02e150ca5bb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/f4/29f420a2-bf9b-4854-b6c7-ec7008b37677.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/f4/29f420a2-bf9b-4854-b6c7-ec7008b37677.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2a/7e/2a7e0ba0-e094-45cf-8ec3-3743ad4937df.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2a/7e/2a7e0ba0-e094-45cf-8ec3-3743ad4937df.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/91/30/9130fba5-b8af-4be1-9cb6-ab8fecdcc967.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/91/30/9130fba5-b8af-4be1-9cb6-ab8fecdcc967.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f0/3e/f03e9c09-bc28-4cfd-98f4-84b6a6c6d20d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f0/3e/f03e9c09-bc28-4cfd-98f4-84b6a6c6d20d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3e/b8/3eb8da91-5038-42cb-a523-15cb6770a8b9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/b8/3eb8da91-5038-42cb-a523-15cb6770a8b9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-18T05:47:01.676211+00:00",
+      "details": {
+        "description": "Thank You Bus Driver\nis a chaotic bus driving game, where you take on the role of a town’s bus driver just trying to get through the day with minimal rule breaking and maximum gratitude… in the form of Thank Yous!\nGet behind the wheel and remember the three main priorities on your bus:\nNo Rule Breaking\nYour bus, your rules! Who cares that they change every single day? And that you keep adding rules? And that some of these rules are just itching to be broken?\nNo matter! Slap any of those annoying rulebreakers to remind them of who runs the road. And if they’re repeat offenders? Revoke their bus privileges.\nStay on Track\nGetting to your next stop is all that matters. That might mean pulling up your map mid-turn or it might mean a shortcut through the corn field. Avoiding pedestrians, incoming traffic, or the fence directly in front of you is optional.\nYour passengers certainly don’t care as long as you make it to your next stop before they get upset!\nBe on Schedule\nYou have a tight timeline! Get to the next stop before your time runs out. And remember: the only thing that fuels you is a happy rider. The more Thank Yous, the more time you have to get to the next stop.\nCollect even more Thank Yous to unlock additional bus tchotchkes, town variants, and more!\nRun a strict bus and you may very well become the best bus driver this town has ever seen.\nJust don’t forget, Bus Driver:\nKeep ’em in line… but get there on time!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 25945061 release: 915 MB, thanks to dudisuper6!",
+          "Goldberg crack/emu applied over",
+          "Game version: Update #1",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 915 to 443 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 915 MB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-18T05:47:01.676211+00:00"
     },
     {
       "id": "spellcaster-university",

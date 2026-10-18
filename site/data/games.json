@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-17T21:04:39.451721+00:00",
+  "generated_at": "2026-10-18T01:00:36.114044+00:00",
   "source_pages": 811,
   "last_full_scan_at": "2026-10-17T08:03:09.719081+00:00",
   "games": [
+    {
+      "id": "spellcaster-university",
+      "title": "Spellcaster University: Supporter Pack Bundle – v1.08 + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/spellcaster-university/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/17/58bbb1bd620602598ff084b4ab046eee.jpg",
+      "post_date": "2026-10-18T03:48:51+03:00",
+      "genres": [
+        "Managerial",
+        "Side",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "vellum",
       "title": "Vellum – v1.3.3",

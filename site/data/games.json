@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T08:20:32.883560+00:00",
-  "source_pages": 811,
+  "generated_at": "2026-10-18T18:07:28.769619+00:00",
+  "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
+    {
+      "id": "hubert",
+      "title": "Hubert",
+      "source_url": "https://fitgirl-repacks.site/hubert/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/18/4fdd3673204fdd2b911ce533386db6d4.jpg",
+      "post_date": "2026-10-18T21:06:43+03:00",
+      "genres": [
+        "Lifestyle",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "9.4 GB"
+    },
     {
       "id": "gears-of-war-4",
       "title": "Gears of War 4 – v14.4.0.2",

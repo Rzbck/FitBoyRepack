@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T23:44:28.345121+00:00",
+  "generated_at": "2026-10-18T23:45:02.332998+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "6.5 GB"
+      "repack_size": "6.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/99/ef/99effad6-bdf9-4ca1-ba86-09eb7f1539ee.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/99/ef/99effad6-bdf9-4ca1-ba86-09eb7f1539ee.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0a/1c/0a1c9562-2e4a-40c9-bc79-76aded60fd4a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0a/1c/0a1c9562-2e4a-40c9-bc79-76aded60fd4a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/04/f7/04f756b2-75d3-4b07-827b-3e5b89a76b38.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/04/f7/04f756b2-75d3-4b07-827b-3e5b89a76b38.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d0/ef/d0efa293-c772-4fc0-af20-b21eb1cba96f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d0/ef/d0efa293-c772-4fc0-af20-b21eb1cba96f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/89/95/899565f8-5122-4d9f-a4dd-da85151d11cf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/89/95/899565f8-5122-4d9f-a4dd-da85151d11cf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c2/3a/c23a9e65-ebb6-45c9-8555-24b3b9eda08b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c2/3a/c23a9e65-ebb6-45c9-8555-24b3b9eda08b.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-18T23:45:02.330935+00:00",
+      "details": {
+        "description": "Get ready to be immersed in the best tropical paradise experience, where your skills seduce the women of your dreams!\nTravel to a tropical island where an old hotel awaits you, full of mysteries, problems, and temptations. You are the only man within hundreds of kilometers, and everyone will need your help.\nYou’re a real handyman, and all the ladies know it! Show them what you can do with your hands in realistic activities such as pool, fishing, yachting, and coconut oil massage…\nExplore a small open world from a first-person perspective. Freely move around the island, visit the hotel, beach, lighthouse, and jungle, discover hidden paths, and unlock new ways to interact with characters.\nKeep the ladies happy, and they’ll let you into their hotel room for scenes so hot they make adult stars jealous! Change positions and unlock them all to become the ultimate tropical playboy.\nRealistic characters and highly detailed environments create the atmosphere of a true resort adventure, where every action can lead to new events and intimate encounters.\nGet away from all your troubles and take the girls on sexy adventures on the hunt for your grandfather’s buried treasure. Better get your whip and hat ready to unravel an ancient mystery. Will you get to the real treasure?",
+        "game_features": [],
+        "repack_features": [
+          "Based on Tropical.Lust-STRANGE ISO release: str-tropicallust.iso (7,941,826,560 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Slightly smaller archive size (compressed from 7.4 to 6.5 GB)",
+          "Installation takes 2-7 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-18T23:45:02.330935+00:00"
     },
     {
       "id": "forza-horizon-3",

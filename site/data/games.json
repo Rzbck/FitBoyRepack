@@ -1,9 +1,80 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T18:08:09.686499+00:00",
+  "generated_at": "2026-10-18T19:26:21.008753+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
+    {
+      "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-pc",
+      "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles: Ultimate Edition, v1.83 + 22 DLCs",
+      "source_url": "https://fitgirl-repacks.site/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-pc/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/18/c09a2adff279e9887eda13ac58555fcc.jpg",
+      "post_date": "2026-10-18T21:30:04+03:00",
+      "genres": [
+        "Action",
+        "Third-person",
+        "3D",
+        "Japanese"
+      ],
+      "repack_size": "16.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/5e/39/5e399a47-1e2c-49d7-b1c9-af38ec7fd941.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5e/39/5e399a47-1e2c-49d7-b1c9-af38ec7fd941.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f7/5e/f75eef11-9d5f-4b22-868d-ed2bb0b9d40c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f7/5e/f75eef11-9d5f-4b22-868d-ed2bb0b9d40c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cc/5c/cc5c809f-00ac-4a12-88e4-f2614bc20a0b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cc/5c/cc5c809f-00ac-4a12-88e4-f2614bc20a0b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/94/2b/942b4b18-8ffb-45d7-853f-318acef9bde0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/2b/942b4b18-8ffb-45d7-853f-318acef9bde0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3e/28/3e28f889-fa97-4452-b3b3-b60432996d42.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/28/3e28f889-fa97-4452-b3b3-b60432996d42.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ec/7d/ec7dbc3e-2f27-418f-be73-31cee6a164f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ec/7d/ec7dbc3e-2f27-418f-be73-31cee6a164f9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Become the blade that destroys demons!\nRelive memorable moments from the Demon Slayer: Kimetsu no Yaiba anime through the eyes of its protagonist, Tanjiro Kamado!\nFollow the story from Demon Slayer: Kimetsu no Yaiba Tanjiro Kamado, Unwavering Resolve Arc – where Tanjiro joins the Demon Slayer Corps – to Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train featuring the Flame Hashira, Kyojuro Rengoku!\nFace off against demons from the anime series with stunning graphical effects faithfully recreating iconic battle techniques in full 3D!\nChoose from a cast of 24 fighters, including not only protagonists like Tanjiro Kamado and Nezuko Kamado, but demons like Rui (Lower Five of the Twelve Kizuki) and Akaza (Upper Three of the Twelve Kizuki). Pit your favorite characters against each other and enjoy never-before-seen matchups!\nIncluded DLCs:\nKimetsu Academy Tanjiro Early Unlock\nKimetsu Academy Nezuko, Zenitsu, Inosuke Early Unlock\nKimetsu Academy Giyu, Shinobu Early Unlock\nButterfly Mansion Patient Wear for Tanjiro, Zenitsu & Inosuke\n8,000 Kimetsu Points\nCharacter Avatar (Final Selection Tanjiro)\nCharacter avatars x 12 (full roster)\nHigh-res PC Wallpaper (Previously Steam profile background)\nCharacter avatars x 10 (full roster)\nCore Add-on Bundle\nCostume Bundle\nAvatar 2 Pack\nKimetsu Academy Summer Uniforms\nTengen Uzui Character Pack\nTanjiro, Zenitsu, & Inosuke (Entertainment District) Character Pack\nCharacter Pass\nNezuko (Advanced Demon Form) Character Pack\nTanjiro (Entertainment District) Character Pack\nDaki Character Pack\nGyutaro Character Pack\nZenitsu (Entertainment District) Character Pack\nInosuke (Entertainment District) Character Pack",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 10714413 release: 25.1 GB",
+          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v1.6 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.83; 22 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 25.1 to 16.3 GB)",
+          "Installation takes 6-20 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 25.1 GB",
+          "Language can be changed in “APK/Binaries/Win64/coldclient/steam_settings/configs.user.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "hubert",
       "title": "Hubert",
@@ -63385,77 +63456,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 10.2 GB",
           "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-pc",
-      "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles: Ultimate Edition, v1.83 + 22 DLCs",
-      "source_url": "https://fitgirl-repacks.site/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-pc/",
-      "image_url": "https://i7.imageban.ru/out/2026/04/21/935508a83155cf256e80f5867822a136.jpg",
-      "post_date": "2026-04-21T01:32:04+03:00",
-      "genres": [
-        "Action",
-        "Third-person",
-        "3D",
-        "Japanese"
-      ],
-      "repack_size": "16.3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/5e/39/5e399a47-1e2c-49d7-b1c9-af38ec7fd941.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5e/39/5e399a47-1e2c-49d7-b1c9-af38ec7fd941.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f7/5e/f75eef11-9d5f-4b22-868d-ed2bb0b9d40c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f7/5e/f75eef11-9d5f-4b22-868d-ed2bb0b9d40c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/cc/5c/cc5c809f-00ac-4a12-88e4-f2614bc20a0b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/cc/5c/cc5c809f-00ac-4a12-88e4-f2614bc20a0b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/94/2b/942b4b18-8ffb-45d7-853f-318acef9bde0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/94/2b/942b4b18-8ffb-45d7-853f-318acef9bde0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3e/28/3e28f889-fa97-4452-b3b3-b60432996d42.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3e/28/3e28f889-fa97-4452-b3b3-b60432996d42.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ec/7d/ec7dbc3e-2f27-418f-be73-31cee6a164f9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ec/7d/ec7dbc3e-2f27-418f-be73-31cee6a164f9.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Become the blade that destroys demons!\nRelive memorable moments from the Demon Slayer: Kimetsu no Yaiba anime through the eyes of its protagonist, Tanjiro Kamado!\nFollow the story from Demon Slayer: Kimetsu no Yaiba Tanjiro Kamado, Unwavering Resolve Arc – where Tanjiro joins the Demon Slayer Corps – to Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train featuring the Flame Hashira, Kyojuro Rengoku!\nFace off against demons from the anime series with stunning graphical effects faithfully recreating iconic battle techniques in full 3D!\nChoose from a cast of 24 fighters, including not only protagonists like Tanjiro Kamado and Nezuko Kamado, but demons like Rui (Lower Five of the Twelve Kizuki) and Akaza (Upper Three of the Twelve Kizuki). Pit your favorite characters against each other and enjoy never-before-seen matchups!\nIncluded DLCs:\nKimetsu Academy Tanjiro Early Unlock\nKimetsu Academy Nezuko, Zenitsu, Inosuke Early Unlock\nKimetsu Academy Giyu, Shinobu Early Unlock\nButterfly Mansion Patient Wear for Tanjiro, Zenitsu & Inosuke\n8,000 Kimetsu Points\nCharacter Avatar (Final Selection Tanjiro)\nCharacter avatars x 12 (full roster)\nHigh-res PC Wallpaper (Previously Steam profile background)\nCharacter avatars x 10 (full roster)\nCore Add-on Bundle\nCostume Bundle\nAvatar 2 Pack\nKimetsu Academy Summer Uniforms\nTengen Uzui Character Pack\nTanjiro, Zenitsu, & Inosuke (Entertainment District) Character Pack\nCharacter Pass\nNezuko (Advanced Demon Form) Character Pack\nTanjiro (Entertainment District) Character Pack\nDaki Character Pack\nGyutaro Character Pack\nZenitsu (Entertainment District) Character Pack\nInosuke (Entertainment District) Character Pack",
-        "game_features": [],
-        "repack_features": [
-          "Based on Steam BuildID 10714413 release: 25.1 GB",
-          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
-          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
-          "VBS.cmd script v1.6 added",
-          "Custom launcher added for easier HV steps processing",
-          "Game version: v1.83; 22 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 25.1 to 16.3 GB)",
-          "Installation takes 6-20 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 25.1 GB",
-          "Language can be changed in “APK/Binaries/Win64/coldclient/steam_settings/configs.user.ini” file",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

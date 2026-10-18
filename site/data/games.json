@@ -1,9 +1,132 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-18T20:46:54.966769+00:00",
+  "generated_at": "2026-10-18T23:44:28.345121+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
+    {
+      "id": "tropical-lust",
+      "title": "Tropical Lust",
+      "source_url": "https://fitgirl-repacks.site/tropical-lust/",
+      "image_url": "https://i1.imageban.ru/out/2026/10/19/f8e3d91020565bca0cfb7701b55a943a.jpg",
+      "post_date": "2026-10-19T02:29:27+03:00",
+      "genres": [
+        "Adult",
+        "Adventure",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "6.5 GB"
+    },
+    {
+      "id": "forza-horizon-3",
+      "title": "Forza Horizon 3: Ultimate Edition – v1.0.125.2 + 79 DLCs",
+      "source_url": "https://fitgirl-repacks.site/forza-horizon-3/",
+      "image_url": "https://i4.imageban.ru/out/2022/03/14/6cde9f918243b1d12b84b96f9ecac900.jpg",
+      "post_date": "2026-10-19T01:30:50+03:00",
+      "genres": [
+        "Racing",
+        "Open world",
+        "3D"
+      ],
+      "repack_size": "27 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/2e/4e/2e4e115e-e9a7-44ff-bf84-8adeafb3b1f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2e/4e/2e4e115e-e9a7-44ff-bf84-8adeafb3b1f9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e3/b3/e3b380f4-4b14-4d85-9a67-a17ca200f32d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e3/b3/e3b380f4-4b14-4d85-9a67-a17ca200f32d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/84/5884e81e-3f1e-4a6d-821b-93ece346d79b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/84/5884e81e-3f1e-4a6d-821b-93ece346d79b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9a/1c/9a1c394a-a1d2-4b64-bbda-9b6e6cbc033f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/1c/9a1c394a-a1d2-4b64-bbda-9b6e6cbc033f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/fb/a3fb0a1f-bc3b-4507-88e6-cef31b62bbcb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/fb/a3fb0a1f-bc3b-4507-88e6-cef31b62bbcb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d4/f2/d4f2d610-593e-47df-8b20-a95120523f58.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d4/f2/d4f2d610-593e-47df-8b20-a95120523f58.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T10:32:11.305655+00:00",
+      "details": {
+        "description": "THIS IS YOUR HORIZON:\nYou’re in charge of the Horizon Festival. Customize everything, hire and fire your friends, and explore Australia in over 350 of the world’s greatest cars. Make your Horizon the ultimate celebration of cars, music, and freedom of the open road. How you get there is up to you.\nPHOTOSENSITIVITY SEIZURE WARNING:\nA very small percentage of people may experience a seizure when exposed to certain visual images, including flashing lights or patterns that may appear in video games.",
+        "game_features": [
+          "EXPLORE AUSTRALIA, HORIZON’S LARGEST WORLD EVER:",
+          "Drive through the vast desert and rocky canyons of the Outback to lush, wild rainforests, and to the sandy beaches and gleaming skyscrapers of Australia’s Gold Coast.",
+          "CHOOSE FROM OVER 350 OF THE WORLD’S GREATEST CARS:",
+          "Every car is recreated with ForzaVista™ detail including full cockpit views, working lights and wipers, and new vehicle types bringing all-new driving experiences never before seen in Forza.",
+          "DISCOVER THRILLING NEW DRIVING GAMEPLAY:",
+          "Danger Sign Jumps, Convoys, and Drift Zones are just some of the exciting new driving challenges that await you. Star in Thrilling Showcase events that pit you and your car against a fleet of powerboats, even a giant zeppelin!",
+          "HIRE AND FIRE FRIENDS:",
+          "You’re the boss. Hire your friends’ Drivatars to help you gain fans and expand your festival, and form Convoys with them to explore the world even when they’re not online. If they’re not winning you fans, fire them!",
+          "CUSTOMIZE EVERYTHING:",
+          "Horizon Blueprint gives you the power to modify every aspect of race events, championships, and Bucket List challenges – and instantly challenge friends to beat you at your own game. Choose your driver character, create custom paint jobs and vanity license plates, add new body kits – even select your own car horn sound.",
+          "START AN ONLINE DRIVING ADVENTURE:",
+          "Online 4-Player Co-op allows you and your friends to experience the variety, competition, and rewards of a Horizon campaign together for the first time.",
+          "PLAY THE AUCTION HOUSE:",
+          "Find rare cars and incredible works of art by the most talented creators in the Forza Community.",
+          "Included DLCs:",
+          "1955 Porsche 550A Spyder",
+          "1960 Porsche 718 RS 60",
+          "1965 Pontiac GTO",
+          "1967 Ford Falcon XR GT",
+          "1972 Ford Falcon XA GT-HO",
+          "1972 Hoonigan Chevrolet Napalm Nova",
+          "1979 Hoonigan Baldwin Motorsports Loki K5 Blazer",
+          "1979 Talbot Lotus Sunbeam",
+          "1990 Mazda Savannah RX-7",
+          "1990 Renault Alpine GTA Le Mans",
+          "1992 Toyota Supra 2.0 GT Twin Turbo",
+          "1996 HSV GTSR",
+          "1998 Nissan Silvia Ks",
+          "2014 Morgan 3 Wheeler",
+          "2015 Dodge Challenger SRT Hellcat Preorder Car",
+          "2015 Ferrari 488 GTB Preorder Car",
+          "2015 Volvo V60 Polestar",
+          "2016 Audi R8 V10 plus Preorder Car",
+          "2016 Bentley Bentayga",
+          "2016 BMW M4 GTS",
+          "2016 Cadillac ATS-V",
+          "2016 Dodge Viper ACR",
+          "2016 Jaguar F-TYPE Project 7 Preorder Car",
+          "2016 Mercedes-Benz C 63 S Coupe Preorder Car",
+          "2017 Jaguar F-PACE S"
+        ],
+        "repack_features": [
+          "Based on UWP release v1.0.125.2: 62.5 GB, thanks to 0xdeadc0de for files!",
+          "UWP crack/fixer applied over, thanks to 0xdeadc0de!",
+          "45 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of 4K videos and voicepacks you don’t need",
+          "Significantly smaller archive size (compressed from 62.5 to 27.1~30.9 GB, depending on selected components)",
+          "Installation takes from 20 minutes (on 16-threads CPU + SSD) up to 1 hour (on 4-threads CPU + HDD), depending on selected components",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 62.5 GB",
+          "Language is set by the game based on your OS language",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
+    },
     {
       "id": "allogloom",
       "title": "Allogloom – v1.21",
@@ -375782,115 +375905,6 @@
           "Language is set by the game based on your OS language",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
-    },
-    {
-      "id": "forza-horizon-3",
-      "title": "Forza Horizon 3: Ultimate Edition – v1.0.125.2 + All DLCs",
-      "source_url": "https://fitgirl-repacks.site/forza-horizon-3/",
-      "image_url": "https://i4.imageban.ru/out/2022/03/14/6cde9f918243b1d12b84b96f9ecac900.jpg",
-      "post_date": "2022-03-15T03:34:50+03:00",
-      "genres": [
-        "Racing",
-        "Open world",
-        "3D"
-      ],
-      "repack_size": "27.1 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/2e/4e/2e4e115e-e9a7-44ff-bf84-8adeafb3b1f9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2e/4e/2e4e115e-e9a7-44ff-bf84-8adeafb3b1f9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e3/b3/e3b380f4-4b14-4d85-9a67-a17ca200f32d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e3/b3/e3b380f4-4b14-4d85-9a67-a17ca200f32d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/58/84/5884e81e-3f1e-4a6d-821b-93ece346d79b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/58/84/5884e81e-3f1e-4a6d-821b-93ece346d79b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9a/1c/9a1c394a-a1d2-4b64-bbda-9b6e6cbc033f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9a/1c/9a1c394a-a1d2-4b64-bbda-9b6e6cbc033f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a3/fb/a3fb0a1f-bc3b-4507-88e6-cef31b62bbcb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a3/fb/a3fb0a1f-bc3b-4507-88e6-cef31b62bbcb.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/d4/f2/d4f2d610-593e-47df-8b20-a95120523f58.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d4/f2/d4f2d610-593e-47df-8b20-a95120523f58.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T10:32:11.305655+00:00",
-      "details": {
-        "description": "THIS IS YOUR HORIZON:\nYou’re in charge of the Horizon Festival. Customize everything, hire and fire your friends, and explore Australia in over 350 of the world’s greatest cars. Make your Horizon the ultimate celebration of cars, music, and freedom of the open road. How you get there is up to you.\nPHOTOSENSITIVITY SEIZURE WARNING:\nA very small percentage of people may experience a seizure when exposed to certain visual images, including flashing lights or patterns that may appear in video games.",
-        "game_features": [
-          "EXPLORE AUSTRALIA, HORIZON’S LARGEST WORLD EVER:",
-          "Drive through the vast desert and rocky canyons of the Outback to lush, wild rainforests, and to the sandy beaches and gleaming skyscrapers of Australia’s Gold Coast.",
-          "CHOOSE FROM OVER 350 OF THE WORLD’S GREATEST CARS:",
-          "Every car is recreated with ForzaVista™ detail including full cockpit views, working lights and wipers, and new vehicle types bringing all-new driving experiences never before seen in Forza.",
-          "DISCOVER THRILLING NEW DRIVING GAMEPLAY:",
-          "Danger Sign Jumps, Convoys, and Drift Zones are just some of the exciting new driving challenges that await you. Star in Thrilling Showcase events that pit you and your car against a fleet of powerboats, even a giant zeppelin!",
-          "HIRE AND FIRE FRIENDS:",
-          "You’re the boss. Hire your friends’ Drivatars to help you gain fans and expand your festival, and form Convoys with them to explore the world even when they’re not online. If they’re not winning you fans, fire them!",
-          "CUSTOMIZE EVERYTHING:",
-          "Horizon Blueprint gives you the power to modify every aspect of race events, championships, and Bucket List challenges – and instantly challenge friends to beat you at your own game. Choose your driver character, create custom paint jobs and vanity license plates, add new body kits – even select your own car horn sound.",
-          "START AN ONLINE DRIVING ADVENTURE:",
-          "Online 4-Player Co-op allows you and your friends to experience the variety, competition, and rewards of a Horizon campaign together for the first time.",
-          "PLAY THE AUCTION HOUSE:",
-          "Find rare cars and incredible works of art by the most talented creators in the Forza Community.",
-          "Included DLCs:",
-          "1955 Porsche 550A Spyder",
-          "1960 Porsche 718 RS 60",
-          "1965 Pontiac GTO",
-          "1967 Ford Falcon XR GT",
-          "1972 Ford Falcon XA GT-HO",
-          "1972 Hoonigan Chevrolet Napalm Nova",
-          "1979 Hoonigan Baldwin Motorsports Loki K5 Blazer",
-          "1979 Talbot Lotus Sunbeam",
-          "1990 Mazda Savannah RX-7",
-          "1990 Renault Alpine GTA Le Mans",
-          "1992 Toyota Supra 2.0 GT Twin Turbo",
-          "1996 HSV GTSR",
-          "1998 Nissan Silvia Ks",
-          "2014 Morgan 3 Wheeler",
-          "2015 Dodge Challenger SRT Hellcat Preorder Car",
-          "2015 Ferrari 488 GTB Preorder Car",
-          "2015 Volvo V60 Polestar",
-          "2016 Audi R8 V10 plus Preorder Car",
-          "2016 Bentley Bentayga",
-          "2016 BMW M4 GTS",
-          "2016 Cadillac ATS-V",
-          "2016 Dodge Viper ACR",
-          "2016 Jaguar F-TYPE Project 7 Preorder Car",
-          "2016 Mercedes-Benz C 63 S Coupe Preorder Car",
-          "2017 Jaguar F-PACE S"
-        ],
-        "repack_features": [
-          "Based on UWP release v1.0.125.2: 62.5 GB, thanks to 0xdeadc0de for files!",
-          "UWP crack/fixer applied over, thanks to 0xdeadc0de!",
-          "45 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of 4K videos and voicepacks you don’t need",
-          "Significantly smaller archive size (compressed from 62.5 to 27.1~30.9 GB, depending on selected components)",
-          "Installation takes from 20 minutes (on 16-threads CPU + SSD) up to 1 hour (on 4-threads CPU + HDD), depending on selected components",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 62.5 GB",
-          "Language is set by the game based on your OS language",
-          "Repack uses XTool library by Razor12911",
-          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,

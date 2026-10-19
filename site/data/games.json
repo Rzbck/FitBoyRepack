@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-19T23:55:34.026025+00:00",
+  "generated_at": "2026-10-19T23:56:11.037455+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-19T09:18:12.501767+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/83/a8/83a8e075-f10b-432a-a636-1f13d6431be1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/83/a8/83a8e075-f10b-432a-a636-1f13d6431be1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/40/4f/404fe6a0-ed9f-4db4-84a2-40c0e5a4f48f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/40/4f/404fe6a0-ed9f-4db4-84a2-40c0e5a4f48f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/73/b7/73b7431e-1fcd-4a5a-989f-0fbea73aeb34.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/73/b7/73b7431e-1fcd-4a5a-989f-0fbea73aeb34.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e5/2d/e52de915-464f-4d20-adc0-c17064ec0d70.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e5/2d/e52de915-464f-4d20-adc0-c17064ec0d70.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ba/e4/bae4460b-f988-4db7-ac4e-2d690ca6c2db.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ba/e4/bae4460b-f988-4db7-ac4e-2d690ca6c2db.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9a/68/9a688047-ba61-4b07-ba82-030b7472c66d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/68/9a688047-ba61-4b07-ba82-030b7472c66d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-19T23:56:11.035321+00:00",
+      "details": {
+        "description": "Among the Trolls is a first-person narrative-adventure game, with survival elements, where the secret mysteries of Finnish forests are unraveled.\nStep into Anna’s shoes as she travels from the U.S. to Finland to visit her grandfather in a remote and isolated cabin deep in the forest. But upon arrival, you discover the cabin abandoned and your grandfather has vanished, drawing you into a realm of Nordic mythology and long-lost memories of summers past.\nEmbark on a quest to find your missing grandfather and survive the untamed wilderness, facing supernatural creatures from Finnish mythology and the living, animistic forces of Nature.\nFollow in your grandfather’s footsteps and uncover ancient secrets of Finnish mythology.\nFIND YOUR ROOTS\nEmbark on an empowering journey to uncover your past and solve the mystery behind your granpa’s disappearance. Discover hidden truths that will reshape your destiny.\nWITHSTAND THE NATURAL AND THE SUPERNATURAL\nFace a relentless world shaped by harsh weather, wild animals, scarce resources, and supernatural encounters. Balance Väki (Magic) and Lykky (Luck) to survive, and discover how these ancient forces intertwine.\nFINNISH MYTHOLOGY\nExperience and explore a vast world inspired by Finnish mythology and ancient shamanistic magic. Meet extraordinary creatures rooted in the classic Kalevala myths.\nSURVIVE THE WILD\nSurvive and thrive in the breathtaking yet unforgiving Finnish wilderness. Build, craft, and adapt to the environment as you unlock the ancient secrets of your ancestors.\nAUDIOVISUAL EXPERIENCE\nImmerse yourself in a beautifully crafted 3D world that blends nostalgic and otherworldly aesthetics. The stunning visuals are paired with an enchanting soundtrack and the authentic sounds of Nordic nature, making it hard to leave the world of Among the Trolls.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Among.the.Trolls-RUNE ISO release: rune-among.the.trolls.iso (12,453,347,328 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of useless PDB debugging files",
+          "Significantly smaller archive size (compressed from 11.6 to 7.9/8.1 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 11.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-19T23:56:11.035321+00:00"
     },
     {
       "id": "the-thaumaturge",

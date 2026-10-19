@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-19T01:20:22.243137+00:00",
+  "generated_at": "2026-10-19T01:20:58.042492+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-18T08:20:32.883560+00:00",
   "games": [
@@ -16,7 +16,64 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "56.7 GB"
+      "repack_size": "56.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/63/62/6362d1ee-d60f-43df-a8a5-6fc8c44156be.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/63/62/6362d1ee-d60f-43df-a8a5-6fc8c44156be.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/08/19/0819670d-0fcd-4f1d-a61d-06d7e9ba8f5f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/08/19/0819670d-0fcd-4f1d-a61d-06d7e9ba8f5f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/26/4e26dd86-1b46-47a3-ad93-26281a728609.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/26/4e26dd86-1b46-47a3-ad93-26281a728609.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4f/9c/4f9cc547-0387-4f4d-96e2-d7c8d183d4eb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4f/9c/4f9cc547-0387-4f4d-96e2-d7c8d183d4eb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8b/4f/8b4f5df4-c8ee-404b-8d00-4be0eb0f4e32.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8b/4f/8b4f5df4-c8ee-404b-8d00-4be0eb0f4e32.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/03/c0/03c0c2f0-1898-4e2c-9b07-5c951a7eb746.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/03/c0/03c0c2f0-1898-4e2c-9b07-5c951a7eb746.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-19T01:20:58.040577+00:00",
+      "details": {
+        "description": "War erupts on the Korean Peninsula as North Korea launches a full-scale invasion that threatens to destabilize the world in Call of Duty: Modern Warfare 4.\nA young squad of South Korean soldiers fight to survive on the collapsing front lines, while half a world away a vengeful Captain Price wages a personal war from the shadows as he stays one step ahead of those hunting him. As Price’s off-book mission collides with the forces behind the invasion, the war spreads beyond anyone’s control.\nModern Warfare 4 pushes the series into darker and more dangerous territory, where consequence and escalation bring long-running storylines to a powerful and emotional breaking point.\nCampaign drops players into trench warfare in Korea, close-quarters combat in New York, high-octane chases through Paris, SAS night raids in Mumbai, and city-wide assaults to reclaim occupied territory.\nFight as Private Park, a young South Korean soldier facing live combat for the first time alongside his squad. Beyond the front lines, Operator-turned-outlaw Captain Price is operating outside the system he once served.",
+        "game_features": [],
+        "repack_features": [
+          "Based on P2P Steam BuildID 25909941 Campaign-only rip with all languages: 87.7 GB, thanks to InsaneRamZes & gizmo_o!",
+          "CrackFix V2 by r4v3n + Goldberg applied over",
+          "Game version: v13.1.29465156.",
+          "Only campaign works!",
+          "DLCs don’t work, as all of them are for multiplayer modes",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional language packs (support for text in English, Polish, Russian, Traditional Chinese & Arabic languages with English VOs is included by default)",
+          "Significantly smaller archive size (compressed from 87.7 to 56.7~63.6 GB, depending on selected languages)",
+          "Installation takes from 20 minutes (on 32-threads CPU) up to 70 minutes (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 87.7 GB",
+          "Language can be changed in “sp26/steam_settings/configs.user.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 4 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-19T01:20:58.040577+00:00"
     },
     {
       "id": "tropical-lust",

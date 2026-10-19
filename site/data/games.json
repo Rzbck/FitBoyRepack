@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-19T20:30:44.362669+00:00",
+  "generated_at": "2026-10-19T20:31:18.464854+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-19T09:18:12.501767+00:00",
   "games": [
@@ -97,7 +97,59 @@
         "2D",
         "Japanese"
       ],
-      "repack_size": "550 MB"
+      "repack_size": "550 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/73/07/7307bd41-1bd3-42fb-bf75-e8bf7f072931.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/73/07/7307bd41-1bd3-42fb-bf75-e8bf7f072931.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/61/6a/616af52f-a8db-409c-8bbd-1fb1d6890ea6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/61/6a/616af52f-a8db-409c-8bbd-1fb1d6890ea6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bc/dd/bcdd7c0a-4a56-4d96-b83b-64216188ac11.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bc/dd/bcdd7c0a-4a56-4d96-b83b-64216188ac11.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cb/fe/cbfe69c1-bb93-41ba-a16b-5c758db8e2a4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cb/fe/cbfe69c1-bb93-41ba-a16b-5c758db8e2a4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/13/bc/13bcec95-d0ee-4eb3-a434-08ee0463f7d8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/13/bc/13bcec95-d0ee-4eb3-a434-08ee0463f7d8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/38/b3/38b31218-a284-470a-b7c9-443b855af3a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/38/b3/38b31218-a284-470a-b7c9-443b855af3a0.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-19T20:31:18.462859+00:00",
+      "details": {
+        "description": "Become an alchemist in Diamond City, where growing a business means growing your own workers. Farm, craft, and sell your creations as you build relationships and navigate a dark fantasy story with multiple endings.\nBuild Your Alchemy Business:\nGrow magical crops, craft valuable goods, and put your homegrown workforce to work.\nMeet the City’s Unusual Residents:\nDiscover over 40 NPCs and relationship paths for six central heroines.\nShape the City’s Fate:\nEarn the trust of six factions and explore branching stories shaped by your choices and reputation.\nGrow ingredients, turn them into valuable creations, and sell them to fund your next expansion. Along the way, fulfill orders, build relationships, and uncover the city’s stranger side.\nCultivate the Extraordinary\nGrow over 100 crops and experiment with traits to improve your harvests. Expand underground and use alchemical circles to build a flourishing, self-sustaining farm.\nTurn Curiosities into Profit\nDecorate your shop and stock its shelves with crops, potions, and rare curiosities. Build your reputation to attract non-human customers and unlock lucrative special orders.\nGrow Your Own Workforce\nMeet the Peoplesprouts: workers you grow yourself. Assign them to farming, retail, and manufacturing to automate your business.\nMatch their talents to the job—and give them time to recover. Overwork takes a toll on their Sanity.\nTurn Experiments into Opportunity\nTransform materials into valuable goods or grant your Peoplesprouts powerful abilities. Experiment with volatile elements and combine alchemy with Oracles to discover extraordinary results.\nBorrow the Power of Ancient Gods\nCollect and combine divine blessings for powerful bonuses during each time rewind. Just beware of the gods behind them—and the influence of their whispers.\nDecide Who to Trust\nWin the favor of six rival factions to unlock special orders and new story possibilities. Your reputation and choices help determine how Diamond City’s story ends.\nOracle Summons\nTry your luck summoning blessings from Ancient and Outer Gods. Their gifts could be just what your next experiment needs.",
+        "game_features": [],
+        "repack_features": [
+          "Based on The.Piper.of.Dawn-TENOKE ISO release: tenoke-the.piper.of.dawn.iso (1,259,792,384 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.2 GB to 550 MB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-19T20:31:18.462859+00:00"
     },
     {
       "id": "call-of-duty-modern-warfare-4",

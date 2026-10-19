@@ -1,9 +1,104 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-19T09:18:12.501767+00:00",
+  "generated_at": "2026-10-19T20:30:44.362669+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-19T09:18:12.501767+00:00",
   "games": [
+    {
+      "id": "the-thaumaturge",
+      "title": "The Thaumaturge: Deluxe Edition – v1.2.0 (79.743) + 2 DLCs/Bonus Content",
+      "source_url": "https://fitgirl-repacks.site/the-thaumaturge/",
+      "image_url": "https://i1.imageban.ru/out/2024/03/05/6763c0835d5b96bc64a5ef18d254a102.jpg",
+      "post_date": "2026-10-19T22:20:04+03:00",
+      "genres": [
+        "RPG",
+        "Isometric",
+        "3D",
+        "Turn-based"
+      ],
+      "repack_size": "13.9 GB",
+      "media": [
+        {
+          "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1684350/extras/Buka_2.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/52/2c52c59a-9558-4eb9-baa8-0874739c760a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/52/2c52c59a-9558-4eb9-baa8-0874739c760a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/47/fb47a9de-984f-49eb-84c2-56dfd2f443de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/47/fb47a9de-984f-49eb-84c2-56dfd2f443de.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0c/9d/0c9d7dc4-1757-406d-b244-823a592b82d1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/9d/0c9d7dc4-1757-406d-b244-823a592b82d1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/02/99/0299ea0f-f33d-4e54-b9f5-8c2ff056b0f8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/02/99/0299ea0f-f33d-4e54-b9f5-8c2ff056b0f8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8a/16/8a16ad26-4f29-4990-9317-33298a03ef02.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8a/16/8a16ad26-4f29-4990-9317-33298a03ef02.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c4/32/c432bbb1-e801-48f2-9be4-90de9bf06042.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c4/32/c432bbb1-e801-48f2-9be4-90de9bf06042.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:20:19.939330+00:00",
+      "details": {
+        "description": "The Thaumaturge is an isometric, story-rich RPG with a unique take on turn-based combat, character development features, and investigation mechanics, facing you with morally ambiguous choices – set in a world teeming with mysterious powers and strange ethereal beings called salutors.\nThe year is 1905. Warsaw lives under the yoke of imperial Russian tsardom. Its inhabitants constitute a diverse group of different ancestries, views, and beliefs with often conflicting interests: Russian soldiers, Jewish merchants, Polish townspeople, and more. Despite the circumstances, the city is a buzzing metropolis, where one can attend a breathtaking party with the high society, and later get robbed in one of the dark alleys of the Praga district. A city of great hopes and dreams on one hand and dark desires on the other.\nA thaumaturge bears both a gift and a burden at the same time. This parallel holds true for Wiktor Szulski, the game’s titular protagonist, who is drawn back to the tumultuous streets of 20th-century Warsaw by family matters. The gift of thaumaturgy is intertwined with family legacy, passed down through one’s ancestors. This mystical inheritance significantly shapes Wiktor’s life journey tied around a pursuit of unearthly entities and their hosts. As only a thaumaturge can tame these ethereal entities – known to a select few as salutors – utilizing their mystical abilities to discover secrets hidden within the human soul and speak to the Darkness, no one understands quite like Wiktor how everyone suffers their own demons.",
+        "game_features": [
+          "Shape your story – as a full-fledged RPG, it allows you to alternate your choices and make you deal with the aftermath.",
+          "Develop your character – creating your own version of the thaumaturge will allow you to approach situations in different ways.",
+          "Experience unique turn-based combat and defeat your foes using human attacks and skills as well as psychic strikes delivered by salutors.",
+          "Influence and manipulate the temperaments of other characters to bend their will to your liking.",
+          "Tame the power of salutors – use the unique set of their skills to gain an advantage while exploring the world and when bringing your adversaries to their knees.",
+          "See the world that’s inevitably gone – explore the uncommon, heavily researched historic period of the early XX century Warsaw, where crime and luxury are often two sides of the same coin. Meet historical figures and learn about their involvement in the story.",
+          "Created in Unreal Engine 5 to deliver a detailed & beautifully crafted world."
+        ],
+        "repack_features": [
+          "Based on The.Thaumaturge-RUNE ISO release: rune-the.thaumaturge.iso (25,627,394,048 bytes)",
+          "Game version: v70.100; Deluxe Edition DLC in-game content included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional videos in VP9 format and Bonus Content (OST in MP3, Wallpapers, etc.)",
+          "Significantly smaller archive size (compressed from 23.9 to 13~14.5 GB, depending on selected components)",
+          "Installation takes from 10 minutes (on 24-threads CPU) up to 50 minutes (on 4-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 22 GB",
+          "Language can be changed in game settings",
+          "Repack uses compression library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:20:19.939330+00:00"
+    },
+    {
+      "id": "the-piper-of-dawn",
+      "title": "The Piper of Dawn",
+      "source_url": "https://fitgirl-repacks.site/the-piper-of-dawn/",
+      "image_url": "https://i5.imageban.ru/out/2026/10/19/b1535909ba1d65c8d2f256f6c089c7f0.jpg",
+      "post_date": "2026-10-19T20:03:54+03:00",
+      "genres": [
+        "Lifestyle",
+        "Managerial",
+        "Isometric",
+        "2D",
+        "Japanese"
+      ],
+      "repack_size": "550 MB"
+    },
     {
       "id": "call-of-duty-modern-warfare-4",
       "title": "Call of Duty: Modern Warfare 4 – v13.1.29465156 (Campaign Only)",
@@ -266722,86 +266817,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 3.2 GB",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:20:19.939330+00:00"
-    },
-    {
-      "id": "the-thaumaturge",
-      "title": "The Thaumaturge: Deluxe Edition – v70.100 + 2 DLCs/Bonus Content",
-      "source_url": "https://fitgirl-repacks.site/the-thaumaturge/",
-      "image_url": "https://i1.imageban.ru/out/2024/03/05/6763c0835d5b96bc64a5ef18d254a102.jpg",
-      "post_date": "2024-03-05T21:03:04+03:00",
-      "genres": [
-        "RPG",
-        "Isometric",
-        "3D",
-        "Turn-based"
-      ],
-      "repack_size": "13 GB",
-      "media": [
-        {
-          "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1684350/extras/Buka_2.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2c/52/2c52c59a-9558-4eb9-baa8-0874739c760a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2c/52/2c52c59a-9558-4eb9-baa8-0874739c760a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fb/47/fb47a9de-984f-49eb-84c2-56dfd2f443de.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fb/47/fb47a9de-984f-49eb-84c2-56dfd2f443de.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0c/9d/0c9d7dc4-1757-406d-b244-823a592b82d1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0c/9d/0c9d7dc4-1757-406d-b244-823a592b82d1.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/02/99/0299ea0f-f33d-4e54-b9f5-8c2ff056b0f8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/02/99/0299ea0f-f33d-4e54-b9f5-8c2ff056b0f8.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8a/16/8a16ad26-4f29-4990-9317-33298a03ef02.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8a/16/8a16ad26-4f29-4990-9317-33298a03ef02.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c4/32/c432bbb1-e801-48f2-9be4-90de9bf06042.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c4/32/c432bbb1-e801-48f2-9be4-90de9bf06042.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:20:19.939330+00:00",
-      "details": {
-        "description": "The Thaumaturge is an isometric, story-rich RPG with a unique take on turn-based combat, character development features, and investigation mechanics, facing you with morally ambiguous choices – set in a world teeming with mysterious powers and strange ethereal beings called salutors.\nThe year is 1905. Warsaw lives under the yoke of imperial Russian tsardom. Its inhabitants constitute a diverse group of different ancestries, views, and beliefs with often conflicting interests: Russian soldiers, Jewish merchants, Polish townspeople, and more. Despite the circumstances, the city is a buzzing metropolis, where one can attend a breathtaking party with the high society, and later get robbed in one of the dark alleys of the Praga district. A city of great hopes and dreams on one hand and dark desires on the other.\nA thaumaturge bears both a gift and a burden at the same time. This parallel holds true for Wiktor Szulski, the game’s titular protagonist, who is drawn back to the tumultuous streets of 20th-century Warsaw by family matters. The gift of thaumaturgy is intertwined with family legacy, passed down through one’s ancestors. This mystical inheritance significantly shapes Wiktor’s life journey tied around a pursuit of unearthly entities and their hosts. As only a thaumaturge can tame these ethereal entities – known to a select few as salutors – utilizing their mystical abilities to discover secrets hidden within the human soul and speak to the Darkness, no one understands quite like Wiktor how everyone suffers their own demons.",
-        "game_features": [
-          "Shape your story – as a full-fledged RPG, it allows you to alternate your choices and make you deal with the aftermath.",
-          "Develop your character – creating your own version of the thaumaturge will allow you to approach situations in different ways.",
-          "Experience unique turn-based combat and defeat your foes using human attacks and skills as well as psychic strikes delivered by salutors.",
-          "Influence and manipulate the temperaments of other characters to bend their will to your liking.",
-          "Tame the power of salutors – use the unique set of their skills to gain an advantage while exploring the world and when bringing your adversaries to their knees.",
-          "See the world that’s inevitably gone – explore the uncommon, heavily researched historic period of the early XX century Warsaw, where crime and luxury are often two sides of the same coin. Meet historical figures and learn about their involvement in the story.",
-          "Created in Unreal Engine 5 to deliver a detailed & beautifully crafted world."
-        ],
-        "repack_features": [
-          "Based on The.Thaumaturge-RUNE ISO release: rune-the.thaumaturge.iso (25,627,394,048 bytes)",
-          "Game version: v70.100; Deluxe Edition DLC in-game content included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in WAV format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of optional videos in VP9 format and Bonus Content (OST in MP3, Wallpapers, etc.)",
-          "Significantly smaller archive size (compressed from 23.9 to 13~14.5 GB, depending on selected components)",
-          "Installation takes from 10 minutes (on 24-threads CPU) up to 50 minutes (on 4-threads CPU)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 22 GB",
-          "Language can be changed in game settings",
-          "Repack uses compression library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

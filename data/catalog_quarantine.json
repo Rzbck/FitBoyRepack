@@ -2275,6 +2275,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "the-thaumaturge-repack-updated",
+      "title": "The Thaumaturge Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/the-thaumaturge-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "world-much-bigger-village",
       "title": "The world is much bigger than your village",
       "source_url": "https://fitgirl-repacks.site/world-much-bigger-village/",

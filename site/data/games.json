@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-19T20:31:18.464854+00:00",
+  "generated_at": "2026-10-19T23:55:34.026025+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-19T09:18:12.501767+00:00",
   "games": [
+    {
+      "id": "among-the-trolls",
+      "title": "Among the Trolls",
+      "source_url": "https://fitgirl-repacks.site/among-the-trolls/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/19/d675c295d8a7c8e99fb81cfad10b1e74.jpg",
+      "post_date": "2026-10-20T00:13:30+03:00",
+      "genres": [
+        "Action",
+        "Survival",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "the-thaumaturge",
       "title": "The Thaumaturge: Deluxe Edition – v1.2.0 (79.743) + 2 DLCs/Bonus Content",

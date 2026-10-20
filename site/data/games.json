@@ -1,9 +1,174 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-19T23:56:11.037455+00:00",
+  "generated_at": "2026-10-20T04:07:16.388691+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-19T09:18:12.501767+00:00",
   "games": [
+    {
+      "id": "ready-or-not",
+      "title": "Ready or Not: Digital Deluxe Edition, v142058 (v1.5.3) + v66884 + 6 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/ready-or-not/",
+      "image_url": "https://i6.imageban.ru/out/2023/12/15/e70624a45a9a181efff8060b08751b18.jpg",
+      "post_date": "2026-10-20T05:00:13+03:00",
+      "genres": [
+        "Action",
+        "Tactical shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d7/16/d71652e6-37b7-4192-a9ee-52531e7f6c1c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d7/16/d71652e6-37b7-4192-a9ee-52531e7f6c1c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e0/a5/e0a5c0ba-7373-443d-8216-ada8bf8b0920.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e0/a5/e0a5c0ba-7373-443d-8216-ada8bf8b0920.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/10/50/1050d4d6-b522-4325-99f5-b7f536ae1484.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/10/50/1050d4d6-b522-4325-99f5-b7f536ae1484.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/8d/098d36f1-21e5-44ed-94ce-545057369acf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/8d/098d36f1-21e5-44ed-94ce-545057369acf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c1/ca/c1cab5e8-feef-42b7-b85f-5b9d7dad4b16.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c1/ca/c1cab5e8-feef-42b7-b85f-5b9d7dad4b16.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/49/b6/49b689ea-d0de-49e5-9ec5-2a5384f014c2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/49/b6/49b689ea-d0de-49e5-9ec5-2a5384f014c2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Los Sueños – The LSPD reports a massive upsurge in violent crime across the greater Los Sueños area. Special Weapons and Tactics (SWAT) teams have been dispatched to respond to various scenes involving high-risk hostage situations, active bomb threats, barricaded suspects, and other criminal activities. Citizens are being advised to practice caution when traveling the city or to stay at home.\nIt has been noted that while Los Sueños is still seen as a city where riches can be found, for many more the finer things in life are becoming less and less obtainable. “The city is sprawling with cramped high-rise apartments and decaying affordable housing, which has been exploited by the criminal underground like a malevolent parasite,” states Chief Galo Álvarez. “In a city where people are just trying to survive, lawful action from the LSPD and the LSPD SWAT team remains an integral force preventing the stretched thin social fabric in this city from snapping under this chaotic strain.”\nIn response to the burgeoning violent crime wave inundating Los Sueños, Chief Álvarez of the LSPD has enlisted the stalwart support of David ‘Judge’ Beaumont as the Commander of the LSPD SWAT team. Shortly following this announcement, the LSPD has also confirmed active recruitment for additional talent to join this specialized tactical police unit with the mission of bringing peace back to the city.\n“This assignment is not for the faint of heart,” comments Commander Beaumont, “Extremists, crooked politicians, countless weapons, human trafficking, and illicit drugs and pornography… the world of policing in Los Sueños is fraught with real and harsh realities, realities that the everyday person isn’t necessarily confronted with. These are realities that you will need to navigate with your team within the proper bounds of the law or face the consequences and make matters worse.”\nThe Los Sueños Policed Department has officially posted new details on Commander “Judge” Beaumont’s updated assignment with the LSPD SWAT team:\nNew Expectations: Whether this is your first time in Los Sueños or not, the city has changed and so too have the tools and methods with which we conduct our work. The haunts you might have seen or heard about are re-imagined, and so have the angles with which we approach each call. Furthermore, we’ve received reports that identify at least 4 new high-risk police districts which we suspect may require future tactical intervention, plus at least 4 existing high-risk districts that underwent massive upheavals.\nTake Command: The role of the Commander of the LSPD SWAT is to compose their team from a large roster with unique talents, give tactical orders, meticulously plan, and carry out missions. Commanders are obligated to conduct each mission with integrity and look after their team’s mental and physical health. Officers with unaddressed deteriorating mental status may be unable to properly perform their duties or even feel compelled to quit the force. Incapacitated officers may be temporarily unavailable for missions, with the tragic prospect of death leading to a permanent loss. For SWAT Commanders in unusual circumstances based on individual choices they opt for, deadly mistakes may lead to their own permanent fatality.\nSWAT Team Quality Enhancement: Much anticipated improved SWAT training procedures, tactics, and experience in the LSPD has led to an overall increase in the quality and quantity of officers in our roster. Expanded tactical versatility allows our officers to take on any challenge with renewed confidence, blending coordination and independence seamlessly. There is also additional basic training now available to SWAT members to keep foundational knowledge and muscle memory in top shape.\nEquipment and customization: We have access to the best weapons and equipment that the LSPD can offer to fulfill our exceptionally dangerous role, including many new acquisitions. However, customization isn’t limited to the equipment we use. Through close-knit comradery while performing remarkable actions alongside the team, you’ll earn the clothes you wear, the patches on your sleeves, the artwork that may adorn your skin, and potentially even the timepiece on your wrist. Lastly, we have overhauled our headquarters’ training facilities to better test our loadouts before heading out on call.\nIncluded DLCs/Bonuses:\nSupporter Edition\nHome Invasion\nDark Waters\nSupporter OST\nOfficial Soundtrack\nBoiling Point",
+        "game_features": [],
+        "repack_features": [
+          "Based on Ready.or.Not.Boiling.Point-RUNE ISO release: rune-ready.or.not.boiling.point.iso (45,385,777,152 bytes)",
+          "Game version: v112610 (v1.4.1); 6 DLCs/Bonuses are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OSTs in FLAC format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus soundtracks in MP3 format",
+          "Significantly smaller archive size (compressed from 42.3 to 24.9/25.3 GB)",
+          "Installation takes from 32 minutes (on 16-threads CPU) up to one hour (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 48.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool compression library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
+    {
+      "id": "cohen-1939",
+      "title": "Cohen 1939",
+      "source_url": "https://fitgirl-repacks.site/cohen-1939/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/20/9e13059a9b36d31bb64ea7607bae766e.jpg",
+      "post_date": "2026-10-20T04:00:04+03:00",
+      "genres": [
+        "Arcade",
+        "Run and gun",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "5.1 GB"
+    },
+    {
+      "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2",
+      "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2: Deluxe Edition, v2.01 + 14 DLCs",
+      "source_url": "https://fitgirl-repacks.site/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/20/a15d7d1198d6011e8b8017e9b0765347.jpg",
+      "post_date": "2026-10-20T03:30:15+03:00",
+      "genres": [
+        "Action",
+        "Third-person",
+        "3D",
+        "Japanese"
+      ],
+      "repack_size": "15.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fd/44/fd444322-8f92-444c-b69b-ea87cb8daa59.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/44/fd444322-8f92-444c-b69b-ea87cb8daa59.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/55/8e557126-a01b-4a25-9b03-377bb86a53ad.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/55/8e557126-a01b-4a25-9b03-377bb86a53ad.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/e3/05e35eb5-5bc1-4125-a818-b0b46325a652.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/e3/05e35eb5-5bc1-4125-a818-b0b46325a652.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/81/5a81d3f2-5a54-4dd7-84b1-15aa1868e6b6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/81/5a81d3f2-5a54-4dd7-84b1-15aa1868e6b6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/88/a38862e5-7f21-4b01-8c0e-110082cfef11.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/88/a38862e5-7f21-4b01-8c0e-110082cfef11.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Destroy demons with the power of forged bonds! Tanjiro Kamado’s battle will once again unfold…\nSingle Player: Story Mode – Play as Tanjiro and relive the Entertainment District Arc, Swordsmith Village Arc, and Hashira Training Arc from the Demon Slayer: Kimetsu no Yaiba anime. Battle Upper Rank demons with your allies!\nVS Mode: The Hashira unite! The",
+        "game_features": [
+          "over 40 characters, including the nine Hashira, the highest-ranking swordsmen of the Demon Slayer Corps! New elements, such as Dual Ultimates and Gear, have been added. Take on new challenges both online and offline!",
+          "Included DLCs:",
+          "Battle Attire: Tanjiro’s Kimono (Entertainment District), Inosuke’s Kimono (Entertainment District), and Uzui’s Shinobi Attire",
+          "Character Unlock Keys: Sanemi Shinazugawa, Obanai Iguro, and Gyomei Himejima",
+          "VS Mode System Voice: Upper Rank Demons Set (Akaza, Daki, Gyutaro, Gyokko, Zohakuten)",
+          "Character Unlock Keys: Mitsuri Kanroji and Muichiro Tokito",
+          "Digital Version Bonus – Character Unlock Keys: Academy Rengoku and Academy Uzui",
+          "Demon Slayer: Kimetsu no Yaiba Anime Songs & BGM Pack",
+          "Core Add-on Bundle",
+          "Kaigaku Character Pack",
+          "Zenitsu Agatsuma (Infinity Castle) Character Pack",
+          "Akaza (Infinity Castle) Character Pack",
+          "Tanjiro Kamado (Infinity Castle) Character Pack",
+          "Giyu Tomioka (Infinity Castle) Character Pack",
+          "Shinobu Kocho (Infinity Castle) Character Pack",
+          "Doma Character Pack"
+        ],
+        "repack_features": [
+          "Based on Steam BuildID 23884003 release: 25.1 GB",
+          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
+          "[b]Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions[/b]",
+          "VBS.cmd script v1.8 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.80; 14 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 25.1 to 15.3 GB)",
+          "Installation takes 14-40 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 25.1 GB",
+          "Language can be changed in “APK2/Binaries/Win64/coldclient/steam_settings/configs.user.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "among-the-trolls",
       "title": "Among the Trolls",
@@ -34216,89 +34381,6 @@
           "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack",
           "Repack uses XTool library by Razor12911"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2",
-      "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2: Deluxe Edition, v1.80 + 14 DLCs",
-      "source_url": "https://fitgirl-repacks.site/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2/",
-      "image_url": "https://i4.imageban.ru/out/2026/04/25/5d86f2b4ea96b4ea897253aa94641d71.jpg",
-      "post_date": "2026-07-08T20:10:15+03:00",
-      "genres": [
-        "Action",
-        "Third-person",
-        "3D",
-        "Japanese"
-      ],
-      "repack_size": "15.3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/fd/44/fd444322-8f92-444c-b69b-ea87cb8daa59.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fd/44/fd444322-8f92-444c-b69b-ea87cb8daa59.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8e/55/8e557126-a01b-4a25-9b03-377bb86a53ad.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8e/55/8e557126-a01b-4a25-9b03-377bb86a53ad.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/05/e3/05e35eb5-5bc1-4125-a818-b0b46325a652.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/05/e3/05e35eb5-5bc1-4125-a818-b0b46325a652.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5a/81/5a81d3f2-5a54-4dd7-84b1-15aa1868e6b6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5a/81/5a81d3f2-5a54-4dd7-84b1-15aa1868e6b6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a3/88/a38862e5-7f21-4b01-8c0e-110082cfef11.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a3/88/a38862e5-7f21-4b01-8c0e-110082cfef11.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Destroy demons with the power of forged bonds! Tanjiro Kamado’s battle will once again unfold…\nSingle Player: Story Mode – Play as Tanjiro and relive the Entertainment District Arc, Swordsmith Village Arc, and Hashira Training Arc from the Demon Slayer: Kimetsu no Yaiba anime. Battle Upper Rank demons with your allies!\nVS Mode: The Hashira unite! The",
-        "game_features": [
-          "over 40 characters, including the nine Hashira, the highest-ranking swordsmen of the Demon Slayer Corps! New elements, such as Dual Ultimates and Gear, have been added. Take on new challenges both online and offline!",
-          "Included DLCs:",
-          "Battle Attire: Tanjiro’s Kimono (Entertainment District), Inosuke’s Kimono (Entertainment District), and Uzui’s Shinobi Attire",
-          "Character Unlock Keys: Sanemi Shinazugawa, Obanai Iguro, and Gyomei Himejima",
-          "VS Mode System Voice: Upper Rank Demons Set (Akaza, Daki, Gyutaro, Gyokko, Zohakuten)",
-          "Character Unlock Keys: Mitsuri Kanroji and Muichiro Tokito",
-          "Digital Version Bonus – Character Unlock Keys: Academy Rengoku and Academy Uzui",
-          "Demon Slayer: Kimetsu no Yaiba Anime Songs & BGM Pack",
-          "Core Add-on Bundle",
-          "Kaigaku Character Pack",
-          "Zenitsu Agatsuma (Infinity Castle) Character Pack",
-          "Akaza (Infinity Castle) Character Pack",
-          "Tanjiro Kamado (Infinity Castle) Character Pack",
-          "Giyu Tomioka (Infinity Castle) Character Pack",
-          "Shinobu Kocho (Infinity Castle) Character Pack",
-          "Doma Character Pack"
-        ],
-        "repack_features": [
-          "Based on Steam BuildID 23884003 release: 25.1 GB",
-          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
-          "[b]Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions[/b]",
-          "VBS.cmd script v1.8 added",
-          "Custom launcher added for easier HV steps processing",
-          "Game version: v1.80; 14 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 25.1 to 15.3 GB)",
-          "Installation takes 14-40 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 25.1 GB",
-          "Language can be changed in “APK2/Binaries/Win64/coldclient/steam_settings/configs.user.ini” file",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,
@@ -73662,74 +73744,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 14.8 GB",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "ready-or-not",
-      "title": "Ready or Not: Digital Deluxe Edition, v112610 (v1.4.1) + v66884 + 6 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/ready-or-not/",
-      "image_url": "https://i6.imageban.ru/out/2023/12/15/e70624a45a9a181efff8060b08751b18.jpg",
-      "post_date": "2026-03-14T02:00:13+03:00",
-      "genres": [
-        "Action",
-        "Tactical shooter",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/d7/16/d71652e6-37b7-4192-a9ee-52531e7f6c1c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d7/16/d71652e6-37b7-4192-a9ee-52531e7f6c1c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e0/a5/e0a5c0ba-7373-443d-8216-ada8bf8b0920.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e0/a5/e0a5c0ba-7373-443d-8216-ada8bf8b0920.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/10/50/1050d4d6-b522-4325-99f5-b7f536ae1484.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/10/50/1050d4d6-b522-4325-99f5-b7f536ae1484.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/09/8d/098d36f1-21e5-44ed-94ce-545057369acf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/09/8d/098d36f1-21e5-44ed-94ce-545057369acf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c1/ca/c1cab5e8-feef-42b7-b85f-5b9d7dad4b16.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c1/ca/c1cab5e8-feef-42b7-b85f-5b9d7dad4b16.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/49/b6/49b689ea-d0de-49e5-9ec5-2a5384f014c2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/49/b6/49b689ea-d0de-49e5-9ec5-2a5384f014c2.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Los Sueños – The LSPD reports a massive upsurge in violent crime across the greater Los Sueños area. Special Weapons and Tactics (SWAT) teams have been dispatched to respond to various scenes involving high-risk hostage situations, active bomb threats, barricaded suspects, and other criminal activities. Citizens are being advised to practice caution when traveling the city or to stay at home.\nIt has been noted that while Los Sueños is still seen as a city where riches can be found, for many more the finer things in life are becoming less and less obtainable. “The city is sprawling with cramped high-rise apartments and decaying affordable housing, which has been exploited by the criminal underground like a malevolent parasite,” states Chief Galo Álvarez. “In a city where people are just trying to survive, lawful action from the LSPD and the LSPD SWAT team remains an integral force preventing the stretched thin social fabric in this city from snapping under this chaotic strain.”\nIn response to the burgeoning violent crime wave inundating Los Sueños, Chief Álvarez of the LSPD has enlisted the stalwart support of David ‘Judge’ Beaumont as the Commander of the LSPD SWAT team. Shortly following this announcement, the LSPD has also confirmed active recruitment for additional talent to join this specialized tactical police unit with the mission of bringing peace back to the city.\n“This assignment is not for the faint of heart,” comments Commander Beaumont, “Extremists, crooked politicians, countless weapons, human trafficking, and illicit drugs and pornography… the world of policing in Los Sueños is fraught with real and harsh realities, realities that the everyday person isn’t necessarily confronted with. These are realities that you will need to navigate with your team within the proper bounds of the law or face the consequences and make matters worse.”\nThe Los Sueños Policed Department has officially posted new details on Commander “Judge” Beaumont’s updated assignment with the LSPD SWAT team:\nNew Expectations: Whether this is your first time in Los Sueños or not, the city has changed and so too have the tools and methods with which we conduct our work. The haunts you might have seen or heard about are re-imagined, and so have the angles with which we approach each call. Furthermore, we’ve received reports that identify at least 4 new high-risk police districts which we suspect may require future tactical intervention, plus at least 4 existing high-risk districts that underwent massive upheavals.\nTake Command: The role of the Commander of the LSPD SWAT is to compose their team from a large roster with unique talents, give tactical orders, meticulously plan, and carry out missions. Commanders are obligated to conduct each mission with integrity and look after their team’s mental and physical health. Officers with unaddressed deteriorating mental status may be unable to properly perform their duties or even feel compelled to quit the force. Incapacitated officers may be temporarily unavailable for missions, with the tragic prospect of death leading to a permanent loss. For SWAT Commanders in unusual circumstances based on individual choices they opt for, deadly mistakes may lead to their own permanent fatality.\nSWAT Team Quality Enhancement: Much anticipated improved SWAT training procedures, tactics, and experience in the LSPD has led to an overall increase in the quality and quantity of officers in our roster. Expanded tactical versatility allows our officers to take on any challenge with renewed confidence, blending coordination and independence seamlessly. There is also additional basic training now available to SWAT members to keep foundational knowledge and muscle memory in top shape.\nEquipment and customization: We have access to the best weapons and equipment that the LSPD can offer to fulfill our exceptionally dangerous role, including many new acquisitions. However, customization isn’t limited to the equipment we use. Through close-knit comradery while performing remarkable actions alongside the team, you’ll earn the clothes you wear, the patches on your sleeves, the artwork that may adorn your skin, and potentially even the timepiece on your wrist. Lastly, we have overhauled our headquarters’ training facilities to better test our loadouts before heading out on call.\nIncluded DLCs/Bonuses:\nSupporter Edition\nHome Invasion\nDark Waters\nSupporter OST\nOfficial Soundtrack\nBoiling Point",
-        "game_features": [],
-        "repack_features": [
-          "Based on Ready.or.Not.Boiling.Point-RUNE ISO release: rune-ready.or.not.boiling.point.iso (45,385,777,152 bytes)",
-          "Game version: v112610 (v1.4.1); 6 DLCs/Bonuses are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OSTs in FLAC format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus soundtracks in MP3 format",
-          "Significantly smaller archive size (compressed from 42.3 to 24.9/25.3 GB)",
-          "Installation takes from 32 minutes (on 16-threads CPU) up to one hour (on 8-threads CPU)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 48.8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool compression library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

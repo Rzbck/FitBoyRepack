@@ -2424,9 +2424,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-1-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2451,10 +2452,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-10-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2465,8 +2464,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-11-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2519,10 +2520,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-15-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2603,10 +2602,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2701,10 +2698,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-28-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2729,8 +2724,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-april-3-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2895,8 +2892,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-1-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -2945,10 +2944,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-12-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3053,10 +3050,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-16-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3171,8 +3166,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-2-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3209,10 +3206,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-20-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3237,8 +3232,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-21-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3345,10 +3342,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-24-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3573,10 +3569,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-4-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3695,8 +3689,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-august-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3721,10 +3717,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-1-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3777,10 +3771,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-13-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3819,8 +3812,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-15-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3859,8 +3854,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-17-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -3955,10 +3952,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-23-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4011,8 +4007,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-26-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4163,8 +4161,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-december-7-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4231,8 +4231,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-10-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4257,10 +4259,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-12-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4271,10 +4271,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-12-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4299,10 +4298,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-14-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4313,8 +4311,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-15-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4367,9 +4367,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-18-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4380,10 +4381,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-19-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4394,8 +4394,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4448,10 +4450,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4462,8 +4462,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-22-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4502,8 +4504,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-24-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4570,10 +4574,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-3-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4640,10 +4642,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-february-7-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4696,8 +4697,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-11-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4764,8 +4767,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-15-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4860,8 +4865,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-2-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4872,10 +4879,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4928,10 +4933,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-22-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4942,10 +4945,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-22-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4956,8 +4957,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-23-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -4996,8 +4999,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-25-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5106,8 +5111,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-4-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5160,8 +5167,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-january-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5238,10 +5247,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-11-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5344,8 +5351,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-15-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5396,8 +5405,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-16-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5448,8 +5459,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-18-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5634,8 +5647,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-23-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5806,8 +5821,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-29-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -5988,8 +6005,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-6-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6068,10 +6087,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-july-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6094,10 +6112,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-1-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6188,10 +6204,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-12-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6202,10 +6216,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-12-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6350,8 +6362,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-17-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6362,10 +6376,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-18-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6388,8 +6400,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-19-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6560,8 +6574,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-26-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6598,10 +6614,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-28-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6756,10 +6770,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-june-7-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6864,10 +6876,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-10-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6920,8 +6930,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-13-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -6946,8 +6958,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-14-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7000,8 +7014,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-18-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7026,10 +7042,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-19-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7054,10 +7068,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7068,10 +7080,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-20-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7236,8 +7246,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-march-5-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7412,10 +7424,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-12-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7518,8 +7528,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-16-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7570,10 +7582,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-18-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7638,10 +7648,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7678,10 +7687,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7888,8 +7895,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-29-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -7966,9 +7975,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-may-31-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8127,8 +8137,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-1-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8139,10 +8151,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-1-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8181,9 +8191,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-11-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8250,10 +8261,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-15-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8292,8 +8301,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-18-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8360,8 +8371,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-21-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8456,10 +8469,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-27-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8498,10 +8510,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-29-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8526,10 +8536,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-30-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8554,8 +8562,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-5-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8566,8 +8576,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-6-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8620,8 +8632,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-8-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8658,10 +8672,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-1-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8766,8 +8778,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-12-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8848,10 +8862,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-15-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8862,8 +8874,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-15-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8902,10 +8916,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-17-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8986,8 +8998,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-2-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9012,10 +9026,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-20-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9040,8 +9052,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-23-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9094,10 +9108,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-26-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9150,10 +9162,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-29-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9204,8 +9214,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-30-2024/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9495,9 +9507,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-11-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9520,8 +9533,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-12-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9572,8 +9587,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-15-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9610,8 +9627,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-17-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9622,8 +9641,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-17-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9728,8 +9749,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9752,8 +9775,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-20-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9764,10 +9789,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-20-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9856,8 +9879,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-24-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9868,8 +9893,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-24-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9880,10 +9907,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-25-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9920,8 +9945,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-26-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9932,9 +9959,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-26-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 4,
+      "score": 7,
       "signals": [
         "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -10077,8 +10105,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-30-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -10089,8 +10119,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-30-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -10141,8 +10173,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-september-7-2025/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

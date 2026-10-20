@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-20T20:37:04.175370+00:00",
+  "generated_at": "2026-10-20T20:37:38.726073+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
@@ -15,7 +15,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "618 MB"
+      "repack_size": "618 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/04/91/04914b0a-c28b-4b37-af51-9e92138a1a84.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/04/91/04914b0a-c28b-4b37-af51-9e92138a1a84.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/79/9d/799d82e2-7775-4aa1-b5b4-7be8c1a1b3f7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/79/9d/799d82e2-7775-4aa1-b5b4-7be8c1a1b3f7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3d/a7/3da78ca4-c7e1-49c1-8742-074039f9304c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3d/a7/3da78ca4-c7e1-49c1-8742-074039f9304c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f6/4f/f64fa7fa-407b-46de-9f70-146b7212c6d2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f6/4f/f64fa7fa-407b-46de-9f70-146b7212c6d2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ed/da/edda3efb-ce25-4d6c-bf9b-a6bc0646630e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ed/da/edda3efb-ce25-4d6c-bf9b-a6bc0646630e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3b/cb/3bcb2544-80ba-4af0-99cb-b61271bf3079.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3b/cb/3bcb2544-80ba-4af0-99cb-b61271bf3079.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-20T20:37:38.723630+00:00",
+      "details": {
+        "description": "Transform a Barren World into a Thriving Planet\nPlan B: Terraform is a calm and contemplative sci-fi simulation game set in a near future where humanity must look beyond Earth for survival. Your mission: shape a newly discovered planet into a habitable world. Explore a vast, hex-based terrain with over a million tiles and harness a full ecosystem simulation.\nShape Climate, Water, and Life\nRaise global temperatures with greenhouse gas generators, unlock underground ice to form flowing rivers and vast oceans, and restore vegetation across the land. Experience dynamic weather systems, including evaporation, wind patterns, and rainfall. Turn a lifeless rock into a living world covered in forests, rivers, and oceans.\nBuild Supply Chains and Grow Cities\nExtract minerals, manufacture goods, and move them with trucks, trains, drones, and ships. Establish automated supply lines to support expanding cities, transforming small outposts into thriving metropolises with populations in the millions. Every stage of growth depends on your ability to manage logistics, optimize infrastructure, and keep automation running smoothly.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Plan.B.Terraform.Worlds.of.Fire.and.Water-TENOKE ISO release: tenoke-plan.b.terraform.worlds.of.fire.and.water.iso (2,480,953,344 bytes)",
+          "Game version: v1.1.0 Build 1348; 2 DLCs/Bonuses (Worlds of Fire and Water + Soundtrack in MP3 format) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format nullified, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.3 GB to 618 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.2 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-20T20:37:38.723630+00:00"
     },
     {
       "id": "ready-or-not",

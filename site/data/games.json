@@ -1,9 +1,82 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-20T20:37:38.726073+00:00",
+  "generated_at": "2026-10-20T21:54:05.469023+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
+    {
+      "id": "heroes-of-science-and-fiction",
+      "title": "Heroes of Science and Fiction – v1.0.11.1 + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/heroes-of-science-and-fiction/",
+      "image_url": "https://i1.imageban.ru/out/2026/03/21/dcf80c12e903b50b7f6874c766e648ba.jpg",
+      "post_date": "2026-10-20T23:20:36+03:00",
+      "genres": [
+        "Strategy",
+        "Top",
+        "2D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/bd/28/bd28dca0-3e6a-45b4-9c54-f9ad5e401a67.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bd/28/bd28dca0-3e6a-45b4-9c54-f9ad5e401a67.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0a/af/0aaf9788-d5a0-48a0-9cd5-8907446cb687.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0a/af/0aaf9788-d5a0-48a0-9cd5-8907446cb687.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/94/95/9495f1fd-030f-43ea-8f28-7c6198eed323.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/95/9495f1fd-030f-43ea-8f28-7c6198eed323.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fe/ea/feea7500-0b86-4d4e-859e-4c5087e23ebc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/ea/feea7500-0b86-4d4e-859e-4c5087e23ebc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/89/5089c9f3-0fc7-4f11-8a6e-7c4264d544eb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/89/5089c9f3-0fc7-4f11-8a6e-7c4264d544eb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/88/69/88698668-84e0-4788-8c1b-1e37e58b842f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/88/69/88698668-84e0-4788-8c1b-1e37e58b842f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Heroes of Science and Fiction (formerly known as Silence of the Siren) is a turn-based strategy game where several different space-faring civilizations fight over control of a distant star system. Explore what’s left on the planets and secure resources to build mighty cities. Raise powerful armies and defeat your opponents on the battlefield!\nHeroes of Science and Fiction contains 5 playable factions, four campaigns with 4 levels each and 30+ skirmish maps set in colorful environments.\nEach faction brings its own base, 7 upgradeable unit types, a special skill and a set of commanders to choose from. There are 24 skills, 54 active commander abilities and various pieces of equipment, consumables and artifacts.\nNEW WAR IN AN ANCIENT UNIVERSE\n– The Siren star system, birthplace of a galactic alliance, and the homeworld of a lost Primals civilization, has been cut from the rest of the galaxy. As a result, the carefully built alliance split into bickering factions and secluded colonies. These days, hardly anyone pays attention to the ruins scattered all over the few habitable planets of a freshly isolated system. The deeper you venture into the uncharted regions, the stronger the feeling of endangerment grows. There is something else. An entity, a shade, an echo of whispers from below.\nBUILD AND DISCOVER\n– Explore what’s left on the planets and secure important resources. Use them to upgrade your bases with advanced technology and to hire massive armies. Play as several different factions, recruit skilled commanders, teach them new skills and lead them into battle. Overcome obstacles on the map to gather powerful equipment and ancient artifacts.\nDOMINATE THE BATTLEFIELD\n– Encounter a wide range of enemies in turn-based combat, use your tactical thinking to gain advantage on the battlefield. Learn the unique moves of your units, deploy your commander’s special abilities and outsmart even much stronger opponents.",
+        "game_features": [
+          "Explore a rich sci-fi world and discover secrets of a lost civilization.",
+          "Collect powerful artifacts, secure important resources, upgrade your bases and hire the strongest units.",
+          "Level-up your commanders and crush your opponents in exciting turn-based battles.",
+          "Take control over several different species and factions.",
+          "Old-school strategy game with modern controls and intuitive UI."
+        ],
+        "repack_features": [
+          "Based on Heroes.of.Science.and.Fiction.Typhon.Map.Pack-TENOKE ISO release: tenoke-heroes.of.science.and.fiction.typhon.map.pack.iso (5,040,392,192 bytes)",
+          "Game version: v1.0.8; Typhon Map Pack & Bonus OST DLCs are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST",
+          "Significantly smaller archive size (compressed from 4.7 to 1.3/1.5 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 4.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "plan-b-terraform",
       "title": "Plan B: Terraform – v1.1.0 Build 1348 + 2 DLCs/Bonuses",
@@ -37844,79 +37917,6 @@
           "Installation takes 1-2 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 2.6 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "heroes-of-science-and-fiction",
-      "title": "Heroes of Science and Fiction – v1.0.8 + 2 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/heroes-of-science-and-fiction/",
-      "image_url": "https://i1.imageban.ru/out/2026/03/21/dcf80c12e903b50b7f6874c766e648ba.jpg",
-      "post_date": "2026-06-27T20:20:36+03:00",
-      "genres": [
-        "Strategy",
-        "Top",
-        "2D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/bd/28/bd28dca0-3e6a-45b4-9c54-f9ad5e401a67.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/bd/28/bd28dca0-3e6a-45b4-9c54-f9ad5e401a67.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0a/af/0aaf9788-d5a0-48a0-9cd5-8907446cb687.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0a/af/0aaf9788-d5a0-48a0-9cd5-8907446cb687.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/94/95/9495f1fd-030f-43ea-8f28-7c6198eed323.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/94/95/9495f1fd-030f-43ea-8f28-7c6198eed323.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fe/ea/feea7500-0b86-4d4e-859e-4c5087e23ebc.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fe/ea/feea7500-0b86-4d4e-859e-4c5087e23ebc.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/50/89/5089c9f3-0fc7-4f11-8a6e-7c4264d544eb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/50/89/5089c9f3-0fc7-4f11-8a6e-7c4264d544eb.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/88/69/88698668-84e0-4788-8c1b-1e37e58b842f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/88/69/88698668-84e0-4788-8c1b-1e37e58b842f.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Heroes of Science and Fiction (formerly known as Silence of the Siren) is a turn-based strategy game where several different space-faring civilizations fight over control of a distant star system. Explore what’s left on the planets and secure resources to build mighty cities. Raise powerful armies and defeat your opponents on the battlefield!\nHeroes of Science and Fiction contains 5 playable factions, four campaigns with 4 levels each and 30+ skirmish maps set in colorful environments.\nEach faction brings its own base, 7 upgradeable unit types, a special skill and a set of commanders to choose from. There are 24 skills, 54 active commander abilities and various pieces of equipment, consumables and artifacts.\nNEW WAR IN AN ANCIENT UNIVERSE\n– The Siren star system, birthplace of a galactic alliance, and the homeworld of a lost Primals civilization, has been cut from the rest of the galaxy. As a result, the carefully built alliance split into bickering factions and secluded colonies. These days, hardly anyone pays attention to the ruins scattered all over the few habitable planets of a freshly isolated system. The deeper you venture into the uncharted regions, the stronger the feeling of endangerment grows. There is something else. An entity, a shade, an echo of whispers from below.\nBUILD AND DISCOVER\n– Explore what’s left on the planets and secure important resources. Use them to upgrade your bases with advanced technology and to hire massive armies. Play as several different factions, recruit skilled commanders, teach them new skills and lead them into battle. Overcome obstacles on the map to gather powerful equipment and ancient artifacts.\nDOMINATE THE BATTLEFIELD\n– Encounter a wide range of enemies in turn-based combat, use your tactical thinking to gain advantage on the battlefield. Learn the unique moves of your units, deploy your commander’s special abilities and outsmart even much stronger opponents.",
-        "game_features": [
-          "Explore a rich sci-fi world and discover secrets of a lost civilization.",
-          "Collect powerful artifacts, secure important resources, upgrade your bases and hire the strongest units.",
-          "Level-up your commanders and crush your opponents in exciting turn-based battles.",
-          "Take control over several different species and factions.",
-          "Old-school strategy game with modern controls and intuitive UI."
-        ],
-        "repack_features": [
-          "Based on Heroes.of.Science.and.Fiction.Typhon.Map.Pack-TENOKE ISO release: tenoke-heroes.of.science.and.fiction.typhon.map.pack.iso (5,040,392,192 bytes)",
-          "Game version: v1.0.8; Typhon Map Pack & Bonus OST DLCs are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus OST",
-          "Significantly smaller archive size (compressed from 4.7 to 1.3/1.5 GB)",
-          "Installation takes 1-3 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 4.7 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-20T04:07:16.388691+00:00",
+  "generated_at": "2026-10-20T04:07:57.675780+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-19T09:18:12.501767+00:00",
   "games": [
@@ -84,7 +84,58 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "5.1 GB"
+      "repack_size": "5.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/7e/8d/7e8d5eed-f269-4598-8ca1-b350bcbc0e27.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7e/8d/7e8d5eed-f269-4598-8ca1-b350bcbc0e27.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/45/92/45925a8d-1302-4c74-aea2-71fe82188bea.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/45/92/45925a8d-1302-4c74-aea2-71fe82188bea.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/53/c6/53c663f3-8dd5-4f25-b6a8-c336a91877af.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/53/c6/53c663f3-8dd5-4f25-b6a8-c336a91877af.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6c/e0/6ce09d17-d1c0-45cf-90a4-0a011f145cf1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6c/e0/6ce09d17-d1c0-45cf-90a4-0a011f145cf1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/94/1a/941af9bc-eb44-45c2-a8f2-de14194bfe0a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/1a/941af9bc-eb44-45c2-a8f2-de14194bfe0a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/19/9f190c3e-ff15-484c-8cc2-73766c829ac0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/19/9f190c3e-ff15-484c-8cc2-73766c829ac0.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-20T04:07:57.673565+00:00",
+      "details": {
+        "description": "Enter Birmingham’s criminal underworld as Elisa seeks revenge for her murdered husband. Cohen 1939 pairs Peaky Blinders-inspired gangster atmosphere with the lethal top-down combat of Hotline Miami.\nYour enemies die fast. So do you. Read their positions, choose your moment, and strike before they can react. Every encounter puts your aim, movement, and judgement to the test.\nStun an enemy with your empty gun, grab a fresh weapon, and keep moving. Chain gunfire, throws, and melee attacks to turn a desperate fight around.\nFour playable characters bring different abilities to the fight, from sliding shots and focused fire to raven summons and rage.\nApproach from a blind spot or make noise to draw enemies towards you. Choose where the fight begins—and who goes down first. A careful approach can give you the opening you need.\nRain-soaked streets, smoke-filled hideouts, and sharply dressed gangsters set the scene for a bloody reckoning. Follow Elisa into a world of betrayal as she hunts those responsible for her husband’s death.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Cohen.1939-RUNE ISO release: rune-cohen.1939.iso (9,370,173,440 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 8.7 to 5.1 GB)",
+          "Installation takes 2-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 18.3 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-20T04:07:57.673565+00:00"
     },
     {
       "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2",

@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-20T08:53:30.620151+00:00",
+  "generated_at": "2026-10-20T20:37:04.175370+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
+    {
+      "id": "plan-b-terraform",
+      "title": "Plan B: Terraform – v1.1.0 Build 1348 + 2 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/plan-b-terraform/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/20/711c08b01a65a7b6fc0480e4a61fff93.jpg",
+      "post_date": "2026-10-20T22:13:40+03:00",
+      "genres": [
+        "Managerial",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "618 MB"
+    },
     {
       "id": "ready-or-not",
       "title": "Ready or Not: Digital Deluxe Edition, v142058 (v1.5.3) + v66884 + 6 DLCs/Bonuses",

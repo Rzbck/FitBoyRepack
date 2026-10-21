@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-21T00:27:09.899511+00:00",
+  "generated_at": "2026-10-21T00:27:45.418485+00:00",
   "source_pages": 812,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
@@ -16,7 +16,64 @@
         "3D",
         "Japanese"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/0b/66/0b6673cf-1f5b-4c43-a977-344ae0c6da8b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0b/66/0b6673cf-1f5b-4c43-a977-344ae0c6da8b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/51/b4/51b40a4e-ca70-41d7-83b8-a32787c4bca6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/51/b4/51b40a4e-ca70-41d7-83b8-a32787c4bca6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/72/8e726744-c087-491e-849c-c718f15685fa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/72/8e726744-c087-491e-849c-c718f15685fa.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/34/0b/340b5f01-7e6f-4bc1-993f-91f592243a9e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/34/0b/340b5f01-7e6f-4bc1-993f-91f592243a9e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6b/72/6b72206a-b896-4175-9a4d-f00d859bc7ca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6b/72/6b72206a-b896-4175-9a4d-f00d859bc7ca.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/92/be/92be7807-3a0c-406e-b4d1-94a3f6d35fa3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/92/be/92be7807-3a0c-406e-b4d1-94a3f6d35fa3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-21T00:27:45.416533+00:00",
+      "details": {
+        "description": "Explore the world of FINAL FANTASY XV with a cast of cute and cool characters!\nThe Tale of the Chosen King, Savior to the Star.\nAfter years of fighting, the nations of Lucis and Niflheim at last agree to an armistice.\nAs a symbol of this promised peace, Noctis, crown prince of Lucis, is to wed the Lady Lunafreya of Tenebrae.\nThe prince sets forth for his wedding on the eve of the signing ceremony, sent off by his father, King Regis.\nUnbeknownst to Noctis, however, the journey ahead is fraught with perils…",
+        "game_features": [],
+        "repack_features": [
+          "Based on FINAL.FANTASY.XV.POCKET.EDITION-RUNE ISO release: rune-final.fantasy.xv.pocket.edition.iso (2,992,111,616 bytes)",
+          "Game version: v1.4.524.2 MS Store; All 10 Chapters are included",
+          "Installer makes all necessary steps to register the game upon installation, but it it fails, run “InstallApp.exe” in the installed game folder",
+          "To run the game find it with Windows search, desktop icon won’t work",
+          "Upon the first launch the game will ask you for folder to keep saves in. You either create a new subfolder, like “FF15PE” or use any existing folder",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you can skip downloading and installing of optional voiceovers. English VOs are included by default",
+          "Significantly smaller archive size (compressed from 2.8 to 1.3/1.8 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 4 GB (8.1 GB during installation)",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-21T00:27:45.416533+00:00"
     },
     {
       "id": "heroes-of-science-and-fiction",

@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-21T00:27:45.418485+00:00",
-  "source_pages": 812,
+  "generated_at": "2026-10-21T04:51:12.745093+00:00",
+  "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
+    {
+      "id": "stupid-never-dies",
+      "title": "Stupid Never Dies: Glorious Idiot Edition + DLC",
+      "source_url": "https://fitgirl-repacks.site/stupid-never-dies/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/21/a900d9f5eb5fa0e6b4e70af44ad2cb9a.jpg",
+      "post_date": "2026-10-21T05:39:09+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Third-person",
+        "3D",
+        "Zombies"
+      ],
+      "repack_size": "15.5 GB"
+    },
     {
       "id": "final-fantasy-15-pocket-edition",
       "title": "Final Fantasy XV: Pocket Edition – v1.4.524.2 + All 10 Chapters",

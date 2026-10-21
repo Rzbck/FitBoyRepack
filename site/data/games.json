@@ -1,9 +1,78 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-21T04:51:48.839846+00:00",
+  "generated_at": "2026-10-21T22:41:25.711876+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
+    {
+      "id": "snowrunner",
+      "title": "SnowRunner: 4-Year Anniversary Edition, v44.0 (Season 19 Update) + 50 DLCs + Chill Nature Beats Soundtrack",
+      "source_url": "https://fitgirl-repacks.site/snowrunner/",
+      "image_url": "https://i7.imageban.ru/out/2021/09/12/ee148f62e7f90ad30b93bb89ee72a51c.jpg",
+      "post_date": "2026-10-22T00:30:58+03:00",
+      "genres": [
+        "Driving",
+        "Open world",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/a0/a4/a0a4d78a-68ca-4d4d-b110-52d7274cf2be.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/a4/a0a4d78a-68ca-4d4d-b110-52d7274cf2be.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/59/055988bc-1b3e-4235-99ba-d654dd8f26cb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/59/055988bc-1b3e-4235-99ba-d654dd8f26cb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0a/b7/0ab77084-d140-4199-a016-0ed8baec8bca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0a/b7/0ab77084-d140-4199-a016-0ed8baec8bca.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e4/22/e422a141-fb3e-4d51-8081-ea956395f7ce.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e4/22/e422a141-fb3e-4d51-8081-ea956395f7ce.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/35/cd/35cd6059-b7c9-4694-807f-9e689b46387f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/35/cd/35cd6059-b7c9-4694-807f-9e689b46387f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/db/09/db099fba-45d0-4050-ab70-8d3c9afdd4d5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/db/09/db099fba-45d0-4050-ab70-8d3c9afdd4d5.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Get ready for the next-generation off-road experience!\nIn SnowRunner you control powerful vehicles and conquer extreme environments in an open game world in the most advanced terrain simulation so far. Drive 40 Ford, Chevrolet or Freightliner vehicles and leave your mark in an untamed, open game world.\nOvercome mud, raging waters, snow, and frozen lakes as you complete dangerous missions and missions. Expand and personalize your fleet with numerous upgrades and accessories, such as an exhaust snorkel for deep water or snow chains for snowy areas.\nIncluded DLCs (unlocked after you complete the tutorial and get access to the garage)\nSmaller DLCs are available within larger DLC packs listed below.\nAnniversary DLC\nBurning Bright Vinyl Wrap Pack\nClasico Pack\nCrocodile Pack\nDragon Wagons Dual Pack\nFreightliner & Western Star Dual Pack\nGMC Brigadier\nHigh Roller Pack\nJack of All Treads Tire Pack\nJeep Dual Pack\nKenworth Dual Pack\nKenworth W990\nLand Rover Dual Pack\nLoaded Dice Vinyl Wrap\nMack Dual Pack\nMercedes-Benz Trucks Dual Pack 1\nNavistar 5000-MV Tractor\nPathfinders Vinyl Wrap Pack\nRezvani Hercules\nRezvani Tank\nSabertooth Livery\nSalt of the Earth Vinyl Wrap Pack\nSave the Day Vinyl Wrap Pack\nScorched Vinyl Wrap\nSeason 1: Search & Recover\nSeason 2: Explore & Expand\nSeason 3: Locate & Deliver\nSeason 4: New Frontiers\nSeason 5: Build & Dispatch\nSeason 6: Haul & Hustle\nSeason 7: Compete & Conquer\nSeason 8: Grand Harvest\nSeason 9: Renew & Rebuild\nSeason 10: Fix & Connect\nSeason 11: Lights & Cameras\nSeason 12: Public Energy\nSeason 13: Dig & Drill\nSeason 14: Reap & Sow\nSeason 15: Oil & Dirt\nSeason 16: High Voltage\nSeason 17: Repair & Rescue\nSeason 18: Patch & Power\nTATRA Dual Pack\nThe Atom\nThe Mastodon\nTrue Colors Vinyl Wrap\nWestern Star 49X\nWestern Star Wolf Pack\nYear Passes are not actual DLCs, hence not included in the list.",
+        "game_features": [],
+        "repack_features": [
+          "Based on SnowRunner.Patch.and.Power-RUNE ISO release: rune-snowrunner.patch.and.power.iso (55,159,160,832 bytes)",
+          "Bonus Chill Nature Beats Soundtrack (774 MB) added, thanks to NoeRIη!",
+          "Game version is v42.0 (Season 18 Update); 48 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST",
+          "Significantly smaller archive size (compressed from cumulative 52.1 GB to 35.5/36.2 GB)",
+          "Installation takes 17-45 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 68.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "stupid-never-dies",
       "title": "Stupid Never Dies: Glorious Idiot Edition + DLC",
@@ -38368,75 +38437,6 @@
           "Installation takes 1-3 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 7.5 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "snowrunner",
-      "title": "SnowRunner: 4-Year Anniversary Edition, v42.0 (Season 18 Update) + 48 DLCs + Chill Nature Beats Soundtrack",
-      "source_url": "https://fitgirl-repacks.site/snowrunner/",
-      "image_url": "https://i7.imageban.ru/out/2021/09/12/ee148f62e7f90ad30b93bb89ee72a51c.jpg",
-      "post_date": "2026-06-26T23:00:58+03:00",
-      "genres": [
-        "Driving",
-        "Open world",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/a0/a4/a0a4d78a-68ca-4d4d-b110-52d7274cf2be.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a0/a4/a0a4d78a-68ca-4d4d-b110-52d7274cf2be.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/05/59/055988bc-1b3e-4235-99ba-d654dd8f26cb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/05/59/055988bc-1b3e-4235-99ba-d654dd8f26cb.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0a/b7/0ab77084-d140-4199-a016-0ed8baec8bca.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0a/b7/0ab77084-d140-4199-a016-0ed8baec8bca.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e4/22/e422a141-fb3e-4d51-8081-ea956395f7ce.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e4/22/e422a141-fb3e-4d51-8081-ea956395f7ce.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/35/cd/35cd6059-b7c9-4694-807f-9e689b46387f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/35/cd/35cd6059-b7c9-4694-807f-9e689b46387f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/db/09/db099fba-45d0-4050-ab70-8d3c9afdd4d5.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/db/09/db099fba-45d0-4050-ab70-8d3c9afdd4d5.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Get ready for the next-generation off-road experience!\nIn SnowRunner you control powerful vehicles and conquer extreme environments in an open game world in the most advanced terrain simulation so far. Drive 40 Ford, Chevrolet or Freightliner vehicles and leave your mark in an untamed, open game world.\nOvercome mud, raging waters, snow, and frozen lakes as you complete dangerous missions and missions. Expand and personalize your fleet with numerous upgrades and accessories, such as an exhaust snorkel for deep water or snow chains for snowy areas.\nIncluded DLCs (unlocked after you complete the tutorial and get access to the garage)\nSmaller DLCs are available within larger DLC packs listed below.\nAnniversary DLC\nBurning Bright Vinyl Wrap Pack\nClasico Pack\nCrocodile Pack\nDragon Wagons Dual Pack\nFreightliner & Western Star Dual Pack\nGMC Brigadier\nHigh Roller Pack\nJack of All Treads Tire Pack\nJeep Dual Pack\nKenworth Dual Pack\nKenworth W990\nLand Rover Dual Pack\nLoaded Dice Vinyl Wrap\nMack Dual Pack\nMercedes-Benz Trucks Dual Pack 1\nNavistar 5000-MV Tractor\nPathfinders Vinyl Wrap Pack\nRezvani Hercules\nRezvani Tank\nSabertooth Livery\nSalt of the Earth Vinyl Wrap Pack\nSave the Day Vinyl Wrap Pack\nScorched Vinyl Wrap\nSeason 1: Search & Recover\nSeason 2: Explore & Expand\nSeason 3: Locate & Deliver\nSeason 4: New Frontiers\nSeason 5: Build & Dispatch\nSeason 6: Haul & Hustle\nSeason 7: Compete & Conquer\nSeason 8: Grand Harvest\nSeason 9: Renew & Rebuild\nSeason 10: Fix & Connect\nSeason 11: Lights & Cameras\nSeason 12: Public Energy\nSeason 13: Dig & Drill\nSeason 14: Reap & Sow\nSeason 15: Oil & Dirt\nSeason 16: High Voltage\nSeason 17: Repair & Rescue\nSeason 18: Patch & Power\nTATRA Dual Pack\nThe Atom\nThe Mastodon\nTrue Colors Vinyl Wrap\nWestern Star 49X\nWestern Star Wolf Pack\nYear Passes are not actual DLCs, hence not included in the list.",
-        "game_features": [],
-        "repack_features": [
-          "Based on SnowRunner.Patch.and.Power-RUNE ISO release: rune-snowrunner.patch.and.power.iso (55,159,160,832 bytes)",
-          "Bonus Chill Nature Beats Soundtrack (774 MB) added, thanks to NoeRIη!",
-          "Game version is v42.0 (Season 18 Update); 48 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus OST",
-          "Significantly smaller archive size (compressed from cumulative 52.1 GB to 35.5/36.2 GB)",
-          "Installation takes 17-45 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 68.6 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

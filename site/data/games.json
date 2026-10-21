@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-21T04:51:12.745093+00:00",
+  "generated_at": "2026-10-21T04:51:48.839846+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "3D",
         "Zombies"
       ],
-      "repack_size": "15.5 GB"
+      "repack_size": "15.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/9a/ae/9aae82db-7679-46fd-8ad9-66e9ee09b422.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/ae/9aae82db-7679-46fd-8ad9-66e9ee09b422.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/58/30580159-15e1-4fab-b44d-d99d2f15c417.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/58/30580159-15e1-4fab-b44d-d99d2f15c417.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/1e/a31e19f4-e2cc-428c-baa0-6afbb9859f04.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/1e/a31e19f4-e2cc-428c-baa0-6afbb9859f04.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f6/75/f675debf-9112-4b3b-9012-e35bbae8c3e3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f6/75/f675debf-9112-4b3b-9012-e35bbae8c3e3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/86/f6/86f61b89-985c-4096-aeca-8ecc7a38a480.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/86/f6/86f61b89-985c-4096-aeca-8ecc7a38a480.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/44/50/4450dd45-f211-4b25-a760-1fe9216cc356.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/44/50/4450dd45-f211-4b25-a760-1fe9216cc356.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-21T04:51:48.837395+00:00",
+      "details": {
+        "description": "Control Davy, the weakest zombie imaginable, and battle through a mysterious dungeon to defeat KOM, the King of Monsters.\nEvery dive makes Davy grow stronger faster. Customize his body, devour powerful monsters, steal their abilities, and race against time to conquer the dungeon.\nCreated by GPTRACK50, a studio founded by veteran action game developers, Stupid Never Dies is a unique single-player 3D action RPG combining fast-paced growth, bizarre humor, and stylish action.\nDavy, a timid zombie, falls in love at first sight with Julia, a college girl frozen to death during the Great War.\nTo bring her back to life, he must defeat KOM, recover humanity’s lost knowledge, and survive the dungeon’s deadly depths.\nCan the weakest zombie save the girl he loves—and maybe the world?\nDefeat elite monsters, consume their cores, and steal their powers. Transform into 11 unique Styles, including Werewolf, Harpy, Golem, Vampire, and more.\nReplace Davy’s body parts with powerful Overtech gear to boost stats and unlock new Active and Passive Skills. Fight your way with endless build combinations.\nUnleash Davy’s imagination to temporarily transform reality and dramatically boost all of his abilities.\nBattle classic monsters enhanced by Overtech, including werewolves, vampires, harpies, lizardmen, and more.\nDifferent weapons, armor, and abilities make every encounter fresh and unpredictable.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Stupid.Never.Dies-RUNE ISO release: rune-stupid.never.dies.iso (22,677,258,240 bytes)",
+          "In-game item “TickTock Teddies: Nonsense Overload Pack” DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 21.1 to 15.5 GB)",
+          "Installation takes from 13 minutes (on 32-threads CPU) up to 40 minutes (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 21.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-21T04:51:48.837395+00:00"
     },
     {
       "id": "final-fantasy-15-pocket-edition",

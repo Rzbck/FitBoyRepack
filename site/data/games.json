@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-21T22:41:25.711876+00:00",
+  "generated_at": "2026-10-22T00:59:23.866039+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
+    {
+      "id": "denizen",
+      "title": "Denizen – v1.0.2",
+      "source_url": "https://fitgirl-repacks.site/denizen/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/21/83922552174fd8fde92c5a55bc6fe669.jpg",
+      "post_date": "2026-10-22T03:24:11+03:00",
+      "genres": [
+        "Lifestyle",
+        "Open world",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "2.2 GB"
+    },
     {
       "id": "snowrunner",
       "title": "SnowRunner: 4-Year Anniversary Edition, v44.0 (Season 19 Update) + 50 DLCs + Chill Nature Beats Soundtrack",

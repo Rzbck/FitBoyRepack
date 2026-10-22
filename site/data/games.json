@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T01:00:03.540732+00:00",
+  "generated_at": "2026-10-22T04:50:15.617925+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
+    {
+      "id": "driveclub",
+      "title": "DRIVECLUB – v1.28 EU/US + All DLCs (Recompiled for PC v0.2.5)",
+      "source_url": "https://fitgirl-repacks.site/driveclub/",
+      "image_url": "https://i1.imageban.ru/out/2026/10/22/77811887065427c23d6183b9fa426a89.jpg",
+      "post_date": "2026-10-22T05:25:51+03:00",
+      "genres": [
+        "Arcade",
+        "Racing",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "9 GB"
+    },
     {
       "id": "denizen",
       "title": "Denizen – v1.0.2",

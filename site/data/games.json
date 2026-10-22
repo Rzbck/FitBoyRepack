@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T04:50:15.617925+00:00",
+  "generated_at": "2026-10-22T04:50:59.929247+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
@@ -17,7 +17,63 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "9 GB"
+      "repack_size": "9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/da/29/da29c9e7-f640-4126-9afd-8ca9b1aecc13.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/da/29/da29c9e7-f640-4126-9afd-8ca9b1aecc13.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/a2/8ea27141-1a3e-4fa9-87b5-6ac5df4c30a3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/a2/8ea27141-1a3e-4fa9-87b5-6ac5df4c30a3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/c4/b1c42fb5-d976-4048-b788-e75d8e1f3309.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/c4/b1c42fb5-d976-4048-b788-e75d8e1f3309.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/12/a4/12a4b591-fa2c-45a0-a2e8-84d8a31ac68e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/a4/12a4b591-fa2c-45a0-a2e8-84d8a31ac68e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/5f/fb5f8ae2-0ae4-4655-b738-19dee07d05d6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/5f/fb5f8ae2-0ae4-4655-b738-19dee07d05d6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/e0/69e07c81-2317-472e-9cda-4cde4ac8bf3c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/e0/69e07c81-2317-472e-9cda-4cde4ac8bf3c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-22T04:50:59.927148+00:00",
+      "details": {
+        "description": "Driveclub is a 2014 racing video game developed by Evolution Studios and published by Sony Computer Entertainment exclusively for the PlayStation 4. Departing from the strict simulation of franchises like Gran Turismo, the game focuses on accessible arcade-style racing that still rewards precise handling and driving lines. Players compete across various real-world locations—including Chile, India, Japan, Norway, Scotland, and Canada—behind the wheel of a vast roster of meticulously detailed, licensed sports cars and hypercars.\nThe core experience revolves around the concept of clubs, allowing up to six players to band together to form cohesive racing teams. Within these clubs, members work collaboratively to complete distinct challenges, earn Accrued Fame points, and level up to unlock exclusive vehicles and rewards. The game seamlessly integrates synchronous and asynchronous multiplayer elements, constantly pushing real-time “Faceoffs” and dynamically generated community challenges onto the player’s screen, ensuring that every corner turned contributes to their team’s global standing.\nUpon its initial launch, Driveclub suffered from severe server instability that overshadowed its release; however, subsequent updates transformed it into a critical success and a visual showcase for the PlayStation 4. The developers introduced an industry-leading dynamic weather system and an expansive photo mode that highlighted the game’s stunning graphical fidelity. Despite its eventual redemption and strong post-launch support, Sony officially shut down the game’s online servers in March 2020 and removed the title from digital storefronts, leaving it accessible today only through physical disc copies for offline play.",
+        "game_features": [],
+        "repack_features": [
+          "Based on two PS4 releases: CUSA00003 (European) & CUSA00093 (US), both updated to v1.28 and bundled with all released DLCs",
+          "You can switch between versions by running “Switch to European Version.bat” or “Switch to US Version.bat”, though it doesn’t change anything but saves location – builds are almost identical",
+          "driveclub-recomp” v0.2.5 by OverkillLabs3 installed over",
+          "Check this page for newer builds if you have issues:",
+          "https://github.com/OverkillLabs3/driveclub-recomp",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 35.1 to 9 GB)",
+          "Installation takes 2-10 minutes (depending on system, mostly on your drive speed)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 35.1 GB (up to 47.1 GB during installation)",
+          "Language can be changed in the launcher settings (not all languages are available in the included dumps)",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-22T04:50:59.927148+00:00"
     },
     {
       "id": "denizen",

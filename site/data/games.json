@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T00:59:23.866039+00:00",
+  "generated_at": "2026-10-22T01:00:03.540732+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-20T08:53:30.620151+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "2.2 GB"
+      "repack_size": "2.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/93/b2/93b2aa16-d7e8-4f3a-ac6c-bf71516e10f8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/93/b2/93b2aa16-d7e8-4f3a-ac6c-bf71516e10f8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/d0/0fd052ef-c15f-458a-9645-53e6ea063020.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/d0/0fd052ef-c15f-458a-9645-53e6ea063020.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/46/60/46607687-8c9f-4756-b482-736444877f14.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/46/60/46607687-8c9f-4756-b482-736444877f14.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b7/02/b70269d5-bd5a-4dc7-bcef-586f8fd4836f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b7/02/b70269d5-bd5a-4dc7-bcef-586f8fd4836f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/4d/c74dd042-1c0e-46e7-9990-cacd65206932.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/4d/c74dd042-1c0e-46e7-9990-cacd65206932.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/e9/f5e9fe40-132f-4bf8-ae09-8ed88ab6094c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/e9/f5e9fe40-132f-4bf8-ae09-8ed88ab6094c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-22T01:00:03.538324+00:00",
+      "details": {
+        "description": "Welcome to Cedar Shores\nEnter the bustling city of Cedar Shores and build your future! Apply for a job at a local business, open your own shop, and uncover new opportunities around every corner.\nMake Yourself at Home\nChoose from a variety of residences to make your own, from suburban houses to city apartments, and personalize every detail with your selection of furniture and finishes.\nClimb to the Top\nTake on new challenges, make connections, and shape your journey in a world where your ambitions set the pace.\nUnwind in Style\nPick out a new ride at a local car dealership, refresh your wardrobe, connect with friends, and relax after work at the casino, club, or in the comfort of your own home.\nStep Into the Action\nExplore diverse activities from cooking and high-speed racing to DJing, fishing, and underground ventures. Pursue your passions and uncover new adventures!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Denizen-RUNE ISO release: rune-denizen.iso (4,960,288,768 bytes)",
+          "Game version: v1.0.2",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 4.6 to 2.2 GB)",
+          "Installation takes 2-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 11.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-22T01:00:03.538324+00:00"
     },
     {
       "id": "snowrunner",

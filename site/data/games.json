@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T20:04:19.540046+00:00",
+  "generated_at": "2026-10-22T23:21:01.790244+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-22T08:54:38.814476+00:00",
   "games": [
+    {
+      "id": "tales-of-eternia-remastered",
+      "title": "Tales of Eternia Remastered: Deluxe Edition – v2.0.0 + 4 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/tales-of-eternia-remastered/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/22/91cd49ba847a2b620c47c3828f967c6b.jpg",
+      "post_date": "2026-10-23T02:20:26+03:00",
+      "genres": [
+        "RPG",
+        "Isometric",
+        "3D",
+        "Japanese",
+        "Real-time"
+      ],
+      "repack_size": "4.2 GB"
+    },
     {
       "id": "prohibeast",
       "title": "PROHIBEAST: Soundtrack Edition, v1.0.5 + Bonus OST",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T23:21:01.790244+00:00",
+  "generated_at": "2026-10-22T23:21:38.427893+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-22T08:54:38.814476+00:00",
   "games": [
@@ -17,7 +17,61 @@
         "Japanese",
         "Real-time"
       ],
-      "repack_size": "4.2 GB"
+      "repack_size": "4.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f0/36/f036527a-5c1b-4453-9df3-21ef10a35f50.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f0/36/f036527a-5c1b-4453-9df3-21ef10a35f50.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/18/73/18732d0c-9a65-4248-9fff-d020ca47ca76.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/73/18732d0c-9a65-4248-9fff-d020ca47ca76.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f2/c7/f2c76597-d4ba-4f63-abad-621f3fdc4433.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f2/c7/f2c76597-d4ba-4f63-abad-621f3fdc4433.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/54/63/54638e4a-a931-44da-8f3b-1ecb92e0c951.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/54/63/54638e4a-a931-44da-8f3b-1ecb92e0c951.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e6/19/e619ff6c-d1ce-4a81-839b-17b3c0f4998d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e6/19/e619ff6c-d1ce-4a81-839b-17b3c0f4998d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bc/9a/bc9a33ea-017b-4aa4-ae0b-62f9aabfe085.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bc/9a/bc9a33ea-017b-4aa4-ae0b-62f9aabfe085.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-22T23:21:38.425196+00:00",
+      "details": {
+        "description": "Experience Tales of Eternia, remastered for the first time ever.• An Epic Journey with Two Worlds at Stake\nJourney to Eternia, a world split into two isolated realms, Inferia and Celestia.\nIn the remote Inferian village of Rasheans, Reid Hershel and his childhood friend Farah Oersted meet a mysterious girl named Meredy. During their journey to discover Meredy’s origins, the group discovers that a collision called the “Great Fall” threatens both Inferia and Celesita.\nHarnessing the power of elemental spirits known as the Greater Craymels, Reid and his companions embark on an epic journey to save the two realms from catastrophe.• Exhilarating Battle Action with Speed and Freedom\nFeaturing the Aggressive Linear Motion Battle System (A-LMBS), which enables diverse Arte usage, continued combos, and coordination with each unique party member.\nExperience thrilling combat as you outmaneuver enemies and defeat them one after another with fast-paced, dynamic 2D battle action.• The Same Moving Experience, Now Easier to Play\nGameplay is better than ever with the quality-of-life features that have been added, including destination markers, the ability to disable enemy encounters, and high-speed mode during auto-battle.\nAdditionally, graphics and SFX can be toggled between modes, allowing you to experience the nostalgic atmosphere of the original game.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Tales.of.Eternia.Remastered-RUNE ISO release: rune-tales.of.eternia.remastered.iso (7,850,524,672 bytes)",
+          "Game version: v2.0.0; 4 DLCs/Bonuses (Super Growth Support Item Set, Battle BGM pack, Deluxe Upgrade Pack, Digital Artbook & Soundtrack) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content application & Japanese localization",
+          "Significantly smaller archive size (compressed from 7.3 to 4.2~5.8 GB, depending on selected components)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 9 GB",
+          "Language can be changed in “Tales of Eternia Remastered_Data/Plugins/x86_64/steam_emu.ini”",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-22T23:21:38.425196+00:00"
     },
     {
       "id": "prohibeast",

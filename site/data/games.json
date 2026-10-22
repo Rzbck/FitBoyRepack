@@ -1,9 +1,77 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T08:54:38.814476+00:00",
+  "generated_at": "2026-10-22T20:04:19.540046+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-22T08:54:38.814476+00:00",
   "games": [
+    {
+      "id": "prohibeast",
+      "title": "PROHIBEAST: Soundtrack Edition, v1.0.5 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/prohibeast/",
+      "image_url": "https://i4.imageban.ru/out/2026/06/05/99fed21fd7bfaf4f5a984c8ad712f8f3.jpg",
+      "post_date": "2026-10-22T21:30:34+03:00",
+      "genres": [
+        "Strategy",
+        "Tactics",
+        "Stealth",
+        "Top-down",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/db/1a/db1abdfb-0889-4049-91dc-c520db82543d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/db/1a/db1abdfb-0889-4049-91dc-c520db82543d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/67/93/6793e2e6-656e-459d-80cb-5b01f68e54f3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/67/93/6793e2e6-656e-459d-80cb-5b01f68e54f3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8d/e1/8de18144-2d11-423a-9be5-eba5cc551e5c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8d/e1/8de18144-2d11-423a-9be5-eba5cc551e5c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c0/af/c0af621a-c7f0-4db5-895e-a5b4a63df4f2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c0/af/c0af621a-c7f0-4db5-895e-a5b4a63df4f2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a1/a4/a1a43529-bab3-46b2-ada9-ef30f2c9b094.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a1/a4/a1a43529-bab3-46b2-ada9-ef30f2c9b094.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/10/bc/10bc373d-35ce-479d-a5ae-6348006cc8e2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/10/bc/10bc373d-35ce-479d-a5ae-6348006cc8e2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "In Prohibeast, a real-time tactical infiltration game, dive into a corruption-ridden 1930s Chicago plagued by smuggling and black-market meat.\nAs meat consumption is outlawed, Al Capone expands his criminal empire through a ruthless black market. Faced with widespread corruption, Eliot Ness and his team of Untouchables are ready to strike from the shadows to bring down the mob from within.\nInfiltration and Strategy: Make Your Mark with Your Own Style\nEach mission will put your sense of strategy and stealth to the test.\n– Plan your operations – Choose your approach: stealthy infiltration, silent takedowns, or clever diversions.\n– Exploit the environment – Hideouts, alternate routes, distractions… Each mission offers multiple solutions.\n– Outsmart the enemies’ heightened senses – Sharp eyesight, acute hearing, and keen smell… Discover a whole new way to play: infiltration is no longer just about hiding!\nTake Control of the Untouchables\nAs the leader of the Untouchables, take control of Eliot Ness and his team, a group of specialists with complementary skills where each member plays a key role in your infiltration operations:\n– Eliot Ness – A fearless and versatile leader, able to adapt to any situation and lead even the riskiest missions to success.\n– Malone B. Clonan – A loyal right-hand man and hardened veteran who favors a more direct, forceful approach.\n– Frank E. Eager – A methodical and discreet sniper, eliminating targets with deadly precision.\nOther specialists will also join your team to help refine your strategies.\nLearn to harness each member’s strengths and weaknesses to build unique strategies and strike the mob where they least expect it.\nInfiltrate Iconic Locations\nEach mission plunges you into the heart of Chicago, in places where crime and corruption thrive.\nObserve, plan, and adapt your approach to achieve your objectives without leaving a trace.\nFrom the Loop, Chicago’s iconic district and hub of corrupt power, to the mayor’s mansion where criminal alliances are forged, and the foggy Lake Michigan docks, a major hub for smuggling, each location is filled with dangers and opportunities, demanding tailored strategies to survive.\nBut more criminal strongholds await, where the slightest mistake could be fatal.\nOnly the most strategic minds will manage to infiltrate without a trace.\nCan you operate from the shadows and bring down Al Capone’s criminal empire?",
+        "game_features": [],
+        "repack_features": [
+          "Based on PROHIBEAST-RUNE ISO release: rune-prohibeast.iso (8,764,260,352 bytes)",
+          "Game version: v0.9.075",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 8.2 to 3.9 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 19.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "driveclub",
       "title": "DRIVECLUB – v1.28 EU/US + All DLCs (Recompiled for PC v0.2.5)",
@@ -47134,74 +47202,6 @@
           "HDD space after installation: up to 3 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "prohibeast",
-      "title": "PROHIBEAST – v0.9.075",
-      "source_url": "https://fitgirl-repacks.site/prohibeast/",
-      "image_url": "https://i4.imageban.ru/out/2026/06/05/99fed21fd7bfaf4f5a984c8ad712f8f3.jpg",
-      "post_date": "2026-06-05T23:45:34+03:00",
-      "genres": [
-        "Strategy",
-        "Tactics",
-        "Stealth",
-        "Top-down",
-        "3D",
-        "Real-time"
-      ],
-      "repack_size": "3.9 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/db/1a/db1abdfb-0889-4049-91dc-c520db82543d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/db/1a/db1abdfb-0889-4049-91dc-c520db82543d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/67/93/6793e2e6-656e-459d-80cb-5b01f68e54f3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/67/93/6793e2e6-656e-459d-80cb-5b01f68e54f3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8d/e1/8de18144-2d11-423a-9be5-eba5cc551e5c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8d/e1/8de18144-2d11-423a-9be5-eba5cc551e5c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c0/af/c0af621a-c7f0-4db5-895e-a5b4a63df4f2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c0/af/c0af621a-c7f0-4db5-895e-a5b4a63df4f2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a1/a4/a1a43529-bab3-46b2-ada9-ef30f2c9b094.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a1/a4/a1a43529-bab3-46b2-ada9-ef30f2c9b094.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/10/bc/10bc373d-35ce-479d-a5ae-6348006cc8e2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/10/bc/10bc373d-35ce-479d-a5ae-6348006cc8e2.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "In Prohibeast, a real-time tactical infiltration game, dive into a corruption-ridden 1930s Chicago plagued by smuggling and black-market meat.\nAs meat consumption is outlawed, Al Capone expands his criminal empire through a ruthless black market. Faced with widespread corruption, Eliot Ness and his team of Untouchables are ready to strike from the shadows to bring down the mob from within.\nInfiltration and Strategy: Make Your Mark with Your Own Style\nEach mission will put your sense of strategy and stealth to the test.\n– Plan your operations – Choose your approach: stealthy infiltration, silent takedowns, or clever diversions.\n– Exploit the environment – Hideouts, alternate routes, distractions… Each mission offers multiple solutions.\n– Outsmart the enemies’ heightened senses – Sharp eyesight, acute hearing, and keen smell… Discover a whole new way to play: infiltration is no longer just about hiding!\nTake Control of the Untouchables\nAs the leader of the Untouchables, take control of Eliot Ness and his team, a group of specialists with complementary skills where each member plays a key role in your infiltration operations:\n– Eliot Ness – A fearless and versatile leader, able to adapt to any situation and lead even the riskiest missions to success.\n– Malone B. Clonan – A loyal right-hand man and hardened veteran who favors a more direct, forceful approach.\n– Frank E. Eager – A methodical and discreet sniper, eliminating targets with deadly precision.\nOther specialists will also join your team to help refine your strategies.\nLearn to harness each member’s strengths and weaknesses to build unique strategies and strike the mob where they least expect it.\nInfiltrate Iconic Locations\nEach mission plunges you into the heart of Chicago, in places where crime and corruption thrive.\nObserve, plan, and adapt your approach to achieve your objectives without leaving a trace.\nFrom the Loop, Chicago’s iconic district and hub of corrupt power, to the mayor’s mansion where criminal alliances are forged, and the foggy Lake Michigan docks, a major hub for smuggling, each location is filled with dangers and opportunities, demanding tailored strategies to survive.\nBut more criminal strongholds await, where the slightest mistake could be fatal.\nOnly the most strategic minds will manage to infiltrate without a trace.\nCan you operate from the shadows and bring down Al Capone’s criminal empire?",
-        "game_features": [],
-        "repack_features": [
-          "Based on PROHIBEAST-RUNE ISO release: rune-prohibeast.iso (8,764,260,352 bytes)",
-          "Game version: v0.9.075",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 8.2 to 3.9 GB)",
-          "Installation takes 2-5 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 19.7 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

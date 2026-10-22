@@ -1532,6 +1532,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "prohibeast-repack-updated",
+      "title": "PROHIBEAST Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/prohibeast-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "people-like-this-really-exist",
       "title": "People like this really exist",
       "source_url": "https://fitgirl-repacks.site/people-like-this-really-exist/",

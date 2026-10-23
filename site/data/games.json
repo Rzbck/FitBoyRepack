@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-23T22:17:39.762281+00:00",
+  "generated_at": "2026-10-23T22:18:15.270679+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-23T08:50:40.560927+00:00",
   "games": [
@@ -16,7 +16,72 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/89/4a/894ad729-aef8-41af-891e-ee7a645c949d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/89/4a/894ad729-aef8-41af-891e-ee7a645c949d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5d/9a/5d9a2739-cde1-428c-ab68-6278edc834f2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5d/9a/5d9a2739-cde1-428c-ab68-6278edc834f2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/96/37/96375296-84cd-436f-865a-07c8d6485a55.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/96/37/96375296-84cd-436f-865a-07c8d6485a55.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a4/26/a426299a-0a80-402c-8d66-e0482d24cd76.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a4/26/a426299a-0a80-402c-8d66-e0482d24cd76.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/03/5a03da47-4316-4f6b-9a63-92e9fd44e7a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/03/5a03da47-4316-4f6b-9a63-92e9fd44e7a0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/53/4a/534ad4b6-84bb-48c0-87c6-4a4f5c0482a2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/53/4a/534ad4b6-84bb-48c0-87c6-4a4f5c0482a2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-23T22:18:15.268493+00:00",
+      "details": {
+        "description": "Reopen the toy chest and saddle up as Woody, Buzz Lightyear, and Jessie in Toy Story 3 Complete Edition, a 3D adventure based on the hit 2010 animated film, Toy Story 3. The updated",
+        "game_features": [
+          "improved graphics and a few new surprises in store. Play through authentic moments from the movie in Story Mode, or drop into the wild west sandbox of Woody’s Roundup in Toy Box Mode.",
+          "In Story Mode, swap between Woody, Buzz, and Jessie as you play through iconic scenes from the film, including the train rescue, Operation Playtime, surviving the junkyard, and more. Harness each character’s unique abilities, whether you need to swing on Woody’s pull string or use Buzz’s strength to throw the other toys long distances. You can even play in two-player co-op.",
+          "Step out of Story Mode and into the sandbox in Toy Box Mode. This fan-favorite, customizable mode drops you into the wild west of Woody’s Roundup. Like Story Mode, you play as Woody, Buzz, or Jessie, but in Toy Box Mode you can play however you want! Characters around town give you quests to complete, so you can earn gold and spend it on personalizing the town your way. Build, decorate and customize the buildings, dress up the townsfolk, and more.",
+          "Toy Story 3 Complete Edition also includes content that was previously restricted to certain versions of the game. Players can now play as the Evil Emperor Zurg in Toy Box Mode, and can access four additional Theme Packs to decorate their Toy Box. Toy Story 3 Complete Edition also features upgraded graphics, resolution, and framerate.",
+          "FEATURES",
+          "Toy Story 3 Complete Edition brings back a fan-favorite game.",
+          "Relive key moments from the movie in Story Mode from Andy’s room to Sunnyside Daycare.",
+          "Swap between Woody, Buzz Lightyear, and Jessie, each of with different abilities you’ll need to complete each level.",
+          "Dive into the sandbox in Toy Box Mode. Take on missions for your fellow toys, dress up the townsfolk, decorate buildings, and much more.",
+          "Play with a friend in local, two player co-op. Available in Story Mode or Toy Box Mode.",
+          "All versions now include previously exclusive content, such as the ability to play as Emperor Zurg in Toy Box Mode."
+        ],
+        "repack_features": [
+          "Based on Disney-Pixar.Toy.Story.3.Complete.Edition-RUNE ISO release: rune-disney.pixar.toy.story.3.complete.edition.iso (7,497,515,008 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional voiceovers. English ones are included by default",
+          "Significantly smaller archive size (compressed from 7 to 2.2/2.8 GB)",
+          "Installation takes 4-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 7.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-23T22:18:15.268493+00:00"
     },
     {
       "id": "mycopunk",

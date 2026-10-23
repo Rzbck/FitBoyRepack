@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-22T23:21:38.427893+00:00",
+  "generated_at": "2026-10-23T04:52:36.294496+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-22T08:54:38.814476+00:00",
   "games": [
+    {
+      "id": "mycopunk",
+      "title": "Mycopunk: Supporter Edition – v2.0 Build 911 + 2 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/mycopunk/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/23/e17493ad27f0482aee3bf7ab2e8bcf75.jpg",
+      "post_date": "2026-10-23T05:22:34+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "tales-of-eternia-remastered",
       "title": "Tales of Eternia Remastered: Deluxe Edition – v2.0.0 + 4 DLCs/Bonuses",

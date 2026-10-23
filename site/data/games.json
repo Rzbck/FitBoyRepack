@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-23T08:50:40.560927+00:00",
+  "generated_at": "2026-10-23T22:17:39.762281+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-23T08:50:40.560927+00:00",
   "games": [
+    {
+      "id": "disney-pixar-toy-story-3-complete-edition",
+      "title": "Disney/Pixar Toy Story 3: Complete Edition",
+      "source_url": "https://fitgirl-repacks.site/disney-pixar-toy-story-3-complete-edition/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/23/cfa324b7c67d688898e44d638fd5eea4.jpg",
+      "post_date": "2026-10-24T00:37:53+03:00",
+      "genres": [
+        "Arcade",
+        "Kids",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "mycopunk",
       "title": "Mycopunk: Supporter Edition – v2.0 Build 911 + 2 DLCs/Bonuses",

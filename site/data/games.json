@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T19:30:12.367696+00:00",
+  "generated_at": "2026-10-24T19:30:53.777089+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-24T08:23:31.740793+00:00",
   "games": [
@@ -18,7 +18,59 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "18.4 GB"
+      "repack_size": "18.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b6/1b/b61bd65b-e73e-470a-aa18-489e475774cb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b6/1b/b61bd65b-e73e-470a-aa18-489e475774cb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3e/43/3e4397a0-3000-4cb6-b1e3-3baee877da6b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/43/3e4397a0-3000-4cb6-b1e3-3baee877da6b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ff/84/ff84fa0c-20bf-4bba-8bac-3a68001d7039.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ff/84/ff84fa0c-20bf-4bba-8bac-3a68001d7039.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cd/7c/cd7c3286-f942-4e47-a9e9-46f4da3e2e7d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cd/7c/cd7c3286-f942-4e47-a9e9-46f4da3e2e7d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/73/8c/738c6342-7b82-4a1f-a5e8-90997862fe5f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/73/8c/738c6342-7b82-4a1f-a5e8-90997862fe5f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/66/17/661706d6-230e-4d5c-954a-63034cf1c804.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/17/661706d6-230e-4d5c-954a-63034cf1c804.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-24T19:30:53.775026+00:00",
+      "details": {
+        "description": "Playing as Henry Gray, you step into the epicenter of a living nightmare. Ghosts of the past, crazed patients, otherworldly entities—everyone here is out for your blood, and the asylum is now a trap.\nYour main weapon, and your fatal vulnerability, is sound. Thanks to advanced voice recognition, the game detects your breathing, whispers, and panic. Control your emotions. Be quiet if you want to survive!\nDescent Into Madness\nIn 1977, Henry comes to in a bathtub inside the psychiatric ward. He gasps for air, breaking the surface. The tub is filled with blood. Not his…\nBecome the protagonist of this surreal journey. You must escape into the bleak locations of Henry’s past, where the line between reality and morbid delusion completely dissolves.\nYou are hunted by crazed guards, deranged psychopaths, cannibals, former patients, victims of inhumane experiments, cybernetic creations, and other entities that shouldn’t even exist. But the most terrifying enemies aren’t always hiding in the dark corridors. Sometimes, they wait inside Henry himself.\nFight using whatever resources you can find, solve puzzles, and piece together the truth behind the tragedy that shattered the hero’s life.\nChilling Uncertainty\nEvery solved puzzle, every clue found, and every defeated enemy brings you closer to the truth. But are you ready for it?\nAs you venture deeper into secret laboratories and the eerie corners of Henry’s memory, you will realize that someone unseen is guiding you down this path of madness. Is it a friend, or a hidden enemy who wants you dead?\nAdvanced Voice Integration\nThe world around you reacts to your real-world emotions:\nHold your breath to avoid giving away your position;\nScream to distract enemies or buy precious seconds to escape;\nTaunt opponents with your voice to create openings for an attack;\nUse sound as a survival tool.\nA microphone is highly recommended for maximum immersion, but the game can be fully completed without one.\nFight external threats, face your inner demons, and remember: in this world, nothing can be fully trusted.",
+        "game_features": [],
+        "repack_features": [
+          "Based on FIRE_AND_ASHES-Razor1911 ISO release: rzr-fireandashes.iso (28,393,177,088 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 26.4 to 18.4 GB)",
+          "Installation takes 6-18 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 26.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-24T19:30:53.775026+00:00"
     },
     {
       "id": "borderlands-4",

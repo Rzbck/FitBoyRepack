@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T01:36:28.707408+00:00",
+  "generated_at": "2026-10-24T01:37:04.266751+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-23T08:50:40.560927+00:00",
   "games": [
@@ -18,7 +18,67 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "14.5 GB"
+      "repack_size": "14.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/88/ca/88cacd78-37a8-4c5d-b900-d622270946f5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/88/ca/88cacd78-37a8-4c5d-b900-d622270946f5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/75/03/7503d096-0e89-4bb4-89bb-c7878fa3f329.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/75/03/7503d096-0e89-4bb4-89bb-c7878fa3f329.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/60/02/60029984-bf10-4a88-baba-b19e1ca27482.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/60/02/60029984-bf10-4a88-baba-b19e1ca27482.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f3/91/f391b6ff-f8d3-4193-87a6-5eb65622e05e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f3/91/f391b6ff-f8d3-4193-87a6-5eb65622e05e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1c/8d/1c8dfcaf-c14f-4fc3-8ff2-8ed49a984dc3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1c/8d/1c8dfcaf-c14f-4fc3-8ff2-8ed49a984dc3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/45/4245ed29-f227-4322-a8ce-a95291172dd3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/45/4245ed29-f227-4322-a8ce-a95291172dd3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-24T01:37:04.264808+00:00",
+      "details": {
+        "description": "Race through a massive wide-open world featuring dramatic weather and day-tonight cycles. Instantly connect with friends in the ultimate celebration of speed, style, and action-packed driving. Explore beautiful and exotic locations in more than 200 of the world’s greatest cars, all created with precise detail in stunning 1080p.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Xbox One v1.0.0.64 releases with all DLCs included: 57.1 GB",
+          "Azimuth Recompilation/Wrapper v0.9.10 by Almost There Games installed over",
+          "Check this page for newer builds if you have issues:",
+          "https://almost-there-games.itch.io/azimuth",
+          "You can switch between main game with Storm Island Expansion and Fast and Furious pack in the launcher settings",
+          "Azimuth Mapper Keypad Companion v1.7 by Sam added for proper keyboard/mouse support:",
+          "https://bigdamnhero6.itch.io/azimuth-mapper-keypad-companion",
+          "ExtraOptions v0.2.88 applied over",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional voiceovers. English VOs are included by default",
+          "Significantly smaller archive size (compressed from 57.1 to 14.5~16.8 GB, depending on selected components)",
+          "Installation takes 6-25 minutes (depending on system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 57.1 GB",
+          "Language can be changed in the launcher settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-24T01:37:04.264808+00:00"
     },
     {
       "id": "metro-redux",

@@ -1,9 +1,93 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-23T22:18:15.270679+00:00",
+  "generated_at": "2026-10-24T01:36:28.707408+00:00",
   "source_pages": 813,
   "last_full_scan_at": "2026-10-23T08:50:40.560927+00:00",
   "games": [
+    {
+      "id": "forza-horizon-2",
+      "title": "Forza Horizon 2: Ultimate Edition, v1.0.0.64 + All DLCs + (Azimuth Recompilation for PC v0.9.10)",
+      "source_url": "https://fitgirl-repacks.site/forza-horizon-2/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/24/18633544657f0237103f882c1f177ece.jpg",
+      "post_date": "2026-10-24T04:32:57+03:00",
+      "genres": [
+        "Racing",
+        "Open world",
+        "Cars",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "14.5 GB"
+    },
+    {
+      "id": "metro-redux",
+      "title": "Metro Redux (2033 + Last Light) – v1.0.0.4 (Next-Gen Update)",
+      "source_url": "https://fitgirl-repacks.site/metro-redux/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/24/5653ccab0346cc4d3ad084f207a1b9e7.jpg",
+      "post_date": "2026-10-24T03:00:16+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "13.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/e3/4c/e34cef31-6c9d-42d5-876b-aaf5744dffbe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e3/4c/e34cef31-6c9d-42d5-876b-aaf5744dffbe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/31/86/3186cd09-5689-40d9-be6b-6cbdbf4036d9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/31/86/3186cd09-5689-40d9-be6b-6cbdbf4036d9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/02/71/027117ee-6b00-49e7-a42d-aeb98e2926c8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/02/71/027117ee-6b00-49e7-a42d-aeb98e2926c8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f8/8a/f88af12e-075d-4c42-a448-0ecdd17a5567.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f8/8a/f88af12e-075d-4c42-a448-0ecdd17a5567.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/03/8f032e77-b77d-4bdf-bcae-a0ff0573df35.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/03/8f032e77-b77d-4bdf-bcae-a0ff0573df35.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1d/dc/1ddce3d3-8001-4caa-8f25-b24eb52a1644.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1d/dc/1ddce3d3-8001-4caa-8f25-b24eb52a1644.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T12:01:59.609207+00:00",
+      "details": {
+        "description": "Metro 2033 Redux is the definitive version of the cult classic ‘Metro 2033’, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Fans of the original game will find the unique world of Metro transformed with incredible lighting, physics and dynamic weather effects. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\nAll the gameplay improvements and features from the acclaimed sequel ‘Metro: Last Light’ have been transferred to Metro 2033 Redux – superior AI, controls, animation, weapon handling and many more – to create a thrilling experience for newcomers and veterans alike. With two unique play-styles, and the legendary Ranger Mode included, Metro 2033 Redux offers hours of AAA gameplay for an incredible price.\nMetro: Last Light Redux is the definitive version of the critically acclaimed ‘Metro: Last Light’, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\nThis definitive version also includes all previously released DLC, adding 10 hours of bonus single-player content to the huge solo campaign. Fans of the original game will notice new features and gameplay improvements, including new melee animations, the ability to check your watch and ammo supplies on the fly, and new full-body player animations.\nAnd those who favoured the more survival-horror oriented gameplay of the cult prequel ‘Metro 2033’ will find a new way to experience the campaign thanks to the introduction of two unique Play Styles – Survival and Spartan. The former transforms Last light from a more action-oriented stealth combat experience to a fraught, slow burn fight for survival. With the legendary Ranger Mode included to offer an extra layer of challenge and immersion, Metro: Last Light Redux offers hours of AAA gameplay for an incredible price.",
+        "game_features": [],
+        "repack_features": [
+          "Based on two GOG releases v2.0.0.2: 15 GB",
+          "Update 7 installed over, thanks to Christsnatcher!",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with ALL languages)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you can skip downloading and installing of voicepacks you don’t need",
+          "Significantly smaller archive size (compressed from 15 to 6.2~7.9 GB, depending on selected components)",
+          "Installation takes 10-25 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly (ONLY when installed with ALL languages)",
+          "HDD space after installation: 17 GB (21 GB during installation)",
+          "Language can be changed in game settings",
+          "NOTE! Do NOT select audio languages you didn’t install in game settings, or the game will crash",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T12:01:59.609207+00:00"
+    },
     {
       "id": "disney-pixar-toy-story-3-complete-edition",
       "title": "Disney/Pixar Toy Story 3: Complete Edition",
@@ -474556,74 +474640,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 15 GB",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T12:01:59.609207+00:00"
-    },
-    {
-      "id": "metro-redux",
-      "title": "Metro Redux (2033 + Last Light) – GOG v2.0.0.2 + Update 7",
-      "source_url": "https://fitgirl-repacks.site/metro-redux/",
-      "image_url": "https://i110.fastpic.ru/big/2019/0222/23/0360fe5ca16a957e5860a9fd64635623.jpg",
-      "post_date": "2019-02-22T13:35:16+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "6.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/e3/4c/e34cef31-6c9d-42d5-876b-aaf5744dffbe.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e3/4c/e34cef31-6c9d-42d5-876b-aaf5744dffbe.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/31/86/3186cd09-5689-40d9-be6b-6cbdbf4036d9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/31/86/3186cd09-5689-40d9-be6b-6cbdbf4036d9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/02/71/027117ee-6b00-49e7-a42d-aeb98e2926c8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/02/71/027117ee-6b00-49e7-a42d-aeb98e2926c8.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f8/8a/f88af12e-075d-4c42-a448-0ecdd17a5567.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f8/8a/f88af12e-075d-4c42-a448-0ecdd17a5567.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8f/03/8f032e77-b77d-4bdf-bcae-a0ff0573df35.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8f/03/8f032e77-b77d-4bdf-bcae-a0ff0573df35.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1d/dc/1ddce3d3-8001-4caa-8f25-b24eb52a1644.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1d/dc/1ddce3d3-8001-4caa-8f25-b24eb52a1644.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T12:01:59.609207+00:00",
-      "details": {
-        "description": "Metro 2033 Redux is the definitive version of the cult classic ‘Metro 2033’, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Fans of the original game will find the unique world of Metro transformed with incredible lighting, physics and dynamic weather effects. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\nAll the gameplay improvements and features from the acclaimed sequel ‘Metro: Last Light’ have been transferred to Metro 2033 Redux – superior AI, controls, animation, weapon handling and many more – to create a thrilling experience for newcomers and veterans alike. With two unique play-styles, and the legendary Ranger Mode included, Metro 2033 Redux offers hours of AAA gameplay for an incredible price.\nMetro: Last Light Redux is the definitive version of the critically acclaimed ‘Metro: Last Light’, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\nThis definitive version also includes all previously released DLC, adding 10 hours of bonus single-player content to the huge solo campaign. Fans of the original game will notice new features and gameplay improvements, including new melee animations, the ability to check your watch and ammo supplies on the fly, and new full-body player animations.\nAnd those who favoured the more survival-horror oriented gameplay of the cult prequel ‘Metro 2033’ will find a new way to experience the campaign thanks to the introduction of two unique Play Styles – Survival and Spartan. The former transforms Last light from a more action-oriented stealth combat experience to a fraught, slow burn fight for survival. With the legendary Ranger Mode included to offer an extra layer of challenge and immersion, Metro: Last Light Redux offers hours of AAA gameplay for an incredible price.",
-        "game_features": [],
-        "repack_features": [
-          "Based on two GOG releases v2.0.0.2: 15 GB",
-          "Update 7 installed over, thanks to Christsnatcher!",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with ALL languages)",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you can skip downloading and installing of voicepacks you don’t need",
-          "Significantly smaller archive size (compressed from 15 to 6.2~7.9 GB, depending on selected components)",
-          "Installation takes 10-25 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly (ONLY when installed with ALL languages)",
-          "HDD space after installation: 17 GB (21 GB during installation)",
-          "Language can be changed in game settings",
-          "NOTE! Do NOT select audio languages you didn’t install in game settings, or the game will crash",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

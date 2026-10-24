@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T08:23:31.740793+00:00",
+  "generated_at": "2026-10-24T19:30:12.367696+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-24T08:23:31.740793+00:00",
   "games": [
+    {
+      "id": "fire-and-ashes",
+      "title": "FIRE AND ASHES",
+      "source_url": "https://fitgirl-repacks.site/fire-and-ashes/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/24/c301ea7afa4b475f0e458d00c4e68401.jpg",
+      "post_date": "2026-10-24T22:23:50+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Survival",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "18.4 GB"
+    },
     {
       "id": "borderlands-4",
       "title": "Borderlands 4: Super Deluxe Edition – v1.11 (Denuvoless) + 17 DLCs + Bonus OST",

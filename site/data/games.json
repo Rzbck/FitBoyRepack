@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T07:01:13.320659+00:00",
+  "generated_at": "2026-10-24T07:01:50.876921+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-23T08:50:40.560927+00:00",
   "games": [
@@ -113,7 +113,55 @@
         "Japanese",
         "Turn-based"
       ],
-      "repack_size": "1.1 GB"
+      "repack_size": "1.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/86/39/86392663-f07f-43c1-a233-5e9877b1b253.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/86/39/86392663-f07f-43c1-a233-5e9877b1b253.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/28/01/28010bae-796d-4d8a-abb8-b751451d8f7e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/28/01/28010bae-796d-4d8a-abb8-b751451d8f7e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/98/4a/984ad6df-59bd-4cd0-b8f1-5112e0acb639.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/98/4a/984ad6df-59bd-4cd0-b8f1-5112e0acb639.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5c/2d/5c2d08d5-c163-4c82-bbd2-84e7cbf58d43.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5c/2d/5c2d08d5-c163-4c82-bbd2-84e7cbf58d43.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/08/7f/087ffb50-fa05-4978-9ffe-2df9fcaabb63.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/08/7f/087ffb50-fa05-4978-9ffe-2df9fcaabb63.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-24T07:01:50.874373+00:00",
+      "details": {
+        "description": "Enemies? Allies? Kill Kill Kill! The more death you bring, the stronger you become! Stat-Raising Strategy RPG is here!\nBased on classic grid-based strategy games, this entirely new SRPG features the Peon Exploitation System—a brutal combat mechanic where you mercilessly sacrifice your own allies.\nThe more misdeeds you commit, the more vicious your army becomes, and the greater your advantage in battle!\nRegain the lost power of the Devil, Giga Super Death, who was transformed into a baby, and crush the false god wearing a mask of justice!\nSTORY\nThis is a story of another Earth, different from the one we live on.\nGiga Super Death, the most wicked Devil of all, was just one step away from killing God…\nwhen suddenly, he was transformed into a helpless baby.\nAnticipating such a crisis, he had been working through the night to develop the “DEMONS’ NIGHT FEVER” resurrection program—and finally, it was time to activate it.\nWas it a prank of fate, or inevitable destiny?\nThe one ensnared in this suspicious ritual was Killshiro Katanaka, a gloomy young man who despises the world.\nDue to their aligned interests, a bizarre pact was formed.\nThis is the story of pure EVIL, starring the Devil himself and his newfound disciple, Killshiro.\nKill, kill, kill both enemies and allies! An unconventional strategic battle!\nExhaust all forms of evil using the Peon Exploitation System which sacrifices your allied Peons during battle!\nBrutal tactics such as Kill Skills and Sacrifices that detonate your underlings with your own hands are the shortest route to victory.\nThe more you sin, the stronger you become! Master your base to unleash pure chaos.\nPour in the Perverse Points earned through misdeeds to build your own ultimate evil army!\nWithin the limited time, make full use of suspicious Abductions and Pillaging to strengthen your characters to their absolute limits.\nA world that warps with every chapter! Dive into a story where no act of evil is off-limits!\nEvery time you defeat a chapter’s boss, the game’s situation completely transforms!\nExperience the full thrill of diverse misdeeds, such as be a monster to defeat Super Rangers, be a witch to crush Magical Girls, or others!",
+        "game_features": [],
+        "repack_features": [
+          "Based on DEMONS.NIGHT.FEVER-RUNE ISO release: rune-demons.night.fever.iso (2,109,833,216 bytes)",
+          "Game version: v1.0.1",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2 to 1.1 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.2 GB",
+          "Language can be changed in “DNFever_Data/Plugins/x86_64/steam_emu.ini”",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-24T07:01:50.874373+00:00"
     },
     {
       "id": "forza-horizon-2",

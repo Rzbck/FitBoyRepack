@@ -1,9 +1,87 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T19:30:53.777089+00:00",
+  "generated_at": "2026-10-24T22:29:35.888396+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-24T08:23:31.740793+00:00",
   "games": [
+    {
+      "id": "iracing-arcade",
+      "title": "iRacing Arcade – v1.1.c0",
+      "source_url": "https://fitgirl-repacks.site/iracing-arcade/",
+      "image_url": "https://i1.imageban.ru/out/2026/03/04/89e1ca12f0c81c69c68ae158645a2323.jpg",
+      "post_date": "2026-10-25T00:01:37+03:00",
+      "genres": [
+        "Driving",
+        "Racing",
+        "Arcade",
+        "3D",
+        "Third-person"
+      ],
+      "repack_size": "1.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/5f/46/5f4612a3-3e03-4281-b092-882ef2f88347.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/46/5f4612a3-3e03-4281-b092-882ef2f88347.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ce/67/ce67b04b-b0fc-4575-bd96-72a625cce895.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ce/67/ce67b04b-b0fc-4575-bd96-72a625cce895.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/77/71/7771629e-95fe-4c34-88ba-aad3444d8c28.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/77/71/7771629e-95fe-4c34-88ba-aad3444d8c28.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/11/f6/11f62f44-c45b-4b83-a4df-d42a7b94413b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/11/f6/11f62f44-c45b-4b83-a4df-d42a7b94413b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b5/60/b5608ae6-e227-4d5f-8486-bdbb97758d91.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b5/60/b5608ae6-e227-4d5f-8486-bdbb97758d91.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f6/0b/f60b618e-34d0-4735-b045-2060e4eb0ec0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f6/0b/f60b618e-34d0-4735-b045-2060e4eb0ec0.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "iRacing Arcade is a third-person racer where your skills on and off the track shape your journey from grassroots racing to motorsport glory.\nCompete in races to earn resources, then decide how to grow your team. Will you invest in buildings to unlock boosts that give you a crucial track advantage? Or will you focus on recruiting top-tier drivers to compete for you in licensed global series?\nEvery choice matters. Build your legacy, one race at a time!",
+        "game_features": [
+          "Tactile Physics Model",
+          "Race across multiple categories with a physics model that’s easy to learn yet endlessly rewarding, keeping you hooked as you chase the perfect lap.",
+          "Build a Motorsport Legacy",
+          "Compete in weekly events across licensed series to earn resources, then invest in buildings, new cars, skilled drivers, or customizations that showcase your team’s brand.",
+          "Race in Licensed Tracks & Series",
+          "From the Porsche 911 GT3 Cup in Imola to the GTP at Mexico City’s legendary Hermanos Rodríguez Autodrome, iRacing Arcade lets you experience the vibrant world of motorsport with stylized recreations of licensed cars and tracks.",
+          "Compete in Online Races",
+          "Compete in online multiplayer with up to 11 competitors worldwide.",
+          "Leave your mark in Global Time Trials",
+          "Hone your racing line as you chase top times on the Global Leaderboards – or set the pace and let others chase you. With weekly rotations, the competition always stays fresh."
+        ],
+        "repack_features": [
+          "Based on iRacing.Arcade-RUNE ISO release: rune-iracing.arcade.iso (2,209,120,256 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.1 to 1.2 GB)",
+          "Installation takes within a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "fire-and-ashes",
       "title": "FIRE AND ASHES",
@@ -77345,84 +77423,6 @@
           "Installation takes 1-3 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 1.7 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "iracing-arcade",
-      "title": "iRacing Arcade",
-      "source_url": "https://fitgirl-repacks.site/iracing-arcade/",
-      "image_url": "https://i1.imageban.ru/out/2026/03/04/89e1ca12f0c81c69c68ae158645a2323.jpg",
-      "post_date": "2026-03-04T18:52:37+03:00",
-      "genres": [
-        "Driving",
-        "Racing",
-        "Arcade",
-        "3D",
-        "Third-person"
-      ],
-      "repack_size": "1.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/5f/46/5f4612a3-3e03-4281-b092-882ef2f88347.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5f/46/5f4612a3-3e03-4281-b092-882ef2f88347.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ce/67/ce67b04b-b0fc-4575-bd96-72a625cce895.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ce/67/ce67b04b-b0fc-4575-bd96-72a625cce895.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/77/71/7771629e-95fe-4c34-88ba-aad3444d8c28.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/77/71/7771629e-95fe-4c34-88ba-aad3444d8c28.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/11/f6/11f62f44-c45b-4b83-a4df-d42a7b94413b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/11/f6/11f62f44-c45b-4b83-a4df-d42a7b94413b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b5/60/b5608ae6-e227-4d5f-8486-bdbb97758d91.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b5/60/b5608ae6-e227-4d5f-8486-bdbb97758d91.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f6/0b/f60b618e-34d0-4735-b045-2060e4eb0ec0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f6/0b/f60b618e-34d0-4735-b045-2060e4eb0ec0.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "iRacing Arcade is a third-person racer where your skills on and off the track shape your journey from grassroots racing to motorsport glory.\nCompete in races to earn resources, then decide how to grow your team. Will you invest in buildings to unlock boosts that give you a crucial track advantage? Or will you focus on recruiting top-tier drivers to compete for you in licensed global series?\nEvery choice matters. Build your legacy, one race at a time!",
-        "game_features": [
-          "Tactile Physics Model",
-          "Race across multiple categories with a physics model that’s easy to learn yet endlessly rewarding, keeping you hooked as you chase the perfect lap.",
-          "Build a Motorsport Legacy",
-          "Compete in weekly events across licensed series to earn resources, then invest in buildings, new cars, skilled drivers, or customizations that showcase your team’s brand.",
-          "Race in Licensed Tracks & Series",
-          "From the Porsche 911 GT3 Cup in Imola to the GTP at Mexico City’s legendary Hermanos Rodríguez Autodrome, iRacing Arcade lets you experience the vibrant world of motorsport with stylized recreations of licensed cars and tracks.",
-          "Compete in Online Races",
-          "Compete in online multiplayer with up to 11 competitors worldwide.",
-          "Leave your mark in Global Time Trials",
-          "Hone your racing line as you chase top times on the Global Leaderboards – or set the pace and let others chase you. With weekly rotations, the competition always stays fresh."
-        ],
-        "repack_features": [
-          "Based on iRacing.Arcade-RUNE ISO release: rune-iracing.arcade.iso (2,209,120,256 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 2.1 to 1.2 GB)",
-          "Installation takes within a minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 2.7 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

@@ -1,9 +1,120 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T01:37:04.266751+00:00",
-  "source_pages": 813,
+  "generated_at": "2026-10-24T07:01:13.320659+00:00",
+  "source_pages": 814,
   "last_full_scan_at": "2026-10-23T08:50:40.560927+00:00",
   "games": [
+    {
+      "id": "borderlands-4",
+      "title": "Borderlands 4: Super Deluxe Edition – v1.11 (Denuvoless) + 17 DLCs + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/borderlands-4/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/24/227719158184b12d474c5348b9cc4470.jpg",
+      "post_date": "2026-10-24T06:00:39+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Driving",
+        "RPG",
+        "Action RPG",
+        "Open world",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "42.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fb/40/fb402060-e180-4198-84a6-ef4dfd4888ca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/40/fb402060-e180-4198-84a6-ef4dfd4888ca.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/85/1e/851e1c27-5b19-47d2-8364-ec5c7890a710.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/85/1e/851e1c27-5b19-47d2-8364-ec5c7890a710.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/30/30308c7a-0ca3-4eda-972c-db8a5ebcdf15.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/30/30308c7a-0ca3-4eda-972c-db8a5ebcdf15.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1d/63/1d636d5e-1f3f-42a5-a399-2fe5cb3d2e7f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1d/63/1d636d5e-1f3f-42a5-a399-2fe5cb3d2e7f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7e/06/7e067105-0bd7-49ab-b7a4-23305a067adb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7e/06/7e067105-0bd7-49ab-b7a4-23305a067adb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cc/47/cc47502b-b9c3-4940-9cf5-1fe8946e183c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cc/47/cc47502b-b9c3-4940-9cf5-1fe8946e183c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Borderlands 4\nbrings intense action, badass Vault Hunters, and billions of wild and deadly weapons to an all-new planet ruled by a ruthless tyrant.\nCrash into Kairos as one of four new Vault Hunters seeking wealth and glory. Wield powerful Action Skills, customize your build with deep skill trees, and dominate enemies with dynamic movement abilities.\nBreak free from the oppressive Timekeeper, a ruthless dictator who dominates the masses from on high. Now a world-altering catastrophe threatens his perfect Order, unleashing Mayhem across the planet.",
+        "game_features": [
+          "BE A BADASS",
+          "Become an unstoppable force of battle, blasting through enemies with an all-new arsenal of outrageous weaponry. Move across the Borderlands like never before—double jumping, gliding, dodging, grappling, and more—dealing death from every direction. Explode each encounter with devastating Action Skills that unleash your Vault Hunter’s unique abilities. Craft your perfect build with branching skill trees and a deep, rewarding loot chase full of wild weapons and powerful gear.",
+          "FIGHT SOLO OR CO-OP",
+          "Wreaking havoc across Kairos is awesome alone and even better with friends in 4-player online co-op. Borderlands 4 is designed for co-op from the ground up; whether you’re hunting for loot, tackling missions, or wandering freely, level scaling and individual difficulty keeps the party together and having fun.",
+          "LESS BORDERS, MORE LANDS",
+          "Freely explore a vast and dangerous world rife with warring factions. Hop on your hover bike and ride through lush fields, towering peaks, and deadly deserts full of fearsome enemies, dynamic events, and engaging quests with unforgettable characters. Unite the people of Kairos and ignite a revolution, tackling this adventure however you see fit in a seamless Borderlands experience.",
+          "Included DLCs:",
+          "Bounty Pack 2: Legend of the Stone Demon",
+          "Bounty Pack 3: A Zane to Kill For",
+          "Bounty Pack 3: Vault Card 3",
+          "Firehawk’s Fury Weapon Skin",
+          "Gilded Glory Pack",
+          "Ornate Order Pack",
+          "Story Pack 1: Mad Ellie and the Vault of the Damned",
+          "Vault Hunter Pack",
+          "Bounty Pack Bundle is not fully released yet."
+        ],
+        "repack_features": [
+          "Based on Steam BuildID 23744902 release: 127.2 GB",
+          "Bonus Soundtrack in MP3 format (227 MB) added",
+          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
+          "VBS.cmd script v1.7.2 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.8.1; 8 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST and voiceover packs you don’t need. English VOs are included by default",
+          "Significantly smaller archive size (compressed from cumulative 127.4 to 36.9~75.2 GB, depending on selected components)",
+          "Installation takes from 28 minutes (on 32-threads CPU) up to 100 minutes (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 127.4 GB",
+          "Language can be changed in “OakGame/Binaries/Win64/steam_settings/configs.user.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "demons-night-fever",
+      "title": "DEMONS’ NIGHT FEVER – v1.0.1",
+      "source_url": "https://fitgirl-repacks.site/demons-night-fever/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/24/5d39487fc78622cb7bd7c098f28a8c9c.jpg",
+      "post_date": "2026-10-24T05:29:03+03:00",
+      "genres": [
+        "RPG",
+        "Strategy",
+        "Tactics",
+        "Top-down",
+        "3D",
+        "Japanese",
+        "Turn-based"
+      ],
+      "repack_size": "1.1 GB"
+    },
     {
       "id": "forza-horizon-2",
       "title": "Forza Horizon 2: Ultimate Edition, v1.0.0.64 + All DLCs + (Azimuth Recompilation for PC v0.9.10)",
@@ -36862,100 +36973,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 5.7 GB",
           "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "borderlands-4",
-      "title": "Borderlands 4: Deluxe Edition, v1.8.1 + 8 DLCs + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/borderlands-4/",
-      "image_url": "https://i1.imageban.ru/out/2026/03/29/00f7efc05c9644fe21c4b05b555de713.jpg",
-      "post_date": "2026-07-03T01:10:39+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "Driving",
-        "RPG",
-        "Action RPG",
-        "Open world",
-        "First-person",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "36.9 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/fb/40/fb402060-e180-4198-84a6-ef4dfd4888ca.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fb/40/fb402060-e180-4198-84a6-ef4dfd4888ca.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/85/1e/851e1c27-5b19-47d2-8364-ec5c7890a710.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/85/1e/851e1c27-5b19-47d2-8364-ec5c7890a710.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/30/30/30308c7a-0ca3-4eda-972c-db8a5ebcdf15.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/30/30/30308c7a-0ca3-4eda-972c-db8a5ebcdf15.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1d/63/1d636d5e-1f3f-42a5-a399-2fe5cb3d2e7f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1d/63/1d636d5e-1f3f-42a5-a399-2fe5cb3d2e7f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/7e/06/7e067105-0bd7-49ab-b7a4-23305a067adb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/7e/06/7e067105-0bd7-49ab-b7a4-23305a067adb.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/cc/47/cc47502b-b9c3-4940-9cf5-1fe8946e183c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/cc/47/cc47502b-b9c3-4940-9cf5-1fe8946e183c.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Borderlands 4\nbrings intense action, badass Vault Hunters, and billions of wild and deadly weapons to an all-new planet ruled by a ruthless tyrant.\nCrash into Kairos as one of four new Vault Hunters seeking wealth and glory. Wield powerful Action Skills, customize your build with deep skill trees, and dominate enemies with dynamic movement abilities.\nBreak free from the oppressive Timekeeper, a ruthless dictator who dominates the masses from on high. Now a world-altering catastrophe threatens his perfect Order, unleashing Mayhem across the planet.",
-        "game_features": [
-          "BE A BADASS",
-          "Become an unstoppable force of battle, blasting through enemies with an all-new arsenal of outrageous weaponry. Move across the Borderlands like never before—double jumping, gliding, dodging, grappling, and more—dealing death from every direction. Explode each encounter with devastating Action Skills that unleash your Vault Hunter’s unique abilities. Craft your perfect build with branching skill trees and a deep, rewarding loot chase full of wild weapons and powerful gear.",
-          "FIGHT SOLO OR CO-OP",
-          "Wreaking havoc across Kairos is awesome alone and even better with friends in 4-player online co-op. Borderlands 4 is designed for co-op from the ground up; whether you’re hunting for loot, tackling missions, or wandering freely, level scaling and individual difficulty keeps the party together and having fun.",
-          "LESS BORDERS, MORE LANDS",
-          "Freely explore a vast and dangerous world rife with warring factions. Hop on your hover bike and ride through lush fields, towering peaks, and deadly deserts full of fearsome enemies, dynamic events, and engaging quests with unforgettable characters. Unite the people of Kairos and ignite a revolution, tackling this adventure however you see fit in a seamless Borderlands experience.",
-          "Included DLCs:",
-          "Bounty Pack 2: Legend of the Stone Demon",
-          "Bounty Pack 3: A Zane to Kill For",
-          "Bounty Pack 3: Vault Card 3",
-          "Firehawk’s Fury Weapon Skin",
-          "Gilded Glory Pack",
-          "Ornate Order Pack",
-          "Story Pack 1: Mad Ellie and the Vault of the Damned",
-          "Vault Hunter Pack",
-          "Bounty Pack Bundle is not fully released yet."
-        ],
-        "repack_features": [
-          "Based on Steam BuildID 23744902 release: 127.2 GB",
-          "Bonus Soundtrack in MP3 format (227 MB) added",
-          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
-          "VBS.cmd script v1.7.2 added",
-          "Custom launcher added for easier HV steps processing",
-          "Game version: v1.8.1; 8 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus OST and voiceover packs you don’t need. English VOs are included by default",
-          "Significantly smaller archive size (compressed from cumulative 127.4 to 36.9~75.2 GB, depending on selected components)",
-          "Installation takes from 28 minutes (on 32-threads CPU) up to 100 minutes (on 8-threads CPU)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 127.4 GB",
-          "Language can be changed in “OakGame/Binaries/Win64/steam_settings/configs.user.ini” file",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

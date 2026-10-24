@@ -224,6 +224,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "borderlands-4-repack-updated-2",
+      "title": "Borderlands 4 Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/borderlands-4-repack-updated-2/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "browser-mining-faq-added",
       "title": "Browser Mining FAQ Added",
       "source_url": "https://fitgirl-repacks.site/browser-mining-faq-added/",
@@ -9070,8 +9080,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

@@ -1,9 +1,103 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T18:24:35.222037+00:00",
+  "generated_at": "2026-10-25T21:07:32.649273+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
+    {
+      "id": "memoriapolis",
+      "title": "MEMORIAPOLIS: Fish & Ships Pack, v1.7.67 + DLC",
+      "source_url": "https://fitgirl-repacks.site/memoriapolis/",
+      "image_url": "https://i3.imageban.ru/out/2025/05/03/e9a564887e6f1c0665e18e1546cf3cc6.jpg",
+      "post_date": "2026-10-25T23:00:23+03:00",
+      "genres": [
+        "Management",
+        "Strategy",
+        "3D"
+      ],
+      "repack_size": "1.9 GB",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2228280/extras/00_New_Gif_Ville.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/7c/507c674c-02f6-4141-8b02-34de2a817de0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/7c/507c674c-02f6-4141-8b02-34de2a817de0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1d/d6/1dd61eba-7ad9-4d9f-b84f-2c2c739af657.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1d/d6/1dd61eba-7ad9-4d9f-b84f-2c2c739af657.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c2/7a/c27a5477-dd10-41d0-b578-b8ec1e12fb35.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c2/7a/c27a5477-dd10-41d0-b578-b8ec1e12fb35.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c4/4d/c44dad41-86aa-469a-9cd3-e28fb3a743a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c4/4d/c44dad41-86aa-469a-9cd3-e28fb3a743a0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ca/c9/cac9ff24-350b-4af4-9288-e77417e21cb1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ca/c9/cac9ff24-350b-4af4-9288-e77417e21cb1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a2/7a/a27ae48e-49d8-4ed2-99b1-9bc35069dae2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a2/7a/a27ae48e-49d8-4ed2-99b1-9bc35069dae2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Memoriapolis\nis a city-builder where you shape your town across time. Manage resources, make political decisions, and deal with the different factions moving in.\nYour ultimate goal?\nStay in power until the end of the Age of Enlightenment… and leave your mark in history by building a grand\nCity’s Fair\nduring the Industrial Revolution.\nBut beware – your citizens have needs, factions grow in influence, and historical events can shake everything up. Lose control, and it’s game over!",
+        "game_features": [
+          "Time moves forward – whether you’re ready or not. Your adventure spans",
+          "five historical eras",
+          ": Antiquity – Middle Ages – Renaissance – Age of Enlightenment and Industrial Revolution.",
+          "Each age lasts a number of in-game cycles before transitioning automatically. As your city evolves, so must your strategy. Some buildings can be upgraded to match a new era… others may need to go.",
+          "Think carefully: what will you preserve, and what will you sacrifice to shape the future?",
+          "In",
+          "Memoriapolis",
+          ", there’s no fixed grid or rigid control. Your city grows",
+          "organically",
+          ", and your citizens decide where they settle. This makes each playthrough feel natural, dynamic, and unique. You’ll need to adapt to their choices – while gently guiding them.",
+          "Use",
+          "cultural buildings",
+          "to influence the surrounding area and attract more people to grow your districts smartly.",
+          "There are 6 cultures in game (Military – Religion – Trade – Education – Production – Politics).",
+          "These cultures shape not just the buildings but also the citizens in your city. Over time, citizens will form factions. And as your city grows, so do these",
+          "factions",
+          "and they’ll become your political partners… or rivals.",
+          "A strong faction unlocks new buildings and boosts growth. But if a faction becomestoo powerful, it may block your key decisions or worse…",
+          "remove you from power",
+          ". Stay smart. Stay flexible. And always keep your influence in check.",
+          "Build Wonders that stand the test of time – from the Library of Alexandria to the Notre-Dame, the Leaning Tower of Pisa, and beyond.",
+          "Each Age holds its iconic masterpiece, tied to a culture, offering powerful bonuses to shape your legacy.",
+          "Let your city be remembered for centuries to come!"
+        ],
+        "repack_features": [
+          "Based on MEMORIA.POLIS.v1.6.8-TENOKE ISO release: tenoke-memoria.polis.v1.6.8.iso (6,769,250,304 bytes)",
+          "Game version: v1.6.8",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.3 to 1.9 GB)",
+          "Installation takes around one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "toem-2",
       "title": "TOEM 2: Game & Soundtrack Bundle, v1.0.5 + Bonus OST",
@@ -34999,100 +35093,6 @@
           "Installation takes 2-5 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 1.7 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "memoriapolis",
-      "title": "MEMORIAPOLIS – v1.6.8",
-      "source_url": "https://fitgirl-repacks.site/memoriapolis/",
-      "image_url": "https://i3.imageban.ru/out/2025/05/03/e9a564887e6f1c0665e18e1546cf3cc6.jpg",
-      "post_date": "2026-07-13T13:00:23+03:00",
-      "genres": [
-        "Management",
-        "Strategy",
-        "3D"
-      ],
-      "repack_size": "1.9 GB",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2228280/extras/00_New_Gif_Ville.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/50/7c/507c674c-02f6-4141-8b02-34de2a817de0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/50/7c/507c674c-02f6-4141-8b02-34de2a817de0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1d/d6/1dd61eba-7ad9-4d9f-b84f-2c2c739af657.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1d/d6/1dd61eba-7ad9-4d9f-b84f-2c2c739af657.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c2/7a/c27a5477-dd10-41d0-b578-b8ec1e12fb35.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c2/7a/c27a5477-dd10-41d0-b578-b8ec1e12fb35.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c4/4d/c44dad41-86aa-469a-9cd3-e28fb3a743a0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c4/4d/c44dad41-86aa-469a-9cd3-e28fb3a743a0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ca/c9/cac9ff24-350b-4af4-9288-e77417e21cb1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ca/c9/cac9ff24-350b-4af4-9288-e77417e21cb1.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a2/7a/a27ae48e-49d8-4ed2-99b1-9bc35069dae2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a2/7a/a27ae48e-49d8-4ed2-99b1-9bc35069dae2.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Memoriapolis\nis a city-builder where you shape your town across time. Manage resources, make political decisions, and deal with the different factions moving in.\nYour ultimate goal?\nStay in power until the end of the Age of Enlightenment… and leave your mark in history by building a grand\nCity’s Fair\nduring the Industrial Revolution.\nBut beware – your citizens have needs, factions grow in influence, and historical events can shake everything up. Lose control, and it’s game over!",
-        "game_features": [
-          "Time moves forward – whether you’re ready or not. Your adventure spans",
-          "five historical eras",
-          ": Antiquity – Middle Ages – Renaissance – Age of Enlightenment and Industrial Revolution.",
-          "Each age lasts a number of in-game cycles before transitioning automatically. As your city evolves, so must your strategy. Some buildings can be upgraded to match a new era… others may need to go.",
-          "Think carefully: what will you preserve, and what will you sacrifice to shape the future?",
-          "In",
-          "Memoriapolis",
-          ", there’s no fixed grid or rigid control. Your city grows",
-          "organically",
-          ", and your citizens decide where they settle. This makes each playthrough feel natural, dynamic, and unique. You’ll need to adapt to their choices – while gently guiding them.",
-          "Use",
-          "cultural buildings",
-          "to influence the surrounding area and attract more people to grow your districts smartly.",
-          "There are 6 cultures in game (Military – Religion – Trade – Education – Production – Politics).",
-          "These cultures shape not just the buildings but also the citizens in your city. Over time, citizens will form factions. And as your city grows, so do these",
-          "factions",
-          "and they’ll become your political partners… or rivals.",
-          "A strong faction unlocks new buildings and boosts growth. But if a faction becomestoo powerful, it may block your key decisions or worse…",
-          "remove you from power",
-          ". Stay smart. Stay flexible. And always keep your influence in check.",
-          "Build Wonders that stand the test of time – from the Library of Alexandria to the Notre-Dame, the Leaning Tower of Pisa, and beyond.",
-          "Each Age holds its iconic masterpiece, tied to a culture, offering powerful bonuses to shape your legacy.",
-          "Let your city be remembered for centuries to come!"
-        ],
-        "repack_features": [
-          "Based on MEMORIA.POLIS.v1.6.8-TENOKE ISO release: tenoke-memoria.polis.v1.6.8.iso (6,769,250,304 bytes)",
-          "Game version: v1.6.8",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 6.3 to 1.9 GB)",
-          "Installation takes around one minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 6.3 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

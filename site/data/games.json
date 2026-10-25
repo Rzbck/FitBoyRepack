@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T08:43:36.317641+00:00",
+  "generated_at": "2026-10-25T18:23:55.266855+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
+    {
+      "id": "toem-2",
+      "title": "TOEM 2: Game & Soundtrack Bundle, v1.0.5 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/toem-2/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/25/6e81e39fbc21be2b3dea78d6ad2e66c0.jpg",
+      "post_date": "2026-10-25T21:16:13+03:00",
+      "genres": [
+        "Arcade",
+        "Platform adventure",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "429 MB"
+    },
     {
       "id": "cyberpunk-2077",
       "title": "Cyberpunk 2077: Ultimate Edition – v2.5 + All DLCs + Bonus Content + REDmod",

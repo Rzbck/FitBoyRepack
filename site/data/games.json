@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T21:07:32.649273+00:00",
+  "generated_at": "2026-10-25T22:34:58.480741+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
+    {
+      "id": "deus-ex-go",
+      "title": "Deus Ex GO – v2.1.88971",
+      "source_url": "https://fitgirl-repacks.site/deus-ex-go/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/25/a079cc05378199740fe9e4d3dabd9fc3.jpg",
+      "post_date": "2026-10-26T00:38:31+03:00",
+      "genres": [
+        "Logic",
+        "Puzzle",
+        "Isometric",
+        "3D",
+        "Cyberpunk",
+        "Turn-based"
+      ],
+      "repack_size": "102 MB"
+    },
     {
       "id": "memoriapolis",
       "title": "MEMORIAPOLIS: Fish & Ships Pack, v1.7.67 + DLC",

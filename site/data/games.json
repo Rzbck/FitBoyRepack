@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T18:23:55.266855+00:00",
+  "generated_at": "2026-10-25T18:24:35.222037+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "429 MB"
+      "repack_size": "429 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/94/53/9453c674-1f3b-451f-97bd-84809c62d04b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/53/9453c674-1f3b-451f-97bd-84809c62d04b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6e/d2/6ed27afa-b9ae-4402-a4d5-7432b2108462.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6e/d2/6ed27afa-b9ae-4402-a4d5-7432b2108462.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/38/3d/383de348-8866-419f-97d7-12a71fa5b1bc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/38/3d/383de348-8866-419f-97d7-12a71fa5b1bc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/70/c6/70c6e2a3-9462-4a55-b4e2-f3771c2a8b8a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/70/c6/70c6e2a3-9462-4a55-b4e2-f3771c2a8b8a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3f/a1/3fa12b23-c4a6-4c85-9aea-479d6288a92a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3f/a1/3fa12b23-c4a6-4c85-9aea-479d6288a92a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9a/a7/9aa77356-b6f0-49ca-beee-b6607330f746.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/a7/9aa77356-b6f0-49ca-beee-b6607330f746.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-25T18:24:35.219862+00:00",
+      "details": {
+        "description": "Tie those sneakers and ready your camera, it’s time to set off on a new photo adventure in TOEM 2! Head off on a relaxing journey, spurred on by your newly-awakened passion for discovering and photographing mysterious “events” known as TOEMs. TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.\nRun, jump, and climb your way through all-new cozy environments, uncovering hidden paths, scenic viewpoints, and small details waiting to be discovered. The world is built to reward curiosity, so take your time and wander wherever your camera leads you.\nEncounter a cast of new quirky characters and adorable critters along your journey. Lend a hand to new faces, create lasting friendships, and catalogue your memories as you go along.\nYour camera has gotten an upgrade! Not only can you snap pictures to solve puzzles, uncover secrets, and document your discoveries, you can also use them in more unconventional ways, with new attachments letting you overcome various problems in each region.\nFill your journal with stamps as you complete quests, document discoveries, and expand your critter compendium. Each stamp is not only a reminder of the little wonders you’ve uncovered along the way — they’re also your ticket to unlocking the next region.\nTOEM 2 is built to be experienced at your own pace with no time limits or tricky requirements for full completion. Listen to music on a bench, smell the flowers, admire the sights and enjoy.",
+        "game_features": [],
+        "repack_features": [
+          "Based on TOEM.2-TENOKE ISO release: tenoke-toem.2.iso (3,146,258,432 bytes)",
+          "Game version: v1.0.5; Bonus OST in MP3 format is included by default",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format nullified, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.9 GB to 429 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.8 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-25T18:24:35.219862+00:00"
     },
     {
       "id": "cyberpunk-2077",

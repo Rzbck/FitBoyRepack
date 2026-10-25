@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T01:11:19.814439+00:00",
+  "generated_at": "2026-10-25T01:34:35.582533+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-24T08:23:31.740793+00:00",
   "games": [
@@ -17,7 +17,64 @@
         "Retro look",
         "Turn-based"
       ],
-      "repack_size": "9.1 GB"
+      "repack_size": "9.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/4a/8c/4a8c9472-15db-448e-886e-3eba005d48a4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/8c/4a8c9472-15db-448e-886e-3eba005d48a4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d7/5e/d75e488a-f823-44bd-a46c-e89b6fc9e61d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d7/5e/d75e488a-f823-44bd-a46c-e89b6fc9e61d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/16/fb161800-a672-4708-b7e2-f8112e6a9b7d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/16/fb161800-a672-4708-b7e2-f8112e6a9b7d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b0/b3/b0b347ed-25d1-40fd-b860-a0b0e498ee9d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b0/b3/b0b347ed-25d1-40fd-b860-a0b0e498ee9d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fe/f7/fef78bff-e309-4596-b03f-d1c3db1fe620.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/f7/fef78bff-e309-4596-b03f-d1c3db1fe620.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/11/6f/116fe1ac-2a70-4bb5-a6b2-3961b082b06d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/11/6f/116fe1ac-2a70-4bb5-a6b2-3961b082b06d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-25T01:34:35.580052+00:00",
+      "details": {
+        "description": "Return to the pixel‑art world of FINAL FANTASY, evolved from its classic roots. Travel with companions bound by fate and call on Visions to aid you in battle to uncover the truth behind a force that threatens to bring everything to ruin.\n◆ Cinematic pixel art\nWhat if FINAL FANTASY had continued to push the limits of pixel art? The first FINAL FANTASY to join the HD‑2D lineup, FINAL FANTASY RESONANCE delivers a visually striking experience that feels both nostalgic and new, enhanced by dynamic camera angles and pixelized 3D models that make every moment more dramatic and immersive.\n◆ A return to the familiar\nA classic RPG adventure unfolds in a world filled with beloved FINAL FANTASY elements—airships, crystals, espers and moogles woven into the fabric of the story, and so much more.\n◆ Strategic turn-based battles\nExploit enemy weaknesses to stagger them—breaking their defenses to seize extra turns and gain the upper hand with powerful Resonance attacks in cinematic battles shaped by smart choices.\n◆ FINAL FANTASY legends\nBolster your team with Visions, echoes of beloved FINAL FANTASY characters, who fight alongside you with unique skills and abilities for deep party customization.\n◆ Hours of side content to discover\nThe world is full of secrets, including the wandering swordmaster Gilgamesh, a Colosseum with deadly monsters and rewards to match, the Chamber of Arms with formidable foes sealed within legendary weapons, and a showdown with Ultima Weapon.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 24250053 release: 13.6 GB",
+          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v1.9 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.0.1.0; 3 DLCs (Digital Deluxe Upgrade, Magitek Airship & Squire Starter Pack, Squire Kickstart Pack) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 13.6 to 9.1 GB)",
+          "Installation takes 9-25 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 13.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-25T01:34:35.580052+00:00"
     },
     {
       "id": "tasty-chef",
@@ -30,7 +87,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "1 GB"
+      "repack_size": "1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8d/7e/8d7e295b-5d46-4abd-95fe-f6b594a72dc1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8d/7e/8d7e295b-5d46-4abd-95fe-f6b594a72dc1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/d2/b1d2acff-a6e5-4722-b611-53049480be75.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/d2/b1d2acff-a6e5-4722-b611-53049480be75.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d6/8b/d68bf8aa-2825-4a0e-922c-4df21db3f9d5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d6/8b/d68bf8aa-2825-4a0e-922c-4df21db3f9d5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/65/17652736-e56e-4fa9-baad-0dd5760b1b56.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/65/17652736-e56e-4fa9-baad-0dd5760b1b56.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/c3/37c35641-2abf-468f-944e-35c3a4d9ba21.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/c3/37c35641-2abf-468f-944e-35c3a4d9ba21.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/95/90957c22-10cc-4ab9-b9d6-5ccc2de5aa27.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/95/90957c22-10cc-4ab9-b9d6-5ccc2de5aa27.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-25T01:34:35.580052+00:00",
+      "details": {
+        "description": "Build, cook, and run your restaurant with your own two hands!\nIn\nTasty Chef\n, you are both the restaurant owner and a hands-on member of the team. Design work areas, purchase ingredients, manage storage, prepare dishes step by step, and serve customers before the orders pile up!\nEvery part of the restaurant is up to you. Expand your space, freely place cooking equipment, storage units, and workstations, improve your kitchen flow, and build a restaurant that runs efficiently.\nDesign Your Own Menu\nUnlock new recipes, choose which dishes to serve each day, disable recipes you do not want to make, and customize flavors to create a menu that matches your restaurant’s style.\nEach item has its own unique preparation process. Prepare ingredients, use different equipment, complete every cooking step, and finally serve the finished food or drink to waiting customers.\nBuild a Reliable Staff Team\nRunning a restaurant does not mean doing everything yourself. You can hire NPC employees to help with all kinds of tasks the player can perform, including taking orders, preparing ingredients, cooking, serving, restocking, and organizing supplies.\nBuild a team that can keep the restaurant running on its own, so you can focus on growing the business. When the rush hour hits, you can always jump back into the kitchen and help out yourself.\nExperience Different Types of Restaurants\nThe launch version includes the bubble tea shop and sushi restaurant. Start with a cozy bubble tea shop and unlock the sushi restaurant as you progress. Each restaurant features its own recipes, equipment, preparation processes, and management mechanics.\nRun the Restaurant Alone or With Friends\nManage the entire restaurant by yourself, rely on NPC employees for support, or play together with friends. Divide tasks, cooperate efficiently, and keep every area of the restaurant running smoothly.\nWhether you enjoy hands-on cooking, planning efficient workflows, managing inventory, or training a reliable staff team,\nTasty Chef\nlets you build your ideal restaurant in your own way.\nHands-on cooking gameplay with unique preparation steps\nFreely expandable and customizable restaurants\nIngredient purchasing, storage, and restocking management\nAdjustable menus, recipes, and flavors\nNPC employees who can take orders, cook, serve, and restock\nMultiple restaurant types with different mechanics and workflows\nSingle-player and multiplayer support\nA relaxing, cozy atmosphere with bright colors and a 2.5D-style view in fully 3D environments",
+        "game_features": [],
+        "repack_features": [
+          "Based on Tasty.Chef-TENOKE ISO release: tenoke-tasty.chef.iso (4,002,355,200 bytes)",
+          "Game version: v1.0.5; Premium Pack DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.7 GB to 1 GB)",
+          "Installation takes within a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-25T01:34:35.580052+00:00"
     },
     {
       "id": "iracing-arcade",

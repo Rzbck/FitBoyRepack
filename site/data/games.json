@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T22:34:58.480741+00:00",
+  "generated_at": "2026-10-25T22:35:29.962748+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
@@ -18,7 +18,51 @@
         "Cyberpunk",
         "Turn-based"
       ],
-      "repack_size": "102 MB"
+      "repack_size": "102 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/37/53/37535199-01ee-4d44-ad76-09e89763c32d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/53/37535199-01ee-4d44-ad76-09e89763c32d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5b/5d/5b5d0810-1297-4ed7-a45d-7917a960be47.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5b/5d/5b5d0810-1297-4ed7-a45d-7917a960be47.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6e/af/6eaf4be5-eb75-41b0-99e5-edadb1b857a4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6e/af/6eaf4be5-eb75-41b0-99e5-edadb1b857a4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/01/83/01833257-a955-4c4b-8637-8a8edeaf69a1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/01/83/01833257-a955-4c4b-8637-8a8edeaf69a1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-25T22:35:29.960807+00:00",
+      "details": {
+        "description": "FROM THE MAKERS OF AWARD-WINNING HITMAN GO AND LARA CROFT GO COMES A NEW ADVENTURE\nDeus Ex GO is a turn-based puzzle stealth game set in a beautiful dystopian future. Take control of secret agent Adam Jensen and solve brain teasing, grid-based puzzles to infiltrate enemy lairs and unravel a perplexing new mystery. Sneak, hack and fight past enemies, and augment Adam with futuristic upgrades.\nAn engrossing story with over 50 challenging puzzles\nSpecial events with daily challenge levels\nUnique hacking powers – Take over enemy turrets or change the layout of the level itself\nAugmented puzzles – Solve puzzles using Adam’s iconic augmentations\nIntelligent new enemies including guards, turrets, drones, walkers and more\nAn intricate and mysterious storyline set in a beautiful vision of the future\nCan you solve the mystery? Take control of Adam Jensen and watch the puzzle unravel!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Deus.Ex.GO.INTERNAL-RUNE ISO release: rune-deus.ex.go.internal.iso (145,620,992 bytes)",
+          "Game version: v2.1.88971",
+          "Installer makes all necessary steps to register the game upon installation, but it it fails, run “Install_Deps.bat” as admin in the “_Redist” folder",
+          "To run the game find it with Windows search, desktop icon won’t work",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Slightly smaller archive size (compressed from 139 to 102 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 338 MB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-25T22:35:29.960807+00:00"
     },
     {
       "id": "memoriapolis",

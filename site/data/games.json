@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T23:15:32.018902+00:00",
+  "generated_at": "2026-10-25T23:16:13.826172+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
@@ -14,7 +14,59 @@
         "Managerial",
         "3D"
       ],
-      "repack_size": "2.8 GB"
+      "repack_size": "2.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f8/f4/f8f451af-559e-4f39-8710-242eda81d9b5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f8/f4/f8f451af-559e-4f39-8710-242eda81d9b5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/27/63/276361e3-eab1-415e-9a8a-d5b29f5fc99f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/27/63/276361e3-eab1-415e-9a8a-d5b29f5fc99f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d5/1a/d51a3dc0-2988-470a-81f2-8bb32d47c7f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d5/1a/d51a3dc0-2988-470a-81f2-8bb32d47c7f9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3d/8b/3d8b5807-6017-4f19-8a54-9f9d7f2c11d6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3d/8b/3d8b5807-6017-4f19-8a54-9f9d7f2c11d6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/bd/29bd1cb1-7a7e-4154-a764-e9c2f7a38fa1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/bd/29bd1cb1-7a7e-4154-a764-e9c2f7a38fa1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/21/e4/21e4acdc-ff42-4b4f-9369-78a8a135188f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/21/e4/21e4acdc-ff42-4b4f-9369-78a8a135188f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-25T23:16:13.823832+00:00",
+      "details": {
+        "description": "Construct complex research facilities across strange new worlds in the first-ever outpost builder set in the Star Trek universe.\nExplore diverse tech and buildings trees, and carefully choose which structures will help explore and build as you face a mysterious cosmic force that threatens all life in the system.\nLead your crew through dangerous encounters that will test their morale and prowess.\nExplore the X’Lehari System, assign tasks to your crew and develop your officers to ensure their survival.\nExplore the X’Lehari System with a completely original Star Trek story set in the 23rd century, alongside the era depicted in\nStar Trek: Strange New Worlds\n.\nTraverse through unique environments, meet new characters, and use iconic technology in your mission to render aid to a fragile civilization’s impending catastrophe.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Star.Trek.Outposts.Unknown-RUNE ISO release: rune-star.trek.outposts.unknown.iso (5,466,324,992 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.1 to 2.8 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-25T23:16:13.823832+00:00"
     },
     {
       "id": "deus-ex-go",

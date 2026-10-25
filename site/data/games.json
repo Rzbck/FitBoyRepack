@@ -1,9 +1,37 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-24T22:29:35.888396+00:00",
+  "generated_at": "2026-10-25T01:11:19.814439+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-24T08:23:31.740793+00:00",
   "games": [
+    {
+      "id": "final-fantasy-resonance",
+      "title": "FINAL FANTASY RESONANCE: Digital Deluxe Edition – v1.0.1.0 + 3 DLCs",
+      "source_url": "https://fitgirl-repacks.site/final-fantasy-resonance/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/25/c9851bd8195fd8d62883cb615ce41cf5.jpg",
+      "post_date": "2026-10-25T03:56:52+03:00",
+      "genres": [
+        "RPG",
+        "2D",
+        "Japanese",
+        "Retro look",
+        "Turn-based"
+      ],
+      "repack_size": "9.1 GB"
+    },
+    {
+      "id": "tasty-chef",
+      "title": "Tasty Chef: Deluxe Edition – v1.0.5 + Premium Pack DLC",
+      "source_url": "https://fitgirl-repacks.site/tasty-chef/",
+      "image_url": "https://i8.imageban.ru/out/2026/10/25/f960f967923e0bec5a3e38227ce7888b.jpg",
+      "post_date": "2026-10-25T03:20:43+03:00",
+      "genres": [
+        "Arcade",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "1 GB"
+    },
     {
       "id": "iracing-arcade",
       "title": "iRacing Arcade – v1.1.c0",

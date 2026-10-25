@@ -1,9 +1,21 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T22:35:29.962748+00:00",
+  "generated_at": "2026-10-25T23:15:32.018902+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
+    {
+      "id": "star-trek-outposts-unknown",
+      "title": "Star Trek: Outposts Unknown",
+      "source_url": "https://fitgirl-repacks.site/star-trek-outposts-unknown/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/26/3b64ebe06dc9028f005db84901e4d451.jpg",
+      "post_date": "2026-10-26T01:44:18+03:00",
+      "genres": [
+        "Managerial",
+        "3D"
+      ],
+      "repack_size": "2.8 GB"
+    },
     {
       "id": "deus-ex-go",
       "title": "Deus Ex GO – v2.1.88971",

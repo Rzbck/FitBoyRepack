@@ -1,9 +1,122 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T23:21:36.439535+00:00",
+  "generated_at": "2026-10-26T23:55:13.864142+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
+    {
+      "id": "forza-motorsport-7-ultimate-edition",
+      "title": "Forza Motorsport 7: Ultimate Edition – v1.174.4791.2 + All DLCs",
+      "source_url": "https://fitgirl-repacks.site/forza-motorsport-7-ultimate-edition/",
+      "image_url": "https://i7.imageban.ru/out/2022/03/18/1dd410a5cbb2959988af35d3a2c31de3.jpg",
+      "post_date": "2026-10-27T02:00:25+03:00",
+      "genres": [
+        "Racing",
+        "Simulation",
+        "First-person",
+        "Third-person",
+        "Cars",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c5/ba/c5ba28d7-3198-4e1c-9c9d-911c786900dc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c5/ba/c5ba28d7-3198-4e1c-9c9d-911c786900dc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/af/34/af34abb3-3f28-4442-98ca-d932cba13b0c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/af/34/af34abb3-3f28-4442-98ca-d932cba13b0c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/06/9a/069a3032-473b-410a-9102-b2de98ecc01c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/06/9a/069a3032-473b-410a-9102-b2de98ecc01c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0b/54/0b54f417-1cb2-4262-8647-af97cac795d2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0b/54/0b54f417-1cb2-4262-8647-af97cac795d2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/ec/b1ec5ede-d6ee-48f2-8d5c-06e5a6f1b384.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/ec/b1ec5ede-d6ee-48f2-8d5c-06e5a6f1b384.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/76/37760221-92a2-4318-a897-5ba424906999.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/76/37760221-92a2-4318-a897-5ba424906999.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T10:32:11.305655+00:00",
+      "details": {
+        "description": "Experience the thrill of motorsport at the limit with the most comprehensive, beautiful and authentic racing game ever made.\nForza Motorsport 7\nis where Racers, Drifters, Drag Racers, Tuners, and Creators come together in a community devoted to everything automotive. Drive the cars of your dreams, with more than 700 amazing vehicles to choose from including the largest collection of Ferraris, Porsches, and Lamborghinis ever. Challenge yourself across 30 famous destinations and 200 Tracks, where race conditions change every time you return to the Track. Experience it all in gorgeous 60fps and native 4K resolution in HDR!",
+        "game_features": [
+          "Improved Drift, Drag, & Time Attack",
+          "New modes: Tag, Virus & Pass the IT",
+          "Improved Lighting, Graphics & Shadows",
+          "Drift Steering Angle Upgrade and Scoring",
+          "New Race Shop",
+          "Upgraded Multiplayer",
+          "Improved Force Feedback",
+          "New Multiplayer Meetups",
+          "New Track Limits",
+          "Included DLCs:",
+          "2019 Hyundai Veloster N and Turbo Free Car Pack (2 DLC cars)",
+          "Samsung QLED Car Pack (7 DLC cars)",
+          "Doritos Car Pack (7 DLC cars)",
+          "Totino’s Car Pack (7 DLC cars)",
+          "Dell Gaming Car Pack (7 DLC cars)",
+          "March Car Pack (7 DLC cars)",
+          "K1 Speed Car Pack (7 DLC cars)",
+          "Hoonigan Car Pack (7 DLC cars)",
+          "Top Gear Car Pack (7 DLC cars)",
+          "Barrett-Jackson Car Pack (7 DLC cars)",
+          "Formula Drift Car Pack (7 DLC cars)",
+          "Hot Wheels Car Pack (7 DLC cars)",
+          "VIP Membership pack (9 DLC cars)",
+          "Fate of the Furious Car Pack (10 DLC cars)",
+          "May 2018 Spotlight (1 DLC car)",
+          "June 2018 Spotlight (1 DLC car)",
+          "July 2018 Spotlight (2 DLC cars)",
+          "August 2018 Spotlight (1 DLC car)",
+          "September 2018 Spotlight (1 DLC car)",
+          "October 2018 Spotlight (1 DLC car)",
+          "November 2018 Spotlight (1 DLC car)",
+          "December 2018 Spotlight (2 DLC cars)",
+          "January 2019 Spotlight (1 DLC car)",
+          "February 2019 Spotlight (2 DLC cars)",
+          "March 2019 Spotlight (3 DLC cars)",
+          "April 2019 Spotlight (1 DLC car)",
+          "May 2019 Spotlight (6 DLC cars)",
+          "August 2019 Spotlight (1 DLC car)",
+          "Alienware Driver Gear",
+          "Amazon Driver Gear"
+        ],
+        "repack_features": [
+          "Based on UWP release v1.174.4791.2: 99.2 GB, thanks to 0xdeadc0de for files!",
+          "UWP crack/fixer applied over, thanks to 0xdeadc0de!",
+          "160 DLCs are included and activated",
+          "100% Lossless, but NOT MD5 Perfect: game data packs have been rebuilt to make installation 8-10 times faster at cost of slightly larger final installed size and incompatibility with any delta-patches, which are unlikely to appear ever again",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of 4K videos",
+          "Significantly smaller archive size (compressed from 99.2 to 66.8/67.7 GB)",
+          "Installation takes 30-90 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 106.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "After installation, first run the crack installer from desktop icon. After that you can use an actual game desktop icon to run the game",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
+    },
     {
       "id": "azure-striker-gunvolt-trilogy-enhanced",
       "title": "Azure Striker Gunvolt Trilogy Enhanced – v2.0.0 + DLC",
@@ -377116,119 +377229,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 7.5 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
-    },
-    {
-      "id": "forza-motorsport-7-ultimate-edition",
-      "title": "Forza Motorsport 7: Ultimate Edition – v1.174.4791.2 + All DLCs + Multiplayer",
-      "source_url": "https://fitgirl-repacks.site/forza-motorsport-7-ultimate-edition/",
-      "image_url": "https://i7.imageban.ru/out/2022/03/18/1dd410a5cbb2959988af35d3a2c31de3.jpg",
-      "post_date": "2022-03-18T14:01:25+03:00",
-      "genres": [
-        "Racing",
-        "Simulation",
-        "First-person",
-        "Third-person",
-        "Cars",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/c5/ba/c5ba28d7-3198-4e1c-9c9d-911c786900dc.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c5/ba/c5ba28d7-3198-4e1c-9c9d-911c786900dc.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/af/34/af34abb3-3f28-4442-98ca-d932cba13b0c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/af/34/af34abb3-3f28-4442-98ca-d932cba13b0c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/06/9a/069a3032-473b-410a-9102-b2de98ecc01c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/06/9a/069a3032-473b-410a-9102-b2de98ecc01c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0b/54/0b54f417-1cb2-4262-8647-af97cac795d2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0b/54/0b54f417-1cb2-4262-8647-af97cac795d2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b1/ec/b1ec5ede-d6ee-48f2-8d5c-06e5a6f1b384.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b1/ec/b1ec5ede-d6ee-48f2-8d5c-06e5a6f1b384.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/37/76/37760221-92a2-4318-a897-5ba424906999.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/37/76/37760221-92a2-4318-a897-5ba424906999.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T10:32:11.305655+00:00",
-      "details": {
-        "description": "Experience the thrill of motorsport at the limit with the most comprehensive, beautiful and authentic racing game ever made.\nForza Motorsport 7\nis where Racers, Drifters, Drag Racers, Tuners, and Creators come together in a community devoted to everything automotive. Drive the cars of your dreams, with more than 700 amazing vehicles to choose from including the largest collection of Ferraris, Porsches, and Lamborghinis ever. Challenge yourself across 30 famous destinations and 200 Tracks, where race conditions change every time you return to the Track. Experience it all in gorgeous 60fps and native 4K resolution in HDR!",
-        "game_features": [
-          "Improved Drift, Drag, & Time Attack",
-          "New modes: Tag, Virus & Pass the IT",
-          "Improved Lighting, Graphics & Shadows",
-          "Drift Steering Angle Upgrade and Scoring",
-          "New Race Shop",
-          "Upgraded Multiplayer",
-          "Improved Force Feedback",
-          "New Multiplayer Meetups",
-          "New Track Limits",
-          "Included DLCs:",
-          "2019 Hyundai Veloster N and Turbo Free Car Pack (2 DLC cars)",
-          "Samsung QLED Car Pack (7 DLC cars)",
-          "Doritos Car Pack (7 DLC cars)",
-          "Totino’s Car Pack (7 DLC cars)",
-          "Dell Gaming Car Pack (7 DLC cars)",
-          "March Car Pack (7 DLC cars)",
-          "K1 Speed Car Pack (7 DLC cars)",
-          "Hoonigan Car Pack (7 DLC cars)",
-          "Top Gear Car Pack (7 DLC cars)",
-          "Barrett-Jackson Car Pack (7 DLC cars)",
-          "Formula Drift Car Pack (7 DLC cars)",
-          "Hot Wheels Car Pack (7 DLC cars)",
-          "VIP Membership pack (9 DLC cars)",
-          "Fate of the Furious Car Pack (10 DLC cars)",
-          "May 2018 Spotlight (1 DLC car)",
-          "June 2018 Spotlight (1 DLC car)",
-          "July 2018 Spotlight (2 DLC cars)",
-          "August 2018 Spotlight (1 DLC car)",
-          "September 2018 Spotlight (1 DLC car)",
-          "October 2018 Spotlight (1 DLC car)",
-          "November 2018 Spotlight (1 DLC car)",
-          "December 2018 Spotlight (2 DLC cars)",
-          "January 2019 Spotlight (1 DLC car)",
-          "February 2019 Spotlight (2 DLC cars)",
-          "March 2019 Spotlight (3 DLC cars)",
-          "April 2019 Spotlight (1 DLC car)",
-          "May 2019 Spotlight (6 DLC cars)",
-          "August 2019 Spotlight (1 DLC car)",
-          "Alienware Driver Gear",
-          "Amazon Driver Gear"
-        ],
-        "repack_features": [
-          "Based on UWP release v1.174.4791.2: 99.2 GB, thanks to 0xdeadc0de for files!",
-          "UWP crack/fixer applied over, thanks to 0xdeadc0de!",
-          "160 DLCs are included and activated",
-          "100% Lossless, but NOT MD5 Perfect: game data packs have been rebuilt to make installation 8-10 times faster at cost of slightly larger final installed size and incompatibility with any delta-patches, which are unlikely to appear ever again",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of 4K videos",
-          "Significantly smaller archive size (compressed from 99.2 to 66.8/67.7 GB)",
-          "Installation takes 30-90 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 106.6 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "After installation, first run the crack installer from desktop icon. After that you can use an actual game desktop icon to run the game",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

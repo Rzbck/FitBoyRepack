@@ -698,6 +698,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "forza-motorsport-7-repack-updated",
+      "title": "Forza Motorsport 7 Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/forza-motorsport-7-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "foundation-repack-updated-2",
       "title": "Foundation Repack Updated",
       "source_url": "https://fitgirl-repacks.site/foundation-repack-updated-2/",
@@ -8951,10 +8961,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-15-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9021,8 +9029,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-18-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9117,10 +9127,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

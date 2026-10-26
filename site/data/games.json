@@ -1,9 +1,93 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T19:57:58.674865+00:00",
-  "source_pages": 814,
+  "generated_at": "2026-10-26T23:20:56.758826+00:00",
+  "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
+    {
+      "id": "azure-striker-gunvolt-trilogy-enhanced",
+      "title": "Azure Striker Gunvolt Trilogy Enhanced – v2.0.0 + DLC",
+      "source_url": "https://fitgirl-repacks.site/azure-striker-gunvolt-trilogy-enhanced/",
+      "image_url": "https://i5.imageban.ru/out/2026/10/26/99ec97f08b60cf3d57bb26858c9efc68.jpg",
+      "post_date": "2026-10-27T00:23:07+03:00",
+      "genres": [
+        "Arcade",
+        "Run and gun",
+        "Side",
+        "2D",
+        "Japanese",
+        "Retro look"
+      ],
+      "repack_size": "5.6 GB"
+    },
+    {
+      "id": "reentry-a-space-flight-simulator",
+      "title": "Reentry: A Space Flight Simulator – v1.1.2",
+      "source_url": "https://fitgirl-repacks.site/reentry-a-space-flight-simulator/",
+      "image_url": "https://i1.imageban.ru/out/2025/11/11/143188c3b228a81cebce230cdb372e69.jpg",
+      "post_date": "2026-10-26T23:00:34+03:00",
+      "genres": [
+        "Simulator",
+        "Open world",
+        "Physics-based",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "4.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/43/0d/430dfd2e-238e-4923-a7f4-bd304e15fa8c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/43/0d/430dfd2e-238e-4923-a7f4-bd304e15fa8c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/83/1f/831f950f-aa2d-42b6-8f26-30b7260f4884.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/83/1f/831f950f-aa2d-42b6-8f26-30b7260f4884.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/16/e2/16e258b5-d7e7-43de-afbe-1e7d7b98e96d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/16/e2/16e258b5-d7e7-43de-afbe-1e7d7b98e96d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/23/43/2343590a-0c07-4ec7-8fda-c7194359a5b2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/23/43/2343590a-0c07-4ec7-8fda-c7194359a5b2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c4/3b/c43b0082-deaa-42b7-81db-1eef5e7d353a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c4/3b/c43b0082-deaa-42b7-81db-1eef5e7d353a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c6/35/c6354ee9-41d8-4ee7-880a-7ce9a6fe27ad.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c6/35/c6354ee9-41d8-4ee7-880a-7ce9a6fe27ad.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Reentry is a space flight simulator based on real life spacecrafts, and aims to meet the middle-ground between a simulator and a game. You create a new astronaut, gain levels and experience for every move you make by completing missions in space. You will have access to missions similar to what happened in real life, or fictional missions designed to challenge you as an astronaut.\nSpacecrafts are highly complicated machines with the primary task of exploring and understanding what’s outside the atmosphere of Earth, while keeping the astronauts alive for long periods. This is achieved by hundreds of individual systems and backup systems working together. With the help from the in-game Space Flight Academy, the provided flight manual for each spacecraft, and checklists, you will learn how to fly and operate these machines, and explore space in a high resolution and realistic environment.\nControl almost every system like the real astronauts, see the sunset and sunrise while orbiting Earth with speeds exceeding 25,500 ft/s. Explore the surface of Earth and the Moon, or simply enjoy the solitude of being in space.\nImagine the final few seconds before launching into space. You are sitting on top of a 111 meter high rocket, looking at the instruments of a spaceship about to leave the oasis we call Earth. The engines are igniting, mechanical systems are clinging below you, while thousands of gallons of fuel is pumping through the systems. The loud roar of the five F1 engines are producing close to 8,000,000 pounds of thrust, violently shaking the cockpit and lifting 3 million kg off the pad. The launch pad tower is slowly moving away from you while the engines are balancing the rocket like a skyscraper on a needle. Sophisticated engineers has created the systems that will safely accelerate you to 25,500 ft/s, into a free fall orbit, with the Moon as the destination.\nWelcome to Reentry, a space flight simulator.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Reentry.A.Space.Flight.Simulator-RUNE ISO release: rune-reentry.a.space.flight.simulator.iso (7,090,110,464 bytes)",
+          "Game version: v1.00.00 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.6 to 4.1 GB)",
+          "Installation takes 3-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 18.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "nomori",
       "title": "Nomori – v1.0.13 + Bonus OST",
@@ -109503,74 +109587,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 18.4 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "reentry-a-space-flight-simulator",
-      "title": "Reentry: A Space Flight Simulator – v1.00.00 (Release)",
-      "source_url": "https://fitgirl-repacks.site/reentry-a-space-flight-simulator/",
-      "image_url": "https://i1.imageban.ru/out/2025/11/11/143188c3b228a81cebce230cdb372e69.jpg",
-      "post_date": "2025-11-11T02:50:34+03:00",
-      "genres": [
-        "Simulator",
-        "Open world",
-        "Physics-based",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "4.1 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/43/0d/430dfd2e-238e-4923-a7f4-bd304e15fa8c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/43/0d/430dfd2e-238e-4923-a7f4-bd304e15fa8c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/83/1f/831f950f-aa2d-42b6-8f26-30b7260f4884.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/83/1f/831f950f-aa2d-42b6-8f26-30b7260f4884.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/16/e2/16e258b5-d7e7-43de-afbe-1e7d7b98e96d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/16/e2/16e258b5-d7e7-43de-afbe-1e7d7b98e96d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/23/43/2343590a-0c07-4ec7-8fda-c7194359a5b2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/23/43/2343590a-0c07-4ec7-8fda-c7194359a5b2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c4/3b/c43b0082-deaa-42b7-81db-1eef5e7d353a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c4/3b/c43b0082-deaa-42b7-81db-1eef5e7d353a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c6/35/c6354ee9-41d8-4ee7-880a-7ce9a6fe27ad.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c6/35/c6354ee9-41d8-4ee7-880a-7ce9a6fe27ad.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Reentry is a space flight simulator based on real life spacecrafts, and aims to meet the middle-ground between a simulator and a game. You create a new astronaut, gain levels and experience for every move you make by completing missions in space. You will have access to missions similar to what happened in real life, or fictional missions designed to challenge you as an astronaut.\nSpacecrafts are highly complicated machines with the primary task of exploring and understanding what’s outside the atmosphere of Earth, while keeping the astronauts alive for long periods. This is achieved by hundreds of individual systems and backup systems working together. With the help from the in-game Space Flight Academy, the provided flight manual for each spacecraft, and checklists, you will learn how to fly and operate these machines, and explore space in a high resolution and realistic environment.\nControl almost every system like the real astronauts, see the sunset and sunrise while orbiting Earth with speeds exceeding 25,500 ft/s. Explore the surface of Earth and the Moon, or simply enjoy the solitude of being in space.\nImagine the final few seconds before launching into space. You are sitting on top of a 111 meter high rocket, looking at the instruments of a spaceship about to leave the oasis we call Earth. The engines are igniting, mechanical systems are clinging below you, while thousands of gallons of fuel is pumping through the systems. The loud roar of the five F1 engines are producing close to 8,000,000 pounds of thrust, violently shaking the cockpit and lifting 3 million kg off the pad. The launch pad tower is slowly moving away from you while the engines are balancing the rocket like a skyscraper on a needle. Sophisticated engineers has created the systems that will safely accelerate you to 25,500 ft/s, into a free fall orbit, with the Moon as the destination.\nWelcome to Reentry, a space flight simulator.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Reentry.A.Space.Flight.Simulator-RUNE ISO release: rune-reentry.a.space.flight.simulator.iso (7,090,110,464 bytes)",
-          "Game version: v1.00.00 (Release)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 6.6 to 4.1 GB)",
-          "Installation takes 3-6 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 18.6 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

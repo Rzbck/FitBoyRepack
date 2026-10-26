@@ -1,9 +1,77 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T01:13:19.378292+00:00",
+  "generated_at": "2026-10-26T06:16:58.995453+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
+    {
+      "id": "mortal-shell-2",
+      "title": "Mortal Shell II: Devout Edition – v97404+1875 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/mortal-shell-2/",
+      "image_url": "https://i6.imageban.ru/out/2026/08/18/ba7f0a7b70ab27309cafdc0069d2ea07.jpg",
+      "post_date": "2026-10-26T04:00:41+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "52.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/1e/e0/1ee0446c-ef2c-4a3a-aa9e-1806454bf1c8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/e0/1ee0446c-ef2c-4a3a-aa9e-1806454bf1c8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/40/71/4071c995-873f-4294-a5da-2432759e9929.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/40/71/4071c995-873f-4294-a5da-2432759e9929.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6d/44/6d44454e-98da-4d32-9c20-429639175e1c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6d/44/6d44454e-98da-4d32-9c20-429639175e1c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8d/e9/8de9ce74-4d49-4169-b863-253e8cdec947.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8d/e9/8de9ce74-4d49-4169-b863-253e8cdec947.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/26/4226975d-3f29-445d-bcd2-0e6cc0136b08.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/26/4226975d-3f29-445d-bcd2-0e6cc0136b08.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e2/14/e214349c-ee7b-4ff0-bb2b-bfb5ed5ab553.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e2/14/e214349c-ee7b-4ff0-bb2b-bfb5ed5ab553.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Mortal Shell II is a standalone sequel to Mortal Shell that significantly expands on the original with unrestricted, adrenaline-charged combat, extensive weapon upgrades, and free exploration.\nThe forgotten Shells of eight lost warriors are scattered throughout Mortal Shell II’s ravaged world. Seek and possess these Shells, unleash their innate abilities, and discover the story of each by unravelling their secrets.\nMortal Shell II offers a clean, agile and grounded combat system, with options to think strategically about upgrading melee and ranged weapons.\nUnrestricted by stamina, players exploit multiple tactics to shatter enemy posture and strike critically.\nMortal Shell II’s open world is compact, tightly interconnected and immersive. It is designed with respect for the player’s time.\nThose who wander from the golden path can discover new Shells, weaponry, upgrades, curiosities and more.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Mortal.Shell.II-RUNE ISO release: rune-mortal.shell.ii.iso (70,215,303,168 bytes)",
+          "Game version: vCL92086; 2 DLCs (Devout Edition Upgrade & Pre-order Bonus) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of useless PDB debugging files",
+          "Smaller archive size (compressed from 65.4 to 51.1/51.3 GB)",
+          "Installation takes from 20 minutes (on 32-threads CPU) up to one hour (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 68.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "alien-breed-35th-anniversary-collection",
       "title": "Alien Breed 35th Anniversary Collection – v1.0.1",
@@ -21882,74 +21950,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 23 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "mortal-shell-2",
-      "title": "Mortal Shell II: Devout Edition – vCL92086 + 2 DLCs",
-      "source_url": "https://fitgirl-repacks.site/mortal-shell-2/",
-      "image_url": "https://i6.imageban.ru/out/2026/08/18/ba7f0a7b70ab27309cafdc0069d2ea07.jpg",
-      "post_date": "2026-08-18T05:38:41+03:00",
-      "genres": [
-        "RPG",
-        "Action RPG",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/1e/e0/1ee0446c-ef2c-4a3a-aa9e-1806454bf1c8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1e/e0/1ee0446c-ef2c-4a3a-aa9e-1806454bf1c8.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/40/71/4071c995-873f-4294-a5da-2432759e9929.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/40/71/4071c995-873f-4294-a5da-2432759e9929.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/6d/44/6d44454e-98da-4d32-9c20-429639175e1c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6d/44/6d44454e-98da-4d32-9c20-429639175e1c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8d/e9/8de9ce74-4d49-4169-b863-253e8cdec947.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8d/e9/8de9ce74-4d49-4169-b863-253e8cdec947.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/42/26/4226975d-3f29-445d-bcd2-0e6cc0136b08.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/42/26/4226975d-3f29-445d-bcd2-0e6cc0136b08.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e2/14/e214349c-ee7b-4ff0-bb2b-bfb5ed5ab553.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e2/14/e214349c-ee7b-4ff0-bb2b-bfb5ed5ab553.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Mortal Shell II is a standalone sequel to Mortal Shell that significantly expands on the original with unrestricted, adrenaline-charged combat, extensive weapon upgrades, and free exploration.\nThe forgotten Shells of eight lost warriors are scattered throughout Mortal Shell II’s ravaged world. Seek and possess these Shells, unleash their innate abilities, and discover the story of each by unravelling their secrets.\nMortal Shell II offers a clean, agile and grounded combat system, with options to think strategically about upgrading melee and ranged weapons.\nUnrestricted by stamina, players exploit multiple tactics to shatter enemy posture and strike critically.\nMortal Shell II’s open world is compact, tightly interconnected and immersive. It is designed with respect for the player’s time.\nThose who wander from the golden path can discover new Shells, weaponry, upgrades, curiosities and more.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Mortal.Shell.II-RUNE ISO release: rune-mortal.shell.ii.iso (70,215,303,168 bytes)",
-          "Game version: vCL92086; 2 DLCs (Devout Edition Upgrade & Pre-order Bonus) are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of useless PDB debugging files",
-          "Smaller archive size (compressed from 65.4 to 51.1/51.3 GB)",
-          "Installation takes from 20 minutes (on 32-threads CPU) up to one hour (on 8-threads CPU)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 68.1 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

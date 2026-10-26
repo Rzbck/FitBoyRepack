@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T19:33:38.781172+00:00",
+  "generated_at": "2026-10-26T19:34:21.296170+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "714 MB"
+      "repack_size": "714 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b7/8c/b78cd4bf-a6ed-42c3-b9e4-db332faa16ad.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b7/8c/b78cd4bf-a6ed-42c3-b9e4-db332faa16ad.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c5/1a/c51a9373-f947-4ad8-9572-41a69401fcec.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c5/1a/c51a9373-f947-4ad8-9572-41a69401fcec.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/3e/1a3e7816-8fa1-4263-8a2c-290512e9bff0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/3e/1a3e7816-8fa1-4263-8a2c-290512e9bff0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/9e/c79e957a-3390-4358-8824-a83c9fb7a7b0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/9e/c79e957a-3390-4358-8824-a83c9fb7a7b0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/49/8b/498b3d10-0eaa-4ecd-927d-254496235c04.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/49/8b/498b3d10-0eaa-4ecd-927d-254496235c04.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d9/64/d9643951-bd05-4dcd-a20d-24b247208026.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d9/64/d9643951-bd05-4dcd-a20d-24b247208026.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-26T19:34:21.293852+00:00",
+      "details": {
+        "description": "In Nomori, up and down can change from moment to moment. Place, shift, and rotate portals to change the direction of the environment around you and make every surface a floor! Manipulate the gravity direction of other objects to solve a wide range of puzzles.\nYou are Kiko, a curious girl stuck in a whimsical spirit world in trouble. Meet a colorful cast of characters that will challenge Kiko to see the world, and herself, from new perspectives. As Kiko and the Spirits help each other out, she may yet find a way to heal Nomori and get back home.\nExplore each level as you wish: around every corner of your surroundings you’ll find rewards! Play with gravity and timing in a physics-based world, and combine your Spirit Powers to overcome obstacles your own way.\nTravel through the four seasonal domains of Nomori, each one putting new twists on the mechanics you’ve learned. Gradually become a master of your magical abilities as you meet and reunite the Spirits of Nomori.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Nomori-TENOKE ISO release: tenoke-nomori.iso (3,242,907,648 bytes)",
+          "Game version: v1.0.13",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST",
+          "Significantly smaller archive size (compressed from 3 GB to 714 MB/1 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 3 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-26T19:34:21.293852+00:00"
     },
     {
       "id": "mortal-shell-2",

@@ -1,9 +1,27 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-25T23:16:13.826172+00:00",
+  "generated_at": "2026-10-26T01:12:35.958156+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
+    {
+      "id": "alien-breed-35th-anniversary-collection",
+      "title": "Alien Breed 35th Anniversary Collection – v1.0.1",
+      "source_url": "https://fitgirl-repacks.site/alien-breed-35th-anniversary-collection/",
+      "image_url": "https://i5.imageban.ru/out/2026/10/26/caaf36ae7b65281ecb752b4dd566544f.jpg",
+      "post_date": "2026-10-26T03:30:47+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Arcade",
+        "Shoot 'em up",
+        "First-person",
+        "Top-down",
+        "2D",
+        "3D"
+      ],
+      "repack_size": "2.1 GB"
+    },
     {
       "id": "star-trek-outposts-unknown",
       "title": "Star Trek: Outposts Unknown",

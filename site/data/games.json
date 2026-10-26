@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T23:20:56.758826+00:00",
+  "generated_at": "2026-10-26T23:21:36.439535+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
@@ -18,7 +18,60 @@
         "Japanese",
         "Retro look"
       ],
-      "repack_size": "5.6 GB"
+      "repack_size": "5.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8b/b5/8bb5dd7b-5502-410d-a1c7-83b3b65deeeb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8b/b5/8bb5dd7b-5502-410d-a1c7-83b3b65deeeb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/a9/17a9e614-2ab9-44fa-ac8d-85a5e603ab7e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/a9/17a9e614-2ab9-44fa-ac8d-85a5e603ab7e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3c/bb/3cbb5448-175d-48f2-ae1b-98bdd53ef104.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3c/bb/3cbb5448-175d-48f2-ae1b-98bdd53ef104.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4f/2a/4f2a369f-b145-4318-ad4b-eef4b666b2cf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4f/2a/4f2a369f-b145-4318-ad4b-eef4b666b2cf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/76/6a/766acf17-e4b4-4532-b446-a9d1f6477139.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/6a/766acf17-e4b4-4532-b446-a9d1f6477139.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b2/1d/b21df418-3d96-457a-9e7c-7b998ac6fe4e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/1d/b21df418-3d96-457a-9e7c-7b998ac6fe4e.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-26T23:21:36.436936+00:00",
+      "details": {
+        "description": "The Azure Striker’s journey, all 3 games in one collection!\nThe Azure Striker Gunvolt Trilogy Enhanced is a collection of three traditional 2D action platformers,\n“Azure Striker Gunvolt” (2014), “Azure Striker Gunvolt 2” (2016), and “Azure Striker Gunvolt 3” (2022)\ntogether in one release, complete with all DLC.\nThe Gunvolt series boasts a rich story, played out with real-time dialog during missions, and an vast catalog of music, with over 37 songs performed by the games’ characters.\nPlus, this special Trilogy comes with exclusive features: action revisions from the series director, revised voices and songs, and once Japan-exclusive CD dramas included in the game. This collection strives to be as complete as possible!\nIncluded Games\nAzure Striker Gunvolt:\nDash through stages at high speed and take down enemies with your “Flashfield” in this satisfying action platformer.\nPlayers control Gunvolt, a superhuman (known as an Adept) with the power of lightning who must confront the oppressive Sumeragi Group in a battle for freedom.\nThe Trilogy Enhanced version adds new Skills to Gunvolt’s arsenal.\nUnleash overwhelming power like never before!\nAzure Striker Gunvolt 2:\nGunvolt’s rival, Copen, becomes a new star and playable character alongside the Azure Striker.\nCopen uses his dash to tackle and lock onto enemies before unleashing a devastating homing laser barrage.\nMaster his aerial “Bullit Dash” to gracefully fly through stages and destroy enemies from above, unlocking new weapons from the abilities of defeated bosses.\nCopen and Lola’s voices have been re-recorded for the Trilogy Enhanced edition of the game.\nAzure Striker Gunvolt 3:\nA new style of action arrives with the new heroine “Kirin” who can swap with Gunvolt to overcome any situation.\nKirin has the power to teleport instantly to strike down enemies with her “Arc Chain” ability for melee action of unprecedented speed. Or switch to Gunvolt, whose tag and electrify style has leveled up to allow him to dash through enemies while striking them down, teleport, and unleash other new “Voltaic Arts”.\nThe Image Pulse system brings characters from the series as buffs and attacks, with over 150 varieties to collect.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Azure.Striker.Gunvolt.Trilogy.Enhanced.Additional.mode.Azure.Striker.Gunvolt.GX-TENOKE ISO release: tenoke-azure.striker.gunvolt.trilogy.enhanced.additional.mode.azure.striker.gunvolt.gx.iso (9,823,477,760 bytes)",
+          "Game version: v2.0.0; “Additional mode Azure Striker Gunvolt GX” DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 9.1 to 5.6 GB)",
+          "Installation takes 12-18 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-26T23:21:36.436936+00:00"
     },
     {
       "id": "reentry-a-space-flight-simulator",

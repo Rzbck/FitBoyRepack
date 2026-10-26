@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T09:20:48.359542+00:00",
-  "source_pages": 814,
+  "generated_at": "2026-10-26T19:33:38.781172+00:00",
+  "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
+    {
+      "id": "nomori",
+      "title": "Nomori – v1.0.13 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/nomori/",
+      "image_url": "https://i4.imageban.ru/out/2026/10/26/7114bf12ef4b0b0bebe4de2c8ec8ad6a.jpg",
+      "post_date": "2026-10-26T20:36:21+03:00",
+      "genres": [
+        "Action",
+        "Logic",
+        "Puzzle",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "714 MB"
+    },
     {
       "id": "mortal-shell-2",
       "title": "Mortal Shell II: Devout Edition – v97404+1875 + 2 DLCs",

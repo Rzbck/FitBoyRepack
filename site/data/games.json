@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T01:12:35.958156+00:00",
+  "generated_at": "2026-10-26T01:13:19.378292+00:00",
   "source_pages": 814,
   "last_full_scan_at": "2026-10-25T08:43:36.317641+00:00",
   "games": [
@@ -20,7 +20,61 @@
         "2D",
         "3D"
       ],
-      "repack_size": "2.1 GB"
+      "repack_size": "2.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ad/76/ad761c81-832a-4e46-8a0b-ea8fad874522.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ad/76/ad761c81-832a-4e46-8a0b-ea8fad874522.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d9/f8/d9f8ebde-22a4-4f97-818b-3b138a36c3d7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d9/f8/d9f8ebde-22a4-4f97-818b-3b138a36c3d7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/68/a968a5bd-0109-49b8-8575-886639ad3ac2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/68/a968a5bd-0109-49b8-8575-886639ad3ac2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/f8/aaf816a3-0670-4d65-b5b4-9afa32c2423d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/f8/aaf816a3-0670-4d65-b5b4-9afa32c2423d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/55/63/5563cb78-eebf-4173-ae70-72e7cea0be8c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/55/63/5563cb78-eebf-4173-ae70-72e7cea0be8c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/d8/1ad83912-04ec-4305-b976-2d4e07ce8f99.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/d8/1ad83912-04ec-4305-b976-2d4e07ce8f99.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-26T01:13:19.376107+00:00",
+      "details": {
+        "description": "<>\n###.Arrival in T-minus 47 seconds. Report – Intex Elite Archive Retrieval Team – Attempt Thirty-Six._###\n35 years ago, this station initiated blackout protocols, burying the first era of Intex’s xeno operations.\nYour objective – Infiltrate the station, get power and systems back online, uncover the last, complete archive of original redacted documents, first-person combat firefights and classified secrets.\nArchive footage and the all-new Horde Mode training will equip you with the skills you will need to survive. When you’re ready, deploy across six core original campaigns as a lone-wolf, with locally assigned personnel, or alongside remote operators connected through a direct peer-to-peer uplink.\nIntex has unlocked an all-new tactical suite to increase chances of success. New software enhancements, modern combat control augments, and field-deployable revive packs are at your disposal. Overhauled optical tools will allow you to set up your HUD for complete environmental controls.\nOnce complete, initiate return file transfer. You are not expected to survive. This operation will not be acknowledged. Your company thanks you for your service.\n<<_#Terminate File... Redact operational logs. /Deactivate>>\nCelebrate 35 years of top-down sci-fi horror-action with the definitive Alien Breed Collection. Experience the complete library of games, extras and more from the franchise’s first era, all optimised in their original formats and including modern controls.\nThe Vault Interactive Archives\nStep behind the airlocks to explore an expansive archive of the series’ history through an in-universe interactive experience, hiding more than a few secrets. The Vault offers a deep dive into the concept art and original retail launches, while The Timeline features exclusive developer interviews and retrospective videos from the original team.\nUpdated Combat, UI & Customisation\nAn upgraded hardware interface makes the original titles more accessible without losing the soul of the original gameplay. Precision controls as standard, with full twin-stick support for both 2D and 3D titles, and classic Mouse and Keyboard support for 3D. Drastically improved framerates provide a fluid FPS experience. Tactical Save States provide multiple slots to pause and continue different runs. Fine-tune your visuals, audio and gameplay settings across the entire collection with the Global Customisation options.\nRetro-Visual Suite\nSwitch between a classic 4:3 aspect ratio or modern 16:9 formats. Capture the authentic 90s glow with the CRT Experience offering professional-grade Scanlines, CRT TV, and “Mega CRT” filters. Toggle custom in-game screen bezels to perfectly frame the retro action on modern monitors.\nMultiplayer & New Challenges\nCouch Co-Op modes have been preserved exactly as players remember from the originals for those seeking a traditional trip down memory lane.\nNew Rush Mode & Horde Mode – Take on a high-stakes P2P Online Co-Op experience in Rush Mode. Tackle the relentless swarm in solo or as a team across all supported platforms with no saves and no continues.\nDiscover the all-new Horde Mode solo survival experience. See how long you can last against the hunger of the Breed.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Alien_Breed_35th_Anniversary_Collection-Razor1911 ISO release: rzr-alienbreed35th.iso (6,019,645,440 bytes)",
+          "Game version: v1.0.1",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with bonus videos!)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus videos",
+          "Smaller archive size (compressed from 5.6 to 2.1/5.2 GB)",
+          "Installation takes 1-3 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-26T01:13:19.376107+00:00"
     },
     {
       "id": "star-trek-outposts-unknown",

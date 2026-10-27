@@ -1,9 +1,39 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-26T23:55:13.864142+00:00",
+  "generated_at": "2026-10-27T02:20:44.549003+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
+    {
+      "id": "over-the-hill",
+      "title": "over the hill: Supporter Pack Bundle – v26.10.22 + 2 Bonus DLCs",
+      "source_url": "https://fitgirl-repacks.site/over-the-hill/",
+      "image_url": "https://i6.imageban.ru/out/2026/10/27/49dcf929c64b64cedb9a88c95f575ee0.jpg",
+      "post_date": "2026-10-27T05:13:21+03:00",
+      "genres": [
+        "Driving",
+        "Exploration",
+        "Open world",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
+    {
+      "id": "aspis",
+      "title": "ASPIS",
+      "source_url": "https://fitgirl-repacks.site/aspis/",
+      "image_url": "https://i1.imageban.ru/out/2026/10/27/3e5a67252f9bb52daf95e6aa5a8e85dc.jpg",
+      "post_date": "2026-10-27T04:19:15+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "10.9 GB"
+    },
     {
       "id": "forza-motorsport-7-ultimate-edition",
       "title": "Forza Motorsport 7: Ultimate Edition – v1.174.4791.2 + All DLCs",

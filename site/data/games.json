@@ -1,9 +1,98 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-27T09:19:48.328943+00:00",
+  "generated_at": "2026-10-27T23:09:52.013091+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-27T09:19:48.328943+00:00",
   "games": [
+    {
+      "id": "reka",
+      "title": "REKA: Deluxe Edition – v1.0.21 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/reka/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/28/40d4cecf9be6c290dbefbca53b494ec2.jpg",
+      "post_date": "2026-10-28T01:37:57+03:00",
+      "genres": [
+        "Adventure",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "1.2 GB"
+    },
+    {
+      "id": "i-am-your-beast",
+      "title": "I Am Your Beast: Complete Edition – v2026.41.A + Quitting Time DLC",
+      "source_url": "https://fitgirl-repacks.site/i-am-your-beast/",
+      "image_url": "https://i5.imageban.ru/out/2024/09/14/becddcdfeddfe111d05c4a2199b42c06.jpg",
+      "post_date": "2026-10-28T00:01:29+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.1 GB",
+      "media": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876590/extras/gif4.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/95/06/95069b3a-dbf8-443b-97a7-8205319c5c4d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/06/95069b3a-dbf8-443b-97a7-8205319c5c4d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3d/4f/3d4f116d-6093-4e60-bc51-cae4d34b578f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3d/4f/3d4f116d-6093-4e60-bc51-cae4d34b578f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/41/12/4112cf68-bd8a-4853-a6c5-779c562ee120.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/41/12/4112cf68-bd8a-4853-a6c5-779c562ee120.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/73/1a/731a84de-3124-4b96-83b9-6076f22aa1bf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/73/1a/731a84de-3124-4b96-83b9-6076f22aa1bf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b2/99/b299aaa3-0eb3-43f1-b0dd-1b5a6bacb67f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/99/b299aaa3-0eb3-43f1-b0dd-1b5a6bacb67f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ad/5a/ad5a2b1c-92da-4858-9427-7a1ba702a84c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ad/5a/ad5a2b1c-92da-4858-9427-7a1ba702a84c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:20:19.939330+00:00",
+      "details": {
+        "description": "I Am Your Beast is a shortform covert revenge thriller FPS about getting hunted across the North American wilderness by the military-industrial complex — and turning the tables.\nYou are secret agent Alphonse Harding. Retired for six years, you’ve been asked to complete ‘one last job’, one too many times. Declining your latest mission sets in motion a furious guerilla war between you and the Covert Operations Initiative (COI) that litters the forest with bodies and bullet casings.\nBreak your opponents. Use their own equipment against them. Duck into your tunnel network before enemy forces zero in on your location. Repeat.",
+        "game_features": [
+          "Lightning-fast “he’s-in-the-walls” player fantasy, complete with superhuman tree climbing and head explosions.",
+          "Fully voiced story campaign with 20+ levels.",
+          "Lush comic book-inspired art style.",
+          "Chase side objectives while getting the fastest times possible in replayable micro-sandboxes.",
+          "Wield pistols, sniper rifles, bear traps, and more.",
+          "Heart-slamming soundtrack from award-winning composer RJ Lake (Space Warlord Organ Trading Simulator, Unbeatable, El Paso, Elsewhere).",
+          "Innovative “kinetic typography” cutscene system."
+        ],
+        "repack_features": [
+          "Based on I.Am.Your.Beast-SKIDROW ISO release: sr-iamyourbeast.iso (1,364,676,608 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.3 GB to 709 MB)",
+          "Installation takes 2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:20:19.939330+00:00"
+    },
     {
       "id": "over-the-hill",
       "title": "over the hill: Supporter Pack Bundle – v26.10.22 + 2 Bonus DLCs",
@@ -226128,82 +226217,6 @@
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack",
           "Copy contents of “_Windows 7 Fix” folder to the game root and run “EVOTINCTION DX11” desktop icon to be able to play on Windows 7"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:20:19.939330+00:00"
-    },
-    {
-      "id": "i-am-your-beast",
-      "title": "I Am Your Beast",
-      "source_url": "https://fitgirl-repacks.site/i-am-your-beast/",
-      "image_url": "https://i5.imageban.ru/out/2024/09/14/becddcdfeddfe111d05c4a2199b42c06.jpg",
-      "post_date": "2024-09-15T00:16:29+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "709 MB",
-      "media": [
-        {
-          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876590/extras/gif4.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/95/06/95069b3a-dbf8-443b-97a7-8205319c5c4d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/95/06/95069b3a-dbf8-443b-97a7-8205319c5c4d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3d/4f/3d4f116d-6093-4e60-bc51-cae4d34b578f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3d/4f/3d4f116d-6093-4e60-bc51-cae4d34b578f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/41/12/4112cf68-bd8a-4853-a6c5-779c562ee120.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/41/12/4112cf68-bd8a-4853-a6c5-779c562ee120.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/73/1a/731a84de-3124-4b96-83b9-6076f22aa1bf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/73/1a/731a84de-3124-4b96-83b9-6076f22aa1bf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b2/99/b299aaa3-0eb3-43f1-b0dd-1b5a6bacb67f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b2/99/b299aaa3-0eb3-43f1-b0dd-1b5a6bacb67f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ad/5a/ad5a2b1c-92da-4858-9427-7a1ba702a84c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ad/5a/ad5a2b1c-92da-4858-9427-7a1ba702a84c.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:20:19.939330+00:00",
-      "details": {
-        "description": "I Am Your Beast is a shortform covert revenge thriller FPS about getting hunted across the North American wilderness by the military-industrial complex — and turning the tables.\nYou are secret agent Alphonse Harding. Retired for six years, you’ve been asked to complete ‘one last job’, one too many times. Declining your latest mission sets in motion a furious guerilla war between you and the Covert Operations Initiative (COI) that litters the forest with bodies and bullet casings.\nBreak your opponents. Use their own equipment against them. Duck into your tunnel network before enemy forces zero in on your location. Repeat.",
-        "game_features": [
-          "Lightning-fast “he’s-in-the-walls” player fantasy, complete with superhuman tree climbing and head explosions.",
-          "Fully voiced story campaign with 20+ levels.",
-          "Lush comic book-inspired art style.",
-          "Chase side objectives while getting the fastest times possible in replayable micro-sandboxes.",
-          "Wield pistols, sniper rifles, bear traps, and more.",
-          "Heart-slamming soundtrack from award-winning composer RJ Lake (Space Warlord Organ Trading Simulator, Unbeatable, El Paso, Elsewhere).",
-          "Innovative “kinetic typography” cutscene system."
-        ],
-        "repack_features": [
-          "Based on I.Am.Your.Beast-SKIDROW ISO release: sr-iamyourbeast.iso (1,364,676,608 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 1.3 GB to 709 MB)",
-          "Installation takes 2 minutes",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 2 GB",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,

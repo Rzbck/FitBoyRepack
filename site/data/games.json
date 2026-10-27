@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-27T02:20:44.549003+00:00",
+  "generated_at": "2026-10-27T02:21:29.176156+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-26T09:20:48.359542+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/57/89/57890ca5-f182-4767-9475-e425934819e5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/57/89/57890ca5-f182-4767-9475-e425934819e5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/e4/1ae41c0a-71ea-4fbc-867d-788ffa5ada15.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/e4/1ae41c0a-71ea-4fbc-867d-788ffa5ada15.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fa/fc/fafc8d9d-d192-4106-93a0-52ed3118eb61.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fa/fc/fafc8d9d-d192-4106-93a0-52ed3118eb61.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/77/3077a8f0-3889-4238-8947-f4f6f4d09e77.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/77/3077a8f0-3889-4238-8947-f4f6f4d09e77.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ad/2c/ad2cce05-bae0-4ba9-ab60-024f1a9bff9a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ad/2c/ad2cce05-bae0-4ba9-ab60-024f1a9bff9a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cb/fc/cbfc60d9-cfb2-4aa1-825f-6e50852fa3d1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cb/fc/cbfc60d9-cfb2-4aa1-825f-6e50852fa3d1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-27T02:21:29.174089+00:00",
+      "details": {
+        "description": "Explore, navigate, and uncover the vast wilderness of over the hill, the newest installation from the creator of art of rally. Ramble your way through varied biomes inspired by real-world locations, from valleys to mountains and everything in between.\nTake to the trails solo or with up to three friends. Cruise through scenic landscapes, tackle challenging off-road routes, and work together to overcome the obstacles standing between you and your destination.\nDifferent situations call for different solutions. Use planks to cross gaps, deploy winches to recover vehicles and navigate difficult terrain, and bring the right equipment to help you overcome the challenges ahead. Whether you’re carefully planning your route or improvising your way through a tricky situation, the journey is always in your hands.\nExplore forests, lakesides, and mountains as you uncover remote cabins, scenic viewpoints, natural landmarks, meteorites that have fallen from the sky, and portals that can take you to new areas. Dynamic weather and day/night cycles can transform the world around you and change the conditions of your journey.\nSpot native wildlife and use the in-game camera to document your discoveries. Photograph the animals you encounter to fill out your wildlife compendium, or stop to capture an awe-inspiring landscape, a beautiful sunset, or any other moment worth remembering.\nFind upgrades and equipment throughout the world to help you take on the terrain ahead. Stop at merchants and cabins to customize your vehicle with colours, accessories, and cosmetics that suit your driving style.\nThis is a driving game, not a racing game. Take your time, enjoy the drive, find your own route, and see where the road leads. The best stories never start at the end.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26136884 release with bonus DLCs: 5.4 GB, thanks to Valentine & gti!",
+          "Game version: v26.10.22; 2 Bonus DLCs (OST in MP3 format & ArtBook) are included as an optional download",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.4 to 1.4/2 GB)",
+          "Installation takes 2-5 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 5.4 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-27T02:21:29.174089+00:00"
     },
     {
       "id": "aspis",
@@ -32,7 +85,60 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "10.9 GB"
+      "repack_size": "10.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c0/a7/c0a7cdf2-65ee-4c7e-90fc-55320faea849.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c0/a7/c0a7cdf2-65ee-4c7e-90fc-55320faea849.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ee/c2/eec2d99b-ccb5-4267-9c13-4cd80dd36c97.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ee/c2/eec2d99b-ccb5-4267-9c13-4cd80dd36c97.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/66/4b/664b078c-6b92-4e1c-aa24-08072dd14d64.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/4b/664b078c-6b92-4e1c-aa24-08072dd14d64.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c8/ee/c8ee27ec-76da-42eb-9487-3a8b713a2624.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c8/ee/c8ee27ec-76da-42eb-9487-3a8b713a2624.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/39/b5/39b58fad-7a1d-40fa-b719-a1fb69ab2429.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/39/b5/39b58fad-7a1d-40fa-b719-a1fb69ab2429.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b4/fa/b4fae581-8f10-484e-b9fd-e2b78f7bee22.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b4/fa/b4fae581-8f10-484e-b9fd-e2b78f7bee22.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-27T02:21:29.174089+00:00",
+      "details": {
+        "description": "USSR, 1987.\nSix volunteers are hooked up to ASPIS — an experimental system designed to predict historical events. One year later, not a single one has woken up.\nAmong them is Andrey, an engineer who agreed to the experiment for a single chance to see his deceased wife, Anna, and daughter, Liza, once more. But instead of generating a controlled simulation, ASPIS opens a path to places its creators never intended to reach.\nAndrey’s journey begins at the Institute of Cybernetics and gradually leads him far from familiar reality: toward distorted versions of recognizable places, ancient structures, and worlds that existed long before ASPIS was ever launched.\nExplore the environment, find documents and records, interface with OGAS terminals, and piece together the events of the experiment. The story unfolds gradually through the world itself, character encounters, and cinematic scenes.\nExploration eventually gives way to chases and confrontations. The Guardian cannot simply be shot and killed: it pursues Andrey through corridors and rooms, forcing him to keep moving and find a way out under constant pressure.\nOther opponents can be fought using a Makarov pistol and melee combat, while ammunition and other resources must be found along the way.\nThe PEP-01 allows you to interact with Energy X: capturing and transferring it, powering machinery, and changing the state of specific mechanisms.\nWith its help, Andrey also opens astral windows between different layers of reality. Objects unreachable in one state of the world can be seen and extracted from another, using this mechanic for exploration and solving spatial puzzles.\nAndrey is not alone inside ASPIS. Along the way, he encounters other volunteers, the Institute Director, and beings who seem far more familiar with the worlds opened by the machine than Andrey is.\nA talking Cat knows the ancient pathways and clearly understands what is happening better than he is willing to share. In one of the worlds, Andrey also meets the Devil — but none of them gives Andrey the whole picture.\nThe further Andrey goes, the more deeply the experiment becomes tied to the reason he agreed to enter ASPIS in the first place.\nIn the finale, the player will have to make a single choice that will determine Andrey’s fate and lead to one of two endings.",
+        "game_features": [],
+        "repack_features": [
+          "Based on ASPIS-RUNE ISO release: rune-aspis.iso (19,326,074,880 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing Russian and/or MP4-format videos",
+          "Significantly smaller archive size (compressed from 18 GB to 10.9~12.4 GB, depending on selected components)",
+          "Installation takes 3-10 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 18.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-27T02:21:29.174089+00:00"
     },
     {
       "id": "forza-motorsport-7-ultimate-edition",

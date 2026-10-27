@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-27T23:09:52.013091+00:00",
+  "generated_at": "2026-10-27T23:10:29.151117+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-27T09:19:48.328943+00:00",
   "games": [
@@ -15,7 +15,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "1.2 GB"
+      "repack_size": "1.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/29/89/29890626-e670-449e-8076-9e1e2841c67c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/89/29890626-e670-449e-8076-9e1e2841c67c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b6/23/b6233e69-1899-4c23-ab35-e351903843ab.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b6/23/b6233e69-1899-4c23-ab35-e351903843ab.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/55/be/55be4caf-29f9-461c-94c6-104746d32f27.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/55/be/55be4caf-29f9-461c-94c6-104746d32f27.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/28/5f284f61-415f-46e1-9281-b1e29dba0c96.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/28/5f284f61-415f-46e1-9281-b1e29dba0c96.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/81/e3/81e35f8b-4675-4777-a7df-9ea32c740f0c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/81/e3/81e35f8b-4675-4777-a7df-9ea32c740f0c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/59/a8/59a883ef-fdd9-48f3-925f-fb6161e6c2c8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/59/a8/59a883ef-fdd9-48f3-925f-fb6161e6c2c8.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-27T23:10:29.149144+00:00",
+      "details": {
+        "description": "Construct, style, and expand your enchanted ambling cottage using a variety of woods and other building materials. Turn a humble wooden room into a cozy, multi-story home filled with clutter, trinkets, furniture, and warmth to protect you from the quiet chill of the surrounding woods.\nStep into an evocative world shaped by rich Eastern European folk tales. Play as Reka, apprentice to the mysterious Baba Jaga, as you meet local villagers, complete quests, and immerse yourself in a story steeped in authentic Slavic mythology.\nLearn the old ways under the tutelage of Baba Jaga. Forage for herbs, brew potions, form bonds with animals, and practice quiet witchery. Choose how your powers affect the lives of the people and creatures you meet.\nExplore wherever your curiosity takes you. Drift through foggy forests and quiet villages where old spirits linger. Free from danger or pressure, tread an unhurried path steeped in mood, music, and a dark fairytale charm.\nBuild Without Limits: Design and furnish your very own chicken-legged moving house with your choice of materials, furniture and flourishes to make it feel like home.\nCozy, Combat-Free Gameplay: Enjoy a stress-free adventure focused on decorating, crafting, foraging, and gentle questing.\nRich Slavic Atmosphere: Immerse yourself in authentic myths and legends, beautiful environments, and an acclaimed original musical score.\nWoodland Crafts & Cooking: Forage wild flora, brew potions, cook traditional recipes, and practice witchcraft the old way.\nAnimal Companionship: Befriend forest wildlife – cats, foxes and more – and bring them back to live in your traveling home.\nCraft Your Identity: Design your apprentice witch and carve out your own peaceful path through the wilderness.",
+        "game_features": [],
+        "repack_features": [
+          "Based on REKA-RUNE ISO release: rune-reka.iso (3,821,731,840 bytes)",
+          "Game version: v1.0.21",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format ripped, NOTHING re-encoded; Bonus OST in MP3 format is included by default",
+          "Significantly smaller archive size (compressed from 3.6 to 1.2 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-27T23:10:29.149144+00:00"
     },
     {
       "id": "i-am-your-beast",

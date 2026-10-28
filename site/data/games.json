@@ -1,9 +1,126 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-28T10:00:28.247231+00:00",
+  "generated_at": "2026-10-28T15:32:22.536436+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-28T10:00:28.247231+00:00",
   "games": [
+    {
+      "id": "dying-light-2-stay-human",
+      "title": "Dying Light 2: Stay Human – Ultimate Edition – v1.30.0 + 31 DLCs + Bonus Content + Windows 7 Fix",
+      "source_url": "https://fitgirl-repacks.site/dying-light-2-stay-human/",
+      "image_url": "https://i2.imageban.ru/out/2023/02/02/a1b3cfd6460c2971fa25f7bae85b6249.jpg",
+      "post_date": "2026-10-28T12:00:54+03:00",
+      "genres": [
+        "Action",
+        "Open world",
+        "Horror",
+        "Post-apocalyptic",
+        "Zombies",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "32.6 GB",
+      "media": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/extras/05_GET_CREATIVE_BE_BRUTA.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f4/06/f4063787-56d2-47ff-a98c-03def755b501.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/06/f4063787-56d2-47ff-a98c-03def755b501.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/95/2595886b-156b-4e3d-868d-83da253bac25.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/95/2595886b-156b-4e3d-868d-83da253bac25.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/92/1c/921c1db9-8e5b-4a27-97ee-6567d97645f6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/92/1c/921c1db9-8e5b-4a27-97ee-6567d97645f6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/8d/908dd237-8d23-481d-9870-a8495acc9c2a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/8d/908dd237-8d23-481d-9870-a8495acc9c2a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6d/2e/6d2e5982-a20f-4cab-9072-0a50a3f687c7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6d/2e/6d2e5982-a20f-4cab-9072-0a50a3f687c7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6b/b2/6bb2e49a-f3d6-4f7a-b60a-cffb1b3c85de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6b/b2/6bb2e49a-f3d6-4f7a-b60a-cffb1b3c85de.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:19:11.717875+00:00",
+      "details": {
+        "description": "Over twenty years ago in Harran, we fought the virus—and lost. Now, we’re losing again. The City, one of the last large human settlements, is torn by conflict. Civilization has fallen back into the Dark Ages. And yet, we still have hope.\nYou are a wanderer with the power to change the fate of The City. But your exceptional abilities come at a price. Haunted by memories you cannot decipher, you set out to learn the truth… and find yourself in a combat zone. Hone your skills, as to defeat your enemies and make allies, you’ll need both fists and wits. Unravel the dark secrets behind the wielders of power, choose sides and decide your destiny. But wherever your actions take you, there’s one thing you can never forget—stay human.",
+        "game_features": [
+          "VAST OPEN WORLD:",
+          "Participate in the life of a city engulfed in a new dark era. Discover different paths and hidden passages, as you explore its multiple levels and locations.",
+          "CREATIVE & BRUTAL COMBAT:",
+          "Take advantage of your parkour skills to tip the scales of even the most brutal encounter. Clever thinking, traps and creative weapons will be your best friends.",
+          "DAY AND NIGHT CYCLE:",
+          "Wait for night to venture into dark hideouts of the Infected. Sunlight keeps them at bay, but once it’s gone, monsters begin the hunt, leaving their lairs free to explore.",
+          "CHOICES & CONSEQUENCES:",
+          "Shape the future of The City with your actions and watch how it changes. Determine the balance of power by making choices in a growing conflict and forge your own experience.",
+          "2-4 PLAYER CO-OP GAMEPLAY:",
+          "Play in up to four-player co-op. Host your own games or join others and see how their choices have played out differently than yours.",
+          "Included DLCs:",
+          "Deluxe Pack",
+          "Ultimate pack",
+          "Artbook",
+          "Pre-order pack",
+          "Stay Human: Bloody Ties",
+          "Peacekeeper 01",
+          "Peacekeeper 02",
+          "Peacekeeper 03",
+          "Survivor 01",
+          "Survivor 02",
+          "Survivor 03",
+          "Soundtrack",
+          "Deluxe Upgrade",
+          "Ultimate Upgrade",
+          "The Aristocrat Pack",
+          "Dying Laugh Bundle",
+          "Nutcracker Bundle",
+          "Developer Tools",
+          "Rais Skin Bundle",
+          "Brecken Skin Bundle",
+          "Chicken Bundle",
+          "Rahim Bundle",
+          "Gunslinger Bundle",
+          "Post-apo Bundle",
+          "Nightrunner Bundle",
+          "The Walking Dead Bundle",
+          "Hakon Bundle"
+        ],
+        "repack_features": [
+          "Based on scene Dying.Light.2.Reloaded.Edition.v1.19.0-TENOKE ISO release: tenoke-dying.light.2.reloaded.edition.v1.19.0.iso (69,835,116,544 bytes)",
+          "Missing language files, bonus content and DevTools added (50.5 GB total), thanks to machine4578 & NoeRIη!",
+          "Goldberg+SSE+Nemertingas crack/emu with LAN multiplayer is available in NoDVD folder after installation",
+          "Windows 7 Fix is available in “_Windows 7 Fix” folder after installation, thanks to DXVK team and CGAlover!",
+          "Game version: v1.19.0; 27 released DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading of voiceover packs you don’t need, DevTools, bonus content (OST, ArtBook, etc) and 4K Videos (1080p videos will be copied instead, if this pack is not installed)",
+          "Significantly smaller archive size (compressed from cumulative 115.5 to 29.4~69 GB, depending on selected components)",
+          "Installation takes 8-30 minutes for any single language (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 115.4 GB",
+          "Language can be changed in “enginesourcebinx64tenoke.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:19:11.717875+00:00"
+    },
     {
       "id": "reka",
       "title": "REKA: Deluxe Edition – v1.0.21 + Bonus OST",
@@ -212259,123 +212376,6 @@
           "Installation takes 1-5 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 2 GB",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:19:11.717875+00:00"
-    },
-    {
-      "id": "dying-light-2-stay-human",
-      "title": "Dying Light 2: Stay Human – Ultimate Edition – v1.19.0 + 27 DLCs + Bonus Content + Multiplayer + Windows 7 Fix",
-      "source_url": "https://fitgirl-repacks.site/dying-light-2-stay-human/",
-      "image_url": "https://i2.imageban.ru/out/2023/02/02/a1b3cfd6460c2971fa25f7bae85b6249.jpg",
-      "post_date": "2024-11-07T02:00:54+03:00",
-      "genres": [
-        "Action",
-        "Open world",
-        "Horror",
-        "Post-apocalyptic",
-        "Zombies",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "29.4 GB",
-      "media": [
-        {
-          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/extras/05_GET_CREATIVE_BE_BRUTA.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f4/06/f4063787-56d2-47ff-a98c-03def755b501.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f4/06/f4063787-56d2-47ff-a98c-03def755b501.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/25/95/2595886b-156b-4e3d-868d-83da253bac25.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/25/95/2595886b-156b-4e3d-868d-83da253bac25.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/92/1c/921c1db9-8e5b-4a27-97ee-6567d97645f6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/92/1c/921c1db9-8e5b-4a27-97ee-6567d97645f6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/90/8d/908dd237-8d23-481d-9870-a8495acc9c2a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/90/8d/908dd237-8d23-481d-9870-a8495acc9c2a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/6d/2e/6d2e5982-a20f-4cab-9072-0a50a3f687c7.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6d/2e/6d2e5982-a20f-4cab-9072-0a50a3f687c7.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/6b/b2/6bb2e49a-f3d6-4f7a-b60a-cffb1b3c85de.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6b/b2/6bb2e49a-f3d6-4f7a-b60a-cffb1b3c85de.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:19:11.717875+00:00",
-      "details": {
-        "description": "Over twenty years ago in Harran, we fought the virus—and lost. Now, we’re losing again. The City, one of the last large human settlements, is torn by conflict. Civilization has fallen back into the Dark Ages. And yet, we still have hope.\nYou are a wanderer with the power to change the fate of The City. But your exceptional abilities come at a price. Haunted by memories you cannot decipher, you set out to learn the truth… and find yourself in a combat zone. Hone your skills, as to defeat your enemies and make allies, you’ll need both fists and wits. Unravel the dark secrets behind the wielders of power, choose sides and decide your destiny. But wherever your actions take you, there’s one thing you can never forget—stay human.",
-        "game_features": [
-          "VAST OPEN WORLD:",
-          "Participate in the life of a city engulfed in a new dark era. Discover different paths and hidden passages, as you explore its multiple levels and locations.",
-          "CREATIVE & BRUTAL COMBAT:",
-          "Take advantage of your parkour skills to tip the scales of even the most brutal encounter. Clever thinking, traps and creative weapons will be your best friends.",
-          "DAY AND NIGHT CYCLE:",
-          "Wait for night to venture into dark hideouts of the Infected. Sunlight keeps them at bay, but once it’s gone, monsters begin the hunt, leaving their lairs free to explore.",
-          "CHOICES & CONSEQUENCES:",
-          "Shape the future of The City with your actions and watch how it changes. Determine the balance of power by making choices in a growing conflict and forge your own experience.",
-          "2-4 PLAYER CO-OP GAMEPLAY:",
-          "Play in up to four-player co-op. Host your own games or join others and see how their choices have played out differently than yours.",
-          "Included DLCs:",
-          "Deluxe Pack",
-          "Ultimate pack",
-          "Artbook",
-          "Pre-order pack",
-          "Stay Human: Bloody Ties",
-          "Peacekeeper 01",
-          "Peacekeeper 02",
-          "Peacekeeper 03",
-          "Survivor 01",
-          "Survivor 02",
-          "Survivor 03",
-          "Soundtrack",
-          "Deluxe Upgrade",
-          "Ultimate Upgrade",
-          "The Aristocrat Pack",
-          "Dying Laugh Bundle",
-          "Nutcracker Bundle",
-          "Developer Tools",
-          "Rais Skin Bundle",
-          "Brecken Skin Bundle",
-          "Chicken Bundle",
-          "Rahim Bundle",
-          "Gunslinger Bundle",
-          "Post-apo Bundle",
-          "Nightrunner Bundle",
-          "The Walking Dead Bundle",
-          "Hakon Bundle"
-        ],
-        "repack_features": [
-          "Based on scene Dying.Light.2.Reloaded.Edition.v1.19.0-TENOKE ISO release: tenoke-dying.light.2.reloaded.edition.v1.19.0.iso (69,835,116,544 bytes)",
-          "Missing language files, bonus content and DevTools added (50.5 GB total), thanks to machine4578 & NoeRIη!",
-          "Goldberg+SSE+Nemertingas crack/emu with LAN multiplayer is available in NoDVD folder after installation",
-          "Windows 7 Fix is available in “_Windows 7 Fix” folder after installation, thanks to DXVK team and CGAlover!",
-          "Game version: v1.19.0; 27 released DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading of voiceover packs you don’t need, DevTools, bonus content (OST, ArtBook, etc) and 4K Videos (1080p videos will be copied instead, if this pack is not installed)",
-          "Significantly smaller archive size (compressed from cumulative 115.5 to 29.4~69 GB, depending on selected components)",
-          "Installation takes 8-30 minutes for any single language (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 115.4 GB",
-          "Language can be changed in “enginesourcebinx64tenoke.ini” file",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

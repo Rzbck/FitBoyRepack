@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-28T15:32:22.536436+00:00",
+  "generated_at": "2026-10-28T20:33:54.845989+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-28T10:00:28.247231+00:00",
   "games": [
+    {
+      "id": "battleplan",
+      "title": "Battleplan – v1.0.4",
+      "source_url": "https://fitgirl-repacks.site/battleplan/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/28/f10f3dc6007e69b9aa06cce6c4cf5eeb.jpg",
+      "post_date": "2026-10-28T23:30:44+03:00",
+      "genres": [
+        "Strategy",
+        "World War II",
+        "Top-down",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "1.6 GB"
+    },
     {
       "id": "dying-light-2-stay-human",
       "title": "Dying Light 2: Stay Human – Ultimate Edition – v1.30.0 + 31 DLCs + Bonus Content + Windows 7 Fix",

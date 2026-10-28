@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-28T20:33:54.845989+00:00",
+  "generated_at": "2026-10-28T20:34:49.889926+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-28T10:00:28.247231+00:00",
   "games": [
@@ -17,7 +17,59 @@
         "3D",
         "Real-time"
       ],
-      "repack_size": "1.6 GB"
+      "repack_size": "1.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/4b/42/4b42574f-a528-42b6-9470-bb0356bc05aa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4b/42/4b42574f-a528-42b6-9470-bb0356bc05aa.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/64/e6/64e67947-e6df-4cf8-bf6d-7ee1f855ae7c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/64/e6/64e67947-e6df-4cf8-bf6d-7ee1f855ae7c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/93/dc/93dcbe99-7eb4-4d41-a912-c3ebd50e7e3b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/93/dc/93dcbe99-7eb4-4d41-a912-c3ebd50e7e3b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/10/70/107075a1-089e-4672-9836-ee5753825b66.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/10/70/107075a1-089e-4672-9836-ee5753825b66.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/9b/9f9b5f3f-4807-4707-8585-de75a13d62ed.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/9b/9f9b5f3f-4807-4707-8585-de75a13d62ed.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/07/03/0703e518-f4b7-4c43-9b3d-886e409e297e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/07/03/0703e518-f4b7-4c43-9b3d-886e409e297e.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-28T20:34:49.887780+00:00",
+      "details": {
+        "description": "Take command of entire divisions and fight in some of the war’s largest battles. Battleplan is a unique real-time strategy game that simulates massive month-long battles with hundreds of thousands of troops second by second, day by day. You give high-level orders, then watch your officers and companies carry them out autonomously.\nCreate elaborate plans\nCreate elaborate, multi-step and multi-unit plans intuitively by directly drawing on the map. Employ varied tactics such as defence in depth, counterattacks, planned withdrawals and more. Perform preparatory bombardments before large set-piece attacks, then split the division to capture multiple objectives.\nRealistic army\nEach division is realistically modeled with headquarters, regiments, battalions and companies. Watch your infantry, tanks, engineers, anti-tank guns, artillery and scouts work together and perform tasks autonomously. Customize the entire chain of command and order of battle of your entire army. Combine divisions into corps, or split units down to companies. Requisition and upgrade units throughout the campaign. Hire and fire officers for your divisions. Listen to their advice – or don’t! Keep your officers alive so they gain veterancy (and quirks).\nMassive battlefields\nFight across thousands of kilometers modeled using real-world geographic data. Each road, town, forest and swamp is exactly where they are in real-life. Place your artillery on the high-ground by examining real-world elevation maps.\nReal-time missions\nEach mission is simulated second-by-second, allowing you to pause, play in real-time or fast-forward at will. Mission lengths range from one week to a month.\nMaster logistics\nStarve the enemy by cutting their supply lines. Fuel your advance by capturing supply depots. Pull back when your units run low on supplies. Supply is realistically simulated, with terrain dictating supply flow.\nWin the war\nPlay 10+ massive historical battles set on World War II specifically in  the Western Front, from 1944 onward. Upgrade your divisions with new attachments and promote officers. Let wounded divisions rest and recuperate. Gain powerful air support assets such recon, fighter-bomber and heavy bomber aircraft.\nRelive history\nLearn real-world history by examining geo-tagged historical photos and videos where they were taken in real-life.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Battleplan-RUNE ISO release: rune-battleplan.iso (2,585,231,360 bytes)",
+          "Game version: v1.0.4",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.4 to 1.6 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.5 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-28T20:34:49.887780+00:00"
     },
     {
       "id": "dying-light-2-stay-human",

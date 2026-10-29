@@ -506,6 +506,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "diplomacy-is-not-an-option-repack-updated-3",
+      "title": "Diplomacy is Not an Option Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/diplomacy-is-not-an-option-repack-updated-3/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "dishonored-2-spanish-video-patch",
       "title": "Dishonored 2 Spanish Video Patch",
       "source_url": "https://fitgirl-repacks.site/dishonored-2-spanish-video-patch/",
@@ -8954,8 +8964,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-15-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9119,8 +9131,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9159,8 +9173,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-23-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9213,10 +9229,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-25-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9241,10 +9255,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-27-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

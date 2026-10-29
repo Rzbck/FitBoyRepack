@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-29T23:17:55.063350+00:00",
+  "generated_at": "2026-10-29T23:18:40.977343+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-29T10:24:32.637983+00:00",
   "games": [
@@ -82,7 +82,60 @@
         "Side",
         "2D"
       ],
-      "repack_size": "4.7 GB"
+      "repack_size": "4.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ef/17/ef17e809-5ec8-4e0f-abbd-2323ac2cfd8e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ef/17/ef17e809-5ec8-4e0f-abbd-2323ac2cfd8e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/75/aa/75aae430-bbcf-411b-abf5-61591a9bab14.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/75/aa/75aae430-bbcf-411b-abf5-61591a9bab14.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/24/aa247401-5412-480f-b809-225de0e8cdf3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/24/aa247401-5412-480f-b809-225de0e8cdf3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/83/04/8304ffa9-845a-45f4-9400-26480be96bcb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/83/04/8304ffa9-845a-45f4-9400-26480be96bcb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/97/a397c209-6252-435f-b280-887d1663d887.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/97/a397c209-6252-435f-b280-887d1663d887.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/64/8e/648e32ca-30a2-4f16-a18e-f2cc324d4ec7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/64/8e/648e32ca-30a2-4f16-a18e-f2cc324d4ec7.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-29T23:18:40.975139+00:00",
+      "details": {
+        "description": "Tying music gameplay to a tale of lies and truth, ‘In Falsus’ guides players through seamless progression from flow to mastery, welcoming those new and experienced to surmount challenges and rise higher with each and every encounter.\nFollow the separate perspectives of 5 girls making their way through high school in a near-future world, whose lives take a sharp turn one day as they are bid to join a strange government program, and soon are forced to face an undiscovered side of their reality.\nProgression:\nWith a signature control system of mouse and keyboard, In Falsus brings challenges across 4 difficulties, rising in intensity of incoming notes and a sweeping aerial Field.\nEncounters:\nEvery step forward brings a greater trial. Throughout their ordeals, the protagonists encounter characters who they must contend with or assist, with these key moments each tied to unique songs.\nSongs:\nProduced by composers at the forefront of Japan’s independent music scene as well as international artists, In Falsus features over 70 songs, over 40 of which are original, represented across a multitude of genres and styles.\nCrafting:\nOvercome challenges to collect materials, craft unique Cards, and gain new advantages and approaches during song gameplay.\nBlueprints:\nIntegrate Cards by slotting earned materials into Blueprints, grids with a wide variety of choices in stat boosts and bonuses. Every Card crafted is different, and every Blueprint is a puzzle. How you choose to arrange materials within Blueprints shapes unique possibilities in solutions and effects.\nCards:\nFeaturing artwork of characters met and unfolding narrative moments witnessed, illustrated by a range of skilled and renowned artists, equip up to 5 Cards to vary your approach when challenging the songs you come across.\nA world where emotions are laid bare at the neck, and no lies are permitted.\nNarrative:\nThrough visual novel-styled narrative design, switch between the individual perspectives of 5 protagonists—all of whom are interconnected.\nImmersion:\nBecome drawn into a new world through expressive characters, captivating environments, and full Japanese voice acting.\nExperience:\nNarrative is at the heart of In Falsus, with music gameplay, sound design, and themes reflecting and directly linked to the events of the game.",
+        "game_features": [],
+        "repack_features": [
+          "Based on In.Falsus-TENOKE ISO release: tenoke-in.falsus.iso (6,836,422,656 bytes)",
+          "Game version: v1.0.5; Virtual Singers Song Pack DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 6.4 to 4.7 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-29T23:18:40.975139+00:00"
     },
     {
       "id": "diplomacy-is-not-an-option",

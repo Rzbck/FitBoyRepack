@@ -1,9 +1,89 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-29T20:19:48.325695+00:00",
-  "source_pages": 815,
+  "generated_at": "2026-10-29T23:17:55.063350+00:00",
+  "source_pages": 816,
   "last_full_scan_at": "2026-10-29T10:24:32.637983+00:00",
   "games": [
+    {
+      "id": "low-budget-repairs",
+      "title": "Low-Budget Repairs, v1.7.17 + Bonus App",
+      "source_url": "https://fitgirl-repacks.site/low-budget-repairs/",
+      "image_url": "https://i1.imageban.ru/out/2026/08/15/2d72378e8f3408b050a0d7da81ad49b0.jpg",
+      "post_date": "2026-10-30T00:30:38+03:00",
+      "genres": [
+        "Lifestyle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "5.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/4d/73/4d739586-2019-4108-98ff-34818b929a1c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4d/73/4d739586-2019-4108-98ff-34818b929a1c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b5/63/b563b9db-659f-4fb6-9da4-390f2873cbad.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b5/63/b563b9db-659f-4fb6-9da4-390f2873cbad.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/60/2c/602c6e19-9e22-46a5-811c-e85a58c5090a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/60/2c/602c6e19-9e22-46a5-811c-e85a58c5090a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ea/80/ea80d6cd-5c42-439d-9df4-6e3552085def.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ea/80/ea80d6cd-5c42-439d-9df4-6e3552085def.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/75/50/7550fa11-406a-405d-8b1c-6dc10095a85d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/75/50/7550fa11-406a-405d-8b1c-6dc10095a85d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/89/78/897831c3-1f57-42e8-9eae-5f11231dacbf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/89/78/897831c3-1f57-42e8-9eae-5f11231dacbf.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Imagine yourself as a DIY handyman, running your own small business in a Polish block of flats during the 1990s. Your mission? To make as much money as possible by cutting costs wherever you can!\nDiluting paint with water to make it last for the entire apartment? Sure, the color might not be as vibrant, but who’s going to notice?\nLaying tiles without a level? A bit of unevenness adds “character” to the space. After all, what matters is the quick result, not perfection!\nDon’t worry—if the client spots any flaws after you’ve left, the profit is already yours!\nFurniture doesn’t fit through the door? No problem—quick thinking, open the window, and… everything flies out into the yard! Clean room and a happy client… as long as they didn’t park under the window.\nIn the hardware store, you’ll be like a seasoned hunter, searching for the cheapest tools that will “sort of” get the job done. A hammer on sale that barely lasts a few hits? Grab two!\nAfter the job’s done, take pride in your work—just ignore those little imperfections!\nTake on various renovation and repair jobs. Fixing a flooded bathroom, or maybe a complete remodel? Every day is a new challenge, and every decision can bring a quick profit… or a cascade of problems.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Low-Budget.Repairs-RUNE ISO release: rune-low.budget.repairs.iso (14,862,352,384 bytes)",
+          "Bonus application (definetely_not_virus.exe) added",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from cumulative 13.9 to 6.2)",
+          "Installation takes 3-9 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 23.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "in-falsus",
+      "title": "In Falsus – v1.0.5 + DLC",
+      "source_url": "https://fitgirl-repacks.site/in-falsus/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/29/8450f9a28abc7a2bd4678073aee3d77b.jpg",
+      "post_date": "2026-10-29T23:34:01+03:00",
+      "genres": [
+        "Arcade",
+        "Rhythm",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "4.7 GB"
+    },
     {
       "id": "diplomacy-is-not-an-option",
       "title": "Diplomacy is Not an Option – v1.0.187r + 3 DLCs/Bonuses",
@@ -24219,72 +24299,6 @@
           "Installation takes within a minute",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 894 MB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "low-budget-repairs",
-      "title": "Low-Budget Repairs + Bonus App",
-      "source_url": "https://fitgirl-repacks.site/low-budget-repairs/",
-      "image_url": "https://i1.imageban.ru/out/2026/08/15/2d72378e8f3408b050a0d7da81ad49b0.jpg",
-      "post_date": "2026-08-15T04:05:38+03:00",
-      "genres": [
-        "Lifestyle",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "6.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/4d/73/4d739586-2019-4108-98ff-34818b929a1c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/4d/73/4d739586-2019-4108-98ff-34818b929a1c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b5/63/b563b9db-659f-4fb6-9da4-390f2873cbad.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b5/63/b563b9db-659f-4fb6-9da4-390f2873cbad.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/60/2c/602c6e19-9e22-46a5-811c-e85a58c5090a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/60/2c/602c6e19-9e22-46a5-811c-e85a58c5090a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ea/80/ea80d6cd-5c42-439d-9df4-6e3552085def.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ea/80/ea80d6cd-5c42-439d-9df4-6e3552085def.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/75/50/7550fa11-406a-405d-8b1c-6dc10095a85d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/75/50/7550fa11-406a-405d-8b1c-6dc10095a85d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/89/78/897831c3-1f57-42e8-9eae-5f11231dacbf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/89/78/897831c3-1f57-42e8-9eae-5f11231dacbf.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Imagine yourself as a DIY handyman, running your own small business in a Polish block of flats during the 1990s. Your mission? To make as much money as possible by cutting costs wherever you can!\nDiluting paint with water to make it last for the entire apartment? Sure, the color might not be as vibrant, but who’s going to notice?\nLaying tiles without a level? A bit of unevenness adds “character” to the space. After all, what matters is the quick result, not perfection!\nDon’t worry—if the client spots any flaws after you’ve left, the profit is already yours!\nFurniture doesn’t fit through the door? No problem—quick thinking, open the window, and… everything flies out into the yard! Clean room and a happy client… as long as they didn’t park under the window.\nIn the hardware store, you’ll be like a seasoned hunter, searching for the cheapest tools that will “sort of” get the job done. A hammer on sale that barely lasts a few hits? Grab two!\nAfter the job’s done, take pride in your work—just ignore those little imperfections!\nTake on various renovation and repair jobs. Fixing a flooded bathroom, or maybe a complete remodel? Every day is a new challenge, and every decision can bring a quick profit… or a cascade of problems.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Low-Budget.Repairs-RUNE ISO release: rune-low.budget.repairs.iso (14,862,352,384 bytes)",
-          "Bonus application (definetely_not_virus.exe) added",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from cumulative 13.9 to 6.2)",
-          "Installation takes 3-9 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 23.8 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

@@ -1,9 +1,80 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-28T20:34:49.889926+00:00",
+  "generated_at": "2026-10-29T00:24:31.362759+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-28T10:00:28.247231+00:00",
   "games": [
+    {
+      "id": "ship-explorer",
+      "title": "Ship Explorer – Build 26115786 + 3 DLCs",
+      "source_url": "https://fitgirl-repacks.site/ship-explorer/",
+      "image_url": "https://i8.imageban.ru/out/2025/08/03/afd68608893f998fa0b60f619c589194.jpg",
+      "post_date": "2026-10-29T00:30:25+03:00",
+      "genres": [
+        "Exploration",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "8.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f6/3e/f63eecc7-84e8-46e5-b685-10a84f0759ae.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f6/3e/f63eecc7-84e8-46e5-b685-10a84f0759ae.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d4/35/d435496c-9620-4582-9e65-36333d0d0b25.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d4/35/d435496c-9620-4582-9e65-36333d0d0b25.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f9/fe/f9fe5c61-818f-42bf-8835-f0de4c3edbd4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f9/fe/f9fe5c61-818f-42bf-8835-f0de4c3edbd4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/4d/504d6655-5ee5-49ca-96b9-86906333cd64.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/4d/504d6655-5ee5-49ca-96b9-86906333cd64.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/69/97693144-cba1-4dbb-b961-d842baa56058.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/69/97693144-cba1-4dbb-b961-d842baa56058.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fd/ea/fdeab845-99db-4204-9382-21d2dc3f4d81.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/ea/fdeab845-99db-4204-9382-21d2dc3f4d81.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "Step aboard Ship Explorer for a VIP tour like no other in this all new companion experience to the YouTube channel Oceanliner Designs!\nJoin Oceanliner Designs’ host and producer Mike Brady as he invites you to explore and learn about some of history’s most beloved ships in a completely new way. Stroll the storied decks of ships like SS United States, Morro Castle, and more and discover the design secrets that allowed the mighty ocean liner to rule the waves for over a century.\nWhat will you discover when you step aboard?",
+        "game_features": [
+          "Step back in time to wander the decks of some of the most iconic vessels featured in popular Oceanliner Designs documentaries.",
+          "Interact with objects on board each ship for special dialogue that explains how these great machines worked.",
+          "Engage with horns, guns and more to see the ships’ most impressive features come to vivid, animated life.",
+          "Freely control weather, time of day, season, and more – dial in your perfect vibe!",
+          "Rewind the clock and experience pivotal moments in the ship’s history, or take in views of areas on board not seen for decades",
+          "Chronicle your journey with photo mode to capture memorable moments or your favorite awesome views!"
+        ],
+        "repack_features": [
+          "Based on Ship.Explorer-TENOKE ISO release: tenoke-ship.explorer.iso (4,238,430,208 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.9 to 2.1 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.8 GB",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "battleplan",
       "title": "Battleplan – v1.0.4",
@@ -140302,77 +140373,6 @@
           "Language can be changed in “Spy Drops_DataPluginsx86_64tenoke.ini” file",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "ship-explorer",
-      "title": "Ship Explorer",
-      "source_url": "https://fitgirl-repacks.site/ship-explorer/",
-      "image_url": "https://i8.imageban.ru/out/2025/08/03/afd68608893f998fa0b60f619c589194.jpg",
-      "post_date": "2025-08-03T12:38:25+03:00",
-      "genres": [
-        "Exploration",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "2.1 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/f6/3e/f63eecc7-84e8-46e5-b685-10a84f0759ae.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f6/3e/f63eecc7-84e8-46e5-b685-10a84f0759ae.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/d4/35/d435496c-9620-4582-9e65-36333d0d0b25.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d4/35/d435496c-9620-4582-9e65-36333d0d0b25.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f9/fe/f9fe5c61-818f-42bf-8835-f0de4c3edbd4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f9/fe/f9fe5c61-818f-42bf-8835-f0de4c3edbd4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/50/4d/504d6655-5ee5-49ca-96b9-86906333cd64.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/50/4d/504d6655-5ee5-49ca-96b9-86906333cd64.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/97/69/97693144-cba1-4dbb-b961-d842baa56058.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/97/69/97693144-cba1-4dbb-b961-d842baa56058.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fd/ea/fdeab845-99db-4204-9382-21d2dc3f4d81.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fd/ea/fdeab845-99db-4204-9382-21d2dc3f4d81.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "Step aboard Ship Explorer for a VIP tour like no other in this all new companion experience to the YouTube channel Oceanliner Designs!\nJoin Oceanliner Designs’ host and producer Mike Brady as he invites you to explore and learn about some of history’s most beloved ships in a completely new way. Stroll the storied decks of ships like SS United States, Morro Castle, and more and discover the design secrets that allowed the mighty ocean liner to rule the waves for over a century.\nWhat will you discover when you step aboard?",
-        "game_features": [
-          "Step back in time to wander the decks of some of the most iconic vessels featured in popular Oceanliner Designs documentaries.",
-          "Interact with objects on board each ship for special dialogue that explains how these great machines worked.",
-          "Engage with horns, guns and more to see the ships’ most impressive features come to vivid, animated life.",
-          "Freely control weather, time of day, season, and more – dial in your perfect vibe!",
-          "Rewind the clock and experience pivotal moments in the ship’s history, or take in views of areas on board not seen for decades",
-          "Chronicle your journey with photo mode to capture memorable moments or your favorite awesome views!"
-        ],
-        "repack_features": [
-          "Based on Ship.Explorer-TENOKE ISO release: tenoke-ship.explorer.iso (4,238,430,208 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 3.9 to 2.1 GB)",
-          "Installation takes 1-3 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 3.8 GB",
-          "Repack uses XTool library by Razor12911",
-          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,

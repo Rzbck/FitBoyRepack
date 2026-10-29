@@ -2175,6 +2175,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "ship-explorer-repack-updated",
+      "title": "Ship Explorer Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/ship-explorer-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "snowrunner-repack-updated-19",
       "title": "SnowRunner Repack Updated",
       "source_url": "https://fitgirl-repacks.site/snowrunner-repack-updated-19/",

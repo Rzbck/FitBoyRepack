@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-29T00:59:16.991829+00:00",
+  "generated_at": "2026-10-29T01:00:01.802564+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-28T10:00:28.247231+00:00",
   "games": [
@@ -17,7 +17,61 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b8/00/b8005540-7bb6-41a0-a757-9b111a4b6691.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b8/00/b8005540-7bb6-41a0-a757-9b111a4b6691.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/59/ae/59ae2148-0520-4983-ba23-7e359688341b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/59/ae/59ae2148-0520-4983-ba23-7e359688341b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/52/36/5236b5d7-3684-44fd-8782-48f24faf254c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/52/36/5236b5d7-3684-44fd-8782-48f24faf254c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/1a/1a1a4b98-61ed-470d-816b-a96d6d344c5d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/1a/1a1a4b98-61ed-470d-816b-a96d6d344c5d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b8/ef/b8ef6b75-396f-4d1c-a06e-bf4fdf8fba8d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b8/ef/b8ef6b75-396f-4d1c-a06e-bf4fdf8fba8d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c1/77/c17716f0-8822-401d-91d6-31a9594122ad.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c1/77/c17716f0-8822-401d-91d6-31a9594122ad.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-29T01:00:01.800374+00:00",
+      "details": {
+        "description": "Survive horrific Stalkers\nChallenge your survival instinct to escape murderous enemies: hide, evade and fight back in critical moments. Every mistake can be fatal.\nMaster Hypnosis Powers\nUse retrocognition, mirror abilities and moth manipulation to read forgotten memories, reveal hidden paths and twist the environment to your advantage.\nA modern return to classic survival horror\nStep into a love letter to classic 3rd person survival horrors, with modern pacing, controls and production values.\nExplore a richly detailed environment\nInvestigate every room, find clues and key items, and solve puzzles to access new areas and progress toward the final revelation.\nUncover the secrets of the Cristo Morente\nDiscover the forgotten story of the Sicilian convent where the myth of the Red Nun began: a place of burned faith, buried guilt and forbidden rituals.\nCreated to captivate both newcomers and longtime fans of the Remothered saga, Red Nun’s Legacy is a modern survival horror inspired by classic horror games, blending stealth and psychological horror with new mechanics centered on perception, hypnosis and environmental manipulation, and closing the Red Nun’s story once and for all.\nACCLAIMED MUSIC AND VOICE TALENT\nOriginal soundtrack by legendary composer Akira Yamaoka & Aram Shahbazians\nBAFTA Games Awards winner Cissy Jones as Susan\nThe Game Awards winner Maggie Robertson as the Red Nun\nTHE STORY\nSometimes, seeking the truth means losing yourself.\nOver a year after some young girls vanished in Sicily, a new clue reopens the nightmare.\nWhen a mysterious recording rekindles the hope that her daughter might still be alive, Susan, against all reason, decides to go to the place where everything seems to have begun: a decaying noble residence isolated on the slopes of Mount Etna and once owned by the Ashmann family.\nWhat starts as a desperate search soon becomes a journey into terror, where family secrets, memory, and obsession intertwine. Susan finds herself drawn into a labyrinth of relentless stalkers, hidden symbols, and hypnotic phenomena. As reality fractures and dark powers rise, every step brings her closer to the truth… and to a terror older than herself.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Remothered.Red.Nuns.Legacy-RUNE ISO release: rune-remothered.red.nuns.legacy.iso (44,471,812,096 bytes)",
+          "Game version: v74e0052.7",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content (OST in MP3 + ArtBook)",
+          "Significantly smaller archive size (compressed from 41.4 to 29.2/29.6 GB)",
+          "Installation takes 8-30 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 44.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-29T01:00:01.800374+00:00"
     },
     {
       "id": "ship-explorer",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-29T06:17:00.257501+00:00",
+  "generated_at": "2026-10-29T06:17:47.016587+00:00",
   "source_pages": 815,
   "last_full_scan_at": "2026-10-28T10:00:28.247231+00:00",
   "games": [
@@ -19,7 +19,65 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/22/c5/22c55381-56e7-4e47-91ca-64adb9247030.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/22/c5/22c55381-56e7-4e47-91ca-64adb9247030.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/44/49/4449fb23-671f-427a-9864-d8f899bfbb0a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/44/49/4449fb23-671f-427a-9864-d8f899bfbb0a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2d/b4/2db41fdd-0a2f-46b6-b08e-944401ef075f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2d/b4/2db41fdd-0a2f-46b6-b08e-944401ef075f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2d/41/2d41051a-930f-4cdf-bcd3-b0a0b8ca9f64.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2d/41/2d41051a-930f-4cdf-bcd3-b0a0b8ca9f64.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/92/18/9218b3ec-29da-4f85-98e1-e70da78c2228.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/92/18/9218b3ec-29da-4f85-98e1-e70da78c2228.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/66/37666fc2-4afa-4c63-92a7-ed759eb9a2b9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/66/37666fc2-4afa-4c63-92a7-ed759eb9a2b9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-29T06:17:47.014468+00:00",
+      "details": {
+        "description": "Star Wars\n: Galactic Racer is a runs-based, high-stakes reinvention of racing born in the lawless Outer Rim of the\nStar Wars\ngalaxy.\nThe Empire’s grip on the galaxy has finally broken, and with its fall comes a new obsession: speed. As the New Republic struggles to rebuild, gambling, entertainment, and glory fuel a booming underground.\nOut of this chaos,\nthe Galactic League\nis born: an unsanctioned racing circuit where syndicates sponsor pilots, fortunes are won and lost in seconds, and only the bold survive.\nNo Force. No prophecy. Just skill, strategy, and the will to rise.\nSlam, shunt, and takedown rivals across varied circuits as you pilot landspeeders, speeder bikes, skim speeders, and podracers. The greater the risk, the greater the reward.\nJoin\nthe Galactic League\n– an unsanctioned racing circuit born in the lawless Outer Rim. Become Shade, a lone racer chasing revenge and glory.\nPilot different classes of repulsorcraft each with distinct physics and playstyles. Build a ride that showcases your style and gives you a competitive edge.\nRide solo through a story-driven campaign of shifting alliances or brave strategic PvP grudge matches where reputation rides with you.\nProve yourself through intense rivalries and escalating challenges. Every choice shapes your prospects as you build your status in\nthe Galactic League\n.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26133805 release: 38.5 GB",
+          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v2.0 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: vCL386500; 3 DLCs (Deluxe Upgrade, Pre-Order Bonus, Digital Art Book) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of credits video",
+          "Significantly smaller archive size (compressed from 38.5 to 25.4/26.3 GB)",
+          "Installation takes 6-18 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 38.5 GB",
+          "Language can be changed in game seetings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-29T06:17:47.014468+00:00"
     },
     {
       "id": "farming-simulator-25",

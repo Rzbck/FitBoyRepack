@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-30T10:26:16.271599+00:00",
+  "generated_at": "2026-10-30T20:34:22.363230+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
+    {
+      "id": "princess-maker-children-of-revelation",
+      "title": "Princess Maker: Children of Revelation",
+      "source_url": "https://fitgirl-repacks.site/princess-maker-children-of-revelation/",
+      "image_url": "https://i7.imageban.ru/out/2026/10/30/77101c22ef4187e71458afe957c838fa.jpg",
+      "post_date": "2026-10-30T23:18:49+03:00",
+      "genres": [
+        "Lifestyle",
+        "RPG",
+        "Side",
+        "Top-down",
+        "2D"
+      ],
+      "repack_size": "907 MB"
+    },
     {
       "id": "planet-zoo-2",
       "title": "Planet Zoo 2: Deluxe Edition – v1.0.7.1031590 + 2 DLCs",

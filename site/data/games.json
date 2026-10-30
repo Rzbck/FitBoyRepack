@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-30T02:42:54.670161+00:00",
+  "generated_at": "2026-10-30T02:43:39.346984+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-29T10:24:32.637983+00:00",
   "games": [
@@ -16,7 +16,64 @@
         "3D",
         "Real-time"
       ],
-      "repack_size": "14.8 GB"
+      "repack_size": "14.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/54/41/5441a2ac-d4ee-4a0a-a22d-9da0e4532eac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/54/41/5441a2ac-d4ee-4a0a-a22d-9da0e4532eac.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/a1/37a1d9da-6d27-42c7-912c-4c746fa626d7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/a1/37a1d9da-6d27-42c7-912c-4c746fa626d7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fd/d0/fdd0e040-e88a-4189-994e-71824c684fff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/d0/fdd0e040-e88a-4189-994e-71824c684fff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/e0/90e09961-8396-479e-9157-bb245416c5c2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/e0/90e09961-8396-479e-9157-bb245416c5c2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7c/a3/7ca3bc54-3f73-4a47-8736-dc4e5acf8e1d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7c/a3/7ca3bc54-3f73-4a47-8736-dc4e5acf8e1d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3b/17/3b17bd09-0d0f-47a5-84d1-1fc28590afe1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3b/17/3b17bd09-0d0f-47a5-84d1-1fc28590afe1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-30T02:43:39.344792+00:00",
+      "details": {
+        "description": "Build a wilder world in Planet Zoo 2 – the sequel to the beloved zoo simulation game. Let your creativity soar by constructing and managing distinctive zoos around the world, full of awe-inspiring animals, including fully aquatic and flying species for the first time. Plus, take the next step in animal conservation and release your species into customisable, expansive Wildlife Reserves.\nDiscover a diverse roster of animal species, each with their own needs & behaviours. New faces join familiar favourites like the Lion and Western Chimpanzee to create iconic zoo rosters in jaw-dropping detail.\nConstruct beautiful habitats for your animals to thrive in as they interact with the world around them in authentic ways. From authentic herding behaviours to grazing on the vegetation you provide for them. Experience a generational leap of animal detail and immersion with incredible natural movements and expressive emotions that bring each animal to life like never before.\nPrepare your diving suit! Fully aquatic species make a splash in their stunning debut! Build custom spectacular freshwater or saltwater aquariums to home an exciting line-up of delightful swimming animals. A new world beneath the water awaits, filled with colourful shoals of fish, Blacktip Reef Sharks, Hawksbill Turtles and so many more!\nSoar to great heights with a diverse mix of bright & brilliant fully flying birds including the vibrant Toco Toucan and majestic Secretarybird. House your birds in fully customisable aviaries built from barriers, support poles and dynamic mesh covers, allowing them to fly freely and safely. Observe their dynamic behaviours on the ground and in the sky as they glide around unique habitats.\nConservation goes beyond your zoo! Take on global conservation projects and meet specific requirements to release your animals into fully customisable, expansive Wildlife Reserves across the globe in living ecosystems created by you.\nBuild the zoo of your dreams across multiple globe-spanning biomes, with four brand-new scenery themes covering iconic architecture from around the world and five returning themes from the original Planet Zoo, providing you with an expansive library of scenery items to build/create with.\nEffortlessly design your zoos using a range of ready-to-place blueprints or get creative with the Planet franchise’s iconic piece-by-piece construction tools to bring your own ideas to life.\nDelve into every detail with scaling, flexi-colour & easy-to-use pathing systems, together with new foliage and terrain brushes to make grand changes to your zoos and Wildlife Reserves.\nConstruct perfect habitats for appealing animals to bring in guests, boosting your zoo’s rating and earning money to fund further expansion.\nManage day-to-day zoo life as you create immersive spaces for your guests packed with educational opportunities around every corner. Cater to their requirements with a variety of shops and amenities to curate the perfect day out.\nJoin FEN (Fauna and Ecosystems Network) in a fun-filled adventure around the world in Career mode. Build a global network of zoos and Wildlife Reserves and trade animals with other players in Franchise mode or enjoy unlimited creativity in Sandbox mode.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26164034 release: 42.6 GB",
+          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v2.0 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.0.7.1031590; 2 DLCs (Deluxe Upgrade Pack & Bonus Content Pack) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 42.6 to 14.8 GB)",
+          "Installation takes 5-15 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 42.6 GB",
+          "Language can be changed in “steam_settings/configs.user.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 6 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-30T02:43:39.344792+00:00"
     },
     {
       "id": "europa-universalis-5",

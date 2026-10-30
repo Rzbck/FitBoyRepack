@@ -1,9 +1,87 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-30T20:35:04.081896+00:00",
+  "generated_at": "2026-10-30T23:49:24.232147+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
+    {
+      "id": "keep-driving",
+      "title": "Keep Driving – v1.4.3.2d",
+      "source_url": "https://fitgirl-repacks.site/keep-driving/",
+      "image_url": "https://i6.imageban.ru/out/2025/02/08/2d2b8dd1f61be0046db3b1ea3789e638.jpg",
+      "post_date": "2026-10-31T00:01:01+03:00",
+      "genres": [
+        "Adventure",
+        "Driving",
+        "Side",
+        "2D",
+        "Retro look"
+      ],
+      "repack_size": "337 MB",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2756920/extras/kd_steam_1c.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/86/f2/86f2dc17-1a9a-4c07-8bb4-17938219d20f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/86/f2/86f2dc17-1a9a-4c07-8bb4-17938219d20f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/f5/17f5a2cb-92a3-4050-80b2-4eab5d688289.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/f5/17f5a2cb-92a3-4050-80b2-4eab5d688289.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/d4/1ed408ee-1e96-4bba-afd8-5ce3521e3648.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/d4/1ed408ee-1e96-4bba-afd8-5ce3521e3648.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a7/99/a799ce42-a8a2-4ca1-b024-f0d7c83165e0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a7/99/a799ce42-a8a2-4ca1-b024-f0d7c83165e0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c1/12/c11236a1-4f90-4ad3-b786-189d96bf1dd9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c1/12/c11236a1-4f90-4ad3-b786-189d96bf1dd9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c6/a0/c6a0afd9-dd52-42b2-9b5f-f08458268e0d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c6/a0/c6a0afd9-dd52-42b2-9b5f-f08458268e0d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "A long,\nslow summer lies ahead\n. Hearing about a festival on the other side of the country, you fire up your engine, plot a course on your map, and hit the road. How, if you get there at all, is up to you.\nKeep Driving is a\nmanagement RPG\nabout slowly making your way through a procedurally generated pixel art open world. Pick up hitchhikers with their own personalities and stories; upgrade, customize and repair your car. Solve challenges on the road using a unique turn-based ‘combat’ system, using your own skills and whatever’s lying around in the glovebox to make it through.\nAt the end of your road trip, return back to the beginning and see what happens if you had followed a different path. There are multiple endings, with each taking about 1-4 hours to complete. Immerse yourself in the land through its highways, dirt tracks, and calm country roads. And remember to enjoy the ride. You’re young and don’t have much to lose.",
+        "game_features": [
+          "A procedurally generated pixel art world to explore one road at a time.",
+          "A nostalgic early 2000s setting with an emphasis on the analogue.",
+          "Use turn-based ‘combat’ to solve situations (like getting stuck behind a tractor).",
+          "Pick up misfits, oddballs and lost souls as you go.",
+          "Collect songs and listen to a mix CD of local Swedish indie bands.",
+          "Multiple endings to unlock when you return to the road.",
+          "Inspired by Oregon Trail II, FTL, Two Lane Blacktop, Paris Texas, Jalopy, Gloom Haven, The 7th Continent, and the developer’s lives."
+        ],
+        "repack_features": [
+          "Based on Keep.Driving.v1.2.0.0e-TENOKE ISO release: tenoke-keep.driving.v1.2.0.0e.iso (2,675,050,496 bytes)",
+          "Game version: v1.2.0.0e",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.5 to 1.3 GB)",
+          "Installation takes half-a-minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.5 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "princess-maker-children-of-revelation",
       "title": "Princess Maker: Children of Revelation",
@@ -133236,84 +133314,6 @@
           "Language can be changed in game settings",
           "If the game crashes for you, open “Space_Adventure_Cobra_-_The_Awakening_DataPluginsx86_64steam_emu.ini” file in any text editor and add SelfProtect=0 in the first line after the [Settings] section",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "keep-driving",
-      "title": "Keep Driving – v1.2.0.0e",
-      "source_url": "https://fitgirl-repacks.site/keep-driving/",
-      "image_url": "https://i6.imageban.ru/out/2025/02/08/2d2b8dd1f61be0046db3b1ea3789e638.jpg",
-      "post_date": "2025-08-28T04:00:01+03:00",
-      "genres": [
-        "Adventure",
-        "Driving",
-        "Side",
-        "2D",
-        "Retro look"
-      ],
-      "repack_size": "1.3 GB",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2756920/extras/kd_steam_1c.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/86/f2/86f2dc17-1a9a-4c07-8bb4-17938219d20f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/86/f2/86f2dc17-1a9a-4c07-8bb4-17938219d20f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/17/f5/17f5a2cb-92a3-4050-80b2-4eab5d688289.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/17/f5/17f5a2cb-92a3-4050-80b2-4eab5d688289.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1e/d4/1ed408ee-1e96-4bba-afd8-5ce3521e3648.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1e/d4/1ed408ee-1e96-4bba-afd8-5ce3521e3648.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a7/99/a799ce42-a8a2-4ca1-b024-f0d7c83165e0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a7/99/a799ce42-a8a2-4ca1-b024-f0d7c83165e0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c1/12/c11236a1-4f90-4ad3-b786-189d96bf1dd9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c1/12/c11236a1-4f90-4ad3-b786-189d96bf1dd9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c6/a0/c6a0afd9-dd52-42b2-9b5f-f08458268e0d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c6/a0/c6a0afd9-dd52-42b2-9b5f-f08458268e0d.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "A long,\nslow summer lies ahead\n. Hearing about a festival on the other side of the country, you fire up your engine, plot a course on your map, and hit the road. How, if you get there at all, is up to you.\nKeep Driving is a\nmanagement RPG\nabout slowly making your way through a procedurally generated pixel art open world. Pick up hitchhikers with their own personalities and stories; upgrade, customize and repair your car. Solve challenges on the road using a unique turn-based ‘combat’ system, using your own skills and whatever’s lying around in the glovebox to make it through.\nAt the end of your road trip, return back to the beginning and see what happens if you had followed a different path. There are multiple endings, with each taking about 1-4 hours to complete. Immerse yourself in the land through its highways, dirt tracks, and calm country roads. And remember to enjoy the ride. You’re young and don’t have much to lose.",
-        "game_features": [
-          "A procedurally generated pixel art world to explore one road at a time.",
-          "A nostalgic early 2000s setting with an emphasis on the analogue.",
-          "Use turn-based ‘combat’ to solve situations (like getting stuck behind a tractor).",
-          "Pick up misfits, oddballs and lost souls as you go.",
-          "Collect songs and listen to a mix CD of local Swedish indie bands.",
-          "Multiple endings to unlock when you return to the road.",
-          "Inspired by Oregon Trail II, FTL, Two Lane Blacktop, Paris Texas, Jalopy, Gloom Haven, The 7th Continent, and the developer’s lives."
-        ],
-        "repack_features": [
-          "Based on Keep.Driving.v1.2.0.0e-TENOKE ISO release: tenoke-keep.driving.v1.2.0.0e.iso (2,675,050,496 bytes)",
-          "Game version: v1.2.0.0e",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 2.5 to 1.3 GB)",
-          "Installation takes half-a-minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 2.5 GB",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-30T01:02:55.212311+00:00",
+  "generated_at": "2026-10-30T02:42:54.670161+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-29T10:24:32.637983+00:00",
   "games": [
+    {
+      "id": "planet-zoo-2",
+      "title": "Planet Zoo 2: Deluxe Edition – v1.0.7.1031590 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/planet-zoo-2/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/30/5633219b5ab5194ad8b79d5c71d61e2a.jpg",
+      "post_date": "2026-10-30T05:11:42+03:00",
+      "genres": [
+        "Managerial",
+        "Strategy",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "14.8 GB"
+    },
     {
       "id": "europa-universalis-5",
       "title": "Europa Universalis V – v1.4.5 + 5 DLCs/Bonuses",

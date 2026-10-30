@@ -10856,6 +10856,16 @@
       "action": "review-retained"
     },
     {
+      "id": "europa-universalis-v-repack-vpdated",
+      "title": "Europa Universalis V Repack Vpdated",
+      "source_url": "https://fitgirl-repacks.site/europa-universalis-v-repack-vpdated/",
+      "classification": "review",
+      "reason": "insufficient-game-signals",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "evolve",
       "title": "Evolve",
       "source_url": "https://fitgirl-repacks.site/evolve/",

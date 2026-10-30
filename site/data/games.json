@@ -1,9 +1,125 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-29T23:18:40.977343+00:00",
+  "generated_at": "2026-10-30T01:02:07.508316+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-29T10:24:32.637983+00:00",
   "games": [
+    {
+      "id": "europa-universalis-5",
+      "title": "Europa Universalis V – v1.4.5 + 5 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/europa-universalis-5/",
+      "image_url": "https://i5.imageban.ru/out/2025/11/05/d27b89f00f1bf419538576867a229c3c.jpg",
+      "post_date": "2026-10-30T03:20:51+03:00",
+      "genres": [
+        "Strategy",
+        "Grand strategy",
+        "Top",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "4.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c1/58/c158e7d2-516a-4df5-9766-8af9385b5f30.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c1/58/c158e7d2-516a-4df5-9766-8af9385b5f30.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/36/9736d2ce-45d7-42a0-a35a-a58ebe8440ba.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/36/9736d2ce-45d7-42a0-a35a-a58ebe8440ba.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/36/1b/361b6ca4-f2bb-4552-8747-e8f468311cc9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/36/1b/361b6ca4-f2bb-4552-8747-e8f468311cc9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a6/9c/a69cb2c2-2dfa-416f-816d-1ce203fb8346.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a6/9c/a69cb2c2-2dfa-416f-816d-1ce203fb8346.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/88/90/8890b34f-2712-413d-8471-2aa8fe443951.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/88/90/8890b34f-2712-413d-8471-2aa8fe443951.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e8/d5/e8d52267-74c0-4d30-841b-f7353904f62a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e8/d5/e8d52267-74c0-4d30-841b-f7353904f62a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Almost five hundred years of history unfold before you in\nEuropa Universalis V\n, the latest version of one of the greatest strategy games of all time. Guide the destiny of any of hundreds of nations and societies in a simulated living world of unparalleled depth and complexity.\nEuropa Universalis V\nbuilds on the franchise’s core concept of developing and advancing nations from around a deeply researched historical world, adding more detailed diplomacy, a more sophisticated economic model, a revised military system and greater logistical depth that will challenge even the most experienced strategy gamers.",
+        "game_features": [
+          "WATCH HISTORY UNFOLD BEFORE YOU",
+          "RULE",
+          "a land of your choosing. Hundreds of nations are yours to command, as you guide the destiny of millions of people through the late Middle Ages up to the Age of Revolution – from the mighty Yuán Dynasty to the city-states of Italy, from the warring clans of feudal Japan to the Pope himself.",
+          "DECIDE",
+          "which course your nation will take. Historical events and situations await as you chart a unique path through a new history written by your decisions. Experience The Hundred Years’ War, the Protestant Reformation, the collapse of old dynasties and rise of new ones.",
+          "EXPLORE",
+          "alternate histories as you shape the world to meet your ambitions. What if England succeeded in pressing its continental claims? What if China pursued an overseas empire? What if Mongol supremacy in Russia persisted? Every action opens the possibility for an original history.",
+          "PROVE YOUR METTLE AS A RULER",
+          "IMPOSE",
+          "domestic peace in a divided realm. Keep your nation’s factions in line as Estates jockey for power in your nation. Offer privileges to one group of citizens while you limit the power of another, all in the service of keeping your population under control.",
+          "NEGOTIATE",
+          "your way through an uneasy peace. Use diplomacy to entrench your dynasty across realms or build an invincible alliance. But remember that nations have no permanent friends – only permanent interests; so use your ambassadors carefully. Exact favors from friends, send threats to enemies, and keep an eye on everyone in-between.",
+          "CONQUER",
+          "new lands to expand your borders. Wage War on those who impede your ambition in a completely new Europa Universalis military system. Start in the age of levies and mercenaries and, through social development, evolve to vast standing armies and impenetrable fortresses. Choose skilled commanders to oversee both land and naval forces.",
+          "DEVELOP YOUR SOCIETY",
+          "BUILD",
+          "a strong economic infrastructure in the most detailed trade system yet seen in a Europa Universalis game. Dozens of goods and crops are available for production and trade on a map filled with new riches to discover. Invest in feeding a growing population or trade your surplus to less bountiful societies.",
+          "MOLD",
+          "your society to meet the historical moment. Choose your societal values, with new options opening as the ages move on. Centralize power at court or share it with your nobles. Pursue a tolerant policy for all faiths or condemn heretics. Emphasize massed armies or an elite cadre of quality soldiers.",
+          "GOVERN",
+          "a nation composed of many cultures and faiths in a detailed simulation of the past. For the first time in Europa Universalis, populations are represented on the map in detail, so provinces may be divided by religion or culture. Your decisions will determine how these populations will fare under your leadership.",
+          "BE AMBITIOUS",
+          "PREVAIL",
+          "in the greatest strategic challenges of the past. Test your expertise in grand strategic planning on a worldscape larger and more detailed than seen in any previous Paradox Interactive game. Challenge yourself to outdo the most famous rulers of the past, eclipsing their grand accomplishments and building your own vision of a richly detailed globe.",
+          "Included DLCs:",
+          "Pre-Purchase Bonus",
+          "Fate of the Phoenix",
+          "Sacred Sites",
+          "Ancient Monuments"
+        ],
+        "repack_features": [
+          "Based on Europa.Universalis.V.Fate.of.the.Phoenix-RUNE ISO release: rune-europa.universalis.v.fate.of.the.phoenix.iso (10,275,880,960 bytes)",
+          "Game version: v1.2.0 (Echinadis); 4 DLCs are included and activated",
+          "This repack is not a “Premium Edition”, since only 2 DLCs out of 4 from “Premium Upgrade” season pass is released. All other repacks are also not PE atm",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST",
+          "Significantly smaller archive size (compressed from 9.6 to 5.8/7 GB)",
+          "Installation takes 5-12 minutes (depending on your system, mostly on your drive speed – the game has more than 52000 small files, Paradox never learn from their mistakes)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 16.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
+    {
+      "id": "village-in-the-shade",
+      "title": "Village in the Shade: Deluxe Edition – v1.30 + 2 Bonus DLCs",
+      "source_url": "https://fitgirl-repacks.site/village-in-the-shade/",
+      "image_url": "https://i2.imageban.ru/out/2026/10/30/188f70bb778fe63000d262bb1a0588d2.jpg",
+      "post_date": "2026-10-30T02:51:50+03:00",
+      "genres": [
+        "Lifestyle",
+        "Managerial",
+        "Isometric",
+        "2D",
+        "Horror",
+        "Japanese"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "low-budget-repairs",
       "title": "Low-Budget Repairs, v1.7.17 + Bonus App",
@@ -61382,106 +61498,6 @@
           "Installation takes 18-55 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 58.8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "europa-universalis-5",
-      "title": "Europa Universalis V – v1.2.0 + 4 DLCs",
-      "source_url": "https://fitgirl-repacks.site/europa-universalis-5/",
-      "image_url": "https://i5.imageban.ru/out/2025/11/05/d27b89f00f1bf419538576867a229c3c.jpg",
-      "post_date": "2026-05-07T21:00:51+03:00",
-      "genres": [
-        "Strategy",
-        "Grand strategy",
-        "Top",
-        "3D",
-        "Real-time"
-      ],
-      "repack_size": "5.8 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/c1/58/c158e7d2-516a-4df5-9766-8af9385b5f30.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c1/58/c158e7d2-516a-4df5-9766-8af9385b5f30.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/97/36/9736d2ce-45d7-42a0-a35a-a58ebe8440ba.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/97/36/9736d2ce-45d7-42a0-a35a-a58ebe8440ba.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/36/1b/361b6ca4-f2bb-4552-8747-e8f468311cc9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/36/1b/361b6ca4-f2bb-4552-8747-e8f468311cc9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a6/9c/a69cb2c2-2dfa-416f-816d-1ce203fb8346.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a6/9c/a69cb2c2-2dfa-416f-816d-1ce203fb8346.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/88/90/8890b34f-2712-413d-8471-2aa8fe443951.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/88/90/8890b34f-2712-413d-8471-2aa8fe443951.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e8/d5/e8d52267-74c0-4d30-841b-f7353904f62a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e8/d5/e8d52267-74c0-4d30-841b-f7353904f62a.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Almost five hundred years of history unfold before you in\nEuropa Universalis V\n, the latest version of one of the greatest strategy games of all time. Guide the destiny of any of hundreds of nations and societies in a simulated living world of unparalleled depth and complexity.\nEuropa Universalis V\nbuilds on the franchise’s core concept of developing and advancing nations from around a deeply researched historical world, adding more detailed diplomacy, a more sophisticated economic model, a revised military system and greater logistical depth that will challenge even the most experienced strategy gamers.",
-        "game_features": [
-          "WATCH HISTORY UNFOLD BEFORE YOU",
-          "RULE",
-          "a land of your choosing. Hundreds of nations are yours to command, as you guide the destiny of millions of people through the late Middle Ages up to the Age of Revolution – from the mighty Yuán Dynasty to the city-states of Italy, from the warring clans of feudal Japan to the Pope himself.",
-          "DECIDE",
-          "which course your nation will take. Historical events and situations await as you chart a unique path through a new history written by your decisions. Experience The Hundred Years’ War, the Protestant Reformation, the collapse of old dynasties and rise of new ones.",
-          "EXPLORE",
-          "alternate histories as you shape the world to meet your ambitions. What if England succeeded in pressing its continental claims? What if China pursued an overseas empire? What if Mongol supremacy in Russia persisted? Every action opens the possibility for an original history.",
-          "PROVE YOUR METTLE AS A RULER",
-          "IMPOSE",
-          "domestic peace in a divided realm. Keep your nation’s factions in line as Estates jockey for power in your nation. Offer privileges to one group of citizens while you limit the power of another, all in the service of keeping your population under control.",
-          "NEGOTIATE",
-          "your way through an uneasy peace. Use diplomacy to entrench your dynasty across realms or build an invincible alliance. But remember that nations have no permanent friends – only permanent interests; so use your ambassadors carefully. Exact favors from friends, send threats to enemies, and keep an eye on everyone in-between.",
-          "CONQUER",
-          "new lands to expand your borders. Wage War on those who impede your ambition in a completely new Europa Universalis military system. Start in the age of levies and mercenaries and, through social development, evolve to vast standing armies and impenetrable fortresses. Choose skilled commanders to oversee both land and naval forces.",
-          "DEVELOP YOUR SOCIETY",
-          "BUILD",
-          "a strong economic infrastructure in the most detailed trade system yet seen in a Europa Universalis game. Dozens of goods and crops are available for production and trade on a map filled with new riches to discover. Invest in feeding a growing population or trade your surplus to less bountiful societies.",
-          "MOLD",
-          "your society to meet the historical moment. Choose your societal values, with new options opening as the ages move on. Centralize power at court or share it with your nobles. Pursue a tolerant policy for all faiths or condemn heretics. Emphasize massed armies or an elite cadre of quality soldiers.",
-          "GOVERN",
-          "a nation composed of many cultures and faiths in a detailed simulation of the past. For the first time in Europa Universalis, populations are represented on the map in detail, so provinces may be divided by religion or culture. Your decisions will determine how these populations will fare under your leadership.",
-          "BE AMBITIOUS",
-          "PREVAIL",
-          "in the greatest strategic challenges of the past. Test your expertise in grand strategic planning on a worldscape larger and more detailed than seen in any previous Paradox Interactive game. Challenge yourself to outdo the most famous rulers of the past, eclipsing their grand accomplishments and building your own vision of a richly detailed globe.",
-          "Included DLCs:",
-          "Pre-Purchase Bonus",
-          "Fate of the Phoenix",
-          "Sacred Sites",
-          "Ancient Monuments"
-        ],
-        "repack_features": [
-          "Based on Europa.Universalis.V.Fate.of.the.Phoenix-RUNE ISO release: rune-europa.universalis.v.fate.of.the.phoenix.iso (10,275,880,960 bytes)",
-          "Game version: v1.2.0 (Echinadis); 4 DLCs are included and activated",
-          "This repack is not a “Premium Edition”, since only 2 DLCs out of 4 from “Premium Upgrade” season pass is released. All other repacks are also not PE atm",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus OST",
-          "Significantly smaller archive size (compressed from 9.6 to 5.8/7 GB)",
-          "Installation takes 5-12 minutes (depending on your system, mostly on your drive speed – the game has more than 52000 small files, Paradox never learn from their mistakes)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 16.8 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-30T20:34:22.363230+00:00",
+  "generated_at": "2026-10-30T20:35:04.081896+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
@@ -17,7 +17,59 @@
         "Top-down",
         "2D"
       ],
-      "repack_size": "907 MB"
+      "repack_size": "907 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d7/5a/d75a2d7e-03f0-4179-ad16-fd46b1451aec.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d7/5a/d75a2d7e-03f0-4179-ad16-fd46b1451aec.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e5/86/e5867df8-f3ce-4ecc-a24e-ff15b3cfb253.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e5/86/e5867df8-f3ce-4ecc-a24e-ff15b3cfb253.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/54/d8/54d8411c-64af-4967-9dd5-9551fe0bbcc3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/54/d8/54d8411c-64af-4967-9dd5-9551fe0bbcc3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/00/dc/00dc3e9a-127e-43c9-9a34-61460c9e6437.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/00/dc/00dc3e9a-127e-43c9-9a34-61460c9e6437.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/89/3d/893de7d5-a302-487d-8688-c1ede82cf5e4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/89/3d/893de7d5-a302-487d-8688-c1ede82cf5e4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9a/9c/9a9cd7b1-8fca-4a4b-9e2e-f24a89343b36.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9a/9c/9a9cd7b1-8fca-4a4b-9e2e-f24a89343b36.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-30T20:35:04.079486+00:00",
+      "details": {
+        "description": "Princess Maker: Children of Revelation\nis a raising simulation game that returns after nearly 18 years as part of the\nPrincess Maker\npackage series, where you raise a young girl into adulthood.\nWhile maintaining the charming art style and character development system of the original, it has been reborn as a modern game.\nBecome a parent in the game and help fulfill your daughter’s dreams!\nThe schedules you choose lead to your daughter’s future.\nShe can study, help others through social activities, or explore various parts of the world.\nSometimes you can also take breaks by sightseeing around town or going on vacations.\nThrough various activities, you can build relationships with different characters.\nYou can develop deep bonds with your daughter’s peers through interactions.\nSome relationships might even lead to lifelong commitments.\nThis story takes place in the demon world\nIn the demon world, there are regions centered around specific races.\nGather information in each village and explore unknown territories beyond the gates.\nYou may face dangers, but with luck, you might find treasures.\nDeal with situations flexibly according to your daughter’s talents.\nAfter numerous experiences, the day finally comes when your daughter becomes independent.\nWhat kind of person have your choices made her into?\nWhen you follow your daughter’s final footsteps, you can always look back on the precious memories you shared together.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Princess.Maker.Children.of.Revelation-TENOKE ISO release: tenoke-princess.maker.children.of.revelation.iso (2,957,592,576 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.8 GB to 907 MB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-30T20:35:04.079486+00:00"
     },
     {
       "id": "planet-zoo-2",

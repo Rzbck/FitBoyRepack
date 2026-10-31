@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-31T00:02:46.276031+00:00",
+  "generated_at": "2026-10-31T00:03:27.422465+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "9.5 GB"
+      "repack_size": "9.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b5/ff/b5ff02c3-394a-4cf4-8b06-a75cc39aaa55.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b5/ff/b5ff02c3-394a-4cf4-8b06-a75cc39aaa55.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d2/d1/d2d1fafc-a80b-4fa8-bcaa-d784972801a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d2/d1/d2d1fafc-a80b-4fa8-bcaa-d784972801a0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8c/f9/8cf92fec-833c-4ee9-a7d7-e60ca47b8094.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8c/f9/8cf92fec-833c-4ee9-a7d7-e60ca47b8094.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/34/b5/34b59099-6fe8-412f-b65f-bc4991b9f8ef.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/34/b5/34b59099-6fe8-412f-b65f-bc4991b9f8ef.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b9/d5/b9d57f65-d91d-4706-ac36-8747f820fa26.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b9/d5/b9d57f65-d91d-4706-ac36-8747f820fa26.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e3/9d/e39debc1-87e3-40a8-8a88-6fd70f6634ea.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e3/9d/e39debc1-87e3-40a8-8a88-6fd70f6634ea.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-31T00:03:27.420294+00:00",
+      "details": {
+        "description": "Stygian: Outer Gods is a first-person survival horror and role-playing game set within the grim, cosmic-horror universe of Stygian: Reign of the Old Ones. Serving as a narrative prequel, the story takes place just before the catastrophic event known as the Black Day. Players step into the shoes of Jack, an investigator lured to the isolated, fog-shrouded coastal town of Kingsport under the pretense of finding his presumed-dead father.\nThe gameplay shifts the series away from its original top-down CRPG perspective into an immersive first-person survival-horror experience. Exploration takes place across a hostile, maze-like environment of derelict buildings, snowy settlements, dark mines, and lighthouses. Survival demands careful resource management, environmental puzzle-solving, crafting tools like lockpicks and bandages, and utilizing a distinct tarot-card progression system that grants both major “seer” abilities and minor skill boosts.\nCombat is hazardous and heavily punishing, turning single enemies into lethal threats that require stealth, glass-bottle distractions, and careful crouching rather than direct confrontation. Players must also actively manage a fragile sanity meter, which erodes near supernatural anomalies, dark visions, and terrifying entities tied to the ancient Outer Gods. Your moral and character choicesвЂ”shaped initially at a bathroom mirror and expanded through side questsвЂ”directly influence the narrative’s path, encounters, and multiple possible conclusions.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Stygian.Outer.Gods-RUNE ISO release: rune-stygian.outer.gods.iso (13,713,833,984 bytes)",
+          "Game version: v05b68d5f",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 12.8 to 9.5 GB)",
+          "Installation takes 5-16 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 13 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-31T00:03:27.420294+00:00"
     },
     {
       "id": "keep-driving",

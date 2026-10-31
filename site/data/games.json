@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-30T23:49:24.232147+00:00",
+  "generated_at": "2026-10-31T00:02:46.276031+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
+    {
+      "id": "stygian-outer-gods",
+      "title": "Stygian: Outer Gods – v05b68d5f",
+      "source_url": "https://fitgirl-repacks.site/stygian-outer-gods/",
+      "image_url": "https://i3.imageban.ru/out/2026/10/31/931b562ba7c29e3adfffd3680fcad6e8.jpg",
+      "post_date": "2026-10-31T02:58:53+03:00",
+      "genres": [
+        "Action",
+        "Survival",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "9.5 GB"
+    },
     {
       "id": "keep-driving",
       "title": "Keep Driving – v1.4.3.2d",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-31T05:31:50.786281+00:00",
+  "generated_at": "2026-10-31T05:32:38.717640+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
@@ -16,7 +16,64 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "110.8 GB"
+      "repack_size": "110.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/90/b7/90b794cc-aad5-4cf7-93be-4b4e46b8868f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/b7/90b794cc-aad5-4cf7-93be-4b4e46b8868f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/44/9f44af58-1e37-4ddc-8996-6f1cb22a19b7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/44/9f44af58-1e37-4ddc-8996-6f1cb22a19b7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/51/d4/51d4b2d8-b5c0-4992-a1a9-ee2438cf639b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/51/d4/51d4b2d8-b5c0-4992-a1a9-ee2438cf639b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/81/25816a12-17a7-4c60-9521-e8912c08fd36.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/81/25816a12-17a7-4c60-9521-e8912c08fd36.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3c/16/3c16fa1a-4817-4ad7-88f1-28671375bd93.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3c/16/3c16fa1a-4817-4ad7-88f1-28671375bd93.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/18/2c183b90-e0be-4600-9771-b0bea51c41cd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/18/2c183b90-e0be-4600-9771-b0bea51c41cd.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-31T05:32:38.715884+00:00",
+      "details": {
+        "description": "Framed for murdering his master, Soul suffers a devastating wound to the heart, leaving him just sixty-six days to live. Alone and hunted, he roams the Wulin, determined to unravel a conspiracy that has ensnared the martial world.\nThrough rain and blood, kindness and vengeance, he embarks on a journey where love and hatred intertwine in search of a heart.\nExplore the mysterious Phantom World, where shifting light and shadow conceal mysteries at every turn.\nMemory Flowers, the Wulin and the Discordance, Transcension, the Lady of the Veil, Inanis’ Dreamscape…\nEvery secret leads to another, and every corner hides a new story.\nWhen one path ends, another begins. Hidden passages and intricate mechanisms await those who dare to explore.\nIn the Wulin, your weapon is your life.\nMaster over 30 primary weapons and more than 20 unique Phantom Edges, wrested from the hands of fallen foes.\nRooted in traditional martial arts, combat flows through seamless combos that are easy to learn yet rewarding to master. Only true masters will uncover the deadly intricacies within every technique.\nBlades clash in showers of sparks. Dodge, deflect, counter, and strike in one seamless flow, where victory and defeat are decided in an instant.\nWill the next turn leave the sands stained with blood, or lead you back from the brink of death?\nThe golden age of wuxia cinema collides with punk fantasy in Phantom Blade Zero.\nMartial arts, cold steel, mechanical prosthetics, crumbling industrial ruins, traditional Chinese aesthetics, and modern rock music.\nTogether, they create the dark, unmistakable aesthetic of kungfupunk.\nPowered by Unreal Engine 5 and cutting-edge motion capture technology, renowned martial arts choreographers from the golden age of wuxia cinema collaborated to bring authentic Chinese kungfu to life. Every strike and stance in Phantom Blade Zero is rooted in real martial techniques.\nExperience the timeless allure of Chinese kungfu through breathtaking cinematic action.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26266538 release: 140.6 GB",
+          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v2.0 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v301524-17219; 2 DLCs (Pre-Purchase Bonus & Deluxe Edition Upgrade) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 140.6 GB to 110.8 GB)",
+          "Installation takes from 70 minutes (on 32-threads CPU) up to ~3 hours (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 140.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-31T05:32:38.715884+00:00"
     },
     {
       "id": "project-hunt",

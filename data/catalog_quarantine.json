@@ -1798,6 +1798,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "risk-of-rain-2-repack-updated-5",
+      "title": "Risk of Rain 2 Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/risk-of-rain-2-repack-updated-5/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "russian-cyberpunk-farm",
       "title": "Russian Cyberpunk Farm",
       "source_url": "https://fitgirl-repacks.site/russian-cyberpunk-farm/",
@@ -9268,8 +9278,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-27-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

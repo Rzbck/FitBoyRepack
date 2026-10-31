@@ -1,9 +1,90 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-31T00:03:27.422465+00:00",
+  "generated_at": "2026-10-31T05:31:50.786281+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-30T10:26:16.271599+00:00",
   "games": [
+    {
+      "id": "phantom-blade-zero",
+      "title": "Phantom Blade Zero: Deluxe Edition – v301524-17219 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/phantom-blade-zero/",
+      "image_url": "https://i1.imageban.ru/out/2026/10/31/73dca9b0ed13f92c8f1a83af09fcf3ac.jpg",
+      "post_date": "2026-10-31T04:42:54+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "110.8 GB"
+    },
+    {
+      "id": "project-hunt",
+      "title": "Project Hunt: Maps & Weapons Bundle – Build 26240711 + 9 DLCs",
+      "source_url": "https://fitgirl-repacks.site/project-hunt/",
+      "image_url": "https://i3.imageban.ru/out/2024/04/06/adaf0eac62f8458fa68224f562581df3.jpg",
+      "post_date": "2026-10-31T03:20:53+03:00",
+      "genres": [
+        "Sports",
+        "Hunting",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "24.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d2/c9/d2c97502-aaec-4384-aa31-9f80342d6f86.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d2/c9/d2c97502-aaec-4384-aa31-9f80342d6f86.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3c/dd/3cdd974e-5912-4834-b5c9-6b3efcf440bd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3c/dd/3cdd974e-5912-4834-b5c9-6b3efcf440bd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a1/50/a1509c8d-ac48-4a29-b4d3-78c90610f233.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a1/50/a1509c8d-ac48-4a29-b4d3-78c90610f233.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/60/c760a3e2-6a02-49d0-a3c7-16a2df2d10ea.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/60/c760a3e2-6a02-49d0-a3c7-16a2df2d10ea.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/54/f9/54f99de3-f0df-421a-b05b-554f0f914aff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/54/f9/54f99de3-f0df-421a-b05b-554f0f914aff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2e/ab/2eabdc04-e349-47bd-a748-ee9ce72681f5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2e/ab/2eabdc04-e349-47bd-a748-ee9ce72681f5.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "This semi-realistic hunting experience lets you explore and hunt in large-world environments. Discover true-to-life animals in beautiful natural habitats and handle various detailed and realistic weapons.\nCreate your own Hunting experience. With a wide range of options, stretching from rifles to handguns, each with different types of ammunition and suited for different-sized animals, it’s up to you to find your favorites and regularly practice your aim as you account for wind and bullet drop.",
+        "game_features": [],
+        "repack_features": [
+          "Based on PROJECT.HUNT.MANCHURIAN.TAIGA-TENOKE ISO release: tenoke-project.hunt.manchurian.taiga.iso (32,078,192,640 bytes)",
+          "Game version: Steam BuildID Build 23404699; 5 DLCs (LONE STAR HUNTING RANCH, HTR .338 Big Game Access Pack, Trophy Sanctuary, Trophy Museum, MANCHURIAN TAIGA) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 29.9 to 21.2 GB)",
+          "Installation takes 22-60 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 29.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses compression library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "stygian-outer-gods",
       "title": "Stygian: Outer Gods – v05b68d5f",
@@ -46483,73 +46564,6 @@
           "HDD space after installation: 20.5 GB",
           "Language can be changed by editing desktop icon properties, “culture” parameter",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "project-hunt",
-      "title": "Project Hunt: Hunter’s Collection – Build 23404699 + 5 DLCs",
-      "source_url": "https://fitgirl-repacks.site/project-hunt/",
-      "image_url": "https://i3.imageban.ru/out/2024/04/06/adaf0eac62f8458fa68224f562581df3.jpg",
-      "post_date": "2026-06-13T18:30:53+03:00",
-      "genres": [
-        "Sports",
-        "Hunting",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "21.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/d2/c9/d2c97502-aaec-4384-aa31-9f80342d6f86.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d2/c9/d2c97502-aaec-4384-aa31-9f80342d6f86.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3c/dd/3cdd974e-5912-4834-b5c9-6b3efcf440bd.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3c/dd/3cdd974e-5912-4834-b5c9-6b3efcf440bd.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a1/50/a1509c8d-ac48-4a29-b4d3-78c90610f233.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a1/50/a1509c8d-ac48-4a29-b4d3-78c90610f233.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c7/60/c760a3e2-6a02-49d0-a3c7-16a2df2d10ea.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c7/60/c760a3e2-6a02-49d0-a3c7-16a2df2d10ea.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/54/f9/54f99de3-f0df-421a-b05b-554f0f914aff.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/54/f9/54f99de3-f0df-421a-b05b-554f0f914aff.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2e/ab/2eabdc04-e349-47bd-a748-ee9ce72681f5.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2e/ab/2eabdc04-e349-47bd-a748-ee9ce72681f5.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "This semi-realistic hunting experience lets you explore and hunt in large-world environments. Discover true-to-life animals in beautiful natural habitats and handle various detailed and realistic weapons.\nCreate your own Hunting experience. With a wide range of options, stretching from rifles to handguns, each with different types of ammunition and suited for different-sized animals, it’s up to you to find your favorites and regularly practice your aim as you account for wind and bullet drop.",
-        "game_features": [],
-        "repack_features": [
-          "Based on PROJECT.HUNT.MANCHURIAN.TAIGA-TENOKE ISO release: tenoke-project.hunt.manchurian.taiga.iso (32,078,192,640 bytes)",
-          "Game version: Steam BuildID Build 23404699; 5 DLCs (LONE STAR HUNTING RANCH, HTR .338 Big Game Access Pack, Trophy Sanctuary, Trophy Museum, MANCHURIAN TAIGA) are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Smaller archive size (compressed from 29.9 to 21.2 GB)",
-          "Installation takes 22-60 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 29.6 GB",
-          "Language can be changed in game settings",
-          "Repack uses compression library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

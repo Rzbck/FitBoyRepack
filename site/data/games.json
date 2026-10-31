@@ -1,9 +1,85 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-31T21:38:23.961230+00:00",
+  "generated_at": "2026-10-31T23:21:16.848875+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-31T09:57:06.174718+00:00",
   "games": [
+    {
+      "id": "labyrinthine",
+      "title": "Labyrinthine: Supporter Edition, Build 26227185 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/labyrinthine/",
+      "image_url": "https://i3.imageban.ru/out/2023/08/26/75aa3560cb191f7dc084c8d67e7e3625.jpg",
+      "post_date": "2026-11-01T02:00:15+03:00",
+      "genres": [
+        "Adventure",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "7.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/6c/98/6c98d1df-ff0e-438e-b5bc-a13be3253581.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6c/98/6c98d1df-ff0e-438e-b5bc-a13be3253581.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ef/8c/ef8c748b-96ff-4f0b-bef6-d85bfc922f0b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ef/8c/ef8c748b-96ff-4f0b-bef6-d85bfc922f0b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/6f/306f1bd7-6a8e-499a-980c-d10985fb54ac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/6f/306f1bd7-6a8e-499a-980c-d10985fb54ac.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b8/28/b828aa14-0bad-4ef3-9f7b-ce1ae58d9e75.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b8/28/b828aa14-0bad-4ef3-9f7b-ce1ae58d9e75.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ab/4b/ab4b802e-e146-4412-b68a-c63a58cc7b98.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ab/4b/ab4b802e-e146-4412-b68a-c63a58cc7b98.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/e8/17e828fa-4a2c-4e3f-8b4a-2ef6a348599a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/e8/17e828fa-4a2c-4e3f-8b4a-2ef6a348599a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "Embark on a heart-pounding journey into the realm of nightmares with Labyrinthine, a cooperative horror game that will make you question your every step. Gather your courage and team up with friends as you enter the abandoned Happisburg hedge maze, or dive headfirst into the spine-chilling case files, where every investigation leads to unspeakable horrors.\nPrepare to be gripped by fear as you encounter a variety of unique monsters, each with their own sinister AI and mechanics. Stay on your toes as you traverse the maze’s twisted paths and unravel the dark secrets that lie within.\nLabyrinthine offers two distinct gaming experiences. In the story mode, you will follow the enigmatic trail of Joan, the mysterious fairground worker, uncovering the maze’s haunting history and facing terrifying challenges together.\nHowever, if you’re seeking the ultimate test of bravery, venture into the case files – procedurally generated mazes that promise endless variation and escalating difficulty. Each investigation reveals new horrors, forcing you to adapt and strategize with your fellow players. Solve puzzles, gather essential items, and survive the nightmarish encounters that await.\nAs you delve deeper into the case files, you will discover a leveling system that unlocks not only new monsters and maps but also rare cosmetics.\nWith cooperative play at its core, Labyrinthine encourages teamwork and communication to overcome the malevolent forces that lurk in the shadows. But be warned, in this maze of terror, splitting up may be your only chance to stay one step ahead of the lurking evils.\nIf you are a true horror enthusiast, Labyrinthine promises an experience like no other. Immerse yourself in an atmosphere of dread and anticipation as you navigate the ever-changing maze, surrounded by the unknown.\nAre you ready to face the darkness together, or will you succumb to the horrors that await? Step into Labyrinthine and find out if you have what it takes to escape the nightmare.",
+        "game_features": [
+          "Co-operative online multiplayer for 1-4 players- Over 30 unique monsters with their own AI and mechanics",
+          "Two gamemodes; a Story Mode + A procedural generation mode",
+          "Puzzles",
+          "Leveling system that unlocks 20+ types of mazes",
+          "Over 200 cosmetics that can be found within the mazes",
+          "Equipment that is usable",
+          "Daily quests",
+          "In game equipment/cosmetic store",
+          "Hardcore case files to provide a more difficult challenge, rewarding exclusive cosmetics"
+        ],
+        "repack_features": [
+          "Based on Labyrinthine.v20250827-TENOKE ISO release: tenoke-labyrinthine.v20250827.iso (19,537,758,208 bytes)",
+          "Game version: Build 19705579; Supporter Edition DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 18.2 to 7.1 GB)",
+          "Installation takes 3-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 18.2 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "game-keeper-somebody-messed-up-my-shop",
       "title": "Game Keeper: Somebody Messed Up My Shop!",
@@ -132719,82 +132795,6 @@
           "Installation takes 1-3 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 6.7 GB",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "labyrinthine",
-      "title": "Labyrinthine: Supporter Edition, Build 19705579 + DLC",
-      "source_url": "https://fitgirl-repacks.site/labyrinthine/",
-      "image_url": "https://i3.imageban.ru/out/2023/08/26/75aa3560cb191f7dc084c8d67e7e3625.jpg",
-      "post_date": "2025-08-31T14:10:15+03:00",
-      "genres": [
-        "Adventure",
-        "First-person",
-        "3D",
-        "Horror"
-      ],
-      "repack_size": "7.1 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/6c/98/6c98d1df-ff0e-438e-b5bc-a13be3253581.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6c/98/6c98d1df-ff0e-438e-b5bc-a13be3253581.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ef/8c/ef8c748b-96ff-4f0b-bef6-d85bfc922f0b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ef/8c/ef8c748b-96ff-4f0b-bef6-d85bfc922f0b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/30/6f/306f1bd7-6a8e-499a-980c-d10985fb54ac.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/30/6f/306f1bd7-6a8e-499a-980c-d10985fb54ac.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b8/28/b828aa14-0bad-4ef3-9f7b-ce1ae58d9e75.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b8/28/b828aa14-0bad-4ef3-9f7b-ce1ae58d9e75.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ab/4b/ab4b802e-e146-4412-b68a-c63a58cc7b98.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ab/4b/ab4b802e-e146-4412-b68a-c63a58cc7b98.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/17/e8/17e828fa-4a2c-4e3f-8b4a-2ef6a348599a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/17/e8/17e828fa-4a2c-4e3f-8b4a-2ef6a348599a.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "Embark on a heart-pounding journey into the realm of nightmares with Labyrinthine, a cooperative horror game that will make you question your every step. Gather your courage and team up with friends as you enter the abandoned Happisburg hedge maze, or dive headfirst into the spine-chilling case files, where every investigation leads to unspeakable horrors.\nPrepare to be gripped by fear as you encounter a variety of unique monsters, each with their own sinister AI and mechanics. Stay on your toes as you traverse the maze’s twisted paths and unravel the dark secrets that lie within.\nLabyrinthine offers two distinct gaming experiences. In the story mode, you will follow the enigmatic trail of Joan, the mysterious fairground worker, uncovering the maze’s haunting history and facing terrifying challenges together.\nHowever, if you’re seeking the ultimate test of bravery, venture into the case files – procedurally generated mazes that promise endless variation and escalating difficulty. Each investigation reveals new horrors, forcing you to adapt and strategize with your fellow players. Solve puzzles, gather essential items, and survive the nightmarish encounters that await.\nAs you delve deeper into the case files, you will discover a leveling system that unlocks not only new monsters and maps but also rare cosmetics.\nWith cooperative play at its core, Labyrinthine encourages teamwork and communication to overcome the malevolent forces that lurk in the shadows. But be warned, in this maze of terror, splitting up may be your only chance to stay one step ahead of the lurking evils.\nIf you are a true horror enthusiast, Labyrinthine promises an experience like no other. Immerse yourself in an atmosphere of dread and anticipation as you navigate the ever-changing maze, surrounded by the unknown.\nAre you ready to face the darkness together, or will you succumb to the horrors that await? Step into Labyrinthine and find out if you have what it takes to escape the nightmare.",
-        "game_features": [
-          "Co-operative online multiplayer for 1-4 players- Over 30 unique monsters with their own AI and mechanics",
-          "Two gamemodes; a Story Mode + A procedural generation mode",
-          "Puzzles",
-          "Leveling system that unlocks 20+ types of mazes",
-          "Over 200 cosmetics that can be found within the mazes",
-          "Equipment that is usable",
-          "Daily quests",
-          "In game equipment/cosmetic store",
-          "Hardcore case files to provide a more difficult challenge, rewarding exclusive cosmetics"
-        ],
-        "repack_features": [
-          "Based on Labyrinthine.v20250827-TENOKE ISO release: tenoke-labyrinthine.v20250827.iso (19,537,758,208 bytes)",
-          "Game version: Build 19705579; Supporter Edition DLC is included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 18.2 to 7.1 GB)",
-          "Installation takes 3-6 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 18.2 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

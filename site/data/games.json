@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-01T23:37:25.249117+00:00",
+  "generated_at": "2026-11-01T23:38:12.819421+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-01T10:48:02.415746+00:00",
   "games": [
@@ -103,7 +103,68 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "3.2 GB"
+      "repack_size": "3.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fc/02/fc022457-b909-4552-baf1-657772910614.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fc/02/fc022457-b909-4552-baf1-657772910614.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/47/38/4738c54a-e815-4267-9619-2a70ccb74ac3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/47/38/4738c54a-e815-4267-9619-2a70ccb74ac3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/68/c7/68c70d57-4b9d-4d0d-83b8-0eacb1f88432.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/68/c7/68c70d57-4b9d-4d0d-83b8-0eacb1f88432.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c3/56/c356836e-03c8-446e-b75a-8f0317597f44.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c3/56/c356836e-03c8-446e-b75a-8f0317597f44.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/12/11/1211e010-180b-4bcd-8122-6dc5657f5099.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/11/1211e010-180b-4bcd-8122-6dc5657f5099.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/35/b1359de4-7e62-43f9-8f0d-2e1b7e9d7eaf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/35/b1359de4-7e62-43f9-8f0d-2e1b7e9d7eaf.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-01T23:38:12.817334+00:00",
+      "details": {
+        "description": "“Good luck, have fun, and expect nothing good.”\nABSOLUTELY NOTHING GOOD\nis a first-person game created for Halloween, combining everyday work at a roadside store, supernatural events, elements of psychological horror, and dark humor.\nHalloween is approaching — the one night of the year when the boundary between the worlds of the living and the dead grows thinner.\nThe night before Halloween was supposed to be business as usual: holiday preparations, routine chores, and the occasional late-night customer. But this time, the silence outside the store is disturbed by the presence of someone who should still be locked away.",
+        "game_features": [
+          ":",
+          "An atmospheric first-person game with elements of psychological horror and shop simulation",
+          "Night shifts filled with everyday tasks and unusual customers",
+          "A gradually unfolding supernatural story with no combat",
+          "Comic-inspired visuals with adjustable pixelation",
+          "Atmospheric sound design",
+          "Average playtime: approximately 60 minutes",
+          "The 2D mini-game is available under “Select Level” in the main menu"
+        ],
+        "repack_features": [
+          "Based on ABSOLUTELY.NOTHING.GOOD-TENOKE ISO release: tenoke-absolutely.nothing.good.iso (6,186,336,256 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.8 GB to 3.2 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-01T23:38:12.817334+00:00"
     },
     {
       "id": "deep-rock-galactic",

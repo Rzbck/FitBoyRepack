@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-01T02:29:28.647831+00:00",
+  "generated_at": "2026-11-01T02:30:14.846567+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-31T09:57:06.174718+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "3D",
         "Detective fiction"
       ],
-      "repack_size": "5.2 GB"
+      "repack_size": "5.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/e1/9e/e19e60ca-bc76-4442-91c7-772119a6b37f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e1/9e/e19e60ca-bc76-4442-91c7-772119a6b37f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fa/e9/fae9fca9-3b1c-484b-a78c-675f74ef8f56.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fa/e9/fae9fca9-3b1c-484b-a78c-675f74ef8f56.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/27/1a279546-1eac-449f-aff9-529d318d6896.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/27/1a279546-1eac-449f-aff9-529d318d6896.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/81/c7811b3b-465f-4b62-bfc7-2e40435c16c9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/81/c7811b3b-465f-4b62-bfc7-2e40435c16c9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ed/40/ed40473e-23a5-4299-8984-8d0e3366f5e7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ed/40/ed40473e-23a5-4299-8984-8d0e3366f5e7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1b/94/1b9492de-c089-449f-a030-4defb5d6fa81.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1b/94/1b9492de-c089-449f-a030-4defb5d6fa81.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-01T02:30:14.844591+00:00",
+      "details": {
+        "description": "Step back into Fabletown in\nThe Wolf Among Us Remastered\n– the definitive edition of Telltale’s acclaimed noir narrative thriller inspired by DC’s award-winning\nFables\ncomic series.\nCritically acclaimed,\nThe Wolf Among Us\nbecame one of the most celebrated story-driven adventures of its generation, praised for its unforgettable characters, sharp writing, and meaningful player choice.\nFully remastered with enhanced visuals and modern presentation, this definitive edition brings Bigby Wolf’s first investigation to life with greater atmosphere, immersion, and detail than ever before – honoring the original experience while introducing Fabletown to a new generation of players.\nExperience the all-new Noir Mode, which lets you play the entire story in a striking black-and-white presentation inspired by classic noir cinema. Switch it on at any time to make every interrogation, back alley, and hard choice plays out like the detective film Fabletown always deserved.\nInvestigate brutal murders, interrogate suspects, explore crime scenes, and uncover a conspiracy hiding beneath the streets of Fabletown, where myths and legends live secretly among us.\nEvery choice carries consequences. In Fabletown, justice isn’t clean, and sometimes the Big Bad Wolf is the only one willing to do what must be done.\nFairy tales are real. Murder is just the beginning.\nRelive where it all began.\nKey Features\nThe Complete Award-Winning Story.\nExperience all five episodes of Telltale’s acclaimed narrative thriller that redefined choice-driven storytelling.\nYour Choices Carry Forward into The Wolf Among Us 2.\nPlayers who sign in to their Telltale Account while playing Remastered can carry those defining choices into the next season of Bigby’s story. Those who prefer to jump straight into The Wolf Among Us 2 can establish their past choices at the start of the game, with no previous play-through required.  However you lived it, The Wolf Among Us 2 will remember.\nAll-New Noir Mode.\nExperience Fabletown as a classic detective film and play the complete story in a stylish black-and-white noir presentation. With one tap, switch between Noir Mode and the fully remastered look at any time.\nEnhanced Visuals and Cinematic Presentation.\nImproved lighting, updated animation, refined environments, and modernized presentation bring the neon-noir world of Fabletown to life like never before.\nInvestigate a Dark Fairy-Tale Mystery.\nInterrogate suspects, examine crime scenes, and uncover a brutal conspiracy where folklore collides with modern crime drama.\nChoices That Shape Fabletown.\nEvery decision impacts relationships, dialogue, and how the citizens of Fabletown come to fear, trust, or reject Bigby Wolf.\nBonus Content and Behind-the-Scenes Material.\nGo behind the scenes with developer commentary, concept art, interviews, restored content, and other archival materials exploring the making of The Wolf Among Us.\nThe Definitive Way to Experience Fabletown.\nRebuilt for modern platforms, The Wolf Among Us Remastered delivers the complete story with enhanced presentation and new supplemental content for longtime fans and newcomers alike.",
+        "game_features": [],
+        "repack_features": [
+          "Based on The.Wolf.Among.Us.Remastered-RUNE ISO release: rune-the.wolf.among.us.remastered.iso (17,686,888,448 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus documentary videos",
+          "Significantly smaller archive size (compressed from 16.5 to 5.2/7.4 GB)",
+          "Installation takes 4-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 16.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-01T02:30:14.844591+00:00"
     },
     {
       "id": "onimusha-way-of-the-sword",

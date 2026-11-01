@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-10-31T23:21:16.848875+00:00",
+  "generated_at": "2026-11-01T01:12:52.983036+00:00",
   "source_pages": 816,
   "last_full_scan_at": "2026-10-31T09:57:06.174718+00:00",
   "games": [
+    {
+      "id": "anomalith",
+      "title": "ANOMALITH: Digital Deluxe Edition + 5 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/anomalith/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/01/1c70a433212fd32ed738390ffa244773.jpg",
+      "post_date": "2026-11-01T03:00:05+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Survival",
+        "Third-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "labyrinthine",
       "title": "Labyrinthine: Supporter Edition, Build 26227185 + 2 DLCs",

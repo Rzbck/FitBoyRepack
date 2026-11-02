@@ -1,9 +1,189 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-02T15:58:11.788033+00:00",
+  "generated_at": "2026-11-02T22:39:32.052439+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-02T11:40:00.284388+00:00",
   "games": [
+    {
+      "id": "resonance-of-fate-4k-hd-edition",
+      "title": "Resonance of Fate (End of Eternity) 4K/HD Edition – ENHANCED REMASTER, Build 25984155 + High Resolution Texture Pack DLC",
+      "source_url": "https://fitgirl-repacks.site/resonance-of-fate-4k-hd-edition/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/02/e29c19e63fc90700819ea7e18efd1123.jpg",
+      "post_date": "2026-11-03T01:00:05+03:00",
+      "genres": [
+        "RPG",
+        "3D",
+        "Steampunk",
+        "Japanese",
+        "Turn-based"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f7/8e/f78eab74-8f48-42a7-96cc-0fecf5b85213.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f7/8e/f78eab74-8f48-42a7-96cc-0fecf5b85213.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/13/4d/134dc071-801e-4723-8d26-fb9cab040c15.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/13/4d/134dc071-801e-4723-8d26-fb9cab040c15.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a5/89/a5898dee-0774-43e7-95ce-70e5b9de6353.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a5/89/a5898dee-0774-43e7-95ce-70e5b9de6353.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bd/5a/bd5ad22c-e550-4213-ad6d-f9fce7c54075.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bd/5a/bd5ad22c-e550-4213-ad6d-f9fce7c54075.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/4d/304ded87-4b62-480b-9270-44c50777f03f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/4d/304ded87-4b62-480b-9270-44c50777f03f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/62/71/62710f16-d7e8-4f00-941c-eefed36e46d9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/62/71/62710f16-d7e8-4f00-941c-eefed36e46d9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T12:02:52.604518+00:00",
+      "details": {
+        "description": "A tale of guns and emotional bonds woven in a world about to meet its end.\nThe fate of the world is changed in a flurry of bullets.\nThe curtain opens once again on this symphonic gunplay RPG in a new 4K/HD EDITION package.\nRESONANCE OF FATE, first released in 2010, has been remastered in 4K/HD. Enjoy blazing gun battles as you fly through the air in this story that plays out in a ruined world with high quality graphics. Play the game on a 4K compatible system and experience the fateful story in incredibly high resolution.\nThe rich story based around the theme of fate as the end of humanity plays out.\nA battle system unlike any you’ve ever experienced, that combines strategy with fast-paced thrills.\nWith many magnificent music pieces composed by Motoi Sakuraba and Kohei Tanaka.\nIn the distant future, the earth is polluted and ruined. Humankind, realizing it’s on the brink of extinction, creates a massive environmental conservation device known as Basel, entrusting the very cycle of life and death to a machine.\nThe perpetual-motion machine, the ruling class standing over humanity, and the protagonists working as mercenaries…\nLet the story of their intersecting fates begin.",
+        "game_features": [],
+        "repack_features": [
+          "Based on two releases: RESONANCE.OF.FATE.END.OF.ETERNITY.4K.HD.EDITION-CODEX (codex-resonance.of.fate.end.of.eternity.4k.hd.edition.iso, 14,018,248,704 bytes) + RESONANCE.OF.FATE.END.OF.ETERNITY.4K.HD.EDITION.TEXTURE.PACK-PLAZA (71,833,756,467 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of 4K Videos and HD Textures Pack",
+          "Significantly smaller archive size (compressed from cumulative 80 to 4.6~25 GB, depending on selected components)",
+          "Installation takes 3-30 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 83 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T12:02:52.604518+00:00"
+    },
+    {
+      "id": "hunting-simulator-3",
+      "title": "Hunting Simulator 3: Apex Predator Edition – v1.0.0-451.118880 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/hunting-simulator-3/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/02/06d6a8c5fd1468249fe476462670fc51.jpg",
+      "post_date": "2026-11-03T00:28:52+03:00",
+      "genres": [
+        "Sports",
+        "Open world",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "14.6 GB"
+    },
+    {
+      "id": "crackdown-3-ultimate-edition",
+      "title": "Crackdown 3: Ultimate Edition, v1.0.3162.2 + All DLCs + Multiplayer",
+      "source_url": "https://fitgirl-repacks.site/crackdown-3-ultimate-edition/",
+      "image_url": "https://i4.imageban.ru/out/2022/03/21/ef5f645399f539b9675955c81ee45c27.jpg",
+      "post_date": "2026-11-02T22:20:45+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Driving",
+        "Open world",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "10.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/88/7b/887bce76-8996-4d0a-a7eb-695d172ca945.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/88/7b/887bce76-8996-4d0a-a7eb-695d172ca945.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/df/55/df55b692-84b8-4a32-8c95-39534f8cef7d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/df/55/df55b692-84b8-4a32-8c95-39534f8cef7d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/91/ab/91ab22ec-d66f-4c62-8af0-c1a8fb469aac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/91/ab/91ab22ec-d66f-4c62-8af0-c1a8fb469aac.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b3/5c/b35c7915-69a2-445a-a11d-5db65748cc68.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b3/5c/b35c7915-69a2-445a-a11d-5db65748cc68.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/f4/58f40bc4-cd16-405d-bce0-9d6df381a8e4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/f4/58f40bc4-cd16-405d-bce0-9d6df381a8e4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2f/ef/2fef9540-aaa8-4290-9cee-941a00a69b6f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2f/ef/2fef9540-aaa8-4290-9cee-941a00a69b6f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T10:32:11.305655+00:00",
+      "details": {
+        "description": "Time to step up your boom and stop crime as a super-powered Agent in Crackdown 3’s open-world sandbox of mayhem and destruction. Explore the heights of New Providence, tear up the streets in iconic vehicles, and use your powerful abilities to stop a ruthless criminal empire.",
+        "game_features": [
+          "Level Up Your Agent:",
+          "Level up your super-Agent skills to move as fast as lightning, jump over skyscrapers, hurl trucks at your enemies and protect the city from cold-blooded criminals.",
+          "Dangerous Open-World Playground:",
+          "Play solo or with a friend in co-op mode to explore an expansive, vertical world to infiltrate crime lords and take down their syndicates.",
+          "Take a BOOM Out of Crime:",
+          "Lure vindictive crime lords out of hiding by completing objectives, attacking criminal operations and taking out high-value captains.",
+          "Included DLCs:",
+          "Bonus Pack (1 new weapon, 1 new suit & 1 new vehicle)",
+          "Keys to the City",
+          "Flying High"
+        ],
+        "repack_features": [
+          "Based on UWP release v1.0.3162.2: 21.9 GB, thanks to 0xdeadc0de for files!",
+          "UWP crack/fixer applied over, thanks to 0xdeadc0de!",
+          "3 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with ALL voiceovers!)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of 1080/4K videos and voicepacks you don’t need",
+          "Significantly smaller archive size (compressed from 21.9 to 10.6~16.9 GB, depending on selected components)",
+          "Installation takes 10-40 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 21.9 GB (28.7 GB during installation)",
+          "Language is set by the game based on your OS language",
+          "After installation, first run the crack installer from desktop icon. After that you can run the game from Start Menu icon",
+          "You MUST have all applications, which can hook to games (MSI Afterburner, Nahimic , etc.) disabled, otherwise the game will periodically crash",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
+    },
+    {
+      "id": "static-dread-the-submarine",
+      "title": "Static Dread: The Submarine – Deluxe Edition, Build 20260917T1313Z + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/static-dread-the-submarine/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/02/947d4d5c4f2acf207e1613df90613dc4.jpg",
+      "post_date": "2026-11-02T19:21:44+03:00",
+      "genres": [
+        "Adventure",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "638 MB"
+    },
     {
       "id": "ecstatica",
       "title": "Ecstatica (Remastered) + Bonus OST",
@@ -377707,90 +377887,6 @@
       "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
     },
     {
-      "id": "crackdown-3-ultimate-edition",
-      "title": "Crackdown 3: Ultimate Edition, v1.0.3162.2 + All DLCs + Multiplayer",
-      "source_url": "https://fitgirl-repacks.site/crackdown-3-ultimate-edition/",
-      "image_url": "https://i4.imageban.ru/out/2022/03/21/ef5f645399f539b9675955c81ee45c27.jpg",
-      "post_date": "2022-03-22T00:29:45+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "Driving",
-        "Open world",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "10.6 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/88/7b/887bce76-8996-4d0a-a7eb-695d172ca945.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/88/7b/887bce76-8996-4d0a-a7eb-695d172ca945.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/df/55/df55b692-84b8-4a32-8c95-39534f8cef7d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/df/55/df55b692-84b8-4a32-8c95-39534f8cef7d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/91/ab/91ab22ec-d66f-4c62-8af0-c1a8fb469aac.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/91/ab/91ab22ec-d66f-4c62-8af0-c1a8fb469aac.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b3/5c/b35c7915-69a2-445a-a11d-5db65748cc68.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b3/5c/b35c7915-69a2-445a-a11d-5db65748cc68.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/58/f4/58f40bc4-cd16-405d-bce0-9d6df381a8e4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/58/f4/58f40bc4-cd16-405d-bce0-9d6df381a8e4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2f/ef/2fef9540-aaa8-4290-9cee-941a00a69b6f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2f/ef/2fef9540-aaa8-4290-9cee-941a00a69b6f.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T10:32:11.305655+00:00",
-      "details": {
-        "description": "Time to step up your boom and stop crime as a super-powered Agent in Crackdown 3’s open-world sandbox of mayhem and destruction. Explore the heights of New Providence, tear up the streets in iconic vehicles, and use your powerful abilities to stop a ruthless criminal empire.",
-        "game_features": [
-          "Level Up Your Agent:",
-          "Level up your super-Agent skills to move as fast as lightning, jump over skyscrapers, hurl trucks at your enemies and protect the city from cold-blooded criminals.",
-          "Dangerous Open-World Playground:",
-          "Play solo or with a friend in co-op mode to explore an expansive, vertical world to infiltrate crime lords and take down their syndicates.",
-          "Take a BOOM Out of Crime:",
-          "Lure vindictive crime lords out of hiding by completing objectives, attacking criminal operations and taking out high-value captains.",
-          "Included DLCs:",
-          "Bonus Pack (1 new weapon, 1 new suit & 1 new vehicle)",
-          "Keys to the City",
-          "Flying High"
-        ],
-        "repack_features": [
-          "Based on UWP release v1.0.3162.2: 21.9 GB, thanks to 0xdeadc0de for files!",
-          "UWP crack/fixer applied over, thanks to 0xdeadc0de!",
-          "3 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with ALL voiceovers!)",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of 1080/4K videos and voicepacks you don’t need",
-          "Significantly smaller archive size (compressed from 21.9 to 10.6~16.9 GB, depending on selected components)",
-          "Installation takes 10-40 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 21.9 GB (28.7 GB during installation)",
-          "Language is set by the game based on your OS language",
-          "After installation, first run the crack installer from desktop icon. After that you can run the game from Start Menu icon",
-          "You MUST have all applications, which can hook to games (MSI Afterburner, Nahimic , etc.) disabled, otherwise the game will periodically crash",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T10:32:11.305655+00:00"
-    },
-    {
       "id": "the-closing-shift",
       "title": "The Closing Shift – v1.05",
       "source_url": "https://fitgirl-repacks.site/the-closing-shift/",
@@ -481058,73 +481154,6 @@
           "Installation takes 5-20 minutes (depending on your system and selected components)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 7 GB (13 GB during installation)",
-          "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T12:02:52.604518+00:00"
-    },
-    {
-      "id": "resonance-of-fate-4k-hd-edition",
-      "title": "Resonance of Fate – 4K/HD Edition",
-      "source_url": "https://fitgirl-repacks.site/resonance-of-fate-4k-hd-edition/",
-      "image_url": "https://i94.fastpic.ru/big/2018/1022/b8/2c80cdacc27a651ff374e0df9151e2b8.jpg",
-      "post_date": "2018-10-21T23:27:05+03:00",
-      "genres": [
-        "RPG",
-        "3D",
-        "Steampunk",
-        "Japanese",
-        "Turn-based"
-      ],
-      "repack_size": "4.6 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/f7/8e/f78eab74-8f48-42a7-96cc-0fecf5b85213.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f7/8e/f78eab74-8f48-42a7-96cc-0fecf5b85213.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/13/4d/134dc071-801e-4723-8d26-fb9cab040c15.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/13/4d/134dc071-801e-4723-8d26-fb9cab040c15.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a5/89/a5898dee-0774-43e7-95ce-70e5b9de6353.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a5/89/a5898dee-0774-43e7-95ce-70e5b9de6353.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/bd/5a/bd5ad22c-e550-4213-ad6d-f9fce7c54075.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/bd/5a/bd5ad22c-e550-4213-ad6d-f9fce7c54075.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/30/4d/304ded87-4b62-480b-9270-44c50777f03f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/30/4d/304ded87-4b62-480b-9270-44c50777f03f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/62/71/62710f16-d7e8-4f00-941c-eefed36e46d9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/62/71/62710f16-d7e8-4f00-941c-eefed36e46d9.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T12:02:52.604518+00:00",
-      "details": {
-        "description": "A tale of guns and emotional bonds woven in a world about to meet its end.\nThe fate of the world is changed in a flurry of bullets.\nThe curtain opens once again on this symphonic gunplay RPG in a new 4K/HD EDITION package.\nRESONANCE OF FATE, first released in 2010, has been remastered in 4K/HD. Enjoy blazing gun battles as you fly through the air in this story that plays out in a ruined world with high quality graphics. Play the game on a 4K compatible system and experience the fateful story in incredibly high resolution.\nThe rich story based around the theme of fate as the end of humanity plays out.\nA battle system unlike any you’ve ever experienced, that combines strategy with fast-paced thrills.\nWith many magnificent music pieces composed by Motoi Sakuraba and Kohei Tanaka.\nIn the distant future, the earth is polluted and ruined. Humankind, realizing it’s on the brink of extinction, creates a massive environmental conservation device known as Basel, entrusting the very cycle of life and death to a machine.\nThe perpetual-motion machine, the ruling class standing over humanity, and the protagonists working as mercenaries…\nLet the story of their intersecting fates begin.",
-        "game_features": [],
-        "repack_features": [
-          "Based on two releases: RESONANCE.OF.FATE.END.OF.ETERNITY.4K.HD.EDITION-CODEX (codex-resonance.of.fate.end.of.eternity.4k.hd.edition.iso, 14,018,248,704 bytes) + RESONANCE.OF.FATE.END.OF.ETERNITY.4K.HD.EDITION.TEXTURE.PACK-PLAZA (71,833,756,467 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of 4K Videos and HD Textures Pack",
-          "Significantly smaller archive size (compressed from cumulative 80 to 4.6~25 GB, depending on selected components)",
-          "Installation takes 3-30 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 83 GB",
           "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

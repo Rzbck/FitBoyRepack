@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-02T05:47:23.439119+00:00",
+  "generated_at": "2026-11-02T05:48:11.535370+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-01T10:48:02.415746+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "2.6 GB"
+      "repack_size": "2.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8f/b2/8fb25ee3-e0bf-4aec-b56c-f22ae08fd44f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/b2/8fb25ee3-e0bf-4aec-b56c-f22ae08fd44f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b7/9a/b79a6f9c-bd40-47e8-a7c7-a66f3ac97b5a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b7/9a/b79a6f9c-bd40-47e8-a7c7-a66f3ac97b5a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/76/37/76374ce7-b212-4bdf-8668-f9227f718dda.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/37/76374ce7-b212-4bdf-8668-f9227f718dda.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/59/29596211-c578-489f-8a20-bc6dfdc0ff8c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/59/29596211-c578-489f-8a20-bc6dfdc0ff8c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1f/7f/1f7fc9b2-7802-41f6-bb89-370866a1dcf4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1f/7f/1f7fc9b2-7802-41f6-bb89-370866a1dcf4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/04/370498eb-5157-4e9e-8a80-c172c00961ca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/04/370498eb-5157-4e9e-8a80-c172c00961ca.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-02T05:48:11.533357+00:00",
+      "details": {
+        "description": "This time it’s personal!\nCroc 2 Kingdom of the Gobbos\nis the sequel to the multi-million selling classic, Croc Legend of the Gobbos. The night before Croc’s next adventure begins, the inventor Gobbo witnesses the Dantinis resurrecting Baron Dante, and is taken prisoner for seeing too much. Back on the beach at Gobbo Valley, Croc is playing when he spots a bottle washed up in the sand. Inside is a message revealing that his birth parents are searching for him. He sets off for the mainland to find them, but the journey soon becomes a showdown, as Baron Dante vows revenge against the humble little crocodile who once defeated him.\nRoam free across the mainland and explore four distinct villages, each one home to a unique Gobbo culture: the coastal Sailor Village, the wintry Cossack Village, the prehistoric Caveman Village, and the mountaintop Inca Village. Rescue captured Gobbos, tackle a variety of challenging missions, and spend your crystals at Swap Meet Pete’s General Store, where the enterprising cat sells handy gadgets and can teleport you between villages with his Crystal Ball.\nTake on all-new Guardians, such as Soveena the Squid, whose obsession with Ginger Soda makes her a menace to the Sailor Village, Cannon Boat Keith, a pirate captain with an army of skeleton crewmates, and Flavio the Thermal Fish, who spits scalding water at anyone who crosses him!\nCroc’s signature moves are back, but jumping and tail-spinning are just the beginning. A new triple jump gives Croc extra height when he needs it most. Race in cars and speedboats, ride minecarts, catch air on a hang glider, and take to the skies in an airplane, across over 40 levels of open-ended 3D platforming.\nReturn to a beautifully updated world featuring vibrant environments, an engaging cast of characters, and inventive puzzles designed for players of all ages. The\nCroc 2 Kingdom of the Gobbos\nremaster delivers a blend of traditional platforming action with modern enhancements, preserving the feel of the original while introducing another generation to its enduring charm.\nThe Croc2pedia\nOnce again, Argonaut Games has tracked down and assembled a digital museum containing long-lost production materials, including full game design documentation, marketing assets, promotional merchandise, animation test videos, and 3D model galleries of characters, levels, and items that were cut from the shipped game, alongside interviews with original Argonaut team members, the remaster developers, producers, and more.\nThe Croc2pedia takes you behind the scenes of a beloved classic, tracing how the second chapter in Croc’s epic story came together over the course of its development.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Croc.2.Kingdom.of.the.Gobbos-RUNE ISO release: rune-croc.2.kingdom.of.the.gobbos.iso (12,214,435,840 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus videos",
+          "Significantly smaller archive size (compressed from 11.4 to 2.6/6.2 GB)",
+          "Installation takes 2-9 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 22.3 GB",
+          "Language can be changed in “steam_emu.ini”",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-02T05:48:11.533357+00:00"
     },
     {
       "id": "ravenswatch",

@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-01T23:38:12.819421+00:00",
+  "generated_at": "2026-11-02T05:47:23.439119+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-01T10:48:02.415746+00:00",
   "games": [
+    {
+      "id": "croc-2-kingdom-of-the-gobbos",
+      "title": "Croc 2: Kingdom of the Gobbos",
+      "source_url": "https://fitgirl-repacks.site/croc-2-kingdom-of-the-gobbos/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/02/a8df7f6ed71b65f35b340bcaf95cad5d.jpg",
+      "post_date": "2026-11-02T03:23:59+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "2.6 GB"
+    },
     {
       "id": "ravenswatch",
       "title": "Ravenswatch: Year One Edition – v1.06.00.04.27511 + 12 DLCs/Bonuses",

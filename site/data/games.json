@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-02T22:39:32.052439+00:00",
+  "generated_at": "2026-11-02T22:40:17.670410+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-02T11:40:00.284388+00:00",
   "games": [
@@ -84,7 +84,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "14.6 GB"
+      "repack_size": "14.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/81/30/81302bc1-f7ae-44dc-82b2-89ebb2e772df.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/81/30/81302bc1-f7ae-44dc-82b2-89ebb2e772df.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5b/9a/5b9a0aaf-7273-4b44-b9e8-3110d7baea08.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5b/9a/5b9a0aaf-7273-4b44-b9e8-3110d7baea08.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/02/c1/02c197ab-a6c7-42fc-9a78-14df142990a4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/02/c1/02c197ab-a6c7-42fc-9a78-14df142990a4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c0/95/c09576e2-946c-40c5-a114-76b8d9756465.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c0/95/c09576e2-946c-40c5-a114-76b8d9756465.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d9/3c/d93c9e27-d9bf-4e97-b6a3-2d4d472f3b1d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d9/3c/d93c9e27-d9bf-4e97-b6a3-2d4d472f3b1d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/eb/50eb5d05-f6f7-46d9-924a-3b9b1b20c7b2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/eb/50eb5d05-f6f7-46d9-924a-3b9b1b20c7b2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-02T22:40:17.668268+00:00",
+      "details": {
+        "description": "Enter the wilderness\nEither on foot or behind the wheel of your all-terrain vehicle, explore this open world’s stunning environments.\nSet off to deepest Colorado, or untamed outback of Texas, each with dozens of wild species to hunt. In these ever-changing ecosystems, each animal reacts to what you do, ages over time, and exhibits true-to-life behaviour thanks to our unique “SimFauna” system.\nHunt your own way\nKit yourself out with one of the official weapons and other items , to hunt the way you want. Choose from a professional hunting arsenal, comprising rifles, shotguns, bows and crossbows. Take your pick from the best hunting brands like, Remington, Beretta, Winchester, Browning and many more.\nA hunter’s best friend\nTo help you in your hunt, you can rely on your faithful hunting dog. With its keen senses, it helps you better understand your surroundings and allows you to spot tracks, follow a trail, or retrieve small game.\nUse the command wheel to make it respond to all your orders.\nA warm, practical hunting lodge\nFeel like a bit of peace and quiet, admiring your arsenal or honing your shooting skills?\nTake advantage of your customisable hunting lodge to showcase your finest trophies, purchase or modify your gear, or simply relax by the fire before your next hunt.\nTest yourself in an intense clay-pigeon shoot. Armed with your favourite weapon, knock down the targets within the allotted time to score maximum points, and try to reach the top of the leaderboard!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Hunting.Simulator.3-RUNE ISO release: rune-hunting.simulator.3.iso (20,875,378,688 bytes)",
+          "Game version: v1.0.0-451.118880; Classic American Hunter Pack & Apex Predator Pack DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 19.4 to 14.6 GB)",
+          "Installation takes 13-40 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 23.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-02T22:40:17.668268+00:00"
     },
     {
       "id": "crackdown-3-ultimate-edition",
@@ -182,7 +235,60 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "638 MB"
+      "repack_size": "638 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/59/da/59da3b81-c041-4514-bb25-76a9a4223766.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/59/da/59da3b81-c041-4514-bb25-76a9a4223766.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/1e/4e1ef368-c8e9-4c9f-92cb-8342b00cf471.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/1e/4e1ef368-c8e9-4c9f-92cb-8342b00cf471.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/01/be/01be1ea6-1249-4f6f-b666-10737442e3f3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/01/be/01be1ea6-1249-4f6f-b666-10737442e3f3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/12/c1/12c1263f-2645-49cb-87b1-5bf18228f4e0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/c1/12c1263f-2645-49cb-87b1-5bf18228f4e0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b4/85/b485e73b-0688-4437-adbf-60eccb3fea29.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b4/85/b485e73b-0688-4437-adbf-60eccb3fea29.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2a/9f/2a9fd077-d95e-4056-ab86-f64e9b7c5704.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2a/9f/2a9fd077-d95e-4056-ab86-f64e9b7c5704.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-02T22:40:17.668268+00:00",
+      "details": {
+        "description": "A psychological horror set in a Lovecraftian setting, blending with the cold reality of a military submarine trapped in the depths of the North Atlantic. This story follows ordinary people pushed to the brink of madness as they encounter the unthinkable horrors beneath the waves.\nLOVECRAFTIAN HORROR\nAncient forces have awakened beneath the ocean, and all contact with the surface is lost. Seek answers at the heart of an apocalypse aboard a nuclear submarine.\nMAKE HARD CHOICES\nEvery crew member is more than just an asset. They are human beings, haunted by their own fears and suffering. You have to make hard choice – complete the mission or preserve your humanity.\nYOU ARE IN CHARGE NOW\nYou are the captain’s right hand. Assign tasks, maintain discipline, and don’t let madness overcome your mind.\nLOOK INTO THE ABYSS\nScan the depths with sonar. But remember, not everything in the ocean follows military protocol… Is it another submarine, or something alive?",
+        "game_features": [],
+        "repack_features": [
+          "Based on Static_Dread_The_Submarine-Razor1911 ISO release: rzr-staticdts106.iso (1,578,336,256 bytes)",
+          "Game version: Build 20260917T1313Z; 3 DLCs/Bonuses (Supporter Pack, Digital Art Collection, OST) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content",
+          "Significantly smaller archive size (compressed from 1.5 GB to 638 MB/1.1 GB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 2.2 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-02T22:40:17.668268+00:00"
     },
     {
       "id": "ecstatica",

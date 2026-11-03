@@ -1,9 +1,38 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-03T21:02:18.839275+00:00",
-  "source_pages": 817,
+  "generated_at": "2026-11-03T23:40:49.291126+00:00",
+  "source_pages": 818,
   "last_full_scan_at": "2026-11-03T11:18:38.453896+00:00",
   "games": [
+    {
+      "id": "cop-bastard",
+      "title": "COP BASTARD – v1.00b3",
+      "source_url": "https://fitgirl-repacks.site/cop-bastard/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/04/808d8e825abd39b6d576f0abcfc0b91d.jpg",
+      "post_date": "2026-11-04T02:35:36+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.3 GB"
+    },
+    {
+      "id": "probably-stolen-cyberpunk-shopkeeper-sim",
+      "title": "Probably Stolen: Cyberpunk Shopkeeper Sim, v1.00-REV2 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/probably-stolen-cyberpunk-shopkeeper-sim/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/03/46e6feabd43fbd12c55e82de36ad6964.jpg",
+      "post_date": "2026-11-04T01:17:41+03:00",
+      "genres": [
+        "Lifestyle",
+        "Managerial",
+        "Item crafting",
+        "2D",
+        "Cyberpunk"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "you-are-empty-absolute-edition",
       "title": "You Are Empty: Absolute Edition Complete – Hotfix 3 + Bonus OST",

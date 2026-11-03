@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-03T21:00:52.131304+00:00",
+  "generated_at": "2026-11-03T21:02:18.839275+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-03T11:18:38.453896+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "1.5 GB"
+      "repack_size": "1.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/95/a9/95a9827c-4d8b-421c-99b5-193b03401bd3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/a9/95a9827c-4d8b-421c-99b5-193b03401bd3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/f3/8ff30599-cd63-4456-a4e8-bceb5f23e3b8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/f3/8ff30599-cd63-4456-a4e8-bceb5f23e3b8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/db/bc/dbbc7847-dc9f-494b-9a51-0c6a3e5ed87a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/db/bc/dbbc7847-dc9f-494b-9a51-0c6a3e5ed87a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/da/8fda3bbb-db08-470e-8275-7895e4f0678b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/da/8fda3bbb-db08-470e-8275-7895e4f0678b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/de/16/de16e466-5594-43b7-9518-dbdd23ec5967.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/de/16/de16e466-5594-43b7-9518-dbdd23ec5967.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6f/83/6f83fdeb-6b55-459a-81d9-5d50088a3723.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6f/83/6f83fdeb-6b55-459a-81d9-5d50088a3723.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-03T21:02:18.837057+00:00",
+      "details": {
+        "description": "In an alternate history 1950s Soviet Kyiv, most of the city’s population has mysteriously vanished, and uncontrollable, horrific monsters roam its abandoned streets.\nFate has brought you face to face with the ominous emptiness of a dead city that watches its only visitor with unwavering attention. Face bizarre enemies born from propaganda, science, and madness as you uncover the truth behind the catastrophe, and try to make things right.\nFeatures\nExplore surreal locations across an alternate history Soviet Union, including collective farms, the Metro, an opera house, city rooftops, secret laboratories, and more.\nUse an arsenal of classic weapons, including the C96 Broomhandle pistol, PPSh submachine gun, Mosin rifle, double barrel shotgun, Molotov cocktails, and experimental retrofuturistic weaponry.\nDistinctive, grotesque enemies inspired by Soviet themes.\nExperience one of Eastern Europe’s most unusual cult FPS titles, faithfully revitalized for modern systems.",
+        "game_features": [],
+        "repack_features": [
+          "Based on You.Are.Empty.Absolute.Edition.MULTi5-RUNE ISO release: rune-you.are.empty.absolute.edition.multi5.iso (2,655,617,024 bytes)",
+          "You.Are.Empty.Absolute.Edition.Hotfix.3-RUNE applied over",
+          "Bonus OST in MP3 format is included by default",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.5 to 1.5 GB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4 GB",
+          "Language can be changed upon installation",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-03T21:02:18.837057+00:00"
     },
     {
       "id": "chained-together",
@@ -107,7 +160,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "865 MB"
+      "repack_size": "865 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/95/f2/95f2d142-7151-4c19-94a5-b90ee4f09852.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/f2/95f2d142-7151-4c19-94a5-b90ee4f09852.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/46/69464204-6c95-459e-b6a6-e69b2eee6e48.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/46/69464204-6c95-459e-b6a6-e69b2eee6e48.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3f/bd/3fbde6cc-97d9-4c22-bca7-0fce70634ebe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3f/bd/3fbde6cc-97d9-4c22-bca7-0fce70634ebe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/14/3b/143bdf06-b1c5-4df4-be8b-94ba0f7d25e7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/14/3b/143bdf06-b1c5-4df4-be8b-94ba0f7d25e7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/34/a3342bb4-a30e-4a76-9a95-1ca629a39be8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/34/a3342bb4-a30e-4a76-9a95-1ca629a39be8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d6/e0/d6e0a5dd-525f-46eb-b643-dda81c80ed24.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d6/e0/d6e0a5dd-525f-46eb-b643-dda81c80ed24.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-03T21:02:18.837057+00:00",
+      "details": {
+        "description": "You received new toys from your family. Isn’t that lovely? Oh, it’s for sure…\nYour old toys, though, aren’t getting along as well. They are no longer cared for and have been forgotten. So what follows next? They’re going to join together against you and assault your brand-new toys, so be prepared. But never worry! You’re in luck since your brand-new toys are troops of green soldiers. They still require your aid though! Control, strengthen, and defeat the opposing forces! However, focus with care, the enemies you encounter might not be your old playthings!\nTower building alone won’t be sufficient to repel incoming attackers. Build up your own troops in the best feasible positions, then unleash attacks into enemy territory. Never abandon your towers, and deploy your troops in accordance with the traits of the enemy. First, the attacking forces will attempt to get past your defenses. Build and improve towers to aid your army. By using unique abilities, you can support your troops and towers as well.\nSafeguard your base against waves of attackers. You need to pick the right troops if you would like to prevail. Clean the paths and guard any open routes. Upgrade your troops and unlock new ones to take down the waves and claim victory.\nEnter a world and a narrative built around the toys that enriched your youth, including toy soldiers, dinosaur sets, robots, building blocks, and more.\nFor you to continue this journey, you must defeat outdated toys that are scattered throughout your house, starting in your room. Keep in mind that different enemy troops appear at different locations! To better repel the attackers, build towers according with the enemy traits. Due to the distinctive designs, certain locations could have different battlefields. You might stumble to a number of circumstances during your battle with the enemy that could have an impact on you.\nA toy-themed tower defense adventure.\nSmall green soldiers that allow you to attack the enemy base, in addition to defending your own base.\nDifferent rooms, unique levels, where you battle against a variety of vintage toys.\nUnique towers, soldiers, and enemy types.\nThree different difficulty settings to cater to every player.\nA creative mode that allows you to design your own levels with over 100+ objects.\nOver 30 achievements to complete.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Toy.Shire-RUNE ISO release: rune-toy.shire.iso (1,438,908,416 bytes)",
+          "Game version: v1.00 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.3 GB to 865 MB)",
+          "Installation takes within a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.1 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-03T21:02:18.837057+00:00"
     },
     {
       "id": "resonance-of-fate-4k-hd-edition",

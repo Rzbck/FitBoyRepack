@@ -1,9 +1,114 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-03T11:18:38.453896+00:00",
+  "generated_at": "2026-11-03T21:00:52.131304+00:00",
   "source_pages": 817,
   "last_full_scan_at": "2026-11-03T11:18:38.453896+00:00",
   "games": [
+    {
+      "id": "you-are-empty-absolute-edition",
+      "title": "You Are Empty: Absolute Edition Complete – Hotfix 3 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/you-are-empty-absolute-edition/",
+      "image_url": "https://i8.imageban.ru/out/2026/11/03/077f5b3f4d59467c4f6e1ee1a6987cfe.jpg",
+      "post_date": "2026-11-03T23:38:06+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.5 GB"
+    },
+    {
+      "id": "chained-together",
+      "title": "Chained Together – v1.11.1 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/chained-together/",
+      "image_url": "https://i3.imageban.ru/out/2024/07/03/00821ac3dc3fa3291da12656d470c290.jpg",
+      "post_date": "2026-11-03T22:00:19+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "5.2 GB",
+      "media": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/extras/23.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/52/d4/52d44651-f363-4b8b-a458-669bb228ea05.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/52/d4/52d44651-f363-4b8b-a458-669bb228ea05.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b2/e7/b2e7acc2-af52-4ba6-a52f-ebe1805a9eaf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/e7/b2e7acc2-af52-4ba6-a52f-ebe1805a9eaf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/23/b7/23b71d3e-dfbb-48c3-996d-a9fde66c3c92.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/23/b7/23b71d3e-dfbb-48c3-996d-a9fde66c3c92.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/41/77/41773d46-d4ae-4c94-8f04-2a7c702633c2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/41/77/41773d46-d4ae-4c94-8f04-2a7c702633c2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/84/90843767-3e73-4fc3-9bf8-6f8c08a58ce3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/84/90843767-3e73-4fc3-9bf8-6f8c08a58ce3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/a0/29a0d8aa-c28c-413d-a391-064a2775862a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/a0/29a0d8aa-c28c-413d-a391-064a2775862a.jpg.240p.jpg"
+        }
+      ],
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "media_version": 7,
+      "details": {
+        "description": "Dive into the epic adventure of “Chained Together”\nBegin your journey in the depths of hell, chained to your companions. Your mission is to escape hell by climbing as high as possible.\nEach jump requires perfect coordination to scale the platforms and escape the scorching heat. Traverse a multitude of worlds, each offering unique challenges.\nDiverse Worlds to Explore\nEach world introduces new challenges.\nSolo or Multiplayer Mode\nWhether you’re going it alone or teaming up with friends locally, the game adapts to fit the number of players, supporting local multiplayer for up to 4 players.\nRealistic Chain Physics\nThe chain is not just a visual element. It is governed by a physics simulation that allows it to wrap around platforms.\n3 Game Modes\nThe",
+        "game_features": [
+          "several difficulty modes: Beginner, Normal, and Lava mode.",
+          "Beginner: An option in the pause menu allows you to teleport back to the highest point you reached before a significant fall.",
+          "Normal: No specific help, you fall in case of failure and must start over.",
+          "Lava: You must climb quickly before the lava engulfs you.",
+          "Whether solo or in cooperation with up to 4 players in multiplayer mode, each step brings you closer to the summit!"
+        ],
+        "repack_features": [
+          "Based on scene Chained.Together.v1.10.19-TENOKE ISO release: tenoke-chained.together.v1.10.19.iso (8,631,920,640 bytes)",
+          "Game version: v1.10.19; Supporter Pack DLC is included and activated",
+          "TENOKE crack/emu applied over",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 8 to 4.9 GB)",
+          "Installation takes 3-10 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 7.6 GB",
+          "Repack uses compression library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "toy-shire",
+      "title": "Toy Shire – v1.00 (Release)",
+      "source_url": "https://fitgirl-repacks.site/toy-shire/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/03/83cf1b6795a3e30dba29443ce38dae1a.jpg",
+      "post_date": "2026-11-03T21:43:52+03:00",
+      "genres": [
+        "Tower defense",
+        "First-person",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "865 MB"
+    },
     {
       "id": "resonance-of-fate-4k-hd-edition",
       "title": "Resonance of Fate (End of Eternity) 4K/HD Edition – ENHANCED REMASTER, Build 25984155 + High Resolution Texture Pack DLC",
@@ -11695,83 +11800,6 @@
           "HDD space after installation: 3 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "chained-together",
-      "title": "Chained Together – v1.10.19 + Supporter Pack DLC",
-      "source_url": "https://fitgirl-repacks.site/chained-together/",
-      "image_url": "https://i3.imageban.ru/out/2024/07/03/00821ac3dc3fa3291da12656d470c290.jpg",
-      "post_date": "2026-09-29T22:30:19+03:00",
-      "genres": [
-        "Arcade",
-        "Jump and run",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "4.9 GB",
-      "media": [
-        {
-          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/extras/23.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/52/d4/52d44651-f363-4b8b-a458-669bb228ea05.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/52/d4/52d44651-f363-4b8b-a458-669bb228ea05.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b2/e7/b2e7acc2-af52-4ba6-a52f-ebe1805a9eaf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b2/e7/b2e7acc2-af52-4ba6-a52f-ebe1805a9eaf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/23/b7/23b71d3e-dfbb-48c3-996d-a9fde66c3c92.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/23/b7/23b71d3e-dfbb-48c3-996d-a9fde66c3c92.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/41/77/41773d46-d4ae-4c94-8f04-2a7c702633c2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/41/77/41773d46-d4ae-4c94-8f04-2a7c702633c2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/90/84/90843767-3e73-4fc3-9bf8-6f8c08a58ce3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/90/84/90843767-3e73-4fc3-9bf8-6f8c08a58ce3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/29/a0/29a0d8aa-c28c-413d-a391-064a2775862a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/29/a0/29a0d8aa-c28c-413d-a391-064a2775862a.jpg.240p.jpg"
-        }
-      ],
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "media_version": 7,
-      "details": {
-        "description": "Dive into the epic adventure of “Chained Together”\nBegin your journey in the depths of hell, chained to your companions. Your mission is to escape hell by climbing as high as possible.\nEach jump requires perfect coordination to scale the platforms and escape the scorching heat. Traverse a multitude of worlds, each offering unique challenges.\nDiverse Worlds to Explore\nEach world introduces new challenges.\nSolo or Multiplayer Mode\nWhether you’re going it alone or teaming up with friends locally, the game adapts to fit the number of players, supporting local multiplayer for up to 4 players.\nRealistic Chain Physics\nThe chain is not just a visual element. It is governed by a physics simulation that allows it to wrap around platforms.\n3 Game Modes\nThe",
-        "game_features": [
-          "several difficulty modes: Beginner, Normal, and Lava mode.",
-          "Beginner: An option in the pause menu allows you to teleport back to the highest point you reached before a significant fall.",
-          "Normal: No specific help, you fall in case of failure and must start over.",
-          "Lava: You must climb quickly before the lava engulfs you.",
-          "Whether solo or in cooperation with up to 4 players in multiplayer mode, each step brings you closer to the summit!"
-        ],
-        "repack_features": [
-          "Based on scene Chained.Together.v1.10.19-TENOKE ISO release: tenoke-chained.together.v1.10.19.iso (8,631,920,640 bytes)",
-          "Game version: v1.10.19; Supporter Pack DLC is included and activated",
-          "TENOKE crack/emu applied over",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Smaller archive size (compressed from 8 to 4.9 GB)",
-          "Installation takes 3-10 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 7.6 GB",
-          "Repack uses compression library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

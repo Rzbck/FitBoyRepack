@@ -8715,6 +8715,20 @@
       "action": "excluded-new"
     },
     {
+      "id": "updates-digest-for-november-3-2026",
+      "title": "Updates Digest for November 3, 2026",
+      "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-3-2026/",
+      "classification": "non_game",
+      "reason": "updates-digest",
+      "score": 7,
+      "signals": [
+        "genres",
+        "repack-size",
+        "image"
+      ],
+      "action": "excluded-new"
+    },
+    {
       "id": "updates-digest-for-november-30-2024",
       "title": "Updates Digest for November 30, 2024",
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-30-2024/",
@@ -9404,10 +9418,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-28-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9539,10 +9552,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-31-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

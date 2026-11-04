@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-04T23:41:17.849774+00:00",
+  "generated_at": "2026-11-04T23:42:05.579994+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-04T11:30:30.636999+00:00",
   "games": [
@@ -17,7 +17,73 @@
         "3D",
         "Turn-based"
       ],
-      "repack_size": "2.1 GB"
+      "repack_size": "2.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/12/26/1226c77f-b83d-4dc6-be7d-236e4ce73506.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/26/1226c77f-b83d-4dc6-be7d-236e4ce73506.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/63/65/63656bc5-857e-4c00-b6bc-00db814ad23f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/63/65/63656bc5-857e-4c00-b6bc-00db814ad23f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b5/8e/b58ed2f9-ce26-45dd-b882-11d82b2d5fc2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b5/8e/b58ed2f9-ce26-45dd-b882-11d82b2d5fc2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2f/4b/2f4ba859-7db9-41e4-98fd-766a8cb17903.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2f/4b/2f4ba859-7db9-41e4-98fd-766a8cb17903.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/54/1e540d2c-f3be-41b9-bd6b-0942079b0ef0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/54/1e540d2c-f3be-41b9-bd6b-0942079b0ef0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ce/aa/ceaa91ec-567e-4aa9-a422-ea68f5ad33ca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ce/aa/ceaa91ec-567e-4aa9-a422-ea68f5ad33ca.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-04T23:42:05.577549+00:00",
+      "details": {
+        "description": "Forge your destiny, defend your Clan, and live the life of a true Warrior Cat.\nWarrior Cats: Clans of the Forest is an immersive action-adventure game set in the Lake Territories of the beloved Warrior Cats book series.\nEmbark on a variety of quests to gain favor with your Clan and battle others in turn-based combat to strengthen your cat and grow your legend. Learn new combat moves to take down your rivals. Encounter a wide range of enemies, including mice, squirrels, badgers and more, all leading to epic battles.\nForage the land and find materials that can be used to craft items in your den. Travel across iconic territories including ThunderClan’s dense forests, RiverClan’s marshlands, ShadowClan’s dark pine swamps, and WindClan’s open moors. Your adventure will also take you to the famed sacred locations The Moonpool and The Island. Climb trees, pounce through undergrowth, track scents, solve environmental puzzles, and uncover the mysteries of StarClan itself.\nAN ORIGINAL STORY\nEmbark on a brand-new journey with iconic cats and locations from the Warrior Cats franchise.\nCREATE YOUR OWN WARRIOR CAT\nUsing the robust cat creator, name and create your very own Warrior Cat.",
+        "game_features": [
+          ":",
+          "3 Game types: Prophecy Mode, Defender Mode, Skirmish Mode.",
+          "Create your own unique Warrior Cat with millions of possible customization combinations.",
+          "6 iconic locations from the book series: ThunderClan territory, RiverClan territory, ShadowClan territory, WindClan territory, The Moonpool and The Island.",
+          "Turn-based combat system with up to 3 versus 3 battles.",
+          "75 unique combat moves to discover and unlock.",
+          "Interact with 9 cats from the beloved book series.",
+          "Battle a large variety of enemies including badgers, vicious foxes, imposing Dobermanns, rival Clan cats and many more.",
+          "Track and hunt birds, rabbits, squirrels and other prey.",
+          "Visit your friend’s camp online asynchronously.",
+          "You can also help friends with by crafting items or gifting them necessary resources and materials.",
+          "No two playthroughs are the same as characters, quests and stories are procedurally generated."
+        ],
+        "repack_features": [
+          "Based on Warrior.Cats.Clans.of.the.Forest-RUNE ISO release: rune-warrior.cats.clans.of.the.forest.iso (3,635,675,136 bytes)",
+          "2 DLCs (Prophecy Pack & The Purrfect Look Pack) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.4 GB to 2.1 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-04T23:42:05.577549+00:00"
     },
     {
       "id": "distant-worlds-2",

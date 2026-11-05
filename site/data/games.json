@@ -1,9 +1,228 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-05T11:27:48.728209+00:00",
+  "generated_at": "2026-11-05T21:24:07.710828+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-05T11:27:48.728209+00:00",
   "games": [
+    {
+      "id": "lightyear-frontier",
+      "title": "Lightyear Frontier & Soundtrack Bundle – v1.0.2540 + 2 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/lightyear-frontier/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/05/5bd8f453e7a4a21f4f3f75b420ac2799.jpg",
+      "post_date": "2026-11-05T23:58:13+03:00",
+      "genres": [
+        "Lifestyle",
+        "Item crafting",
+        "Open world",
+        "First-person",
+        "Third-person",
+        "3D",
+        "Agricultural machinery"
+      ],
+      "repack_size": "3.2 GB"
+    },
+    {
+      "id": "victoria-3",
+      "title": "Victoria 3: Ultimate Bundle, v1.15.0 + 20 DLCs/Bonuses + Windows 7 Fix",
+      "source_url": "https://fitgirl-repacks.site/victoria-3/",
+      "image_url": "https://i1.imageban.ru/out/2025/09/24/f2310b8fa0a653e4d01de2a49159c8cf.jpg",
+      "post_date": "2026-11-05T23:00:07+03:00",
+      "genres": [
+        "Strategy",
+        "Grand strategy",
+        "Pausable real-time",
+        "Isometric",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "5.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b8/81/b8817928-02e4-4bb6-a299-0fc6b4ef8ef1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b8/81/b8817928-02e4-4bb6-a299-0fc6b4ef8ef1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/13/71/1371307f-b942-49a4-9ab4-fcdea4381d9c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/13/71/1371307f-b942-49a4-9ab4-fcdea4381d9c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/49/63/49637f0b-e9f4-4ac1-a71a-83465563ef49.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/49/63/49637f0b-e9f4-4ac1-a71a-83465563ef49.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8c/4a/8c4a372b-d7e7-4626-8602-96a432528b5d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8c/4a/8c4a372b-d7e7-4626-8602-96a432528b5d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b3/48/b34881d5-edbc-4b6c-a698-24363f810bb9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b3/48/b34881d5-edbc-4b6c-a698-24363f810bb9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/fe/aafe95e7-2836-458d-972c-a71731d8ab60.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/fe/aafe95e7-2836-458d-972c-a71731d8ab60.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "SHAPE A GRAND TOMORROW:\nParadox Development Studio invites you to build your ideal society in the tumult of the exciting and transformative 19th century. Balance the competing interests in your society and earn your place in the sun in Victoria 3, one of the most anticipated games in Paradox’s history.",
+        "game_features": [
+          "Lead dozens of world nations from 1836-1936. Agrarian or Industrial, Traditional or Radical, Peaceful or Expansionist… the choice is yours.",
+          "Detailed population groups with their own economic needs and political desires.",
+          "Reform your government and constitution to take advantage of new social innovations, or preserve the stability of your nation by holding fast to tradition in the face of revolutionaries.",
+          "Research transformative new technology or ideas to improve your national situation.",
+          "Expand your industry to take advantage of lucrative goods, taxing the profits to improve national prosperity.",
+          "Import cheap raw materials to cover your basic needs while finding new markets for your finished goods.",
+          "Secure vital goods to fuel your advanced economy and control the fate of empires.",
+          "Balance employing available labor force with the needs for new types of workers.",
+          "Use your diplomatic wiles to weave a tangled global web of pacts, relations, alliances, and rivalries to secure your diplomatic position on the world stage.",
+          "Employ threats, military prowess and bluffs to persuade enemies to back down in conflicts.",
+          "Increase your economic and military strength at the expense of rivals.",
+          "Accumulate prestige and the respect of your rivals as you build an industrial giant at home or an empire abroad.",
+          "Included DLCs",
+          "American Buildings Pack",
+          "Charters of Commerce – Mechanics Pack",
+          "Colossus of the South – Region Pack",
+          "Dawn of Wonder – Art Pack",
+          "French Agitators Bonus Pack",
+          "Iberian Twilight – Immersion Pack",
+          "Melodies for the Masses – Music Pack",
+          "National Awakening – Immersion Pack",
+          "Pivot of Empire – Immersion Pack",
+          "Songs of the Homeland – Music Pack",
+          "Sphere of Influence – Expansion",
+          "The Great Wave – Expansion",
+          "Trade Ships – Bonus Pack",
+          "Trains – Bonus Pack",
+          "Ultimate Bundle",
+          "Victoria II Remastered Songs",
+          "Voice of the People – Immersion Pack",
+          "Volume 3",
+          "Warships – Bonus Pack",
+          "Expansion Passes are not real DLCs, hence not listed above."
+        ],
+        "repack_features": [
+          "Based on Victoria.3.The.Great.Wave-RUNE ISO release: rune-victoria.3.the.great.wave.iso (11,455,365,120 bytes)",
+          "Game version: v1.13.0; 18 DLCs/bonuses are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OSTs in FLAC format ripped, NOTHING re-encoded",
+          "Selective download feature: you may skip downloading and installing of bonus soundtracks in MP3 format & useless ILK files",
+          "Significantly smaller archive size (compressed from 10.7 to 5.5~6.1 GB, depending on selected components)",
+          "Installation takes 4-15 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 20.7 GB",
+          "Language can be changed in game settings",
+          "To avoid game crash on launch, remove or rename “binaries/dbghelp.dll” file",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
+    {
+      "id": "save-amani",
+      "title": "SAVE AMANI",
+      "source_url": "https://fitgirl-repacks.site/save-amani/",
+      "image_url": "https://i6.imageban.ru/out/2026/11/05/422366fc4f133e06944ae5505028f38e.jpg",
+      "post_date": "2026-11-05T22:26:23+03:00",
+      "genres": [
+        "Arcade",
+        "Platform adventure",
+        "Side",
+        "3D"
+      ],
+      "repack_size": "2.8 GB"
+    },
+    {
+      "id": "roadcraft",
+      "title": "RoadCraft: 1-Year Anniversary Edition, v8.0.772884/772978 + 9 DLCs",
+      "source_url": "https://fitgirl-repacks.site/roadcraft/",
+      "image_url": "https://i5.imageban.ru/out/2025/05/21/eeb68c3bd23e9a65cf5b58677154db22.jpg",
+      "post_date": "2026-11-05T17:30:18+03:00",
+      "genres": [
+        "Driving",
+        "First-person",
+        "Third-person",
+        "3D",
+        "Trucks"
+      ],
+      "repack_size": "25 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/5f/6f/5f6f013e-06ac-4d67-98d9-2b690ad7df96.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/6f/5f6f013e-06ac-4d67-98d9-2b690ad7df96.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/75/c7752cc2-3d46-4242-a343-069155d5092c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/75/c7752cc2-3d46-4242-a343-069155d5092c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c1/61/c1617ee1-d446-44d4-974d-180278316fbf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c1/61/c1617ee1-d446-44d4-974d-180278316fbf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9e/3c/9e3cedd8-2a28-43f5-8e5b-69bad681cad5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9e/3c/9e3cedd8-2a28-43f5-8e5b-69bad681cad5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/bd/5fbdab56-463e-4461-b70f-4065faf036b4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/bd/5fbdab56-463e-4461-b70f-4065faf036b4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/76/03/7603a5cf-f388-40fb-9414-3ece1f95afbf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/03/7603a5cf-f388-40fb-9414-3ece1f95afbf.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "RESHAPE THE AFTERMATH – As the leader of a company specialized in restoring sites devastated by natural disasters, use your construction machinery to restart the local industry. Clear debris and faulty equipment, rebuild roads and bridges damaged by weather, and much more!",
+        "game_features": [
+          "CLEAR, SUPPLY, REBUILD – You run a disaster recovery company, specialized in restoring sites devastated by natural disasters. Numerous tasks await you and your heavy machinery as you work to restart the local industry: clearing debris, replacing faulty equipment, rebuilding roads and bridges damaged by bad weather, deploying resource convoys to produce new reconstruction materials, and much more!",
+          "WELCOME TO NEXT-GEN SIMULATION – Experience a new generation of simulation with the brand new engine developed by Saber Interactive, the creators of [i]MudRunner[/i] and [i]SnowRunner[/i]. Handle each object with realistic physics, accounting for their mass and size. Interact with elements like sand, wood, and asphalt. Reshape the terrain and ease the movement of your vehicles thanks to your newly-built roads.",
+          "EXPAND YOUR GARAGE – Each machine has its own behavior. Use your bulldozer to clear obstructions, your heavy transporter to carry multiple vehicles, or your fixed or gantry cranes to lift containers and equipment. Reconnect a factory to the power grid with your cable layer, lay down hot asphalt with your paver, and flatten it with your roller to create your own roads. Unlock over 40 vehicles as you progress through the story-driven campaign. Visit your garage to customize your machines with your",
+          "OPERATE WORLDWIDE – Disasters have caused chaos, cutting off access to many affected areas. You are the last hope to brave these extreme conditions. Whether in the mountains, the heart of the desert, or by the sea, your expertise is needed around the globe! Explore 8 unique maps, each 4 km², with their own biomes and buildings. Choose your itinerary through abandoned factories, submerged dams, or out-of-service solar fields. Search every corner to achieve your goals, and secure new contracts to ",
+          "ORGANIZE, RECYCLE, AUTOMATE – Collect remnants of wood, steel, and cement and transform them into components in your recycling plants, every piece of debris can be used for reconstruction! Supply factories and sand quarries to produce resources in bulk. As the operations manager, guide your transport trucks by plotting their routes on the map and ensure no obstacles block their way!",
+          "REBUILD TOGETHER – The world of RoadCraft offers a multitude of activities. Why not complete them with your friends? Set up a co-op session for up to 4 players. Divide tasks or focus together on a single objective. Combine your strengths and ingenuity to find solutions, even the most unexpected ones.",
+          "Included DLCs:",
+          "Aramatsu Bowhead 30T",
+          "Invictus Type A Scout",
+          "Rebuild Expansion",
+          "4K Texture Pack",
+          "Timberworks Pack",
+          "Reclaim Expansion"
+        ],
+        "repack_features": [
+          "Based on RoadCraft.Reclaim-RUNE ISO release: rune-roadcraft.reclaim.iso (69,757,829,120 bytes)",
+          "Game version: v6.0.623412/623492; 6 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of 4K Textures DLC pack",
+          "Significantly smaller archive size (compressed from 65 to 22.2/46.6 GB)",
+          "Installation w/o 4K Texrures Pack takes from 14 minutes (on 16-threads CPU) up to 29 minutes (on 8-threads CPU)",
+          "Installation with 4K Texrures Pack is approx. 2 times longer",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 71 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "silica",
       "title": "Silica – v1.0.15 (Release)",
@@ -65741,110 +65960,6 @@
       "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
     },
     {
-      "id": "victoria-3",
-      "title": "Victoria 3: Ultimate Bundle, v1.13.0 + 18 DLCs/Bonuses + Windows 7 Fix",
-      "source_url": "https://fitgirl-repacks.site/victoria-3/",
-      "image_url": "https://i1.imageban.ru/out/2025/09/24/f2310b8fa0a653e4d01de2a49159c8cf.jpg",
-      "post_date": "2026-05-01T01:00:07+03:00",
-      "genres": [
-        "Strategy",
-        "Grand strategy",
-        "Pausable real-time",
-        "Isometric",
-        "Top-down",
-        "3D"
-      ],
-      "repack_size": "5.5 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/b8/81/b8817928-02e4-4bb6-a299-0fc6b4ef8ef1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b8/81/b8817928-02e4-4bb6-a299-0fc6b4ef8ef1.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/13/71/1371307f-b942-49a4-9ab4-fcdea4381d9c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/13/71/1371307f-b942-49a4-9ab4-fcdea4381d9c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/49/63/49637f0b-e9f4-4ac1-a71a-83465563ef49.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/49/63/49637f0b-e9f4-4ac1-a71a-83465563ef49.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8c/4a/8c4a372b-d7e7-4626-8602-96a432528b5d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8c/4a/8c4a372b-d7e7-4626-8602-96a432528b5d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b3/48/b34881d5-edbc-4b6c-a698-24363f810bb9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b3/48/b34881d5-edbc-4b6c-a698-24363f810bb9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/aa/fe/aafe95e7-2836-458d-972c-a71731d8ab60.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/aa/fe/aafe95e7-2836-458d-972c-a71731d8ab60.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "SHAPE A GRAND TOMORROW:\nParadox Development Studio invites you to build your ideal society in the tumult of the exciting and transformative 19th century. Balance the competing interests in your society and earn your place in the sun in Victoria 3, one of the most anticipated games in Paradox’s history.",
-        "game_features": [
-          "Lead dozens of world nations from 1836-1936. Agrarian or Industrial, Traditional or Radical, Peaceful or Expansionist… the choice is yours.",
-          "Detailed population groups with their own economic needs and political desires.",
-          "Reform your government and constitution to take advantage of new social innovations, or preserve the stability of your nation by holding fast to tradition in the face of revolutionaries.",
-          "Research transformative new technology or ideas to improve your national situation.",
-          "Expand your industry to take advantage of lucrative goods, taxing the profits to improve national prosperity.",
-          "Import cheap raw materials to cover your basic needs while finding new markets for your finished goods.",
-          "Secure vital goods to fuel your advanced economy and control the fate of empires.",
-          "Balance employing available labor force with the needs for new types of workers.",
-          "Use your diplomatic wiles to weave a tangled global web of pacts, relations, alliances, and rivalries to secure your diplomatic position on the world stage.",
-          "Employ threats, military prowess and bluffs to persuade enemies to back down in conflicts.",
-          "Increase your economic and military strength at the expense of rivals.",
-          "Accumulate prestige and the respect of your rivals as you build an industrial giant at home or an empire abroad.",
-          "Included DLCs",
-          "American Buildings Pack",
-          "Charters of Commerce – Mechanics Pack",
-          "Colossus of the South – Region Pack",
-          "Dawn of Wonder – Art Pack",
-          "French Agitators Bonus Pack",
-          "Iberian Twilight – Immersion Pack",
-          "Melodies for the Masses – Music Pack",
-          "National Awakening – Immersion Pack",
-          "Pivot of Empire – Immersion Pack",
-          "Songs of the Homeland – Music Pack",
-          "Sphere of Influence – Expansion",
-          "The Great Wave – Expansion",
-          "Trade Ships – Bonus Pack",
-          "Trains – Bonus Pack",
-          "Ultimate Bundle",
-          "Victoria II Remastered Songs",
-          "Voice of the People – Immersion Pack",
-          "Volume 3",
-          "Warships – Bonus Pack",
-          "Expansion Passes are not real DLCs, hence not listed above."
-        ],
-        "repack_features": [
-          "Based on Victoria.3.The.Great.Wave-RUNE ISO release: rune-victoria.3.the.great.wave.iso (11,455,365,120 bytes)",
-          "Game version: v1.13.0; 18 DLCs/bonuses are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OSTs in FLAC format ripped, NOTHING re-encoded",
-          "Selective download feature: you may skip downloading and installing of bonus soundtracks in MP3 format & useless ILK files",
-          "Significantly smaller archive size (compressed from 10.7 to 5.5~6.1 GB, depending on selected components)",
-          "Installation takes 4-15 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 20.7 GB",
-          "Language can be changed in game settings",
-          "To avoid game crash on launch, remove or rename “binaries/dbghelp.dll” file",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
       "id": "shinobi-art-of-vengeance-pc",
       "title": "SHINOBI: Art of Vengeance – Digital Deluxe Edition, Build 22016198 + 6 DLCs/Bonuses",
       "source_url": "https://fitgirl-repacks.site/shinobi-art-of-vengeance-pc/",
@@ -75617,90 +75732,6 @@
           "Installation takes less than a minute",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 1.8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "roadcraft",
-      "title": "RoadCraft: 1-Year Anniversary Edition, v6.0.623412/623492 + 6 DLCs",
-      "source_url": "https://fitgirl-repacks.site/roadcraft/",
-      "image_url": "https://i5.imageban.ru/out/2025/05/21/eeb68c3bd23e9a65cf5b58677154db22.jpg",
-      "post_date": "2026-03-25T21:20:18+03:00",
-      "genres": [
-        "Driving",
-        "First-person",
-        "Third-person",
-        "3D",
-        "Trucks"
-      ],
-      "repack_size": "22.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/5f/6f/5f6f013e-06ac-4d67-98d9-2b690ad7df96.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5f/6f/5f6f013e-06ac-4d67-98d9-2b690ad7df96.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c7/75/c7752cc2-3d46-4242-a343-069155d5092c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c7/75/c7752cc2-3d46-4242-a343-069155d5092c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c1/61/c1617ee1-d446-44d4-974d-180278316fbf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c1/61/c1617ee1-d446-44d4-974d-180278316fbf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9e/3c/9e3cedd8-2a28-43f5-8e5b-69bad681cad5.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9e/3c/9e3cedd8-2a28-43f5-8e5b-69bad681cad5.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5f/bd/5fbdab56-463e-4461-b70f-4065faf036b4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5f/bd/5fbdab56-463e-4461-b70f-4065faf036b4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/76/03/7603a5cf-f388-40fb-9414-3ece1f95afbf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/76/03/7603a5cf-f388-40fb-9414-3ece1f95afbf.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "RESHAPE THE AFTERMATH – As the leader of a company specialized in restoring sites devastated by natural disasters, use your construction machinery to restart the local industry. Clear debris and faulty equipment, rebuild roads and bridges damaged by weather, and much more!",
-        "game_features": [
-          "CLEAR, SUPPLY, REBUILD – You run a disaster recovery company, specialized in restoring sites devastated by natural disasters. Numerous tasks await you and your heavy machinery as you work to restart the local industry: clearing debris, replacing faulty equipment, rebuilding roads and bridges damaged by bad weather, deploying resource convoys to produce new reconstruction materials, and much more!",
-          "WELCOME TO NEXT-GEN SIMULATION – Experience a new generation of simulation with the brand new engine developed by Saber Interactive, the creators of [i]MudRunner[/i] and [i]SnowRunner[/i]. Handle each object with realistic physics, accounting for their mass and size. Interact with elements like sand, wood, and asphalt. Reshape the terrain and ease the movement of your vehicles thanks to your newly-built roads.",
-          "EXPAND YOUR GARAGE – Each machine has its own behavior. Use your bulldozer to clear obstructions, your heavy transporter to carry multiple vehicles, or your fixed or gantry cranes to lift containers and equipment. Reconnect a factory to the power grid with your cable layer, lay down hot asphalt with your paver, and flatten it with your roller to create your own roads. Unlock over 40 vehicles as you progress through the story-driven campaign. Visit your garage to customize your machines with your",
-          "OPERATE WORLDWIDE – Disasters have caused chaos, cutting off access to many affected areas. You are the last hope to brave these extreme conditions. Whether in the mountains, the heart of the desert, or by the sea, your expertise is needed around the globe! Explore 8 unique maps, each 4 km², with their own biomes and buildings. Choose your itinerary through abandoned factories, submerged dams, or out-of-service solar fields. Search every corner to achieve your goals, and secure new contracts to ",
-          "ORGANIZE, RECYCLE, AUTOMATE – Collect remnants of wood, steel, and cement and transform them into components in your recycling plants, every piece of debris can be used for reconstruction! Supply factories and sand quarries to produce resources in bulk. As the operations manager, guide your transport trucks by plotting their routes on the map and ensure no obstacles block their way!",
-          "REBUILD TOGETHER – The world of RoadCraft offers a multitude of activities. Why not complete them with your friends? Set up a co-op session for up to 4 players. Divide tasks or focus together on a single objective. Combine your strengths and ingenuity to find solutions, even the most unexpected ones.",
-          "Included DLCs:",
-          "Aramatsu Bowhead 30T",
-          "Invictus Type A Scout",
-          "Rebuild Expansion",
-          "4K Texture Pack",
-          "Timberworks Pack",
-          "Reclaim Expansion"
-        ],
-        "repack_features": [
-          "Based on RoadCraft.Reclaim-RUNE ISO release: rune-roadcraft.reclaim.iso (69,757,829,120 bytes)",
-          "Game version: v6.0.623412/623492; 6 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of 4K Textures DLC pack",
-          "Significantly smaller archive size (compressed from 65 to 22.2/46.6 GB)",
-          "Installation w/o 4K Texrures Pack takes from 14 minutes (on 16-threads CPU) up to 29 minutes (on 8-threads CPU)",
-          "Installation with 4K Texrures Pack is approx. 2 times longer",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 71 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

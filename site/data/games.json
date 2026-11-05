@@ -1,9 +1,103 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-04T23:42:05.579994+00:00",
+  "generated_at": "2026-11-05T06:28:00.938127+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-04T11:30:30.636999+00:00",
   "games": [
+    {
+      "id": "silica",
+      "title": "Silica – v1.0.15 (Release)",
+      "source_url": "https://fitgirl-repacks.site/silica/",
+      "image_url": "https://i6.imageban.ru/out/2026/11/05/a7efa88c8b96f651603fd562476b1d03.jpg",
+      "post_date": "2026-11-05T04:36:15+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Strategy",
+        "RTS",
+        "Open world",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "17.9 GB"
+    },
+    {
+      "id": "cairn",
+      "title": "Cairn: Deluxe Edition – v1.1.593s_2337 + 4 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/cairn/",
+      "image_url": "https://i5.imageban.ru/out/2026/01/30/8db1d9765278a79978c1da266207f216.jpg",
+      "post_date": "2026-11-05T03:15:35+03:00",
+      "genres": [
+        "Adventure",
+        "Simulator",
+        "Survival",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "8.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/5c/78/5c78743d-aa93-4186-9363-9fb158a295f6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5c/78/5c78743d-aa93-4186-9363-9fb158a295f6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/31/37317424-b80a-4b00-8177-7bf68e7ce321.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/31/37317424-b80a-4b00-8177-7bf68e7ce321.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0a/d3/0ad3e42a-ae70-46e6-848e-e42a7185b1bf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0a/d3/0ad3e42a-ae70-46e6-848e-e42a7185b1bf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5b/12/5b12bde9-8eb6-4d55-817c-89dd49e9987a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5b/12/5b12bde9-8eb6-4d55-817c-89dd49e9987a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e0/85/e0855b4d-d040-4ef5-800a-2f64e9000626.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e0/85/e0855b4d-d040-4ef5-800a-2f64e9000626.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3e/5e/3e5e7d4b-5be8-4b52-92bb-5bc9db22bb4b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/5e/3e5e7d4b-5be8-4b52-92bb-5bc9db22bb4b.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Reach a summit never climbed before in this survival-climber from the creators of Furi and Haven. Climb anywhere and plan your route carefully, managing pitons and resources to survive unforgiving Mount Kami. Discover what Aava is willing to sacrifice to achieve the ascent of a lifetime.",
+        "game_features": [
+          "REALISTIC CLIMBING SIMULATION – Cairn’s realistic simulation allows intuitive climbing: find the best holds and place your hands and feet seamlessly with simple controls. Adapt your posture, effort and balance – if you’re not careful, you will fall!",
+          "THE ASCENT OF A LIFETIME – As pro climber Aava, you embark on the ascent of Mount Kami, a summit that has never been reached. Along the journey, meet unexpected companions and hear from those left on the ground. Discover the mountain’s history and decide what Aava is willing to sacrifice to achieve her dream.",
+          "OPEN YOUR OWN ROUTE – You are free to climb anywhere. Explore the mountain, read the rock face from the ground and plan your route carefully to reach the top. Solve problems while on the wall to navigate difficult sections. You can climb on anything, so choose your path wisely!",
+          "CLIMBING IS A FIGHT – Climbing is challenging: each wall feels like a boss fight. A thrilling challenge for those eager to test themselves, but you can also adjust the difficulty to customize your experience.",
+          "SURVIVE THE DEADLY MOUNTAIN – Manage your resources to survive during the long ascent: pitons, chalk, finger tape… but also food, water and medicine. Set up bivouacs and explore the mountain to find resources to reach the summit.",
+          "AWARD-WINNING INDIE TEAM – An unforgettable experience from the makers of Furi and Haven, with music and sound design by the team behind Limbo, Inside, Control and Cocoon, and art and story by renowned comic-book artist Mathieu Bablet."
+        ],
+        "repack_features": [
+          "Based on Cairn-RUNE ISO release: rune-cairn.iso (10,431,430,656 bytes)",
+          "Missing Bonus Content (Wallpapers + Full OST in MP3 format, 95 MB) added, thanks to DicDale & Poli776!",
+          "Game version: v1.0.299s_1713; 3 DLCs/Bonuses (Deluxe Upgrade Pack, Only the Mountain from Cairn Soundtrack, Cairn Soundtrack) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Slightly smaller archive size (compressed from cumulative 9.8 to 8.3 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 11.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "warrior-cats-clans-of-the-forest",
       "title": "Warrior Cats: Clans of the Forest + 2 DLCs",
@@ -92100,82 +92194,6 @@
           "Installation takes 3-8 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 5.2 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "cairn",
-      "title": "Cairn: Deluxe Edition – v1.0.299s_1713 + 3 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/cairn/",
-      "image_url": "https://i5.imageban.ru/out/2026/01/30/8db1d9765278a79978c1da266207f216.jpg",
-      "post_date": "2026-01-30T07:25:35+03:00",
-      "genres": [
-        "Adventure",
-        "Simulator",
-        "Survival",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "8.3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/5c/78/5c78743d-aa93-4186-9363-9fb158a295f6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5c/78/5c78743d-aa93-4186-9363-9fb158a295f6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/37/31/37317424-b80a-4b00-8177-7bf68e7ce321.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/37/31/37317424-b80a-4b00-8177-7bf68e7ce321.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0a/d3/0ad3e42a-ae70-46e6-848e-e42a7185b1bf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0a/d3/0ad3e42a-ae70-46e6-848e-e42a7185b1bf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5b/12/5b12bde9-8eb6-4d55-817c-89dd49e9987a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5b/12/5b12bde9-8eb6-4d55-817c-89dd49e9987a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e0/85/e0855b4d-d040-4ef5-800a-2f64e9000626.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e0/85/e0855b4d-d040-4ef5-800a-2f64e9000626.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3e/5e/3e5e7d4b-5be8-4b52-92bb-5bc9db22bb4b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3e/5e/3e5e7d4b-5be8-4b52-92bb-5bc9db22bb4b.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Reach a summit never climbed before in this survival-climber from the creators of Furi and Haven. Climb anywhere and plan your route carefully, managing pitons and resources to survive unforgiving Mount Kami. Discover what Aava is willing to sacrifice to achieve the ascent of a lifetime.",
-        "game_features": [
-          "REALISTIC CLIMBING SIMULATION – Cairn’s realistic simulation allows intuitive climbing: find the best holds and place your hands and feet seamlessly with simple controls. Adapt your posture, effort and balance – if you’re not careful, you will fall!",
-          "THE ASCENT OF A LIFETIME – As pro climber Aava, you embark on the ascent of Mount Kami, a summit that has never been reached. Along the journey, meet unexpected companions and hear from those left on the ground. Discover the mountain’s history and decide what Aava is willing to sacrifice to achieve her dream.",
-          "OPEN YOUR OWN ROUTE – You are free to climb anywhere. Explore the mountain, read the rock face from the ground and plan your route carefully to reach the top. Solve problems while on the wall to navigate difficult sections. You can climb on anything, so choose your path wisely!",
-          "CLIMBING IS A FIGHT – Climbing is challenging: each wall feels like a boss fight. A thrilling challenge for those eager to test themselves, but you can also adjust the difficulty to customize your experience.",
-          "SURVIVE THE DEADLY MOUNTAIN – Manage your resources to survive during the long ascent: pitons, chalk, finger tape… but also food, water and medicine. Set up bivouacs and explore the mountain to find resources to reach the summit.",
-          "AWARD-WINNING INDIE TEAM – An unforgettable experience from the makers of Furi and Haven, with music and sound design by the team behind Limbo, Inside, Control and Cocoon, and art and story by renowned comic-book artist Mathieu Bablet."
-        ],
-        "repack_features": [
-          "Based on Cairn-RUNE ISO release: rune-cairn.iso (10,431,430,656 bytes)",
-          "Missing Bonus Content (Wallpapers + Full OST in MP3 format, 95 MB) added, thanks to DicDale & Poli776!",
-          "Game version: v1.0.299s_1713; 3 DLCs/Bonuses (Deluxe Upgrade Pack, Only the Mountain from Cairn Soundtrack, Cairn Soundtrack) are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Slightly smaller archive size (compressed from cumulative 9.8 to 8.3 GB)",
-          "Installation takes 2-5 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 11.1 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

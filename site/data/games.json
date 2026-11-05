@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-05T06:28:00.938127+00:00",
+  "generated_at": "2026-11-05T06:28:52.252721+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-04T11:30:30.636999+00:00",
   "games": [
@@ -20,7 +20,59 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "17.9 GB"
+      "repack_size": "17.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d8/07/d807c246-05e3-4795-91ad-8b657f998795.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d8/07/d807c246-05e3-4795-91ad-8b657f998795.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/76/03/7603a8eb-f702-4ac9-b7d5-f8fde5d2477b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/03/7603a8eb-f702-4ac9-b7d5-f8fde5d2477b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/66/9f66d3f4-4455-454d-9ec4-a5b32f0d5f3f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/66/9f66d3f4-4455-454d-9ec4-a5b32f0d5f3f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/de/0fde518a-fb8a-4f87-b878-b726a37846ed.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/de/0fde518a-fb8a-4f87-b878-b726a37846ed.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/43/50/43503bb7-a227-4708-b855-baa56f73f535.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/43/50/43503bb7-a227-4708-b855-baa56f73f535.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a0/d0/a0d06ed3-5b82-4b6d-abe3-1d7f856037f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/d0/a0d06ed3-5b82-4b6d-abe3-1d7f856037f9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-05T06:28:52.250667+00:00",
+      "details": {
+        "description": "Silica is a crossover of FPS and RTS, where you take part in epic photorealistic battles either as humans or aliens. Lead as the commander, or join the assault from the ground – the choice is yours!\nTake Part in Epic Combined Arms Warfare\nImmerse yourself in epic battles where humans and aliens fight for ultimate domination.\nDominate Land and Sky\nTake control of both land and air vehicles to assert power over the sandy dunes of planet Baltarus\nLead as RTS Commander!\nTake charge as RTS commander over battles of epic scale. Use your tactical prowess to dominate the battlefield, coordinating complex operations from a top-down perspective.\nExperience Realistic Unit Scale\nWitness the impressive scale of units, from small infantry squads to colossal harvesters and massive buildings. Each unit type is meticulously designed to reflect its size, providing an immersive and realistic experience on the battlefield.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Silica-RUNE ISO release: rune-silica.iso (27,933,048,832 bytes)",
+          "Game version: v1.0.15 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 26 to 17.9 GB)",
+          "Installation takes 3-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 43.2 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-05T06:28:52.250667+00:00"
     },
     {
       "id": "cairn",

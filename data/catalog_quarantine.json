@@ -88,6 +88,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "age-of-wonders-4-repack-updated-10",
+      "title": "Age of Wonders 4 Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/age-of-wonders-4-repack-updated-10/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "agents-of-mayhem-patch-to-v1-03",
       "title": "Agents of Mayhem, Patch to v1.03",
       "source_url": "https://fitgirl-repacks.site/agents-of-mayhem-patch-to-v1-03/",
@@ -8519,10 +8529,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-2-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9359,8 +9368,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-25-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9385,8 +9396,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-27-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9425,10 +9438,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-28-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

@@ -1,9 +1,104 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-05T21:24:57.538528+00:00",
+  "generated_at": "2026-11-05T22:00:16.728183+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-05T11:27:48.728209+00:00",
   "games": [
+    {
+      "id": "age-of-wonders-4",
+      "title": "Age of Wonders 4: 2026 Collector’s Bundle – v1.017.001.126767 + 18 DLCs",
+      "source_url": "https://fitgirl-repacks.site/age-of-wonders-4/",
+      "image_url": "https://i7.imageban.ru/out/2023/05/04/2b8595281e9cc4def95e5f8284baca59.jpg",
+      "post_date": "2026-11-06T00:10:21+03:00",
+      "genres": [
+        "Strategy",
+        "4X",
+        "Isometric",
+        "3D",
+        "Turn-based"
+      ],
+      "repack_size": "10.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8a/68/8a684634-e5dd-4129-9562-4e92465447f6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8a/68/8a684634-e5dd-4129-9562-4e92465447f6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/75/5a75fb83-2481-4398-b8e4-3a9d80659061.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/75/5a75fb83-2481-4398-b8e4-3a9d80659061.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/d8/58d8bdaf-743c-4c1b-8ad6-8f2120a3209f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/d8/58d8bdaf-743c-4c1b-8ad6-8f2120a3209f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/7a/b17a1073-ba73-445a-be07-f471d672f0b5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/7a/b17a1073-ba73-445a-be07-f471d672f0b5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/78/06/7806574e-26ea-4b6b-bb0f-92c56218f1ac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/78/06/7806574e-26ea-4b6b-bb0f-92c56218f1ac.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e8/36/e83651c8-cc39-4a69-88bc-cd797ed5f926.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e8/36/e83651c8-cc39-4a69-88bc-cd797ed5f926.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Rule a fantasy realm of your own design in Age of Wonders 4! Explore new magical realms in Age of Wonders’ signature blend of 4X strategy and turn-based tactical combat. Control a faction that grows and changes as you expand your empire with each turn.\nTriumph Studios’ award-winning strategy series has emerged into a new age, evolving the game’s iconic empire building, role-playing, and warfare to the next level. A new storytelling event system and hugely customizable empires provide an endlessly replayable experience, where each game adds a new chapter to your ever-growing saga.\nPowerful Wizard Kings have returned to the realms to reign as gods among mortals. Claim and master the Tomes of Magic to evolve your people, and prepare for an epic battle that will determine the ages to come.",
+        "game_features": [
+          "Craft your followers by combining bodily forms, societal traits and arcane powers. Build anything from a clan of cannibal halflings to mystic moon elves, or recreate your favorite fantasy tropes",
+          "Seek powerful tomes of magic to enchant your armies and evolve your people! See your people physically change as they morph into angelic beings or scions of chaos to face their enemies.",
+          "Seek glory through brutal domination, cunning alliances, or ultimate arcane knowledge, and write your legacy into the very fabric of the realm itself!",
+          "Every choice opens up new possibilities and tactical advantages; deep, multilayered strategy allows you to try new tactics or explore new powers at every turn",
+          "Tactical turn-based battles bring your armies to life, showcasing their power in an environment shaped by your decisions. From skirmishes with roaming monsters to vast sieges with dozens of units on each side, with the addition of a morale system and more features, every battle brings a fresh challenge",
+          "Tremendous variety in empires, units, and environments keep the game endlessly replayable. Age of Wonders is more moddable and open-ended than ever in the series’ history",
+          "Explore a new realm with each game – or create your own! Challenge new variations and combinations of locations and features, from frozen wastelands ruled by ice queens to desolated ruins where dragons roam",
+          "A new event system provides unexpected levels of storytelling for 4X games. See your decisions shape the world around you, from growing cities and roaming armies to world-warping magic effects",
+          "Guide your empire to greatness – but the story doesn’t end with your victory or defeat! Ascend your rulers to an in-game pantheon and unlock ways to further customize your experience. Encounter your own creations as potential rivals or allies in subsequent games, and experience the next chapter in your own story!",
+          "Included DLCs:",
+          "Archmage Attire",
+          "Archon Prophecy",
+          "Collector’s Bundle",
+          "Cosmic Wanderer",
+          "Dragon Dawn",
+          "Eldritch Realms",
+          "Empires & Ashes",
+          "Giant Kings",
+          "Herald of Glory",
+          "Pre-Order Content Pack",
+          "Primal Fury",
+          "Rise from Ruin",
+          "Secrets of the Archmages",
+          "Sign-Up Content",
+          "Thrones of Blood",
+          "Ways of War",
+          "Expansion Passes are not real DLCs, hence not listed here."
+        ],
+        "repack_features": [
+          "Based on scene Age.of.Wonders.4.Secrets.of.the.Archmages-RUNE ISO release: rune-age.of.wonders.4.secrets.of.the.archmages.iso (21,796,093,952 bytes)",
+          "Game version: v1.015.002.122980; 16 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 20.3 GB to 11.2 GB)",
+          "Installation takes 10-20 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 30.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "lightyear-frontier",
       "title": "Lightyear Frontier & Soundtrack Bundle – v1.0.2540 + 2 DLCs/Bonuses",
@@ -45553,101 +45648,6 @@
           "Installation takes less than a minute",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 3.6 GB",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "age-of-wonders-4",
-      "title": "Age of Wonders 4: Collector’s Bundle, v1.015.002.122980 + 16 DLCs",
-      "source_url": "https://fitgirl-repacks.site/age-of-wonders-4/",
-      "image_url": "https://i7.imageban.ru/out/2023/05/04/2b8595281e9cc4def95e5f8284baca59.jpg",
-      "post_date": "2026-06-19T01:00:21+03:00",
-      "genres": [
-        "Strategy",
-        "4X",
-        "Isometric",
-        "3D",
-        "Turn-based"
-      ],
-      "repack_size": "11.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/8a/68/8a684634-e5dd-4129-9562-4e92465447f6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8a/68/8a684634-e5dd-4129-9562-4e92465447f6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5a/75/5a75fb83-2481-4398-b8e4-3a9d80659061.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5a/75/5a75fb83-2481-4398-b8e4-3a9d80659061.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/58/d8/58d8bdaf-743c-4c1b-8ad6-8f2120a3209f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/58/d8/58d8bdaf-743c-4c1b-8ad6-8f2120a3209f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b1/7a/b17a1073-ba73-445a-be07-f471d672f0b5.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b1/7a/b17a1073-ba73-445a-be07-f471d672f0b5.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/78/06/7806574e-26ea-4b6b-bb0f-92c56218f1ac.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/78/06/7806574e-26ea-4b6b-bb0f-92c56218f1ac.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e8/36/e83651c8-cc39-4a69-88bc-cd797ed5f926.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e8/36/e83651c8-cc39-4a69-88bc-cd797ed5f926.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Rule a fantasy realm of your own design in Age of Wonders 4! Explore new magical realms in Age of Wonders’ signature blend of 4X strategy and turn-based tactical combat. Control a faction that grows and changes as you expand your empire with each turn.\nTriumph Studios’ award-winning strategy series has emerged into a new age, evolving the game’s iconic empire building, role-playing, and warfare to the next level. A new storytelling event system and hugely customizable empires provide an endlessly replayable experience, where each game adds a new chapter to your ever-growing saga.\nPowerful Wizard Kings have returned to the realms to reign as gods among mortals. Claim and master the Tomes of Magic to evolve your people, and prepare for an epic battle that will determine the ages to come.",
-        "game_features": [
-          "Craft your followers by combining bodily forms, societal traits and arcane powers. Build anything from a clan of cannibal halflings to mystic moon elves, or recreate your favorite fantasy tropes",
-          "Seek powerful tomes of magic to enchant your armies and evolve your people! See your people physically change as they morph into angelic beings or scions of chaos to face their enemies.",
-          "Seek glory through brutal domination, cunning alliances, or ultimate arcane knowledge, and write your legacy into the very fabric of the realm itself!",
-          "Every choice opens up new possibilities and tactical advantages; deep, multilayered strategy allows you to try new tactics or explore new powers at every turn",
-          "Tactical turn-based battles bring your armies to life, showcasing their power in an environment shaped by your decisions. From skirmishes with roaming monsters to vast sieges with dozens of units on each side, with the addition of a morale system and more features, every battle brings a fresh challenge",
-          "Tremendous variety in empires, units, and environments keep the game endlessly replayable. Age of Wonders is more moddable and open-ended than ever in the series’ history",
-          "Explore a new realm with each game – or create your own! Challenge new variations and combinations of locations and features, from frozen wastelands ruled by ice queens to desolated ruins where dragons roam",
-          "A new event system provides unexpected levels of storytelling for 4X games. See your decisions shape the world around you, from growing cities and roaming armies to world-warping magic effects",
-          "Guide your empire to greatness – but the story doesn’t end with your victory or defeat! Ascend your rulers to an in-game pantheon and unlock ways to further customize your experience. Encounter your own creations as potential rivals or allies in subsequent games, and experience the next chapter in your own story!",
-          "Included DLCs:",
-          "Archmage Attire",
-          "Archon Prophecy",
-          "Collector’s Bundle",
-          "Cosmic Wanderer",
-          "Dragon Dawn",
-          "Eldritch Realms",
-          "Empires & Ashes",
-          "Giant Kings",
-          "Herald of Glory",
-          "Pre-Order Content Pack",
-          "Primal Fury",
-          "Rise from Ruin",
-          "Secrets of the Archmages",
-          "Sign-Up Content",
-          "Thrones of Blood",
-          "Ways of War",
-          "Expansion Passes are not real DLCs, hence not listed here."
-        ],
-        "repack_features": [
-          "Based on scene Age.of.Wonders.4.Secrets.of.the.Archmages-RUNE ISO release: rune-age.of.wonders.4.secrets.of.the.archmages.iso (21,796,093,952 bytes)",
-          "Game version: v1.015.002.122980; 16 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 20.3 GB to 11.2 GB)",
-          "Installation takes 10-20 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 30.7 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

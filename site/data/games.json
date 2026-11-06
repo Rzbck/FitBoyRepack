@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-06T01:44:05.577899+00:00",
+  "generated_at": "2026-11-06T01:44:53.094458+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-05T11:27:48.728209+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "Side",
         "3D"
       ],
-      "repack_size": "2.6 GB"
+      "repack_size": "2.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c0/2e/c02ec80f-d0e8-4126-906c-34dd825b599b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c0/2e/c02ec80f-d0e8-4126-906c-34dd825b599b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5e/f5/5ef5e44d-68c3-4f8d-9552-dafa6970d780.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5e/f5/5ef5e44d-68c3-4f8d-9552-dafa6970d780.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1b/c0/1bc080cb-09e5-4502-9b4e-e8d2682694f8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1b/c0/1bc080cb-09e5-4502-9b4e-e8d2682694f8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2f/d9/2fd9a006-a100-484c-aff4-08fbe977054a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2f/d9/2fd9a006-a100-484c-aff4-08fbe977054a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/92/5b/925b0702-689b-4dc1-851e-7ddc486f8643.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/92/5b/925b0702-689b-4dc1-851e-7ddc486f8643.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/51/5a517717-96fe-45dd-ac6e-7a00f7326ea6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/51/5a517717-96fe-45dd-ac6e-7a00f7326ea6.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-06T01:44:53.092496+00:00",
+      "details": {
+        "description": "The ultimate kaiju arena brawler is back, completely remastered. From Atari and original developer, Pipeworks, Godzilla: Destroy All Monsters Melee Remastered updates the 2002 fighter with enhanced visuals and quality of life improvements. Choose your monster and battle it out with a range of brutal attacks through 8 locations, each with day and night variations. Battle through real-world cities, Monster Island, and the alien Mothership. Face off against your friends in local co-op or new online multiplayer.\nMaster your skills in cinematic kaiju vs. kaiju battles through familiar cities. Every monster has a distinctive moveset that makes each brawl unique, from vicious melee attacks to ranged energy blasts to special Rage Mode strikes. Tired of throwing punches? Why not throw a skyscraper, instead? The arenas are not just passive locations, and instead allow you to use the environment strategically in combat and even weaponize buildings and other landmarks.\nThe visuals throughout the game have been remastered from the ground up to enhance the cinematic experience of the original. Godzilla: Destroy All Monsters Melee Remastered also features gameplay updates, as well as an improved unlock system, so you can unlock monsters, locations, and gallery items in any order you choose.\nFEATURES\nThe original 2002 Godzilla arena fighter, remastered.\n12 Kaiju to choose from, each with a uniquely vicious moveset.\n8 locations, including recreated real-world cities, Monster Island, and the Alien Mothership.\nGallery items to unlock.\nPlay with friends in local co-op and all-new online multiplayer.\nRemastered graphics enhance the cinematic experience of the original.\nImproved unlock system gives you the choice to unlock monsters, locations, and gallery items in any order.\nAlso includes additional single-player campaigns for each kaiju.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Godzilla.Destroy.All.Monsters.Melee.Remastered-RUNE ISO release: rune-godzilla.destroy.all.monsters.melee.remastered.iso (4,716,822,528 bytes)",
+          "Digital Deluxe Upgrade DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 4.4 to 2.6 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4.4 GB",
+          "Language can be changed in “Engine/Binaries/ThirdParty/Steamworks/Steamv164/Win64/steam_emu.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-06T01:44:53.092496+00:00"
     },
     {
       "id": "age-of-wonders-4",

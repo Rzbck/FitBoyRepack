@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-05T22:00:16.728183+00:00",
+  "generated_at": "2026-11-06T01:44:05.577899+00:00",
   "source_pages": 818,
   "last_full_scan_at": "2026-11-05T11:27:48.728209+00:00",
   "games": [
+    {
+      "id": "godzilla-destroy-all-monsters-melee-remastered",
+      "title": "Godzilla: Destroy All Monsters Melee Remastered – Digital Deluxe Edition + DLC",
+      "source_url": "https://fitgirl-repacks.site/godzilla-destroy-all-monsters-melee-remastered/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/06/223139159ebc4a1f5f7540c936326be2.jpg",
+      "post_date": "2026-11-06T02:57:29+03:00",
+      "genres": [
+        "Arcade",
+        "Fighting",
+        "Side",
+        "3D"
+      ],
+      "repack_size": "2.6 GB"
+    },
     {
       "id": "age-of-wonders-4",
       "title": "Age of Wonders 4: 2026 Collector’s Bundle – v1.017.001.126767 + 18 DLCs",

@@ -1,9 +1,81 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-06T11:27:37.597041+00:00",
-  "source_pages": 818,
+  "generated_at": "2026-11-06T17:59:09.794803+00:00",
+  "source_pages": 819,
   "last_full_scan_at": "2026-11-06T11:27:37.597041+00:00",
   "games": [
+    {
+      "id": "decktamer",
+      "title": "Decktamer – v1.9.4",
+      "source_url": "https://fitgirl-repacks.site/decktamer/",
+      "image_url": "https://i4.imageban.ru/out/2025/11/01/4265efd908bf56e99d0df4d42f6d5000.jpg",
+      "post_date": "2026-11-06T20:00:53+03:00",
+      "genres": [
+        "Card game",
+        "2D",
+        "Turn-based"
+      ],
+      "repack_size": "599 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ec/44/ec44635b-28c9-410b-a4db-9a44ad14ce32.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ec/44/ec44635b-28c9-410b-a4db-9a44ad14ce32.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/49/7c/497cded5-c478-4110-bcf3-4be59662201e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/49/7c/497cded5-c478-4110-bcf3-4be59662201e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/92/58924f0f-c7fa-4cb2-9df7-fcb84c98b883.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/92/58924f0f-c7fa-4cb2-9df7-fcb84c98b883.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a2/2a/a22a8d24-2ddd-4991-ae1c-b14b6f750067.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a2/2a/a22a8d24-2ddd-4991-ae1c-b14b6f750067.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/41/f4/41f4986a-1d4d-49d2-a4a4-97e5f8437471.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/41/f4/41f4986a-1d4d-49d2-a4a4-97e5f8437471.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/ea/90ea8801-dd0c-4588-b8e6-7dfb5f8a5a48.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/ea/90ea8801-dd0c-4588-b8e6-7dfb5f8a5a48.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Deck-building meets monster catching in this turn-based roguelike. Recruit enemy cards to your party as you dive into the depths of the abyss. Will you kill them or will you tame them?\nIn Decktamer, you’ll encounter creatures that have adapted to their strange environment: the abyss. Rumor has it that anyone brave enough to reach the bottom of the giant crater will find great fortune. But watch out, as you dive deeper, the creatures only get more and more bizarre and dangerous…\nOnly one question remains…\nDo you have what it takes to reach the heart of the abyss?",
+        "game_features": [
+          "ROGUELIKE DECK-TAMING",
+          "In this game, cards are not simply handed out to you, you have to tame your enemies to add them to your deck! But be careful, when one of your creature dies, the card is gone forever!",
+          "STRATEGIZE EACH TURN",
+          "Every turn, each one of your cards can use a move. Try to think about the optimal play to win your battle in this turn-based combat system! Will the turn plan out as you expected?",
+          "EXPERIMENT WITH MUTAGENS",
+          "The Abyss is filled with mutant creatures that possess abilities they shouldn’t normally have. Use that to your advantage and transfer abilities from one creature to another to create unique and devastating combos!"
+        ],
+        "repack_features": [
+          "Based on Decktamer-TENOKE ISO release: tenoke-decktamer.iso (6,957,176,832 bytes)",
+          "Game version: v1.0.21",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.5 GB to 886 MB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.5 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "godzilla-destroy-all-monsters-melee-remastered",
       "title": "Godzilla: Destroy All Monsters Melee Remastered – Digital Deluxe Edition + DLC",
@@ -116202,78 +116274,6 @@
           "HDD space after installation: 5.2 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "decktamer",
-      "title": "Decktamer – v1.0.21",
-      "source_url": "https://fitgirl-repacks.site/decktamer/",
-      "image_url": "https://i4.imageban.ru/out/2025/11/01/4265efd908bf56e99d0df4d42f6d5000.jpg",
-      "post_date": "2025-11-01T22:28:53+03:00",
-      "genres": [
-        "Card game",
-        "2D",
-        "Turn-based"
-      ],
-      "repack_size": "886 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/ec/44/ec44635b-28c9-410b-a4db-9a44ad14ce32.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ec/44/ec44635b-28c9-410b-a4db-9a44ad14ce32.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/49/7c/497cded5-c478-4110-bcf3-4be59662201e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/49/7c/497cded5-c478-4110-bcf3-4be59662201e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/58/92/58924f0f-c7fa-4cb2-9df7-fcb84c98b883.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/58/92/58924f0f-c7fa-4cb2-9df7-fcb84c98b883.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a2/2a/a22a8d24-2ddd-4991-ae1c-b14b6f750067.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a2/2a/a22a8d24-2ddd-4991-ae1c-b14b6f750067.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/41/f4/41f4986a-1d4d-49d2-a4a4-97e5f8437471.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/41/f4/41f4986a-1d4d-49d2-a4a4-97e5f8437471.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/90/ea/90ea8801-dd0c-4588-b8e6-7dfb5f8a5a48.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/90/ea/90ea8801-dd0c-4588-b8e6-7dfb5f8a5a48.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Deck-building meets monster catching in this turn-based roguelike. Recruit enemy cards to your party as you dive into the depths of the abyss. Will you kill them or will you tame them?\nIn Decktamer, you’ll encounter creatures that have adapted to their strange environment: the abyss. Rumor has it that anyone brave enough to reach the bottom of the giant crater will find great fortune. But watch out, as you dive deeper, the creatures only get more and more bizarre and dangerous…\nOnly one question remains…\nDo you have what it takes to reach the heart of the abyss?",
-        "game_features": [
-          "ROGUELIKE DECK-TAMING",
-          "In this game, cards are not simply handed out to you, you have to tame your enemies to add them to your deck! But be careful, when one of your creature dies, the card is gone forever!",
-          "STRATEGIZE EACH TURN",
-          "Every turn, each one of your cards can use a move. Try to think about the optimal play to win your battle in this turn-based combat system! Will the turn plan out as you expected?",
-          "EXPERIMENT WITH MUTAGENS",
-          "The Abyss is filled with mutant creatures that possess abilities they shouldn’t normally have. Use that to your advantage and transfer abilities from one creature to another to create unique and devastating combos!"
-        ],
-        "repack_features": [
-          "Based on Decktamer-TENOKE ISO release: tenoke-decktamer.iso (6,957,176,832 bytes)",
-          "Game version: v1.0.21",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 6.5 GB to 886 MB)",
-          "Installation takes 1-2 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 6.5 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

@@ -1,9 +1,39 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-06T17:59:09.794803+00:00",
+  "generated_at": "2026-11-06T21:37:24.153492+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-06T11:27:37.597041+00:00",
   "games": [
+    {
+      "id": "every-day-we-fight",
+      "title": "Every Day We Fight – v1.0 (Release)",
+      "source_url": "https://fitgirl-repacks.site/every-day-we-fight/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/06/6553d2e9bdde5cc9f0d3e8bf2580909f.jpg",
+      "post_date": "2026-11-07T00:23:19+03:00",
+      "genres": [
+        "Strategy",
+        "Tactics",
+        "Top-down",
+        "3D",
+        "Turn-based"
+      ],
+      "repack_size": "3.7 GB"
+    },
+    {
+      "id": "sort-the-capybaras",
+      "title": "Sort The Capybaras – v1.02",
+      "source_url": "https://fitgirl-repacks.site/sort-the-capybaras/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/06/2e435c25bdbbece0e18fc3d47bde67ca.jpg",
+      "post_date": "2026-11-06T22:39:51+03:00",
+      "genres": [
+        "Logic",
+        "Hidden object",
+        "Physics-based",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.5 GB"
+    },
     {
       "id": "decktamer",
       "title": "Decktamer – v1.9.4",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-06T21:37:24.153492+00:00",
+  "generated_at": "2026-11-06T21:38:05.133589+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-06T11:27:37.597041+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "3D",
         "Turn-based"
       ],
-      "repack_size": "3.7 GB"
+      "repack_size": "3.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c5/5a/c55afa9f-be37-4446-b6b2-3954b9d4210f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c5/5a/c55afa9f-be37-4446-b6b2-3954b9d4210f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/86/0a/860ac76f-6abd-4e1c-80d9-6a7de9a7c40d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/86/0a/860ac76f-6abd-4e1c-80d9-6a7de9a7c40d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2a/6f/2a6f45ef-e429-4978-9e97-e5bba4ba40c6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2a/6f/2a6f45ef-e429-4978-9e97-e5bba4ba40c6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0c/31/0c31e484-333b-4df2-a9bd-98ae7c7803ee.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/31/0c31e484-333b-4df2-a9bd-98ae7c7803ee.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6c/b1/6cb1b96f-bf6b-4453-bb7c-bc325f75060d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6c/b1/6cb1b96f-bf6b-4453-bb7c-bc325f75060d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ae/52/ae52c676-8a3d-47c8-a664-35066f69b406.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ae/52/ae52c676-8a3d-47c8-a664-35066f69b406.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-06T21:38:05.131728+00:00",
+      "details": {
+        "description": "A mysterious alien invasion threatens humanity – time has come to a stop for all but your small band of freedom fighters. Caught in a seemingly endless loop, you must shape these ordinary civilians into heroes. Countless lives hang in the balance: you are humanity’s only hope to thwart the invaders.\nWith every new time loop, newly acquired experience and skills remain. As you explore the multiple districts of your wartorn city, anything you discover in one loop is available to you from the start of the next. Welcome to the resistance!\nCONTROL IS IN YOUR HANDS\nYour tactical prowess will be put to the test when the bullets start to fly – armed and positioned appropriately, allies can work closely together to assist one another, interrupt enemy movements, and bring about a quick end to challenging circumstances.\nTake direct control of every shot as you aim down the sights, find where your target is weakest, and unleash a hail of bullets. Hit chances are determined entirely by your positioning, your aim, and your reaction time, with ballistics taking firing angles and obstructions into account.\nYour resistance fighters can react to both friend and foe across turns on either side. Every individual has access to unique reflex actions to intercept enemy movement and assist allied kills, or to scramble away from enemy fire. Will you reserve your reflexes for defensive maneuvers when things take a turn for the worse, or will you use them to apply constant pressure on the enemy?\nYOUR CHOICES MATTER\n12 unique guns, dozens of skills to unlock, and over 100+ different gun attachments & parts (including some with legendary perks). Discover interesting combinations and tailor each character’s loadout to your tactical needs.\nIn war, sacrifices must be made. Will you attempt to save other civilians at the risk of losing your progress? Or will you sacrifice the lives of those frozen in time in the interest of advancing your ultimate goal?\nYour strategies can make or break an encounter. Sneak around the battlefield to obtain an optimal position, seek out opportunities to use the world around you, or go in guns blazing: every fight is different.\nMultiple difficulty modes make the game as accessible – or difficult – as you would like. Including Iron Man mode and Forever War mode for those who truly want a challenge.\nEND THE FOREVER WAR\nTake on a variety of mission types to thwart the alien invaders – shut down their harvesters, defuse their bombs, and take out their occupying troops to gain the skills you need and secure victory.\nTo break their hold, however, you must ultimately defeat the Rifter leaders. Hard to kill, heavily armored, and dangerously armed, these leaders hold the key to this war – every time one falls, the time loop shifts forward, bringing the Forever War closer to an end.\nYour resistance grows stronger with each success, and with each failure – after all, for you, death is only the beginning.\nWe think you’ll love Every Day We Fight if you enjoy… XCOM® 2, STAR WARS Zero Company™, MENACE, Jagged Alliance 3, Warhammer 40,000: Mechanicus, Wartales, Phoenix Point, Warhounds, Cyber Knights: Flashpoint",
+        "game_features": [],
+        "repack_features": [
+          "Based on Every.Day.We.Fight-RUNE ISO release: rune-every.day.we.fight.iso (7,400,620,032 bytes)",
+          "Game version: v1.0 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading intro videos pack. By default only English intro is included",
+          "Significantly smaller archive size (compressed from 6.9 to 3.7/4.4 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 15.4 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-06T21:38:05.131728+00:00"
     },
     {
       "id": "sort-the-capybaras",
@@ -32,7 +85,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "1.5 GB"
+      "repack_size": "1.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/56/8c/568c8506-0540-488b-a02f-cf5928240df0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/56/8c/568c8506-0540-488b-a02f-cf5928240df0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/83/9d/839d51fe-695d-43d3-be95-a8679576c4e8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/83/9d/839d51fe-695d-43d3-be95-a8679576c4e8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7a/90/7a902c19-d279-4415-bea5-297cb203c437.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7a/90/7a902c19-d279-4415-bea5-297cb203c437.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b3/a9/b3a93e9a-4bab-48eb-be57-4dad24e45cb7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b3/a9/b3a93e9a-4bab-48eb-be57-4dad24e45cb7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/38/6e/386eeaa1-41d6-4ada-8eab-bd9a941d6201.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/38/6e/386eeaa1-41d6-4ada-8eab-bd9a941d6201.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3d/2a/3d2adab5-f751-4cd7-96c3-2355ec3ae0db.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3d/2a/3d2adab5-f751-4cd7-96c3-2355ec3ae0db.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-06T21:38:05.131728+00:00",
+      "details": {
+        "description": "Sort The Capybaras\nis a cozy organizing game. You are in a messy capybara store with 4,800 cute capybara toys. Pick up a capybara and identify the type of the capybara and then place them on the correct shelves. You will earn money for every capybara you sort. Use your money to upgrade sorting abilities, then you can sort faster and faster.\nSort Capybaras to Earn Money\nPut a capybara onto the correct shelf will immediately give you money. Pick a capybara on the floor, look at it and look at the signboard on the shelf, you will easily find the shelf it belongs to.\nFrom Chaos to Organized\nThe store starts with compeletely chaos, you can fill the shelves one by one. Finally, the store will be tidy and perfectly organized.\nSuperpower for sorting\nYou can unlock superpower abilities for sorting by spending money. Highlight the same type of capybaras, carry\nMore capybaras at once, automatically highlight correct shelves, immediatelly collect all the same type of capybaras from the whole store to you hand, automatically collect same type of capybaras nearby.\nSuperpower for sorting\nYou can unlock superpower abilities for sorting by spending money. Highlight the same type of capybaras, carry\nMore capybaras at once, automatically highlight correct shelves, immediatelly collect all the same type of capybaras from the whole store to you hand, automatically collect same type of capybaras nearby.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Sort.The.Capybaras-TENOKE ISO release: tenoke-sort.the.capybaras.iso (2,871,306,240 bytes)",
+          "Game version: v1.02",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.7 GB to 1.5 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-06T21:38:05.131728+00:00"
     },
     {
       "id": "decktamer",

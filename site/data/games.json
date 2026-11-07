@@ -1,9 +1,107 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T18:52:48.338673+00:00",
+  "generated_at": "2026-11-07T20:54:35.668929+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
+    {
+      "id": "wing-commander-35th-anniversary-edition",
+      "title": "Wing Commander: 35th Anniversary Edition + Bonus Content",
+      "source_url": "https://fitgirl-repacks.site/wing-commander-35th-anniversary-edition/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/07/f90aa433e2ac69268b6484bdef0cbe20.jpg",
+      "post_date": "2026-11-07T23:25:58+03:00",
+      "genres": [
+        "Simulation",
+        "2D",
+        "Spacecraft"
+      ],
+      "repack_size": "842 MB"
+    },
+    {
+      "id": "from-space-specialist-edition",
+      "title": "From Space: Resistance Bundle – v1.3.2249 + 7 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/from-space-specialist-edition/",
+      "image_url": "https://i4.imageban.ru/out/2022/11/04/1a8086e52d71107eadb5401c9ad6944d.jpg",
+      "post_date": "2026-11-07T22:00:57+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "Isometric",
+        "3D"
+      ],
+      "repack_size": "1.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/5a/21/5a2102a6-0fc8-4c86-bcff-03b93e65b2d4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/21/5a2102a6-0fc8-4c86-bcff-03b93e65b2d4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0d/8b/0d8bca66-8f7c-4d47-92c8-36735fec8ff6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0d/8b/0d8bca66-8f7c-4d47-92c8-36735fec8ff6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/62/f6/62f6192d-2166-4020-a26b-f30777f896a1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/62/f6/62f6192d-2166-4020-a26b-f30777f896a1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/98/27/98276558-719a-4563-b073-1362cf696ffa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/98/27/98276558-719a-4563-b073-1362cf696ffa.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e1/58/e158c9ef-b3ca-43f5-9a17-769bf56e8164.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e1/58/e158c9ef-b3ca-43f5-9a17-769bf56e8164.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/39/ee/39eefc82-2ba7-40ea-9878-94e992f9651d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/39/ee/39eefc82-2ba7-40ea-9878-94e992f9651d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T10:30:32.291967+00:00",
+      "details": {
+        "description": "That’s no bubblegum army, that’s an endless horde of menacingly pink aliens taking over our planet! Enough sweet talk, grab your gear, we need you and your squad to defeat the pink pests!\nYOUR MISSION:\nLiberate Earth from the Alien horde!",
+        "game_features": [
+          "Squad Up:",
+          "While you can play From Space solo (if you’re brave enough) you’d be wise to invite some friends to help you out. With online play you can create a four-person squad. Look, there’s a lot of those pink pests out there so the more people, the better. Oh, and with a squad, you’ll have some witnesses to tell everyone how awesome you are. It’s basically a win-win scenario.",
+          "Shoot, Explore, Stab:",
+          "With a variety of weapons (Rocket Launchers, Miniguns, Flamethrowers and more!) there’s no excuse not to annihilate those aliens! Build your ideal spec and use tactical items such as grenades and mines, or slow down the hordes with barbed wire and machinegun turrets. Remember to scavenge the world for loot, you’ll need it!",
+          "You’re Special, So Pick Your Specialist Skill:",
+          "No matter what type of player you are, there’s a wide range of characters in From Space’s roster, each with their own unique ability and weapons. Find the perfect balance with your friends as you build the ultimate super squad.",
+          "Don’t Just Stand There, Level Up:",
+          "As you level-up, you’ll be able to attach special perks to your character, helping you to master the art of destroying aliens. You’ll need to find ways to combat increasingly more powerful aliens, and perks will help you accomplish all of your pink alien squashing dreams. Need to rethink your strategy? No problem! We like innovators! Perks can be swapped around, even between your squad!",
+          "The Apocalypse Has Never Been So Much Fun:",
+          "We’re going to level with you… an alien threat is terrifying, terrifyingly fun! Look, the world is already pretty beat up as it is. Who’s going to notice if you cause a little bit more destruction while saving the day? People have insurance it’s fine…",
+          "Included DLCs:",
+          "Festive Specialist Outfits",
+          "Grenadier and Scientist Specialists",
+          "The Scouts Specialists",
+          "Mission Pack: Molten Iron",
+          "Mission Pack: Concrete Jungle"
+        ],
+        "repack_features": [
+          "Based on scene From.Space-RUNE ISO release: rune-from.space.iso (3,196,518,400 bytes)",
+          "Game version: v1.1.2160 (Horde Mode Update); 5 DLCs and all bonuses are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content (OST n MP3, ArtBook, Wallpapers, Avatars, Steamdeck Videos)",
+          "Significantly smaller archive size (compressed from 3 to 1.2/1.5 GB)",
+          "Installation takes 1-4 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 3.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T10:30:32.291967+00:00"
+    },
     {
       "id": "disney-pixar-toy-story-retro-roundup",
       "title": "Disney•Pixar Toy Story: Retro Roundup!",
@@ -296044,91 +296142,6 @@
           "Installation takes 2-3 minutes",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 1.2 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T10:30:32.291967+00:00"
-    },
-    {
-      "id": "from-space-specialist-edition",
-      "title": "From Space: Game and Soundtrack Bundle, v1.1.2160 (Horde Mode Update) + 5 DLCs + Bonus Content",
-      "source_url": "https://fitgirl-repacks.site/from-space-specialist-edition/",
-      "image_url": "https://i4.imageban.ru/out/2022/11/04/1a8086e52d71107eadb5401c9ad6944d.jpg",
-      "post_date": "2023-10-21T04:00:57+03:00",
-      "genres": [
-        "Action",
-        "Shooter",
-        "Isometric",
-        "3D"
-      ],
-      "repack_size": "1.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/5a/21/5a2102a6-0fc8-4c86-bcff-03b93e65b2d4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5a/21/5a2102a6-0fc8-4c86-bcff-03b93e65b2d4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0d/8b/0d8bca66-8f7c-4d47-92c8-36735fec8ff6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0d/8b/0d8bca66-8f7c-4d47-92c8-36735fec8ff6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/62/f6/62f6192d-2166-4020-a26b-f30777f896a1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/62/f6/62f6192d-2166-4020-a26b-f30777f896a1.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/98/27/98276558-719a-4563-b073-1362cf696ffa.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/98/27/98276558-719a-4563-b073-1362cf696ffa.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e1/58/e158c9ef-b3ca-43f5-9a17-769bf56e8164.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e1/58/e158c9ef-b3ca-43f5-9a17-769bf56e8164.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/39/ee/39eefc82-2ba7-40ea-9878-94e992f9651d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/39/ee/39eefc82-2ba7-40ea-9878-94e992f9651d.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T10:30:32.291967+00:00",
-      "details": {
-        "description": "That’s no bubblegum army, that’s an endless horde of menacingly pink aliens taking over our planet! Enough sweet talk, grab your gear, we need you and your squad to defeat the pink pests!\nYOUR MISSION:\nLiberate Earth from the Alien horde!",
-        "game_features": [
-          "Squad Up:",
-          "While you can play From Space solo (if you’re brave enough) you’d be wise to invite some friends to help you out. With online play you can create a four-person squad. Look, there’s a lot of those pink pests out there so the more people, the better. Oh, and with a squad, you’ll have some witnesses to tell everyone how awesome you are. It’s basically a win-win scenario.",
-          "Shoot, Explore, Stab:",
-          "With a variety of weapons (Rocket Launchers, Miniguns, Flamethrowers and more!) there’s no excuse not to annihilate those aliens! Build your ideal spec and use tactical items such as grenades and mines, or slow down the hordes with barbed wire and machinegun turrets. Remember to scavenge the world for loot, you’ll need it!",
-          "You’re Special, So Pick Your Specialist Skill:",
-          "No matter what type of player you are, there’s a wide range of characters in From Space’s roster, each with their own unique ability and weapons. Find the perfect balance with your friends as you build the ultimate super squad.",
-          "Don’t Just Stand There, Level Up:",
-          "As you level-up, you’ll be able to attach special perks to your character, helping you to master the art of destroying aliens. You’ll need to find ways to combat increasingly more powerful aliens, and perks will help you accomplish all of your pink alien squashing dreams. Need to rethink your strategy? No problem! We like innovators! Perks can be swapped around, even between your squad!",
-          "The Apocalypse Has Never Been So Much Fun:",
-          "We’re going to level with you… an alien threat is terrifying, terrifyingly fun! Look, the world is already pretty beat up as it is. Who’s going to notice if you cause a little bit more destruction while saving the day? People have insurance it’s fine…",
-          "Included DLCs:",
-          "Festive Specialist Outfits",
-          "Grenadier and Scientist Specialists",
-          "The Scouts Specialists",
-          "Mission Pack: Molten Iron",
-          "Mission Pack: Concrete Jungle"
-        ],
-        "repack_features": [
-          "Based on scene From.Space-RUNE ISO release: rune-from.space.iso (3,196,518,400 bytes)",
-          "Game version: v1.1.2160 (Horde Mode Update); 5 DLCs and all bonuses are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus content (OST n MP3, ArtBook, Wallpapers, Avatars, Steamdeck Videos)",
-          "Significantly smaller archive size (compressed from 3 to 1.2/1.5 GB)",
-          "Installation takes 1-4 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 3.3 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

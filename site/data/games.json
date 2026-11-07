@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T18:52:06.265406+00:00",
+  "generated_at": "2026-11-07T18:52:48.338673+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
@@ -18,7 +18,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b3/05/b305defb-b29d-4a47-9e6d-5adabab65729.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b3/05/b305defb-b29d-4a47-9e6d-5adabab65729.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/e4/4ee481f1-d34b-4740-afbd-230f1385997c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/e4/4ee481f1-d34b-4740-afbd-230f1385997c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0e/3c/0e3cd99a-a4f2-467d-8d0c-ccec0ad73e05.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0e/3c/0e3cd99a-a4f2-467d-8d0c-ccec0ad73e05.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/f1/8ef1d4c5-6786-42d3-9843-33993cc28cc8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/f1/8ef1d4c5-6786-42d3-9843-33993cc28cc8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/03/78/0378f26d-b060-41bb-b56e-b2544403c7b0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/03/78/0378f26d-b060-41bb-b56e-b2544403c7b0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/eb/58ebc4e4-23c5-41f1-8b72-416660e214fd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/eb/58ebc4e4-23c5-41f1-8b72-416660e214fd.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-07T18:52:48.337064+00:00",
+      "details": {
+        "description": "Step back into Andy’s room with Woody, Buzz Lightyear, and more classic characters in Toy Story: Retro Roundup! This five-game collection features console and handheld versions of four early Toy Story titles, as well as A Bug’s Life. All the games have been upgraded with new features, quality-of-life improvements, and an overflowing toy chest of behind-the-scenes content. Revisit the ‘90s and early 2000s hits you loved and share these titles with a new generation of Toy Story fans.\nPlay Toy Story (1995), Toy Story 2: Buzz Lightyear to the Rescue! (1999), Toy Story 2 (1999), Buzz Lightyear of Star Command (2000), Toy Story Racer (2001) and A Bug’s Life (1998). Includes 11 total versions of the games across console and handheld. The games have been enhanced with quality-of-life improvements, including Rewind, Rex’s Cheat Codes, and more. Use Rewind to retry mistakes when you miss a jump across Andy’s shelves or take too many hits from the angry, wind-up robot. Unlock game-specific enhancements like unlimited lives or invincibility with Rex’s Cheat Codes.\nStep inside Digital Eclipse’s behind-the-scenes experience, featuring exclusive interviews withJason Katz – Head of Story, Pixar, Jim Hanks – Voice Actor, Luigi Priore – VP and GM, Disney & Pixar Games, and Jon Burton – Founder, TT Games, who helped bring these adventures to life. Explore a richly-detailed virtual museum filled with rare design documents, vintage development photos, and archival content. Listen to your favorite songs from the games in the Music Player, where we’ve rounded up the soundtracks from every game in the collection.\nFEATURES\nPlay five classic games, including four Toy Story games and A Bug’s Life. Includes 11 total versions of the games across console and handheld.\nEnhancements and quality-of-life improvements make the games easier to learn and understand for gamers of all ages.\nUse Rewind to fix your mistakes. Messed up a jump? Took too many hits? Simply hold a button and scrub back to before you made that mistake and try again.\nIncludes a behind-the-scenes experience featuring new interviews with Jason Katz – Head of Story, Pixar, Jim Hanks – Voice Actor, Luigi Priore – VP and GM, Disney & Pixar Games, and Jon Burton – Founder, TT Games.\nExplore the virtual museum filled with rare design documents, vintage development photos, and archival content.\nUse Rex’s Cheat Codes! Get unlimited lives, invincibility, or unlock all the characters or levels.\nLearn the game with enhanced How to Play instructions, then hone your skills in Practice Mode.\nListen to the Music Player, which includes the complete soundtrack for every game in the collection.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Disney-Pixar.Toy.Story.Retro.Roundup-RUNE ISO release: rune-disney.pixar.toy.story.retro.roundup.iso (14,258,208,768 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with museum files!)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download featue: you may skip downloading and installing of Museum files (videos, covers, OST, etc.)",
+          "Significantly smaller archive size (compressed from 13.3 to 2.4/6.1 GB)",
+          "Installation takes 3-20 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 13.3 GB (up to 22 GB during installation)",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-07T18:52:48.337064+00:00"
     },
     {
       "id": "arma-reforger",

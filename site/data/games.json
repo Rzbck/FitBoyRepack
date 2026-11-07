@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T01:13:43.643066+00:00",
+  "generated_at": "2026-11-07T01:14:38.587775+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-06T11:27:37.597041+00:00",
   "games": [
@@ -16,7 +16,58 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "7.5 GB"
+      "repack_size": "7.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/c7/79/c779f0d4-a3e5-4fa3-8488-088aa0e3d1af.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/79/c779f0d4-a3e5-4fa3-8488-088aa0e3d1af.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/32/d2/32d2afca-8119-4627-84f4-71fa31971b97.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/32/d2/32d2afca-8119-4627-84f4-71fa31971b97.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/18/ff/18ff7e28-4e32-412c-bff1-710c96c5905b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/ff/18ff7e28-4e32-412c-bff1-710c96c5905b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/19/02/1902c933-f932-4c90-adec-81a5c8bda540.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/19/02/1902c933-f932-4c90-adec-81a5c8bda540.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/00/2500cb86-553a-4875-a088-f8df4c0d7439.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/00/2500cb86-553a-4875-a088-f8df4c0d7439.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d4/96/d49630a5-69f3-4b65-8e80-0a68d43b06b4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d4/96/d49630a5-69f3-4b65-8e80-0a68d43b06b4.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-07T01:14:38.586354+00:00",
+      "details": {
+        "description": "Booting up Assistant…\nLoading Eliot…\nO-oh! Hi there!\nHeheh, it’s been a while since I’ve met another kid! I’m Eliot, your Giggleland guide. Welcome to the place where smiles are forever!\nThis is Tolie. She doesn’t talk, but she knows how to listen, and that makes her the best kind of friend. Her dad is waiting for her somewhere in the park, so first we’re going to see Farmer Terry. He loves helping children find their way home!\nThere are only a few rules. Stay on the path. Stay where I can see you. And if a door says Staff Only, don’t go in there. It’s against the rules. You’ll get in trouble!\nAttention, guests. If you have seen a little girl wearing a white dress and a pink hat, please notify the nearest staff member immediately.\nExplore all of Giggleland across eight chapters, from Farmer Terry’s farm to the tunnels beneath the park.\nAbout six hours of first-person psychological horror, in one complete game.\nUncover a story of family, belonging and the true cost of endless happiness, told by a fully voice-acted cast.\nGiggleland does things no other horror game has done, and some of them happen outside the game. The full game is safe to stream\n*\n.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Giggleland-TENOKE ISO release: tenoke-giggleland.iso (27,005,378,560 bytes)",
+          "Game version: v1.0.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 25.2 to 7.5 GB)",
+          "Installation takes 2-7 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 25.2 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-07T01:14:38.586354+00:00"
     },
     {
       "id": "every-day-we-fight",

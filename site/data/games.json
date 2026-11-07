@@ -1,9 +1,79 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T01:14:38.587775+00:00",
+  "generated_at": "2026-11-07T02:50:05.692425+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-06T11:27:37.597041+00:00",
   "games": [
+    {
+      "id": "arma-reforger",
+      "title": "Arma Reforger: Deluxe Edition – v1.9.0.37 + 4 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/arma-reforger/",
+      "image_url": "https://i7.imageban.ru/out/2026/06/21/83252d00181569a1c0f11f00ad467460.jpg",
+      "post_date": "2026-11-07T04:30:18+03:00",
+      "genres": [
+        "Action",
+        "Tactical shooter",
+        "Driving",
+        "Vehicular combat",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "14.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/6d/d1/6dd18dc6-ab41-4ac9-9a7a-c42c7ba741d4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6d/d1/6dd18dc6-ab41-4ac9-9a7a-c42c7ba741d4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/4e/b14e15fc-bc43-4f78-af52-80d15d259b89.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/4e/b14e15fc-bc43-4f78-af52-80d15d259b89.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d4/9c/d49c885f-3e43-465f-8ab1-321c222a50a9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d4/9c/d49c885f-3e43-465f-8ab1-321c222a50a9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/53/1b/531b83ae-075a-4216-aa4f-1634997cca11.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/53/1b/531b83ae-075a-4216-aa4f-1634997cca11.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/36/5b/365b9219-f44b-45cf-9e3c-f102c26dd9fe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/36/5b/365b9219-f44b-45cf-9e3c-f102c26dd9fe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c3/db/c3db18cf-86a1-4bc2-b6aa-a1f0f1a72394.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c3/db/c3db18cf-86a1-4bc2-b6aa-a1f0f1a72394.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Arma Reforger deploys you into an authentic Cold War military sandbox with highly realistic weapons and gameplay systems, expansive terrains, and extensive customization options. Battle it out against other players or AI in a plethora of multiplayer, co-op, and single-player game modes, and tailor nearly every aspect of the game with mods from the vast in-game Workshop.\nArma Reforger is the latest installment in the legendary Arma franchise, offering a versatile, creative, and fully-moddable platform that redefines the mil-sim genre.\nExperience enthralling multiplayer combat in matches that can last anywhere from an hour to days in the Conflict game mode or create your own missions and curate them in real time in Game Master. Team up with friends in Combat Ops to engage in special operations, or ramp up the adrenaline with the fast-paced, tactical gameplay of Capture & Hold. For the lone wolves out there, the new single-player campaign Operation Omega features 5 replayable missions, and the additional scenarios Elimination and Air Support offer hours of intense and immersive gameplay.\nFrom the distinct crack of an M16 to the rumble of a BTR-70, every element of Arma Reforger is designed for authenticity. Engage in realistic firefights with detailed ballistics, navigate using only a map and compass, and master a roster of meticulously recreated Cold War-era weapons and vehicles.\nDeploy to three vast and intricately detailed islands for thrilling and immersive open-world military operations. Featuring stunning landscapes with lush forests, idyllic towns, and austere mountains, these islands provide the perfect backdrop for the wide range of PvP, co-op, and single-player game modes available in Arma Reforger.\nThe war expands with the addition of Kolguyev, the iconic island first introduced in Arma: Cold War Assault. Navigate through the desolate ruins of former mining operations, infiltrate secret military installations, and immerse yourself in Kolguyev’s unique atmosphere in the brand-new single-player campaign set in 1989.\nInstantly download and install thousands of community-made mods from the in-game Workshop. With an endless variety of time periods and genres, Arma Reforger mods open up a vast universe of weapons, vehicles, assets, terrains, game mechanics, and even completely new game modes to customize your experience to suit your preferred play style.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Arma.Reforger.v1.7.0.49-TENOKE ISO release: tenoke-arma.reforger.v1.7.0.49.iso (34,471,874,560 bytes)",
+          "Game version: v1.7.0.49; 3 Bonus DLCs (Refrogger Supporter Pack, Modder Supporter Pack, Arma Reforger Soundtrack) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format nullified, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus DLCs (OST in MP3 format, documentary, etc.)",
+          "Significantly smaller archive size (compressed from 32.1 to 13.9/18.5 GB)",
+          "Installation takes 2-12 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 32.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "giggleland",
       "title": "Giggleland – v1.0.0",
@@ -44828,76 +44898,6 @@
           "Installation takes 2-8 minutes (depending on your system and selected components)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 21.4 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "arma-reforger",
-      "title": "Arma Reforger: Deluxe Edition – v1.7.0.49 + 3 Bonus DLCs",
-      "source_url": "https://fitgirl-repacks.site/arma-reforger/",
-      "image_url": "https://i7.imageban.ru/out/2026/06/21/83252d00181569a1c0f11f00ad467460.jpg",
-      "post_date": "2026-06-21T21:32:18+03:00",
-      "genres": [
-        "Action",
-        "Tactical shooter",
-        "Driving",
-        "Vehicular combat",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "13.9 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/6d/d1/6dd18dc6-ab41-4ac9-9a7a-c42c7ba741d4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6d/d1/6dd18dc6-ab41-4ac9-9a7a-c42c7ba741d4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b1/4e/b14e15fc-bc43-4f78-af52-80d15d259b89.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b1/4e/b14e15fc-bc43-4f78-af52-80d15d259b89.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/d4/9c/d49c885f-3e43-465f-8ab1-321c222a50a9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d4/9c/d49c885f-3e43-465f-8ab1-321c222a50a9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/53/1b/531b83ae-075a-4216-aa4f-1634997cca11.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/53/1b/531b83ae-075a-4216-aa4f-1634997cca11.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/36/5b/365b9219-f44b-45cf-9e3c-f102c26dd9fe.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/36/5b/365b9219-f44b-45cf-9e3c-f102c26dd9fe.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c3/db/c3db18cf-86a1-4bc2-b6aa-a1f0f1a72394.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c3/db/c3db18cf-86a1-4bc2-b6aa-a1f0f1a72394.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Arma Reforger deploys you into an authentic Cold War military sandbox with highly realistic weapons and gameplay systems, expansive terrains, and extensive customization options. Battle it out against other players or AI in a plethora of multiplayer, co-op, and single-player game modes, and tailor nearly every aspect of the game with mods from the vast in-game Workshop.\nArma Reforger is the latest installment in the legendary Arma franchise, offering a versatile, creative, and fully-moddable platform that redefines the mil-sim genre.\nExperience enthralling multiplayer combat in matches that can last anywhere from an hour to days in the Conflict game mode or create your own missions and curate them in real time in Game Master. Team up with friends in Combat Ops to engage in special operations, or ramp up the adrenaline with the fast-paced, tactical gameplay of Capture & Hold. For the lone wolves out there, the new single-player campaign Operation Omega features 5 replayable missions, and the additional scenarios Elimination and Air Support offer hours of intense and immersive gameplay.\nFrom the distinct crack of an M16 to the rumble of a BTR-70, every element of Arma Reforger is designed for authenticity. Engage in realistic firefights with detailed ballistics, navigate using only a map and compass, and master a roster of meticulously recreated Cold War-era weapons and vehicles.\nDeploy to three vast and intricately detailed islands for thrilling and immersive open-world military operations. Featuring stunning landscapes with lush forests, idyllic towns, and austere mountains, these islands provide the perfect backdrop for the wide range of PvP, co-op, and single-player game modes available in Arma Reforger.\nThe war expands with the addition of Kolguyev, the iconic island first introduced in Arma: Cold War Assault. Navigate through the desolate ruins of former mining operations, infiltrate secret military installations, and immerse yourself in Kolguyev’s unique atmosphere in the brand-new single-player campaign set in 1989.\nInstantly download and install thousands of community-made mods from the in-game Workshop. With an endless variety of time periods and genres, Arma Reforger mods open up a vast universe of weapons, vehicles, assets, terrains, game mechanics, and even completely new game modes to customize your experience to suit your preferred play style.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Arma.Reforger.v1.7.0.49-TENOKE ISO release: tenoke-arma.reforger.v1.7.0.49.iso (34,471,874,560 bytes)",
-          "Game version: v1.7.0.49; 3 Bonus DLCs (Refrogger Supporter Pack, Modder Supporter Pack, Arma Reforger Soundtrack) are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in FLAC format nullified, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus DLCs (OST in MP3 format, documentary, etc.)",
-          "Significantly smaller archive size (compressed from 32.1 to 13.9/18.5 GB)",
-          "Installation takes 2-12 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 32.1 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

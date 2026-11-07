@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T20:55:14.140765+00:00",
+  "generated_at": "2026-11-07T22:33:32.701819+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
+    {
+      "id": "wing-commander-ii-vengeance-of-the-kilrathi-35th-anniversary-edition",
+      "title": "Wing Commander II: Vengeance of the Kilrathi – 35th Anniversary Edition + Bonus Content",
+      "source_url": "https://fitgirl-repacks.site/wing-commander-ii-vengeance-of-the-kilrathi-35th-anniversary-edition/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/07/1e5f9078164cacdf29f8ff466c86b2b2.jpg",
+      "post_date": "2026-11-08T00:27:25+03:00",
+      "genres": [
+        "Simulation",
+        "2D",
+        "Spacecraft"
+      ],
+      "repack_size": "498 MB"
+    },
     {
       "id": "wing-commander-35th-anniversary-edition",
       "title": "Wing Commander: 35th Anniversary Edition + Bonus Content",

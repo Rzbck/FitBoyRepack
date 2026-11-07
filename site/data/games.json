@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T22:33:32.701819+00:00",
+  "generated_at": "2026-11-07T22:34:22.201323+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
@@ -15,7 +15,59 @@
         "2D",
         "Spacecraft"
       ],
-      "repack_size": "498 MB"
+      "repack_size": "498 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/38/81/38819fc3-3a46-44d9-8221-91af47799adc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/38/81/38819fc3-3a46-44d9-8221-91af47799adc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/05/aa0515f3-4bd4-4d07-b93f-fc1c1d31f4a6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/05/aa0515f3-4bd4-4d07-b93f-fc1c1d31f4a6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/38/c6/38c683d1-726e-4dc3-92ef-22c8d01fea0f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/38/c6/38c683d1-726e-4dc3-92ef-22c8d01fea0f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/01/4f/014fb89a-d84c-4fc2-a12f-44a1b2c8e75f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/01/4f/014fb89a-d84c-4fc2-a12f-44a1b2c8e75f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/df/d3/dfd3e44b-550d-4916-8482-6b85dbf03420.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/df/d3/dfd3e44b-550d-4916-8482-6b85dbf03420.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/11/fe/11feacc8-f85d-47a2-b02d-11562c744b23.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/11/fe/11feacc8-f85d-47a2-b02d-11562c744b23.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-07T22:34:22.200114+00:00",
+      "details": {
+        "description": "Wing Commander II continued the evolution of the franchise and pushed the boundaries for storytelling in games upon its release in 1991.\nNow celebrated in this special 35th Anniversary Edition, the game has been restored in collaboration with the dedicated Wing Commander community to deliver the most dynamic version ever released.\n35th Anniversary Edition key improvements:\nWCAT Integration\n– For the DOS version, bundled with the phenomenal WCAT patch built by the Wing Commander community, restoring the gameplay / audio feel of a 386 PC, improved controls, difficulty choice, and more.\nThe Kilrathi Saga\n– The coveted Kilrathi Saga version of Wing Commander II comes integrated directly with this installation, for the first time ever available as a digital release. The Kilrathi Saga provides digital music and sound, a re-orchestrated soundtrack, and optional drop-away cockpit support\nWcdx Integration\n– For the Kilrathi Saga version, bundled with the incredible Wcdx patch built by the Wing Commander community, offering features like gameplay / cinematic speed fixes, improved controller support, windowed mode, optional cheats, and more\nBonus extras including manuals, reference cards, ship blueprints, and more\nThis 35th Anniversary Edition is the ultimate way to enjoy one of the most important franchises in gaming history.\nOriginal Game Description:\nTen years ago, you were the Hero of Vega Sector, idol of millions – the starfighter pilot who single-handedly turned the tide of a major Kilrathi invasion.\nThen something went wrong.\nYou were disgraced, court-martialed and transferred to a backwater outpost. For years, your lightning-quick reflexes and instinctive dogfighting tactics went to waste while the Kilrathi killed your closest friends on the front lines.\nBut Mankind still needs a hero, now more than ever before. And you’re still the best pilot in the Galaxy. You’ve got just one chance to prove yourself, just one chance to keep the Terran homeworlds from falling to the massed armada of the Empire of Kilrah.\nThink you can handle it, flyboy?\nWing Commander II is the sequel to the top action-simulation hit Wing Commander. But Wing Commander II is more than a sequel – it advances the state of the art in computer gaming even further, with new features and new challenges:\nA gripping story line! All the action and drama you expect from a major motion picture but you’re the star!\nState-of-the-art graphics! The latest advances in 3-D rendering technology give you the most stunning, photo-realistic images you have ever seen on your computer.\nIntriguing tactics! Fly five different Terran fighters into battle, armed with guns, missiles, torpedoes, chaff pods, tailguns, turrets and tractor beams. But watch out – the Kilrathi have some hot hardware too!\nDigitized speech! Hear radio messages from your wingmen and foes.\nDynamic Intelligence! Every dogfight is an exciting challenge, whether you’re a novice or an ace of aces, because your opponents match your skill level. The better you fly, the better they fly!\nA thrilling musical score! The soundtrack senses the action on-screen and alters the pacing, tempo and mood of the music to match.\nAn elaborate campaign system!\nThe fate of Humanity is in your hands!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Wing_Commander_II_Vengeance_of_the_Kilrathi_35th_Anniversary_Edition-Razor1911 ISO release: rzr-wingcommander235th.iso (1,047,134,208 bytes)",
+          "Bonus Content is included by default",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 999 to 498 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 859 MB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-07T22:34:22.200114+00:00"
     },
     {
       "id": "wing-commander-35th-anniversary-edition",

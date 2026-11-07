@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T20:54:35.668929+00:00",
+  "generated_at": "2026-11-07T20:55:14.140765+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
@@ -15,7 +15,59 @@
         "2D",
         "Spacecraft"
       ],
-      "repack_size": "842 MB"
+      "repack_size": "842 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/1b/be/1bbe9fc9-8fe7-4510-9432-13730196693d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1b/be/1bbe9fc9-8fe7-4510-9432-13730196693d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e1/62/e1622936-4591-45ec-9ea2-0036aea5b3e3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e1/62/e1622936-4591-45ec-9ea2-0036aea5b3e3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c8/6a/c86abaa8-a66e-4319-814a-c379279b63a6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c8/6a/c86abaa8-a66e-4319-814a-c379279b63a6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/ed/42ed1f49-20c5-4ff3-a13a-5f9ee3296b49.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/ed/42ed1f49-20c5-4ff3-a13a-5f9ee3296b49.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/28/80/28807f7c-2b52-44fc-a065-819937f0cdda.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/28/80/28807f7c-2b52-44fc-a065-819937f0cdda.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/a3/5fa38a79-a040-4348-97b2-363b01bc4055.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/a3/5fa38a79-a040-4348-97b2-363b01bc4055.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-07T20:55:14.139882+00:00",
+      "details": {
+        "description": "Widely regarded as one of the most advanced PC games upon its release in 1990, Wing Commander defined the space combat genre and pushed the boundaries in terms of PC visual and audio quality.\nNow celebrated in this special 35th Anniversary Edition, the game has been restored in collaboration with the dedicated Wing Commander community to deliver the most dynamic version ever released.\n35th Anniversary Edition key improvements:\nThe Kilrathi Saga\n– The coveted Kilrathi Saga version of Wing Commander comes integrated directly with this installation, for the first time ever available as a digital release. The Kilrathi Saga provides digital music and sound, a re-orchestrated soundtrack, and optional drop-away cockpit support\nWcdx Integration\n– For the Kilrathi Saga version, bundled with the incredible Wcdx patch built by the Wing Commander community, offering features like gameplay speed fixes, improved controller support, planetary space backgrounds, optional cheats, windowed mode, and more\nWCAT Integration\n– For the DOS version, bundled with the phenomenal WCAT patch built by the Wing Commander community, restoring the gameplay / audio feel of a 386 PC, improved controls, asteroid adjustments, and more\nBonus extras including manuals, reference cards, ship blueprints, and more\nThis 35th Anniversary Edition is the ultimate way to enjoy one of the most important franchises in gaming history.\nOriginal Game Description:\n“Wingleader One! Wingleader One! Bogies all around! Can’t shake ’em!”\n“Hold on, Hunter, I’m on my way!…”\nYou’re a starfighter pilot, the best of the best, but nothing in your training prepared you for action this hot. Deepspace dogfights against Kilrathi aces are deadly, and the future of humanity is on the line each time you fly!\nWing Commander puts you in the middle of the most intense starship action you’ve ever experienced outside of a movie theater. But in Wing Commander, you’re the star!\nExperience Origin’s amazing new state-of-the-art computer graphics and sound system.\nMarvel at the detailed, ray-traced, bit-mapped images in Origin’s cutting-edge 3-D technology.\nThrill to the dynamic soundtrack that senses the action on-screen and alters the pacing, tempo, and mood of the music to match!\nAdvance in rank while piloting one of four unique Terran spacefighters against a deadly array of enemy ships.\nSee the action from all angles using Wing Commander’s player-controlled camera.\nCount on your wingman, a skilled pilot, thanks to the advanced Wing Commander artificial intelligence system, but don’t get cocky: The enemy flies intelligently, too!\nPlay individual missions for fun or join in an elaborate campaign designed to test your reflexes and strategic skills.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Wing_Commander_35th_Anniversary_Edition-Razor1911 ISO release: rzr-wingcommander135th.iso (1,370,193,920 bytes)",
+          "Bonus Content is included by default",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.3 GB to 842 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.2 GB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-07T20:55:14.139882+00:00"
     },
     {
       "id": "from-space-specialist-edition",

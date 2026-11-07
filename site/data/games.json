@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T10:39:40.511464+00:00",
+  "generated_at": "2026-11-07T18:52:06.265406+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
+    {
+      "id": "disney-pixar-toy-story-retro-roundup",
+      "title": "Disney•Pixar Toy Story: Retro Roundup!",
+      "source_url": "https://fitgirl-repacks.site/disney-pixar-toy-story-retro-roundup/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/07/8b0c1569b28322c00135d3efe6894830.jpg",
+      "post_date": "2026-11-07T20:44:11+03:00",
+      "genres": [
+        "Arcade",
+        "Kids",
+        "Logic",
+        "Puzzle",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "arma-reforger",
       "title": "Arma Reforger: Deluxe Edition – v1.9.0.37 + 4 DLCs/Bonuses",

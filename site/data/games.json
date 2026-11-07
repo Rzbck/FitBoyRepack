@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-06T21:38:05.133589+00:00",
+  "generated_at": "2026-11-07T01:13:43.643066+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-06T11:27:37.597041+00:00",
   "games": [
+    {
+      "id": "giggleland",
+      "title": "Giggleland – v1.0.0",
+      "source_url": "https://fitgirl-repacks.site/giggleland/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/07/54b74b903117868ddb132ba2256f679b.jpg",
+      "post_date": "2026-11-07T02:42:03+03:00",
+      "genres": [
+        "Adventure",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "7.5 GB"
+    },
     {
       "id": "every-day-we-fight",
       "title": "Every Day We Fight – v1.0 (Release)",

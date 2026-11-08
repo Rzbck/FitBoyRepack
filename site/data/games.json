@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-08T23:12:35.088401+00:00",
+  "generated_at": "2026-11-08T23:13:14.328025+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-08T10:45:04.660836+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "Side",
         "2D"
       ],
-      "repack_size": "2 GB"
+      "repack_size": "2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/7a/b6/7ab64c2f-90e8-4832-9eef-5ae976a0fb47.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7a/b6/7ab64c2f-90e8-4832-9eef-5ae976a0fb47.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/af/22/af22b6a3-114f-4f72-a531-fa8c535c8b4e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/af/22/af22b6a3-114f-4f72-a531-fa8c535c8b4e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/15/7b/157bd754-43ce-4f51-bd30-5b23888f8b3e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/15/7b/157bd754-43ce-4f51-bd30-5b23888f8b3e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/22/3722663c-74ed-454c-88d0-12907b85e67c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/22/3722663c-74ed-454c-88d0-12907b85e67c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cf/b2/cfb25ba0-951e-4285-a83c-4e70e128f32b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cf/b2/cfb25ba0-951e-4285-a83c-4e70e128f32b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7b/ef/7bef3333-bfdc-4ca1-ae42-85424a022b96.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7b/ef/7bef3333-bfdc-4ca1-ae42-85424a022b96.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-08T23:13:14.327205+00:00",
+      "details": {
+        "description": "EXPLORE BLUEY’S WORLD LIKE NEVER BEFORE!\nTime to play! Explore, have fun and capture your favorite moments with Bluey and Bingo in this photo-powered game. Look out for familiar spots from the show, create your own scrapbook and turn in-game memories into playful moments for real life.\nSAY CHEESE!\nBluey and Bingo have found Dad’s old camera (back from when he was cool). Take it with you around the world of Bluey and snap photos of the games they play and wildlife they discover. Each snapshot is saved to Bluey’s scrapbook, where players can keep their favorite moments.\nSHARE THE FUN!\nShare the adventure side-by-side! A second player can join in to explore and strike a pose while the main player leads the adventure behind the camera. You can even play with toys together along the way!\nBluey’s Happy Snaps has no in-game purchases and no online play.\nPLAY GAMES\nJoin everyone’s favorite Blue Heeler in Bluey’s Happy Snaps, a playful interactive adventure inspired by the hit TV series. Explore familiar locations, play with loads of toys, or chase cheeky bin chickens, and enjoy fun activities with Bluey, Bingo, and friends.\nPLAY FOR REAL LIFE!\nThroughout the game there are playful tips to keep the fun going into the real world. From birdwatching in your own backyard to setting up play moments with your favourite toys. Kids can explore, pretend, and discover in the game, then keep the fun going “for real life.\nCAPTURE, COLLECT & PLAY!\nUsing your camera, unlock stickers and decorations to personalize your scrapbook. Color-in, arrange snapshots, and build a one-of-a-kind keepsake filled with Bluey fun. As they progress through locations, players also encounter “For Real Life” activity ideas that spark play both in the game and beyond the screen.\nFully localized voiceover in the following languages: Spanish (Castilian), Spanish (LATAM), French, Italian, German, Japanese, Portuguese (Brazilian), and Mandarin.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Blueys.Happy.Snaps-RUNE ISO release: rune-blueys.happy.snaps.iso (2,818,277,376 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 2.6 to 2 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-08T23:13:14.327205+00:00"
     },
     {
       "id": "void-breaker",

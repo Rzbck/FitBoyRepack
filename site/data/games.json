@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-08T10:45:04.660836+00:00",
+  "generated_at": "2026-11-08T23:12:35.088401+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-08T10:45:04.660836+00:00",
   "games": [
+    {
+      "id": "blueys-happy-snaps",
+      "title": "Bluey’s Happy Snaps",
+      "source_url": "https://fitgirl-repacks.site/blueys-happy-snaps/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/08/dd9362f070496a6e6e3858d0ae5b31ed.jpg",
+      "post_date": "2026-11-08T23:30:09+03:00",
+      "genres": [
+        "Arcade",
+        "Kids",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "2 GB"
+    },
     {
       "id": "void-breaker",
       "title": "VOID/BREAKER – v1.0.6_4488",

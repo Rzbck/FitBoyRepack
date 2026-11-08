@@ -1,9 +1,37 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-07T22:34:22.201323+00:00",
+  "generated_at": "2026-11-08T00:38:48.788821+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
+    {
+      "id": "void-breaker",
+      "title": "VOID/BREAKER – v1.0.6_4488",
+      "source_url": "https://fitgirl-repacks.site/void-breaker/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/08/cd160ca95be29be23d6c30954847946b.jpg",
+      "post_date": "2026-11-08T03:36:22+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "9.9 GB"
+    },
+    {
+      "id": "lost-host",
+      "title": "Lost Host – v1.0.5",
+      "source_url": "https://fitgirl-repacks.site/lost-host/",
+      "image_url": "https://i8.imageban.ru/out/2026/11/08/3313d5cc5c2a6a78724dadeb503cc159.jpg",
+      "post_date": "2026-11-08T02:12:51+03:00",
+      "genres": [
+        "Arcade",
+        "Adventure",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "5.6 GB"
+    },
     {
       "id": "wing-commander-ii-vengeance-of-the-kilrathi-35th-anniversary-edition",
       "title": "Wing Commander II: Vengeance of the Kilrathi – 35th Anniversary Edition + Bonus Content",

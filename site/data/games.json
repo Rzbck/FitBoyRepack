@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-08T00:38:48.788821+00:00",
+  "generated_at": "2026-11-08T00:39:33.386293+00:00",
   "source_pages": 819,
   "last_full_scan_at": "2026-11-07T10:39:40.511464+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "9.9 GB"
+      "repack_size": "9.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/87/e7/87e7aafc-3d27-43b0-bceb-42314173cfa8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/87/e7/87e7aafc-3d27-43b0-bceb-42314173cfa8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/da/5a/da5a1b11-d527-49d7-b7c0-553049b0c309.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/da/5a/da5a1b11-d527-49d7-b7c0-553049b0c309.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/5a/c75a6aac-13de-4b49-99cc-7a294abb2238.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/5a/c75a6aac-13de-4b49-99cc-7a294abb2238.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8c/fc/8cfc83fc-6409-4f8f-b1d8-b848f2c1a3b9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8c/fc/8cfc83fc-6409-4f8f-b1d8-b848f2c1a3b9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/c3/50c3e575-291e-4e9b-9f21-55d37424713b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/c3/50c3e575-291e-4e9b-9f21-55d37424713b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d8/20/d820efce-4410-4c32-bf86-74fd4b5fc26b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d8/20/d820efce-4410-4c32-bf86-74fd4b5fc26b.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-08T00:39:33.384272+00:00",
+      "details": {
+        "description": "You are trapped in an endless sequence by the all-seeing, hostile AI.\nYou are its prisoner – forced to fight, die, and repeat.\nThe machines think you’ll never escape. The system is designed to keep you here.\nLightning-Fast Gunplay & Flawless Movement\nThis isn’t just shooting – it’s pure velocity.\nRun through relentless gunfights with fluid movement designed for high-paced action.\nOutmaneuver your enemies and dominate every firefight with agility and speed.\nInfinite Weapons. Infinite Possibilities\nDiscover limitless weapon combinations using the ultimate gun-modding system.\nStrategically combine mods to create devastating loadouts.\nUnlock wild synergies that turn you into an unstoppable force.\nDestruction is your Advantage.\nWhy just shoot your enemies when you can tear down the world around them?\nEnvironmental destruction isn’t just for show – it’s a core gameplay mechanic.\nBlast through walls, collapse structures, and stagger enemies to survive.\nNew Run. New Choices. New Paths\nEvery run presents decisions. Which fights do you take?\nWhich paths push your limits?\nDo you take the dangerous route for bigger rewards or play it safe?\nThe choice is yours\nA Passion Project by a Solo Developer\nVOID/BREAKER is a solo project from developer Daniel Stubbington, known as Stubby Games.\nFollowing his acclaimed Portal-inspired puzzle game, The Entropy Centre (2022),\nDaniel now pursues his passion for dynamic FPS gameplay and roguelites.",
+        "game_features": [],
+        "repack_features": [
+          "Based on VOID.BREAKER-RUNE ISO release: rune-void.breaker.iso (13,698,957,312 bytes)",
+          "Game version: v1.0.6_4488",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 12.8 GB to 9.9 GB)",
+          "Installation takes 7-20 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 13 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-08T00:39:33.384272+00:00"
     },
     {
       "id": "lost-host",
@@ -30,7 +83,60 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "5.6 GB"
+      "repack_size": "5.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d8/e0/d8e00be3-b9ee-4c9d-a6d7-81c9d3bae599.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d8/e0/d8e00be3-b9ee-4c9d-a6d7-81c9d3bae599.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/38/93/3893a771-c189-4537-aecb-b7739d76a8f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/38/93/3893a771-c189-4537-aecb-b7739d76a8f9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cf/7b/cf7bb410-6a1a-4fc4-98d3-f1dfd98328ed.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cf/7b/cf7bb410-6a1a-4fc4-98d3-f1dfd98328ed.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/06/17/061795dc-2c5b-4430-9db6-ffbeb00f434c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/06/17/061795dc-2c5b-4430-9db6-ffbeb00f434c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a8/c0/a8c064c0-e561-4e14-b7eb-d672c4a42509.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a8/c0/a8c064c0-e561-4e14-b7eb-d672c4a42509.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/45/4e4535af-54ce-4c20-9d69-290b91f1735f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/45/4e4535af-54ce-4c20-9d69-290b91f1735f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-08T00:39:33.384272+00:00",
+      "details": {
+        "description": "Can a toy car become the hero of a video game? One night, its owner vanished without a trace. Left alone in the quiet room, this little car sets out on a spooky and mysterious\njourney – to find the boy…\nAs the player, you’ll take control of the toy car, solving clever puzzles, navigating tricky challenges, and finding ways to escape the boy’s home. But the journey doesn’t stop there – the car ventures beyond the house into the foggy streets, abandoned places, and many other dark and atmospheric locations, all while chasing clues about the boy’s mysterious disappearance.\nThe big world outside is full of dangers for a small toy car. Falling from great heights, fire, and water are just some of the perils you’ll face. And there are enemies too – dogs, robotic vacuums, and creepy toy monsters that stand in your way. But don’t worry! You can push, move, and interact with almost anything, thanks to the game’s dynamic physics system, letting you find creative solutions to every obstacle.\nThis thrilling adventure, packed with spooky yet heartwarming and emotional moments, is a game the whole family can enjoy. Uncover the haunting mystery of the boy’s disappearance – maybe he needs your help more than you think!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Lost.Host-RUNE ISO release: rune-lost.host.iso (9,205,776,384 bytes)",
+          "Game version: v1.0.5",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 8.6 to 5.6 GB)",
+          "Installation takes 2-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-08T00:39:33.384272+00:00"
     },
     {
       "id": "wing-commander-ii-vengeance-of-the-kilrathi-35th-anniversary-edition",

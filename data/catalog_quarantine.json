@@ -1008,6 +1008,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "heart-of-the-machine-repack-updated",
+      "title": "Heart of the Machine Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/heart-of-the-machine-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "hellblade-senuas-sacrifice-repack-updated",
       "title": "Hellblade: Senua’s Sacrifice Repack Updated",
       "source_url": "https://fitgirl-repacks.site/hellblade-senuas-sacrifice-repack-updated/",

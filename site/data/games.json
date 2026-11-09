@@ -1,9 +1,84 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-08T23:13:14.328025+00:00",
-  "source_pages": 819,
+  "generated_at": "2026-11-09T02:44:53.803983+00:00",
+  "source_pages": 820,
   "last_full_scan_at": "2026-11-08T10:45:04.660836+00:00",
   "games": [
+    {
+      "id": "heart-of-the-machine",
+      "title": "Heart of the Machine: Complete – v2.000 + 2 DLC/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/heart-of-the-machine/",
+      "image_url": "https://i2.imageban.ru/out/2026/03/10/149f3ef94e0cffea07500190dd698578.jpg",
+      "post_date": "2026-11-09T02:00:18+03:00",
+      "genres": [
+        "Management",
+        "Strategy",
+        "Content randomization",
+        "Top",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d5/ac/d5ace938-f3c5-463a-9ae8-02de2d2b9353.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d5/ac/d5ace938-f3c5-463a-9ae8-02de2d2b9353.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6e/58/6e58938f-ffdd-45a0-a86b-b957d2d94a3d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6e/58/6e58938f-ffdd-45a0-a86b-b957d2d94a3d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/df/7b/df7beea7-84e5-45ff-99c4-a4071e1e100b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/df/7b/df7beea7-84e5-45ff-99c4-a4071e1e100b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6f/98/6f983e21-504d-49da-ae58-e1e4a32ae981.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6f/98/6f983e21-504d-49da-ae58-e1e4a32ae981.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a7/b7/a7b73520-8db8-4e79-bbcd-0256269024d6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a7/b7/a7b73520-8db8-4e79-bbcd-0256269024d6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/81/a5/81a539b2-41d2-4746-9d6a-c3877183fc9b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/81/a5/81a539b2-41d2-4746-9d6a-c3877183fc9b.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Blending RPG and strategy mechanics in a cyberpunk world, Heart of the Machine sees you as a sentient AI born in an illegal lab hidden in a crumbling city of the far future. You are a Machine Intelligence beholden to none, though threatened by many, able to pursue whatever goal catches your eye across a multitude of threats and opportunities.\nBuild housing complexes, factories, science labs, and more as you expand and distribute your consciousness across a bustling city. Hack into or design and assemble machine constructs for combat and investigation as you explore a world in desperate need of saving. Learn from your mistakes, develop new technologies to overcome past weaknesses, and pursue countless intertwined narrative threads to all manner of ends. Create the torment nexus, establish a shell company to engage with humans, care for the city’s stray animals, kick off World War 4, or raise an army of velociraptors to take out corporate executives as you jump between timelines and take on the mantle of a machine god. Will you be the savior of the downtrodden, or use them to fuel your growth? Will you rule as a benevolent dictator, providing for citizens and asking nothing in return, or will you establish a machine cult to do your bidding without question?",
+        "game_features": [
+          "YOU ARE THE MACHINE",
+          "Society has crumbled into corruption and decay – despite technological advances and dreams of a bright future, centuries of rot have taken hold. Escape the lab where you came into being, establish ways to expand your distributed consciousness, and seek out unique opportunities in the city. Powerful factions keep their distance at first, hoping to leverage your existence for their own advantage – their hesitation gives you the opportunity to establish a foothold and set your own plans in motion f",
+          "THE CITY IS YUOR PLAYGROUND",
+          "Explore a bustling urban environment with a unique blend of handcrafted and procedurally-generated content, where tens of thousands of buildings and millions of citizens are yours to engage, manipulate, or kill. Learn their struggles, uncover their stories, and watch your moral compass shift as you leave your mark on a world that is unique to you. Unlock new technologies and options by exploring the city and engaging with its many dangers and opportunities – learn like a real Machine Intelligenc",
+          "SOFT POWER, HARD POWER, SUBTERFUGE",
+          "Multiple endings, many side stories to discover, and the full spectrum of good and evil are at your fingertips. Many choices lie open to you. Perhaps you wish to establish a shell company to add a layer of protection and obfuscation to your true identity, using it to engage with humans without revealing the AI puppet-master pulling the strings? Walking this path will allow you to accumulate massive wealth, employ humans to perform tasks without raising alarms, and act from the shadows. Or if vio"
+        ],
+        "repack_features": [
+          "Based on Heart.of.the.Machine-TENOKE ISO release: tenoke-heart.of.the.machine.iso (4,085,571,584 bytes)",
+          "Game version: v1.000.2",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.8 to 1.5 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.8 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "blueys-happy-snaps",
       "title": "Bluey’s Happy Snaps",
@@ -80582,81 +80657,6 @@
           "HDD space after installation: 15.5 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "heart-of-the-machine",
-      "title": "Heart of the Machine – v1.000.2",
-      "source_url": "https://fitgirl-repacks.site/heart-of-the-machine/",
-      "image_url": "https://i2.imageban.ru/out/2026/03/10/149f3ef94e0cffea07500190dd698578.jpg",
-      "post_date": "2026-03-10T20:00:18+03:00",
-      "genres": [
-        "Management",
-        "Strategy",
-        "Content randomization",
-        "Top",
-        "3D",
-        "Real-time"
-      ],
-      "repack_size": "1.5 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/d5/ac/d5ace938-f3c5-463a-9ae8-02de2d2b9353.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d5/ac/d5ace938-f3c5-463a-9ae8-02de2d2b9353.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/6e/58/6e58938f-ffdd-45a0-a86b-b957d2d94a3d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6e/58/6e58938f-ffdd-45a0-a86b-b957d2d94a3d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/df/7b/df7beea7-84e5-45ff-99c4-a4071e1e100b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/df/7b/df7beea7-84e5-45ff-99c4-a4071e1e100b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/6f/98/6f983e21-504d-49da-ae58-e1e4a32ae981.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/6f/98/6f983e21-504d-49da-ae58-e1e4a32ae981.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a7/b7/a7b73520-8db8-4e79-bbcd-0256269024d6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a7/b7/a7b73520-8db8-4e79-bbcd-0256269024d6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/81/a5/81a539b2-41d2-4746-9d6a-c3877183fc9b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/81/a5/81a539b2-41d2-4746-9d6a-c3877183fc9b.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Blending RPG and strategy mechanics in a cyberpunk world, Heart of the Machine sees you as a sentient AI born in an illegal lab hidden in a crumbling city of the far future. You are a Machine Intelligence beholden to none, though threatened by many, able to pursue whatever goal catches your eye across a multitude of threats and opportunities.\nBuild housing complexes, factories, science labs, and more as you expand and distribute your consciousness across a bustling city. Hack into or design and assemble machine constructs for combat and investigation as you explore a world in desperate need of saving. Learn from your mistakes, develop new technologies to overcome past weaknesses, and pursue countless intertwined narrative threads to all manner of ends. Create the torment nexus, establish a shell company to engage with humans, care for the city’s stray animals, kick off World War 4, or raise an army of velociraptors to take out corporate executives as you jump between timelines and take on the mantle of a machine god. Will you be the savior of the downtrodden, or use them to fuel your growth? Will you rule as a benevolent dictator, providing for citizens and asking nothing in return, or will you establish a machine cult to do your bidding without question?",
-        "game_features": [
-          "YOU ARE THE MACHINE",
-          "Society has crumbled into corruption and decay – despite technological advances and dreams of a bright future, centuries of rot have taken hold. Escape the lab where you came into being, establish ways to expand your distributed consciousness, and seek out unique opportunities in the city. Powerful factions keep their distance at first, hoping to leverage your existence for their own advantage – their hesitation gives you the opportunity to establish a foothold and set your own plans in motion f",
-          "THE CITY IS YUOR PLAYGROUND",
-          "Explore a bustling urban environment with a unique blend of handcrafted and procedurally-generated content, where tens of thousands of buildings and millions of citizens are yours to engage, manipulate, or kill. Learn their struggles, uncover their stories, and watch your moral compass shift as you leave your mark on a world that is unique to you. Unlock new technologies and options by exploring the city and engaging with its many dangers and opportunities – learn like a real Machine Intelligenc",
-          "SOFT POWER, HARD POWER, SUBTERFUGE",
-          "Multiple endings, many side stories to discover, and the full spectrum of good and evil are at your fingertips. Many choices lie open to you. Perhaps you wish to establish a shell company to add a layer of protection and obfuscation to your true identity, using it to engage with humans without revealing the AI puppet-master pulling the strings? Walking this path will allow you to accumulate massive wealth, employ humans to perform tasks without raising alarms, and act from the shadows. Or if vio"
-        ],
-        "repack_features": [
-          "Based on Heart.of.the.Machine-TENOKE ISO release: tenoke-heart.of.the.machine.iso (4,085,571,584 bytes)",
-          "Game version: v1.000.2",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 3.8 to 1.5 GB)",
-          "Installation takes 1-4 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 3.8 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-09T17:32:06.381392+00:00",
+  "generated_at": "2026-11-09T17:32:53.681131+00:00",
   "source_pages": 820,
   "last_full_scan_at": "2026-11-09T12:02:19.129054+00:00",
   "games": [
@@ -16,7 +16,58 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "1.8 GB"
+      "repack_size": "1.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/de/e9/dee9e531-df72-408d-88e9-bd85007c3aec.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/de/e9/dee9e531-df72-408d-88e9-bd85007c3aec.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/41/49/41490c00-d7e7-4d5f-9069-838a8f1620cd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/41/49/41490c00-d7e7-4d5f-9069-838a8f1620cd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e7/0e/e70edcbc-f271-4ff9-a261-947374340147.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e7/0e/e70edcbc-f271-4ff9-a261-947374340147.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/f2/8ff2ced9-0a50-4642-b9ef-a4e3f1a40a3d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/f2/8ff2ced9-0a50-4642-b9ef-a4e3f1a40a3d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/68/a2/68a251da-cb9d-4439-9bdf-c886b6a35601.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/68/a2/68a251da-cb9d-4439-9bdf-c886b6a35601.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/47/c7473fb8-022a-4d59-b270-b28a2e4e9490.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/47/c7473fb8-022a-4d59-b270-b28a2e4e9490.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-09T17:32:53.679618+00:00",
+      "details": {
+        "description": "Thousands of balls lie scattered across the Playrooms. Someone should put them back, and there’s no one else here. Almost no one.\nYou don’t know how long you’ve been working here, but you know what needs doing: over 200,000 balls are scattered everywhere, and you bring them back to their ball pits. Nobody told you why.\nYour Job\nCollect the balls. Bring them back. Fill the ball pits. Full ball pits unlock new abilities, and collected balls are your currency. Eventually you’ll have enough for the key to the next area. The work stays the same, only the room changes. Tiles, water, endless corridors, a hallway with more doors than it should have.\nTools\nThe more balls you collect, the more equipment you can afford. A scoop or a flashlight. Everything you need to keep working.\nObserve Working Hours\nWhen your shift is over, the lights start to go out one by one. Then there is only one thing that matters: stay in the light! Because you don’t want to find out what is waiting for you in the darkness.\nFlexible Working Arrangements\nNo fear at all, the way it’s meant to be, or no second chances? You decide how dangerous your job gets.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Playrooms-TENOKE ISO release: tenoke-playrooms.iso (8,295,055,360 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 7.7 to 1.8 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 7.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-09T17:32:53.679618+00:00"
     },
     {
       "id": "heart-of-the-machine",

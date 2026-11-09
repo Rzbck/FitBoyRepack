@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-09T12:02:19.129054+00:00",
+  "generated_at": "2026-11-09T17:32:06.381392+00:00",
   "source_pages": 820,
   "last_full_scan_at": "2026-11-09T12:02:19.129054+00:00",
   "games": [
+    {
+      "id": "playrooms",
+      "title": "Playrooms",
+      "source_url": "https://fitgirl-repacks.site/playrooms/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/09/0a7f3d1b4657092bd439c141f7be45fc.jpg",
+      "post_date": "2026-11-09T20:17:00+03:00",
+      "genres": [
+        "Incremental game",
+        "Physics-based",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.8 GB"
+    },
     {
       "id": "heart-of-the-machine",
       "title": "Heart of the Machine: Complete – v2.000 + 2 DLC/Bonuses",

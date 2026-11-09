@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-09T20:59:38.606157+00:00",
+  "generated_at": "2026-11-09T21:00:28.572307+00:00",
   "source_pages": 820,
   "last_full_scan_at": "2026-11-09T12:02:19.129054+00:00",
   "games": [
@@ -84,7 +84,59 @@
         "2D",
         "Real-time"
       ],
-      "repack_size": "949 MB"
+      "repack_size": "949 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/cc/07/cc07086b-bb7b-45be-b736-0bd4d7711c69.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cc/07/cc07086b-bb7b-45be-b736-0bd4d7711c69.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/3a/093aa9c6-bfaf-41ab-914e-00e811d11d6d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/3a/093aa9c6-bfaf-41ab-914e-00e811d11d6d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fd/08/fd083ac3-feef-4484-bd5a-891c6aea74b1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/08/fd083ac3-feef-4484-bd5a-891c6aea74b1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a1/75/a1750f60-9903-4a88-aee9-280222ac40eb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a1/75/a1750f60-9903-4a88-aee9-280222ac40eb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a6/75/a675dd05-f25a-41d8-8f83-edef1161986e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a6/75/a675dd05-f25a-41d8-8f83-edef1161986e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a0/81/a0812501-956d-4ebd-8ad2-9cf9c1b509de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/81/a0812501-956d-4ebd-8ad2-9cf9c1b509de.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-09T21:00:28.570655+00:00",
+      "details": {
+        "description": "Don the robes of a mad cultist who pledges his faith to an eldritch god in exchange for untold powers. Grow your cult base and build monuments to receive unholy blessings and learn new rituals. Embrace your dark side as your cult gradually corrupts the Mortal Realm to plan the arrival of your otherworldly deity.\nCommand your Flock\nTo obey the whispers of the Old Ones, you will need an army. Build it by spreading the gospel and converting the godless to your cause.\nCommand your followers\nthrough battles and various occult bidding in this\npikmin-like mix of real-time strategy, exploration and puzzle solving\n. Don’t let trivial things like empathy stop you from leading them to certain death.\nDraw Blood Rituals\nCast otherworldly spells by drawing blood symbols on the ground. Summon deadly horrors, unleash ghastly projectiles and make toxic frogs rain on your enemies. Your blood is also your ink, but don’t worry too much about it, you are surrounded by followers eager to spill theirs in your place.\nDrawing with blood is also key for interacting with various puzzles, shrines and occult ruins you’ll stumble upon during your unholy journey.\nEnd a Living World\nExplore a visually unique dark-fantasy living world where four distinct factions wage war. Prepare yourself to face inquisitors of The Last Church, Untamed Akka warriors, witches from the Coven and aberrations from the Unseen Depths. Filled with dark humour and merciless realisations, a grim but equally cute world is waiting for you to end it.\nWhat to Expect\nA Pikmin-like mix of RTS, exploration and puzzle solving.\nCommand an army of devout followers eager to die for the cause.\nDraw blood symbols to cast devastating eldritch rituals on the nonbelievers.\nMeaningful bosses that can singlehandedly end your cult.\nEldritch prophecies: Worship’s roguelite progression. Complete challenges during your runs to unlock new gods, more power, skins and more!\nVast open areas to explore and corrupt in a world on the verge of collapse.\nFlavorful hand drawn animations in a distinctive black and white art style with scattered splashes of color.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Worship-RUNE ISO release: rune-worship.iso (1,931,509,760 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.8 GB to 949 MB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-09T21:00:28.570655+00:00"
     },
     {
       "id": "playrooms",

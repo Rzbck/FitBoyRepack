@@ -940,6 +940,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "halo-wars-2-repack-updated",
+      "title": "Halo Wars 2 Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/halo-wars-2-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "happy-new-year",
       "title": "Happy New Year!",
       "source_url": "https://fitgirl-repacks.site/happy-new-year/",

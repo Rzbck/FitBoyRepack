@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-10T23:24:58.739522+00:00",
+  "generated_at": "2026-11-10T23:25:45.226756+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-10T11:41:30.321103+00:00",
   "games": [
@@ -84,7 +84,59 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "17.5 GB"
+      "repack_size": "17.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/4a/e0/4ae07177-83a5-4bd5-a8dc-226af1e47dd9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/e0/4ae07177-83a5-4bd5-a8dc-226af1e47dd9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4f/37/4f373b53-f47a-4c7b-8f8c-9a71e4a02837.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4f/37/4f373b53-f47a-4c7b-8f8c-9a71e4a02837.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/e1/1ee10752-a2b7-47d5-be2b-8cb7367dd4c5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/e1/1ee10752-a2b7-47d5-be2b-8cb7367dd4c5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/36/3a/363a3918-1e69-4a36-9e71-818e983634ad.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/36/3a/363a3918-1e69-4a36-9e71-818e983634ad.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/47/5a470002-9200-4a97-bfa4-9bd408643f42.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/47/5a470002-9200-4a97-bfa4-9bd408643f42.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/10/29/10299632-a10a-4658-88d6-3333f51a4934.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/10/29/10299632-a10a-4658-88d6-3333f51a4934.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-10T23:25:45.224109+00:00",
+      "details": {
+        "description": "HYPNOS\nis a first-person adventure and exploration game, set in a lovecraftian megastructure fever dream.\nEnter the Nameless City at the edge of Dreams. Follow the trail into the shadow of the Holy Mountain. Wander through realms where the laws of the universe break down as they yield to other forces. Walk the Path and embrace your destiny.\nYOUR STORY IS BEING WRITTEN\nIN THE PAGES OF THE MAZE CHRONICLES\n“In the Dreamlands, all paths lead to the holy mountain of Kadath, where the gods dwell.\nShadowed by the mountain is the Nameless City, built on the ruins of those who came before.\nThere, Choron, a vagabond burdened by his past, searches for a faceless boy who haunts his dreams.\nTo find the boy and unravel the threads of his own destiny, Choron must solve the city’s mysteries, face the Monarchs who rule the far reaches of the world and cross the veils that separate ignorance from truth.”\nFIND THE FACELESS BOY\nFIND MATTHEW\nEXPLORATION: wander a unique semi-open world. Find your own way through the Nameless City.\nBRANCHED DIALOGUES, CHOICES & ALTERNATIVE ENDINGS: Meet the strange inhabitants of the Far Reaches. Dreamers, spirits, creatures and bizarre figures — they are all caught in the same web of causality. Your actions influence their destinies.\nLAYERED WORLD: Interact with your environment. Transform the materia of dreams and the City with it. Lift the veils that conceal reality.",
+        "game_features": [],
+        "repack_features": [
+          "Based on HYPNOS-RUNE ISO release: rune-hypnos.iso (25,820,299,264 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 24 to 17.5 GB)",
+          "Installation takes 5-15 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 24.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-10T23:25:45.224109+00:00"
     },
     {
       "id": "wing-commander-3-heart-of-the-tiger-30th-anniversary-edition",
@@ -98,7 +150,58 @@
         "3D",
         "Spacecraft"
       ],
-      "repack_size": "5.8 GB"
+      "repack_size": "5.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ac/97/ac970a09-e6d1-481b-b844-e11fa9f29771.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ac/97/ac970a09-e6d1-481b-b844-e11fa9f29771.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/72/b3/72b31e2d-958f-4f31-9161-95334c21c7b5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/72/b3/72b31e2d-958f-4f31-9161-95334c21c7b5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/00/d6/00d6febc-bf6e-4df9-b891-9aa1cf7d8c59.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/00/d6/00d6febc-bf6e-4df9-b891-9aa1cf7d8c59.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/35/a0/35a0b4b7-d5be-489b-a396-ece95da5abd8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/35/a0/35a0b4b7-d5be-489b-a396-ece95da5abd8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5c/aa/5caa72cc-a633-4b33-b7fa-28dd707bd5c8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5c/aa/5caa72cc-a633-4b33-b7fa-28dd707bd5c8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e2/9e/e29e33db-e786-4fbf-b303-ee95f8d7fe2b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e2/9e/e29e33db-e786-4fbf-b303-ee95f8d7fe2b.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-10T23:25:45.224109+00:00",
+      "details": {
+        "description": "Wing Commander III: Heart of the Tiger is one of the most iconic games of the 1990s. Featuring Mark Hamill, John-Rhys Davies, Malcolm McDowell, and Tom Wilson, Wing Commander III is widely regarded as the game which defined interactive storytelling and cinematic presentation.\nNow celebrated in this special 30th Anniversary Edition, the game has been restored in collaboration with the dedicated Wing Commander community to deliver a must-see experience.\n30th Anniversary Edition key improvements:\nSource Master FMVs\n– In 2022, the Source Master tapes were discovered in the EA physical media vault. These tapes have been digitized and meticulously re-edited frame-by-frame to restore the over 900 FMV scenes, and integrate them back into the game.\nUpscaled FMVs\n– As an optional enhancement, the FMVs have been further elevated to sharper quality using the latest in video upscaling technology for the best Wing Commander III cinematics ever seen.\nThe Kilrathi Saga\n– The coveted Kilrathi Saga version of Wing Commander III comes integrated directly with this installation, for the first time ever available as a digital release. The Kilrathi Saga provides digital music and sound, a re-orchestrated soundtrack, and optional drop-away cockpit support\nEnhancement Patch Integration\n– Bundled with the incredible Wing Commander III Enhancement Patch built by the Wing Commander community, offering features like 60 FPS gameplay, the higher resolution FMVs, advanced levels of detail, improved controller / joystick support, cockpit configuration for widescreen monitors, reintegrated scenes to PC (News Reels, Hobbes, Planets), and more\nBonus extras including cast interviews, manuals, reference cards, player guides, and more\nFull VO and subtitles across English, French, and German\nThis 30th Anniversary Edition is the ultimate way to enjoy one of the most important franchises in gaming history.\nOriginal Game Description:\nThe First True Interactive Movie for your Home PC\nProfessionally scripted and filmed in Hollywood, Origin’s multi-million dollar production combines the entertainment of film-making with the interactivity of computer gaming. The result is a spectacular spaceflight adventure.\nAdrenaline, romance, humor, danger – Wing Commander III has all this and more. This sequel completes the turbulent chronicles of the Terran–Kilrathi war. The final showdown takes place on one of the homeworlds – Earth or Kilrah. But only you can write the ending…\nEnsemble cast features Mark Hamill, John Rhys-Davies, Malcolm McDowell, Tom Wilson, Jason Bernard and Ginger Allen.\nInteract with characters to control plot, conversation path and ending.\nFifty intense missions – each with photorealistic, 3-D space combat.\nFull 16-bit digital soundtrack for cinematics, plus general MIDI support and digitized speech for space combat.\n32-bit computer technology fully utilizes the power of your 486 or Pentium.\nExplore SGI-rendered virtual sets in both VGA and SVGA.\nInvisible cockpit view, 3-D navigation system, stealth technology, instant missions and more.\nPilot five distinct fighters, armed with fully configurable weaponry.\nOver 3 hours of live-action video, plus dozens of hours of gameplay.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Wing_Commander_III_Heart_of_the_Tiger_30th_Anniversary_Edition_MULTi3-DINOByTES ISO release: din-wingcommander330thmulti.iso (41,052,372,992 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content, French/German localizations & original non-upscaled videos",
+          "Significantly smaller archive size (compressed from 38.2 to 5.8~11.5 GB, depending on selected components)",
+          "Installation takes 2-10 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 15.2 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-10T23:25:45.224109+00:00"
     },
     {
       "id": "beyond-these-stars",
@@ -112,7 +215,60 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "3.7 GB"
+      "repack_size": "3.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/42/14/42147ea1-3915-4c64-8e95-3850a1dbb36b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/14/42147ea1-3915-4c64-8e95-3850a1dbb36b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/96/2a/962a2dd2-fc47-4ef3-870e-f33a50aad3d8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/96/2a/962a2dd2-fc47-4ef3-870e-f33a50aad3d8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/21/1d/211de2ae-7462-4525-8769-864dd7d870f7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/21/1d/211de2ae-7462-4525-8769-864dd7d870f7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/66/2f/662f7fbe-cae0-44f2-9d5d-87c5dc97af3f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/2f/662f7fbe-cae0-44f2-9d5d-87c5dc97af3f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/99/aa/99aa1b5b-c11b-459c-bab0-f6bfa484e6df.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/99/aa/99aa1b5b-c11b-459c-bab0-f6bfa484e6df.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f3/b6/f3b6bf11-9f0d-4560-ae4f-54a45f024091.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f3/b6/f3b6bf11-9f0d-4560-ae4f-54a45f024091.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-10T23:25:45.224109+00:00",
+      "details": {
+        "description": "Recovering from uncertain times, your Peeps find themselves on the back of Kewa – a lonely Space Whale journeying across the universe. Building a city on the back of a sentient creature comes with its own set of challenges, but as you build your relationship and travel across the galaxy, you’ll come across great opportunities for exploration and stable expansion. Meet other species, pursue the needs and wants of your Peeps, and seek the truth about their ancestors and the Space Whales alike.\nThe vastness of space is full of mysteries, and as you first arrive at your new home atop the Space Whale Kewa, your Peeps will quickly learn the need to work together – with each other, but also with their new home.\nA Home Among the Stars\n– Build a sprawling city on the back of a universe-traveling Space Whale as your Peeps seek places to live and work. Your new home is largely desolate and inhospitable when you arrive, save for a small patch of green by the water – work around the contours of the land as you plan your city, taking into account the efficiency of your production chains. Will you simply place buildings as the land allows, or will you change its very shape to take advantage of adjacency bonuses and reduced travel times?\nReach Far and Wide\n– Terraform the land around you to better suit your needs. Create a thriving ecosystem by digging canals and adding top soil in preparation for farming. Plant trees to maintain a steady flow of raw materials, and maintain entire forests to help spread the atmosphere and facilitate the expansion of your city.\nA Fragile Equilibrium\n– Prepare to seek out additional resources as you research new technologies and gain access to advanced goods. Your people’s needs will grow, and complex logistics networks and mining infrastructure will follow, but Beyond These Stars is a game about balancing needs and wants – endless production can be as harmful, if not worse, than underproduction. The land on Kewa is fragile, and if not tended to with care, your habitat will shrink. Will you walk a fine line of sustainability by risking Kewa’s ecosystem, or will you seek opportunities to instead gather resources on other worlds to keep Kewa happy?\nUnveil the shared history of the galaxy as you travel from system to system with Kewa – seek answers about your past, learn about the history of the Space Whales, and understand the unique relationships that bind everyone together.\nReliable Outposts\n– Kewa’s environment is plentiful, but not without limits – there will often be a dearth of essential resources and space, and you’ll want to ensure the environment is not over-exploited. Seek out new worlds and space stations to discover other sources of materials and brand new resources – but unless you build a strong relationship with Kewa, you may find it difficult to predict how long you have at an outpost before Kewa decides it’s time to leave a system behind.\nA Travel Companion\n– Kewa longs for connection, and is no mere pet – your home has hopes and dreams for the journey through space. Through understanding Kewa’s needs and desires you can better build a symbiotic relationship. This will give you the opportunity to work in collaboration and allow you to decide on a path together as you journey across the universe.\nFriends Along the Way\n– On your journey, you will cross paths with alien species offering unique opportunities – additional objectives and their subsequent rewards, opportunities for trade, and new technologies with the doors they open.\nBalance your people’s survival, prosperity, and progress with the need to co-exist with Kewa in a journey across space. Beyond These Stars asks you to consider the logistics of your supply chains and production lines within the context of a living, breathing, sentient world.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Beyond.These.Stars-RUNE ISO release: rune-beyond.these.stars.iso (5,434,834,944 bytes)",
+          "Game version: v0.1.934.1",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 5.1 to 3.7 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-10T23:25:45.224109+00:00"
     },
     {
       "id": "knights-of-honor-2-sovereign",

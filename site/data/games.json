@@ -1,9 +1,119 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-10T18:50:44.421555+00:00",
-  "source_pages": 820,
+  "generated_at": "2026-11-10T23:24:58.739522+00:00",
+  "source_pages": 821,
   "last_full_scan_at": "2026-11-10T11:41:30.321103+00:00",
   "games": [
+    {
+      "id": "conan-exiles-enhanced",
+      "title": "Conan Exiles Enhanced: Complete Edition, v3.0.1/v379176 + 17 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/conan-exiles-enhanced/",
+      "image_url": "https://i3.imageban.ru/out/2026/05/07/864782f44a4412f14c8d342512790908.jpg",
+      "post_date": "2026-11-11T02:00:09+03:00",
+      "genres": [
+        "Action",
+        "Open world",
+        "Survival",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d4/d4/d4d42a58-4ddb-4b3d-b7a0-c9ab22804258.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d4/d4/d4d42a58-4ddb-4b3d-b7a0-c9ab22804258.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3c/80/3c803031-37dd-4d92-96df-45f8a648a06d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3c/80/3c803031-37dd-4d92-96df-45f8a648a06d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/29/f2/29f2ce3d-a846-4c80-b224-9a5aae4f6dfe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/29/f2/29f2ce3d-a846-4c80-b224-9a5aae4f6dfe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1b/4a/1b4a7077-7ba7-4218-b27c-d9ad90a65958.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1b/4a/1b4a7077-7ba7-4218-b27c-d9ad90a65958.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/98/50/98508178-6c6c-4fdc-9dbc-8e568495de32.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/98/50/98508178-6c6c-4fdc-9dbc-8e568495de32.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e8/fe/e8fe3494-bccb-413a-b199-3739cff9b5ee.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e8/fe/e8fe3494-bccb-413a-b199-3739cff9b5ee.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Conan Exiles Enhanced is an Open World Survival game set in the mythical lands of Conan the Barbarian. In single-player, co-op, or persistent multiplayer, you must learn to survive the wilds of Hyboria before building your own home or even a shared city. Survive freezing cold temperatures, explore loot-filled dungeons, develop your character from scavenging survivor to mighty barbarian and powerful sorcerer, and fight to dominate your enemies in epic siege wars.\nConan Exiles Enhanced includes a free Unreal Engine 5 upgrade that offers enhanced visuals, improved performance, and a more integrated world.\nAfter Conan himself saves your life by cutting you down from the corpse tree, you must quickly learn to survive. Weather scouring sandstorms, shield yourself from intense temperatures and hunt animals for food and resources. Explore a vast and seamless world, from the burning desert in the south to the snow-capped mountains of the north.\nForge the legacy of your clan as you fight to reclaim and dominate the Exiled Lands. Use the powerful building system to create anything from a small home to entire cities piece by piece. Wage war using swords, sorcery, bows, and siege weapons, even taking control of giant avatars of the gods to crush the homes of your enemies in epic battles.\nConan Exiles Enhanced brings the entire game into Unreal Engine 5 with significantly improved visuals across environments, characters, lighting, and effects. It unifies eight years of content into a single upgraded experience, connects The Exiled Lands with the Isle of Siptah, boosts performance to target 60+ FPS on most PCs, improves Steam Deck play, adds numerous quality‑of‑life upgrades, and introduces a redesigned UI.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Conan.Exiles.Enhanced-RUNE ISO release: rune-conan.exiles.enhanced.iso (55,205,855,232 bytes)",
+          "Game version is: v361894; all released DLCs and bonuses are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content (OST, Wallpapers, ArtBook)",
+          "Significantly smaller archive size (compressed from 51.4 to 36.7/37 GB)",
+          "Installation takes 18-55 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 58.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
+    {
+      "id": "hypnos",
+      "title": "HYPNOS",
+      "source_url": "https://fitgirl-repacks.site/hypnos/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/11/53f20e45b448f4f68ecbb7a08e3fd2cd.jpg",
+      "post_date": "2026-11-11T01:03:42+03:00",
+      "genres": [
+        "Exploration",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "17.5 GB"
+    },
+    {
+      "id": "wing-commander-3-heart-of-the-tiger-30th-anniversary-edition",
+      "title": "Wing Commander III: Heart of the Tiger – 30th Anniversary Edition + Bonus Content",
+      "source_url": "https://fitgirl-repacks.site/wing-commander-3-heart-of-the-tiger-30th-anniversary-edition/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/10/bb3ceb7fbdd2559925988d479b6b837e.jpg",
+      "post_date": "2026-11-10T23:00:12+03:00",
+      "genres": [
+        "Interactive movie",
+        "Simulation",
+        "3D",
+        "Spacecraft"
+      ],
+      "repack_size": "5.8 GB"
+    },
+    {
+      "id": "beyond-these-stars",
+      "title": "Beyond These Stars – v0.1.934.1",
+      "source_url": "https://fitgirl-repacks.site/beyond-these-stars/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/10/098d3c15069dd69014b45b4138df1986.jpg",
+      "post_date": "2026-11-10T22:16:39+03:00",
+      "genres": [
+        "Managerial",
+        "Strategy",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "3.7 GB"
+    },
     {
       "id": "knights-of-honor-2-sovereign",
       "title": "Knights of Honor II: Sovereign – v1.8.0/Build 31804 + Bonus OST",
@@ -65217,74 +65327,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 8.4 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "conan-exiles-enhanced",
-      "title": "Conan Exiles Enhanced: Complete Edition, v361894 + All DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/conan-exiles-enhanced/",
-      "image_url": "https://i3.imageban.ru/out/2026/05/07/864782f44a4412f14c8d342512790908.jpg",
-      "post_date": "2026-05-08T00:34:09+03:00",
-      "genres": [
-        "Action",
-        "Open world",
-        "Survival",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/d4/d4/d4d42a58-4ddb-4b3d-b7a0-c9ab22804258.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d4/d4/d4d42a58-4ddb-4b3d-b7a0-c9ab22804258.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3c/80/3c803031-37dd-4d92-96df-45f8a648a06d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3c/80/3c803031-37dd-4d92-96df-45f8a648a06d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/29/f2/29f2ce3d-a846-4c80-b224-9a5aae4f6dfe.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/29/f2/29f2ce3d-a846-4c80-b224-9a5aae4f6dfe.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1b/4a/1b4a7077-7ba7-4218-b27c-d9ad90a65958.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1b/4a/1b4a7077-7ba7-4218-b27c-d9ad90a65958.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/98/50/98508178-6c6c-4fdc-9dbc-8e568495de32.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/98/50/98508178-6c6c-4fdc-9dbc-8e568495de32.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e8/fe/e8fe3494-bccb-413a-b199-3739cff9b5ee.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e8/fe/e8fe3494-bccb-413a-b199-3739cff9b5ee.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Conan Exiles Enhanced is an Open World Survival game set in the mythical lands of Conan the Barbarian. In single-player, co-op, or persistent multiplayer, you must learn to survive the wilds of Hyboria before building your own home or even a shared city. Survive freezing cold temperatures, explore loot-filled dungeons, develop your character from scavenging survivor to mighty barbarian and powerful sorcerer, and fight to dominate your enemies in epic siege wars.\nConan Exiles Enhanced includes a free Unreal Engine 5 upgrade that offers enhanced visuals, improved performance, and a more integrated world.\nAfter Conan himself saves your life by cutting you down from the corpse tree, you must quickly learn to survive. Weather scouring sandstorms, shield yourself from intense temperatures and hunt animals for food and resources. Explore a vast and seamless world, from the burning desert in the south to the snow-capped mountains of the north.\nForge the legacy of your clan as you fight to reclaim and dominate the Exiled Lands. Use the powerful building system to create anything from a small home to entire cities piece by piece. Wage war using swords, sorcery, bows, and siege weapons, even taking control of giant avatars of the gods to crush the homes of your enemies in epic battles.\nConan Exiles Enhanced brings the entire game into Unreal Engine 5 with significantly improved visuals across environments, characters, lighting, and effects. It unifies eight years of content into a single upgraded experience, connects The Exiled Lands with the Isle of Siptah, boosts performance to target 60+ FPS on most PCs, improves Steam Deck play, adds numerous quality‑of‑life upgrades, and introduces a redesigned UI.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Conan.Exiles.Enhanced-RUNE ISO release: rune-conan.exiles.enhanced.iso (55,205,855,232 bytes)",
-          "Game version is: v361894; all released DLCs and bonuses are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus content (OST, Wallpapers, ArtBook)",
-          "Significantly smaller archive size (compressed from 51.4 to 36.7/37 GB)",
-          "Installation takes 18-55 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 58.8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

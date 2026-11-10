@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-10T01:33:47.970282+00:00",
+  "generated_at": "2026-11-10T01:34:39.881705+00:00",
   "source_pages": 820,
   "last_full_scan_at": "2026-11-09T12:02:19.129054+00:00",
   "games": [
@@ -16,7 +16,55 @@
         "Item crafting",
         "3D"
       ],
-      "repack_size": "3.3 GB"
+      "repack_size": "3.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b6/12/b612e971-30ef-4a97-ba41-39735174349f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b6/12/b612e971-30ef-4a97-ba41-39735174349f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2b/68/2b68fc91-dae2-47e7-a786-457326a4b8ec.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2b/68/2b68fc91-dae2-47e7-a786-457326a4b8ec.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/00/42/00422717-93dc-4978-84d6-0df24faa9c80.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/00/42/00422717-93dc-4978-84d6-0df24faa9c80.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a5/72/a572fc1b-4cfe-40a6-a2b8-dc45faaee946.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a5/72/a572fc1b-4cfe-40a6-a2b8-dc45faaee946.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e8/8c/e88ce4e7-8137-419e-a6a3-dc68b62ce8ee.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e8/8c/e88ce4e7-8137-419e-a6a3-dc68b62ce8ee.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-10T01:34:39.879056+00:00",
+      "details": {
+        "description": "Shape the world and build a cozy new life with Pokémon.\nPlay as a Ditto and build a new life with Pokémon—from the ground up!\nWith help from your Pokémon friends, rebuild a desolate world into a charming utopia, one step at a time.\nPokémon and people once lived happily together, but the world has withered and the humans are gone. The only remaining resident is Professor Tangrowth, living alone in the wasteland.\nAfter waking from a long slumber, a peculiar Ditto decides to restore the desolate land using its transformation skills and its surprising new crafting abilities.\nLearn the moves of your fellow Pokémon to change the land, travel, and more!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Switch 2 v2.0.1 release: 6.8 GB",
+          "Fritchii (v5.5, 144 MB) Switch 2 emulator is included and preconfigured",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from cumulative 6.9 to 3.3 GB)",
+          "Installation takes 2-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-10T01:34:39.879056+00:00"
     },
     {
       "id": "escape-academy-2-back-2-school",
@@ -30,7 +78,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "809 MB"
+      "repack_size": "809 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/d6/99/d699c4ea-7604-4e78-920e-eb149e11b641.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d6/99/d699c4ea-7604-4e78-920e-eb149e11b641.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/14/a3143847-f1cc-49da-a9c0-cb1a9ac42609.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/14/a3143847-f1cc-49da-a9c0-cb1a9ac42609.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/70/2b/702b9608-b4bf-4ae0-96fc-ceb55d56ea0b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/70/2b/702b9608-b4bf-4ae0-96fc-ceb55d56ea0b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/08/9708393a-5dc8-4f85-86e1-639752e4da75.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/08/9708393a-5dc8-4f85-86e1-639752e4da75.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/03/cf/03cfefa4-4de0-4e53-97f1-fd6899815623.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/03/cf/03cfefa4-4de0-4e53-97f1-fd6899815623.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c0/60/c060c73a-4d7f-4380-b4cd-7b3c3e6d00b9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c0/60/c060c73a-4d7f-4380-b4cd-7b3c3e6d00b9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-10T01:34:39.879056+00:00",
+      "details": {
+        "description": "Escape Academy 2: Back 2 School\nis the sequel to the award-winning Escape Academy, enjoyed by over 4 million players!\nWelcome to Escape Academy, the world’s foremost clandestine educator in the art of Escape. Whether you’re a returning student or a new pupil, you’ve come to the right place.\nEscape Academy 2: Back 2 School\nevolves the escape room format of the first game into a whole new GENRE: This is the first open world escape room game, and it’s available right in the comfort of your own home.\nDIGITAL ESCAPE ROOMS DESIGNED BY MASTERS OF THE CRAFT\nEscape Academy 2: Back 2 School\nfeatures an all-new campaign boasting handcrafted, best-in-class escape rooms built by our team of veteran puzzle designers. But unlike real-life escape rooms, the puzzles in Escape Academy aren’t bound by those stuffy safety regulations: Spiked ceilings? Check. 100 foot drops? Check. And, most-dreaded of all… Final exams? Double check.\nThe curriculum here at the Academy is equal parts life-threatening and wacky, because what better way to learn than while confronting one’s mortality.\nEXPLORE A LIVING CAMPUS\nIn Escape Academy 2, the campus is one big puzzle room. Between classes, explore a sprawling, secret-filled hub with mysterious passage ways, hidden tunnels, and dangerous traps. Or chill out with your pals and take in all the *\nvibes*\nthat student life has to offer.\nWhatever the case, the Academy’s your new home away from home.\nGRAB A CLASSMATE AND GET ESCAPIN’ WITH ONLINE OR COUCH CO-OP\nEscaping with a friend has never been this fun.\nEscape Academy 2\nfeatures both online and splitscreen couch co-op support. And thanks to the new optional No-Timer Mode, students of all backgrounds can puzzle at their preferred pace.\nDIVE INTO AN ALL-NEW NARRATIVE\nEscape Academy 2\n’s all-new story has something for new and returning players alike! You’ll discover a dark mystery surrounding the school’s founding, leading to shocking new revelations about the very nature of The Academy. Connect with new teachers and familiar faces from the first game with an expanded curriculum offering character driven-storylines and puzzle-stuffed side quests!\nGOING BACK 2 SCHOOL!\nWe’ve rebuilt the look of Escape Academy for the sequel, featuring new environments, tons of details, and even some snazzy new getups for our professors and pupils.\nPlus, evil genius DJ Doseone is back with a sick round of fresh beats to chill and study to. The all-new OST provides the perfect audio background for puzzling.\nSo whatcha waiting for? It’s time to go…Back 2 School!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Escape.Academy.2.Back.2.School-RUNE ISO release: rune-escape.academy.2.back.2.school.iso (1,453,162,496 bytes)",
+          "Game version: v1.0.20261103.004; Mask-uerade Pack DLC is included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.4 GB to 809 MB)",
+          "Installation takes 2-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-10T01:34:39.879056+00:00"
     },
     {
       "id": "road-rash-30th-anniversary-edition",
@@ -46,7 +147,59 @@
         "3D",
         "Motorcycles"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/82/1d/821db311-0cc0-4089-936f-d86cd71ba1f3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/82/1d/821db311-0cc0-4089-936f-d86cd71ba1f3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/95/a0/95a0eba6-1b1f-40d3-a5c4-7f56951615ff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/a0/95a0eba6-1b1f-40d3-a5c4-7f56951615ff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/55/c5/55c56d2c-4846-4628-b6b3-37e06b0b32b5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/55/c5/55c56d2c-4846-4628-b6b3-37e06b0b32b5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/63/1e639a47-6efd-486d-a052-1c3abdbe7b75.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/63/1e639a47-6efd-486d-a052-1c3abdbe7b75.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/57/8e575d95-1c98-4783-b489-504c292aeb5c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/57/8e575d95-1c98-4783-b489-504c292aeb5c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8c/f8/8cf81b02-9c96-4985-bc38-6a4660151a61.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8c/f8/8cf81b02-9c96-4985-bc38-6a4660151a61.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-10T01:34:39.879056+00:00",
+      "details": {
+        "description": "Road Rash, the franchise which defined the combat racing genre during the 1990s, returns in the first ever digital release of the 1996 PC version.\nNow celebrated in this special 30th Anniversary Edition, the game has been restored to deliver a must-see experience.\n30th Anniversary Edition key improvements:\nRelicensed Soundtrack\n– A fully relicensed soundtrack featuring Soundgarden, Paw, Hammerbox, Monster Magnet, Swervedriver, and Therapy?, with the ability to now play their songs during the racing gameplay.\nSource Master FMVs\n– In 2022, the Source Master tapes were discovered in the EA physical media vault. These tapes have been digitized and meticulously re-edited frame-by-frame to restore the dozens of FMV scenes, and integrate them back into the game.\nUpscaled FMVs\n– As an optional enhancement, the FMVs have been further elevated to sharper quality using the latest in video upscaling technology for the best Road Rash cinematics ever seen.\nGameplay Optimizations\n– Enhanced for modern systems, enjoy improved framerates up to 60 FPS, native controller support, windowed mode, cloud saves, and more\nThis 30th Anniversary Edition is the ultimate way to enjoy one of the most important franchises in gaming history.\nOriginal Road Rash game description:\nRoad Rash, the most aggressive motorcycle racing game ever, explodes on your PC with hard-hitting, full-throttle action that’ll bring you to your freshly skinned knees. Dodge traffic, outrace cops, and thrash opponents on your way to winning the Cup and becoming the menace to society your mother always worried about.\nEngage in lawless, no holds barred high speed motor cycle street racing through cities, canyons, and packs of vicious bikers!\nPhoto-realistic 3D graphics with texture-mapping, atmospheric effects and super fast frame rate\n25 knee-scraping races: 5 levels of racing, each with 5 courses, means only the toughest rashers have a chance to win the Cup",
+        "game_features": [],
+        "repack_features": [
+          "Based on Road.Rash.30th.Anniversary.Edition-FCKDRM ISO release: fckdrm-road.rash.30th.anniversary.edition.iso (3,331,719,168 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of old, non-upscaled videos",
+          "Slightly smaller archive size (compressed from 3.1 GB to 1.3/3 GB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 3.2 GB",
+          "Use reg-files in “_Language Changer” folder to change the game language",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-10T01:34:39.879056+00:00"
     },
     {
       "id": "halo-wars-2-complete-edition",

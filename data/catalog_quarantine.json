@@ -8766,8 +8766,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-3-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8792,10 +8794,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-4-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9561,8 +9561,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-october-29-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

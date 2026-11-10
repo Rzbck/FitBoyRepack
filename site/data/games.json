@@ -1,9 +1,53 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-09T21:00:28.572307+00:00",
+  "generated_at": "2026-11-10T01:33:47.970282+00:00",
   "source_pages": 820,
   "last_full_scan_at": "2026-11-09T12:02:19.129054+00:00",
   "games": [
+    {
+      "id": "pokemon-pokopia",
+      "title": "Pokémon Pokopia – v2.0.1 + Switch 2 Emulator",
+      "source_url": "https://fitgirl-repacks.site/pokemon-pokopia/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/10/61d2fa17d00fc78b6acb040000bc0ca9.jpg",
+      "post_date": "2026-11-10T03:30:46+03:00",
+      "genres": [
+        "Digital pets",
+        "Lifestyle",
+        "Item crafting",
+        "3D"
+      ],
+      "repack_size": "3.3 GB"
+    },
+    {
+      "id": "escape-academy-2-back-2-school",
+      "title": "Escape Academy 2: Back 2 School – v1.0.20261103.004 + DLC",
+      "source_url": "https://fitgirl-repacks.site/escape-academy-2-back-2-school/",
+      "image_url": "https://i8.imageban.ru/out/2026/11/10/21d25092757ad723d9ba17e8c8377030.jpg",
+      "post_date": "2026-11-10T01:16:42+03:00",
+      "genres": [
+        "Logic",
+        "Puzzle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "809 MB"
+    },
+    {
+      "id": "road-rash-30th-anniversary-edition",
+      "title": "Road Rash: 30th Anniversary Edition",
+      "source_url": "https://fitgirl-repacks.site/road-rash-30th-anniversary-edition/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/09/a7f3d830dfd0da40285c2d9b7932fd5e.jpg",
+      "post_date": "2026-11-10T00:08:05+03:00",
+      "genres": [
+        "Arcade",
+        "Racing",
+        "Vehicular combat",
+        "Third-person",
+        "3D",
+        "Motorcycles"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "halo-wars-2-complete-edition",
       "title": "Halo Wars 2: Complete Edition – v1.11.2931.2 + All DLCs",

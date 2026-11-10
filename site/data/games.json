@@ -1,9 +1,103 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-10T11:41:30.321103+00:00",
+  "generated_at": "2026-11-10T18:50:44.421555+00:00",
   "source_pages": 820,
   "last_full_scan_at": "2026-11-10T11:41:30.321103+00:00",
   "games": [
+    {
+      "id": "knights-of-honor-2-sovereign",
+      "title": "Knights of Honor II: Sovereign – v1.8.0/Build 31804 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/knights-of-honor-2-sovereign/",
+      "image_url": "https://i3.imageban.ru/out/2022/12/07/a7fe11233d978612e67a0411e723c6d3.jpg",
+      "post_date": "2026-11-10T21:00:27+03:00",
+      "genres": [
+        "Strategy",
+        "Grand strategy",
+        "Medieval",
+        "Real-time",
+        "Isometric",
+        "3D"
+      ],
+      "repack_size": "3.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/36/02/36024ec4-0274-47d4-bbf3-ac83145c2d41.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/36/02/36024ec4-0274-47d4-bbf3-ac83145c2d41.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/00/2a/002a841a-45a4-408c-b745-4a745512e20c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/00/2a/002a841a-45a4-408c-b745-4a745512e20c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8a/1c/8a1ccf2a-c050-41e6-8697-5d5d1ae49c1b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8a/1c/8a1ccf2a-c050-41e6-8697-5d5d1ae49c1b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c7/28/c728f028-77cd-4d65-b453-a1a0ec79fbc8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c7/28/c728f028-77cd-4d65-b453-a1a0ec79fbc8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/32/f6/32f6f6c0-c453-444e-bd1d-4155d7eef439.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/32/f6/32f6f6c0-c453-444e-bd1d-4155d7eef439.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/96/5a964dee-eceb-4151-874e-5129b91c77e2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/96/5a964dee-eceb-4151-874e-5129b91c77e2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T10:30:32.291967+00:00",
+      "details": {
+        "description": "Become the King and wrestle over control of Europe in this fresh take on medieval real-time grand strategy.\nKnights of Honor II: Sovereign includes all the depth players desire while being the gate-way game to the grand strategy genre, presenting the world as a living, breathing miniature, alive and ripe for the taking. Choose your royal court carefully and determine the destiny of your people, be it riches, conquest, intrigue, trade, or defeat! Raise armies to defend your lands or take war to the enemy – even jump into battle directly in action-packed RTS combat. The path is open: become the true Sovereign of your people.\nASSEMBLE THE ROYAL COURT:\nIn Knights of Honor II: Sovereign, your Royal Court is one of the most important tools at your disposal. Your choice of Knights greatly influences your capabilities and sets the tone for your style of gameplay.\nFIGHT FOR CONTROL OVER THE MEDIEVAL WORLD:\nStart your campaign with one of 200+ historical kingdoms and expand your territory over 300+ provinces. Build up your economy and produce valuable goods while making sure your lands can support your military. Choose out of over 100 different military units ranging from English longbowman over fierce Nordic warriors to powerful siege engines and assemble great armies to defend your borders and bring the fight to your enemies.\nLEAD YOUR ARMIES INTO BATTLE:\nYou don’t trust someone else to make the right tactical decisions? Then lead your men into battle yourself! Knights of Honor II: Sovereign offers exciting real-time strategy field battles and sieges with up to four armies.\nFIGHT YOUR FRIENDS IN MULTIPLAYER:\nKnights of Honor II: Sovereign supports multiplayer with up to 6 players and various game modes: Conquer the medieval world together in co-op or fight each other in teams or free-for-all games.\nYou or your friends want a fresh new challenge from the normal game experience? No problem: Choose one of several victory conditions like Peasant Rush, War for Goods or First Blood and more! Plus, if you have a limited amount of time, you can control the duration of the match by either time or generations of Sovereigns as well.",
+        "game_features": [
+          "Accessible Grand Strategy:",
+          "All the depth of religion, diplomacy, city development, and more, with none of the confusion",
+          "Choose Your Kingdom:",
+          "Select from over 200 kingdoms across Europe, North Africa, and parts of Asia",
+          "Real-Time Gameplay:",
+          "The Medieval world comes alive, no turns needed",
+          "Royal Court:",
+          "Appoint Marshalls, Clerics, Merchants, Diplomats, and Spies to exert your will across the land",
+          "RTS Battles:",
+          "Lead your armies directly in riveting RTS engagements",
+          "Robust Multiplayer:",
+          "Join with multiple friends to take on new challenges across the medieval world",
+          "Marshals:",
+          "lead your armies into battles to conquer your enemies and defend your lands",
+          "Diplomats:",
+          "are capable of turning even your greatest enemies into trustworthy friends. Use them to create strong defensive and offensive pacts, negotiate marriages, and make sure that your friends have your back in times of need",
+          "Merchants:",
+          "can not only increase your income by trading with your neighbors, but also import needed goods to bolster your economy or go on a voyage in search for new riches",
+          "Clerics:",
+          "take care of all your kingdom’s spiritual needs and play a vital role when it comes to the population’s education, happiness and culture",
+          "Spies:",
+          "are great If you like a more subtle approach to world domination. The spies offer you plenty of options: bribe enemy knights, instigate rebellions, or provoke war between your neighbors to achieve your goals"
+        ],
+        "repack_features": [
+          "Based on Knights.of.Honor.II.Sovereign.v1.5.0-TENOKE ISO release: tenoke-knights.of.honor.ii.sovereign.v1.5.0.iso (14,926,788,608 bytes)",
+          "Knights.of.Honor.II.Sovereign.Update.v1.5.1-TENOKE (79 MB) applied over",
+          "Missing bonus content (1.2 GB) added",
+          "Game version: v1.5.1/Build 31735",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of voiceover packs you don’t need (English VOs are included by default) and bonus content (Artworks + Key Art + MP3 Soundtrack)",
+          "Significantly smaller archive size (compressed from cumulative 15.2 to 3~5.1 GB, depending on selected components)",
+          "Installation takes 5-15 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 14.3 GB",
+          "Language can be changed in game settings (text and audio – separately)",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T10:30:32.291967+00:00"
+    },
     {
       "id": "pokemon-pokopia",
       "title": "Pokémon Pokopia – v2.0.1 + Switch 2 Emulator",
@@ -299371,100 +299465,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 9.4 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T10:30:32.291967+00:00"
-    },
-    {
-      "id": "knights-of-honor-2-sovereign",
-      "title": "Knights of Honor II: Sovereign – v1.5.1/Build 31735 + Bonus Content",
-      "source_url": "https://fitgirl-repacks.site/knights-of-honor-2-sovereign/",
-      "image_url": "https://i3.imageban.ru/out/2022/12/07/a7fe11233d978612e67a0411e723c6d3.jpg",
-      "post_date": "2023-10-10T13:00:27+03:00",
-      "genres": [
-        "Strategy",
-        "Grand strategy",
-        "Medieval",
-        "Real-time",
-        "Isometric",
-        "3D"
-      ],
-      "repack_size": "3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/36/02/36024ec4-0274-47d4-bbf3-ac83145c2d41.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/36/02/36024ec4-0274-47d4-bbf3-ac83145c2d41.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/00/2a/002a841a-45a4-408c-b745-4a745512e20c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/00/2a/002a841a-45a4-408c-b745-4a745512e20c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8a/1c/8a1ccf2a-c050-41e6-8697-5d5d1ae49c1b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8a/1c/8a1ccf2a-c050-41e6-8697-5d5d1ae49c1b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c7/28/c728f028-77cd-4d65-b453-a1a0ec79fbc8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c7/28/c728f028-77cd-4d65-b453-a1a0ec79fbc8.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/32/f6/32f6f6c0-c453-444e-bd1d-4155d7eef439.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/32/f6/32f6f6c0-c453-444e-bd1d-4155d7eef439.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5a/96/5a964dee-eceb-4151-874e-5129b91c77e2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5a/96/5a964dee-eceb-4151-874e-5129b91c77e2.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T10:30:32.291967+00:00",
-      "details": {
-        "description": "Become the King and wrestle over control of Europe in this fresh take on medieval real-time grand strategy.\nKnights of Honor II: Sovereign includes all the depth players desire while being the gate-way game to the grand strategy genre, presenting the world as a living, breathing miniature, alive and ripe for the taking. Choose your royal court carefully and determine the destiny of your people, be it riches, conquest, intrigue, trade, or defeat! Raise armies to defend your lands or take war to the enemy – even jump into battle directly in action-packed RTS combat. The path is open: become the true Sovereign of your people.\nASSEMBLE THE ROYAL COURT:\nIn Knights of Honor II: Sovereign, your Royal Court is one of the most important tools at your disposal. Your choice of Knights greatly influences your capabilities and sets the tone for your style of gameplay.\nFIGHT FOR CONTROL OVER THE MEDIEVAL WORLD:\nStart your campaign with one of 200+ historical kingdoms and expand your territory over 300+ provinces. Build up your economy and produce valuable goods while making sure your lands can support your military. Choose out of over 100 different military units ranging from English longbowman over fierce Nordic warriors to powerful siege engines and assemble great armies to defend your borders and bring the fight to your enemies.\nLEAD YOUR ARMIES INTO BATTLE:\nYou don’t trust someone else to make the right tactical decisions? Then lead your men into battle yourself! Knights of Honor II: Sovereign offers exciting real-time strategy field battles and sieges with up to four armies.\nFIGHT YOUR FRIENDS IN MULTIPLAYER:\nKnights of Honor II: Sovereign supports multiplayer with up to 6 players and various game modes: Conquer the medieval world together in co-op or fight each other in teams or free-for-all games.\nYou or your friends want a fresh new challenge from the normal game experience? No problem: Choose one of several victory conditions like Peasant Rush, War for Goods or First Blood and more! Plus, if you have a limited amount of time, you can control the duration of the match by either time or generations of Sovereigns as well.",
-        "game_features": [
-          "Accessible Grand Strategy:",
-          "All the depth of religion, diplomacy, city development, and more, with none of the confusion",
-          "Choose Your Kingdom:",
-          "Select from over 200 kingdoms across Europe, North Africa, and parts of Asia",
-          "Real-Time Gameplay:",
-          "The Medieval world comes alive, no turns needed",
-          "Royal Court:",
-          "Appoint Marshalls, Clerics, Merchants, Diplomats, and Spies to exert your will across the land",
-          "RTS Battles:",
-          "Lead your armies directly in riveting RTS engagements",
-          "Robust Multiplayer:",
-          "Join with multiple friends to take on new challenges across the medieval world",
-          "Marshals:",
-          "lead your armies into battles to conquer your enemies and defend your lands",
-          "Diplomats:",
-          "are capable of turning even your greatest enemies into trustworthy friends. Use them to create strong defensive and offensive pacts, negotiate marriages, and make sure that your friends have your back in times of need",
-          "Merchants:",
-          "can not only increase your income by trading with your neighbors, but also import needed goods to bolster your economy or go on a voyage in search for new riches",
-          "Clerics:",
-          "take care of all your kingdom’s spiritual needs and play a vital role when it comes to the population’s education, happiness and culture",
-          "Spies:",
-          "are great If you like a more subtle approach to world domination. The spies offer you plenty of options: bribe enemy knights, instigate rebellions, or provoke war between your neighbors to achieve your goals"
-        ],
-        "repack_features": [
-          "Based on Knights.of.Honor.II.Sovereign.v1.5.0-TENOKE ISO release: tenoke-knights.of.honor.ii.sovereign.v1.5.0.iso (14,926,788,608 bytes)",
-          "Knights.of.Honor.II.Sovereign.Update.v1.5.1-TENOKE (79 MB) applied over",
-          "Missing bonus content (1.2 GB) added",
-          "Game version: v1.5.1/Build 31735",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of voiceover packs you don’t need (English VOs are included by default) and bonus content (Artworks + Key Art + MP3 Soundtrack)",
-          "Significantly smaller archive size (compressed from cumulative 15.2 to 3~5.1 GB, depending on selected components)",
-          "Installation takes 5-15 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 14.3 GB",
-          "Language can be changed in game settings (text and audio – separately)",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

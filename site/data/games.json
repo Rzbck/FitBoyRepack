@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-11T03:29:07.928152+00:00",
+  "generated_at": "2026-11-11T03:29:53.593111+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-10T11:41:30.321103+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "17.1 GB"
+      "repack_size": "17.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/cb/34/cb346c73-a5c0-4624-aa09-04ebf952299a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cb/34/cb346c73-a5c0-4624-aa09-04ebf952299a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/a1/4ea1f657-8045-4dc3-8c6c-24d3e684e0da.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/a1/4ea1f657-8045-4dc3-8c6c-24d3e684e0da.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/53/41/53410f34-37f9-4dea-894f-48dd979fea28.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/53/41/53410f34-37f9-4dea-894f-48dd979fea28.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8a/9a/8a9a01de-e790-443d-9760-f2b2206335c4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8a/9a/8a9a01de-e790-443d-9760-f2b2206335c4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d1/e2/d1e2ce88-df6d-4c49-8891-445fcff0eb0d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d1/e2/d1e2ce88-df6d-4c49-8891-445fcff0eb0d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/92/09925d1c-aad8-44d3-b96d-a0a3274bd33d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/92/09925d1c-aad8-44d3-b96d-a0a3274bd33d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-11T03:29:53.590632+00:00",
+      "details": {
+        "description": "Become the Hero of Time and save the land of Hyrule from deepening darkness in The Legend of Zelda: Ocarina of Time for the Nintendo Switch 2. The evil Ganondorf plots to slip into the Sacred Realm, capture the mystical Triforce, and seize control of the world. Stepping into the boots of a young hero named Link alongside your fairy companion, Navi, you must journey across sprawling fields, conquer treacherous dungeons, solve intricate puzzles, and wield legendary weapons to push back the encroaching evil.\nRebuilt from the ground up for the Nintendo Switch 2, this definitive version transforms the 1998 classic with completely overhauled visuals, fully voiced cutscenes, expanded dialogue, and a soaring symphonic orchestral soundtrack. The adventure spans two distinct eras as you travel through time, utilizing modern hardware performance that lets you pick between a sharp Quality Mode or a fluid 60 FPS Performance Mode. Gameplay feels smoother than ever thanks to reworked camera and movement controls, a dedicated jump button, a sprint option, and the ability to play Link’s in-game ocarina by humming or singing directly into the console’s microphone.\nPlayers can deepen their experience outside the main quest using complementary features like ZELDA NOTES on the Nintendo Switch App to track daily accomplishments or hunt for visual-based locations. Tapping compatible amiibo figures unlocks helpful in-game extras, including special retro-styled masks coming with the Young Link and Young Zelda figures. Whether you are a longtime veteran returning to familiar temples or a newcomer experiencing this milestone for the first time, this reimagining stands as a timeless journey through Hyrule.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Switch 2 v1.1.1 release: 23.9 GB",
+          "Fritchii (v5.7, 155 MB) Switch 2 emulator is included and preconfigured",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from cumulative 24 to 17.1 GB)",
+          "Installation takes 20-35 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 24 GB",
+          "Language can be changed in emulator’s settings (select proper Region and then Language)",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-11T03:29:53.590632+00:00"
     },
     {
       "id": "conan-exiles-enhanced",

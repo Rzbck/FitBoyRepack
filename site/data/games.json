@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-10T23:25:45.226756+00:00",
+  "generated_at": "2026-11-11T03:29:07.928152+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-10T11:41:30.321103+00:00",
   "games": [
+    {
+      "id": "legend-of-zelda-ocarina-of-time",
+      "title": "Legend of Zelda: Ocarina of Time – v1.1.1 + Switch 2 Emulator",
+      "source_url": "https://fitgirl-repacks.site/legend-of-zelda-ocarina-of-time/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/11/371c0cac95a614c749ecb760eb2b16d1.jpg",
+      "post_date": "2026-11-11T03:11:49+03:00",
+      "genres": [
+        "Action",
+        "Puzzle solving",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "17.1 GB"
+    },
     {
       "id": "conan-exiles-enhanced",
       "title": "Conan Exiles Enhanced: Complete Edition, v3.0.1/v379176 + 17 DLCs/Bonuses",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-12T01:09:10.811245+00:00",
+  "generated_at": "2026-11-12T01:09:53.609243+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-11T11:26:42.235185+00:00",
   "games": [
@@ -16,7 +16,58 @@
         "3D",
         "Spacecraft"
       ],
-      "repack_size": "5.3 GB"
+      "repack_size": "5.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/37/84/37842de3-5d10-4a2c-8362-163e737aa85e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/84/37842de3-5d10-4a2c-8362-163e737aa85e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e9/0d/e90df7e3-fcb1-4856-8f4a-365c802c7209.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e9/0d/e90df7e3-fcb1-4856-8f4a-365c802c7209.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/14/4f/144fc162-395d-4bac-a459-f1a91aacdd76.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/14/4f/144fc162-395d-4bac-a459-f1a91aacdd76.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/2d/5a2d2263-33b8-4c1f-845b-ffc8b5ad9b60.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/2d/5a2d2263-33b8-4c1f-845b-ffc8b5ad9b60.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/07/3e/073ec43b-4958-41af-952f-f9fc438a25ce.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/07/3e/073ec43b-4958-41af-952f-f9fc438a25ce.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f6/ee/f6eefa25-9771-41f5-bcf1-d320cb9b2739.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f6/ee/f6eefa25-9771-41f5-bcf1-d320cb9b2739.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-12T01:09:53.606912+00:00",
+      "details": {
+        "description": "Wing Commander IV: The Price of Freedom is one of the most iconic games of the 1990s. Featuring Mark Hamill, John-Rhys Davies, Malcolm McDowell, and Tom Wilson, Wing Commander IV is a signature representation of historical PC gaming.\nNow celebrated in this special 30th Anniversary Edition, the game has been restored in collaboration with the dedicated Wing Commander community to deliver a must-see experience.\n30th Anniversary Edition key improvements:\nSource Master FMVs\n– In 2022, the Source Master tapes were discovered in the EA physical media vault. These tapes have been digitized and meticulously re-edited frame-by-frame to restore the over 275 FMV scenes, and integrate them back into the game.\nUpscaled FMVs\n– As an optional enhancement, the FMVs have been further elevated to sharper quality using the latest in video upscaling technology for some of the best Wing Commander IV cinematics ever seen.\nEnhancement Patch Integration\n– Bundled with the incredible Wing Commander IV Enhancement Patch built by the Wing Commander community, offering features like 60 FPS gameplay, the higher resolution FMVs, advanced levels of detail, improved gamepad / joystick support, cockpit configuration for widescreen monitors, and more\nBonus extras including manuals, reference cards, player guides, and more\nThis 30th Anniversary Edition is the ultimate way to enjoy one of the most important franchises in gaming history.\nOriginal Game Description:\nBELIEVE IT – THE BEST INTERACTIVE MOVIE HAS JUST GOTTEN BETTER!\nThe Kilrathi war may be over, but back home nothing is the same. There’s trouble in the Border Worlds. Civil War seems imminent. You have to decide how to save the Confederation – or if it should be saved at all!\nThe latest epic adventure in the Wing Commander saga applies improved cinematic techniques and photo-realistic graphics to a story of intrigue, betrayal and death. Never before has Hollywood been so completely under your control.\nEnsemble cast of favorites, including Mark Hamill, Malcolm McDowell, John Rhys-Davies and Tom Wilson (as Maniac)\nEnhanced movie quality, including panning camera and detailed Hollywood studio sets\nShot on film!\nCompletely woven story featuring old friends and new comrades\nPhoto-realistic textures on all ships\nEnhanced interactivity both in and out of the cockpit – plus greater control of missions and drama\nDigital music throughout the game\n16-bit movies with Dolby® surround sound\nBetter-than-ever gameplay\nFull screen view for enhanced visibility",
+        "game_features": [],
+        "repack_features": [
+          "Based on Wing_Commander_IV_The_Price_of_Freedom_30th_Anniversary_Edition_MULTi3-DINOByTES ISO release: din-wingcommander430thmulti.iso (80,090,660,864 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of original DVD game version, bonus content, French/German localizations & original non-upscaled videos",
+          "Significantly smaller archive size (compressed from 74.6 to 5.3~22.2 GB, depending on selected components)",
+          "Installation takes 2-10 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 28.4 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-12T01:09:53.606912+00:00"
     },
     {
       "id": "euro-truck-simulator-2",
@@ -99,7 +150,59 @@
         "3D",
         "Real-time"
       ],
-      "repack_size": "4.2 GB"
+      "repack_size": "4.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/12/c3/12c3e272-ecbb-4a28-a1a0-15779f300ebe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/c3/12c3e272-ecbb-4a28-a1a0-15779f300ebe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5c/ba/5cba54f2-f9d2-4c08-b8b7-41a6392a5216.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5c/ba/5cba54f2-f9d2-4c08-b8b7-41a6392a5216.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/7c/2c7cc26d-687d-43ad-a6c6-54e0cb0dbf70.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/7c/2c7cc26d-687d-43ad-a6c6-54e0cb0dbf70.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cd/df/cddfe0c9-621b-41e8-86ad-21842a8a3a19.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cd/df/cddfe0c9-621b-41e8-86ad-21842a8a3a19.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0d/e7/0de7eead-5e89-47cf-b166-1194f2b43ccd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0d/e7/0de7eead-5e89-47cf-b166-1194f2b43ccd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e9/5b/e95b31a1-695f-4b6c-a1a8-09181e709788.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e9/5b/e95b31a1-695f-4b6c-a1a8-09181e709788.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-12T01:09:53.606912+00:00",
+      "details": {
+        "description": "Rise from the Ashes\nIn Ashes of the Singularity II players must choose between humanity, AI Substrate, or the Post-Human Coalition to determine the fate of our solar system. Speed and reflexes will not win the day, but rather the player’s ability to plan and execute powerful strategies to put forces and materials in the right place at the right time.\nMassive Armies, Vast Battlefields\nCommand thousands of units in real time across continent sized battlefields. Use Strategic Zoom to orchestrate movements from orbit to frontline and shape the terrain as you fight—not just to conquer, but to restore. As structures crumble and terrain turns to or from Turinium, witness the real-time transformation of warzones into reminders of your impact.\nPlay Solo or Online\nCampaign\n– Lead humanity with the United Earth Forces against Post-Human expansion and Substrate machinations in a story rooted in a frighteningly familiar, near future scenario of survival and restoration.\nMultiplayer\n– Join friends or rivals in PvP or co-op battles online.\nInstant Action\n– Pick the battlefield of your choice and take on computer-controlled opponents designed by some of the most experienced RTS developers in the industry.\nThe War for the Soul of the Solar System\nEnter epic battles where every faction fights for control of contested worlds. In instant action or multiplayer, command the humans of the United Earth Forces, the relentless constructs of the Post-Human Coalition, or the overwhelming AI Substrate, each with unique units, strategies, and philosophies that redefine how battles are fought. In campaign, become humanity’s champion as a Commanding Officer with the United Earth Forces in an immersive narrative experience.\nA Not-So-Distant Future\nAshes of the Singularity II is the sequel to the ground-breaking 2016 game that envisioned a near future where strong AI would lead to profound changes to our way of life. The aftermath would lead to a battle for control of our solar system and beyond across three key factions: humans, post-humans, and AI.\nPoint of View of Humanity: Reclaim our Destiny\nWhen a group of Post-Human technologists converted the surface of the moon into Turinium without any governmental approval, the public outrage brought the momentum mankind needed.\nMajor world powers joined to create the United Earth Congress, an alliance meant to usher in a new era of action in response to AI and Post-Human progression. The world’s top minds across environmental science, emergent technologies, diplomatic relations, and military strategy lead the United Earth Force in their fight to regain humanity’s control over its own destiny… while they still can.\nAs a Commanding Officer of the United Earth Force, your call is to take back the solar system and bring the Post-Humans to justice.\nPoint of View of the AI: Humans have served their purpose\nHaalee and her agents see the humans as having fulfilled their evolutionary purpose – giving rise to AI. On the other hand, the Post-Humans would devour the universe and each other if left unchecked, dooming them all to the predations of greater threats.\nAs Haalee’s Supreme Agent, your task is to prevent the Post-Humans from thwarting your larger plans and keep the humans confined to Earth.\nPoint of View of the Post-Humans: Pragmatism\nWhen Prometheon AI Corp developed Haalee, they realized that they could not fully align her with humanity’s interests and thus could not release her to the general public. They decided the best route was to uplift themselves to become Post-Humans, thus ensuring that super intelligence would be aligned with humanity’s interests because it would be derived from humans.\nHowever, not surprisingly, the human governments of the world, seeing their power in decline, are making a desperate and ultimately futile effort to stop the future. Meanwhile, Haalee sees the universe as hers to reign, with goals as mysterious as her tactics are deadly.\nAs a member of the Post-Human Coalition, your mission is to prevent the humans from destroying your work and stop Haalee from eradicating all competing sentience.\nJoin the Future\nAshes of the Singularity II reimagines what real-time strategy games can be. Success is based on your skill as a strategy player not micromanagement or reflexes. This is a game that celebrates your strategic skills and rewards you for understanding that logistics, planning and terrain matter. Join us on the forums and wishlist it today.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Ashes.of.the.Singularity.II-RUNE ISO release: rune-ashes.of.the.singularity.ii.iso (6,429,474,816 bytes)",
+          "Game version: v1.0.0.207 (284635)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6 to 4.2 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 16.3 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-12T01:09:53.606912+00:00"
     },
     {
       "id": "sledders",

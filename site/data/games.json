@@ -1,9 +1,94 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-12T01:09:53.609243+00:00",
+  "generated_at": "2026-11-12T03:01:50.908039+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-11T11:26:42.235185+00:00",
   "games": [
+    {
+      "id": "ea-sports-fc-27",
+      "title": "EA SPORTS FC 27 – v1.2.0 [Monkey Repack]",
+      "source_url": "https://fitgirl-repacks.site/ea-sports-fc-27/",
+      "image_url": "https://i6.imageban.ru/out/2026/11/12/539c145828afb864eb6b05c32125f1ff.jpg",
+      "post_date": "2026-11-12T05:20:03+03:00",
+      "genres": [
+        "Sports",
+        "Soccer",
+        "3D"
+      ],
+      "repack_size": "56.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b2/c2/b2c2c4ea-e751-4999-a057-d378be2ee5cf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/c2/b2c2c4ea-e751-4999-a057-d378be2ee5cf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/dc/42dc6cde-07d8-4199-9813-300c62cf464f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/dc/42dc6cde-07d8-4199-9813-300c62cf464f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8c/77/8c776576-24ff-482d-b743-eff49cee2ab3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8c/77/8c776576-24ff-482d-b743-eff49cee2ab3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/94/51/94512f4f-2b99-4f6a-8a45-8dcd3bccec8e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/51/94512f4f-2b99-4f6a-8a45-8dcd3bccec8e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/40/1e40b44a-6969-4eab-a048-3a465cb5934c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/40/1e40b44a-6969-4eab-a048-3a465cb5934c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/26/d8/26d8c54f-5448-4927-b275-38955b25eaca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/26/d8/26d8c54f-5448-4927-b275-38955b25eaca.jpg.240p.jpg"
+        }
+      ],
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "media_version": 7,
+      "details": {
+        "description": "TRUE-TO-FOOTBALL GAMEPLAY\nFeel greater control in every game mode with more fluid, true-to-life gameplay, featuring dynamic corners, enhanced attacking awareness, player-focused defending tailored for competitive play, and more community-driven innovations.\nMASTER A REBUILT TRANSFER MARKET\nSign your next star in Manager Career through a rebuilt Transfer Market with realistic player values and active club bidding. Master new negotiation tactics, including performance and buy-back clauses, as Dynamic OVRs reflect player form, morale, and fitness across every club.\nIMMORTALISE YOUR DREAM CLUB\nImmortalise your dream club in Football Ultimate Teamв„ў with the brand-new FUTв„ў Gallery. Curate your favourite Player Items to grow your Gallery Level, earn rewards, and build your ClubвЂ™s identity throughout the new football season.\nUNRIVALLED AUTHENTICITY\nExperience unrivalled authenticity in EA SPORTS FCв„ў 27 with 21,000+ players from 800+ clubs and national teams, competing in 140+ stadiums and 35+ leagues, all powered by the support of more than 300+ global football partners.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 25417797 release: 77.9 GB",
+          "Hypervisor Bypass (EA.SPORTS.FC.27.Crack.Only-ARTIFACT) + Anadius emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v1.9 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.0.1/v1.0.140.52122; Since all DLCs are online-only, this is not an Ultimate Edition, just like every other release out there",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of localization packs you don’t need. Languages w/o their own lang packs are included by default along with English commentaries",
+          "Smaller archive size (compressed from 77.9 to 53.7~71 GB, depending on selected components)",
+          "Installation takes 3-15 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 77.9 GB",
+          "GUI language can be changed in game settings",
+          "Commentary language can be changed in “anadius.cfg” file and then selected in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "dreamworks-shrek-2-remastered",
+      "title": "DreamWorks Shrek 2 Remastered",
+      "source_url": "https://fitgirl-repacks.site/dreamworks-shrek-2-remastered/",
+      "image_url": "https://i6.imageban.ru/out/2026/11/12/27d7ab45c5aa4b39638a185a6e90f7b2.jpg",
+      "post_date": "2026-11-12T05:07:53+03:00",
+      "genres": [
+        "Arcade",
+        "Beat 'em up (Brawler)",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "3.5 GB"
+    },
     {
       "id": "wing-commander-iv-the-price-of-freedom-30th-anniversary-edition",
       "title": "Wing Commander IV: The Price of Freedom – 30th Anniversary Edition",
@@ -15187,77 +15272,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 13.3 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "ea-sports-fc-27",
-      "title": "EA SPORTS FC 27 – v1.0.1/v1.0.140.52122 [Monkey Repack]",
-      "source_url": "https://fitgirl-repacks.site/ea-sports-fc-27/",
-      "image_url": "https://i3.imageban.ru/out/2026/09/28/60b0b600e33042948aa66d3f911f245c.jpg",
-      "post_date": "2026-09-28T16:30:03+03:00",
-      "genres": [
-        "Sports",
-        "Soccer",
-        "3D"
-      ],
-      "repack_size": "53.7 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/b2/c2/b2c2c4ea-e751-4999-a057-d378be2ee5cf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b2/c2/b2c2c4ea-e751-4999-a057-d378be2ee5cf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/42/dc/42dc6cde-07d8-4199-9813-300c62cf464f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/42/dc/42dc6cde-07d8-4199-9813-300c62cf464f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8c/77/8c776576-24ff-482d-b743-eff49cee2ab3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8c/77/8c776576-24ff-482d-b743-eff49cee2ab3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/94/51/94512f4f-2b99-4f6a-8a45-8dcd3bccec8e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/94/51/94512f4f-2b99-4f6a-8a45-8dcd3bccec8e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1e/40/1e40b44a-6969-4eab-a048-3a465cb5934c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1e/40/1e40b44a-6969-4eab-a048-3a465cb5934c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/26/d8/26d8c54f-5448-4927-b275-38955b25eaca.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/26/d8/26d8c54f-5448-4927-b275-38955b25eaca.jpg.240p.jpg"
-        }
-      ],
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "media_version": 7,
-      "details": {
-        "description": "TRUE-TO-FOOTBALL GAMEPLAY\nFeel greater control in every game mode with more fluid, true-to-life gameplay, featuring dynamic corners, enhanced attacking awareness, player-focused defending tailored for competitive play, and more community-driven innovations.\nMASTER A REBUILT TRANSFER MARKET\nSign your next star in Manager Career through a rebuilt Transfer Market with realistic player values and active club bidding. Master new negotiation tactics, including performance and buy-back clauses, as Dynamic OVRs reflect player form, morale, and fitness across every club.\nIMMORTALISE YOUR DREAM CLUB\nImmortalise your dream club in Football Ultimate Teamв„ў with the brand-new FUTв„ў Gallery. Curate your favourite Player Items to grow your Gallery Level, earn rewards, and build your ClubвЂ™s identity throughout the new football season.\nUNRIVALLED AUTHENTICITY\nExperience unrivalled authenticity in EA SPORTS FCв„ў 27 with 21,000+ players from 800+ clubs and national teams, competing in 140+ stadiums and 35+ leagues, all powered by the support of more than 300+ global football partners.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Steam BuildID 25417797 release: 77.9 GB",
-          "Hypervisor Bypass (EA.SPORTS.FC.27.Crack.Only-ARTIFACT) + Anadius emu applied over",
-          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
-          "VBS.cmd script v1.9 added",
-          "Custom launcher added for easier HV steps processing",
-          "Game version: v1.0.1/v1.0.140.52122; Since all DLCs are online-only, this is not an Ultimate Edition, just like every other release out there",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of localization packs you don’t need. Languages w/o their own lang packs are included by default along with English commentaries",
-          "Smaller archive size (compressed from 77.9 to 53.7~71 GB, depending on selected components)",
-          "Installation takes 3-15 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 77.9 GB",
-          "GUI language can be changed in game settings",
-          "Commentary language can be changed in “anadius.cfg” file and then selected in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

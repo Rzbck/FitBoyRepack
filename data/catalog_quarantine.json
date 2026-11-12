@@ -8962,10 +8962,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-8-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8990,8 +8989,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"

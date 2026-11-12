@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-12T03:01:50.908039+00:00",
+  "generated_at": "2026-11-12T03:02:37.124965+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-11T11:26:42.235185+00:00",
   "games": [
@@ -87,7 +87,59 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "3.5 GB"
+      "repack_size": "3.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f7/38/f73817d3-0840-4657-80ac-b314f4080e84.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f7/38/f73817d3-0840-4657-80ac-b314f4080e84.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/45/584503c0-dddd-4121-8783-c1d472d7e076.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/45/584503c0-dddd-4121-8783-c1d472d7e076.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d2/7f/d27f32d0-1c8f-42e9-a978-1f0cf633c32e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d2/7f/d27f32d0-1c8f-42e9-a978-1f0cf633c32e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/6d/fb6d0ec0-e143-4d61-bc6a-99b9b329a5ba.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/6d/fb6d0ec0-e143-4d61-bc6a-99b9b329a5ba.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/71/89/718910dc-7187-44e0-95b9-12c1c035bea6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/71/89/718910dc-7187-44e0-95b9-12c1c035bea6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4b/88/4b8895a6-0dd3-4ccf-bae4-8554d5a22b4c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4b/88/4b8895a6-0dd3-4ccf-bae4-8554d5a22b4c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-12T03:02:37.123104+00:00",
+      "details": {
+        "description": "Shrek, Fiona, Donkey and friends are back!\nDreamWorks Shrek 2 Remastered: The cult-classic, button-mashing co-op adventure is back with all your favorite characters and improved graphics.\nJourney through the fairytale kingdom of Far Far Away from Shrek’s swamp to Fiona’s castle and everywhere in between, in a classic action-adventure experience inspired by the DreamWorks Animation movie. Play solo or with up to three friends in co-op, take control of your favorite Shrek heroes as you smash, throw and kick your way against iconic characters from the franchise.\nImproved graphics:\nEverything has been rebuilt with better textures, enhanced UI, 4K resolution and cutscenes.\nNew features:\nCreate timeless snapshots using the new Photo Mode and unlock cheats in Cheat Mode to make your playthrough a seamless experience.\nUp to 4-player Couch Co-op, Online or Mixed:\nA cozy, team-based co-op action-adventure game, playable solo or up to 4-Player Couch Co-Op, Online Multiplayer, and Mixed Online Multiplayer & Couch Co-Op.\nImmersive levels straight out of a fairytale\n: From Shrek’s swamp to the castle of Far Far Away, relive iconic moments from the movie featuring beloved characters and hidden Easter Eggs.\nSwap heroes at any time\n: Swap your hero to battle enemies, conquer bosses, and solve environmental puzzles using their unique abilities to advance in the story.\nTravel back to a nostalgic era of gaming for some pick-up-and-play casual fun.",
+        "game_features": [],
+        "repack_features": [
+          "Based on DreamWorks.Shrek.2.Remastered-RUNE ISO release: rune-dreamworks.shrek.2.remastered.iso (5,971,312,640 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.6 to 3.5 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 12.5 GB",
+          "Language can be changed in game settings",
+          "If the game crashes on launch, install “GameInputRedist.msi” from “redist” folder",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-12T03:02:37.123104+00:00"
     },
     {
       "id": "wing-commander-iv-the-price-of-freedom-30th-anniversary-edition",

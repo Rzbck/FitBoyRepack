@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-12T22:38:55.306459+00:00",
+  "generated_at": "2026-11-12T22:39:41.720958+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-12T11:45:54.468385+00:00",
   "games": [
@@ -93,7 +93,63 @@
         "3D",
         "Motorboats"
       ],
-      "repack_size": "243 MB"
+      "repack_size": "243 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/4b/d6/4bd6f199-36a8-4cdc-ae0f-78762b89bf2f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4b/d6/4bd6f199-36a8-4cdc-ae0f-78762b89bf2f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f3/7d/f37d8e9c-e7ed-44d0-ac82-2c4d6ab96962.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f3/7d/f37d8e9c-e7ed-44d0-ac82-2c4d6ab96962.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/12/a7/12a77c82-9f13-4faf-884e-4c1f960d38c4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/a7/12a77c82-9f13-4faf-884e-4c1f960d38c4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/2d/aa2d87b1-64fb-4003-bc7a-c1ffe45f997c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/2d/aa2d87b1-64fb-4003-bc7a-c1ffe45f997c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/77/e0/77e0c3f0-6b64-4702-9222-4930be6063b8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/77/e0/77e0c3f0-6b64-4702-9222-4930be6063b8.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-12T22:39:41.718367+00:00",
+      "details": {
+        "description": "The adrenaline-soaked sequel to Midway’s legendary arcade racer, Hydro Thunder Hurricane features high-powered speedboats rocketing through over-the-top themed environments, gorgeous visuals, and amazing dynamic water physics.\nTest your skills in 11 mysterious and dangerous race environments including Monster Island, the Bermuda Triangle and Area 51 – each one packed with massive jumps and drop-offs, secret shortcuts, destructible objects, and special events that racers trigger in-game.\nUnlock 20 all-new transforming speedboats as well as classics from the original Hydro Thunder like Razorback and Rad Hazard. Collect Boost powerups and fire up your on-board rockets for teeth-rattling speed. Conquer four game modes – Races, Ring Masters, Gauntlet, Championships — and race against your Friends’ best performances in the all-new Ghost Race!",
+        "game_features": [
+          "ROLLER COASTER RACING. Fun, arcadey, over-the-top racing in 11 rich, beautifully themed interactive environments packed with shortcuts and surprises.",
+          "ADRENALINE FUELD PHYSICS. Dynamic water physics delivers intense moment-to-moment gameplay on ever-changing, gorgeously rendered water-based tracks.",
+          "ROCKET POWERED SPEEDBOATS. Master 20 classic and new rocket-powered speedboats with transforming boost engines, each with unique handling characteristics.",
+          "FULL FEATURED EXPERIENCE. Classic arcade racing and a variety of all game modes including Gauntlet, Ring Master, and Championships.",
+          "RACE AGAINST YOUR FRIENDS. Challenge yourself against your Friends’ best times in the all-new Ghost Race mode."
+        ],
+        "repack_features": [
+          "Based on Hydro.Thunder.Hurricane-RUNE ISO release: rune-hydro.thunder.hurricane.iso (460,095,488 bytes)",
+          "Game version: v1.2.0.0",
+          "Installer makes all necessary steps to register the game upon installation, but it it fails, run “InstallApp.exe” in the installed game folder",
+          "To run the game find it with Windows search, desktop icon won’t work",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 439 to 243 MB)",
+          "Installation takes within a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 469 MB",
+          "Language can be changed in “uwp_emu.xml” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-12T22:39:41.718367+00:00"
     },
     {
       "id": "ea-sports-fc-27",

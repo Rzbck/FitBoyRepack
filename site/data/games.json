@@ -1,9 +1,127 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-13T11:30:01.530201+00:00",
+  "generated_at": "2026-11-13T22:39:24.800058+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-13T11:30:01.530201+00:00",
   "games": [
+    {
+      "id": "terrible-lizards",
+      "title": "Terrible Lizards",
+      "source_url": "https://fitgirl-repacks.site/terrible-lizards/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/13/3a31415e510fecdddff3df9afb6c2d18.jpg",
+      "post_date": "2026-11-14T00:57:17+03:00",
+      "genres": [
+        "Action",
+        "Jump and run",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "11.7 GB"
+    },
+    {
+      "id": "project-motor-racing",
+      "title": "Project Motor Racing: Year 1 Bundle, v2.3.0.3 + 7 DLCs",
+      "source_url": "https://fitgirl-repacks.site/project-motor-racing/",
+      "image_url": "https://i2.imageban.ru/out/2025/11/26/b1688939fafa9a22b14765b0e2d122dd.jpg",
+      "post_date": "2026-11-13T22:30:23+03:00",
+      "genres": [
+        "Racing",
+        "Simulation",
+        "Physics-based",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "12.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b9/02/b90234ef-c73b-4005-a12f-757651265b04.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b9/02/b90234ef-c73b-4005-a12f-757651265b04.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b4/ae/b4aeaf67-0b0a-43a4-863f-b77a0667477d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b4/ae/b4aeaf67-0b0a-43a4-863f-b77a0667477d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ca/41/ca41d75c-f1ab-40c8-b1fd-778a9c5c0c22.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ca/41/ca41d75c-f1ab-40c8-b1fd-778a9c5c0c22.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/04/d4/04d44922-0bdd-4697-a29a-80c65cb1f6a5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/04/d4/04d44922-0bdd-4697-a29a-80c65cb1f6a5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/39/57/39577997-bfd0-4c45-a569-8548b26c0b59.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/39/57/39577997-bfd0-4c45-a569-8548b26c0b59.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ec/f2/ecf2ffe8-db86-4ca9-8074-37b59b9345d9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ec/f2/ecf2ffe8-db86-4ca9-8074-37b59b9345d9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Project Motor Racing ignites all the passion, beauty, and intensity of professional motorsport.",
+        "game_features": [
+          "The Best, Nothing Less",
+          "Race across eras in 70 meticulously recreated cars across 13 iconic classes & 28 global layouts. Cars: From today’s radical LMDh Hypercars to history’s most iconic legends, each vehicle is a licensed masterpiece. Circuits: Scanned for ultimate precision and authenticity.",
+          "Racing For All",
+          "From sim racers to first-time racers, Project Motor Racing delivers: Single Player Career, Online Racing Modes, In-Game Events, Packed 4-Class Race Experience.",
+          "Simulation Refined",
+          "First Principle Physics: New physics engine delivers unmatched handling realism and high-fidelity FFB; Benchmark-Setting Physics Engine built on mod-friendly GIANTS Engine 10; Factory Driver Program: Every car’s handling painstakingly tested and approved by brand partners and hundreds of the world’s top racing pros to assure authentic levels of handling precision; Immersive Sound Design: Motorsport’s ferocity captured like never before.",
+          "Feel Every Second",
+          "“Living” cockpits with visible G-forces, heat-haze, etc.; True2Track, Dynamic Weather Conditions, Adaptive Racing & Drying Line, 24-hour day/night cycle.",
+          "Project Motor Racing: Year 1 Bundle",
+          "Get the Group 5 Revival Pack, 3 Content Packs + the Year 1 Expansion Pack.",
+          "Included DLCs:",
+          "Group 5 Revival Pack",
+          "GTE Decade Pack",
+          "Japanese Prototypes Pack",
+          "Ford Falcon V8 2013",
+          "GT Icons Pack",
+          "Year 1 Season Pass is not a real DLC and is not counted."
+        ],
+        "repack_features": [
+          "Attention! You must have Microsoft .NET 4.6+ Redist installed in your system prior to installing of this repack, check if you have it with this tool: http://",
+          "www.asoft.be/prod_netver.html",
+          "Based on Project.Motor.Racing.v2.0.0.6-RUNE ISO release: rune-project.motor.racing.v2.0.0.6.iso (28,399,599,616 bytes)",
+          "Game version: v2.0.0.6; 5 DLCs are included and activated. Year 1 Season Pass is not a real DLC and is not counted",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 26.4 to 12.9 GB)",
+          "Installation takes 4-30 minutes (depending on your system, mostly on your drive speed)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 62.3 GB (72.2 GB during installation)",
+          "Language can be changed in “x64/steam_emu.ini” file",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "motorcycle-ride-infinity",
+      "title": "Motorcycle Ride: Infinity – v1.1",
+      "source_url": "https://fitgirl-repacks.site/motorcycle-ride-infinity/",
+      "image_url": "https://i6.imageban.ru/out/2026/11/13/21889f537b8982be5c79210ba94653da.jpg",
+      "post_date": "2026-11-13T22:04:19+03:00",
+      "genres": [
+        "Arcade",
+        "Driving",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "2.8 GB"
+    },
     {
       "id": "star-wars-galactic-racer",
       "title": "STAR WARS: Galactic Racer – Deluxe Edition, vCL386500 + 3 DLCs/Bonuses",
@@ -45541,95 +45659,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 2.6 GB",
           "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "project-motor-racing",
-      "title": "Project Motor Racing – v2.0.0.6 + 5 DLCs",
-      "source_url": "https://fitgirl-repacks.site/project-motor-racing/",
-      "image_url": "https://i2.imageban.ru/out/2025/11/26/b1688939fafa9a22b14765b0e2d122dd.jpg",
-      "post_date": "2026-06-27T18:35:23+03:00",
-      "genres": [
-        "Racing",
-        "Simulation",
-        "Physics-based",
-        "First-person",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "12.9 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/b9/02/b90234ef-c73b-4005-a12f-757651265b04.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b9/02/b90234ef-c73b-4005-a12f-757651265b04.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b4/ae/b4aeaf67-0b0a-43a4-863f-b77a0667477d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b4/ae/b4aeaf67-0b0a-43a4-863f-b77a0667477d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ca/41/ca41d75c-f1ab-40c8-b1fd-778a9c5c0c22.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ca/41/ca41d75c-f1ab-40c8-b1fd-778a9c5c0c22.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/04/d4/04d44922-0bdd-4697-a29a-80c65cb1f6a5.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/04/d4/04d44922-0bdd-4697-a29a-80c65cb1f6a5.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/39/57/39577997-bfd0-4c45-a569-8548b26c0b59.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/39/57/39577997-bfd0-4c45-a569-8548b26c0b59.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ec/f2/ecf2ffe8-db86-4ca9-8074-37b59b9345d9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ec/f2/ecf2ffe8-db86-4ca9-8074-37b59b9345d9.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Project Motor Racing ignites all the passion, beauty, and intensity of professional motorsport.",
-        "game_features": [
-          "The Best, Nothing Less",
-          "Race across eras in 70 meticulously recreated cars across 13 iconic classes & 28 global layouts. Cars: From today’s radical LMDh Hypercars to history’s most iconic legends, each vehicle is a licensed masterpiece. Circuits: Scanned for ultimate precision and authenticity.",
-          "Racing For All",
-          "From sim racers to first-time racers, Project Motor Racing delivers: Single Player Career, Online Racing Modes, In-Game Events, Packed 4-Class Race Experience.",
-          "Simulation Refined",
-          "First Principle Physics: New physics engine delivers unmatched handling realism and high-fidelity FFB; Benchmark-Setting Physics Engine built on mod-friendly GIANTS Engine 10; Factory Driver Program: Every car’s handling painstakingly tested and approved by brand partners and hundreds of the world’s top racing pros to assure authentic levels of handling precision; Immersive Sound Design: Motorsport’s ferocity captured like never before.",
-          "Feel Every Second",
-          "“Living” cockpits with visible G-forces, heat-haze, etc.; True2Track, Dynamic Weather Conditions, Adaptive Racing & Drying Line, 24-hour day/night cycle.",
-          "Project Motor Racing: Year 1 Bundle",
-          "Get the Group 5 Revival Pack, 3 Content Packs + the Year 1 Expansion Pack.",
-          "Included DLCs:",
-          "Group 5 Revival Pack",
-          "GTE Decade Pack",
-          "Japanese Prototypes Pack",
-          "Ford Falcon V8 2013",
-          "GT Icons Pack",
-          "Year 1 Season Pass is not a real DLC and is not counted."
-        ],
-        "repack_features": [
-          "Attention! You must have Microsoft .NET 4.6+ Redist installed in your system prior to installing of this repack, check if you have it with this tool: http://",
-          "www.asoft.be/prod_netver.html",
-          "Based on Project.Motor.Racing.v2.0.0.6-RUNE ISO release: rune-project.motor.racing.v2.0.0.6.iso (28,399,599,616 bytes)",
-          "Game version: v2.0.0.6; 5 DLCs are included and activated. Year 1 Season Pass is not a real DLC and is not counted",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 26.4 to 12.9 GB)",
-          "Installation takes 4-30 minutes (depending on your system, mostly on your drive speed)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 62.3 GB (72.2 GB during installation)",
-          "Language can be changed in “x64/steam_emu.ini” file",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

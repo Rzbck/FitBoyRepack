@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-13T00:27:43.762223+00:00",
+  "generated_at": "2026-11-13T00:28:34.768275+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-12T11:45:54.468385+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "Side",
         "2D"
       ],
-      "repack_size": "3.9 GB"
+      "repack_size": "3.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/80/83/80831cd9-62cc-4225-8f08-a7b8dadbe94b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/80/83/80831cd9-62cc-4225-8f08-a7b8dadbe94b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f4/9c/f49ccedb-a58c-4f7b-8e96-6305bedb54fa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/9c/f49ccedb-a58c-4f7b-8e96-6305bedb54fa.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ab/6b/ab6bb7e9-6c26-4216-8917-035b73d38d23.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ab/6b/ab6bb7e9-6c26-4216-8917-035b73d38d23.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/64/02/64022c56-c0f9-4b80-9b06-de8e5f7837a3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/64/02/64022c56-c0f9-4b80-9b06-de8e5f7837a3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/dc/2f/dc2fef8a-3911-4f6b-be20-8da6bcc8f870.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/dc/2f/dc2fef8a-3911-4f6b-be20-8da6bcc8f870.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/1d/a91d8846-28cb-4d3a-b93f-4e11c61f93fe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/1d/a91d8846-28cb-4d3a-b93f-4e11c61f93fe.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-13T00:28:34.767070+00:00",
+      "details": {
+        "description": "ABOUT THIS GAME\nTakeover 2\nis a hard-hitting, arcade-style beat ’em up and the sequel to 2019’s\nThe Takeover\n. It features stylish updated visuals and a completely overhauled combat system, delivering tighter controls and significantly expanded gameplay depth.\nThe combat system has been redesigned to provide greater player control and tactical options. Use the environment to your advantage by weaponizing almost everything you can get your hands on; buckets, cones, tires…nothing is off-limits!. Wield a variety of weapons to manage crowds and adapt to different enemy types.\nHARD-HITTING ARCADE COMBAT\nTakeover 2 delivers fast, responsive, and aggressive action.\nMaster:\nCombo chains\nParry mechanics\nSpecial attacks\nFinishing moves\nCrowd control strategies\nPerfect combo runs\nMax out your skills to earn coveted S Rankings and to conquer the higher difficulty modes.\nGAME MODES\nTakeover 2 includes three core game modes:\nArcade Mode\nFight through the full campaign which consists of a progressing gauntlet of dangerous stages filled with hordes of blood-thirsty enemies and intense boss encounters!\nChallenge Mode\nPlan your own route through several stages while engaging in fast, high-pressure trials with specific mission objectives and performance-based star ratings. Precision and efficiency matter!\nScore Attack\nReplay your favorite stages and push for a new high score.\nBeyond the core experience, two bonus mini-games expand the action:\nJet Fury\n– A high-speed fighter jet experience that’s focused on survival and explosive, score-driven gameplay.\nOvertake\n– A retro-inspired, white knuckle racing challenge where if you don’t finish first…you’re last!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Takeover.2-RUNE ISO release: rune-takeover.2.iso (6,508,183,552 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OSsT in FLAC format ripped, NOTHING re-encoded. Two Bonus OSTs in MP3 format are included by default",
+          "Significantly smaller archive size (compressed from 6.1 to 3.9 GB)",
+          "Installation takes 2-7 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-13T00:28:34.767070+00:00"
     },
     {
       "id": "atom-rpg-post-apocalyptic-indie-game",

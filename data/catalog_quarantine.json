@@ -2265,6 +2265,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "star-wars-galactic-racer-repack-updated",
+      "title": "STAR WARS: Galactic Racer Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/star-wars-galactic-racer-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "scamming-scammers-videos",
       "title": "Scamming scammers videos",
       "source_url": "https://fitgirl-repacks.site/scamming-scammers-videos/",
@@ -9023,10 +9033,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-9-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

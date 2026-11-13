@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-12T22:39:41.720958+00:00",
+  "generated_at": "2026-11-13T00:27:43.762223+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-12T11:45:54.468385+00:00",
   "games": [
+    {
+      "id": "takeover-2",
+      "title": "Takeover 2: Deluxe Edition + Bonus OSTs",
+      "source_url": "https://fitgirl-repacks.site/takeover-2/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/13/4661609b2fe6d9fe14ac2d19ebfe3edb.jpg",
+      "post_date": "2026-11-13T03:01:04+03:00",
+      "genres": [
+        "Arcade",
+        "Beat 'em up (Brawler)",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "3.9 GB"
+    },
     {
       "id": "atom-rpg-post-apocalyptic-indie-game",
       "title": "ATOM RPG: Post-apocalyptic Indie Game – Expansion Edition, v1.2.1 + 2 DLCs/Bonuses",

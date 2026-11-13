@@ -1,9 +1,118 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-13T22:40:20.254564+00:00",
+  "generated_at": "2026-11-13T23:35:29.795902+00:00",
   "source_pages": 821,
   "last_full_scan_at": "2026-11-13T11:30:01.530201+00:00",
   "games": [
+    {
+      "id": "warno",
+      "title": "WARNO: Gold Edition, v210942 + 25 DLCs",
+      "source_url": "https://fitgirl-repacks.site/warno/",
+      "image_url": "https://i2.imageban.ru/out/2024/05/24/4128d008172b76523a2ff98b1f1f8f3a.jpg",
+      "post_date": "2026-11-14T02:10:57+03:00",
+      "genres": [
+        "Strategy",
+        "Wargame",
+        "Isometric",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "35.8 GB",
+      "media": [
+        {
+          "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1611600/extras/WARNO_Artillery_Strike.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3e/43/3e435194-8dcc-4308-ad95-de3fdde618a3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/43/3e435194-8dcc-4308-ad95-de3fdde618a3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/c4/a9c4e440-eb0d-48d5-a502-3e9fef7cfb96.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/c4/a9c4e440-eb0d-48d5-a502-3e9fef7cfb96.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/db/c2/dbc2e249-0289-47e3-abd0-a7ed8d3b1e8f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/db/c2/dbc2e249-0289-47e3-abd0-a7ed8d3b1e8f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7b/eb/7beb68f8-eed4-465a-8ba2-0a8839a0e7a5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7b/eb/7beb68f8-eed4-465a-8ba2-0a8839a0e7a5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0e/0d/0e0dbcb3-a500-46ee-bbcd-5e426233a5a3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0e/0d/0e0dbcb3-a500-46ee-bbcd-5e426233a5a3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/cc/09cc5fc2-2ae2-48c3-a042-51c9ca002b4f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/cc/09cc5fc2-2ae2-48c3-a042-51c9ca002b4f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Are you ready to take command?\nDeploy into an authentic, expansive, and meticulously researched Cold War real-time strategy game with WARNO. As the spiritual successor to the acclaimed Wargame series, WARNO is the ultimate next-gen World War III battle simulator.\nTwo years have passed since Gorbachev’s overthrow in a coup by hardline communists, and now, in the dark summer days of 1989, the Cold War finally turns hot. The armies of NATO and Warsaw Pact have deployed in a divided and tense Germany. Conflict is imminent. The only thing left is to wait for the inevitable Warning Order that will begin it all. War is coming home, commanders…\nWARNO – Warning Order – lets you command your customized battlegroup and lead hundreds of Cold War-era units to victory on dynamic, tactical battlefields. Choose between the arsenals of NATO or the Warsaw Pact, and fight across a multitude of solo and online modes against challenging AI or human opponents in massive 10v10 battles. Show your mettle as a strategic commander in the turn-based Army General campaigns depicting a devastating, techno-thrilling World War III in Western Europe.",
+        "game_features": [
+          "The Cold War-era armed forces of six nations – aligned to NATO or Warsaw Pact – can be led into a hyper-detailed World War III: U.S., West Germany, United Kingdom, and France square off against the Soviet Union and East Germany. From conscripts and main battle tanks to mobile SAM systems, self-propelled artillery, scout helicopters, strike aircraft, and fast interceptors, each WARNO nation has its unique arsenal of vehicles, planes, and soldiers.",
+          "More than 1000 different military units are featured, such as the mighty M1A1 Abrams, the British MCV-80 Warrior, French Gazelle scout helicopters, German Leopard tanks, Spetsnaz special forces, SU-25 Frogfoot, the East German KPz T-55AM2 or Mil Mi-24 Hind helicopter gunships. In the Armory, each unit can be inspected and compared in detail.",
+          "An array of famous military formations and brigades, each with their unique identity, act as the parent division of your personal battlegroup. Use the units available, choose your economy of forces, and customize your troops in WARNO’s enhanced battlegroup building system.",
+          "Experience 5 massive turn-based strategic Army General campaigns centered on the NATO’s CENTAG and Warsaw Pact’s Central Group of Forces area of responsibility in 1989, placing you right in the heart of the war near the infamous Fulda Gap.",
+          "The Army General campaigns let you command hundreds of units and military formations, down to the platoon level, including the U.S. 11th Armored Cavalry Regiment and 3rd Armored Division, West German 5. Panzerdivision, Soviet 79th Guards Tank Division and 27th Guards Motor Rifle Division, and the East German 7. Panzerdivision.",
+          "8 scripted Operations will allow you to undertake daring tactical combat missions that tell captivating stories of an all-too-real conflict.",
+          "Witness an ever-evolving battlefield that never looked more beautiful, from the detailed environments to the brutal destruction unleashed. The latest incarnation of Eugen’s proprietary engine simulates modern land and air combat in Western Europe to the fullest extent.",
+          "The maps are rich with tactical options and objectives, from hills, small villages, dense forests, meandering rivers, bridges, and industrial zones to be captured. Be wary of ambushes or outflanking maneuvers as you continuously advance the dynamic frontline that contributes to a side’s victory or defeat.",
+          "Lead your chosen battlegroup into battle as an expert commander, taking advantage of all the available tactical tools. Combat in WARNO is an all-encompassing contest of smarts, tactics, and mastery of your units.",
+          "Take to war across a wide variety of game modes, including stand-alone Skirmish missions playable in solo, cooperative, or multiplayer.",
+          "Battle against an enhanced and challenging AI or pit your tactical prowess against other human players, in intense ranked 1v1, 2v2 to 4v4 team matches to all-encompassing 10v10 battles.",
+          "Take advantage of a host of quality-of-life enhancements catering to new players and veterans of Eugen Systems’ previous titles. This includes issuing commands during pre-combat deployment, Rules of Engagements, AI-assisted Smart Orders, and much more.",
+          "Included DLCs:",
+          "Digital Guides",
+          "Early Access Pack",
+          "Nemesis #1 – Air Assault",
+          "Nemesis #2 – Plateau d’Albion",
+          "Nemesis #3 – Homefront",
+          "Nemesis #4 – Capital Defence",
+          "Nemesis #5 – Southern Flank",
+          "Nemesis #6 – The Magdeburg Counterstrike",
+          "Reinforcement Pack #1 – Urban Frontlines",
+          "Reinforcement Pack #2 – Railway",
+          "Reinforcement Pack #3 – Stoneware",
+          "Reinforcement Pack #4 – Albion Map",
+          "Reinforcement Pack #5 – Valley and Factory",
+          "Reinforcement Pack #6 – Kreide",
+          "Reinforcement Pack #7 – Cliff",
+          "Reinforcement Pack #8 – Ohmen",
+          "Reinforcement Pack #9 – Surrounded",
+          "Reinforcement Pack #10 – Eiche",
+          "Reinforcement Pack #11 – Low Countries’ Lions",
+          "NORTHAG",
+          "SOUTHAG",
+          "LANDJUT",
+          "Season Pass DLC is not an actual DLC hence not counted."
+        ],
+        "repack_features": [
+          "Based on WARNO.LANDJUT-RUNE ISO release: rune-warno.landjut.iso (60,526,755,840 bytes)",
+          "Game version: v188908; 22 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 56.4 to 31.3 GB)",
+          "Installation takes from 21 minutes (on 16-threads CPU) up to 40 minutes (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 61.5 GB (up to 66.1 GB during installation)",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "terrible-lizards",
       "title": "Terrible Lizards",
@@ -71613,115 +71722,6 @@
           "Installation takes 7-40 minutes (depending on your system and selected components)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 55.9 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "warno",
-      "title": "WARNO: Gold Edition, v188908 + 22 DLCs",
-      "source_url": "https://fitgirl-repacks.site/warno/",
-      "image_url": "https://i2.imageban.ru/out/2024/05/24/4128d008172b76523a2ff98b1f1f8f3a.jpg",
-      "post_date": "2026-04-18T18:10:57+03:00",
-      "genres": [
-        "Strategy",
-        "Wargame",
-        "Isometric",
-        "3D",
-        "Real-time"
-      ],
-      "repack_size": "31.3 GB",
-      "media": [
-        {
-          "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1611600/extras/WARNO_Artillery_Strike.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3e/43/3e435194-8dcc-4308-ad95-de3fdde618a3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3e/43/3e435194-8dcc-4308-ad95-de3fdde618a3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a9/c4/a9c4e440-eb0d-48d5-a502-3e9fef7cfb96.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a9/c4/a9c4e440-eb0d-48d5-a502-3e9fef7cfb96.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/db/c2/dbc2e249-0289-47e3-abd0-a7ed8d3b1e8f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/db/c2/dbc2e249-0289-47e3-abd0-a7ed8d3b1e8f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/7b/eb/7beb68f8-eed4-465a-8ba2-0a8839a0e7a5.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/7b/eb/7beb68f8-eed4-465a-8ba2-0a8839a0e7a5.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0e/0d/0e0dbcb3-a500-46ee-bbcd-5e426233a5a3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0e/0d/0e0dbcb3-a500-46ee-bbcd-5e426233a5a3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/09/cc/09cc5fc2-2ae2-48c3-a042-51c9ca002b4f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/09/cc/09cc5fc2-2ae2-48c3-a042-51c9ca002b4f.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Are you ready to take command?\nDeploy into an authentic, expansive, and meticulously researched Cold War real-time strategy game with WARNO. As the spiritual successor to the acclaimed Wargame series, WARNO is the ultimate next-gen World War III battle simulator.\nTwo years have passed since Gorbachev’s overthrow in a coup by hardline communists, and now, in the dark summer days of 1989, the Cold War finally turns hot. The armies of NATO and Warsaw Pact have deployed in a divided and tense Germany. Conflict is imminent. The only thing left is to wait for the inevitable Warning Order that will begin it all. War is coming home, commanders…\nWARNO – Warning Order – lets you command your customized battlegroup and lead hundreds of Cold War-era units to victory on dynamic, tactical battlefields. Choose between the arsenals of NATO or the Warsaw Pact, and fight across a multitude of solo and online modes against challenging AI or human opponents in massive 10v10 battles. Show your mettle as a strategic commander in the turn-based Army General campaigns depicting a devastating, techno-thrilling World War III in Western Europe.",
-        "game_features": [
-          "The Cold War-era armed forces of six nations – aligned to NATO or Warsaw Pact – can be led into a hyper-detailed World War III: U.S., West Germany, United Kingdom, and France square off against the Soviet Union and East Germany. From conscripts and main battle tanks to mobile SAM systems, self-propelled artillery, scout helicopters, strike aircraft, and fast interceptors, each WARNO nation has its unique arsenal of vehicles, planes, and soldiers.",
-          "More than 1000 different military units are featured, such as the mighty M1A1 Abrams, the British MCV-80 Warrior, French Gazelle scout helicopters, German Leopard tanks, Spetsnaz special forces, SU-25 Frogfoot, the East German KPz T-55AM2 or Mil Mi-24 Hind helicopter gunships. In the Armory, each unit can be inspected and compared in detail.",
-          "An array of famous military formations and brigades, each with their unique identity, act as the parent division of your personal battlegroup. Use the units available, choose your economy of forces, and customize your troops in WARNO’s enhanced battlegroup building system.",
-          "Experience 5 massive turn-based strategic Army General campaigns centered on the NATO’s CENTAG and Warsaw Pact’s Central Group of Forces area of responsibility in 1989, placing you right in the heart of the war near the infamous Fulda Gap.",
-          "The Army General campaigns let you command hundreds of units and military formations, down to the platoon level, including the U.S. 11th Armored Cavalry Regiment and 3rd Armored Division, West German 5. Panzerdivision, Soviet 79th Guards Tank Division and 27th Guards Motor Rifle Division, and the East German 7. Panzerdivision.",
-          "8 scripted Operations will allow you to undertake daring tactical combat missions that tell captivating stories of an all-too-real conflict.",
-          "Witness an ever-evolving battlefield that never looked more beautiful, from the detailed environments to the brutal destruction unleashed. The latest incarnation of Eugen’s proprietary engine simulates modern land and air combat in Western Europe to the fullest extent.",
-          "The maps are rich with tactical options and objectives, from hills, small villages, dense forests, meandering rivers, bridges, and industrial zones to be captured. Be wary of ambushes or outflanking maneuvers as you continuously advance the dynamic frontline that contributes to a side’s victory or defeat.",
-          "Lead your chosen battlegroup into battle as an expert commander, taking advantage of all the available tactical tools. Combat in WARNO is an all-encompassing contest of smarts, tactics, and mastery of your units.",
-          "Take to war across a wide variety of game modes, including stand-alone Skirmish missions playable in solo, cooperative, or multiplayer.",
-          "Battle against an enhanced and challenging AI or pit your tactical prowess against other human players, in intense ranked 1v1, 2v2 to 4v4 team matches to all-encompassing 10v10 battles.",
-          "Take advantage of a host of quality-of-life enhancements catering to new players and veterans of Eugen Systems’ previous titles. This includes issuing commands during pre-combat deployment, Rules of Engagements, AI-assisted Smart Orders, and much more.",
-          "Included DLCs:",
-          "Digital Guides",
-          "Early Access Pack",
-          "Nemesis #1 – Air Assault",
-          "Nemesis #2 – Plateau d’Albion",
-          "Nemesis #3 – Homefront",
-          "Nemesis #4 – Capital Defence",
-          "Nemesis #5 – Southern Flank",
-          "Nemesis #6 – The Magdeburg Counterstrike",
-          "Reinforcement Pack #1 – Urban Frontlines",
-          "Reinforcement Pack #2 – Railway",
-          "Reinforcement Pack #3 – Stoneware",
-          "Reinforcement Pack #4 – Albion Map",
-          "Reinforcement Pack #5 – Valley and Factory",
-          "Reinforcement Pack #6 – Kreide",
-          "Reinforcement Pack #7 – Cliff",
-          "Reinforcement Pack #8 – Ohmen",
-          "Reinforcement Pack #9 – Surrounded",
-          "Reinforcement Pack #10 – Eiche",
-          "Reinforcement Pack #11 – Low Countries’ Lions",
-          "NORTHAG",
-          "SOUTHAG",
-          "LANDJUT",
-          "Season Pass DLC is not an actual DLC hence not counted."
-        ],
-        "repack_features": [
-          "Based on WARNO.LANDJUT-RUNE ISO release: rune-warno.landjut.iso (60,526,755,840 bytes)",
-          "Game version: v188908; 22 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 56.4 to 31.3 GB)",
-          "Installation takes from 21 minutes (on 16-threads CPU) up to 40 minutes (on 8-threads CPU)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 61.5 GB (up to 66.1 GB during installation)",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

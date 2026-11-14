@@ -1,9 +1,41 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-13T23:35:29.795902+00:00",
-  "source_pages": 821,
+  "generated_at": "2026-11-14T03:18:35.352434+00:00",
+  "source_pages": 822,
   "last_full_scan_at": "2026-11-13T11:30:01.530201+00:00",
   "games": [
+    {
+      "id": "football-manager-27",
+      "title": "Football Manager 27 – v27.0.1",
+      "source_url": "https://fitgirl-repacks.site/football-manager-27/",
+      "image_url": "https://i7.imageban.ru/out/2026/11/14/b8b8dda50addd9b5172ed5f98f53f962.jpg",
+      "post_date": "2026-11-14T05:58:26+03:00",
+      "genres": [
+        "Managerial",
+        "Sports",
+        "Soccer",
+        "Strategy",
+        "2D",
+        "3D",
+        "Real-time",
+        "Turn-based"
+      ],
+      "repack_size": "4.4 GB"
+    },
+    {
+      "id": "mario-kart-world",
+      "title": "Mario Kart World – v1.8.0 + Switch 2 Emulator",
+      "source_url": "https://fitgirl-repacks.site/mario-kart-world/",
+      "image_url": "https://i7.imageban.ru/out/2026/11/14/b3ca98e78584f9c3f8821429bd6f20ed.jpg",
+      "post_date": "2026-11-14T04:14:53+03:00",
+      "genres": [
+        "Arcade",
+        "Racing",
+        "3D",
+        "Karts"
+      ],
+      "repack_size": "16.6 GB"
+    },
     {
       "id": "warno",
       "title": "WARNO: Gold Edition, v210942 + 25 DLCs",

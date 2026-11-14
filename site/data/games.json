@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-14T21:12:05.483892+00:00",
+  "generated_at": "2026-11-14T21:12:50.035349+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-14T10:52:06.992165+00:00",
   "games": [
@@ -15,7 +15,58 @@
         "Side",
         "2D"
       ],
-      "repack_size": "2.1 GB"
+      "repack_size": "2.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/32/7d/327d9a4e-6fd2-430a-acc3-668d8228efd6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/32/7d/327d9a4e-6fd2-430a-acc3-668d8228efd6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/eb/1c/eb1ce214-12a5-433f-ae42-86fbe0281299.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/eb/1c/eb1ce214-12a5-433f-ae42-86fbe0281299.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ac/63/ac639426-6f99-4dac-8e5a-976ac5a0fc2c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ac/63/ac639426-6f99-4dac-8e5a-976ac5a0fc2c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/85/40/8540f542-ea9a-4cc1-8dac-664c6e13972d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/85/40/8540f542-ea9a-4cc1-8dac-664c6e13972d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d3/7b/d37b95e1-bc18-4f6e-b977-0977e3d4c3e1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d3/7b/d37b95e1-bc18-4f6e-b977-0977e3d4c3e1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e2/7f/e27fb2a1-5122-4e79-ac5d-815e58c9addd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e2/7f/e27fb2a1-5122-4e79-ac5d-815e58c9addd.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-14T21:12:50.032794+00:00",
+      "details": {
+        "description": "The Witch’s Bakery\nis a\ncozy narrative Adventure RPG\nabout a\njoyful witch\nwho opens her\nbakery\nin\nmodern Paris\n. She has one special power: she can\nsee into people’s heart\nand\nheal their emotions\nthrough magic!\nYOUR DAILY LIFE AS A WITCH-BAKER IN PARIS!\nYou play as Lunne, who has just arrived in the city! Each day is split into three phases:\nDaytime\n, where Lunne works in the bakery and helps customers through their troubles with a little magic.\nEvening\n, where Lunne explores Paris, builds relationships, discovers the city’s secrets and goes inside her friends’ troubled hearts.\nNight\n, where Lunne rests, improves her magic, decorates her bakery and spends time in her cosy atelier.\nThe story progresses through the days as you earn experience, money, and fame, meet new friends and heal their heart.\nA COLORFUL PARIS IN A JOYFUL ADVENTURE!\nOnce your work day is done, you can\nvisit several districts of Paris\nto\nmeet with main characters\n, engage in\nactivities to get to know them\n, buy\nbooks for new recipes\n, etc.\nThe above example is “Le Quai des Bouquinistes” located in the 6th arrondissement of Paris! This place is known for its book sellers and its collectors of various entertainment goods, like vinyls, posters, old magazines… But also, of course, for the beautiful Notre-Dame.\nEach district has its own characters, activities and shops!\nA STORY ABOUT EMOTIONS AND VULNERABILITY\nFor some people, their emotion is locked away so strongly than Lunne needs to go\ninside their heart\nto help them. She enters their\n“Heart Palace”\n, a magical space where\nemotions and thoughts take shape\n. Lunne needs to\nguide the personified Emotion back to the Heart’s Cradle\n.\nInside the Heart Palace, Lunne discovers the person’s deepest struggles and finds the\nkey ingredient she needs to make a bread that will heal them\n!\nABOUT SUNNY LAB\nWe are an indie team of experienced developers from\nFrance\n! We have gathered to create\nhopeful stories\n, filled with\nlovable characters, happy smiles and deep emotional journeys\n. We are always reachable on our socials @SunnyLabGames!\nWe are so happy to share our first game “The Witch’s Bakery” with you! We are still at the beginning of production and we’ll be sharing all our progress with you! Feel free to ask us any question!\nTHE WITCH’S BAKERY DISCORD SERVER\nJoin our community of bakers on The Witch’s Bakery Discord!\nIt’s the best place to find all the latest news regarding the game and where you can find a community of likeminded people to chat to. You can find the link to join the server in the\nFAQ pinned in the Steam Discussions page!",
+        "game_features": [],
+        "repack_features": [
+          "Based on The.Witchs.Bakery-TENOKE ISO release: tenoke-the.witchs.bakery.iso (6,347,225,088 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.9 to 2.1 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.9 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-14T21:12:50.032794+00:00"
     },
     {
       "id": "witch-cabin-cleanup",
@@ -30,7 +81,59 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "2.2 GB"
+      "repack_size": "2.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ac/10/ac109d3e-bf2c-48fb-ab18-af0d37f6fa3c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ac/10/ac109d3e-bf2c-48fb-ab18-af0d37f6fa3c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f4/02/f402070e-b896-470a-a397-828cbbfdb9d0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/02/f402070e-b896-470a-a397-828cbbfdb9d0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/6d/586d4a06-cdcd-4407-86e7-9aac4503f493.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/6d/586d4a06-cdcd-4407-86e7-9aac4503f493.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/11/a9/11a9fca3-b907-46dc-bcf1-8c24b55cdd58.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/11/a9/11a9fca3-b907-46dc-bcf1-8c24b55cdd58.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/26/24/262483d4-90a5-4ccf-9722-6dd6de21d73c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/26/24/262483d4-90a5-4ccf-9722-6dd6de21d73c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d2/67/d26796a2-a4bf-40aa-81ad-280ceac351f1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d2/67/d26796a2-a4bf-40aa-81ad-280ceac351f1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-14T21:12:50.032794+00:00",
+      "details": {
+        "description": "Witch’s Cabin Cleanup is a cozy organizing simulator about putting a cluttered witch’s cabin back in order. Sort 5,313 curios across 6 rooms: the apothecary, the library, the greenhouse, the ritual chamber, and more. All at your own pace.\nA Relaxing Witch’s Cabin Organizing Simulator\nThe cabin is a mess, and the magic only made it worse. Return everything to its proper shelf at your own pace, with no timers and no pressure.\nPick up each item: a potion vial, a loose spellbook, or a jar of moth wings, find the room and shelf it belongs on, and set it in place. Work through the cabin one shelf at a time.\nEarn upgrades as you play. Move faster, reach farther, and unlock a few small spells: a levitation charm, a banishing wand, that make tidying the cabin quicker.\nCluttered shelves fill with neat rows of labelled jars, and the tangled herb rack settles into order. Each finished room shows clear progress.\nKey Features\nSort more than 5,300 curios across 6 rooms of a witch’s cabin\nSimple gameplay: pick things up and put them back where they belong\nSkill upgrades for speed and reach, plus a few magical abilities\nNo time limits and no game over. A relaxed pace you set yourself",
+        "game_features": [],
+        "repack_features": [
+          "Based on Witch.Cabin.Cleanup-TENOKE ISO release: tenoke-witch.cabin.cleanup.iso (3,853,264,896 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.6 to 2.2 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-14T21:12:50.032794+00:00"
     },
     {
       "id": "football-manager-27",

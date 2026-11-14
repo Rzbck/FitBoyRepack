@@ -1,9 +1,37 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-14T10:52:06.992165+00:00",
+  "generated_at": "2026-11-14T21:12:05.483892+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-14T10:52:06.992165+00:00",
   "games": [
+    {
+      "id": "the-witchs-bakery",
+      "title": "The Witch’s Bakery",
+      "source_url": "https://fitgirl-repacks.site/the-witchs-bakery/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/14/666cfc89596869a8427973ec8c2cbbcd.jpg",
+      "post_date": "2026-11-14T22:51:13+03:00",
+      "genres": [
+        "Adventure",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "2.1 GB"
+    },
+    {
+      "id": "witch-cabin-cleanup",
+      "title": "Witch Cabin Cleanup – v1.0.0.0",
+      "source_url": "https://fitgirl-repacks.site/witch-cabin-cleanup/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/14/5e5ac787a52fd54ef7f00416a1e3333c.jpg",
+      "post_date": "2026-11-14T21:49:16+03:00",
+      "genres": [
+        "Lifestyle",
+        "Logic",
+        "Hidden object",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "2.2 GB"
+    },
     {
       "id": "football-manager-27",
       "title": "Football Manager 27 – v27.0.1",

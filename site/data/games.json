@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-14T22:26:33.259611+00:00",
+  "generated_at": "2026-11-14T22:27:20.006490+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-14T10:52:06.992165+00:00",
   "games": [
@@ -17,7 +17,63 @@
         "Side",
         "2D"
       ],
-      "repack_size": "1.7 GB"
+      "repack_size": "1.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/85/ea/85eae527-7c08-48cd-9c2e-cebcdb1a3021.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/85/ea/85eae527-7c08-48cd-9c2e-cebcdb1a3021.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/01/ad/01adca5d-7d89-4c9c-be9a-08eeb6ab7593.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/01/ad/01adca5d-7d89-4c9c-be9a-08eeb6ab7593.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8d/36/8d36ee65-c00e-4b52-a5f1-2c32b7c69c34.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8d/36/8d36ee65-c00e-4b52-a5f1-2c32b7c69c34.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/e7/1ee7dc84-6223-434b-8488-326629dbce14.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/e7/1ee7dc84-6223-434b-8488-326629dbce14.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1f/13/1f1366d7-3dc2-4ecf-bdd5-62a9c5326def.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1f/13/1f1366d7-3dc2-4ecf-bdd5-62a9c5326def.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-14T22:27:20.005009+00:00",
+      "details": {
+        "description": "Rhythm is Life and Law\nRhythm is everything on the island of Suri, and when its harmony is broken, the land dances to a darker pulse.\nPlay as\nAjira\n, a young girl fast and fearless, on her quest to find a fruit that can save her mother from the illness that killed her father.\nBut what begins as a simple trek through a forest, becomes a journey to restore the rhythmic balance of the island, and with it, life itself.\nIn SURI: The Seventh Note, rhythm isn’t decoration, but the law of nature. Learn its patterns. Trust its timing. When you move with the beat, the island moves with you",
+        "game_features": [
+          "Rhythm-Driven Action",
+          "Run, jump, and phase in sync with the soundtrack. The world reacts to your timing, and missing the beat means losing your flow.",
+          "Cinematic Escape Sequences",
+          "Push your reflexes through handcrafted chases where gameplay and music fuse into one.",
+          "Evolving Abilities",
+          "Unlock rhythm-infused powers that expand your movement and combat as you learn to master the beat.",
+          "A World That Breathes Music",
+          "From quiet ruins to chaotic arenas, each level is composed like a song with its own tempo, tone, and emotion."
+        ],
+        "repack_features": [
+          "Based on SURI.The.Seventh.Note-RUNE ISO release: rune-suri.the.seventh.note.iso (4,061,888,512 bytes)",
+          "Game version: v1.007; 2 DLCs (Trials Of Yama & Digital Deluxe) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.8 to 1.7 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 16.2 GB",
+          "Language can be changed in “Suri The Seventh Note_Data/Plugins/x86_64/steam_emu.ini” file",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-14T22:27:20.005009+00:00"
     },
     {
       "id": "survival-fountain-of-youth",

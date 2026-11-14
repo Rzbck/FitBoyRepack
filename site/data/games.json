@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-14T03:18:35.352434+00:00",
+  "generated_at": "2026-11-14T03:19:24.446424+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-13T11:30:01.530201+00:00",
   "games": [
@@ -20,7 +20,64 @@
         "Real-time",
         "Turn-based"
       ],
-      "repack_size": "4.4 GB"
+      "repack_size": "4.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fa/24/fa24f383-a374-4055-b6d8-fe3899bcd60f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fa/24/fa24f383-a374-4055-b6d8-fe3899bcd60f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/1d/421d4e74-5307-49f9-8562-68ae4516c4ed.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/1d/421d4e74-5307-49f9-8562-68ae4516c4ed.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7c/9c/7c9c35d3-41c2-4cd6-94cc-465fd726ea35.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7c/9c/7c9c35d3-41c2-4cd6-94cc-465fd726ea35.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/46/d4/46d45624-2265-42e0-afa4-c0fe8aafc583.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/46/d4/46d45624-2265-42e0-afa4-c0fe8aafc583.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b4/05/b4056362-d7e2-48e1-abd0-1c9038eb1e61.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b4/05/b4056362-d7e2-48e1-abd0-1c9038eb1e61.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1f/c4/1fc45211-a100-40ad-b8a7-05a7e9d6cdc6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1f/c4/1fc45211-a100-40ad-b8a7-05a7e9d6cdc6.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-14T03:19:24.445016+00:00",
+      "details": {
+        "description": "Every fan believes they could do it differently. In FM27 belief isn’t a hot take, it’s a story waiting to happen.\nStep into a living, breathing football universe where every decision is yours to make.\nPick the team. Define your style. Spot what other managers might miss. Maybe you take a chance on the academy prospect. Maybe you sell the star who just doesn’t get your vision.\nTrain your team to work as one. Build a tactical blueprint that’s unmistakably yours. Then lead your team out to admiration from the stands as you take your place on the touchline.\nMatch day. React to everything the opposition throws at you. Beat their press. Fill the box. And throw the kitchen sink.\nBecause footballing history won’t write itself.\nEvery decision could be the one to change everything. So chase the vision only you can see.\nWhatever happens, you’ll remember the calls that got you there.\nFootball Manager 27. Make The Call.\nWhat’s new for FM27?\nExperience a new dimension to squad building with all-new Tactical Effectiveness that measures how well-equipped your players are to deliver your footballing vision, while refreshed training puts even more focus on player and team development.\nExploit the gaps you see in the opposition defence with Tactical Tweaks that deliver a new layer of influence from the touchline.\nExperience every fixture as a richer piece of football theatre thanks to upgrades to crowds, stadiums and environments that elevate the stage for your players to perform on.\nSit defenders down with more attacking precision and expression, with flair and individuality taking centre stage to make it more rewarding seeing your tactical planning come to life on the pitch.\nGet lost in the wider football world that exists beyond your club with the return of Cup Draws and Transfer Deadline Day, mirroring the pace and drama of the football calendar.\nFlow through game weeks to glory thanks to an intuitive interface that puts key decisions front and centre. However you execute your managerial vision, customisation options mean you can tailor your setup to better suit your style.\nAnd discover much more, including new licensed leagues to test your skills in, upgrades to the 2D Match View, deeper data to power decision-making and more than 1,500 competition updates.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26385295 release: 8.2 GB",
+          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v1.9 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v27.0.1",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 8.2 to 4.4 GB)",
+          "Installation takes 4-13 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-14T03:19:24.445016+00:00"
     },
     {
       "id": "mario-kart-world",
@@ -34,7 +91,62 @@
         "3D",
         "Karts"
       ],
-      "repack_size": "16.6 GB"
+      "repack_size": "16.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fe/f8/fef822a7-21aa-4d78-bf21-91063c5c1bd0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/f8/fef822a7-21aa-4d78-bf21-91063c5c1bd0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/40/27/40270342-ac70-446e-9e69-9eacb5c299a3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/40/27/40270342-ac70-446e-9e69-9eacb5c299a3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a3/ba/a3bac934-7ff5-4dfa-adb2-1c7409d8598b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a3/ba/a3bac934-7ff5-4dfa-adb2-1c7409d8598b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/bb/f5bbefd0-eb92-4d15-a669-6d84ce426f33.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/bb/f5bbefd0-eb92-4d15-a669-6d84ce426f33.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1b/77/1b771f50-84ed-4b5f-acc7-3c76230e68ef.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1b/77/1b771f50-84ed-4b5f-acc7-3c76230e68ef.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/73/71/7371202f-9644-4bf4-8e46-39bc94ef3583.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/73/71/7371202f-9644-4bf4-8e46-39bc94ef3583.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-14T03:19:24.445016+00:00",
+      "details": {
+        "description": "Mario Kart World is a kart racing game developed by Nintendo EPD and released exclusively for the Nintendo Switch 2. Serving as a launch title for the console, it marks a major evolution for the franchise by replacing isolated tracks with a seamless, interconnected open world. Players can race across diverse regionsвЂ”including bustling cities, grassy plains, deserts, open waters, and volcanoesвЂ”in massive 24-driver competitions that double the racer count of previous entries.\nThe game introduces expanded movement mechanics and fresh modes built around its open-world design. Drivers can utilize off-roading techniques, rail grinding, wall-riding, and charge jumps to find shortcuts and gain speed. In the reimagined Grand Prix, racers actually drive the highway routes connecting one course to the next between main races. Alongside classic Versus and Battle modes, the",
+        "game_features": [
+          "a new Knockout Tour mode that eliminates trailing players at checkpoints, as well as a Free Roam mode where players can explore freely, complete P-Switch missions, and snap photos.",
+          "Beyond its gameplay changes, Mario Kart World boasts the largest roster of new playable characters in series history, turning classic track obstacles like Cow, Goomba, and Cataquack into selectable racers. Players can unlock new karts with coins, earn character costumes through drive-thru meal items, and wield an arsenal of 27 items including the Ice Flower, Hammer, and Mega Mushroom. Supported by dynamic weather, a day-night cycle, and a soundtrack of over 200 arranged tracks, it quickly became"
+        ],
+        "repack_features": [
+          "Based on Switch 2 v1.8.0 release: 21.8 GB",
+          "Lichii (v177, 185 MB) Switch 2 emulator is included and preconfigured",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from cumulative 21.9 to 16.6 GB)",
+          "Installation takes 7-20 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 21.9 GB",
+          "Language can be changed in emulator’s settings (select proper Region and then Language)",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-14T03:19:24.445016+00:00"
     },
     {
       "id": "warno",

@@ -1,9 +1,95 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-14T21:12:50.035349+00:00",
+  "generated_at": "2026-11-14T22:26:33.259611+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-14T10:52:06.992165+00:00",
   "games": [
+    {
+      "id": "suri-the-seventh-note",
+      "title": "SURI: The Seventh Note – Deluxe Edition, v1.007 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/suri-the-seventh-note/",
+      "image_url": "https://i8.imageban.ru/out/2026/11/15/3099de17e9261b860304f464a4910d0f.jpg",
+      "post_date": "2026-11-15T01:07:13+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Rhythm",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "1.7 GB"
+    },
+    {
+      "id": "survival-fountain-of-youth",
+      "title": "Survival: Fountain of Youth – Captain’s Edition, Build_1835 + 3 DLCs",
+      "source_url": "https://fitgirl-repacks.site/survival-fountain-of-youth/",
+      "image_url": "https://i3.imageban.ru/out/2024/05/22/04b153b31be90af01e629123bc7422d0.jpg",
+      "post_date": "2026-11-15T00:01:29+03:00",
+      "genres": [
+        "Action",
+        "Open world",
+        "Survival",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "8.6 GB",
+      "media": [
+        {
+          "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1967630/extras/surviveinthe16thcentury_eng_.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1f/52/1f52fd1d-993b-4844-9ee0-358fece96378.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1f/52/1f52fd1d-993b-4844-9ee0-358fece96378.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/93/a7/93a72b50-21a5-4974-98c1-c4445342265d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/93/a7/93a72b50-21a5-4974-98c1-c4445342265d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e7/76/e7768845-0735-46d7-bf6f-cee8947ea508.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e7/76/e7768845-0735-46d7-bf6f-cee8947ea508.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bc/6f/bc6fb219-fbc4-4021-9952-e6ff2775008a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bc/6f/bc6fb219-fbc4-4021-9952-e6ff2775008a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/1c/691ce483-7188-404f-9eb4-5e6a12a26eb6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/1c/691ce483-7188-404f-9eb4-5e6a12a26eb6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c8/64/c8642ab9-52dd-4a62-bec1-9bcd13c4df95.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c8/64/c8642ab9-52dd-4a62-bec1-9bcd13c4df95.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:20:19.939330+00:00",
+      "details": {
+        "description": "Survival: Fountain of Youth invites you to embark on a thrilling adventure inspired by the historic Age of Discovery. After a shipwreck, you find yourself stranded on deserted islands, where you must master the art of survival. From crafting tools and building shelters to hunting prey and battling predators, every action counts.\nPlanning and carefully managing your hunger, energy, and thirst is key for any lost survivor. There is only so much you can do in one day: hunting, gathering resources, crafting new tools, and cooking will take precious time.\nYet survival is only the beginning… Once you’ve tended to your basic needs it’s time to explore the vast archipelago you ended up on.\nExplore 11 islands, each with its own challenges: scorching Caribbean heat, relentless storms, malaria infested swamps and poisonous plants… The Bimini archipelago is full of hazards to overcome!\nPrepare your expeditions, establish outposts on each region and roam the seas on unique vessels: from a primitive raft to a massive 16th century Spanish ship.\nDangerous animals, weather, plants, diseases, injuries, hunger, thirst, exhaustion — everything will test your strength and ability to survive. The archipelago is filled with wild dangerous beasts to hunt down and even more challenging animal bosses. You’re the hunter here not the prey…\nWith blood and sweat, transform your encampment from a simple tent bivouac to a bustling base: tools workshops, crops field, water collector, smithing machinery…\nThere are hundreds of items that can be crafted and used for survival, from the simplest tools made of sticks and rocks to advanced muskets and armor.\nWhile finding clues and traces of your shipmates, you will stumble upon remnants of an ancient civilization that perished for an unknown reason.\nSearch ruins and temples, decipher centuries-old puzzles and unveil the mystery behind the legendary Fountain of Youth.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Survival_Fountain_of_Youth-FLT ISO release: flt-survival_fountain_of_youth.iso (13,935,745,024 bytes)",
+          "Game version: Build_1622 (v1.0/Release); 1.5 DLCs (Sea Wolf Pack & in-game part of Supporter Pack, The Amigo recipe) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 13 to 8.6 GB)",
+          "Installation takes 2-7 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 22.8 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:20:19.939330+00:00"
+    },
     {
       "id": "the-witchs-bakery",
       "title": "The Witch’s Bakery",
@@ -256276,77 +256362,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 1.9 GB",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:20:19.939330+00:00"
-    },
-    {
-      "id": "survival-fountain-of-youth",
-      "title": "Survival: Fountain of Youth – Build_1622 (v1.0/Release) + 1.5 DLCs",
-      "source_url": "https://fitgirl-repacks.site/survival-fountain-of-youth/",
-      "image_url": "https://i3.imageban.ru/out/2024/05/22/04b153b31be90af01e629123bc7422d0.jpg",
-      "post_date": "2024-05-22T18:59:29+03:00",
-      "genres": [
-        "Action",
-        "Open world",
-        "Survival",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "8.6 GB",
-      "media": [
-        {
-          "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1967630/extras/surviveinthe16thcentury_eng_.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1f/52/1f52fd1d-993b-4844-9ee0-358fece96378.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1f/52/1f52fd1d-993b-4844-9ee0-358fece96378.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/93/a7/93a72b50-21a5-4974-98c1-c4445342265d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/93/a7/93a72b50-21a5-4974-98c1-c4445342265d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e7/76/e7768845-0735-46d7-bf6f-cee8947ea508.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e7/76/e7768845-0735-46d7-bf6f-cee8947ea508.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/bc/6f/bc6fb219-fbc4-4021-9952-e6ff2775008a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/bc/6f/bc6fb219-fbc4-4021-9952-e6ff2775008a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/69/1c/691ce483-7188-404f-9eb4-5e6a12a26eb6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/69/1c/691ce483-7188-404f-9eb4-5e6a12a26eb6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c8/64/c8642ab9-52dd-4a62-bec1-9bcd13c4df95.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c8/64/c8642ab9-52dd-4a62-bec1-9bcd13c4df95.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:20:19.939330+00:00",
-      "details": {
-        "description": "Survival: Fountain of Youth invites you to embark on a thrilling adventure inspired by the historic Age of Discovery. After a shipwreck, you find yourself stranded on deserted islands, where you must master the art of survival. From crafting tools and building shelters to hunting prey and battling predators, every action counts.\nPlanning and carefully managing your hunger, energy, and thirst is key for any lost survivor. There is only so much you can do in one day: hunting, gathering resources, crafting new tools, and cooking will take precious time.\nYet survival is only the beginning… Once you’ve tended to your basic needs it’s time to explore the vast archipelago you ended up on.\nExplore 11 islands, each with its own challenges: scorching Caribbean heat, relentless storms, malaria infested swamps and poisonous plants… The Bimini archipelago is full of hazards to overcome!\nPrepare your expeditions, establish outposts on each region and roam the seas on unique vessels: from a primitive raft to a massive 16th century Spanish ship.\nDangerous animals, weather, plants, diseases, injuries, hunger, thirst, exhaustion — everything will test your strength and ability to survive. The archipelago is filled with wild dangerous beasts to hunt down and even more challenging animal bosses. You’re the hunter here not the prey…\nWith blood and sweat, transform your encampment from a simple tent bivouac to a bustling base: tools workshops, crops field, water collector, smithing machinery…\nThere are hundreds of items that can be crafted and used for survival, from the simplest tools made of sticks and rocks to advanced muskets and armor.\nWhile finding clues and traces of your shipmates, you will stumble upon remnants of an ancient civilization that perished for an unknown reason.\nSearch ruins and temples, decipher centuries-old puzzles and unveil the mystery behind the legendary Fountain of Youth.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Survival_Fountain_of_Youth-FLT ISO release: flt-survival_fountain_of_youth.iso (13,935,745,024 bytes)",
-          "Game version: Build_1622 (v1.0/Release); 1.5 DLCs (Sea Wolf Pack & in-game part of Supporter Pack, The Amigo recipe) are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 13 to 8.6 GB)",
-          "Installation takes 2-7 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 22.8 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

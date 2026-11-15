@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-15T22:50:24.642919+00:00",
+  "generated_at": "2026-11-15T22:51:03.461148+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-15T11:27:59.181907+00:00",
   "games": [
@@ -91,7 +91,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "904 MB"
+      "repack_size": "904 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b2/97/b2972996-cd41-4901-ad97-9c27d4c475c7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/97/b2972996-cd41-4901-ad97-9c27d4c475c7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a2/5e/a25ec3be-eef9-4f2f-ac17-32fe5fae5c00.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a2/5e/a25ec3be-eef9-4f2f-ac17-32fe5fae5c00.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/98/8f/988f0336-07c5-48e0-8230-3d82e166393e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/98/8f/988f0336-07c5-48e0-8230-3d82e166393e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/07/b4/07b4d660-fd9c-4161-91ce-433db575c871.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/07/b4/07b4d660-fd9c-4161-91ce-433db575c871.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/88/0588a437-7273-4a01-af00-0b3e2a36bdba.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/88/0588a437-7273-4a01-af00-0b3e2a36bdba.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c9/3c/c93c4ce4-04a5-4060-a495-3743e930abc1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c9/3c/c93c4ce4-04a5-4060-a495-3743e930abc1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-15T22:51:03.460280+00:00",
+      "details": {
+        "description": "A well-deserved rest in the Eight Lakes Valley\nPlay as Doctor Shiberson – a Shiba Inu and a renowned cartographer with endless curiosity for the world.\nYou arrive in a picturesque valley to take walks and enjoy a peaceful vacation. However, you quickly discover that the locals need your help. Every new mark on the map leads to amazing discoveries and fairytale secrets, which are an everyday reality here.\nCast your line and upgrade your gear!\nSail your boat to the middle of the lake to face unique fish species.\nArcade fishing mechanics:\nFishing is a fun, engaging mini-game where you carefully operate an active circle, balancing the line’s strength and your control over the catch.\nGear matters:\nThe stats of your rod, reel, and line are key—upgrade them to handle the wildest fish. Choosing the right bait can also make your task much easier.\nThink like a fish:\nSome species only bite at specific times of the day or in certain spots. Watch the lake surface to find feeding areas and plan your trip for the right time.\nExplore, fight, and craft\nThe land is an important part of your adventure – a perfect place for vacation walks and discoveries.\nCrafting and gathering:\nLook for ingredients on trails and in caves to craft unique baits using recipes you get from the locals.\nStress-free combat:\nExplore caves and forest paths, defeating enemies in dynamic, friendly melee combat.\nVisit Perchville:\nTrade your items, upgrade your boat at the Beaver’s shop, and buy delicious meals from the Bear to restore your energy and health.\nRestore harmony to the forgotten valley\nYour main goal is to catch four legendary Golden Fish. Each of them knows the location of ancient artifacts hidden nearby.\nFind all the pieces to rebuild the Temple of Obelisks and bring back the Fish King—the rightful ruler of all the lakes.\nCare for nature\nClean water means more trophies! Fish out trash from the lakes and use the recycling machine to improve the environment and earn extra money for gear upgrades.\nCleaning up the environment directly builds your reputation in town. This will allow you to unlock new quests and discover the secrets of all the valley’s residents.\nKey Features:\nShiba. Doctor Shiba:\nExplore the world as a cute cartographer dog with endless curiosity.\n8 lakes, 15 caves, and endless fun:\nExplore a diverse world consisting of 8 lakes across 4 different biomes.\nAdvanced fishing:\nAn arcade mini-game that depends on your gear stats and the time of day.\nFun combat and exploration:\nCasual combat, mysterious caves to explore, and engaging logic puzzles.\nProgression system:\nUpgrade the stats of the Doctor, his boat, and his fishing rod as you progress in the game.\nFairytale art style:\nA unique 3D visual style with hand-drawn UI elements.\nEco-friendly mission:\nCollect trash and keep the peaceful vibe of the Eight Lakes Valley alive.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Fish.And.Hike-TENOKE ISO release: tenoke-fish.and.hike.iso (2,816,333,824 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.6 GB to 904 MB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-15T22:51:03.460280+00:00"
     },
     {
       "id": "world-war-z-aftermath",

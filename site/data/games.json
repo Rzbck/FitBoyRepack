@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-15T01:07:32.142671+00:00",
+  "generated_at": "2026-11-15T01:08:21.142821+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-14T10:52:06.992165+00:00",
   "games": [
@@ -88,7 +88,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "5.9 GB"
+      "repack_size": "5.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8e/d6/8ed68ea2-0708-46b2-8946-90641efd6c6d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/d6/8ed68ea2-0708-46b2-8946-90641efd6c6d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/fa/8ffaad47-c0c1-479b-965e-d1d8b6165cc5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/fa/8ffaad47-c0c1-479b-965e-d1d8b6165cc5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/28/9f284bec-c348-4f54-8bb9-f10bbcefc60d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/28/9f284bec-c348-4f54-8bb9-f10bbcefc60d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f8/2c/f82cabdd-52cc-4433-8938-bdc73068f96b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f8/2c/f82cabdd-52cc-4433-8938-bdc73068f96b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d5/7a/d57a0527-ffb3-46dc-ad7b-eb8d858dad26.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d5/7a/d57a0527-ffb3-46dc-ad7b-eb8d858dad26.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/96/29/962911f1-1229-4309-bbe2-8bd6e73631ac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/96/29/962911f1-1229-4309-bbe2-8bd6e73631ac.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-15T01:08:21.142174+00:00",
+      "details": {
+        "description": "Hidden deep below the Fox Hole Arms, a research division known only as The Family sends recruits into unstable interdimensional rifts to harvest rare and bizarre ingredients. Step into the unknown alone or with up to three friends as you explore unpredictable rift dimensions, evade the creatures within, and grab whatever strange loot you can carry.\n1–4 PLAYER CO-OP HORROR WITH PROX CHAT\nPlay solo or with up to three friends to tackle the horrors of each rift. Coordination is key, survival is not guaranteed. Proximity voice chat enabled. Supports both third and first person play.\nPROCEDURALLY GENERATED RIFT DIMENSIONS\nNo two expeditions are the same. Each rift generates new biomes, shifting layouts, randomised hazards, and escalating threats that force your team to adapt.\nPHYSICS-BASED LOOTING\nUse the Gravity Gauntlet to grab, carry, and throw multiple objects at once. Harvest bizarre rift-grown ingredients and sell them at rift stations while surviving the creatures that stalk each dimension.\nBREW SPECIAL DRINKS\nAfter a hard day’s work, bring back your otherworldly ingredients to brew at Brewdragon’s Secret Brewery. Complete orders to develop and level up the potency of your brews. Some grant powerful abilities… others cause complete chaos.\nFIGHT TO SURVIVE\nTerrifying creatures lurk within every dimension. Study their behaviour, learn their weaknesses, and use your weapons strategically to survive deadly encounters. Choose when to fight and when to keep your distance.\nRIFT SCANNING & PORTALS\nUse your state-of-the-art Rift Scanner to locate dimensional anomalies, then deploy a Rift Stabilising Device to tear open unstable portals. Step through and discover what waits on the other side.\nTHE FOX HOLE ARMS\nYour HQ is a traditional British pub hiding the Family’s secret R&D facility. Between expeditions customise your outfit, mix perk drinks, review mission intel, or drop a coin in the jukebox. Just don’t piss off the Landlord.\nIncluded DLCs:\nMyths & Legends Dragon\nMyths & Legends Unicorn\nMyths & Legends Minotaur\nMyths & Legends Kitsune\nMyths & Legends Kelpie",
+        "game_features": [],
+        "repack_features": [
+          "Based on Hazard.Levels-RUNE ISO release: rune-hazard.levels.iso (9,747,791,872 bytes)",
+          "Game version: v1.0.0.10272; 5 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 9.1 to 5.9 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 17.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-15T01:08:21.142174+00:00"
     },
     {
       "id": "suri-the-seventh-note",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-16T02:44:58.077288+00:00",
+  "generated_at": "2026-11-16T02:45:47.954485+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-15T11:27:59.181907+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "6.9 GB"
+      "repack_size": "6.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ce/74/ce7452d2-e47b-47cb-830a-0647a78a55ff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ce/74/ce7452d2-e47b-47cb-830a-0647a78a55ff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cb/60/cb6080f3-2370-4ea1-b191-971ea729ff8e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cb/60/cb6080f3-2370-4ea1-b191-971ea729ff8e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b7/4d/b74dada5-0a6c-4984-acfa-b3f6b7a50324.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b7/4d/b74dada5-0a6c-4984-acfa-b3f6b7a50324.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/02/2502d4e9-1394-4873-b324-9b01f36391ec.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/02/2502d4e9-1394-4873-b324-9b01f36391ec.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/52/f552af11-68d6-4761-9d1d-f28f8319eced.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/52/f552af11-68d6-4761-9d1d-f28f8319eced.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/46/77/46773d45-fc00-4de6-ba89-9dd223e3911c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/46/77/46773d45-fc00-4de6-ba89-9dd223e3911c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-16T02:45:47.953142+00:00",
+      "details": {
+        "description": "Unbroken: the Awakening (UtA for short) is not a game for everyone. Like Neckbreak, despite its looks\nit is not an action focused boomer shooter\n, but  rather a very unorthodox hybrid of aRPG-Adventure-FPS, with multiple slow burn mood building sections in between combat sections. There still is a quite a bit of combat, full of flashy moves and combos, but it is worth noting UtA rewards patience, exploration and experimentation. UtA doesn’t tell the player what to do or where to go and after the tutorial and mood building intro, the player is chucked in on the deep end and free to discover the realm and its many secrets to reach one of the 9 endings. For a detailed breakdown please check the v.1.0. Release Notes or try the demo.\nWHAT IS UNBROKEN: THE AWAKENING?\nA mood heavy action-adventure, Unbroken takes players on a grindhouse journey to Crests Edge in search of the traitor Nielsen. With multiple routes to achieve your goal (or even abandon it), the ascent to one of the multiple endings will be a memorable one.\nWith a unique lore structure and one of a kind audiovisual composition, Unbroken will take players on a trip.\nWith its social structure and customs, choose and forge your path through Crests Edge.\nOver the top Tarantino’esque visceral bursts of violence. String your combos in a brief, stylish ballet of death before moving on to the next one.\nWith a timeline that progresses with gameplay, events and backstory evolve based on players’ actions and related powerplay happening in the background.\nThe trail has led you to the kingdom spanning the North, far away from your homeland.\nYour word is your bond. You will track down the traitor Nielsen, seeking refuge somewhere in Crests Edge, and bring him to justice, dead or alive.\nBut be wary, Stranger: the realm is now engulfed in chaos. Along with the Feast of the 3rd Moon and the ongoing Earl’s Rebellion, your journey will not be for the faint of heart. You will have five full moons to complete your quest. The clock is ticking!\nYou will prevail. Take up your arms and go forth and uphold the honour of our crest.\nI Will Pray Day and Night For Your Safe Return…\nThe realm of Crests Edge is large and diverse. Featuring many biomes, classes, and so forth, you will experience how the Township evolves with your ascension to your goal.\nIt is worth noting that due to the severe classism in the realm, you will witness stark contrasts in technological advancement, architecture, style and attire, and the attitude and language of the characters you encounter.\nThe lowest-poorest regions are similar to those of medieval times. In contrast, the higher you get, the larger the technological gaps become, with the wealthiest regions being more akin to industrial Victorian / WW1 times.\nThe game’s style is a next-gen re-imagining of classic sprite-based FPP games such as Tekwar, Disruptor(PS1), Witchhaven, etc, whilst aiming for an interpretation of how one would remember these games through rose-tinted glasses. So keeping the sprite retro aesthetic, whilst bringing it into modern times with advanced shaders and lighting, physics and ragdolls, destructible environments and in synch with the dynamic jazzpunk OST, Unbroken is sure to leave an impression.\nA unique gameplay flow and vibe. Neckbreak players ought to feel right at home.\nThe Resin: the potent oils will grant you bullet time in varying forms. Use them wisely, applying the right resin at the right moment can be a matter of life and death\nThe resin kick: give your enemies a free flying lesson or turn multiple inanimate objects into deadly, large caliber projectiles.\nClassist-based lore. With ascension into the realm of Crests Edge, players will witness an evolution of technology, style, language, architecture, and more\nA jazzpunk Original Dynamic Soundtrack by Roland Redwood (previous works include Sinless, Neckbreak\nPunch through system: combat will be juicy with volumetric blood splashing in all directions, and see through holes ripping through your enemies directly at the point of projectile entry.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Unbroken.The.Awakening-TENOKE ISO release: tenoke-unbroken.the.awakening.iso (27,719,886,848 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 25.8 to 6.9 GB)",
+          "Installation takes 2-7 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 25.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-16T02:45:47.953142+00:00"
     },
     {
       "id": "ground-branch",

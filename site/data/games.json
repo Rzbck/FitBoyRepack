@@ -1,9 +1,197 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-16T11:59:38.550033+00:00",
+  "generated_at": "2026-11-16T22:05:30.154806+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-16T11:59:38.550033+00:00",
   "games": [
+    {
+      "id": "ball-x-pit",
+      "title": "BALL x PIT: The Rise and Fall of Ballbylon Bundle, v1.308 + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/ball-x-pit/",
+      "image_url": "https://i7.imageban.ru/out/2025/10/20/801710ee815ae35f1787fd6f6e6d9ee7.jpg",
+      "post_date": "2026-11-17T00:20:16+03:00",
+      "genres": [
+        "Arcade",
+        "Shoot 'em up",
+        "Top",
+        "2D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/9b/45/9b45f37b-15e1-4166-ae3b-1768b13efd9e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9b/45/9b45f37b-15e1-4166-ae3b-1768b13efd9e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/3e/b13e3e34-d49e-4d3c-9cf8-556acf6c1432.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/3e/b13e3e34-d49e-4d3c-9cf8-556acf6c1432.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c3/78/c3783b6d-c158-4415-9052-646976383eed.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c3/78/c3783b6d-c158-4415-9052-646976383eed.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/92/2c92dd3c-e86d-4d23-99dc-f2d9adc0a3ae.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/92/2c92dd3c-e86d-4d23-99dc-f2d9adc0a3ae.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a1/f9/a1f985c3-a1c3-40db-bff3-0d0bd2459e50.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a1/f9/a1f985c3-a1c3-40db-bff3-0d0bd2459e50.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/04/41/04413adf-d817-49e8-9ddf-b0f7db1e4de3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/04/41/04413adf-d817-49e8-9ddf-b0f7db1e4de3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "BALL x PIT is a fast-paced fantasy roguelite where heroes must find the balls to plunge deeper into a seemingly bottomless pit of monsters. Develop arcane ammunition and resources in pursuit of treasure, recruiting additional heroes to aid you in your perilous quest.\nBallbylon has fallen. After a meteoric and completely unexpected event annihilated the great city, all that remains is an ominous, yawning pit. Treasure hunters from far and wide flock to the city’s tomb to seek their fortune, plumbing the depths in search of Ballbylon’s scattered riches. Few return.\nThe pit plays host to armies of barbaric creatures, hellbent on ending your quest before it even begins. Armed with a growing arsenal of magic-infused projectiles, batter your way through multiple levels of increasingly challenging obstacles to claim the ultimate prizes and rebuild New Ballbylon.",
+        "game_features": [
+          "Fuse Your Balls – The Ball Fusion system encourages explosive experimentation with over 60 randomized balls to equip and combine during your journey. Discover overpowered combinations and unexpected synergies from hundreds of possible outcomes.",
+          "Build New Ballbylon – Expand New Ballbylon with over 70 unique buildings that provide gameplay bonuses and unlock further power-ups, new characters, and more! As your community grows, task homebound heroes with automated tasks to keep the resources coming while you dive deeper into the pit.",
+          "Discover New Realms – Face legions of diverse enemies within the pit, battling through barren deserts, frozen caverns, savage forests and more. Each region offers its own unique set of hazards on top of hordes of increasingly challenging foes and mighty, screen-filling bosses.",
+          "Recruit Fellow Hunters – As you explore the pit you’ll encounter fellow treasure hunters eager to add their skills to your expedition. Each character has unique, upgradable mechanics that totally change the way you play the game. Experimentation and adaptation are crucial to the success of New Ballbylon!"
+        ],
+        "repack_features": [
+          "Based on BALL.x.PIT-TENOKE ISO release: tenoke-ball.x.pit.iso (2,002,733,056 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format nullified, NOTHING re-encoded. Bonus OST in MP3 format is included by default",
+          "Significantly smaller archive size (compressed from 1.9 GB to 280 MB)",
+          "Installation takes less than a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.9 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
+    {
+      "id": "frontier-path-of-shadows",
+      "title": "Frontier: Path of Shadows + 4 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/frontier-path-of-shadows/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/16/426e0afff5deb5a10655bdd35864edc4.jpg",
+      "post_date": "2026-11-16T23:31:24+03:00",
+      "genres": [
+        "Strategy",
+        "Tactics",
+        "Isometric",
+        "2D",
+        "Turn-based"
+      ],
+      "repack_size": "N/A"
+    },
+    {
+      "id": "frontier-tale",
+      "title": "Frontier Tale – v2.1.2",
+      "source_url": "https://fitgirl-repacks.site/frontier-tale/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/16/574786548d50e60ab098f82b0af4b7d3.jpg",
+      "post_date": "2026-11-16T22:47:05+03:00",
+      "genres": [
+        "Lifestyle",
+        "Managerial",
+        "RPG",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "603 MB"
+    },
+    {
+      "id": "frontier-paladin",
+      "title": "Frontier Paladin – Build 25255980",
+      "source_url": "https://fitgirl-repacks.site/frontier-paladin/",
+      "image_url": "https://i4.imageban.ru/out/2026/05/24/e603ab22d849b835ab47c911f4125cd8.jpg",
+      "post_date": "2026-11-16T21:30:45+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Top",
+        "3D"
+      ],
+      "repack_size": "8.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b6/84/b684dca9-89d5-4efa-81cf-d73933bbff9e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b6/84/b684dca9-89d5-4efa-81cf-d73933bbff9e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/7b/f57b322b-cc53-4cce-bb10-b8991f4fa7d8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/7b/f57b322b-cc53-4cce-bb10-b8991f4fa7d8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e9/13/e9137fee-b71b-49f3-9c33-0e2a7d4edc3e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e9/13/e9137fee-b71b-49f3-9c33-0e2a7d4edc3e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9b/2c/9b2cb390-20b0-419b-9b47-6ed7d132a86b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9b/2c/9b2cb390-20b0-419b-9b47-6ed7d132a86b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f6/dc/f6dc52ca-01e9-4962-b08c-f12937893897.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f6/dc/f6dc52ca-01e9-4962-b08c-f12937893897.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ea/28/ea28b7f4-9c58-4412-8464-79ebd21c96a7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ea/28/ea28b7f4-9c58-4412-8464-79ebd21c96a7.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Begin your first quest as a Paladin in this isometric Action RPG with weighty, stamina driven combat. Delve into the depths of the Crater, then fortify your positions and survive relentless enemy waves in tactical action-tower defense battles. Can you rebuild a shattered Order?",
+        "game_features": [
+          "Impactful and Varied Combat",
+          "Stand against dark forces with a combat system that is challenging yet fair. Dedicate your successful quests to the Pantheon and gain their blessings. Gather various divine relics and tap their powers. Do you want to be a Sanctified Juggernaut, smashing evil into fragments? An Unyielding Stalwart, watching while wicked washes off your proud armor? The choice is yours.",
+          "Defend Your Fortress",
+          "Your success draws the ire of local Warlords. A challenge issued; and one the Warlords are happy to respond to. Hold fast against the armies brought to bear against the Paladin Order’s Fort. However, wielding a fast blade will not be enough to prevail. Utilize traps, turrets and barricades devised by the clever members of your Order, while the stronger members will follow your orders on the battlefield.",
+          "Rebuild Your Shattered Order",
+          "As Titus and his Order venture deeper into the Crater, there are opportunities to add valuable skills to the fledgling Order. Recruit, rescue or persuade those whose skills may give the Order another edge against evil.",
+          "Paladin Acolyte’s Journey",
+          "Titus follows his Master and their foundling Order and descends into the Crater, an ugly scar gouged into the heart of the Old Empire. As a Paladin Acolyte, Titus is still learning the blade and deciding whether a Paladin’s life is for him. When the Crater turns out to be far more dangerous than they expected, the new Order must band together to survive."
+        ],
+        "repack_features": [
+          "Based on Frontier.Paladin-RUNE ISO release: rune-frontier.paladin.iso (11,170,152,448 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Unused .7z archive ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 10.4 to 7.4 GB)",
+          "Installation takes 5-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 10.4 GB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "ilomilo-plus",
+      "title": "ilomilo plus – v1.1.43.0",
+      "source_url": "https://fitgirl-repacks.site/ilomilo-plus/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/16/42ca1c39b0f2faa702e8e9378457c551.jpg",
+      "post_date": "2026-11-16T21:08:36+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Logic",
+        "3D"
+      ],
+      "repack_size": "179 MB"
+    },
     {
       "id": "unbroken-the-awakening",
       "title": "Unbroken: The Awakening",
@@ -60745,80 +60933,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 3.7 GB",
           "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "frontier-paladin",
-      "title": "Frontier Paladin",
-      "source_url": "https://fitgirl-repacks.site/frontier-paladin/",
-      "image_url": "https://i4.imageban.ru/out/2026/05/24/e603ab22d849b835ab47c911f4125cd8.jpg",
-      "post_date": "2026-05-24T01:14:45+03:00",
-      "genres": [
-        "RPG",
-        "Action RPG",
-        "Top",
-        "3D"
-      ],
-      "repack_size": "7.4 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/b6/84/b684dca9-89d5-4efa-81cf-d73933bbff9e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b6/84/b684dca9-89d5-4efa-81cf-d73933bbff9e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f5/7b/f57b322b-cc53-4cce-bb10-b8991f4fa7d8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f5/7b/f57b322b-cc53-4cce-bb10-b8991f4fa7d8.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e9/13/e9137fee-b71b-49f3-9c33-0e2a7d4edc3e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e9/13/e9137fee-b71b-49f3-9c33-0e2a7d4edc3e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9b/2c/9b2cb390-20b0-419b-9b47-6ed7d132a86b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9b/2c/9b2cb390-20b0-419b-9b47-6ed7d132a86b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f6/dc/f6dc52ca-01e9-4962-b08c-f12937893897.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f6/dc/f6dc52ca-01e9-4962-b08c-f12937893897.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ea/28/ea28b7f4-9c58-4412-8464-79ebd21c96a7.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ea/28/ea28b7f4-9c58-4412-8464-79ebd21c96a7.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Begin your first quest as a Paladin in this isometric Action RPG with weighty, stamina driven combat. Delve into the depths of the Crater, then fortify your positions and survive relentless enemy waves in tactical action-tower defense battles. Can you rebuild a shattered Order?",
-        "game_features": [
-          "Impactful and Varied Combat",
-          "Stand against dark forces with a combat system that is challenging yet fair. Dedicate your successful quests to the Pantheon and gain their blessings. Gather various divine relics and tap their powers. Do you want to be a Sanctified Juggernaut, smashing evil into fragments? An Unyielding Stalwart, watching while wicked washes off your proud armor? The choice is yours.",
-          "Defend Your Fortress",
-          "Your success draws the ire of local Warlords. A challenge issued; and one the Warlords are happy to respond to. Hold fast against the armies brought to bear against the Paladin Order’s Fort. However, wielding a fast blade will not be enough to prevail. Utilize traps, turrets and barricades devised by the clever members of your Order, while the stronger members will follow your orders on the battlefield.",
-          "Rebuild Your Shattered Order",
-          "As Titus and his Order venture deeper into the Crater, there are opportunities to add valuable skills to the fledgling Order. Recruit, rescue or persuade those whose skills may give the Order another edge against evil.",
-          "Paladin Acolyte’s Journey",
-          "Titus follows his Master and their foundling Order and descends into the Crater, an ugly scar gouged into the heart of the Old Empire. As a Paladin Acolyte, Titus is still learning the blade and deciding whether a Paladin’s life is for him. When the Crater turns out to be far more dangerous than they expected, the new Order must band together to survive."
-        ],
-        "repack_features": [
-          "Based on Frontier.Paladin-RUNE ISO release: rune-frontier.paladin.iso (11,170,152,448 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Unused .7z archive ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 10.4 to 7.4 GB)",
-          "Installation takes 5-12 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 10.4 GB",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
@@ -122556,76 +122670,6 @@
           "HDD space after installation: up to 4.1 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "ball-x-pit",
-      "title": "BALL x PIT + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/ball-x-pit/",
-      "image_url": "https://i7.imageban.ru/out/2025/10/20/801710ee815ae35f1787fd6f6e6d9ee7.jpg",
-      "post_date": "2025-10-20T17:05:16+03:00",
-      "genres": [
-        "Arcade",
-        "Shoot 'em up",
-        "Top",
-        "2D"
-      ],
-      "repack_size": "280 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/9b/45/9b45f37b-15e1-4166-ae3b-1768b13efd9e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9b/45/9b45f37b-15e1-4166-ae3b-1768b13efd9e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b1/3e/b13e3e34-d49e-4d3c-9cf8-556acf6c1432.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b1/3e/b13e3e34-d49e-4d3c-9cf8-556acf6c1432.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c3/78/c3783b6d-c158-4415-9052-646976383eed.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c3/78/c3783b6d-c158-4415-9052-646976383eed.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2c/92/2c92dd3c-e86d-4d23-99dc-f2d9adc0a3ae.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2c/92/2c92dd3c-e86d-4d23-99dc-f2d9adc0a3ae.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a1/f9/a1f985c3-a1c3-40db-bff3-0d0bd2459e50.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a1/f9/a1f985c3-a1c3-40db-bff3-0d0bd2459e50.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/04/41/04413adf-d817-49e8-9ddf-b0f7db1e4de3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/04/41/04413adf-d817-49e8-9ddf-b0f7db1e4de3.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "BALL x PIT is a fast-paced fantasy roguelite where heroes must find the balls to plunge deeper into a seemingly bottomless pit of monsters. Develop arcane ammunition and resources in pursuit of treasure, recruiting additional heroes to aid you in your perilous quest.\nBallbylon has fallen. After a meteoric and completely unexpected event annihilated the great city, all that remains is an ominous, yawning pit. Treasure hunters from far and wide flock to the city’s tomb to seek their fortune, plumbing the depths in search of Ballbylon’s scattered riches. Few return.\nThe pit plays host to armies of barbaric creatures, hellbent on ending your quest before it even begins. Armed with a growing arsenal of magic-infused projectiles, batter your way through multiple levels of increasingly challenging obstacles to claim the ultimate prizes and rebuild New Ballbylon.",
-        "game_features": [
-          "Fuse Your Balls – The Ball Fusion system encourages explosive experimentation with over 60 randomized balls to equip and combine during your journey. Discover overpowered combinations and unexpected synergies from hundreds of possible outcomes.",
-          "Build New Ballbylon – Expand New Ballbylon with over 70 unique buildings that provide gameplay bonuses and unlock further power-ups, new characters, and more! As your community grows, task homebound heroes with automated tasks to keep the resources coming while you dive deeper into the pit.",
-          "Discover New Realms – Face legions of diverse enemies within the pit, battling through barren deserts, frozen caverns, savage forests and more. Each region offers its own unique set of hazards on top of hordes of increasingly challenging foes and mighty, screen-filling bosses.",
-          "Recruit Fellow Hunters – As you explore the pit you’ll encounter fellow treasure hunters eager to add their skills to your expedition. Each character has unique, upgradable mechanics that totally change the way you play the game. Experimentation and adaptation are crucial to the success of New Ballbylon!"
-        ],
-        "repack_features": [
-          "Based on BALL.x.PIT-TENOKE ISO release: tenoke-ball.x.pit.iso (2,002,733,056 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in WAV format nullified, NOTHING re-encoded. Bonus OST in MP3 format is included by default",
-          "Significantly smaller archive size (compressed from 1.9 GB to 280 MB)",
-          "Installation takes less than a minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 1.9 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

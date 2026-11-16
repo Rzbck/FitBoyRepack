@@ -212,6 +212,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "ball-x-pit-repack-updated",
+      "title": "BALL x PIT Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/ball-x-pit-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "birchpunk-special-ai-vanich-in-the-russian-cyberfarm",
       "title": "BIRCHPUNK SPECIAL – AI-VANICH IN THE RUSSIAN CYBERFARM",
       "source_url": "https://fitgirl-repacks.site/birchpunk-special-ai-vanich-in-the-russian-cyberfarm/",

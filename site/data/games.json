@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-16T22:05:30.154806+00:00",
+  "generated_at": "2026-11-16T22:06:09.466151+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-16T11:59:38.550033+00:00",
   "games": [
@@ -87,7 +87,61 @@
         "2D",
         "Turn-based"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fd/f0/fdf082e0-541b-4343-8b1a-9974a70eb559.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/f0/fdf082e0-541b-4343-8b1a-9974a70eb559.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3e/63/3e63cef8-0f4c-42de-90a4-019b423fbd61.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3e/63/3e63cef8-0f4c-42de-90a4-019b423fbd61.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d6/b8/d6b8eef4-717d-432a-adbb-ac6db7a3fc3c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d6/b8/d6b8eef4-717d-432a-adbb-ac6db7a3fc3c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9e/48/9e489886-e9e4-486b-8a65-d386190c6ab4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9e/48/9e489886-e9e4-486b-8a65-d386190c6ab4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ba/d9/bad9a58b-6486-4c89-a8d9-d90df3033ca4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ba/d9/bad9a58b-6486-4c89-a8d9-d90df3033ca4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/76/35/763511b5-508b-472a-89a3-ed61e4f01fbf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/35/763511b5-508b-472a-89a3-ed61e4f01fbf.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-16T22:06:09.464979+00:00",
+      "details": {
+        "description": "Become a mercenary on the barely explored fringes of space, where luck can matter more than money or rank. To survive on the Frontier, you’ll need a trusted crew, dependable gear, and a knack for choosing the right allies when you need them.\nOut here, your crew is all you’ve got.\nAlice\nis a jack-of-all-trades. She practically lives in the engine room, making sure the ship doesn’t fall apart.\nRob\nis a man of his word. He’s keeping the corvette on course and making sure you don’t crash on landing. And\nKhan\nplans the missions. He knows more than the rest of you put together, and is always ready to share some hard-earned wisdom. Together, you’ll have to uncover where the strange sentient crystal came from, and what secrets it’s hiding.\nUNCOVER THE CRYSTAL’S SECRETS\nStep into the shoes of Jay. He’s a simple courier in the Epsilon Sector, where a long-running war has only just come to an end. Lawlessness runs rampant, factions are fighting for influence, and abandoned military bases are hiding countless secrets.\nAt the heart of it all is a symbiote crystal bound to Jay. Your decisions shape the courier’s personality, while the crystal learns from him and adopts his view of the world. Your choices can change individual events, open new story branches, and determine how the story ends.\nPLAN YOUR ACTIONS\nTake on space pirates, mercenaries, and corporates in turn-based combat. Use cover, high ground, and other objects on the battlefield to gain advantages, avoid penalties, and unlock additional actions. When your squad is outmatched, unleash powerful abilities to turn the tide.\nEvery battle is a fresh challenge! The environment, enemy lineups, and objects on the battlefield change from fight to fight, so there’s no single strategy that will work every time.\nEXPLORE THE EPSILON SECTOR\nExplore a universe shaped by players over more than 15 years of tabletop RPG campaigns. Travel to planets untouched by human footsteps, gather resources and credits, and deliver them to factions to build your reputation. Decide who you want on your side, and who you’re better off staying away from.\nSTRENGTHEN YOUR CREW\nSurviving alone on the Frontier is no easy feat. Develop your crew’s skills, unlock new abilities, and keep their equipment up to date.\nThe first chapter of the story is already available!\nHead to the Epsilon Sector and decide what the Frontier will become.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Frontier.Path.of.Shadows-TENOKE ISO release: tenoke-frontier.path.of.shadows.iso (2,697,054,208 bytes)",
+          "4 DLCs/Bonuses (Digital Artbook, Soundtrack, Supporter Pack, Quest and Equipment Pack) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content",
+          "Significantly smaller archive size (compressed from 2.5 GB to 295/694 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 2.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-16T22:06:09.464979+00:00"
     },
     {
       "id": "frontier-tale",
@@ -102,7 +156,60 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "603 MB"
+      "repack_size": "603 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/18/98/1898e03b-112d-4efb-a447-40b52b30d764.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/98/1898e03b-112d-4efb-a447-40b52b30d764.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/94/ee/94eeaf4f-945b-43c2-8f97-696c791f2799.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/ee/94eeaf4f-945b-43c2-8f97-696c791f2799.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/92/94/9294d706-e49e-42e0-9d47-be53c7f40e3d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/92/94/9294d706-e49e-42e0-9d47-be53c7f40e3d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1f/e4/1fe47282-a503-4238-a0af-2eb8f542ea5d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1f/e4/1fe47282-a503-4238-a0af-2eb8f542ea5d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ad/a0/ada0790b-dc1b-4181-8461-1f1acad0dac3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ad/a0/ada0790b-dc1b-4181-8461-1f1acad0dac3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/6b/63/6b6320bf-f98c-4685-93af-327797964155.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6b/63/6b6320bf-f98c-4685-93af-327797964155.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-16T22:06:09.464979+00:00",
+      "details": {
+        "description": "Every Extraction Is Different\nOver\n60 bosses\n, big and small, await. Each trip into the forest brings random boss encounters and unexpected events. Take up a weapon you forged yourself, fight your way through enemies, and search for building materials and rare treasures. Do you push a little farther for more loot, or head back while you can? Whatever you find, you’ll need to make it back to the village in one piece.\nA Wide Variety of Weapons\nChoose from\nover 90 weapons\n, some with unique charged moves. The\nGoblin Priest’s Axe\ncan lock onto enemies while charging, the\nRadiant Crystal Sword\nfires a crystal beam when charged, and the\nHymn of the Flame Demon\nsets enemies in front of you ablaze. Pick a weapon that feels right and head out!\nBuild Your Dream Settlement\nUse the resources you bring home to build a village from the ground up. Put up workshops and warehouses, process materials, and craft equipment for your next expedition. As the village grows, your companions will live and work in the home you’ve built together, bringing the forgotten settlement back to life.\nRecruit Companions and Build Bonds\nAs your territory expands, you’ll meet\nover 20 NPC companions\n. There’s a young mercenary who’s scared of bunnies, a carpenter with a mysterious past, a knight with some peculiar fighting habits, and plenty more. Each has their own combat style and specialty. Recruit them to fight by your side and help run the village. Back home, there are crops to plant, fields to water, ore to mine, and resources to gather.\nA Cozy, Cel-Style World\nDon’t let the bright colors fool you! The world looks like it came straight out of a fairy-tale picture book, but things can get tense fast when you’re trying to get out of the forest with a pack full of loot.\nSet Your Own Adventure Difficulty\nIn the mood for a relaxed outing or a hardcore challenge? Pick a difficulty that suits you. Each setting changes how much risk you’ll face on your expedition. Ready for one more run?",
+        "game_features": [],
+        "repack_features": [
+          "Based on Frontier.Tale-TENOKE ISO release: tenoke-frontier.tale.iso (3,720,353,792 bytes)",
+          "Game version: v2.1.2",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.5 GB to 603 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-16T22:06:09.464979+00:00"
     },
     {
       "id": "frontier-paladin",
@@ -190,7 +297,67 @@
         "Logic",
         "3D"
       ],
-      "repack_size": "179 MB"
+      "repack_size": "179 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/4a/95/4a953c71-bdab-489c-a377-08c04b164dbf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/95/4a953c71-bdab-489c-a377-08c04b164dbf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/51/5a/515afc3c-94d1-4e82-ae87-a8023781a81b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/51/5a/515afc3c-94d1-4e82-ae87-a8023781a81b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/79/c8/79c86164-b91b-443c-8d97-dce6a0d96684.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/79/c8/79c86164-b91b-443c-8d97-dce6a0d96684.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/69/17692c57-3dad-496f-a00a-b5af74945ac6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/69/17692c57-3dad-496f-a00a-b5af74945ac6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/98/13/98136395-dca4-422e-8a07-43fc19cd9a11.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/98/13/98136395-dca4-422e-8a07-43fc19cd9a11.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a5/08/a5087634-be95-4604-ad35-77bcb5986c7d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a5/08/a5087634-be95-4604-ad35-77bcb5986c7d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-16T22:06:09.464979+00:00",
+      "details": {
+        "description": "ilomilo plus is the Windows 8 version of the XBLA title, ilomilo, beefed up with additional fun levels, two exciting new chapters and three new challenging cubes. ilomilo is a puzzle game where the player controls two fellows named ilo and milo. The two friends always seem to get separated from each other in the surrealistic and ever changing world they inhabit, and the goal of each level is to reunite them. ilomilo presents puzzles where the player will have to use a great deal of three dimensional thinking to succeed. The world of ilomilo is made of cubes, and ilo and milo can walk any side of the cubes, as well as move cubes around. The player controls both ilo and milo, and will have to make them cooperate to unite them. ilomilo also allows players to control one character each, and play through the game cooperatively\nilomilo plus challenges players with out of the ordinary puzzles in an odyssey through a twisted and surrealistic world.",
+        "game_features": [
+          "Singleplayer story taking you through 6 different environments in the world of ilomilo",
+          "Cooperative gameplay mode for two players, each player controlling a character!",
+          "Famous cameo characters from other games are hidden in the world for players to find",
+          "Online Leaderboards: Compare online who has completed the levels in the most clever way",
+          "Unlockable mini game: Play the ingenious retro 2D mini game “ilomilo shuffle” with its own competitive leaderboard"
+        ],
+        "repack_features": [
+          "Based on ilomilo.plus.INTERNAL-RUNE ISO release: rune-ilomilo.plus.internal.iso (243,040,256 bytes)",
+          "Game version: v1.1.43.0",
+          "Installer makes all necessary steps to register the game upon installation, but it it fails, run “InstallApp.exe” in the installed game folder",
+          "To run the game find it with Windows search, desktop icon won’t work",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Slightly smaller archive size (compressed from 232 to 179 MB)",
+          "Installation takes a few seconds",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 391 MB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-16T22:06:09.464979+00:00"
     },
     {
       "id": "unbroken-the-awakening",

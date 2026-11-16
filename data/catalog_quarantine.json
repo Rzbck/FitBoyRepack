@@ -810,6 +810,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "ground-branch-repack-updated",
+      "title": "GROUND BRANCH Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/ground-branch-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "gta-v-ultra-repack-v2-1x-details",
       "title": "GTA V Ultra Repack v2.1x Details",
       "source_url": "https://fitgirl-repacks.site/gta-v-ultra-repack-v2-1x-details/",

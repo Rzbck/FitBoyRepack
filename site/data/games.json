@@ -1,9 +1,88 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-15T22:51:03.461148+00:00",
+  "generated_at": "2026-11-16T00:13:18.224703+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-15T11:27:59.181907+00:00",
   "games": [
+    {
+      "id": "ground-branch",
+      "title": "GROUND BRANCH – v1.1.0 Build 22612",
+      "source_url": "https://fitgirl-repacks.site/ground-branch/",
+      "image_url": "https://i3.imageban.ru/out/2026/07/17/bf8aee48569843ec4ac7a5ef798b20b8.jpg",
+      "post_date": "2026-11-16T02:55:56+03:00",
+      "genres": [
+        "Action",
+        "Tactical shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "23.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/44/3d/443d4d6c-f095-4e70-9488-f7b731e24ecd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/44/3d/443d4d6c-f095-4e70-9488-f7b731e24ecd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/1e/301e04b4-d33b-4b0a-b57d-464cf802e13e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/1e/301e04b4-d33b-4b0a-b57d-464cf802e13e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/13/4a/134a87b2-8041-434c-bff5-acd9617e27fc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/13/4a/134a87b2-8041-434c-bff5-acd9617e27fc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/23/ba/23ba8061-a54a-4716-a0db-c962d798aa44.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/23/ba/23ba8061-a54a-4716-a0db-c962d798aa44.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/56/09565205-8f68-4463-b5b3-3843d99297a6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/56/09565205-8f68-4463-b5b3-3843d99297a6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/79/4e/794ef745-f71f-4b31-be1a-f0ca7079d65b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/79/4e/794ef745-f71f-4b31-be1a-f0ca7079d65b.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "In\nGROUND BRANCH\n, you will play as the elite paramilitary arm of the CIA’s Special Activities Center/Special Operations Group (SAC/SOG) and lead other special operations forces through challenging deniable ops all over the globe. With deliberate, calculated and unforgiving gameplay, GROUND BRANCH aims to be the true rebirth of the tactical realism genre of the late ’90s and early 2000s. Powered by Epic’s Unreal Engine 4, GB puts the “tactical” back in “tactical shooter” — no compromises.\nTRUE\nFIRST PERSON\nGROUND BRANCH’s unique True First-Person System improves world immersion and awareness of your surroundings, providing zero disconnect between your view and your character’s physical presence in the environment. See your foot sticking out of cover? Better tuck it in — enemies may be able to see it (and shoot it) too, but only if their line of sight and muzzle are verifiably unobstructed. Cameras are placed at the character’s eyes and bullets originate from the weapon’s muzzle. Managing your height over bore when shooting around obstacles or aiming for precision in CQB is critical. In GROUND BRANCH, what you see is what you get.\nA minimal HUD with multiple optional elements ensures that vital information is available, but never a constant obstacle to either immersion or your field of view.\nUNPRECEDENTED\nCUSTOMIZATION\nSay goodbye to pre-defined kits and fully customize your character. From gear, basic appearance, and outfit, to in-depth vest and weapon platform customization, down to individual pouch and attachment placement. What you bring to your mission is determined by your loadout choice, which carries realistic consequences: with the encumbrance and stamina system, too much equipment will impact your character’s speed and performance; place a scope too forward on the rail and your sight picture will be too small; bring a long rifle into CQB and weapon collision may prove a hindrance.\nForget unlocks, microtransactions and loot boxes. Ground Branch operators get all the right tools for the job straight away — courtesy of the Agency.\nPrefer single-player? Missions with friendly A.I. and a full command system are planned for the future.\nBE IN\nFULL CONTROL\nIn the tactical shooter realm, movement and weapon handling are king. Take full control of your character with standing, crouching and prone stances, each with multiple movement speeds. Unique weapon postures (including low- and high-ready), leaning, free-look (head movement independent from aim), and optional and customizable free-aim (dead zone) put every part of your movement in your hands. Add dedicated mouse sensitivity sliders for point-shooting, unmagnified, and magnified aiming, and highly configurable key binding options.\nYou can also alternate between default actions of certain controls, such as whether a bolt action operates itself after firing or requires another click to operate.\nMissions\nGROUND BRANCH’s unique “campaign” format will deliver smaller, more localized sets of missions based around global hotspots, with a centralized intelligence interface to monitor them and receive new mission orders over time. The choices you make along the way may affect future engagements.\nBased on unique environments all over the world, the non-linear mission and map designs offer multiple entry points and open-ended outcomes.\nEnemies are spawned at mission start, with a degree of randomization to quantity and location. No “monster closets” or magic enemy spawns based on player location or mission progress.",
+        "game_features": [],
+        "repack_features": [
+          "Based on GROUND.BRANCH-RUNE ISO release: rune-ground.branch.iso (88,914,722,816 bytes)",
+          "Game version: v1.0 Build 21215 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 82.8 to 25.2 GB)",
+          "Installation depends mostly on your drive speed and takes from 5 minutes (32-threads CPU + SSD) up to 50 minutes (8-threads CPU + slow HDD)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 99.1 GB (up to 125.4 GB during installation)",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "ancient-wars-sparta-hd",
+      "title": "Ancient Wars: Sparta HD",
+      "source_url": "https://fitgirl-repacks.site/ancient-wars-sparta-hd/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/16/60b1090f647992fb42f9b1cf24f848c2.jpg",
+      "post_date": "2026-11-16T02:22:18+03:00",
+      "genres": [
+        "Strategy",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "4.7 GB"
+    },
     {
       "id": "mr-prepper",
       "title": "Mr. Prepper: Complete Edition – v1.44h + 4 DLCs/Bonuses",
@@ -41312,72 +41391,6 @@
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "ground-branch",
-      "title": "GROUND BRANCH – v1.0 Build 21215 (Release)",
-      "source_url": "https://fitgirl-repacks.site/ground-branch/",
-      "image_url": "https://i3.imageban.ru/out/2026/07/17/bf8aee48569843ec4ac7a5ef798b20b8.jpg",
-      "post_date": "2026-07-17T14:28:56+03:00",
-      "genres": [
-        "Action",
-        "Tactical shooter",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "25.2 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/44/3d/443d4d6c-f095-4e70-9488-f7b731e24ecd.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/44/3d/443d4d6c-f095-4e70-9488-f7b731e24ecd.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/30/1e/301e04b4-d33b-4b0a-b57d-464cf802e13e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/30/1e/301e04b4-d33b-4b0a-b57d-464cf802e13e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/13/4a/134a87b2-8041-434c-bff5-acd9617e27fc.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/13/4a/134a87b2-8041-434c-bff5-acd9617e27fc.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/23/ba/23ba8061-a54a-4716-a0db-c962d798aa44.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/23/ba/23ba8061-a54a-4716-a0db-c962d798aa44.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/09/56/09565205-8f68-4463-b5b3-3843d99297a6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/09/56/09565205-8f68-4463-b5b3-3843d99297a6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/79/4e/794ef745-f71f-4b31-be1a-f0ca7079d65b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/79/4e/794ef745-f71f-4b31-be1a-f0ca7079d65b.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "In\nGROUND BRANCH\n, you will play as the elite paramilitary arm of the CIA’s Special Activities Center/Special Operations Group (SAC/SOG) and lead other special operations forces through challenging deniable ops all over the globe. With deliberate, calculated and unforgiving gameplay, GROUND BRANCH aims to be the true rebirth of the tactical realism genre of the late ’90s and early 2000s. Powered by Epic’s Unreal Engine 4, GB puts the “tactical” back in “tactical shooter” — no compromises.\nTRUE\nFIRST PERSON\nGROUND BRANCH’s unique True First-Person System improves world immersion and awareness of your surroundings, providing zero disconnect between your view and your character’s physical presence in the environment. See your foot sticking out of cover? Better tuck it in — enemies may be able to see it (and shoot it) too, but only if their line of sight and muzzle are verifiably unobstructed. Cameras are placed at the character’s eyes and bullets originate from the weapon’s muzzle. Managing your height over bore when shooting around obstacles or aiming for precision in CQB is critical. In GROUND BRANCH, what you see is what you get.\nA minimal HUD with multiple optional elements ensures that vital information is available, but never a constant obstacle to either immersion or your field of view.\nUNPRECEDENTED\nCUSTOMIZATION\nSay goodbye to pre-defined kits and fully customize your character. From gear, basic appearance, and outfit, to in-depth vest and weapon platform customization, down to individual pouch and attachment placement. What you bring to your mission is determined by your loadout choice, which carries realistic consequences: with the encumbrance and stamina system, too much equipment will impact your character’s speed and performance; place a scope too forward on the rail and your sight picture will be too small; bring a long rifle into CQB and weapon collision may prove a hindrance.\nForget unlocks, microtransactions and loot boxes. Ground Branch operators get all the right tools for the job straight away — courtesy of the Agency.\nPrefer single-player? Missions with friendly A.I. and a full command system are planned for the future.\nBE IN\nFULL CONTROL\nIn the tactical shooter realm, movement and weapon handling are king. Take full control of your character with standing, crouching and prone stances, each with multiple movement speeds. Unique weapon postures (including low- and high-ready), leaning, free-look (head movement independent from aim), and optional and customizable free-aim (dead zone) put every part of your movement in your hands. Add dedicated mouse sensitivity sliders for point-shooting, unmagnified, and magnified aiming, and highly configurable key binding options.\nYou can also alternate between default actions of certain controls, such as whether a bolt action operates itself after firing or requires another click to operate.\nMissions\nGROUND BRANCH’s unique “campaign” format will deliver smaller, more localized sets of missions based around global hotspots, with a centralized intelligence interface to monitor them and receive new mission orders over time. The choices you make along the way may affect future engagements.\nBased on unique environments all over the world, the non-linear mission and map designs offer multiple entry points and open-ended outcomes.\nEnemies are spawned at mission start, with a degree of randomization to quantity and location. No “monster closets” or magic enemy spawns based on player location or mission progress.",
-        "game_features": [],
-        "repack_features": [
-          "Based on GROUND.BRANCH-RUNE ISO release: rune-ground.branch.iso (88,914,722,816 bytes)",
-          "Game version: v1.0 Build 21215 (Release)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 82.8 to 25.2 GB)",
-          "Installation depends mostly on your drive speed and takes from 5 minutes (32-threads CPU + SSD) up to 50 minutes (8-threads CPU + slow HDD)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 99.1 GB (up to 125.4 GB during installation)",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,

@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-16T00:14:06.010614+00:00",
+  "generated_at": "2026-11-16T02:44:58.077288+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-15T11:27:59.181907+00:00",
   "games": [
+    {
+      "id": "unbroken-the-awakening",
+      "title": "Unbroken: The Awakening",
+      "source_url": "https://fitgirl-repacks.site/unbroken-the-awakening/",
+      "image_url": "https://i6.imageban.ru/out/2026/11/16/04782a4205a3c796b29d836382b6846f.jpg",
+      "post_date": "2026-11-16T04:36:21+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "6.9 GB"
+    },
     {
       "id": "ground-branch",
       "title": "GROUND BRANCH – v1.1.0 Build 22612",

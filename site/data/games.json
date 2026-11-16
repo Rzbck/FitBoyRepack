@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-16T00:13:18.224703+00:00",
+  "generated_at": "2026-11-16T00:14:06.010614+00:00",
   "source_pages": 822,
   "last_full_scan_at": "2026-11-15T11:27:59.181907+00:00",
   "games": [
@@ -81,7 +81,59 @@
         "3D",
         "Real-time"
       ],
-      "repack_size": "4.7 GB"
+      "repack_size": "4.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/23/5c/235c9866-b7b0-4987-8a35-380a0e2cda0f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/23/5c/235c9866-b7b0-4987-8a35-380a0e2cda0f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8d/8f/8d8f50bf-846a-4dcd-baf5-8cc680006325.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8d/8f/8d8f50bf-846a-4dcd-baf5-8cc680006325.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a0/75/a075eac2-781f-4bb9-961d-88553be82ce2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/75/a075eac2-781f-4bb9-961d-88553be82ce2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/bc/05bc9585-cfab-48d2-b30e-bca92b625610.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/bc/05bc9585-cfab-48d2-b30e-bca92b625610.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/16/2e/162e793f-42a2-4392-bcc4-91162ee6d799.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/16/2e/162e793f-42a2-4392-bcc4-91162ee6d799.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e7/fa/e7fabc1c-dfe2-4eb4-a85b-2753e10766b2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e7/fa/e7fabc1c-dfe2-4eb4-a85b-2753e10766b2.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-16T00:14:06.009738+00:00",
+      "details": {
+        "description": "Ancient Wars: Sparta HD – Relive the Golden Age of Real-Time Strategy\nGet ready to experience one of the most epic chapters in RTS history.\nAncient Wars: Sparta HD\nis a fully remastered edition that brings the legendary battles of the ancient world to a whole new level. Lead the\nSpartans, Persians, and Egyptians\nthrough monumental wars that will decide the fate of civilization.\nWith\nenhanced HD graphics\nand refined gameplay, this remaster immerses you in tactical warfare where every decision can change history.\nCustomize your armies, master advanced strategies, and unleash devastating abilities\nto crush your enemies.\nCustomize\nDon’t inherit an army—\nforge your own.\nDesign and equip your troops with unique weapons and armor.\nCapture enemy weapons and vehicles to turn them into your advantage.\nAdapt your army in real time to counter enemy strategies.\nConquer\nIt’s not just about winning…\nit’s about domination.\nScale walls, break gates, and overrun fortresses in monumental sieges.\nRule the seas with realistic naval battles: ram, board, and destroy.\nUnleash advanced physics: deadly traps, chariots charging, and buildings collapsing under your might.\nDominate\nEvery faction,\na unique way of war\n. Every campaign,\na legend to relive\n.\nCommand asymmetric civilizations: Spartans, Persians, and Egyptians with unique tactics, units, and playstyles.\nRelive three historic campaigns: Sparta under Leonidas, Persia under Xerxes, and Egypt in rebellion.\nGrow your heroes with an RPG-style leveling and skill system.\nCompete\nDo you have what it takes to be remembered as a true\nlegend\n?\nEnter the\nSparta League\nand face players from around the world.\nChallenge smarter and more adaptive AI than ever before.\nOnly the most skilled will rise to eternal glory.\nCreate\nDon’t just play history—\nwrite your own.\nDesign epic scenarios and battles with a powerful map editor.\nPublish and download mods on\nSteam Workshop\n: a community of strategists building unforgettable experiences.\nExpand your game beyond the original with limitless content.\nForge your legend in the ancient world\nAre you ready to lead your army to victory?\nCommand the battlefield, defend your empire, and relive the most glorious moments of history with\nAncient Wars: Sparta HD.\nThe fate of civilizations lies in your hands!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Ancient.Wars.Sparta.HD.MULTi17-RUNE ISO release: rune-ancient.wars.sparta.hd.multi17.iso (7,295,270,912 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 6.8 to 4.7 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.5 GB",
+          "Language can be changed only during installation",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-16T00:14:06.009738+00:00"
     },
     {
       "id": "mr-prepper",

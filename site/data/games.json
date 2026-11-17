@@ -1,9 +1,76 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-17T17:49:10.773577+00:00",
+  "generated_at": "2026-11-17T22:53:47.542905+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-17T12:24:41.634941+00:00",
   "games": [
+    {
+      "id": "the-rogue-prince-of-persia",
+      "title": "The Rogue Prince of Persia – v1.1.0",
+      "source_url": "https://fitgirl-repacks.site/the-rogue-prince-of-persia/",
+      "image_url": "https://i1.imageban.ru/out/2025/08/20/b03829cddbbbdd7c6a696d4379422bd5.jpg",
+      "post_date": "2026-11-17T22:30:56+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "445 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/99/e0/99e08c3b-6f2f-4ac1-9977-c2090ff1e3c9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/99/e0/99e08c3b-6f2f-4ac1-9977-c2090ff1e3c9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/21/0f21180c-6ff4-4a4c-b2ac-c223b867cddb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/21/0f21180c-6ff4-4a4c-b2ac-c223b867cddb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/64/36/6436c303-0a8e-41e6-aa81-092724426124.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/64/36/6436c303-0a8e-41e6-aa81-092724426124.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/95/e2/95e2e9b2-71d9-4411-b0e3-ba0c313cbce9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/e2/95e2e9b2-71d9-4411-b0e3-ba0c313cbce9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a5/15/a5152f8c-a8f0-427f-913e-dc2973b44ad4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a5/15/a5152f8c-a8f0-427f-913e-dc2973b44ad4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a2/14/a214ad94-f5f9-4bc1-a5b3-bc460cae3718.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a2/14/a214ad94-f5f9-4bc1-a5b3-bc460cae3718.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "Dive into a thrilling and epic adventure, where every action pulses to the heady rhythm of an intense soundtrack. Master fluid, acrobatic, and responsive combat, paired with challenging parkour. Death after death, forge your own playstyle вЂ“ through exploration and encounters, perhaps you’ll find a way to right your wrongs and save the Persian kingdom envisioned by Evil Empire.\nREWRITE FATE. SAVE PERSIA. DIE TRYING.\nShape the legend of a Prince spared by death, whose fatal mistake doomed his people. Try your best to right your wrongs: each failure is a new chance to explore different paths, discover secrets, meet new characters, and use the knowledge gained from past attempts to change your people’s fate and prove yourself as the true Prince of Persia.\nMASTER A FAST AND ACROBATIC STYLE\nAs the Prince of Persia, agility is your greatest weapon. Dodge traps, wall-run, chain acrobatic combos, and strike with precision. Every movement is an opportunity, and every battle will reward skill and style.\nFIGHT YOUR OWN WAY\nDiscover, unlock, and master over 100 unique weapons and medallions. Adapt, upgrade, and customize your build with each run, crafting deadly combinations that fit your playstyle.\nONE MORE TRULY UNIQUE RUN\nNo run is ever the same. Dive back into this ever-evolving adventure, where narration, metaprogression, difficulty modifiers, random events, and procedurally generated levels will always leave you craving just one more unique run.",
+        "game_features": [],
+        "repack_features": [
+          "Based on The.Rogue.Prince.of.Persia-RUNE ISO release: rune-the.rogue.prince.of.persia.iso (804,159,488 bytes)",
+          "Game version: v1.0.2",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 767 to 420 MB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "nocturnal-2",
       "title": "Nocturnal 2 – v1.0.0",
@@ -139784,73 +139851,6 @@
           "Installation takes 2-10 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 7.4 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "the-rogue-prince-of-persia",
-      "title": "The Rogue Prince of Persia – v1.0.2",
-      "source_url": "https://fitgirl-repacks.site/the-rogue-prince-of-persia/",
-      "image_url": "https://i1.imageban.ru/out/2025/08/20/b03829cddbbbdd7c6a696d4379422bd5.jpg",
-      "post_date": "2025-08-21T00:34:56+03:00",
-      "genres": [
-        "Arcade",
-        "Jump and run",
-        "Side",
-        "2D"
-      ],
-      "repack_size": "420 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/99/e0/99e08c3b-6f2f-4ac1-9977-c2090ff1e3c9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/99/e0/99e08c3b-6f2f-4ac1-9977-c2090ff1e3c9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0f/21/0f21180c-6ff4-4a4c-b2ac-c223b867cddb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0f/21/0f21180c-6ff4-4a4c-b2ac-c223b867cddb.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/64/36/6436c303-0a8e-41e6-aa81-092724426124.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/64/36/6436c303-0a8e-41e6-aa81-092724426124.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/95/e2/95e2e9b2-71d9-4411-b0e3-ba0c313cbce9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/95/e2/95e2e9b2-71d9-4411-b0e3-ba0c313cbce9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a5/15/a5152f8c-a8f0-427f-913e-dc2973b44ad4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a5/15/a5152f8c-a8f0-427f-913e-dc2973b44ad4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a2/14/a214ad94-f5f9-4bc1-a5b3-bc460cae3718.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a2/14/a214ad94-f5f9-4bc1-a5b3-bc460cae3718.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "Dive into a thrilling and epic adventure, where every action pulses to the heady rhythm of an intense soundtrack. Master fluid, acrobatic, and responsive combat, paired with challenging parkour. Death after death, forge your own playstyle вЂ“ through exploration and encounters, perhaps you’ll find a way to right your wrongs and save the Persian kingdom envisioned by Evil Empire.\nREWRITE FATE. SAVE PERSIA. DIE TRYING.\nShape the legend of a Prince spared by death, whose fatal mistake doomed his people. Try your best to right your wrongs: each failure is a new chance to explore different paths, discover secrets, meet new characters, and use the knowledge gained from past attempts to change your people’s fate and prove yourself as the true Prince of Persia.\nMASTER A FAST AND ACROBATIC STYLE\nAs the Prince of Persia, agility is your greatest weapon. Dodge traps, wall-run, chain acrobatic combos, and strike with precision. Every movement is an opportunity, and every battle will reward skill and style.\nFIGHT YOUR OWN WAY\nDiscover, unlock, and master over 100 unique weapons and medallions. Adapt, upgrade, and customize your build with each run, crafting deadly combinations that fit your playstyle.\nONE MORE TRULY UNIQUE RUN\nNo run is ever the same. Dive back into this ever-evolving adventure, where narration, metaprogression, difficulty modifiers, random events, and procedurally generated levels will always leave you craving just one more unique run.",
-        "game_features": [],
-        "repack_features": [
-          "Based on The.Rogue.Prince.of.Persia-RUNE ISO release: rune-the.rogue.prince.of.persia.iso (804,159,488 bytes)",
-          "Game version: v1.0.2",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 767 to 420 MB)",
-          "Installation takes 1-2 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 1 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

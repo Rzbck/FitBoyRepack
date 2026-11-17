@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-17T12:24:41.634941+00:00",
+  "generated_at": "2026-11-17T17:48:28.940729+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-17T12:24:41.634941+00:00",
   "games": [
+    {
+      "id": "nocturnal-2",
+      "title": "Nocturnal 2 – v1.0.0",
+      "source_url": "https://fitgirl-repacks.site/nocturnal-2/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/17/c24eee784f1af2dd1fe0763e595ceb72.jpg",
+      "post_date": "2026-11-17T20:18:34+03:00",
+      "genres": [
+        "Arcade",
+        "Jump and run",
+        "Side",
+        "2D"
+      ],
+      "repack_size": "754 MB"
+    },
     {
       "id": "ball-x-pit",
       "title": "BALL x PIT: The Rise and Fall of Ballbylon Bundle, v1.308 + 3 DLCs/Bonuses",

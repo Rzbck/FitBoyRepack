@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-17T17:48:28.940729+00:00",
+  "generated_at": "2026-11-17T17:49:10.773577+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-17T12:24:41.634941+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "Side",
         "2D"
       ],
-      "repack_size": "754 MB"
+      "repack_size": "754 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b2/88/b28811bb-2055-45b4-8e23-bd2574d3d506.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/88/b28811bb-2055-45b4-8e23-bd2574d3d506.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/65/5e/655e8e14-ff26-49a8-bb5c-3ee36a9d4503.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/65/5e/655e8e14-ff26-49a8-bb5c-3ee36a9d4503.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ca/df/cadfe34a-c906-42fe-bf24-a495ff7f15a8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ca/df/cadfe34a-c906-42fe-bf24-a495ff7f15a8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ce/1b/ce1b8bc5-67b5-479f-859a-e25b897445c3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ce/1b/ce1b8bc5-67b5-479f-859a-e25b897445c3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/99/e8/99e8ad1f-a541-4487-91d2-daea255a0c29.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/99/e8/99e8ad1f-a541-4487-91d2-daea255a0c29.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/36/be/36bea55d-76f2-40c3-8340-bc8cfe93205f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/36/be/36bea55d-76f2-40c3-8340-bc8cfe93205f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-17T17:49:10.772770+00:00",
+      "details": {
+        "description": "Nocturnal 2 is an atmospheric action adventure game that invites you to explore the dark depths and towering heights of the city of Ytash.\nFeatures\nExplore an interconnected city, discover hidden passages, and unlock new paths with new abilities.\nUse your flaming sword to fight enemies and bring fire back to the city.\nEnjoy fast, fluid movement and responsive combat.\nDiscover a hand-drawn world inspired by Persian architecture.\nGather strange arcana and poems that may lead you down unexpected paths.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Nocturnal.2-TENOKE ISO release: tenoke-nocturnal.2.iso (1,948,258,304 bytes)",
+          "Game version: v1.0.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.8 GB to 754 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-17T17:49:10.772770+00:00"
     },
     {
       "id": "ball-x-pit",

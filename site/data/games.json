@@ -1,9 +1,112 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-18T12:10:29.445453+00:00",
+  "generated_at": "2026-11-18T21:58:33.834213+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-18T12:10:29.445453+00:00",
   "games": [
+    {
+      "id": "ticket-to-ride",
+      "title": "Ticket to Ride: Complete Your Journey Bundle – v1.11.3-766920 + 16 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/ticket-to-ride/",
+      "image_url": "https://i7.imageban.ru/out/2026/06/17/7e04630aaaef5fd4b12bfcd6edb9198f.jpg",
+      "post_date": "2026-11-18T23:00:44+03:00",
+      "genres": [
+        "Board game",
+        "Top-down",
+        "2D",
+        "Turn-based"
+      ],
+      "repack_size": "705 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/aa/fb/aafb66a0-07c4-4896-b427-c02e2007b0a8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/fb/aafb66a0-07c4-4896-b427-c02e2007b0a8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/87/e3/87e3744b-d3fa-41f3-8651-8a89c65c6270.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/87/e3/87e3744b-d3fa-41f3-8651-8a89c65c6270.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c1/fa/c1fafb26-bb3e-47ea-b701-6d8dfe65d523.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c1/fa/c1fafb26-bb3e-47ea-b701-6d8dfe65d523.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/00/0a/000a394c-2e14-4117-8878-6d5e28512b02.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/00/0a/000a394c-2e14-4117-8878-6d5e28512b02.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7a/a6/7aa696fd-06cc-49e1-93ae-c06a42d7416f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7a/a6/7aa696fd-06cc-49e1-93ae-c06a42d7416f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/43/55/4355dac3-9598-469b-9426-368a5cf29cf9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/43/55/4355dac3-9598-469b-9426-368a5cf29cf9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Play the ultimate digital version of the multi-award-winning modern classic board game Ticket to Ride!\nJourney across various countries, connecting their vibrant cities and exploring their unique gameplay mechanics and bonuses on the way.\nTicket to Ride offers a variety of game modes to suit you. Want to get competitive? Head online to challenge other players around the world and climb the leaderboards, or play with friends further afield in a private game. Got a packed schedule? Set up or join an asynchronous game and play across multiple days – we’ll notify you when it is your turn, so you can go at your own pace.\nTest out new strategies or keep it casual in single-player mode against state-of-the-art AI opponents. You can even make a game night of it with friends and family in couch play!\nGet to know a cast of unforgettable characters, each bringing their own tales to the table. Add new locomotives and carriages to your fleet with every expansion, and cement your name in railway history on the leaderboard!\nBecome a railway legend in the iconic, fan-favourite modern classic!",
+        "game_features": [
+          "Players are dealt a number of tickets and must pick a certain number to keep (depending on the map).",
+          "Players are also dealt four train cards of various colours. This number can also vary depending on the map you’re playing on, but don’t worry – the AI takes care of this!",
+          "Each turn, players can draw two train cards from the face-up pile, draw two train cards from the face-down pile, draw another ticket to complete, or use their train cards to claim a route! A claimed route is shown by placing train pieces along the route.",
+          "When a player has three or fewer train pieces left, the last round starts. Whoever has the most points at the end of the game is the winner!",
+          "Powered by an innovative adaptive AI system, single-player mode offers a challenge for new and experienced players alike.",
+          "Every moment has been brought to life with beautiful graphics that will immerse you in the adventure.",
+          "Every game presents fresh challenges, and it’s your mission to work out the most efficient solutions. Collect points by completing tickets, linking destinations and building the longest route.",
+          "Included DLCs:",
+          "Europe Expansion",
+          "Round the World Ticket",
+          "Nordic Expansion",
+          "USA 1910 Ticket Pack",
+          "India Expansion",
+          "Legendary Asia Expansion",
+          "San Francisco City Expansion",
+          "Switzerland Expansion",
+          "Winter Wonderland Bundle",
+          "Japan Expansion",
+          "Heart of Africa Expansion",
+          "Germany Expansion",
+          "Poland Expansion"
+        ],
+        "repack_features": [
+          "Based on Ticket.to.Ride.Poland.Expansion-TENOKE ISO release: tenoke-ticket.to.ride.poland.expansion.iso (1,111,474,176 bytes)",
+          "Game version: v1.11.0-741856; 13 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1 GB to 581 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
+    {
+      "id": "brokenlore-dont-lie",
+      "title": "BrokenLore: DON’T LIE + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/brokenlore-dont-lie/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/18/9965b5ffd83f7e4e16765dff93851fdf.jpg",
+      "post_date": "2026-11-18T22:31:08+03:00",
+      "genres": [
+        "Adventure",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "4.4 GB"
+    },
     {
       "id": "black-mesa",
       "title": "Black Mesa: Definitive Edition – Build 26713286",
@@ -50329,95 +50432,6 @@
           "Installation takes 1-2 minutes (depending on your system and selected components)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 3.1 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "ticket-to-ride",
-      "title": "Ticket to Ride: Complete Your Journey Bundle – v1.11.0-741856 + 13 DLCs",
-      "source_url": "https://fitgirl-repacks.site/ticket-to-ride/",
-      "image_url": "https://i7.imageban.ru/out/2026/06/17/7e04630aaaef5fd4b12bfcd6edb9198f.jpg",
-      "post_date": "2026-06-17T19:37:44+03:00",
-      "genres": [
-        "Board game",
-        "Top-down",
-        "2D",
-        "Turn-based"
-      ],
-      "repack_size": "581 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/aa/fb/aafb66a0-07c4-4896-b427-c02e2007b0a8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/aa/fb/aafb66a0-07c4-4896-b427-c02e2007b0a8.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/87/e3/87e3744b-d3fa-41f3-8651-8a89c65c6270.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/87/e3/87e3744b-d3fa-41f3-8651-8a89c65c6270.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/c1/fa/c1fafb26-bb3e-47ea-b701-6d8dfe65d523.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/c1/fa/c1fafb26-bb3e-47ea-b701-6d8dfe65d523.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/00/0a/000a394c-2e14-4117-8878-6d5e28512b02.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/00/0a/000a394c-2e14-4117-8878-6d5e28512b02.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/7a/a6/7aa696fd-06cc-49e1-93ae-c06a42d7416f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/7a/a6/7aa696fd-06cc-49e1-93ae-c06a42d7416f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/43/55/4355dac3-9598-469b-9426-368a5cf29cf9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/43/55/4355dac3-9598-469b-9426-368a5cf29cf9.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Play the ultimate digital version of the multi-award-winning modern classic board game Ticket to Ride!\nJourney across various countries, connecting their vibrant cities and exploring their unique gameplay mechanics and bonuses on the way.\nTicket to Ride offers a variety of game modes to suit you. Want to get competitive? Head online to challenge other players around the world and climb the leaderboards, or play with friends further afield in a private game. Got a packed schedule? Set up or join an asynchronous game and play across multiple days – we’ll notify you when it is your turn, so you can go at your own pace.\nTest out new strategies or keep it casual in single-player mode against state-of-the-art AI opponents. You can even make a game night of it with friends and family in couch play!\nGet to know a cast of unforgettable characters, each bringing their own tales to the table. Add new locomotives and carriages to your fleet with every expansion, and cement your name in railway history on the leaderboard!\nBecome a railway legend in the iconic, fan-favourite modern classic!",
-        "game_features": [
-          "Players are dealt a number of tickets and must pick a certain number to keep (depending on the map).",
-          "Players are also dealt four train cards of various colours. This number can also vary depending on the map you’re playing on, but don’t worry – the AI takes care of this!",
-          "Each turn, players can draw two train cards from the face-up pile, draw two train cards from the face-down pile, draw another ticket to complete, or use their train cards to claim a route! A claimed route is shown by placing train pieces along the route.",
-          "When a player has three or fewer train pieces left, the last round starts. Whoever has the most points at the end of the game is the winner!",
-          "Powered by an innovative adaptive AI system, single-player mode offers a challenge for new and experienced players alike.",
-          "Every moment has been brought to life with beautiful graphics that will immerse you in the adventure.",
-          "Every game presents fresh challenges, and it’s your mission to work out the most efficient solutions. Collect points by completing tickets, linking destinations and building the longest route.",
-          "Included DLCs:",
-          "Europe Expansion",
-          "Round the World Ticket",
-          "Nordic Expansion",
-          "USA 1910 Ticket Pack",
-          "India Expansion",
-          "Legendary Asia Expansion",
-          "San Francisco City Expansion",
-          "Switzerland Expansion",
-          "Winter Wonderland Bundle",
-          "Japan Expansion",
-          "Heart of Africa Expansion",
-          "Germany Expansion",
-          "Poland Expansion"
-        ],
-        "repack_features": [
-          "Based on Ticket.to.Ride.Poland.Expansion-TENOKE ISO release: tenoke-ticket.to.ride.poland.expansion.iso (1,111,474,176 bytes)",
-          "Game version: v1.11.0-741856; 13 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 1 GB to 581 MB)",
-          "Installation takes one minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 1 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

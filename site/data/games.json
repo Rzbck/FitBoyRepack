@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-18T00:02:58.823166+00:00",
+  "generated_at": "2026-11-18T00:03:39.944394+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-17T12:24:41.634941+00:00",
   "games": [
@@ -16,7 +16,62 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/11/08/11089a1f-b84e-4cfd-a6cd-c086f2cb1b17.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/11/08/11089a1f-b84e-4cfd-a6cd-c086f2cb1b17.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/ec/30ec62ac-2fc2-4a0b-9bf9-7271f055fb02.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/ec/30ec62ac-2fc2-4a0b-9bf9-7271f055fb02.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/de/76/de76beb3-4383-440b-be5d-829b55ce6b3c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/de/76/de76beb3-4383-440b-be5d-829b55ce6b3c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c3/e5/c3e5fd3f-85bb-42a1-b3b6-4aada045f427.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c3/e5/c3e5fd3f-85bb-42a1-b3b6-4aada045f427.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0b/19/0b193ed6-c4a4-4d76-8620-a773df80b5e4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0b/19/0b193ed6-c4a4-4d76-8620-a773df80b5e4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0c/34/0c342b42-8750-4b10-950f-96ffe8cf98f3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/34/0c342b42-8750-4b10-950f-96ffe8cf98f3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-18T00:03:39.942554+00:00",
+      "details": {
+        "description": "Blast off on a high-octane adventure\nStep into the cockpit and fly across the stars and skies with Fox McCloud and the Star Fox team! With the Lylat system under attack by evil scientist Andross, it’s up to you and the squad to fend off his forces.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Switch 2 v1.2.0 release: 14.7 GB",
+          "Lichii (v316 – Nov 17, 2026, 188 MB) Switch 2 emulator is included and preconfigured",
+          "“Space Animals Recomp” recompiled version v1.1.0 added, allowing better perfomance on some configurations than the emulated version",
+          "SAR won’t accept default NUP installed by the repack, so you will need to convert it beforehand by running “convert_to_recompile.bat” file in the “games” folder. The game size will increase two times after that",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of “Space Animals Recomp” files",
+          "Smaller archive size (compressed from cumulative 16.3 to 9.6/10.3 GB)",
+          "Installation takes 6-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 16.3 GB (x2 if you decide to convert to recompiled version later)",
+          "Language can be changed in emulator’s or recomp’s settings",
+          "At least 4 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-18T00:03:39.942554+00:00"
     },
     {
       "id": "the-rogue-prince-of-persia",

@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-17T22:53:47.542905+00:00",
+  "generated_at": "2026-11-18T00:02:58.823166+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-17T12:24:41.634941+00:00",
   "games": [
+    {
+      "id": "star-fox",
+      "title": "Star Fox – v1.2.0 + Switch 2 Emulator + Recomp",
+      "source_url": "https://fitgirl-repacks.site/star-fox/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/17/7af6d3d3bdaaac541f3dd20901d6707c.jpg",
+      "post_date": "2026-11-18T02:14:04+03:00",
+      "genres": [
+        "Arcade",
+        "Gun game",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "the-rogue-prince-of-persia",
       "title": "The Rogue Prince of Persia – v1.1.0",

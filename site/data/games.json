@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-18T21:58:33.834213+00:00",
+  "generated_at": "2026-11-18T21:59:26.220924+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-18T12:10:29.445453+00:00",
   "games": [
@@ -105,7 +105,59 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "4.4 GB"
+      "repack_size": "4.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ae/df/aedf2e64-9403-498d-b2e1-f7217e1917d0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ae/df/aedf2e64-9403-498d-b2e1-f7217e1917d0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/32/c5/32c5dc9f-09f1-414f-8b56-8ba7c76202cb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/32/c5/32c5dc9f-09f1-414f-8b56-8ba7c76202cb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b0/4b/b04b1169-a44a-4949-83c2-d76f154fb575.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b0/4b/b04b1169-a44a-4949-83c2-d76f154fb575.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/81/a5/81a56d85-720d-4804-891a-c0df5947c814.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/81/a5/81a56d85-720d-4804-891a-c0df5947c814.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/c7/0fc7c9b8-a0e4-4d00-ac5b-f92dd658495f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/c7/0fc7c9b8-a0e4-4d00-ac5b-f92dd658495f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/f9/fbf9eee9-d979-46c3-8bfa-43b8dc63b0b3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/f9/fbf9eee9-d979-46c3-8bfa-43b8dc63b0b3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-18T21:59:26.219984+00:00",
+      "details": {
+        "description": "Step into the life of Junko, a hikikomori whose carefully controlled world begins to unravel as the past resurfaces in ways she can no longer ignore.\nRaised by a father who was always present but never truly there, Junko learned early to retreat inward. When her few attempts at connection were met with rejection and humiliation, she shut herself away from the outside world.\nAs the boundaries between memory and reality begin to fracture, familiar places transform into reflections of her past. Through exploration, unsettling encounters, and the gradual unravelling of Junko’s story, she must confront the people, experiences, and emotions she has spent years trying to escape before she loses herself completely.\nFeatures\nJapanese First-person psychological horror\n: Explore, investigate, and survive within a grounded, slow-burn descent into paranoia and perception.\nConfined exploration\n:  Search Junko’s apartment and surrounding distorted spaces through messages, files, and environmental clues to uncover hidden truths.\nTension\n:  Stay out of sight and move carefully as an unseen presence begins to track your behaviour.\nFractured reality\n:  Shift between familiar environments and warped liminal spaces shaped by Junko’s memories, where her memories and fears manifest.\nBrokenLore Series\n: DON’T LIE is part of the “BrokenLore” series of games that can be played and enjoyed as a standalone story.\nWired Productions\n: Produced by psychological narrative specialists, Wired Productions – adding additional layers of narrative and depth, for a richer experience.",
+        "game_features": [],
+        "repack_features": [
+          "Based on BrokenLore.DONT.LIE-TENOKE ISO release: tenoke-brokenlore.dont.lie.iso (7,937,972,224 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format nullified, NOTHING re-encoded. Bonus OST in MP3 format is included by default",
+          "Significantly smaller archive size (compressed from 7.4 to 4.4 GB)",
+          "Installation takes 3-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 7.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-18T21:59:26.219984+00:00"
     },
     {
       "id": "black-mesa",

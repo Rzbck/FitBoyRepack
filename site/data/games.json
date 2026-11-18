@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-18T04:24:01.069465+00:00",
+  "generated_at": "2026-11-18T04:24:59.388019+00:00",
   "source_pages": 823,
   "last_full_scan_at": "2026-11-17T12:24:41.634941+00:00",
   "games": [
@@ -88,7 +88,60 @@
         "3D",
         "Western"
       ],
-      "repack_size": "7.1 GB"
+      "repack_size": "7.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/5e/82/5e82dde3-2481-4c48-8ed4-a04c350f6208.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5e/82/5e82dde3-2481-4c48-8ed4-a04c350f6208.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7d/bb/7dbb365f-2675-40f8-805a-9a6dab2b4508.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7d/bb/7dbb365f-2675-40f8-805a-9a6dab2b4508.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/92/21/92211fe5-9327-4dc0-8932-47bc7f8ee867.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/92/21/92211fe5-9327-4dc0-8932-47bc7f8ee867.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/62/e8/62e8a4ab-fc0a-4f91-91bd-c10131ad68c6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/62/e8/62e8a4ab-fc0a-4f91-91bd-c10131ad68c6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/ff/37ff7d90-0df1-4f86-a787-87579d7fd970.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/ff/37ff7d90-0df1-4f86-a787-87579d7fd970.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/d5/b1d5aff5-49c2-48bd-9f1d-cbec9331ddb3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/d5/b1d5aff5-49c2-48bd-9f1d-cbec9331ddb3.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-18T04:24:59.387388+00:00",
+      "details": {
+        "description": "Start by running a saloon and carve your own place in the Wild West. Shape your bar, hire help, and get drawn into the lives and troubles of the people who gather around your counter. Out here, honest business is rarely enough. See what it takes to survive the frontier.\nRun a working saloon from behind the counter. Mix drinks, cook meals, and keep supplies moving as the town slowly comes to life. It all starts as honest work, but never stays simple for long.\nShape the look of your saloon, clean up after long nights, and decide how much work you take on yourself. Hire staff to keep things running and turn the place into something the town recognizes as yours.\nThe Wild West rarely plays fair. Fights break out, bets are placed, and tempers flare. Survival often depends on how well you handle pressure and chaos. And you may bet, those two things are more than certain.\nCross the Line even further…\nSometimes, honest work is not enough. In Blueberry, opportunities appear in the gray areas of the frontier. What you choose to do when they surface is a different kind of business altogether.\nEvery face at the bar has a story. Get involved in the lives of Blueberry’s residents and watch personal tales unfold. Funny, tense, and sometimes dark. Your saloon is the hub for all good stories.\nCore mechanics\nSaloon customization – personalize your saloon with furniture sets, bar equipment, decorations, color tints, and functional upgrades.\nServe Food & Drinks – Prepare meals, mix drinks, and influence customer moods through hands-on bar mechanics.\nQuest System – Meet unique characters with their own stories, ambitions, and problems that become part of your journey.\nCriminal Opportunities – Explore the darker side of the Wild West and choose how far you are willing to go.\nSaloon & Business Management – Expand with gambling tables, rooms for rent, staff hiring, and side ventures.\nReputation System – Earn trust, unlock rewards, and watch the town react to your growing influence.\nFrontier Activities – Encounter side mechanics and unexpected moments that capture the spirit of the Old West.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Saloon.Simulator-TENOKE ISO release: tenoke-saloon.simulator.iso (10,808,754,176 bytes)",
+          "Game version: v1.0-17904",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 10.1 to 7.1 GB)",
+          "Installation takes 7-21 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-18T04:24:59.387388+00:00"
     },
     {
       "id": "star-fox",

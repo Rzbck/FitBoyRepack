@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-19T03:30:30.221314+00:00",
+  "generated_at": "2026-11-19T03:31:11.683448+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-18T12:10:29.445453+00:00",
   "games": [
@@ -126,7 +126,61 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "1.9 GB"
+      "repack_size": "1.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ed/1b/ed1b80f2-edf7-4fb1-80cb-45a08901c95c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ed/1b/ed1b80f2-edf7-4fb1-80cb-45a08901c95c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/18/81/1881a0bf-57fa-4775-b53b-bb559f5b0dd7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/81/1881a0bf-57fa-4775-b53b-bb559f5b0dd7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/64/1a/641ab011-0cd4-43be-81b6-50ceddd5d729.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/64/1a/641ab011-0cd4-43be-81b6-50ceddd5d729.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/17/1b/171b73e6-008d-4687-8833-7a52e6956cfd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/17/1b/171b73e6-008d-4687-8833-7a52e6956cfd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0c/0e/0c0e1e9a-b869-43fd-9024-e90ea31c2b27.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/0e/0c0e1e9a-b869-43fd-9024-e90ea31c2b27.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/76/3c/763c3778-4dc9-471d-ab71-6d42766660bc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/3c/763c3778-4dc9-471d-ab71-6d42766660bc.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-19T03:31:11.681648+00:00",
+      "details": {
+        "description": "WANTED: MANAGER FOR AN ABANDONED WAREHOUSE WITH POTENTIAL!\nThe year is 2037. You have a small warehouse, a mountain of packages, and big dreams. Sort the boxes and deliver orders to customers. Then hire robots and… make sure they don’t mess up.\nCAN’T WRITE A SYMPHONY BUT CAN DELIVER BOXES\nAt first, it’s all on you: you take deliveries, sort the goods, and make sure customers aren’t kept waiting. Try to handle at least some of it. But as soon as you buy robots that work 24/7, life at the warehouse will become much more interesting. Automate processes and watch the warehouse grow. Analyze the warehouse’s needs and purchase the right robots.\nMORE WAREHOUSE SPACE. MORE MONEY. MORE COMPETITION\nBig order? Load up the van. Urgent delivery? Send out a drone. Build a business that operates efficiently on the ground and in the air.\nBUSINESS RULE #1: NO RULES\nYour competitors want money, too. Flood the city with ads, poach key customers, and snag the most lucrative VIP orders on the black market. You’ll need to operate at night, without leaving any traces: the FBI doesn’t like packages like these.\nINFINITY IS NO LIMIT WHEN YOU HAVE A ROCKET!\nAnd when the city starts to feel too small for you—start building a rocket for deliveries on a cosmic scale! You won’t just be serving humans.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26639406 release: 3.6 GB, thanks to AnkerGames!",
+          "TENOKE crack/emu applied over",
+          "Game version: v1.0.5",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.6 to 1.9 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-19T03:31:11.681648+00:00"
     },
     {
       "id": "ticket-to-ride",

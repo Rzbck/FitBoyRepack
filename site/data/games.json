@@ -1,9 +1,133 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-18T21:59:26.220924+00:00",
-  "source_pages": 823,
+  "generated_at": "2026-11-19T03:30:30.221314+00:00",
+  "source_pages": 824,
   "last_full_scan_at": "2026-11-18T12:10:29.445453+00:00",
   "games": [
+    {
+      "id": "crusader-kings-3",
+      "title": "Crusader Kings III: Collection, v1.21.0 (Florin) + 36 DLCs + Windows 7 Fix",
+      "source_url": "https://fitgirl-repacks.site/crusader-kings-3/",
+      "image_url": "https://i5.imageban.ru/out/2022/02/09/18a576382318c489d76b7c456e70dd33.jpg",
+      "post_date": "2026-11-19T05:30:43+03:00",
+      "genres": [
+        "Strategy",
+        "Grand strategy",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "5.6 GB",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/extras/4s.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/be/25/be25f2eb-30c6-457e-bcec-7daba120f3d2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/be/25/be25f2eb-30c6-457e-bcec-7daba120f3d2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/87/48/87487878-bb7a-4ccf-b776-8dfba161580b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/87/48/87487878-bb7a-4ccf-b776-8dfba161580b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/ed/2cedc97a-ea57-4d0a-a196-f1dbaaae0425.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/ed/2cedc97a-ea57-4d0a-a196-f1dbaaae0425.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/af/9e/af9e262b-213d-4670-81e0-9d2c03339f44.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/af/9e/af9e262b-213d-4670-81e0-9d2c03339f44.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/7f/5f7ffbd9-7da8-4a6f-a16a-fa01287d5476.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/7f/5f7ffbd9-7da8-4a6f-a16a-fa01287d5476.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8b/b6/8bb65e6f-3fbd-4cd3-859b-d47b99b52a9e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8b/b6/8bb65e6f-3fbd-4cd3-859b-d47b99b52a9e.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "Paradox Development Studio brings you the sequel to one of the most popular strategy games ever made. Crusader Kings III is the heir to a long legacy of historical grand strategy experiences and arrives with a host of new ways to ensure the success of your royal house.",
+        "game_features": [
+          "Choose a royal or noble house from a number of realms on a map that stretches from Iceland to India, from the Arctic Circle to Central Africa.",
+          "Guide a dynasty through the centuries, ensuring the security and power of each new generation. Gather new lands and titles to cement your legacy.",
+          "Be a pious king to bring the religious powers to your side, or strike out on your own, designing your own splinter religion and earning everlasting fame or eternal damnation.",
+          "Knights, peasant revolts, pilgrimages, Viking raiders… experience the drama and pageantry of the Middle Ages.",
+          "Adopt one of five different lifestyles, perfecting your skills in military strategy or kingdom management.",
+          "Acquire character traits that will guide your actions, but beware if you act against your nature! The stress from denying your truest self could bring a new host of troubles!",
+          "Choose appropriate guardians for your heirs, or train them yourself. But what do you do if the legal heir is not quite up to the job?",
+          "Violent characters may develop a fearsome reputation, cowering your timid subjects into obedience with the dread you inspire.",
+          "Recruit men-at-arms units and powerful knights to supplement your royal levies.",
+          "Research new technologies to increase the wealth and military might of your realm.",
+          "Hire mercenaries and Holy Orders for your major wars.",
+          "Supplement your income with ransomed prisoners or raiding parties on neighboring realms.",
+          "Use your spymaster to discover plots against your dynasty and your rule.",
+          "Recruit agents to assist your schemes to undermine or murder anyone who stands between you and power.",
+          "Seduce other characters for love or political power.",
+          "Gather information for blackmailing purposes or call in favors whenever your plans need an extra bit of influence.",
+          "Included DLCs",
+          "All Under Heaven",
+          "Chapter III",
+          "Chapter IV",
+          "Content Creator Pack: Arctic Attire",
+          "Content Creator Pack: Medieval Monuments",
+          "Content Creator Pack: North African Attire",
+          "Content Creator Pack: West Slavic Attire",
+          "Coronations",
+          "Couture of the Capets",
+          "Crowns of the World",
+          "Elegance of the Empire",
+          "Fashion of the Abbasid Court",
+          "Fate of Iberia",
+          "Friends & Foes",
+          "Garments of the Holy Roman Empire",
+          "Khans of the Steppe",
+          "Legacy of Persia",
+          "Legends of the Dead",
+          "Many Roads to Power – Comic Book",
+          "Northern Lords",
+          "Roads to Power",
+          "Royal Court",
+          "Tours & Tournaments"
+        ],
+        "repack_features": [
+          "Based on Crusader.Kings.III.All.Under.Heaven-RUNE scene ISO release: rune-crusader.kings.iii.all.under.heaven.iso (8,468,692,992 bytes)",
+          "Game version is v1.18.0 (Crane); 25 DLCs are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 7.9 to 4.9 GB)",
+          "Installation takes 5-15 minutes (depending on your system, mostly on drive speed – the game has more than 47000 files and installs slowly on HDDs)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 17.3 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
+    {
+      "id": "shipping-store-simulator-2037",
+      "title": "Shipping Store Simulator 2037 – v1.0.5",
+      "source_url": "https://fitgirl-repacks.site/shipping-store-simulator-2037/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/19/40e49a72326fce5b4da4cb2fc6e234b5.jpg",
+      "post_date": "2026-11-19T03:50:15+03:00",
+      "genres": [
+        "Lifestyle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.9 GB"
+    },
     {
       "id": "ticket-to-ride",
       "title": "Ticket to Ride: Complete Your Journey Bundle – v1.11.3-766920 + 16 DLCs/Bonuses",
@@ -16829,117 +16953,6 @@
       },
       "details_version": 1,
       "details_checked_at": "2026-10-01T23:10:22.085013+00:00"
-    },
-    {
-      "id": "crusader-kings-3",
-      "title": "Crusader Kings III: Collection, v1.20.0.2 (Crozier) + 35 DLCs + Windows 7 Fix",
-      "source_url": "https://fitgirl-repacks.site/crusader-kings-3/",
-      "image_url": "https://i5.imageban.ru/out/2022/02/09/18a576382318c489d76b7c456e70dd33.jpg",
-      "post_date": "2026-10-02T00:02:43+03:00",
-      "genres": [
-        "Strategy",
-        "Grand strategy",
-        "Top-down",
-        "3D"
-      ],
-      "repack_size": "5.2 GB",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/extras/4s.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/be/25/be25f2eb-30c6-457e-bcec-7daba120f3d2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/be/25/be25f2eb-30c6-457e-bcec-7daba120f3d2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/87/48/87487878-bb7a-4ccf-b776-8dfba161580b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/87/48/87487878-bb7a-4ccf-b776-8dfba161580b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2c/ed/2cedc97a-ea57-4d0a-a196-f1dbaaae0425.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2c/ed/2cedc97a-ea57-4d0a-a196-f1dbaaae0425.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/af/9e/af9e262b-213d-4670-81e0-9d2c03339f44.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/af/9e/af9e262b-213d-4670-81e0-9d2c03339f44.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5f/7f/5f7ffbd9-7da8-4a6f-a16a-fa01287d5476.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5f/7f/5f7ffbd9-7da8-4a6f-a16a-fa01287d5476.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8b/b6/8bb65e6f-3fbd-4cd3-859b-d47b99b52a9e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8b/b6/8bb65e6f-3fbd-4cd3-859b-d47b99b52a9e.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "Paradox Development Studio brings you the sequel to one of the most popular strategy games ever made. Crusader Kings III is the heir to a long legacy of historical grand strategy experiences and arrives with a host of new ways to ensure the success of your royal house.",
-        "game_features": [
-          "Choose a royal or noble house from a number of realms on a map that stretches from Iceland to India, from the Arctic Circle to Central Africa.",
-          "Guide a dynasty through the centuries, ensuring the security and power of each new generation. Gather new lands and titles to cement your legacy.",
-          "Be a pious king to bring the religious powers to your side, or strike out on your own, designing your own splinter religion and earning everlasting fame or eternal damnation.",
-          "Knights, peasant revolts, pilgrimages, Viking raiders… experience the drama and pageantry of the Middle Ages.",
-          "Adopt one of five different lifestyles, perfecting your skills in military strategy or kingdom management.",
-          "Acquire character traits that will guide your actions, but beware if you act against your nature! The stress from denying your truest self could bring a new host of troubles!",
-          "Choose appropriate guardians for your heirs, or train them yourself. But what do you do if the legal heir is not quite up to the job?",
-          "Violent characters may develop a fearsome reputation, cowering your timid subjects into obedience with the dread you inspire.",
-          "Recruit men-at-arms units and powerful knights to supplement your royal levies.",
-          "Research new technologies to increase the wealth and military might of your realm.",
-          "Hire mercenaries and Holy Orders for your major wars.",
-          "Supplement your income with ransomed prisoners or raiding parties on neighboring realms.",
-          "Use your spymaster to discover plots against your dynasty and your rule.",
-          "Recruit agents to assist your schemes to undermine or murder anyone who stands between you and power.",
-          "Seduce other characters for love or political power.",
-          "Gather information for blackmailing purposes or call in favors whenever your plans need an extra bit of influence.",
-          "Included DLCs",
-          "All Under Heaven",
-          "Chapter III",
-          "Chapter IV",
-          "Content Creator Pack: Arctic Attire",
-          "Content Creator Pack: Medieval Monuments",
-          "Content Creator Pack: North African Attire",
-          "Content Creator Pack: West Slavic Attire",
-          "Coronations",
-          "Couture of the Capets",
-          "Crowns of the World",
-          "Elegance of the Empire",
-          "Fashion of the Abbasid Court",
-          "Fate of Iberia",
-          "Friends & Foes",
-          "Garments of the Holy Roman Empire",
-          "Khans of the Steppe",
-          "Legacy of Persia",
-          "Legends of the Dead",
-          "Many Roads to Power – Comic Book",
-          "Northern Lords",
-          "Roads to Power",
-          "Royal Court",
-          "Tours & Tournaments"
-        ],
-        "repack_features": [
-          "Based on Crusader.Kings.III.All.Under.Heaven-RUNE scene ISO release: rune-crusader.kings.iii.all.under.heaven.iso (8,468,692,992 bytes)",
-          "Game version is v1.18.0 (Crane); 25 DLCs are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 7.9 to 4.9 GB)",
-          "Installation takes 5-15 minutes (depending on your system, mostly on drive speed – the game has more than 47000 files and installs slowly on HDDs)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 17.3 GB",
-          "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
     },
     {
       "id": "codex-mortis",

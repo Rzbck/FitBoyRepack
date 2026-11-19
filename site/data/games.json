@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-19T21:37:22.097201+00:00",
+  "generated_at": "2026-11-19T21:38:19.496082+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-19T12:06:37.828002+00:00",
   "games": [
@@ -16,7 +16,59 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "1.4 GB"
+      "repack_size": "1.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b2/4b/b24bd9b4-b6d6-419c-bb61-6ff7a1f8311d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/4b/b24bd9b4-b6d6-419c-bb61-6ff7a1f8311d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3a/b6/3ab6fe66-7218-4cdc-9e1d-65b4b02938d8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3a/b6/3ab6fe66-7218-4cdc-9e1d-65b4b02938d8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c8/ab/c8ab21b4-a22f-4b23-a754-1d98cdf148dd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c8/ab/c8ab21b4-a22f-4b23-a754-1d98cdf148dd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/27/d6/27d6391c-b8d0-4933-8423-1ffbe323331e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/27/d6/27d6391c-b8d0-4933-8423-1ffbe323331e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/b7/50b75375-f749-4269-8f57-86459f33a096.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/b7/50b75375-f749-4269-8f57-86459f33a096.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/03/5f/035f5a6e-3cbf-4bb7-8edd-22ed44148383.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/03/5f/035f5a6e-3cbf-4bb7-8edd-22ed44148383.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-19T21:38:19.494798+00:00",
+      "details": {
+        "description": "You are the perfect fit for the job!\nYou’ve been hired to stock a mysterious dice shop. Pick them up, examine their colours and materials, and rebuild 400+ seven-piece dice sets. Each set needs one of every classic polyhedral die: a percentile die, D4, D6, D8, D10, D12, and D20.\nTake All the Time You Need\nThere are no timers and no need to rush. In Story Mode, the next day begins only after you have stocked the required value of dice. Search every corner, plan your sets, and work at your own pace while a cozy ambience and relaxing original soundtrack accompany every shift.\nUnlock New Skills\nAs the days pass, mysterious floppy disks begin to appear. Use them to unlock strange new powers that make your work easier. Track down the remaining dice needed to complete a set, or pull them directly into your hand as if by magic.\nThe disks are certainly useful. Who keeps leaving them for you is another question…\nWho Hired You?\nYou were given a job, a shop full of scattered dice, and very little information about your employer. Keep completing your shifts, follow the clues left behind, and uncover the truth behind your unusual new workplace.\nKey Features\nCozy first-person organizing gameplay.\nPick up and stock thousands of colorful dice.\nASMR, satisfying click-clack dice sounds.\nStory Mode with shift-based progression and no timers.\nMysterious floppy disks that unlock special sorting abilities.\nUncover the mystery and the secrets behind the shop.\nChill Mode for one uninterrupted, story-free organizing experience.\nMagical dice, cozy ambience, a relaxing original soundtrack, and a cat.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Dice.Hoarder-TENOKE ISO release: tenoke-dice.hoarder.iso (2,634,625,024 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.5 to 1.4 GB)",
+          "Installation takes 1-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-19T21:38:19.494798+00:00"
     },
     {
       "id": "chained-beasts",
@@ -30,7 +82,61 @@
         "Top-down",
         "2D"
       ],
-      "repack_size": "448 MB"
+      "repack_size": "448 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/cf/aa/cfaa1080-d662-49d0-894b-07e5ac33f146.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cf/aa/cfaa1080-d662-49d0-894b-07e5ac33f146.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/85/a6/85a63101-705e-406b-957f-42ca4f037f0e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/85/a6/85a63101-705e-406b-957f-42ca4f037f0e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/50/12/50122fd5-3d0a-4377-a6f1-2e6f68bd35a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/50/12/50122fd5-3d0a-4377-a6f1-2e6f68bd35a0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/01/f5/01f54e95-0d62-4fa9-a0bb-2d521e596bb6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/01/f5/01f54e95-0d62-4fa9-a0bb-2d521e596bb6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/28/48/28482dec-0620-4fd5-a08d-a30358ad6102.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/28/48/28482dec-0620-4fd5-a08d-a30358ad6102.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/af/27/af27b2ae-772e-4775-87de-e42ccfb65b59.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/af/27/af27b2ae-772e-4775-87de-e42ccfb65b59.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-19T21:38:19.494798+00:00",
+      "details": {
+        "description": "Step into the Colosseum chained to your friends. Chained Beasts is a co-op gladiator roguelike for 1-4 players, combining brutal combat with teamwork and slapstick moments. Can you gather your friends, crush your enemies, win the crowd and gain your freedom?\nGladiatorial Combat\nSlash and hack your enemies in this brutal gladiator roguelike or use the environment against them. Hurl an urn at your foes or hurl your foes at an urn. Charge them into a wall of spikes or a pit of snakes. Throw your weapons to take down enemies from a distance but be sure you have another at hand or you might find yourself in trouble.\nChained to Your Friends\nDon’t struggle alone, gather four ferocious friends and you’ll be chained together in cruel and creative ways. If you can’t coordinate you’ll end up tangled around a pillar or worse but synchronize your efforts and you can trip your enemies and turn the tables.\nBattle Brutal Bosses\nAs your fame rises you will battle brutal bosses, heroes of the arena, armed to the teeth with every advantage at their disposal. The deck will be stacked against you but victory will bring you one step closer to Rome and a chance at freedom or revenge.\nSurvive Ghastly Wounds\nEach day in the arena leaves you with new wounds to add to your misery. Struggle on with a painful limp, try to get by with a missing left eye or flail madly at hallucinations only you can see. There are potions to relieve your pain but the side effects can leave you with worse afflictions, perhaps surgery is the answer…\nStruggle Forges Character\nDo not lose hope, experience in the arena can also forge you into a brutal fighter. Learn powerful skills to overcome your foes. Win the crowd and they will always have your back. Save up money and buy equipment and weapons that can turn the tide in battle. Unlock new characters with powerful abilities. Each run will require that you take a different path.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Chained.Beasts-RUNE ISO release: rune-chained.beasts.iso (958,267,392 bytes)",
+          "Game version: v1.0.1",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 914 to 448 MB)",
+          "Installation takes ZZZ minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: GB",
+          "Language can be changed in game settings",
+          "Use “Language Selector.exe” in game root to change the game language",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-19T21:38:19.494798+00:00"
     },
     {
       "id": "crusader-kings-3",

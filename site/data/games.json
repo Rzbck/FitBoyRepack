@@ -1,9 +1,37 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-19T12:06:37.828002+00:00",
+  "generated_at": "2026-11-19T21:37:22.097201+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-19T12:06:37.828002+00:00",
   "games": [
+    {
+      "id": "dice-hoarder",
+      "title": "Dice Hoarder",
+      "source_url": "https://fitgirl-repacks.site/dice-hoarder/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/19/1550edd62d5c22db4e19a98bc790e576.jpg",
+      "post_date": "2026-11-20T00:06:06+03:00",
+      "genres": [
+        "Logic",
+        "Hidden object",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.4 GB"
+    },
+    {
+      "id": "chained-beasts",
+      "title": "Chained Beasts – v1.0.1",
+      "source_url": "https://fitgirl-repacks.site/chained-beasts/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/19/6518cfdb3064e6778b3c7264bd2c968e.jpg",
+      "post_date": "2026-11-19T22:04:02+03:00",
+      "genres": [
+        "Arcade",
+        "Beat 'em up (Brawler)",
+        "Top-down",
+        "2D"
+      ],
+      "repack_size": "448 MB"
+    },
     {
       "id": "crusader-kings-3",
       "title": "Crusader Kings III: Collection, v1.21.0 (Florin) + 36 DLCs + Windows 7 Fix",

@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-20T02:41:30.588659+00:00",
+  "generated_at": "2026-11-20T10:36:52.111213+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-19T12:06:37.828002+00:00",
   "games": [
+    {
+      "id": "revenge-of-the-mage",
+      "title": "Revenge of the Mage – v1.0.0_301",
+      "source_url": "https://fitgirl-repacks.site/revenge-of-the-mage/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/20/53c628df19466057df488d71f58a0e96.jpg",
+      "post_date": "2026-11-20T06:33:52+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "5.6 GB"
+    },
     {
       "id": "disney-dreamlight-valley",
       "title": "Disney Dreamlight Valley: Ultimate Edition – v1.26.1.633 + 5 DLCs",

@@ -1,9 +1,82 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-20T12:07:18.506444+00:00",
+  "generated_at": "2026-11-20T18:50:54.376857+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-20T12:07:18.506444+00:00",
   "games": [
+    {
+      "id": "hozy",
+      "title": "Hozy: Soundtrack Edition, v1.40 + 2 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/hozy/",
+      "image_url": "https://i2.imageban.ru/out/2026/04/08/e8d7e6078394d9bf94d6a379ec9e1772.jpg",
+      "post_date": "2026-11-20T21:00:21+03:00",
+      "genres": [
+        "Lifestyle",
+        "Isometric",
+        "3D"
+      ],
+      "repack_size": "4.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/3f/ef/3fefa369-53b1-4f8b-a179-b1af7e13b9be.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3f/ef/3fefa369-53b1-4f8b-a179-b1af7e13b9be.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/33/b0/33b06988-2be9-4469-aff6-111b42d926ea.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/33/b0/33b06988-2be9-4469-aff6-111b42d926ea.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ab/1d/ab1d92b9-1897-4343-98c7-71af0c833e84.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ab/1d/ab1d92b9-1897-4343-98c7-71af0c833e84.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/f8/fbf8656d-88be-4fdc-9f6b-71b3b81da5c1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/f8/fbf8656d-88be-4fdc-9f6b-71b3b81da5c1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/48/0a/480a0e31-ae5f-4de4-b8bd-24c2268ead42.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/48/0a/480a0e31-ae5f-4de4-b8bd-24c2268ead42.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5e/66/5e66e488-be9f-46ce-bb02-8e721c3a8ada.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5e/66/5e66e488-be9f-46ce-bb02-8e721c3a8ada.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Welcome home\nAfter things don’t quite work out in the big city, you return to your small hometown. Once lively, it now feels a little faded and forgotten. In that stillness, you discover something unexpected: a new passion. Room by room, space by space, you clean, paint, and gently restore the sense of community that once filled these streets.\nThe Hozy Flow\n– Hozy is about slowing down. There are no timers, scores, penalties, and absolutely no stress or pressure. Just you, your tools, and the simple joy of making spaces beautiful again. Whether you’re wiping windows, repainting walls, or finding the perfect spot for a sofa, everything is designed to keep you in a calm, satisfying flow.\nCoziness In Every Detail\n– Wrap yourself in a cozy atmosphere where every small action and detail matters. Open a window to let the wind play with floating dust and bring nature’s sounds closer. Light candles, arrange books on shelves, paint a portrait on the wall, or switch on a projector. Everything you touch and every choice you make delivers a sense of satisfaction and a gentle “aha!” moment.\nEvery Room Tells a Story\n– Hozy features nine unique locations to explore and restore. Each space is filled with its residents’ personal stories, as well as unique objects and small details that make every room feel lived in. Begin your journey in your parents’ home, step into an artist’s workshop, then visit an old cafe full of memories. Explore dreamlike spaces and help fulfill your father’s long-held dream of a peaceful place by the sea.\nUnleash Your Inner Designer\n– Skip the endless catalog overwhelm. Hozy offers a carefully curated selection of furniture and decor for each level that work well together. Place items freely, rotate and arrange them however you like – there is no right or wrong and no room is ever the same. Use the tools at your disposal wisely, and you’ll create spaces worthy of an interior-design magazine!",
+        "game_features": [
+          "A variety of spaces to restore and furnish at your own pace and with no limits.",
+          "A wide range of cleaning and renovation tools to use, like a mop, squeegee, crowbar, and more.",
+          "Deeply satisfying physics-based cleaning gameplay.",
+          "Carefully curated furniture and decor, designed to always look great together.",
+          "Endless replayability, driven by freedom of creativity and tiny details.",
+          "A versatile photo mode with filters and advanced camera controls.",
+          "Original charming soundtrack by the composer of Stray and Seasons After Fall."
+        ],
+        "repack_features": [
+          "Based on Hozy-RUNE ISO release: rune-hozy.iso (4,751,065,088 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 4.4 to 3.4 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "revenge-of-the-mage",
       "title": "Revenge of the Mage – v1.0.0_301",
@@ -76200,79 +76273,6 @@
           "Installation takes 20-70 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 66.8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "hozy",
-      "title": "Hozy",
-      "source_url": "https://fitgirl-repacks.site/hozy/",
-      "image_url": "https://i2.imageban.ru/out/2026/04/08/e8d7e6078394d9bf94d6a379ec9e1772.jpg",
-      "post_date": "2026-04-08T23:22:21+03:00",
-      "genres": [
-        "Lifestyle",
-        "Isometric",
-        "3D"
-      ],
-      "repack_size": "3.4 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/3f/ef/3fefa369-53b1-4f8b-a179-b1af7e13b9be.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3f/ef/3fefa369-53b1-4f8b-a179-b1af7e13b9be.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/33/b0/33b06988-2be9-4469-aff6-111b42d926ea.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/33/b0/33b06988-2be9-4469-aff6-111b42d926ea.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ab/1d/ab1d92b9-1897-4343-98c7-71af0c833e84.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ab/1d/ab1d92b9-1897-4343-98c7-71af0c833e84.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fb/f8/fbf8656d-88be-4fdc-9f6b-71b3b81da5c1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fb/f8/fbf8656d-88be-4fdc-9f6b-71b3b81da5c1.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/48/0a/480a0e31-ae5f-4de4-b8bd-24c2268ead42.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/48/0a/480a0e31-ae5f-4de4-b8bd-24c2268ead42.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5e/66/5e66e488-be9f-46ce-bb02-8e721c3a8ada.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5e/66/5e66e488-be9f-46ce-bb02-8e721c3a8ada.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Welcome home\nAfter things don’t quite work out in the big city, you return to your small hometown. Once lively, it now feels a little faded and forgotten. In that stillness, you discover something unexpected: a new passion. Room by room, space by space, you clean, paint, and gently restore the sense of community that once filled these streets.\nThe Hozy Flow\n– Hozy is about slowing down. There are no timers, scores, penalties, and absolutely no stress or pressure. Just you, your tools, and the simple joy of making spaces beautiful again. Whether you’re wiping windows, repainting walls, or finding the perfect spot for a sofa, everything is designed to keep you in a calm, satisfying flow.\nCoziness In Every Detail\n– Wrap yourself in a cozy atmosphere where every small action and detail matters. Open a window to let the wind play with floating dust and bring nature’s sounds closer. Light candles, arrange books on shelves, paint a portrait on the wall, or switch on a projector. Everything you touch and every choice you make delivers a sense of satisfaction and a gentle “aha!” moment.\nEvery Room Tells a Story\n– Hozy features nine unique locations to explore and restore. Each space is filled with its residents’ personal stories, as well as unique objects and small details that make every room feel lived in. Begin your journey in your parents’ home, step into an artist’s workshop, then visit an old cafe full of memories. Explore dreamlike spaces and help fulfill your father’s long-held dream of a peaceful place by the sea.\nUnleash Your Inner Designer\n– Skip the endless catalog overwhelm. Hozy offers a carefully curated selection of furniture and decor for each level that work well together. Place items freely, rotate and arrange them however you like – there is no right or wrong and no room is ever the same. Use the tools at your disposal wisely, and you’ll create spaces worthy of an interior-design magazine!",
-        "game_features": [
-          "A variety of spaces to restore and furnish at your own pace and with no limits.",
-          "A wide range of cleaning and renovation tools to use, like a mop, squeegee, crowbar, and more.",
-          "Deeply satisfying physics-based cleaning gameplay.",
-          "Carefully curated furniture and decor, designed to always look great together.",
-          "Endless replayability, driven by freedom of creativity and tiny details.",
-          "A versatile photo mode with filters and advanced camera controls.",
-          "Original charming soundtrack by the composer of Stray and Seasons After Fall."
-        ],
-        "repack_features": [
-          "Based on Hozy-RUNE ISO release: rune-hozy.iso (4,751,065,088 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Smaller archive size (compressed from 4.4 to 3.4 GB)",
-          "Installation takes 2-6 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 4.9 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

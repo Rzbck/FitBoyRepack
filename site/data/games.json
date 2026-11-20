@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-20T18:50:54.376857+00:00",
+  "generated_at": "2026-11-20T21:07:19.251892+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-20T12:07:18.506444+00:00",
   "games": [
+    {
+      "id": "ancient-warfare-the-han-dynasty",
+      "title": "Ancient Warfare: The Han Dynasty",
+      "source_url": "https://fitgirl-repacks.site/ancient-warfare-the-han-dynasty/",
+      "image_url": "https://i7.imageban.ru/out/2026/11/20/34f003f0eb27bf10e2737716f67e30c7.jpg",
+      "post_date": "2026-11-20T23:38:18+03:00",
+      "genres": [
+        "Strategy",
+        "Grand strategy",
+        "RTS",
+        "Top-down",
+        "2D",
+        "Real-time"
+      ],
+      "repack_size": "7.2 GB"
+    },
     {
       "id": "hozy",
       "title": "Hozy: Soundtrack Edition, v1.40 + 2 DLCs/Bonuses",

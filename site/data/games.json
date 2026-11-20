@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-20T21:07:19.251892+00:00",
+  "generated_at": "2026-11-20T21:08:12.127893+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-20T12:07:18.506444+00:00",
   "games": [
@@ -18,7 +18,59 @@
         "2D",
         "Real-time"
       ],
-      "repack_size": "7.2 GB"
+      "repack_size": "7.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/65/62/65621260-98f9-4880-92ec-758b38a32ee5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/65/62/65621260-98f9-4880-92ec-758b38a32ee5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/d1/a9d1fc7e-2b01-423a-81a9-a273868f6479.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/d1/a9d1fc7e-2b01-423a-81a9-a273868f6479.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/18/8a/188a0da7-8832-4c79-be1e-a9647173b08d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/8a/188a0da7-8832-4c79-be1e-a9647173b08d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/77/0977ae83-b172-4546-be0c-16d55cd64378.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/77/0977ae83-b172-4546-be0c-16d55cd64378.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/55/0e/550e7d9c-3388-42c1-be99-0f6fdfbb83f7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/55/0e/550e7d9c-3388-42c1-be99-0f6fdfbb83f7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2a/8d/2a8d967b-3429-4eb3-89f7-ad4a49e2c6be.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2a/8d/2a8d967b-3429-4eb3-89f7-ad4a49e2c6be.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-20T21:08:12.126295+00:00",
+      "details": {
+        "description": "The Han Dynasty was established by Emperor Gaozu of Han.\nHe commanded the army to attack Xiongnu in the north, set up Frontier Command Headquarter to defend the borders of Western Regions, and ensured people’s peaceful and prosperous life.\nHowever, the dregs of Xiongnu attacked Western Regions in force when Central Plains was weakening. They occupied Frontier Command Headquarter and enslaved thousands of people nearby…\nNow it’s your turn to command Expeditionary Army of Han. Set off from Yumen Pass, collect compatriots’ bodies in sand, and expel invaders of Xiongnu.\nThis journey is bound to be filled with sacrifices, struggles, desires and discomforts. Which kind of strategy will you choose, endless conquest or political art?FIGHT HARD IN WESTERN REGIONS\nCountless warriors answered the call of Han. After strict training, they set off to Western Regions from Yumen Pass under the command, vowing to defend the borders of Han.\nWITNESS GRAND BATTLEFIELDS\nThousands of soldiers can be accommodated in one battlefield. Command them in real time, devise strategies, control the game, and defeat enemies finally.\nMAKE A STRONGER EMPIRE\nRecover cities and territories once controlled by Frontier Command Headquarter. Establish friendly relations with lords in Western Regions and confront Xiongnu with them.\nTRAIN SOLDIERS\nCollect or produce equipment, train troops and choose the most appropriate arms to respond to complex battlefields.\nCONFRONT ENEMIES WITH STRATEGIES\nDifferent arms and unstable environments call for a wiser commander. Think twice when developing strategies and commanding operations.\nENJOY A STUNNING ART STYLE\nEnjoy the stunning art style of Chinese Ink Painting while playing this game.\nEXPERIENCE A GREAT EXPEDITION\nFulfill the unrealized dream of Han. Start on an expedition to the north or Kushan Empire. Rebuild the order in Western Regions and Central Asia.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Ancient.Warfare.The.Han.Dynasty-TENOKE ISO release: tenoke-ancient.warfare.the.han.dynasty.iso (22,845,751,296 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 21.3 to 7.2 GB)",
+          "Installation takes 4-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 21.3 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-20T21:08:12.126295+00:00"
     },
     {
       "id": "hozy",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-20T10:36:52.111213+00:00",
+  "generated_at": "2026-11-20T10:37:32.104541+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-19T12:06:37.828002+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "5.6 GB"
+      "repack_size": "5.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/76/cd/76cdfc39-81d3-4bc0-9ba5-24c211cb9d0d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/76/cd/76cdfc39-81d3-4bc0-9ba5-24c211cb9d0d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d7/ba/d7badfdf-9d62-4488-8f6b-e1b6ce414c4f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d7/ba/d7badfdf-9d62-4488-8f6b-e1b6ce414c4f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/47/9047c3ea-0fe6-4a4a-9445-a7e0492fe5c4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/47/9047c3ea-0fe6-4a4a-9445-a7e0492fe5c4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a9/47/a9475dcf-5f9d-4624-b5b3-a7176a38aabe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a9/47/a9475dcf-5f9d-4624-b5b3-a7176a38aabe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/67/00/6700646e-195d-4c7a-bbfe-9922c93ebbfa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/67/00/6700646e-195d-4c7a-bbfe-9922c93ebbfa.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7a/f6/7af6698f-4ae4-4473-ac10-2a87d07a6582.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7a/f6/7af6698f-4ae4-4473-ac10-2a87d07a6582.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-20T10:37:32.103153+00:00",
+      "details": {
+        "description": "Action Roguelite meets FPS\nRevenge of the Mage pulls the camera down right into the cowl of a mage so you can experience the magic and destruction in person! You will destroy the hordes of the damned, absorb their essences for power and save the multiverse!\nYour Mage – Your Choice\nYou have a variety of Ancestors to choose from, each with different elemental powers. You will unlock even more as you play the game, providing new styles so you can find your favorite. After all, what’s the point in the destruction of hordes if not fun?\nDiverse Playthroughs\nWith 30+ unique cards – we are adding more-  to be offered when you level up, each of which can be upgraded several times for greater effect, every playthrough will be different. Did we mention that we’re adding even more cards?\nRevenge of the Mage aims to take the best parts of the action roguelites and shooters: A vast array of powers and challenges to choose from and legions of enemies so you can enjoy that power! The more you play, the more you unlock and the harder challenges you can take on.\nAre you ready to take revenge? From who? We don’t even know. What matters is that you shoot enemies, avoid their shots, become more powerful and keep doing that!\nYou can play with many unique Active and Passive Spells.\nUnlock different Ancestors for your desired gameplay.\nProgress through!\nDefeat powerful champions and bosses!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Revenge.of.the.Mage-TENOKE ISO release: tenoke-revenge.of.the.mage.iso (9,217,603,584 bytes)",
+          "Game version: v1.0.0_301",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 8.6 to 5.6 GB)",
+          "Installation takes 4-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-20T10:37:32.103153+00:00"
     },
     {
       "id": "disney-dreamlight-valley",

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-21T21:10:12.027933+00:00",
+  "generated_at": "2026-11-21T21:11:01.870903+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-21T11:42:50.406065+00:00",
   "games": [
@@ -15,7 +15,61 @@
         "2D",
         "Japanese"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/7e/9b/7e9b285d-f3b4-4b9b-9dd7-822c73814944.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7e/9b/7e9b285d-f3b4-4b9b-9dd7-822c73814944.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4a/8f/4a8f65af-dfe2-4cf8-bd6a-0698ef4af54f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/8f/4a8f65af-dfe2-4cf8-bd6a-0698ef4af54f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/d2/5fd2a0aa-89d7-4eb6-a858-52d79ffc87a8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/d2/5fd2a0aa-89d7-4eb6-a858-52d79ffc87a8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/70/45/7045a3dc-3e8b-4f2e-83be-f97d309fddf9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/70/45/7045a3dc-3e8b-4f2e-83be-f97d309fddf9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4f/55/4f55cff8-3112-4863-bb8c-71e30ac134a3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4f/55/4f55cff8-3112-4863-bb8c-71e30ac134a3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/be/8fbed66a-21d5-4012-bea3-3c3a91f525e6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/be/8fbed66a-21d5-4012-bea3-3c3a91f525e6.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-21T21:11:01.869247+00:00",
+      "details": {
+        "description": "Community Event\nFor submission guidelines and details, please see the Steam announcement~\n“Kill without being caught”\nEvery murder is reshaped through the lens of bizarre mental distortions. Logic is twisted, the truth is warped, but only your reasoning can restore order.\nA Twisted Trial of God\nA mysterious cult named “Li” has seized control of the world.\nTheir cruel trial is simple:\ncommit murder without being exposed, and you shall ascend to godhood.\n13 individuals known as “Afflicted Ones” are summoned but burdened with rare cognitive disorders that spread their warped perceptions to others, creating murder scenes that defy reason:\nOCD\nforces absolute truth where no one can lie\nSpatial neglect\nerases evidence from the left side of reality\nProsopagnosia\nblurs every face into anonymity\nCan you untangle these cognitive illusions and expose the true mastermind?\nQuick, Intense Debate Battles\nEnter Debate Mode, where you’ll rapidly judge every statement: Will you accept their words, or strike back with the right clue?\nEvery battle tests logic, instincts, and time management.\nMurders Twisted by Cognitive Disorders\nCrime scenes are not what they seem.\nWitness bodies without faces, missing evidence, and spaces erased by perception.\nThat corpse with severed limbs—was it murder?\nOr did they fall victim to their own “Alien Limb Syndrome”?\n13 Cognitively Afflicted Characters\nEach character bears a distinct disorder and a unique “Afflicted Power.”\nUnderstanding their minds is key to uncovering their crimes and motives.\nImmersive Live2D Animations & Stunning CG\nLive2D portraits breathe every emotional decision and nuance to life, while high-quality CG sets the stage for tense interrogations and shocking punishments.\nWhen the culprit is revealed, they will face a punishment shaped by their own cognitive disorder.\nIn a world consumed by distorted perceptions, can you decipher reality’s truth?",
+        "game_features": [],
+        "repack_features": [
+          "Based on Psycho-Sleuth-TENOKE ISO release: tenoke-psycho-sleuth.iso (16,780,845,056 bytes)",
+          "Game version: v0.0.233",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format nullified, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content (ArtBook + OST in MP3 format)",
+          "Significantly smaller archive size (compressed from 15.6 to 8.7/9.1 GB)",
+          "Installation takes 5-15 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 15.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-21T21:11:01.869247+00:00"
     },
     {
       "id": "halls-of-torment",

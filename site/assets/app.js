@@ -239,8 +239,8 @@ function buildTagIndex() {
   }
   state.tagCounts=counts;
   const fragment=document.createDocumentFragment();
-  [...canonical.entries()].map(([key,label])=>({key,label,count:counts.get(key)||0})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,locale(),{sensitivity:'base'})).forEach(tag=>{
-    const button=document.createElement('button'); button.type='button'; button.className='tag-chip'; button.dataset.tagKey=tag.key; button.dataset.tagLabel=tag.label;
+  [...canonical.entries()].map(([key,label])=>({key,label,count:counts.get(key)||0})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label,locale(),{sensitivity:'base'})).forEach((tag,order)=>{
+    const button=document.createElement('button'); button.type='button'; button.className='tag-chip'; button.dataset.tagKey=tag.key; button.dataset.tagLabel=tag.label; button.dataset.tagOrder=String(order);
     const label=document.createElement('span'); label.textContent=tag.label; const count=document.createElement('small'); count.textContent=formatNumber(tag.count); button.append(label,count);
     button.addEventListener('click',()=>{ state.selectedTags.has(tag.key)?state.selectedTags.delete(tag.key):state.selectedTags.add(tag.key); updateTagUI(); applyFilters(); });
     fragment.append(button);
@@ -258,17 +258,39 @@ function updateTagUI() {
   }
 }
 
+function tagMatchRank(label, query) {
+  if (label===query) return 0;
+  if (label.startsWith(query)) return 1;
+  if (label.split(' ').some(word=>word.startsWith(query))) return 2;
+  return 3;
+}
 function updateTagFacets() {
   if (!state.games.length) return;
   const query=els.search.value.trim(), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
   const pool=searchBase.filter(game=>nonTagMatches(game,query) && selected.every(tag=>game.__tagKeySet.has(tag)));
   const counts=new Map(); for (const game of pool) for (const tag of game.__tagKeySet) counts.set(tag,(counts.get(tag)||0)+1);
-  const searchTag=normalized(els.tagSearch.value);
-  els.tagList.querySelectorAll('.tag-chip').forEach(btn=>{
-    const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0), visibleBySearch=active||!searchTag||normalized(btn.dataset.tagLabel).includes(searchTag);
-    btn.hidden=!active && (!next || !visibleBySearch); btn.disabled=!active && !next; btn.querySelector('small').textContent=formatNumber(next);
+  const searchTag=normalized(els.tagSearch.value), buttons=[...els.tagList.querySelectorAll('.tag-chip')];
+  let matched=0;
+  for (const btn of buttons) {
+    const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0);
+    const matchesSearch=!searchTag||normalized(btn.dataset.tagLabel).includes(searchTag);
+    const visible=matchesSearch && (active || next>0);
+    btn.hidden=!visible;
+    btn.disabled=!active && !next;
+    btn.querySelector('small').textContent=formatNumber(next);
+    if (visible) matched++;
+  }
+  buttons.sort((a,b)=>{
+    if (searchTag) {
+      const rank=tagMatchRank(normalized(a.dataset.tagLabel),searchTag)-tagMatchRank(normalized(b.dataset.tagLabel),searchTag);
+      if (rank) return rank;
+    }
+    return Number(a.dataset.tagOrder)-Number(b.dataset.tagOrder);
   });
-  els.tagResultCount.textContent=gameCountLabel(state.filtered.length);
+  els.tagList.append(...buttons);
+  els.tagResultCount.textContent=searchTag
+    ?t(matched===1?'genre.matchingResults.one':'genre.matchingResults.other',{count:formatNumber(matched),games:gameCountLabel(state.filtered.length)})
+    :gameCountLabel(state.filtered.length);
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}

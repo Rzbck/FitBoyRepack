@@ -270,6 +270,7 @@ function updateTagFacets() {
   const pool=searchBase.filter(game=>nonTagMatches(game,query) && selected.every(tag=>game.__tagKeySet.has(tag)));
   const counts=new Map(); for (const game of pool) for (const tag of game.__tagKeySet) counts.set(tag,(counts.get(tag)||0)+1);
   const searchTag=normalized(els.tagSearch.value), buttons=[...els.tagList.querySelectorAll('.tag-chip')];
+  const matchedKeys=new Set();
   let matched=0;
   for (const btn of buttons) {
     const key=btn.dataset.tagKey, active=state.selectedTags.has(key), next=active?pool.length:(counts.get(key)||0);
@@ -278,7 +279,7 @@ function updateTagFacets() {
     btn.hidden=!visible;
     btn.disabled=!active && !next;
     btn.querySelector('small').textContent=formatNumber(next);
-    if (visible) matched++;
+    if (visible) {matched++;matchedKeys.add(key);}
   }
   buttons.sort((a,b)=>{
     if (searchTag) {
@@ -288,8 +289,9 @@ function updateTagFacets() {
     return Number(a.dataset.tagOrder)-Number(b.dataset.tagOrder);
   });
   els.tagList.append(...buttons);
+  const matchedGames=searchTag?pool.filter(game=>game.__tagKeys.some(tag=>matchedKeys.has(tag))).length:state.filtered.length;
   els.tagResultCount.textContent=searchTag
-    ?t(matched===1?'genre.matchingResults.one':'genre.matchingResults.other',{count:formatNumber(matched),games:gameCountLabel(state.filtered.length)})
+    ?t(matched===1?'genre.matchingResults.one':'genre.matchingResults.other',{count:formatNumber(matched),games:gameCountLabel(matchedGames)})
     :gameCountLabel(state.filtered.length);
 }
 

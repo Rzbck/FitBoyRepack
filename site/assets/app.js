@@ -289,6 +289,7 @@ function updateTagFacets() {
     return Number(a.dataset.tagOrder)-Number(b.dataset.tagOrder);
   });
   els.tagList.append(...buttons);
+  // Count each game only once when several matching genres share the same game.
   const matchedGames=searchTag?pool.filter(game=>game.__tagKeys.some(tag=>matchedKeys.has(tag))).length:state.filtered.length;
   els.tagResultCount.textContent=searchTag
     ?t(matched===1?'genre.matchingResults.one':'genre.matchingResults.other',{count:formatNumber(matched),games:gameCountLabel(matchedGames)})

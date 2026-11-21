@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-21T02:17:38.393146+00:00",
+  "generated_at": "2026-11-21T02:18:19.437797+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-20T12:07:18.506444+00:00",
   "games": [
@@ -17,7 +17,59 @@
         "Top-down",
         "3D"
       ],
-      "repack_size": "2 GB"
+      "repack_size": "2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fc/f9/fcf99e81-d41b-4568-b623-37a09aecedf9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fc/f9/fcf99e81-d41b-4568-b623-37a09aecedf9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/03/28/03282a6b-bd99-42a8-8ef8-695301053aca.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/03/28/03282a6b-bd99-42a8-8ef8-695301053aca.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/72/74/7274a330-c2d0-4bec-820c-c470673db8b6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/72/74/7274a330-c2d0-4bec-820c-c470673db8b6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/96/54/9654b145-c894-401d-ad8a-b71b1119d125.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/96/54/9654b145-c894-401d-ad8a-b71b1119d125.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1c/fd/1cfd20a5-3b92-4de0-9db1-fb24f5d6e665.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1c/fd/1cfd20a5-3b92-4de0-9db1-fb24f5d6e665.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c6/68/c6688164-9ee8-4cf7-abff-8e54db7ea0be.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c6/68/c6688164-9ee8-4cf7-abff-8e54db7ea0be.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-21T02:18:19.436119+00:00",
+      "details": {
+        "description": "You’re stranded on a crumbling alien planet with nothing but your weapon and an empty backpack. To survive this\nsci-fi bullet heaven\n, you’ll need to master the art of aggressive organization and nimble movements.\nClimb a towering alien monolith while facing hordes of enemies, collect experimental tech and jigsaw your inventory into an unstoppable engine of destruction. The Void is waiting, and your inventory space is limited.\nPack light. Shoot heavy.\nYOUR INVENTORY IS YOUR WEAPON\nForget simple equipment slots. Here,\nplacement is power\n.\nStrategize:\nArrange weapons and artifacts in your backpack grid to activate powerful adjacency bonuses.\nSynergize:\nPlace elemental weapons next to melee blades for hybrid damage, or link engineering items to drones for epic buffs.\nEvolve:\nMerge duplicate items to increase their rarity and unlock devastating new properties.\nSURVIVE THE ONSLAUGHT\nThe combat is fast, fluid, and brutal. Your weapons fire automatically, leaving you free to focus on what matters:\nMovement and Survival.\nDodge & Destroy:\nWeave through thousands of enemies while your optimized build unleashes chaos.\nElite Challenges:\nFace multi-phase bosses and elite enemies that will test your reflexes and your build’s efficiency.\nDynamic Arenas:\nAdapt to biome-specific events in hand-tailored arenas designed for infinite replayability.\nASSEMBLE YOUR CREW & EVOLVE\nDeath is just the beginning. The\nroguelite progression\nensures you come back stronger after every defeat.\nDeep Meta-Progression:\nUse resources gathered in the tower to upgrade your ship’s tech tree and unlock permanent bonuses for all characters.\nUnique Specialists:\nChoose from a growing roster of survivors – from melee berserkers to drone engineers and long range snipers. Each character features their own\nunique dash, active ability\nand\nskill tree\ncontaining\nplaystyle defining passive abilities\n.\nLimitless Combinations:\nWith 100+ weapons, 200+ artifacts, and 10 unique characters, there are over\n10 quintillion possible builds\nto discover.\nFIGHT TO THE BEAT\nSet your pace to a masterfully crafted and powerful soundtrack by acclaimed electronic music artist and studio co-creator\nNibana\n, inspired by artists such as Solar Fields (Mirror’s Edge / Mirror’s Edge: Catalyst), featuring the reveal of his brand new music project\nAnalog Anxiety\nand collaborations with Psychedelic Trance legends like\nAjja, Ryanosaurus, Kliment\nand\nLunarave\nas well as YouTube’s most metal cover artist\nVincent Moretto\n.\nThe OST will be released as a fully streamable 10 tracks album, unlockable within the game, and manageable from the\nJukebox Menu\nwhere you will be able to playlist your favorite songs from a level to another and curate your own music experience.\nKEY FEATURES\nTactical Inventory System:\nA puzzle within the battle. Rearrange items to trigger synergies, set bonuses, and merge duplicates for exponential power gains.\nFast-Paced Auto-Combat:\nA pure “Survivor-like” experience where your skill lies in positioning and dodging while your build handles the firepower.\nInsane Build Variety:\nExperiment with Elemental, Engineering, Projectile or even Melee archetypes across a roster of distinct characters.\nPersistent Progression:\nUnlock permanent upgrades and new items via a shared Ship Tech Tree and individual Character Skill Trees.\nEpic Boss Fights:\nFace strong bosses with phase-based attack patterns and mechanics.\nHigh-octane Jukebox:\nFight to the beat of outstanding electronic music from internationally acclaimed musicians and curate your own playlist.\nA human-sized indie experience:\nWe have put sweat and tears in Void Reaver, our first game ever, to bring you a 100% hand-crafted game valuing human artists with a strict\nNO AI\nART\nstance.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Void_Reaver-Razor1911 ISO release: rzr-voidreaver.iso (6,643,122,176 bytes)",
+          "Game version: v1.0.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 6.2 to 2 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 10.9 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-21T02:18:19.436119+00:00"
     },
     {
       "id": "ai-limit",

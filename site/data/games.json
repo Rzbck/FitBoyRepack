@@ -1,9 +1,104 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-21T11:42:50.406065+00:00",
+  "generated_at": "2026-11-21T21:10:12.027933+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-21T11:42:50.406065+00:00",
   "games": [
+    {
+      "id": "psycho-sleuth",
+      "title": "Psycho-Sleuth: Deluxe Edition – v0.0.233 + Bonus Content",
+      "source_url": "https://fitgirl-repacks.site/psycho-sleuth/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/21/d7d9068e4818842b257160b6a8b6f42e.jpg",
+      "post_date": "2026-11-21T23:22:28+03:00",
+      "genres": [
+        "Adventure",
+        "2D",
+        "Japanese"
+      ],
+      "repack_size": "N/A"
+    },
+    {
+      "id": "halls-of-torment",
+      "title": "Halls of Torment: Tormented Supporter Bundle – v2026-10-20 + 4 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/halls-of-torment/",
+      "image_url": "https://i2.imageban.ru/out/2025/12/21/a1de16e98102e566783d7e9f282d20e4.jpg",
+      "post_date": "2026-11-21T21:00:14+03:00",
+      "genres": [
+        "Arcade",
+        "Shoot 'em up",
+        "Isometric",
+        "2D"
+      ],
+      "repack_size": "829 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/8b/cf/8bcf2414-e5a8-4cd9-8061-20c8dfbcfc7b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8b/cf/8bcf2414-e5a8-4cd9-8061-20c8dfbcfc7b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/68/ea/68eadec0-1887-45a8-ad56-c2d3ab8947dc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/68/ea/68eadec0-1887-45a8-ad56-c2d3ab8947dc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a1/2e/a12e10fc-e1ef-4572-adcb-a5ddb8acccd4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a1/2e/a12e10fc-e1ef-4572-adcb-a5ddb8acccd4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e6/28/e6289d5c-20be-4d28-b028-696fbad8df0a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e6/28/e6289d5c-20be-4d28-b028-696fbad8df0a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/cb/f2/cbf24ffd-b61a-4573-9a8d-9e61f53fc0b9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cb/f2/cbf24ffd-b61a-4573-9a8d-9e61f53fc0b9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4a/36/4a367608-7b51-4973-bc3c-eedd4dcb2dba.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/36/4a367608-7b51-4973-bc3c-eedd4dcb2dba.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Halls of Torment is a horde survival game with a pre-rendered retro look reminiscent of RPGs from the late 90s. Choose one of many hero characters and descend into the deadly Halls of Torment. Fight unholy horrors from beyond and survive wave after wave of enemies until you face one of the tormented Lords. Strengthen your hero with character traits, abilities, and items. Create a new powerful build during each run. Explore various underground expanses and find new powerful items that enable you to venture even deeper into the abyss.",
+        "game_features": [
+          "Quick and casual 30 minute runs.",
+          "Old school pre-rendered art style.",
+          "Quest-based meta progression.",
+          "Large selection of diverse abilities, traits, and items, all enabling you to create interesting synergies.",
+          "Diverse bosses featuring unique mechanics and attack patterns.",
+          "Several distinct characters allowing for many different play styles.",
+          "Unlock and explore multiple interesting and challenging underground worlds.",
+          "Unique items can be sent up to the overworld and used to customize future runs.",
+          "Craft magical tinctures to direct fate in your favor.",
+          "Unlock the power of each class and combine them with your chosen character.",
+          "Defeat the Lords of the underworld and explore infinite growth.",
+          "Find rare item variants to further improve your builds.",
+          "Put your strategies to the test in the late game against the unbeatable Shrine of Torment.",
+          "6 stages with unique environments, 11 playable characters & character marks, 25 blessings that make you stronger for each run, 60 unique items to retrieve and unlock, 240 higher rarity item variants, 74 abilities and ability upgrades, 30 artifacts to customize your game experience, 35+ unique bosses, 70+ unique monsters, 500 quests to complete, 1000+ traits that upgrade characters and abilities."
+        ],
+        "repack_features": [
+          "Based on Halls.of.Torment.The.Boglands-TENOKE ISO release: tenoke-halls.of.torment.the.boglands.iso (3,378,132,992 bytes)",
+          "Halls.of.Torment.The.Boglands.Update.v20251204-TENOKE (47 MB) applied over",
+          "Game version: v2025-12-04; 3 DLCs (Boglands, Supporter Pack, Sounds of Torment) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format nullified, NOTHING re-encoded. Bonus OST in MP3 format is included by default",
+          "Significantly smaller archive size (compressed from cumulative 3.2 GB to 764 MB)",
+          "Installation takes less than a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.1 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "void-reaver",
       "title": "Void Reaver – v1.0.0",
@@ -104571,88 +104666,6 @@
           "Installation takes 2-4 minutes",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 4.7 GB",
-          "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "halls-of-torment",
-      "title": "Halls of Torment: Tormented Supporter Bundle – v2025-12-04 + 3 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/halls-of-torment/",
-      "image_url": "https://i2.imageban.ru/out/2025/12/21/a1de16e98102e566783d7e9f282d20e4.jpg",
-      "post_date": "2025-12-21T05:28:14+03:00",
-      "genres": [
-        "Arcade",
-        "Shoot 'em up",
-        "Isometric",
-        "2D"
-      ],
-      "repack_size": "764 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/8b/cf/8bcf2414-e5a8-4cd9-8061-20c8dfbcfc7b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8b/cf/8bcf2414-e5a8-4cd9-8061-20c8dfbcfc7b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/68/ea/68eadec0-1887-45a8-ad56-c2d3ab8947dc.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/68/ea/68eadec0-1887-45a8-ad56-c2d3ab8947dc.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a1/2e/a12e10fc-e1ef-4572-adcb-a5ddb8acccd4.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a1/2e/a12e10fc-e1ef-4572-adcb-a5ddb8acccd4.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e6/28/e6289d5c-20be-4d28-b028-696fbad8df0a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e6/28/e6289d5c-20be-4d28-b028-696fbad8df0a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/cb/f2/cbf24ffd-b61a-4573-9a8d-9e61f53fc0b9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/cb/f2/cbf24ffd-b61a-4573-9a8d-9e61f53fc0b9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/4a/36/4a367608-7b51-4973-bc3c-eedd4dcb2dba.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/4a/36/4a367608-7b51-4973-bc3c-eedd4dcb2dba.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Halls of Torment is a horde survival game with a pre-rendered retro look reminiscent of RPGs from the late 90s. Choose one of many hero characters and descend into the deadly Halls of Torment. Fight unholy horrors from beyond and survive wave after wave of enemies until you face one of the tormented Lords. Strengthen your hero with character traits, abilities, and items. Create a new powerful build during each run. Explore various underground expanses and find new powerful items that enable you to venture even deeper into the abyss.",
-        "game_features": [
-          "Quick and casual 30 minute runs.",
-          "Old school pre-rendered art style.",
-          "Quest-based meta progression.",
-          "Large selection of diverse abilities, traits, and items, all enabling you to create interesting synergies.",
-          "Diverse bosses featuring unique mechanics and attack patterns.",
-          "Several distinct characters allowing for many different play styles.",
-          "Unlock and explore multiple interesting and challenging underground worlds.",
-          "Unique items can be sent up to the overworld and used to customize future runs.",
-          "Craft magical tinctures to direct fate in your favor.",
-          "Unlock the power of each class and combine them with your chosen character.",
-          "Defeat the Lords of the underworld and explore infinite growth.",
-          "Find rare item variants to further improve your builds.",
-          "Put your strategies to the test in the late game against the unbeatable Shrine of Torment.",
-          "6 stages with unique environments, 11 playable characters & character marks, 25 blessings that make you stronger for each run, 60 unique items to retrieve and unlock, 240 higher rarity item variants, 74 abilities and ability upgrades, 30 artifacts to customize your game experience, 35+ unique bosses, 70+ unique monsters, 500 quests to complete, 1000+ traits that upgrade characters and abilities."
-        ],
-        "repack_features": [
-          "Based on Halls.of.Torment.The.Boglands-TENOKE ISO release: tenoke-halls.of.torment.the.boglands.iso (3,378,132,992 bytes)",
-          "Halls.of.Torment.The.Boglands.Update.v20251204-TENOKE (47 MB) applied over",
-          "Game version: v2025-12-04; 3 DLCs (Boglands, Supporter Pack, Sounds of Torment) are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in FLAC format nullified, NOTHING re-encoded. Bonus OST in MP3 format is included by default",
-          "Significantly smaller archive size (compressed from cumulative 3.2 GB to 764 MB)",
-          "Installation takes less than a minute",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 3.1 GB",
           "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-21T00:26:33.564263+00:00",
+  "generated_at": "2026-11-21T02:17:38.393146+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-20T12:07:18.506444+00:00",
   "games": [
+    {
+      "id": "void-reaver",
+      "title": "Void Reaver – v1.0.0",
+      "source_url": "https://fitgirl-repacks.site/void-reaver/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/21/7dd6fd4869cb9584151f13475e6c1f94.jpg",
+      "post_date": "2026-11-21T04:21:25+03:00",
+      "genres": [
+        "Arcade",
+        "Shoot 'em up",
+        "Bullet hell",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "2 GB"
+    },
     {
       "id": "ai-limit",
       "title": "AI LIMIT: Deluxe Edition, v1.2.004 + 3 DLCs",

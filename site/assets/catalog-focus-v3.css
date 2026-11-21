@@ -203,6 +203,10 @@
   flex:0 1 auto;
 }
 
+.tag-picker-list .tag-chip[hidden]{
+  display:none;
+}
+
 .tag-picker-list .tag-chip span{
   max-width:220px;
 }

@@ -257,7 +257,8 @@ jobs:
       - name: Boot site in headless Chrome and require V2 UI + deep link
         shell: bash
         run: |
-          set -euo pipefail
+          set -Eeuo pipefail
+          trap 'printf "Browser contract failed at line %s: %s\\n" "$LINENO" "$BASH_COMMAND" >&2' ERR
           python -m http.server 4173 -d site >/tmp/fitboy-http.log 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid" 2>/dev/null || true' EXIT

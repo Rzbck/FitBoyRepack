@@ -29,7 +29,7 @@ const $$ = selector => [...document.querySelectorAll(selector)];
 
 const els = {
   grid: $('#gameGrid'), template: $('#cardTemplate'), search: $('#searchInput'), suggestions: $('#searchSuggestions'), sort: $('#sortControl'),
-  count: $('#visibleCount'), status: $('#catalogStatus'), empty: $('#emptyState'), favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'), catalogHeading: $('#catalogHeading'), catalogResults: $('#catalogResults'),
+  count: $('#visibleCount'), status: $('#catalogStatus'), empty: $('#emptyState'), favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'), catalogHeading: $('#catalogHeading'), catalogResults: $('#catalogResults'), steamSortHint: $('#steamSortHint'),
   dialog: $('#gameDialog'), dialogContent: $('#dialogContent'), tagFilter: $('#tagFilter'), tagList: $('#tagList'), tagSearch: $('#tagSearch'),
   clearTags: $('#clearTags'), selectedTagCount: $('#selectedTagCount'), selectedTagsBar: $('#selectedTagsBar'), tagResultCount: $('#tagResultCount'),
   tagPickerDialog: $('#tagPickerDialog'), openTagPicker: $('#openTagPicker'), closeTagPicker: $('#closeTagPicker'),
@@ -343,6 +343,7 @@ function renderCard(game,compact=false){
   card.querySelector('.card-date').textContent=formatDate(game.post_date);
   card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
   applyRatingLabel(card,game);
+  if(!compact)card.querySelector('.cover-wrap').append(card.querySelector('.steam-rating'));
   if(displayTitle && displayTitle!==game.title) card.title=game.title;
   if(game.image_url){
     image.fetchPriority='low'; image.src=game.image_url;
@@ -370,6 +371,12 @@ function updateCatalogMeta(){
   els.empty.querySelector('span').textContent=t(isEmptyFavorites?'library.emptyFavoritesBody':'empty.body');
   const headingKey=state.libraryFilter==='favorites'?'library.myFavorites':state.libraryFilter==='backlog'?'library.backlog':state.libraryFilter==='completed'?'library.completed':'catalog.title';
   els.catalogHeading.textContent=t(headingKey);
+  const steamSorting=els.sort.value.startsWith('steam_');
+  els.steamSortHint.hidden=!steamSorting;
+  if(steamSorting){
+    const rated=state.filtered.filter(game=>ratingFor(game)).length;
+    els.steamSortHint.textContent=t('rating.coverage',{rated:formatNumber(rated),total:formatNumber(state.filtered.length)});
+  }
   const hasMore=state.visible<state.filtered.length;
   els.scrollSentinel.hidden=!hasMore;
   if(!hasMore)els.infiniteStatus.hidden=true;

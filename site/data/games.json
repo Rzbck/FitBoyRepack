@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-21T23:19:22.660465+00:00",
+  "generated_at": "2026-11-22T01:21:16.424451+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-21T11:42:50.406065+00:00",
   "games": [
+    {
+      "id": "rangers-path-national-park-simulator",
+      "title": "Ranger’s Path: National Park Simulator",
+      "source_url": "https://fitgirl-repacks.site/rangers-path-national-park-simulator/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/22/e63f9f9a7549d287745f586a231bd481.jpg",
+      "post_date": "2026-11-22T03:55:16+03:00",
+      "genres": [
+        "Lifestyle",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "13.6 GB"
+    },
     {
       "id": "hearts-of-iron-iv",
       "title": "Hearts of Iron IV: Ultimate Bundle – v1.20.0.0.8873 + 58 DLCs/Bonuses + Windows 7 Fix",

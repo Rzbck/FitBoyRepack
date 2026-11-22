@@ -38,8 +38,7 @@ const els = {
   mobileFiltersButton: $('#mobileFiltersButton'), filterSidebar: $('#filterSidebar'), filterOverlay: $('#filterOverlay'), closeFilters: $('#closeFilters'),
   exportLibrary: $('#exportLibrary'), importLibraryButton: $('#importLibraryButton'), importLibrary: $('#importLibrary'),
   favoritesCount: $('#favoritesCount'), backlogCount: $('#backlogCount'), completedCount: $('#completedCount'),
-  newSection: $('#newSection'), newGrid: $('#newGrid'), updatedSection: $('#updatedSection'), updatedGrid: $('#updatedGrid'),
-  librarySection: $('#librarySection'), libraryGrid: $('#libraryGrid'), recommendationSection: $('#recommendationSection'),
+  recommendationSection: $('#recommendationSection'),
   recommendationGrid: $('#recommendationGrid'), recommendationMeta: $('#recommendationMeta'), healthBadge: $('#healthBadge'), healthPanel: $('#healthPanel'),
   healthTotal: $('#healthTotal'), healthDescriptions: $('#healthDescriptions'), healthGalleries: $('#healthGalleries'), healthGifs: $('#healthGifs'), healthMeta: $('#healthMeta')
 };
@@ -297,7 +296,7 @@ function updateTagFacets() {
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}
-function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)return; on?set.add(id):set.delete(id); saveLibrary(); updateLibraryUI(); renderHighlights(); renderRecommendations(); document.dispatchEvent(new CustomEvent('fitboy:library-change',{detail:{gameId:id,library:snapshotLibrary()}})); }
+function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)return; on?set.add(id):set.delete(id); saveLibrary(); updateLibraryUI(); renderRecommendations(); document.dispatchEvent(new CustomEvent('fitboy:library-change',{detail:{gameId:id,library:snapshotLibrary()}})); }
 function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorites.has(id)); if(state.libraryFilter==='favorites') applyFilters(); else renderCatalog();}
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
@@ -366,9 +365,15 @@ function recommendationScores(){
   return scored.sort((a,b)=>b.score-a.score||b.shared-a.shared||gameDate(b.game)-gameDate(a.game));
 }
 function renderRow(grid,games){const f=document.createDocumentFragment();for(const game of games.slice(0,HOME_LIMIT))f.append(renderCard(game,true));grid.replaceChildren(f);}
-function renderRecommendations(){const picks=recommendationScores().slice(0,RECOMMENDATION_LIMIT);els.recommendationSection.hidden=!picks.length;if(!picks.length){els.recommendationGrid.replaceChildren();return;}renderRow(els.recommendationGrid,picks.map(x=>x.game));const n=state.library.favorites.size+state.library.backlog.size;els.recommendationMeta.textContent=t('recommendation.profile',{count:n});}
-function renderHighlights(){const newest=[...state.games].sort((a,b)=>gameDate(b)-gameDate(a)).filter(g=>isNew(g,30));els.newSection.hidden=!newest.length;if(newest.length)renderRow(els.newGrid,newest);const updated=[...state.games].filter(g=>g.detail_updated_at).sort((a,b)=>Date.parse(b.detail_updated_at)-Date.parse(a.detail_updated_at));els.updatedSection.hidden=!updated.length;if(updated.length)renderRow(els.updatedGrid,updated);const backlog=[...state.library.backlog].map(id=>state.byId.get(id)).filter(Boolean);els.librarySection.hidden=!backlog.length;if(backlog.length)renderRow(els.libraryGrid,backlog);}
-
+function renderRecommendations(){
+  if(state.libraryFilter!=='favorites'||!state.library.favorites.size){els.recommendationSection.hidden=true;return;}
+  const picks=recommendationScores().slice(0,RECOMMENDATION_LIMIT);
+  els.recommendationSection.hidden=!picks.length;
+  if(!picks.length){els.recommendationGrid.replaceChildren();return;}
+  renderRow(els.recommendationGrid,picks.map(x=>x.game));
+  const n=state.library.favorites.size+state.library.backlog.size;
+  els.recommendationMeta.textContent=t('recommendation.profile',{count:n});
+}
 function renderSuggestions(){
   const q=els.search.value.trim(); if(q.length<2){els.suggestions.hidden=true;els.suggestions.replaceChildren();state.suggestionIndex=-1;return;}
   const picks=searchPool(q).map(game=>({game,score:queryScore(game,q)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||gameDate(b.game)-gameDate(a.game)).slice(0,8); if(!picks.length){els.suggestions.hidden=true;return;}
@@ -377,12 +382,12 @@ function renderSuggestions(){
 function stepSuggestion(delta){const items=$$('.search-suggestion');if(!items.length)return;state.suggestionIndex=(state.suggestionIndex+delta+items.length)%items.length;items.forEach((b,i)=>b.classList.toggle('active',i===state.suggestionIndex));items[state.suggestionIndex].scrollIntoView({block:'nearest'});}
 
 function updateLibraryUI(){els.favoritesCount.textContent=state.library.favorites.size;els.backlogCount.textContent=state.library.backlog.size;els.completedCount.textContent=state.library.completed.size;$$('.library-filter').forEach(b=>{const active=b.dataset.library===state.libraryFilter;b.setAttribute('aria-pressed',String(active));b.classList.toggle('active',active);});}
-function setLibraryFilter(list){state.libraryFilter=state.libraryFilter===list?'':list;updateLibraryUI();applyFilters();closeMobileFilters();}
+function setLibraryFilter(list){state.libraryFilter=state.libraryFilter===list?'':list;updateLibraryUI();applyFilters();renderRecommendations();closeMobileFilters();}
 function exportLibrary(){const blob=new Blob([JSON.stringify({version:2,exported_at:new Date().toISOString(),...snapshotLibrary()},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fitboyrepack-library.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
-async function importLibrary(file){try{const data=JSON.parse(await file.text());for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderHighlights();renderRecommendations();applyFilters();}catch(error){console.error(error);alert(t('library.invalidFile'));}finally{els.importLibrary.value='';}}
+async function importLibrary(file){try{const data=JSON.parse(await file.text());for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderRecommendations();applyFilters();}catch(error){console.error(error);alert(t('library.invalidFile'));}finally{els.importLibrary.value='';}}
 
 function toggleQuick(key,button){state.quick[key]=!state.quick[key];button.setAttribute('aria-pressed',String(state.quick[key]));button.classList.toggle('active',state.quick[key]);applyFilters();}
-function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.releasePeriodFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();}
+function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.releasePeriodFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();renderRecommendations();}
 function populateYears(){const years=[...new Set(state.games.map(g=>g.__releaseYear).filter(y=>/^20\d\d$/.test(y)))].sort((a,b)=>b-a);for(const year of years){const o=document.createElement('option');o.value=year;o.textContent=year;els.yearFilter.append(o);}}
 
 function openTagPicker(){if(!els.tagPickerDialog.open)els.tagPickerDialog.showModal();requestAnimationFrame(()=>els.tagSearch.focus());}
@@ -687,7 +692,7 @@ async function loadCatalog(){
     buildTagIndex();
     updateLibraryUI();
     applyFilters();
-    renderHighlights();
+    
     renderRecommendations();
     openHashGame();
     loadSearchIndexPayload().then(index=>{
@@ -712,7 +717,7 @@ document.addEventListener('fitboy:language-change',()=>{
   if(lastHealthPayload)renderHealth(lastHealthPayload);
   buildTagIndex();
   applyFilters();
-  renderHighlights();
+  
   renderRecommendations();
 });
 

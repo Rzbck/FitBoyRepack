@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-22T21:47:40.717709+00:00",
+  "generated_at": "2026-11-22T21:48:35.770722+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-22T11:55:32.162479+00:00",
   "games": [
@@ -94,7 +94,59 @@
         "Side",
         "2D"
       ],
-      "repack_size": "3.1 GB"
+      "repack_size": "3.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/bd/06/bd066808-d763-4043-8aff-e0b657159e25.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bd/06/bd066808-d763-4043-8aff-e0b657159e25.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f7/a9/f7a9e108-ea86-4aef-bc9d-024d2736edf3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f7/a9/f7a9e108-ea86-4aef-bc9d-024d2736edf3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ca/c9/cac9f18b-585e-4782-810a-fb1b4cd48190.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ca/c9/cac9f18b-585e-4782-810a-fb1b4cd48190.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ef/2f/ef2f0846-1d75-4c42-a6ef-09c57159fc29.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ef/2f/ef2f0846-1d75-4c42-a6ef-09c57159fc29.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2b/42/2b42a96b-3a28-4123-861d-cfda1fb7478d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2b/42/2b42a96b-3a28-4123-861d-cfda1fb7478d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/22/b122b3a6-737c-4444-9974-9ab6283c7dcf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/22/b122b3a6-737c-4444-9974-9ab6283c7dcf.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-22T21:48:35.769667+00:00",
+      "details": {
+        "description": "Traverse a massive interconnected world on the sand-swept planet of Protea VI. Unveil the grim mysteries of Protea VI at your own pace as Moadra. Endure challenging combat and evolve Moadra’s abilities, solve puzzles, and reveal countless hidden paths and secrets throughout your mission to uncover your lost Neera heritage.\nWhether you are trying to endure the desolate surface, ascend the deadly, freezing summits, or scout the research facility infested with malicious alien species, Protea VI has many lost secrets to uncover after your ancestors’ extinction 20,000 years ago. Dangers await around every corner.\nUse Moadra’s agility to your advantage to roll, dodge, leap, wall jump, and sprint at never-before-seen speeds to evade deadly organisms and hazardous elements. Use your swift reflexes, an arsenal of weapons, and special abilities to survive everything from low-level threats to gargantuan monsters that force you to use every tool at your disposal.\nActivate your scanner bot and use X-ray vision to examine creatures and your surroundings more closely. Reveal hidden paths and secret areas invisible to the naked eye, and map out the places you explored.\nBlow up unfriendly creatures and organisms to absorb their Protoplasm, lumps of energy-packed biomass. Consume it inside organic chambers to apply metamorphosis, and evolve your abilities and weapons to new levels.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Moadra-RUNE ISO release: rune-moadra.iso (5,020,024,832 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 4.7 GB to 3.1 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-22T21:48:35.769667+00:00"
     },
     {
       "id": "bendy-and-the-dark-revival",

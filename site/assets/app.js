@@ -320,6 +320,49 @@ function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)retu
 function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorites.has(id)); if(state.libraryFilter==='favorites') applyFilters(); else renderCatalog();}
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
+function makeVoteThumb(down=false){
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('viewBox','0 0 24 24');
+  svg.setAttribute('width','12');
+  svg.setAttribute('height','12');
+  svg.setAttribute('fill','none');
+  svg.setAttribute('stroke','currentColor');
+  svg.setAttribute('stroke-width','2');
+  svg.setAttribute('stroke-linecap','round');
+  svg.setAttribute('stroke-linejoin','round');
+  svg.setAttribute('aria-hidden','true');
+  svg.classList.add('steam-thumb-icon');
+  if(down)svg.classList.add('is-down');
+  const path1=document.createElementNS(ns,'path');
+  path1.setAttribute('d','M7 10v12');
+  const path2=document.createElementNS(ns,'path');
+  path2.setAttribute('d','M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z');
+  svg.append(path1,path2);
+  return svg;
+}
+function fillCompactSteamRating(target,rating){
+  const percent=Math.max(0,Math.min(100,Number(rating.positive_percent)||0));
+  const negative=100-percent;
+  const line=document.createElement('div');line.className='steam-votes-inline';
+  const vote=(down,value)=>{
+    const item=document.createElement('span');
+    item.className='steam-mini-vote '+(down?'negative':'positive');
+    const number=document.createElement('span');
+    number.textContent=`${formatNumber(Math.round(value))}%`;
+    item.append(makeVoteThumb(down),number);
+    return item;
+  };
+  const count=document.createElement('span');count.className='steam-mini-count';
+  const abbreviated=new Intl.NumberFormat(locale(),{notation:'compact',maximumFractionDigits:1}).format(rating.total_reviews);
+  count.textContent=t('rating.votes',{count:abbreviated});
+  line.append(vote(false,percent),vote(true,negative),count);
+  target.setAttribute('aria-label',t('rating.barLabel',{
+    positive:formatNumber(Math.round(percent)),negative:formatNumber(Math.round(negative))
+  })+' · '+t('rating.votes',{count:formatNumber(rating.total_reviews)}));
+  target.title=t('rating.votes',{count:formatNumber(rating.total_reviews)});
+  target.replaceChildren(line);
+}
 function fillSteamRating(target,rating){
   const percent=Math.max(0,Math.min(100,Number(rating.positive_percent)||0));
   const negative=100-percent;
@@ -343,8 +386,8 @@ function applyRatingLabel(card,game) {
   const target=card.querySelector('.steam-rating');if(!target)return;
   const rating=ratingFor(game);
   target.hidden=!rating;
-  if(rating) fillSteamRating(target,rating);
-  else target.replaceChildren();
+  if(rating) fillCompactSteamRating(target,rating);
+  else {target.replaceChildren();target.removeAttribute('aria-label');target.removeAttribute('title');}
 }
 function updateRatingLabels(){
   document.querySelectorAll('.game-card[data-game-id]').forEach(card=>{

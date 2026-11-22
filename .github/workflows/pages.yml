@@ -31,10 +31,12 @@ jobs:
       - run: python tools/validate_catalog.py
       - run: python tools/build_site_data.py
       - run: python tools/check_site.py
+      - run: PYTHONPATH=tools python tools/test_steam_ratings.py
       - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/game-identity.js
       - run: node --check site/assets/i18n.js
       - run: node --check site/assets/translations.js
+      - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/details.js
 
@@ -96,6 +98,7 @@ jobs:
           fetch data/catalog.json /tmp/catalog.json
           fetch data/search-index.json /tmp/search-index.json
           fetch data/health.json /tmp/health.json
+          fetch data/steam-ratings.json /tmp/steam-ratings.json
           fetch data/metadata-enrichment.json /tmp/metadata-enrichment.json
           fetch data/translations-fr.json /tmp/translations-fr.json
           fetch version.json /tmp/version.json
@@ -103,6 +106,8 @@ jobs:
           import json
           c=json.load(open('/tmp/catalog.json')); s=json.load(open('/tmp/search-index.json')); h=json.load(open('/tmp/health.json'))
           m=json.load(open('/tmp/metadata-enrichment.json')); t=json.load(open('/tmp/translations-fr.json'))
+          ratings=json.load(open('/tmp/steam-ratings.json'))
+          assert ratings['rating_version']==1 and isinstance(ratings['games'],dict)
           assert c['count']==len(c['games'])==s['count']==h['total_games'] and c['games']
           assert s['search_index_version']==1 and s['prefixes'] and s['grams']
           assert 'coverage' in h and 'enrichment_pending' in h and 'metadata' in h['coverage']

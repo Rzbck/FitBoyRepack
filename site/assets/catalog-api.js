@@ -2,12 +2,14 @@ const CATALOG_URL = './data/catalog.json';
 const SEARCH_INDEX_URL = './data/search-index.json';
 const HEALTH_URL = './data/health.json';
 const TRANSLATIONS_FR_URL = './data/translations-fr.json';
+const STEAM_RATINGS_URL = './data/steam-ratings.json';
 const DETAIL_CACHE_LIMIT = 24;
 
 let catalogPromise = null;
 let searchIndexPromise = null;
 let healthPromise = null;
 let translationsFrPromise = null;
+let steamRatingsPromise = null;
 const detailCache = new Map();
 
 function fetchJson(url, label) {
@@ -65,6 +67,18 @@ export function loadTranslationsFrPayload() {
     }).catch(error => { translationsFrPromise = null; throw error; });
   }
   return translationsFrPromise;
+}
+
+export function loadSteamRatingsPayload() {
+  if (!steamRatingsPromise) {
+    steamRatingsPromise = fetchJson(STEAM_RATINGS_URL, 'Steam ratings').then(payload => {
+      if (!payload || payload.rating_version !== 1 || !payload.games || typeof payload.games !== 'object') {
+        throw new Error('Invalid Steam ratings payload');
+      }
+      return payload;
+    }).catch(error => { steamRatingsPromise = null; throw error; });
+  }
+  return steamRatingsPromise;
 }
 
 export function detailUrl(detailPath) {

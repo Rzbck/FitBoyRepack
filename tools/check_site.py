@@ -44,7 +44,7 @@ ratings=json.loads((ROOT/'data/steam-ratings.json').read_text(encoding='utf-8'))
 assert ratings.get('rating_version')==1 and isinstance(ratings.get('games'),dict)
 for game_id, row in ratings['games'].items():
     assert isinstance(game_id,str) and isinstance(row,dict)
-    assert row.get('status') in ('rated','no_reviews','pending','no_match')
+    assert row.get('status') in ('rated','no_reviews','pending','no_match','unavailable')
     if row.get('status')=='rated':
         assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
 assert './assets/app.js' in p.scripts and './assets/details.js' in p.scripts and './assets/media-sanitize.js' in p.scripts

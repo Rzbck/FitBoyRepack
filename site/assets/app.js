@@ -326,16 +326,6 @@ function applyRatingLabel(card,game) {
   target.hidden=!rating;
   if(rating) target.textContent=t('rating.card',{percent:formatNumber(Math.round(rating.positive_percent)),reviews:formatNumber(rating.total_reviews)});
   else target.textContent='';
-  const link=card.querySelector('.steam-review-link');
-  if(link){
-    const showLink=!!rating && !card.classList.contains('compact-card');
-    link.hidden=!showLink;
-    if(showLink){
-      link.href=`https://steamcommunity.com/app/${rating.steam_appid}/reviews/`;
-      link.textContent=t('rating.readReviews');
-      link.setAttribute('aria-label',t('rating.readReviewsFor',{game:game.title}));
-    }else link.removeAttribute('href');
-  }
 }
 function updateRatingLabels(){
   document.querySelectorAll('.game-card[data-game-id]').forEach(card=>{
@@ -628,6 +618,33 @@ function buildDetailLoadingShell(){
   return shell;
 }
 
+function syncDialogSteamRating(game,{notify=false}={}){
+  const layout=els.dialogContent.querySelector('.dialog-layout');
+  if(!layout || layout.dataset.gameId!==game.id)return;
+  const rating=ratingFor(game);
+  layout.steamRating=rating;
+  const card=layout.querySelector('.cover-details');
+  if(!card)return;
+  let summary=card.querySelector('.dialog-steam-rating');
+  if(!rating){summary?.remove();}
+  else{
+    if(!summary){
+      summary=document.createElement('div');
+      summary.className='dialog-steam-rating';
+      const facts=card.querySelector('.cover-identity-facts');
+      if(facts)card.insertBefore(summary,facts);
+      else card.append(summary);
+    }
+    const label=document.createElement('span');label.className='dialog-steam-source';label.textContent='Steam';
+    const score=document.createElement('strong');score.className='dialog-steam-score';
+    score.textContent=`${formatNumber(Math.round(rating.positive_percent))} %`;
+    const count=document.createElement('span');count.className='dialog-steam-count';
+    count.textContent=t('rating.votes',{count:formatNumber(rating.total_reviews)});
+    summary.replaceChildren(label,score,count);
+  }
+  if(notify)document.dispatchEvent(new CustomEvent('fitboy:steam-rating-change',{detail:{gameId:game.id}}));
+}
+
 function openDialog(game,{syncUrl=true}={}){
   const first=!els.dialog.open;
   if(first){
@@ -707,6 +724,7 @@ function openDialog(game,{syncUrl=true}={}){
 
   layout.append(cover,info);
   els.dialogContent.replaceChildren(layout);
+  syncDialogSteamRating(game);
   if(first)els.dialog.showModal();
   if(syncUrl)syncGameHash(game.id);
 
@@ -759,6 +777,10 @@ async function loadCatalog(){
     loadHealthPayload().then(health=>{lastHealthPayload=health;renderHealth(health);}).catch(e=>console.warn('Health unavailable',e));
     loadSteamRatingsPayload().then(payload=>{
       state.steamRatings=new Map(Object.entries(payload.games));
+      if(els.dialog.open){
+        const game=state.byId.get(state.dialogGameId);
+        if(game)syncDialogSteamRating(game,{notify:true});
+      }
       if(els.sort.value.startsWith('steam_'))applyFilters();
       else updateRatingLabels();
       renderRecommendations();
@@ -779,7 +801,10 @@ document.addEventListener('fitboy:language-change',()=>{
   if(lastHealthPayload)renderHealth(lastHealthPayload);
   buildTagIndex();
   applyFilters();
-  
+  if(els.dialog.open){
+    const game=state.byId.get(state.dialogGameId);
+    if(game)syncDialogSteamRating(game);
+  }
   renderRecommendations();
 });
 

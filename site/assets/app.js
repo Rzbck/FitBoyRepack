@@ -341,6 +341,7 @@ function makeVoteThumb(down=false){
   svg.append(path1,path2);
   return svg;
 }
+// Catalog: a single vote row; the opened game sheet retains its full breakdown.
 function fillCompactSteamRating(target,rating){
   const percent=Math.max(0,Math.min(100,Number(rating.positive_percent)||0));
   const negative=100-percent;

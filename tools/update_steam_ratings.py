@@ -72,7 +72,7 @@ def get_json(url, params, pause=0):
                 raise Cooldown(f"Provider requested slowdown ({code})")
             return parsed
     except HTTPError as error:
-        if error.code in (429, 503):
+        if error.code in (403, 429, 503):
             retry = error.headers.get("Retry-After", "not specified")
             raise Cooldown(f"HTTP {error.code} from {url.split('?')[0]}; Retry-After: {retry}") from error
         raise
@@ -327,8 +327,18 @@ def update(args):
         except Cooldown as e:
             LOGGER.warning("%s. Stopping safely.", e)
             break
-        except (HTTPError, URLError, ValueError, TypeError) as e:
-            LOGGER.warning("Review fetch failed for app %s: %s", appid, e)
+        except HTTPError as e:
+            # An invalid/missing Steam ID must not block the backlog behind it.
+            # 403/429/503 are already handled as Cooldown in get_json.
+            if e.code in (400, 404):
+                LOGGER.warning("Steam app %s is unavailable (%s); skipping", appid, e.code)
+                row.update({"status": "unavailable", "review_checked_at": iso(utc_now())})
+                changes += 1
+                continue
+            LOGGER.warning("Steam temporary HTTP problem for app %s: %s; yielding", appid, e)
+            break
+        except (URLError, ValueError, TypeError) as e:
+            LOGGER.warning("Review fetch failed for app %s: %s; yielding", appid, e)
             break
         row.update(review)
         cached[appid] = review
@@ -360,13 +370,13 @@ def update(args):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--resolve-limit", type=int, default=40)
-    parser.add_argument("--reviews-limit", type=int, default=30)
-    parser.add_argument("--fallback-limit", type=int, default=3)
-    parser.add_argument("--pause", type=float, default=4)
+    parser.add_argument("--resolve-limit", type=int, default=300)
+    parser.add_argument("--reviews-limit", type=int, default=120)
+    parser.add_argument("--fallback-limit", type=int, default=25)
+    parser.add_argument("--pause", type=float, default=3.5)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    if not 0 <= args.resolve_limit <= 100 or not 0 <= args.reviews_limit <= 50 or not 0 <= args.fallback_limit <= 10 or not 0 <= args.pause <= 60:
+    if not 0 <= args.resolve_limit <= 400 or not 0 <= args.reviews_limit <= 160 or not 0 <= args.fallback_limit <= 40 or not 0 <= args.pause <= 60:
         parser.error("batch limits outside safety bounds")
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     update(args)

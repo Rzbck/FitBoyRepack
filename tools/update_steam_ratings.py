@@ -106,9 +106,29 @@ def wikidata_entities(ids):
         "format": "json",
         "maxlag": "5",
     }, pause=1.5)
-    if not isinstance(response.get("entities"), dict):
-        raise ValueError("Unexpected Wikidata entities response")
-    return response["entities"]
+    if isinstance(response.get("entities"), dict):
+        return response["entities"]
+    error = response.get("error", {})
+    code = str(error.get("code", "")).lower() if isinstance(error, dict) else ""
+    if code in ("maxlag", "ratelimited", "readonly", "readonlytext"):
+        raise Cooldown(f"Wikidata action API asked to retry later ({code})")
+    # Some hosted runners receive a valid HTTP response with no 'entities'.
+    # Fall back once to a bounded exact-ID SPARQL query, never a broad text search.
+    LOGGER.warning("Wikidata action API returned %s; trying bounded P1733 query", code or "no entities")
+    query = "SELECT ?item ?steam WHERE { VALUES ?item { " + " ".join("wd:" + q for q in ids) + " } ?item wdt:P1733 ?steam }"
+    sparql = get_json("https://query.wikidata.org/sparql",
+                      {"query": query, "format": "json"}, pause=2.0)
+    bindings = sparql.get("results", {}).get("bindings")
+    if not isinstance(bindings, list):
+        raise ValueError("Unexpected Wikidata SPARQL response")
+    out = {}
+    for row in bindings:
+        qid = str(row.get("item", {}).get("value", "")).rsplit("/", 1)[-1]
+        appid = str(row.get("steam", {}).get("value", ""))
+        if qid in ids and APP_ID_RE.fullmatch(appid):
+            out.setdefault(qid, {"claims": {"P1733": []}})["claims"]["P1733"].append(
+                {"mainsnak": {"datavalue": {"value": appid}}})
+    return out
 
 
 def clean_title(text):

@@ -114,19 +114,13 @@
       <div class="catalog-content">
         <div id="activeState" class="active-state active-filter-chips" hidden></div>
 
-        <details id="discoveryShell" class="discovery-shell">
-          <summary class="discovery-summary"><span class="discovery-summary-copy"><strong data-i18n="discover.title">Découvrir</strong><small data-i18n="discover.summary">Nouveautés · Mises à jour · À jouer · Pour toi</small></span></summary>
-          <div class="discovery-content">
-            <section id="newSection" class="home-strip" hidden><div class="section-heading"><h2 data-i18n="discover.new">Nouveautés</h2></div><div id="newGrid" class="home-card-row"></div></section>
-            <section id="updatedSection" class="home-strip" hidden><div class="section-heading"><h2 data-i18n="discover.updated">Mis à jour</h2></div><div id="updatedGrid" class="home-card-row"></div></section>
-            <section id="librarySection" class="home-strip" hidden><div class="section-heading"><h2 data-i18n="discover.backlog">À jouer</h2></div><div id="libraryGrid" class="home-card-row"></div></section>
-            <section id="recommendationSection" class="recommendations" hidden><div class="section-heading"><h2 data-i18n="discover.forYou">Pour toi</h2><p id="recommendationMeta" class="section-note" hidden></p></div><div id="recommendationGrid" class="home-card-row recommendation-grid"></div></section>
-          </div>
-        </details>
-
         <div class="section-heading catalog-heading"><h2 data-i18n="catalog.title">Catalogue</h2></div>
         <section id="gameGrid" class="game-grid" aria-live="polite"></section>
         <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"><span id="infiniteStatus" class="infinite-status" hidden data-i18n="app.catalogLoading">Chargement…</span></div>
+        <section id="recommendationSection" class="recommendations favorite-recommendations" hidden>
+          <div class="section-heading"><h2 data-i18n="library.suggestions">Suggestions pour toi</h2><p id="recommendationMeta" class="section-note"></p></div>
+          <div id="recommendationGrid" class="home-card-row recommendation-grid"></div>
+        </section>
         <section id="emptyState" class="empty-state" hidden><strong data-i18n="empty.title">Aucun résultat</strong><span data-i18n="empty.body">Essaie un autre titre ou retire un filtre.</span></section>
       </div>
     </div>

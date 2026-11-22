@@ -1,0 +1,24 @@
+/* Compact favorites layout and verified Steam reviews: no large discovery shelf. */
+#emptyState[hidden], #recommendationSection[hidden], .steam-rating[hidden]{display:none!important}
+.catalog-results{min-width:0}
+.catalog-results.with-suggestions{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,36%);gap:18px;align-items:start}
+.catalog-results>.game-grid{min-width:0}
+.catalog-results.with-suggestions>.game-grid{grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:12px}
+.favorite-recommendations{min-width:0;margin:0;padding:13px;border:1px solid rgba(255,255,255,.085);border-radius:13px;background:rgba(17,24,40,.7);box-shadow:none}
+.favorite-recommendations .section-heading{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 9px}
+.favorite-recommendations .section-heading h2{font-size:.95rem;margin:0}
+.favorite-recommendations .section-note{font-size:.68rem;margin:0;color:var(--muted);display:block!important}
+.favorite-recommendations .recommendation-grid{display:flex;flex-direction:column;gap:7px;overflow:visible;padding:0}
+.favorite-recommendations .game-card{width:100%;height:72px;min-height:72px;border-radius:9px;box-shadow:none}
+.favorite-recommendations .game-card:hover{transform:none;border-color:rgba(124,108,255,.4)}
+.favorite-recommendations .card-open{display:flex;align-items:stretch;height:100%;min-width:0}
+.favorite-recommendations .cover-wrap{flex:0 0 55px;width:55px;height:100%;aspect-ratio:auto}
+.favorite-recommendations .card-body{flex:1;min-width:0;padding:8px 33px 6px 9px}
+.favorite-recommendations .card-title{font-size:.76rem;min-height:0;line-height:1.24;-webkit-line-clamp:2}
+.favorite-recommendations .card-meta{margin-top:5px;font-size:.64rem}
+.favorite-recommendations .card-date,.favorite-recommendations .genre-row,.favorite-recommendations .new-badge{display:none!important}
+.favorite-recommendations .favorite-btn{top:7px;right:7px;width:24px;height:24px;font-size:.8rem}
+.steam-rating{font-size:.68rem;color:#bdcaff;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.favorite-recommendations .steam-rating{font-size:.61rem;margin-top:3px}
+@media(max-width:1150px){.catalog-results.with-suggestions{grid-template-columns:1fr}.favorite-recommendations{max-width:100%}.favorite-recommendations .recommendation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.catalog-results.with-suggestions>.game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.favorite-recommendations .recommendation-grid{grid-template-columns:1fr}}

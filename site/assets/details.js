@@ -22,6 +22,7 @@ let lightboxIndex = 0;
 let detailRequestId = 0;
 let currentSourceGame = null;
 let currentSourceGameId = '';
+let currentRenderedGame = null; // Preserve localized prose when a rating refreshes the tabs.
 
 function normalizedUrl(value = '') {
   try {
@@ -586,6 +587,7 @@ function enhanceDialog(game, gameId, { refresh = false } = {}) {
   const layout = currentLayout(gameId);
   const info = layout?.querySelector('.dialog-info');
   if (!layout || !info) return;
+  currentRenderedGame = game;
 
   if (layout.dataset.enhanced === 'true' && refresh) {
     renderDescriptionTabs(info, game, { replace:true });
@@ -667,7 +669,8 @@ document.addEventListener('fitboy:steam-rating-change', event=>{
   const gameId=String(event.detail?.gameId||'');
   const layout=currentLayout(gameId);
   if(!layout || layout.dataset.enhanced!=='true' || !currentSourceGame || String(currentSourceGameId)!==gameId)return;
-  renderDescriptionTabs(layout.querySelector('.dialog-info'),currentSourceGame,{replace:true});
+  // Rebuild from the last localized game, never the untranslated source.
+  renderDescriptionTabs(layout.querySelector('.dialog-info'),currentRenderedGame || currentSourceGame,{replace:true});
 });
 document.addEventListener('fitboy:game-open', event => {
   const { gameId, detailPath } = event.detail || {};

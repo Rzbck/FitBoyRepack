@@ -1,4 +1,4 @@
-import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload } from './catalog-api.js';
+import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload } from './catalog-api.js';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
@@ -19,7 +19,7 @@ initI18n();
 
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
-const HOME_LIMIT = 10;
+const HOME_LIMIT = 6;
 const LEGACY_FAVORITES_KEY = 'fitboyrepack:favorites:v1';
 const LIBRARY_KEY = 'fitboyrepack:library:v2';
 const LOAD_COOLDOWN_MS = 250;
@@ -29,7 +29,7 @@ const $$ = selector => [...document.querySelectorAll(selector)];
 
 const els = {
   grid: $('#gameGrid'), template: $('#cardTemplate'), search: $('#searchInput'), suggestions: $('#searchSuggestions'), sort: $('#sortControl'),
-  count: $('#visibleCount'), status: $('#catalogStatus'), empty: $('#emptyState'), favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'),
+  count: $('#visibleCount'), status: $('#catalogStatus'), empty: $('#emptyState'), favoritesToggle: $('#favoritesToggle'), activeState: $('#activeState'), catalogHeading: $('#catalogHeading'), catalogResults: $('#catalogResults'),
   dialog: $('#gameDialog'), dialogContent: $('#dialogContent'), tagFilter: $('#tagFilter'), tagList: $('#tagList'), tagSearch: $('#tagSearch'),
   clearTags: $('#clearTags'), selectedTagCount: $('#selectedTagCount'), selectedTagsBar: $('#selectedTagsBar'), tagResultCount: $('#tagResultCount'),
   tagPickerDialog: $('#tagPickerDialog'), openTagPicker: $('#openTagPicker'), closeTagPicker: $('#closeTagPicker'),
@@ -62,7 +62,7 @@ function saveLibrary() {
 }
 
 const state = {
-  games: [], byId:new Map(), filtered:[], visible:PAGE_SIZE, selectedTags:new Set(), tagCounts:new Map(), searchIndex:null,
+  games: [], byId:new Map(), filtered:[], visible:PAGE_SIZE, selectedTags:new Set(), tagCounts:new Map(), searchIndex:null, steamRatings:new Map(),
   library:readLibrary(), libraryFilter:'', quick:{ newOnly:false, detailsOnly:false, mediaOnly:false },
   dialogGameId:null, dialogScrollY:0, dialogOpener:null, loadingMore:false, lastLoadAt:0, searchTimer:0, suggestionIndex:-1
 };
@@ -123,6 +123,23 @@ function releasePeriodMatches(game, period) {
   if(period==='this-week')return t>=thisWeek && t<=now;
   if(period==='last-week')return t>=thisWeek-7*day && t<thisWeek;
   return true;
+}
+function ratingFor(game) {
+  const row=state.steamRatings.get(game.id);
+  return row && row.status==='rated' && Number(row.total_reviews)>0 ? row : null;
+}
+function steamQuality(game) {
+  const row=ratingFor(game);
+  if(!row)return -1;
+  const n=Number(row.total_reviews), positive=Number(row.positive);
+  return (positive+75)/(n+100)*100;
+}
+function steamHiddenScore(game) {
+  const row=ratingFor(game);
+  if(!row || row.total_reviews<25 || row.total_reviews>12000)return -1;
+  const quality=steamQuality(game);
+  if(quality<75)return -1;
+  return quality-3.4*Math.log10(Math.max(1,row.total_reviews)/25);
 }
 function sizeMatches(game, bucket) {
   if (!bucket) return true;
@@ -218,6 +235,9 @@ function applyFilters() {
   state.filtered=pool.filter(game=>nonTagMatches(game,query) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
   const sort=els.sort.value;
   state.filtered.sort((a,b)=>{
+    if(sort==='steam_best') return steamQuality(b)-steamQuality(a) || Number(ratingFor(b)?.total_reviews||0)-Number(ratingFor(a)?.total_reviews||0) || gameDate(b)-gameDate(a);
+    if(sort==='steam_popular') return Number(ratingFor(b)?.total_reviews||0)-Number(ratingFor(a)?.total_reviews||0) || steamQuality(b)-steamQuality(a);
+    if(sort==='steam_hidden') return steamHiddenScore(b)-steamHiddenScore(a) || gameDate(b)-gameDate(a);
     if (sort==='relevance' && query) return queryScore(b,query)-queryScore(a,query) || gameDate(b)-gameDate(a);
     if (sort==='release_desc') return releaseDate(b)-releaseDate(a) || gameDate(b)-gameDate(a);
     if (sort==='release_asc') return releaseDate(a)-releaseDate(b) || gameDate(a)-gameDate(b);
@@ -300,6 +320,19 @@ function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)retu
 function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorites.has(id)); if(state.libraryFilter==='favorites') applyFilters(); else renderCatalog();}
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
+function applyRatingLabel(card,game) {
+  const target=card.querySelector('.steam-rating');if(!target)return;
+  const rating=ratingFor(game);
+  target.hidden=!rating;
+  if(rating) target.textContent=t('rating.card',{percent:formatNumber(Math.round(rating.positive_percent)),reviews:formatNumber(rating.total_reviews)});
+  else target.textContent='';
+}
+function updateRatingLabels(){
+  document.querySelectorAll('.game-card[data-game-id]').forEach(card=>{
+    const game=state.byId.get(card.dataset.gameId);
+    if(game)applyRatingLabel(card,game);
+  });
+}
 function renderCard(game,compact=false){
   const card=els.template.content.firstElementChild.cloneNode(true), image=card.querySelector('.cover'), open=card.querySelector('.card-open'), favorite=card.querySelector('.favorite-btn');
   card.dataset.gameId=game.id;
@@ -309,6 +342,7 @@ function renderCard(game,compact=false){
   card.querySelector('.card-title').textContent=displayTitle;
   card.querySelector('.card-date').textContent=formatDate(game.post_date);
   card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
+  applyRatingLabel(card,game);
   if(displayTitle && displayTitle!==game.title) card.title=game.title;
   if(game.image_url){
     image.fetchPriority='low'; image.src=game.image_url;
@@ -331,6 +365,11 @@ function updateCatalogMeta(){
   els.count.textContent=formatNumber(state.filtered.length);
   els.tagResultCount.textContent=label;
   els.empty.hidden=state.filtered.length!==0;
+  const isEmptyFavorites=state.libraryFilter==='favorites' && state.library.favorites.size===0;
+  els.empty.querySelector('strong').textContent=t(isEmptyFavorites?'library.emptyFavoritesTitle':'empty.title');
+  els.empty.querySelector('span').textContent=t(isEmptyFavorites?'library.emptyFavoritesBody':'empty.body');
+  const headingKey=state.libraryFilter==='favorites'?'library.myFavorites':state.libraryFilter==='backlog'?'library.backlog':state.libraryFilter==='completed'?'library.completed':'catalog.title';
+  els.catalogHeading.textContent=t(headingKey);
   const hasMore=state.visible<state.filtered.length;
   els.scrollSentinel.hidden=!hasMore;
   if(!hasMore)els.infiniteStatus.hidden=true;
@@ -366,13 +405,14 @@ function recommendationScores(){
 }
 function renderRow(grid,games){const f=document.createDocumentFragment();for(const game of games.slice(0,HOME_LIMIT))f.append(renderCard(game,true));grid.replaceChildren(f);}
 function renderRecommendations(){
-  if(state.libraryFilter!=='favorites'||!state.library.favorites.size){els.recommendationSection.hidden=true;return;}
-  const picks=recommendationScores().slice(0,RECOMMENDATION_LIMIT);
-  els.recommendationSection.hidden=!picks.length;
-  if(!picks.length){els.recommendationGrid.replaceChildren();return;}
+  const enabled=state.libraryFilter==='favorites' && state.library.favorites.size>0;
+  const picks=enabled?recommendationScores().slice(0,RECOMMENDATION_LIMIT):[];
+  const visible=picks.length>0;
+  els.recommendationSection.hidden=!visible;
+  els.catalogResults.classList.toggle('with-suggestions',visible);
+  if(!visible){els.recommendationGrid.replaceChildren();return;}
   renderRow(els.recommendationGrid,picks.map(x=>x.game));
-  const n=state.library.favorites.size+state.library.backlog.size;
-  els.recommendationMeta.textContent=t('recommendation.profile',{count:n});
+  els.recommendationMeta.textContent=t('library.recommendationHint');
 }
 function renderSuggestions(){
   const q=els.search.value.trim(); if(q.length<2){els.suggestions.hidden=true;els.suggestions.replaceChildren();state.suggestionIndex=-1;return;}
@@ -701,6 +741,12 @@ async function loadCatalog(){
       if(els.search.value.trim())applyFilters();
     }).catch(e=>console.warn('Search index unavailable, using full scan',e));
     loadHealthPayload().then(health=>{lastHealthPayload=health;renderHealth(health);}).catch(e=>console.warn('Health unavailable',e));
+    loadSteamRatingsPayload().then(payload=>{
+      state.steamRatings=new Map(Object.entries(payload.games));
+      if(els.sort.value.startsWith('steam_'))applyFilters();
+      else updateRatingLabels();
+      renderRecommendations();
+    }).catch(error=>console.warn('Steam ratings unavailable, keeping classic catalog sorting',error));
   }catch(error){
     console.error(error);
     els.status.textContent=t('catalog.unavailable');

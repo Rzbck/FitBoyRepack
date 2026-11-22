@@ -36,7 +36,17 @@ required={
 missing=required-p.ids
 assert not missing, f'missing required DOM ids: {sorted(missing)}'
 assert 'discoveryShell' not in p.ids, 'Discover panel must no longer appear in the catalog'
-assert "state.libraryFilter!=='favorites'" in app, 'recommendations must stay inside Favorites'
+assert "state.libraryFilter==='favorites'" in app, 'recommendations must stay inside Favorites'
+assert 'catalogResults' in p.ids and 'catalogHeading' in p.ids, 'compact Favorites layout is missing'
+assert 'steam_best' in html and 'steam_hidden' in html, 'Steam sort options are missing'
+assert './assets/favorites-ratings.css' in p.links, 'Favorites layout CSS is missing'
+ratings=json.loads((ROOT/'data/steam-ratings.json').read_text(encoding='utf-8'))
+assert ratings.get('rating_version')==1 and isinstance(ratings.get('games'),dict)
+for game_id, row in ratings['games'].items():
+    assert isinstance(game_id,str) and isinstance(row,dict)
+    assert row.get('status') in ('rated','no_reviews','pending','no_match')
+    if row.get('status')=='rated':
+        assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
 assert './assets/app.js' in p.scripts and './assets/details.js' in p.scripts and './assets/media-sanitize.js' in p.scripts
 assert './assets/tag-facets.js' not in p.scripts, 'facets are now integrated in the main filtered state'
 assert './assets/catalog-v2.css' in p.links

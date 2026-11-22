@@ -30,11 +30,13 @@ required={
 'recommendationSection','recommendationGrid','recommendationMeta','scrollSentinel','infiniteStatus','yearFilter','releasePeriodFilter','sizeFilter',
 'newOnlyFilter','detailsOnlyFilter','mediaOnlyFilter','resetFilters','mobileFiltersButton','filterOverlay','closeFilters',
 'tagPickerDialog','openTagPicker','closeTagPicker',
-'exportLibrary','importLibraryButton','importLibrary','newSection','newGrid','updatedSection','updatedGrid','librarySection','libraryGrid',
+'exportLibrary','importLibraryButton','importLibrary',
 'healthBadge','healthPanel','healthTotal','healthDescriptions','healthGalleries','healthGifs','healthMeta','languageSwitcher'
 }
 missing=required-p.ids
 assert not missing, f'missing required DOM ids: {sorted(missing)}'
+assert 'discoveryShell' not in p.ids, 'Discover panel must no longer appear in the catalog'
+assert "state.libraryFilter!=='favorites'" in app, 'recommendations must stay inside Favorites'
 assert './assets/app.js' in p.scripts and './assets/details.js' in p.scripts and './assets/media-sanitize.js' in p.scripts
 assert './assets/tag-facets.js' not in p.scripts, 'facets are now integrated in the main filtered state'
 assert './assets/catalog-v2.css' in p.links
@@ -89,7 +91,7 @@ for ordinal,game in enumerate(catalog['games']):
         gram=token[:search['gram_size']]
         assert ordinal in search['grams'].get(gram,[]), f'missing gram posting for {game["id"]}'
 
-for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','renderHighlights','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','metadata_developer','metadata_publisher','buildInitialVerifiedIdentity','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
+for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','metadata_developer','metadata_publisher','buildInitialVerifiedIdentity','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','translations-fr.json','loadSearchIndexPayload','loadHealthPayload','loadTranslationsFrPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'

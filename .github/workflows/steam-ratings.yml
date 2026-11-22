@@ -1,0 +1,70 @@
+name: Steam Reviews Enrichment
+
+on:
+  schedule:
+    - cron: '13 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      resolve_limit:
+        description: 'Maximum Wikidata-linked games to resolve (0-100)'
+        default: '40'
+      reviews_limit:
+        description: 'Maximum Steam review requests (0-50)'
+        default: '30'
+      fallback_limit:
+        description: 'Exact-title fallback lookups (0-10)'
+        default: '3'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/update_steam_ratings.py'
+      - '.github/workflows/steam-ratings.yml'
+
+permissions:
+  contents: write
+
+# Shared with catalog refresh and media enrichment; checkout latest main.
+concurrency:
+  group: catalog-writer
+  cancel-in-progress: false
+
+jobs:
+  ratings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Verify keyless review enrichment logic
+        run: PYTHONPATH=tools python tools/test_steam_ratings.py
+      - name: Enrich a small rated batch (throttled)
+        env:
+          RESOLVE_LIMIT: ${{ inputs.resolve_limit || '40' }}
+          REVIEWS_LIMIT: ${{ inputs.reviews_limit || '30' }}
+          FALLBACK_LIMIT: ${{ inputs.fallback_limit || '3' }}
+        run: |
+          python tools/update_steam_ratings.py \
+            --resolve-limit "$RESOLVE_LIMIT" \
+            --reviews-limit "$REVIEWS_LIMIT" \
+            --fallback-limit "$FALLBACK_LIMIT" \
+            --pause 4
+      - name: Commit public review cache safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- site/data/steam-ratings.json; then
+            echo 'Steam ratings unchanged'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/steam-ratings.json
+          git commit -m 'data: refresh public Steam reviews gradually'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

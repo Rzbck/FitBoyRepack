@@ -22,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 # Shared with catalog refresh and media enrichment; checkout latest main.
 concurrency:
@@ -55,6 +56,8 @@ jobs:
             --pause 4
       - name: Commit public review cache safely
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           if git diff --quiet -- site/data/steam-ratings.json; then
@@ -68,3 +71,5 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
+          # Bot pushes with GITHUB_TOKEN do not trigger the Pages push workflow.
+          gh workflow run pages.yml --ref main

@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="./assets/filter-sidebar.css">
   <link rel="stylesheet" href="./assets/catalog-v2.css">
   <link rel="stylesheet" href="./assets/catalog-focus-v3.css">
+  <link rel="stylesheet" href="./assets/favorites-ratings.css">
 </head>
 <body>
   <header class="topbar compact-topbar">
@@ -45,7 +46,7 @@
         </label>
         <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
       </div>
-      <label class="select-wrap"><span class="sr-only" data-i18n="app.sort">Tri</span><select id="sortControl"><option value="date_desc" data-i18n="sort.dateDesc">Ajouts récents</option><option value="release_desc" data-i18n="sort.releaseDesc">Sorties récentes</option><option value="release_asc" data-i18n="sort.releaseAsc">Sorties anciennes</option><option value="relevance" data-i18n="sort.relevance">Pertinence</option><option value="date_asc" data-i18n="sort.dateAsc">Ajouts anciens</option><option value="name_asc" data-i18n="sort.nameAsc">Nom A → Z</option><option value="name_desc" data-i18n="sort.nameDesc">Nom Z → A</option></select></label>
+      <label class="select-wrap"><span class="sr-only" data-i18n="app.sort">Tri</span><select id="sortControl"><option value="date_desc" data-i18n="sort.dateDesc">Ajouts récents</option><option value="release_desc" data-i18n="sort.releaseDesc">Sorties récentes</option><option value="release_asc" data-i18n="sort.releaseAsc">Sorties anciennes</option><option value="relevance" data-i18n="sort.relevance">Pertinence</option><option value="date_asc" data-i18n="sort.dateAsc">Ajouts anciens</option><option value="name_asc" data-i18n="sort.nameAsc">Nom A → Z</option><option value="name_desc" data-i18n="sort.nameDesc">Nom Z → A</option><option value="steam_best" data-i18n="sort.steamBest">Steam · Les mieux notés</option><option value="steam_popular" data-i18n="sort.steamPopular">Steam · Les plus populaires</option><option value="steam_hidden" data-i18n="sort.steamHidden">Steam · Pépites méconnues</option></select></label>
       <button id="mobileFiltersButton" class="ghost-btn mobile-filters-button" type="button" aria-expanded="false" aria-controls="filterSidebar" data-i18n="app.filters">Filtres</button>
     </section>
     <div class="topbar-meta compact-meta">
@@ -114,14 +115,16 @@
       <div class="catalog-content">
         <div id="activeState" class="active-state active-filter-chips" hidden></div>
 
-        <div class="section-heading catalog-heading"><h2 data-i18n="catalog.title">Catalogue</h2></div>
-        <section id="gameGrid" class="game-grid" aria-live="polite"></section>
+        <div class="section-heading catalog-heading"><h2 id="catalogHeading" data-i18n="catalog.title">Catalogue</h2></div>
+        <div id="catalogResults" class="catalog-results">
+          <section id="gameGrid" class="game-grid" aria-live="polite"></section>
+          <aside id="recommendationSection" class="favorite-recommendations" aria-label="Suggestions pour toi" hidden>
+            <div class="section-heading"><h2 data-i18n="library.suggestions">Suggestions pour toi</h2><p id="recommendationMeta" class="section-note"></p></div>
+            <div id="recommendationGrid" class="recommendation-grid"></div>
+          </aside>
+        </div>
         <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"><span id="infiniteStatus" class="infinite-status" hidden data-i18n="app.catalogLoading">Chargement…</span></div>
-        <section id="recommendationSection" class="recommendations favorite-recommendations" hidden>
-          <div class="section-heading"><h2 data-i18n="library.suggestions">Suggestions pour toi</h2><p id="recommendationMeta" class="section-note"></p></div>
-          <div id="recommendationGrid" class="home-card-row recommendation-grid"></div>
-        </section>
-        <section id="emptyState" class="empty-state" hidden><strong data-i18n="empty.title">Aucun résultat</strong><span data-i18n="empty.body">Essaie un autre titre ou retire un filtre.</span></section>
+        <section id="emptyState" class="empty-state" hidden><strong>Aucun résultat</strong><span>Essaie un autre titre ou retire un filtre.</span></section>
       </div>
     </div>
   </main>
@@ -142,7 +145,7 @@
   <dialog id="gameDialog" class="game-dialog"><button class="dialog-close" type="button" data-close-dialog aria-label="Fermer" data-i18n-aria-label="app.close">×</button><div id="dialogContent"></div></dialog>
 
   <template id="cardTemplate">
-    <article class="game-card"><button class="favorite-btn" type="button" aria-label="Ajouter aux favoris" data-i18n-aria-label="card.addFavorite">♡</button><button class="card-open" type="button"><div class="cover-wrap"><img class="cover" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="cover-fallback" aria-hidden="true"></div><span class="new-badge" hidden data-i18n="card.new">Nouveau</span></div><div class="card-body"><h2 class="card-title"></h2><div class="card-meta"><span class="card-date"></span><span class="card-size"></span></div><div class="genre-row"></div></div></button></article>
+    <article class="game-card"><button class="favorite-btn" type="button" aria-label="Ajouter aux favoris" data-i18n-aria-label="card.addFavorite">♡</button><button class="card-open" type="button"><div class="cover-wrap"><img class="cover" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><div class="cover-fallback" aria-hidden="true"></div><span class="new-badge" hidden data-i18n="card.new">Nouveau</span></div><div class="card-body"><h2 class="card-title"></h2><div class="card-meta"><span class="card-date"></span><span class="card-size"></span></div><div class="steam-rating" hidden></div><div class="genre-row"></div></div></button></article>
   </template>
 
   <footer><span>FitBoyRepack</span><span data-i18n="footer.local">Catalogue statique · bibliothèque locale</span></footer>

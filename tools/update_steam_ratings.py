@@ -65,7 +65,12 @@ def get_json(url, params, pause=0):
             body = response.read()
             if response.headers.get("Content-Encoding", "").lower() == "gzip":
                 body = gzip.decompress(body)
-            return json.loads(body.decode("utf-8"))
+            parsed = json.loads(body.decode("utf-8"))
+            error = parsed.get("error", {}) if isinstance(parsed, dict) else {}
+            code = str(error.get("code", "")).lower() if isinstance(error, dict) else ""
+            if code in ("maxlag", "ratelimited", "readonly", "readonlytext"):
+                raise Cooldown(f"Provider requested slowdown ({code})")
+            return parsed
     except HTTPError as error:
         if error.code in (429, 503):
             retry = error.headers.get("Retry-After", "not specified")
@@ -99,28 +104,29 @@ def steam_id_from_entity(entity):
 def wikidata_entities(ids):
     if not ids:
         return {}
-    response = get_json(WIKIDATA, {
-        "action": "wbgetentities",
-        "ids": "|".join(ids),
-        "props": "claims",
-        "format": "json",
-        "maxlag": "5",
-    }, pause=1.5)
-    if isinstance(response.get("entities"), dict):
-        return response["entities"]
-    error = response.get("error", {})
-    code = str(error.get("code", "")).lower() if isinstance(error, dict) else ""
-    if code in ("maxlag", "ratelimited", "readonly", "readonlytext"):
-        raise Cooldown(f"Wikidata action API asked to retry later ({code})")
-    # Some hosted runners receive a valid HTTP response with no 'entities'.
-    # Fall back once to a bounded exact-ID SPARQL query, never a broad text search.
-    LOGGER.warning("Wikidata action API returned %s; trying bounded P1733 query", code or "no entities")
+    # Query only the exact P1733 properties we need, rather than downloading
+    # complete entities. This is Wikidata's recommended use case for SPARQL.
     query = "SELECT ?item ?steam WHERE { VALUES ?item { " + " ".join("wd:" + q for q in ids) + " } ?item wdt:P1733 ?steam }"
-    sparql = get_json("https://query.wikidata.org/sparql",
-                      {"query": query, "format": "json"}, pause=2.0)
-    bindings = sparql.get("results", {}).get("bindings")
-    if not isinstance(bindings, list):
-        raise ValueError("Unexpected Wikidata SPARQL response")
+    try:
+        sparql = get_json("https://query.wikidata.org/sparql",
+                          {"query": query, "format": "json"}, pause=2.0)
+        bindings = sparql.get("results", {}).get("bindings")
+        if not isinstance(bindings, list):
+            raise ValueError("Unexpected Wikidata SPARQL response")
+    except Cooldown:
+        raise
+    except (HTTPError, URLError, ValueError) as error:
+        LOGGER.warning("Wikidata SPARQL unavailable (%s); trying bounded Action API", error)
+        response = get_json(WIKIDATA, {
+            "action": "wbgetentities",
+            "ids": "|".join(ids),
+            "props": "claims",
+            "format": "json",
+            "maxlag": "5",
+        }, pause=1.5)
+        if not isinstance(response.get("entities"), dict):
+            raise ValueError("Unexpected Wikidata entity response")
+        return response["entities"]
     out = {}
     for row in bindings:
         qid = str(row.get("item", {}).get("value", "")).rsplit("/", 1)[-1]

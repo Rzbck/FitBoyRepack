@@ -8,6 +8,7 @@ import {
   applyTranslations,
   currentLanguage,
   formatDateValue,
+  formatNumber,
   mediaCountLabel,
   t,
 } from './i18n.js';
@@ -307,15 +308,40 @@ function makeListPanel(titleKey, items) {
   return panel;
 }
 
+function makeSteamReviewsPanel(rating){
+  if(!rating || rating.status!=='rated' || !(rating.total_reviews>0))return null;
+  const percent=Math.max(0,Math.min(100,Number(rating.positive_percent)||0));
+  const panel=document.createElement('section');panel.className='detail-text-panel steam-reviews-panel';
+  const heading=document.createElement('h3');heading.textContent=t('rating.tabHeading');panel.append(heading);
+  const main=document.createElement('div');main.className='steam-review-main';
+  const score=document.createElement('strong');score.className='steam-review-big';score.textContent=`${formatNumber(Math.round(percent))} %`;
+  const total=document.createElement('span');total.className='steam-review-total';
+  total.textContent=t('rating.votes',{count:formatNumber(rating.total_reviews)});
+  main.append(score,total);panel.append(main);
+  const track=document.createElement('div');track.className='steam-review-track';
+  track.setAttribute('role','meter');track.setAttribute('aria-valuemin','0');track.setAttribute('aria-valuemax','100');
+  track.setAttribute('aria-valuenow',String(Math.round(percent)));track.setAttribute('aria-label',t('rating.tabHeading'));
+  const fill=document.createElement('div');fill.className='steam-review-fill';fill.style.width=`${percent}%`;track.append(fill);panel.append(track);
+  const split=document.createElement('div');split.className='steam-review-split';
+  const positive=document.createElement('span');positive.textContent=t('rating.positive',{count:formatNumber(rating.positive)});
+  const negative=document.createElement('span');negative.textContent=t('rating.negative',{count:formatNumber(rating.negative)});
+  split.append(positive,negative);panel.append(split);
+  const note=document.createElement('p');note.className='steam-review-note';note.textContent=t('rating.tabNote');panel.append(note);
+  return panel;
+}
+
 function renderDescriptionTabs(info, game, { replace = false } = {}) {
   const existing = info.querySelector('.detail-tabs');
   if (existing && !replace) return;
+  const selectedKey=existing?.querySelector('.detail-tab-btn[aria-pressed="true"]')?.dataset.tabKey || '';
   existing?.remove();
-  const details = game.details || {};
+  const gameDetails = game.details || {};
+  const rating=currentLayout()?.steamRating;
   const panels = [
-    ['detail.description', makeTextPanel('detail.description', details.description)],
-    ['detail.gameFeatures', makeListPanel('detail.gameFeatures', details.game_features)],
-    ['detail.repackFeatures', makeListPanel('detail.repackFeatures', details.repack_features)],
+    ['detail.description', makeTextPanel('detail.description', gameDetails.description)],
+    ['detail.gameFeatures', makeListPanel('detail.gameFeatures', gameDetails.game_features)],
+    ['detail.repackFeatures', makeListPanel('detail.repackFeatures', gameDetails.repack_features)],
+    ['rating.tab', makeSteamReviewsPanel(rating)],
   ].filter(([, panel]) => panel);
   if (!panels.length) return;
 
@@ -326,14 +352,17 @@ function renderDescriptionTabs(info, game, { replace = false } = {}) {
   const body = document.createElement('div');
   body.className = 'detail-tab-body';
 
-  panels.forEach(([labelKey, panel], index) => {
+  const activeKey=panels.some(([key])=>key===selectedKey)?selectedKey:panels[0][0];
+  panels.forEach(([labelKey, panel]) => {
+    const active=labelKey===activeKey;
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'detail-tab-btn';
     button.dataset.i18n = labelKey;
+    button.dataset.tabKey=labelKey;
     button.textContent = t(labelKey);
-    button.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
-    panel.hidden = index !== 0;
+    button.setAttribute('aria-pressed', String(active));
+    panel.hidden = !active;
     button.addEventListener('click', () => {
       nav.querySelectorAll('.detail-tab-btn').forEach(btn => btn.setAttribute('aria-pressed', 'false'));
       body.querySelectorAll('.detail-text-panel').forEach(item => { item.hidden = true; });
@@ -634,6 +663,12 @@ async function loadDetailsForOpenGame(gameId, detailPath, { refresh = false } = 
   }
 }
 
+document.addEventListener('fitboy:steam-rating-change', event=>{
+  const gameId=String(event.detail?.gameId||'');
+  const layout=currentLayout(gameId);
+  if(!layout || layout.dataset.enhanced!=='true' || !currentSourceGame || String(currentSourceGameId)!==gameId)return;
+  renderDescriptionTabs(layout.querySelector('.dialog-info'),currentSourceGame,{replace:true});
+});
 document.addEventListener('fitboy:game-open', event => {
   const { gameId, detailPath } = event.detail || {};
   loadDetailsForOpenGame(String(gameId || ''), detailPath || '');

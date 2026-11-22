@@ -60,3 +60,25 @@
   .game-card .steam-rating-heading{font-size:.61rem}
   .game-card .steam-rating-split{font-size:.58rem}
 }
+
+/* One-line catalog vote summary; full green/red bar remains in the opened game sheet. */
+.game-card:not(.compact-card) .card-body>.steam-rating{
+  margin-top:7px;font-variant-numeric:tabular-nums;
+  overflow:hidden;white-space:nowrap;min-width:0
+}
+.steam-votes-inline{display:flex;align-items:center;gap:6px;width:100%;min-width:0;
+  white-space:nowrap;overflow:hidden;line-height:1.15}
+.steam-mini-vote{display:inline-flex;align-items:center;gap:2px;flex:0 0 auto;
+  font-size:.66rem;font-weight:640;letter-spacing:-.015em}
+.steam-mini-vote.positive{color:#8cd9af}
+.steam-mini-vote.negative{color:#ed989d}
+.steam-thumb-icon{width:12px;height:12px;display:block;flex:0 0 12px}
+.steam-thumb-icon.is-down{transform:rotate(180deg)}
+.steam-mini-count{margin-left:auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  color:#9aa8bf;font-size:.62rem;font-weight:500}
+@media(max-width:620px){
+ .steam-votes-inline{gap:4px}
+ .steam-mini-vote{font-size:.6rem;gap:1px}
+ .steam-thumb-icon{width:11px;height:11px;flex-basis:11px}
+ .steam-mini-count{font-size:.57rem}
+}

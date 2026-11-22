@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-22T01:21:16.424451+00:00",
+  "generated_at": "2026-11-22T01:22:06.091087+00:00",
   "source_pages": 824,
   "last_full_scan_at": "2026-11-21T11:42:50.406065+00:00",
   "games": [
@@ -15,7 +15,59 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "13.6 GB"
+      "repack_size": "13.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ed/6d/ed6dcadd-a727-4691-aaaf-a4866ad096a4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ed/6d/ed6dcadd-a727-4691-aaaf-a4866ad096a4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/8d/698d1ed6-fc0f-4ae1-a4f4-16f0ef72b2d0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/8d/698d1ed6-fc0f-4ae1-a4f4-16f0ef72b2d0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e4/01/e4015355-41bb-4830-bb4d-899d95ea8a4a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e4/01/e4015355-41bb-4830-bb4d-899d95ea8a4a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c6/83/c6833f26-60f0-4006-80ec-517a1f0eff84.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c6/83/c6833f26-60f0-4006-80ec-517a1f0eff84.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/2a/052acc3f-130c-4a54-b327-f3951537eef7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/2a/052acc3f-130c-4a54-b327-f3951537eef7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/95/b2/95b21b13-249b-484c-b995-e42dbf5dfb22.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/95/b2/95b21b13-249b-484c-b995-e42dbf5dfb22.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-22T01:22:06.089700+00:00",
+      "details": {
+        "description": "In Ranger’s Path: National Park Simulator, you take on the everyday responsibilities of a park ranger in the stunning Faremont National Park. Keep the park running, protect the local ecosystem, and support the people who visit it.\nHandle a wide range of ranger duties and ensure park rules are respected. One moment, you may be completing routine maintenance. The next, you could be searching for a missing hiker, responding to an urgent wildlife callout, or investigating unusual activity in the park.\nFaremont’s diverse landscape stretches from dense forests and open meadows to winding rivers. Use your ranger vehicles to travel along the park’s road network and reach remote areas filled with waterfalls, rock formations, and scenic viewpoints.\nProtecting Faremont’s wildlife is one of your most important responsibilities. Track animals across the wilderness, rescue wildlife in distress, and secure traps before they can cause further harm. Use specialized ranger equipment to follow signals, safely approach animals, and respond to each situation with care.\nFrom elusive wolves and imposing bison to mischievous raccoons, a diverse range of wildlife brings Faremont National Park to life. Observe animal behavior through your camera, discover new species, and expand your personal wildlife lexicon as you explore.\nYour responsibility also extends to Faremont’s visitors. Guide hikers, check permits, respond to emergencies, and investigate suspicious behavior. Handle incidents such as vandalism, prohibited items, littering, or disturbances to keep the park safe and welcoming.\nBeyond urgent callouts, you’ll inspect plant health, remove invasive growth, restore affected areas, clean campsites, restock supplies, and transport materials across the park. Every completed task contributes to your park rating, unlocking new missions and equipment as your ranger career progresses.\nShare the ranger experience in two-player co-op. Team up with a friend, take on assignments together, and care for the park side by side.\nPut on your ranger hat and begin your journey in Ranger’s Path: National Park Simulator.\nSTEP INTO THE WILD: Begin your ranger career in the stunning Faremont National Park\nWORK TOGETHER: Team up with a friend in two-player co-op\nEXPLORE THE PARK: Discover forests, meadows, riversides, scenic landmarks, and remote locations\nPROTECT WILDLIFE: Track animals, rescue wildlife in distress, secure dangerous traps, and document species with your camera\nSUPPORT VISITORS: Help hikers, check permits, inspect backpacks for prohibited items, and respond to emergencies or suspicious behavior\nCARE FOR FAREMONT: Maintain trails, protect plant life, remove invasive species, clean campsites, restock supplies, and complete transport tasks\nUSE RANGER EQUIPMENT: Follow tracking signals and handle wildlife, maintenance, and investigation tasks with specialized tools\nBUILD YOUR RANGER CAREER: Improve your park rating and unlock new missions and equipment\nEXPERIENCE DYNAMIC DAYS: Adapt to changing weather, shifting tasks\n,\nunexpected callouts, and unusual activity across the park",
+        "game_features": [],
+        "repack_features": [
+          "Based on Rangers.Path.National.Park.Simulator-RUNE ISO release: rune-rangers.path.national.park.simulator.iso (20,454,801,408 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 19.1 to 13.6 GB)",
+          "Installation takes 4-14 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 21.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-22T01:22:06.089700+00:00"
     },
     {
       "id": "hearts-of-iron-iv",

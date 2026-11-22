@@ -326,6 +326,16 @@ function applyRatingLabel(card,game) {
   target.hidden=!rating;
   if(rating) target.textContent=t('rating.card',{percent:formatNumber(Math.round(rating.positive_percent)),reviews:formatNumber(rating.total_reviews)});
   else target.textContent='';
+  const link=card.querySelector('.steam-review-link');
+  if(link){
+    const showLink=!!rating && !card.classList.contains('compact-card');
+    link.hidden=!showLink;
+    if(showLink){
+      link.href=`https://steamcommunity.com/app/${rating.steam_appid}/reviews/`;
+      link.textContent=t('rating.readReviews');
+      link.setAttribute('aria-label',t('rating.readReviewsFor',{game:game.title}));
+    }else link.removeAttribute('href');
+  }
 }
 function updateRatingLabels(){
   document.querySelectorAll('.game-card[data-game-id]').forEach(card=>{
@@ -343,7 +353,6 @@ function renderCard(game,compact=false){
   card.querySelector('.card-date').textContent=formatDate(game.post_date);
   card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
   applyRatingLabel(card,game);
-  if(!compact)card.querySelector('.cover-wrap').append(card.querySelector('.steam-rating'));
   if(displayTitle && displayTitle!==game.title) card.title=game.title;
   if(game.image_url){
     image.fetchPriority='low'; image.src=game.image_url;

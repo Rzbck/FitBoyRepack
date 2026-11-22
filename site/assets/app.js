@@ -320,12 +320,31 @@ function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)retu
 function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorites.has(id)); if(state.libraryFilter==='favorites') applyFilters(); else renderCatalog();}
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
+function fillSteamRating(target,rating){
+  const percent=Math.max(0,Math.min(100,Number(rating.positive_percent)||0));
+  const negative=100-percent;
+  const heading=document.createElement('div');heading.className='steam-rating-heading';
+  const source=document.createElement('span');source.textContent='Steam';
+  const votes=document.createElement('span');votes.textContent=t('rating.votes',{count:formatNumber(rating.total_reviews)});
+  heading.append(source,votes);
+  const track=document.createElement('div');track.className='steam-rating-track';
+  const positiveBar=document.createElement('span');positiveBar.className='steam-rating-positive';positiveBar.style.width=`${percent}%`;
+  const negativeBar=document.createElement('span');negativeBar.className='steam-rating-negative';negativeBar.style.width=`${negative}%`;
+  track.append(positiveBar,negativeBar);
+  track.setAttribute('role','img');
+  track.setAttribute('aria-label',t('rating.barLabel',{positive:formatNumber(Math.round(percent)),negative:formatNumber(Math.round(negative))}));
+  const split=document.createElement('div');split.className='steam-rating-split';
+  const positiveText=document.createElement('span');positiveText.textContent=t('rating.positivePercent',{percent:formatNumber(Math.round(percent))});
+  const negativeText=document.createElement('span');negativeText.textContent=t('rating.negativePercent',{percent:formatNumber(Math.round(negative))});
+  split.append(positiveText,negativeText);
+  target.replaceChildren(heading,track,split);
+}
 function applyRatingLabel(card,game) {
   const target=card.querySelector('.steam-rating');if(!target)return;
   const rating=ratingFor(game);
   target.hidden=!rating;
-  if(rating) target.textContent=t('rating.card',{percent:formatNumber(Math.round(rating.positive_percent)),reviews:formatNumber(rating.total_reviews)});
-  else target.textContent='';
+  if(rating) fillSteamRating(target,rating);
+  else target.replaceChildren();
 }
 function updateRatingLabels(){
   document.querySelectorAll('.game-card[data-game-id]').forEach(card=>{
@@ -618,7 +637,7 @@ function buildDetailLoadingShell(){
   return shell;
 }
 
-function syncDialogSteamRating(game,{notify=false}={}){
+function syncDialogSteamRating(game){
   const layout=els.dialogContent.querySelector('.dialog-layout');
   if(!layout || layout.dataset.gameId!==game.id)return;
   const rating=ratingFor(game);
@@ -635,14 +654,10 @@ function syncDialogSteamRating(game,{notify=false}={}){
       if(facts)card.insertBefore(summary,facts);
       else card.append(summary);
     }
-    const label=document.createElement('span');label.className='dialog-steam-source';label.textContent='Steam';
-    const score=document.createElement('strong');score.className='dialog-steam-score';
-    score.textContent=`${formatNumber(Math.round(rating.positive_percent))} %`;
-    const count=document.createElement('span');count.className='dialog-steam-count';
-    count.textContent=t('rating.votes',{count:formatNumber(rating.total_reviews)});
-    summary.replaceChildren(label,score,count);
+    summary.classList.add('steam-rating');
+    fillSteamRating(summary,rating);
   }
-  if(notify)document.dispatchEvent(new CustomEvent('fitboy:steam-rating-change',{detail:{gameId:game.id}}));
+
 }
 
 function openDialog(game,{syncUrl=true}={}){
@@ -779,7 +794,7 @@ async function loadCatalog(){
       state.steamRatings=new Map(Object.entries(payload.games));
       if(els.dialog.open){
         const game=state.byId.get(state.dialogGameId);
-        if(game)syncDialogSteamRating(game,{notify:true});
+        if(game)syncDialogSteamRating(game);
       }
       if(els.sort.value.startsWith('steam_'))applyFilters();
       else updateRatingLabels();

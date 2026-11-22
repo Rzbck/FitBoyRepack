@@ -30,30 +30,33 @@
 .catalog-heading{display:flex;flex-direction:row;align-items:baseline;justify-content:flex-start;flex-wrap:wrap;gap:6px 12px}
 .steam-sort-hint{font-size:.72rem;color:var(--muted);font-weight:500}
 .steam-sort-hint[hidden]{display:none!important}
-/* Reviews stay discreetly below the cover, within the card's text area. */
-.game-card:not(.compact-card) .card-body>.steam-rating{
-  font-size:.68rem;line-height:1.3;font-weight:600;color:#aab7d6;
-  margin-top:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis
+/* Steam vote balance: same compact component in catalog cards and game details. */
+.game-card .steam-rating,.cover-details .dialog-steam-rating{
+  display:block;min-width:0;white-space:normal;overflow:visible;text-overflow:clip;
+  color:var(--muted);font-variant-numeric:tabular-nums
 }
+.game-card:not(.compact-card) .card-body>.steam-rating{margin-top:8px}
+.steam-rating-heading,.steam-rating-split{display:flex;align-items:baseline;justify-content:space-between;
+  gap:5px;min-width:0;line-height:1.2}
+.steam-rating-heading{font-size:.66rem;color:#aebbd4;margin-bottom:5px}
+.steam-rating-heading span:first-child{font-weight:650;color:#d4dcef}
+.steam-rating-heading span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.steam-rating-track{display:flex;width:100%;height:5px;overflow:hidden;border-radius:20px;
+  background:rgba(255,255,255,.13)}
+.steam-rating-positive{background:#4fbc87;height:100%;flex:0 0 auto}
+.steam-rating-negative{background:#e87479;height:100%;flex:0 0 auto}
+.steam-rating-split{font-size:.61rem;margin-top:5px}
+.steam-rating-split span:first-child{color:#86cfa9}
+.steam-rating-split span:last-child{color:#ef9ca0;text-align:right}
+.game-card.compact-card .steam-rating{display:none!important}
+.cover-details .dialog-steam-rating{padding:9px 10px;margin:5px 0;border-radius:9px;
+  border:1px solid rgba(255,255,255,.085);background:rgba(255,255,255,.035)}
+.cover-details .dialog-steam-rating .steam-rating-heading{font-size:.72rem}
+.cover-details .dialog-steam-rating .steam-rating-split{font-size:.67rem}
+.cover-details .dialog-steam-rating .steam-rating-track{height:6px}
 @media(max-width:620px){
   .header-toolbar{grid-template-columns:minmax(0,1fr)}
   .header-toolbar #sortControl{width:100%}
-  .game-card:not(.compact-card) .card-body>.steam-rating{font-size:.63rem}
+  .game-card .steam-rating-heading{font-size:.61rem}
+  .game-card .steam-rating-split{font-size:.58rem}
 }
-
-/* Steam feedback is integrated into the detail sheet, below the title, never over the cover. */
-.cover-details .dialog-steam-rating{display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;
-  padding:9px 10px;margin:2px 0 4px;border:1px solid rgba(255,255,255,.085);
-  border-radius:10px;background:rgba(255,255,255,.035);line-height:1.3}
-.dialog-steam-source{font-size:.68rem;color:var(--muted);font-weight:650}
-.dialog-steam-score{font-size:.91rem;color:#e9edff;font-variant-numeric:tabular-nums}
-.dialog-steam-count{font-size:.69rem;color:var(--muted)}
-.steam-reviews-panel .steam-review-main{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:7px 0 10px}
-.steam-reviews-panel .steam-review-big{font-size:1.35rem;line-height:1.15;font-weight:750;color:var(--text)}
-.steam-reviews-panel .steam-review-total{font-size:.78rem;color:var(--muted)}
-.steam-reviews-panel .steam-review-track{width:100%;height:7px;border-radius:7px;overflow:hidden;
-  background:rgba(255,255,255,.12);margin-bottom:7px}
-.steam-reviews-panel .steam-review-fill{height:100%;border-radius:7px;background:#a0a9cb}
-.steam-reviews-panel .steam-review-split{display:flex;flex-wrap:wrap;justify-content:space-between;
-  gap:7px;color:var(--muted);font-size:.73rem}
-.steam-reviews-panel .steam-review-note{font-size:.69rem;color:var(--muted);margin:9px 0 0}

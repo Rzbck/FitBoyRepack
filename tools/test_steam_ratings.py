@@ -85,11 +85,18 @@ class SteamRatingBotTests(unittest.TestCase):
                 self.assertEqual(cache["games"]["c"]["steam_appid"], 333)
                 self.assertNotIn("positive_percent", cache["games"]["c"])
 
-    def test_bounded_sparql_fallback(self):
+    def test_bounded_sparql_primary(self):
         qid="Q140630760"
         bindings=[{"item":{"value":"http://www.wikidata.org/entity/"+qid},"steam":{"value":"2502780"}}]
-        with patch.object(bot,"get_json",side_effect=[{"batchcomplete": True},
-                                                     {"results":{"bindings":bindings}}]) as request:
+        with patch.object(bot,"get_json",return_value={"results":{"bindings":bindings}}) as request:
+            data=bot.wikidata_entities([qid])
+        self.assertEqual(bot.steam_id_from_entity(data[qid]),2502780)
+        self.assertEqual(request.call_count,1)
+
+    def test_action_api_fallback_when_sparql_unavailable(self):
+        qid="Q140630760"
+        with patch.object(bot,"get_json",side_effect=[{"error":"unexpected"},
+                                                     {"entities":{qid:entity(2502780)}}]) as request:
             data=bot.wikidata_entities([qid])
         self.assertEqual(bot.steam_id_from_entity(data[qid]),2502780)
         self.assertEqual(request.call_count,2)

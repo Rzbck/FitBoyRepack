@@ -101,6 +101,38 @@ class SteamRatingBotTests(unittest.TestCase):
         self.assertEqual(bot.steam_id_from_entity(data[qid]),2502780)
         self.assertEqual(request.call_count,2)
 
+    def test_bad_steam_app_does_not_block_following_game(self):
+        from urllib.error import HTTPError
+        with tempfile.TemporaryDirectory() as root:
+            directory = Path(root)
+            source = directory / "games.json"
+            metadata = directory / "metadata.json"
+            output = directory / "ratings.json"
+            source.write_text(json.dumps({"games": [
+                {"id": "a", "title": "Bad app", "post_date": "2026-11-22T00:00:00Z"},
+                {"id": "b", "title": "Good app", "post_date": "2026-11-21T00:00:00Z"},
+            ]}), encoding="utf-8")
+            metadata.write_text(json.dumps({"metadata_version": 1, "games": {
+                "a": {"evidence_urls": ["https://www.wikidata.org/wiki/Q111"]},
+                "b": {"evidence_urls": ["https://www.wikidata.org/wiki/Q222"]},
+            }}), encoding="utf-8")
+            def fake_review(appid, pause):
+                if appid == 111:
+                    raise HTTPError("https://api.steampowered.com", 404, "Missing", {}, None)
+                return {"status": "rated", "positive": 90, "negative": 10,
+                        "total_reviews": 100, "positive_percent": 90,
+                        "review_checked_at": bot.iso(bot.utc_now())}
+            with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", metadata), \
+                 patch.object(bot, "OUTPUT", output), patch.object(bot, "wikidata_entities",
+                             side_effect=lambda q: {qid: entity(int(qid[1:])) for qid in q}), \
+                 patch.object(bot, "collect_steam_reviews", side_effect=fake_review):
+                summary = bot.update(Namespace(resolve_limit=10, reviews_limit=10,
+                                               fallback_limit=0, pause=0, dry_run=False))
+            records = json.loads(output.read_text(encoding="utf-8"))["games"]
+            self.assertEqual(records["a"]["status"], "unavailable")
+            self.assertEqual(records["b"]["status"], "rated")
+            self.assertEqual(summary["rated"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

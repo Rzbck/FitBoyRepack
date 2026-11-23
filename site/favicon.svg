@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FitBoyRepack">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#101726" stroke="#31284c" stroke-width="2"/>
+  <path d="M11 17h20v6H18v7h12v6H18v12h-7z" fill="#f5f5fc"/>
+  <path fill="#9d83ff" fill-rule="evenodd" d="M35 17h10c8 0 12 4 12 10 0 5-3 9-8 10l8 11h-8l-8-11h-1v11h-6V17Zm6 6v9h4c3 0 5-2 5-5s-2-4-5-4h-4Z"/>
+</svg>

@@ -200,6 +200,8 @@ def title_variants(text):
 
 def is_packaging_suffix(suffix):
     """Allow edition/bundle add-ons, not numbered sequels or standalone prologues."""
+    suffix = re.sub(r"\b\d+\s+(?:dlcs?|bonuses|soundtracks?|osts?)\b",
+                    "", suffix).strip()
     if re.match(r"^(?:part|chapter|episode|volume|vol|prologue|sequel|"
                 r"ii|iii|iv|vi|vii|viii|\d+)\b", suffix):
         return False

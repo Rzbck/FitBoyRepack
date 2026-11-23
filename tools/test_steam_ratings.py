@@ -248,6 +248,12 @@ class SteamRatingBotTests(unittest.TestCase):
             {"id": 2000000, "name": "Cyberpunk 2077"},
         ]}):
             self.assertIsNone(bot.exact_store_search(sample, {}))
+        disney = {"title": "Disney Dreamlight Valley: Ultimate Edition - v1.26"}
+        with patch.object(bot, "get_json", return_value={"items": [
+            {"id": 1401590, "name": "Disney Dreamlight Valley"},
+            {"id": 4127920, "name": "Disney Dreamlight Valley - Ultimate Edition"},
+        ]}):
+            self.assertEqual(bot.exact_store_search(disney, {}), 1401590)
 
     def test_wikidata_retry_after_maxlag(self):
         with patch.object(bot, "get_json", side_effect=[

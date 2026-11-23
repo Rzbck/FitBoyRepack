@@ -89,3 +89,132 @@
   .wishlist-empty{padding-inline:16px}
 }
 @media(prefers-reduced-motion:reduce){.wishlist-dialog::backdrop{backdrop-filter:none}}
+
+
+/* Wishlist v2: dense, flexible tag cloud. 100+ games scroll INSIDE the modal. */
+.wishlist-list{
+  display:flex;flex-wrap:wrap;align-content:flex-start;align-items:flex-start;
+  gap:7px;flex:0 1 auto;max-height:min(52dvh,450px);min-height:0;
+  margin:0 14px 0 23px;padding:0 10px 3px 0;list-style:none;overflow-y:auto;
+  overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#47526b transparent
+}
+.wishlist-chip{
+  display:inline-flex;flex:0 1 auto;max-width:100%;min-width:0;min-height:32px;
+  align-items:stretch;border:1px solid rgba(169,185,215,.22);
+  border-radius:999px;background:rgba(35,48,69,.5);color:#d9e0ed;
+  transition:border-color .12s,background .12s
+}
+.wishlist-chip:hover{border-color:rgba(185,195,222,.48);background:rgba(55,68,90,.56)}
+.wishlist-chip.is-available{border-color:rgba(102,203,153,.45);background:rgba(39,105,72,.19);color:#afe3c6}
+.wishlist-chip.is-available:hover{background:rgba(39,105,72,.29)}
+.wishlist-chip-label{
+  display:inline-flex;align-items:center;min-width:0;gap:5px;
+  padding:6px 4px 6px 11px;margin:0;border:0;border-radius:999px 0 0 999px;
+  background:transparent;color:inherit;font:inherit;font-size:.73rem;font-weight:630;
+  line-height:1.1;text-align:left;cursor:default
+}
+button.wishlist-chip-label{cursor:pointer}
+button.wishlist-chip-label:hover{color:#d8f9e6;text-decoration:underline;text-underline-offset:3px}
+.wishlist-chip-icon{flex:0 0 auto;font-size:.78rem;line-height:1;color:#8290a8}
+.wishlist-chip.is-available .wishlist-chip-icon{color:#84d6a6;font-weight:800}
+.wishlist-chip-title{
+  display:block;min-width:0;max-width:min(265px,57vw);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis
+}
+.wishlist-chip-remove{
+  flex:0 0 24px;min-width:24px;padding:0 5px 1px 1px;border:0;
+  border-radius:0 999px 999px 0;background:transparent;
+  color:#8996ac;cursor:pointer;font-size:1rem;line-height:1
+}
+.wishlist-chip-remove:hover{background:rgba(240,125,134,.13);color:#f8b0b5}
+.wishlist-chip-label:focus-visible,.wishlist-chip-remove:focus-visible{outline:2px solid #a2a0fa;outline-offset:2px}
+.wishlist-list-header{align-items:center;flex-wrap:wrap;gap:7px 15px;padding:9px 0 11px}
+.wishlist-list-header strong{font-size:.7rem;color:#c7d1e4}
+.wishlist-legend{display:flex;align-items:center;gap:11px;color:#8c9bb1;font-size:.64rem;white-space:nowrap}
+.wishlist-legend>span{display:inline-flex;align-items:center;gap:4px}
+.wishlist-legend i{font-style:normal;font-size:.75rem;font-weight:750}
+.wishlist-legend-waiting{color:#8391a8}
+.wishlist-legend-available{color:#8bd8aa}
+.wishlist-empty{padding:19px 24px 26px}
+.wishlist-dialog{width:min(670px,calc(100vw - 24px));max-height:min(88dvh,850px)}
+.wishlist-shell{max-height:min(88dvh,850px)}
+.wishlist-header{padding:19px 23px 13px}
+.wishlist-header h2{font-size:1.24rem}
+.wishlist-header p{max-width:510px;font-size:.75rem}
+.wishlist-form{padding:14px 23px 5px}
+.wishlist-feedback{margin:2px 23px 7px}
+.wishlist-list-header{margin-inline:23px}
+.wishlist-footer{padding:11px 23px 14px}
+
+/* Header layout: one logical status group and one actions group, no absolute badges. */
+.compact-topbar{grid-template-columns:auto minmax(300px,1fr) auto;gap:10px 15px}
+.compact-meta{display:flex;align-items:center;gap:9px;min-width:0;white-space:normal}
+.meta-status,.meta-actions{display:flex;align-items:center;gap:6px;min-width:0;white-space:nowrap}
+.meta-status{flex:0 0 auto}
+.meta-actions{flex:0 0 auto}
+.compact-meta #catalogStatus{
+  display:inline-block;flex:0 0 auto;max-width:none;min-width:0;
+  overflow:visible;text-overflow:clip;white-space:nowrap;font-size:.66rem
+}
+.compact-meta #healthBadge:not([hidden]){display:inline-flex;align-items:center;font-size:.62rem;padding:5px 7px}
+.compact-meta .header-count{display:inline-flex;min-width:0;height:33px;padding:0 8px;border-radius:9px}
+.compact-meta .header-count strong{font-size:.82rem}
+.meta-actions>.ghost-btn{height:34px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;gap:5px;
+  padding:5px 10px;border-radius:9px;white-space:nowrap;font-size:.75rem;min-width:0}
+.meta-actions #favoritesToggle span{display:inline}
+.meta-actions .wishlist-top-trigger [data-i18n="wishlist.title"]{display:inline}
+.meta-actions .wishlist-top-trigger{position:static;padding:5px 9px;gap:5px}
+.meta-actions .wishlist-top-trigger>span:first-child{font-size:1rem}
+.meta-actions .wishlist-inline-count{
+  display:inline-flex;justify-content:center;align-items:center;flex:0 0 auto;
+  min-width:23px;min-height:20px;padding:2px 6px;
+  border-radius:6px;background:rgba(255,255,255,.09);
+  color:#d2daeb;font-size:.69rem;line-height:1.1;font-variant-numeric:tabular-nums;font-weight:750
+}
+@media(max-width:1500px){
+  .compact-topbar{
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:"brand meta" "filters filters";gap:8px 12px
+  }
+  .compact-topbar .brand{grid-area:brand}
+  .compact-topbar .header-toolbar{grid-area:filters;min-width:0}
+  .compact-topbar .compact-meta{grid-area:meta;justify-self:end}
+  .header-toolbar .search-shell{min-width:0}
+}
+@media(max-width:990px){
+  .compact-topbar{grid-template-columns:minmax(0,1fr);grid-template-areas:"brand" "meta" "filters";gap:8px}
+  .compact-topbar .compact-meta{justify-self:stretch;justify-content:space-between;min-width:0;flex-wrap:wrap}
+  .meta-status{flex-wrap:wrap}
+  .compact-meta #catalogStatus{display:inline-block!important}
+  .compact-meta #healthBadge:not([hidden]){display:inline-flex!important}
+  .compact-meta .header-count{display:inline-flex!important}
+}
+@media(max-width:620px){
+  .compact-topbar{padding:9px 10px;gap:8px}
+  .compact-topbar .compact-meta{display:flex;flex-direction:column;align-items:stretch;gap:7px}
+  .meta-status{display:flex;align-items:center;justify-content:space-between;gap:5px;flex-wrap:wrap}
+  .meta-status .language-switcher{order:0}
+  .meta-status .catalog-status{order:1;font-size:.62rem}
+  .meta-status .header-count{order:2;height:29px;padding-inline:6px}
+  .meta-status .header-count strong{font-size:.77rem}
+  .meta-status .header-count span{font-size:.6rem}
+  .meta-status #healthBadge{order:3}
+  .meta-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px;width:100%}
+  .meta-actions>.ghost-btn{width:100%;height:33px;min-height:33px}
+  .wishlist-dialog{width:calc(100vw - 14px);max-height:90dvh;border-radius:13px}
+  .wishlist-shell{max-height:90dvh}
+  .wishlist-list{margin:0 7px 0 15px;padding-right:9px;gap:6px;max-height:48dvh}
+  .wishlist-chip{min-height:31px}
+  .wishlist-chip-label{font-size:.7rem;padding-left:9px}
+  .wishlist-chip-title{max-width:min(185px,49vw)}
+  .wishlist-header{padding:16px 15px 10px}
+  .wishlist-form{padding:12px 15px 5px}
+  .wishlist-feedback{margin-inline:15px}
+  .wishlist-list-header{margin-inline:15px}
+  .wishlist-footer{padding-inline:15px}
+}
+@media(max-width:350px){
+ .meta-status{justify-content:flex-start}
+ .meta-status #healthBadge:not([hidden]){font-size:.59rem}
+ .wishlist-chip-title{max-width:42vw}
+}

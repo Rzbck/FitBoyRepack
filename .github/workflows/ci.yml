@@ -71,6 +71,7 @@ jobs:
       - run: node --check site/assets/translations.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/wishlist.js
+      - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js

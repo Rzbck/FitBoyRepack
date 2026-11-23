@@ -7,7 +7,7 @@
   const icon = document.querySelector('link[rel="icon"]');
   if (!icon) return;
 
-  const fallback = new URL('./favicon.svg?v=4', document.baseURI).href;
+  const fallback = new URL('./favicon.svg?v=5', document.baseURI).href;
   const canvas = document.createElement('canvas');
   canvas.width = canvas.height = 128;
   const ctx = canvas.getContext('2d', { alpha: true, willReadFrequently: false });
@@ -48,10 +48,10 @@
 
     // Invariant, centered backdrop: no jumping around the 16px tab slot.
     ctx.beginPath();
-    ctx.roundRect(2, 2, 60, 60, 13);
+    ctx.roundRect(0.5, 0.5, 63, 63, 12.5);
     ctx.fillStyle = '#101726';
     ctx.fill();
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 1;
     ctx.strokeStyle = '#34405e';
     ctx.stroke();
 
@@ -61,7 +61,7 @@
       ctx.save();
       ctx.globalAlpha = bridge * 0.5;
       ctx.beginPath();
-      ctx.roundRect(3.4, 3.4, 57.2, 57.2, 11.5);
+      ctx.roundRect(1.8, 1.8, 60.4, 60.4, 11.5);
       ctx.strokeStyle = ACCENT;
       ctx.lineWidth = 2.2;
       ctx.stroke();
@@ -75,7 +75,7 @@
       ctx.globalAlpha = logoOpacity;
       ctx.translate(32, 32);
       const shrink = 1 - 0.22 * smooth(0.1, 0.88, mix);
-      ctx.scale(shrink, shrink);
+      ctx.scale(1.2 * shrink, 1.27 * shrink);
       ctx.translate(-33, -32);
       ctx.fillStyle = WHITE;
       ctx.fill(f);
@@ -90,7 +90,7 @@
       ctx.translate(32, 32);
       const spring = 0.035 * Math.sin(Math.PI * reveal);
       const scale = 0.76 + 0.24 * reveal + spring;
-      ctx.scale(scale, scale);
+      ctx.scale(1.06 * scale, 1.2 * scale);
       ctx.rotate((1 - reveal) * -0.09);
       ctx.translate(-32, -32);
 

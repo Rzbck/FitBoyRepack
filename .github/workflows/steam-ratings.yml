@@ -2,7 +2,8 @@ name: Steam Reviews Enrichment
 
 on:
   schedule:
-    - cron: '46 * * * *'
+    - cron: '17 * * * *' # backup trigger; first healthy run wins
+    - cron: '46 * * * *' # primary trigger
   workflow_dispatch:
     inputs:
       resolve_limit:
@@ -41,9 +42,16 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+      - name: Skip redundant scheduled runs after a recent successful batch
+        id: cadence
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: python tools/steam_schedule_guard.py >> "$GITHUB_OUTPUT"
       - name: Verify keyless review enrichment logic
+        if: steps.cadence.outputs.run == 'true'
         run: PYTHONPATH=tools python tools/test_steam_ratings.py
       - name: Enrich larger incremental ratings batch (throttled)
+        if: steps.cadence.outputs.run == 'true'
         env:
           RESOLVE_LIMIT: ${{ inputs.resolve_limit || '300' }}
           REVIEWS_LIMIT: ${{ inputs.reviews_limit || '120' }}
@@ -55,6 +63,7 @@ jobs:
             --fallback-limit "$FALLBACK_LIMIT" \
             --pause 3.5
       - name: Commit public review cache safely
+        if: steps.cadence.outputs.run == 'true'
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}

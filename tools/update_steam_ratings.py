@@ -169,25 +169,33 @@ def normalize(text):
 
 
 
-def title_variants(text):
-    """Strict name identities: editions/build tags may vary, sequels must not."""
+def unpackaged_title(text):
+    """Drop only release-package suffixes, never a sequel or arbitrary subtitle."""
     raw = clean_title(text)
     raw = re.split(r",\s*(?=v\d|build\b|update\b)", raw, maxsplit=1, flags=re.I)[0]
-    variants = {normalize(raw)}
-    edition = (
+    base = raw
+    # A " - Blood Scales Edition" suffix is packaging; "Part II" is not.
+    base = re.sub(r"\s+[–—-]\s+[^,]{1,40}\s+Edition$", "", base, flags=re.I)
+    base = re.sub(r"\s+[–—-]\s+(?:complete|ultimate|deluxe|gold|standard)$",
+                  "", base, flags=re.I)
+    # Edition after a colon is safe only for explicitly known edition terms.
+    base = re.sub(
         r"(?:[:\s-]+)(?:gold|deluxe|ultimate|complete|standard|premium|"
         r"definitive|anniversary|special|enhanced|legendary|collector'?s|"
-        r"game of the year|goty)\s+edition$"
-    )
-    base = re.sub(edition, "", raw, flags=re.I).strip()
-    if base:
-        variants.add(normalize(base))
-    # Steam Store titles do not contain "PC" or console release packaging.
+        r"game of the year|goty)\s+edition$", "", base, flags=re.I)
+    return raw.strip(), base.strip()
+
+
+def title_variants(text):
+    """Strict game identity: packaging changes; digits, sequels and subtitles do not."""
+    raw, base = unpackaged_title(text)
+    variants = {normalize(raw), normalize(base)}
     for platform in (r"\s+\(PC\)$", r"\s+\(Switch\)$", r"\s+-\s+PC$"):
         candidate = re.sub(platform, "", base, flags=re.I).strip()
         if candidate:
             variants.add(normalize(candidate))
     return {value for value in variants if value}
+
 
 
 def game_title_variants(game, metadata=None):
@@ -199,15 +207,11 @@ def game_title_variants(game, metadata=None):
 
 
 def store_game_title(game, metadata=None):
-    candidates = [
-        re.sub(r"(?:[:\s-]+)(?:gold|deluxe|ultimate|complete|standard|"
-               r"premium|definitive|anniversary|special|enhanced|legendary|"
-               r"collector'?s|game of the year|goty)\s+edition$", "",
-               clean_title(game.get("title", "")).split(", v")[0], flags=re.I).strip(),
-    ]
+    primary = unpackaged_title(game.get("title", ""))[1]
     canonical = (metadata or {}).get("canonical_title", "")
+    candidates = [primary]
     if canonical and game_title_variants(game, metadata) & title_variants(canonical):
-        candidates.append(canonical)
+        candidates.append(unpackaged_title(canonical)[1])
     return next((name for name in candidates if 3 <= len(name) <= 110), "")
 
 

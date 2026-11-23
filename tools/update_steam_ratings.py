@@ -267,7 +267,7 @@ def invalidate_match(record, reason):
 def exact_title_entity(title):
     if not title or len(title) < 4 or len(title) > 90:
         return None
-    response = get_json(WIKIDATA, {
+    response = wikidata_with_retry(WIKIDATA, {
         "action": "wbsearchentities",
         "search": title,
         "language": "en",
@@ -450,9 +450,12 @@ def update(args):
     legacy = [game for game in games
               if records.get(str(game["id"]), {}).get("status") == "rated"
               and not records[str(game["id"])].get("store_verified_at")]
+    def suspicious_identity(game):
+        canonical = metadata.get(str(game["id"]), {}).get("canonical_title")
+        return bool(canonical) and not (
+            title_variants(game.get("title")) & title_variants(canonical))
     legacy.sort(key=lambda game: (
-        bool(title_variants(game.get("title")) &
-             title_variants(metadata.get(str(game["id"]), {}).get("canonical_title"))),
+        not suspicious_identity(game),
         str(game.get("post_date", "")),
     ))
     for game in legacy[:getattr(args, "store_audit_limit", STORE_AUDIT_LIMIT)]:
@@ -461,8 +464,11 @@ def update(args):
         except Cooldown as error:
             LOGGER.warning("Store throttled during cache audit (%s); preserving remaining scores", error)
             break
-        except (HTTPError, URLError, ValueError) as error:
-            LOGGER.warning("Store identity audit unavailable for %s: %s", game["id"], error)
+        except (HTTPError, ValueError) as error:
+            LOGGER.warning("Store app unavailable for %s: %s; trying next", game["id"], error)
+            continue
+        except URLError as error:
+            LOGGER.warning("Store network unavailable during audit: %s", error)
             break
 
     # Secondary recovery route: exact Steam Store search, including games that
@@ -505,8 +511,13 @@ def update(args):
         except Cooldown as error:
             LOGGER.warning("Steam Store asked for slowdown (%s); keeping pending matches", error)
             break
-        except (HTTPError, URLError, ValueError) as error:
-            LOGGER.warning("Steam Store search unavailable for %s: %s", game_id, error)
+        except (HTTPError, ValueError) as error:
+            LOGGER.warning("Steam Store lookup unavailable for %s: %s; trying next", game_id, error)
+            row["store_lookup_checked_at"] = iso(now)
+            changes += 1
+            continue
+        except URLError as error:
+            LOGGER.warning("Steam Store network unavailable: %s", error)
             break
         row["store_lookup_checked_at"] = iso(now)
         changes += 1
@@ -540,8 +551,11 @@ def update(args):
         except Cooldown as error:
             LOGGER.warning("Store identity throttled (%s); stopping safely.", error)
             break
-        except (HTTPError, URLError, ValueError) as error:
-            LOGGER.warning("Store identity unavailable for %s: %s", game_id, error)
+        except (HTTPError, ValueError) as error:
+            LOGGER.warning("Store app unavailable for %s: %s; trying next", game_id, error)
+            continue
+        except URLError as error:
+            LOGGER.warning("Store identity network unavailable: %s", error)
             break
         if identity is None:
             LOGGER.info("Steam Store verification budget reached; deferred remaining games")
@@ -606,9 +620,16 @@ def main():
     parser.add_argument("--reviews-limit", type=int, default=120)
     parser.add_argument("--fallback-limit", type=int, default=25)
     parser.add_argument("--pause", type=float, default=3.5)
+    parser.add_argument("--store-audit-limit", type=int, default=STORE_AUDIT_LIMIT)
+    parser.add_argument("--store-details-limit", type=int, default=STORE_DETAILS_LIMIT)
+    parser.add_argument("--store-fallback-limit", type=int, default=STORE_FALLBACK_LIMIT)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    if not 0 <= args.resolve_limit <= 400 or not 0 <= args.reviews_limit <= 160 or not 0 <= args.fallback_limit <= 40 or not 0 <= args.pause <= 60:
+    if (not 0 <= args.resolve_limit <= 400 or not 0 <= args.reviews_limit <= 160
+            or not 0 <= args.fallback_limit <= 40 or not 0 <= args.pause <= 60
+            or not 0 <= args.store_audit_limit <= 50
+            or not 0 <= args.store_fallback_limit <= 30
+            or not 0 <= args.store_details_limit <= 180):
         parser.error("batch limits outside safety bounds")
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     update(args)

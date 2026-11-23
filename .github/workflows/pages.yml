@@ -132,7 +132,7 @@ jobs:
           )
           fetch "$detail_path" /tmp/detail.json
           grep -q 'searchSuggestions' /tmp/index.html
-          grep -q 'favicon.svg?v=1' /tmp/index.html
+          grep -Eq 'favicon[.]svg[?]v=[0-9]+' /tmp/index.html
           grep -q 'viewBox="0 0 64 64"' /tmp/favicon.svg
           grep -q 'searchCandidateIndexes' /tmp/app.js
           grep -q 'effectiveGenreLabels' /tmp/identity.js

@@ -172,18 +172,18 @@ def normalize(text):
 def title_variants(text):
     """Strict name identities: editions/build tags may vary, sequels must not."""
     raw = clean_title(text)
-    raw = re.split(r",\\s*(?=v\\d|build\\b|update\\b)", raw, maxsplit=1, flags=re.I)[0]
+    raw = re.split(r",\s*(?=v\d|build\b|update\b)", raw, maxsplit=1, flags=re.I)[0]
     variants = {normalize(raw)}
     edition = (
-        r"(?:[:\\s-]+)(?:gold|deluxe|ultimate|complete|standard|premium|"
+        r"(?:[:\s-]+)(?:gold|deluxe|ultimate|complete|standard|premium|"
         r"definitive|anniversary|special|enhanced|legendary|collector'?s|"
-        r"game of the year|goty)\\s+edition$"
+        r"game of the year|goty)\s+edition$"
     )
     base = re.sub(edition, "", raw, flags=re.I).strip()
     if base:
         variants.add(normalize(base))
     # Steam Store titles do not contain "PC" or console release packaging.
-    for platform in (r"\\s+\\(PC\\)$", r"\\s+\\(Switch\\)$", r"\\s+-\\s+PC$"):
+    for platform in (r"\s+\(PC\)$", r"\s+\(Switch\)$", r"\s+-\s+PC$"):
         candidate = re.sub(platform, "", base, flags=re.I).strip()
         if candidate:
             variants.add(normalize(candidate))
@@ -200,9 +200,9 @@ def game_title_variants(game, metadata=None):
 
 def store_game_title(game, metadata=None):
     candidates = [
-        re.sub(r"(?:[:\\s-]+)(?:gold|deluxe|ultimate|complete|standard|"
+        re.sub(r"(?:[:\s-]+)(?:gold|deluxe|ultimate|complete|standard|"
                r"premium|definitive|anniversary|special|enhanced|legendary|"
-               r"collector'?s|game of the year|goty)\\s+edition$", "",
+               r"collector'?s|game of the year|goty)\s+edition$", "",
                clean_title(game.get("title", "")).split(", v")[0], flags=re.I).strip(),
     ]
     canonical = (metadata or {}).get("canonical_title", "")

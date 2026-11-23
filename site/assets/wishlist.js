@@ -2,7 +2,7 @@ import { formatNumber, t } from './i18n.js';
 import { displayTitle, normalizeIdentity } from './game-identity.js';
 
 const STORAGE_KEY = 'fitboyrepack:wishlist:v1';
-const MAX_ITEMS = 150;
+const MAX_ITEMS = 1000;
 const MAX_TITLE_LENGTH = 140;
 let items = readEntries();
 let catalog = [];
@@ -128,45 +128,51 @@ function counts() {
 
 function rowNode(item) {
   const game = catalogReady ? foundGame(item) : null;
-  const li = document.createElement('li'); li.className='wishlist-item';
-  li.dataset.wishlistKey=keyOf(item.title);
-  if (game) li.classList.add('is-available');
-  const content = document.createElement('div'); content.className='wishlist-item-content';
-  const title = document.createElement('strong'); title.className='wishlist-item-title'; title.textContent=item.title;
-  const status = document.createElement('span'); status.className='wishlist-item-status';
-  status.textContent=!catalogReady?t('wishlist.checking'):(game?t('wishlist.available'):t('wishlist.pending'));
-  content.append(title,status);
-  if (game && keyOf(displayTitle(game)) !== keyOf(item.title)) {
-    const detail = document.createElement('small'); detail.className='wishlist-item-matched';
-    detail.textContent=t('wishlist.matchedTo',{title:displayTitle(game)});
-    content.append(detail);
-  }
-  const actions = document.createElement('div'); actions.className='wishlist-item-actions';
-  if (game) {
-    const view = document.createElement('button'); view.type='button'; view.className='wishlist-view';
-    view.textContent=t('wishlist.view');
-    view.addEventListener('click',()=>{
+  const status = !catalogReady ? t('wishlist.checking') : game ? t('wishlist.available') : t('wishlist.pending');
+  const li = document.createElement('li');
+  li.className = 'wishlist-chip' + (game ? ' is-available' : '');
+  li.dataset.wishlistKey = keyOf(item.title);
+  const label = document.createElement(game ? 'button' : 'span');
+  label.className = 'wishlist-chip-label';
+  if(game) {
+    label.type = 'button';
+    label.addEventListener('click', () => {
       document.querySelector('#wishlistDialog')?.close();
       openGame?.(game);
     });
-    actions.append(view);
   }
-  const remove=document.createElement('button');remove.type='button';remove.className='wishlist-remove';
-  remove.textContent='×';remove.title=t('wishlist.remove');remove.setAttribute('aria-label',t('wishlist.removeNamed',{title:item.title}));
-  remove.addEventListener('click',()=>{
-    items=items.filter(record=>keyOf(record.title)!==keyOf(item.title));
-    save();showFeedback('');renderWishlist();
+  const caption = game && keyOf(displayTitle(game)) !== keyOf(item.title)
+    ? t('wishlist.matchedTo', {title:displayTitle(game)}) : '';
+  const tooltip = item.title + ' · ' + status + (caption ? '\n' + caption : '');
+  label.title = tooltip;
+  label.setAttribute('aria-label', game ? t('wishlist.openNamed', {title:item.title}) : tooltip);
+  const indicator = document.createElement('span');
+  indicator.className = 'wishlist-chip-icon';
+  indicator.textContent = game ? '✓' : '○';
+  indicator.setAttribute('aria-hidden', 'true');
+  const name = document.createElement('span');
+  name.className = 'wishlist-chip-title';
+  name.textContent = item.title;
+  label.append(indicator, name);
+  const remove = document.createElement('button');
+  remove.type = 'button';
+  remove.className = 'wishlist-chip-remove';
+  remove.textContent = '×';
+  remove.title = t('wishlist.removeNamed', {title:item.title});
+  remove.setAttribute('aria-label', remove.title);
+  remove.addEventListener('click', () => {
+    items = items.filter(record => keyOf(record.title) !== keyOf(item.title));
+    save(); showFeedback(''); renderWishlist();
   });
-  actions.append(remove);
-  li.append(content,actions);
+  li.append(label, remove);
   return li;
 }
 
 function renderWishlist() {
   const { total, available, pending } = counts();
   for (const label of document.querySelectorAll('[data-wishlist-count]')) label.textContent=formatNumber(total);
-  const ready = document.querySelector('#wishlistReadyCount');
-  if (ready) { ready.textContent=formatNumber(available);ready.hidden=!available; }
+  const top = document.querySelector('#wishlistToggle');
+  if (top) top.title = t('wishlist.summary',{pending:formatNumber(pending),available:formatNumber(available)});
   const sidebarReady = document.querySelector('#wishlistSidebarReady');
   if (sidebarReady) {sidebarReady.hidden=!available;sidebarReady.textContent=formatNumber(available);}
   const meta = document.querySelector('#wishlistSummary');

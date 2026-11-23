@@ -302,20 +302,31 @@ def exact_store_search(game, metadata, pause=1.5):
         return None
     response = get_json(STEAM_SEARCH,
                         {"term": title, "l": "en", "cc": "us"}, pause=pause)
-    keys = game_title_variants(game, metadata)
     items = response.get("items", [])
     if not isinstance(items, list):
         raise ValueError("Unexpected Steam Store search response")
-    exact_ids = set()
+    matches = set()
+    main_title_matches = set()
+    target = normalize(title)
     for item in items:
         try:
             appid = int(item["id"])
         except (TypeError, ValueError, KeyError):
             continue
-        if appid > 0 and store_verified(game, metadata, {"name": item.get("name"), "type": "game"}):
-            exact_ids.add(appid)
-    # Ambiguity is safer than assigning the score of an unrelated game.
-    return next(iter(exact_ids)) if len(exact_ids) == 1 else None
+        if appid <= 0 or not store_verified(
+                game, metadata, {"name": item.get("name"), "type": "game"}):
+            continue
+        matches.add(appid)
+        if normalize(item.get("name")) == target:
+            main_title_matches.add(appid)
+    # Steam may offer both the base game and an "Ultimate Edition" as separate
+    # SKUs. Prefer ONE exact base-title match; never guess between duplicates.
+    if len(main_title_matches) == 1:
+        return next(iter(main_title_matches))
+    if len(main_title_matches) > 1:
+        return None
+    return next(iter(matches)) if len(matches) == 1 else None
+
 
 
 def invalidate_match(record, reason):

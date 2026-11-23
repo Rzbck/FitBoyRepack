@@ -1,0 +1,91 @@
+/* Compact local Wishlist, aligned with FitBoy's existing dark library UI. */
+.wishlist-top-trigger{display:inline-flex;position:relative;align-items:center;gap:5px;min-height:36px;
+  padding:7px 10px;border-radius:9px;white-space:nowrap}
+.wishlist-top-trigger>span:first-child{font-size:1.05rem;line-height:1}
+.wishlist-top-trigger small{font-size:.66rem;font-variant-numeric:tabular-nums;color:var(--muted)}
+.wishlist-ready-count{position:absolute;top:-6px;right:-6px;min-width:16px;height:16px;border-radius:99px;
+  display:grid;place-items:center;padding:0 4px;background:#77ca9a;color:#0c1913;font-size:.59rem;font-weight:800}
+.wishlist-ready-count[hidden],#wishlistSidebarReady[hidden]{display:none!important}
+.wishlist-library-trigger{gap:8px}
+.wishlist-library-trigger:hover{border-color:rgba(180,185,210,.42);color:var(--text)}
+.wishlist-library-trigger span{flex:1;text-align:left}
+.wishlist-library-trigger em{font-style:normal;border-radius:6px;background:rgba(93,187,133,.15);color:#8bd9ac;
+  padding:1px 4px;font-size:.61rem;font-weight:700}
+
+.wishlist-dialog{width:min(570px,calc(100vw - 24px));max-height:min(82dvh,780px);margin:auto;
+  padding:0;border:1px solid rgba(197,209,232,.19);border-radius:17px;
+  background:#101723;color:#e5eaf6;box-shadow:0 36px 100px rgba(0,0,0,.65);overflow:hidden}
+.wishlist-dialog::backdrop{background:rgba(2,5,12,.78);backdrop-filter:blur(3px)}
+.wishlist-shell{display:flex;flex-direction:column;min-height:0;max-height:min(82dvh,780px)}
+.wishlist-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;
+  padding:24px 24px 15px;border-bottom:1px solid rgba(255,255,255,.06)}
+.wishlist-header h2{margin:4px 0 7px;font-size:1.4rem;line-height:1.2;letter-spacing:-.04em;color:#f1f4fc}
+.wishlist-header h2>span:first-child{margin-right:4px;color:#c7c6ed;font-weight:500}
+.wishlist-header p{margin:0;color:#96a3b9;font-size:.77rem;line-height:1.5;max-width:390px}
+.wishlist-eyebrow{font-size:.6rem;color:#8190ab;letter-spacing:.11em;font-weight:750}
+.wishlist-close{flex:0 0 33px;width:33px;height:33px;border-radius:9px;
+  border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.04);
+  color:#a9b5c8;font-size:1.25rem;cursor:pointer}
+.wishlist-close:hover{color:white;background:rgba(255,255,255,.11)}
+.wishlist-form{display:flex;gap:8px;padding:16px 24px 4px;min-width:0}
+.wishlist-form input{flex:1;min-width:0;height:41px;padding:0 12px;border:1px solid rgba(255,255,255,.14);
+  border-radius:9px;outline:none;background:#0b111c;color:#eaf0fb;font:inherit;font-size:.85rem}
+.wishlist-form input::placeholder{color:#6d7c96}
+.wishlist-form input:focus{border-color:#918fe7;box-shadow:0 0 0 2px rgba(145,143,231,.18)}
+.wishlist-form button{flex:0 0 auto;min-height:41px;padding:0 15px;border:1px solid rgba(176,178,238,.38);
+  border-radius:9px;background:rgba(124,108,255,.18);color:#e4e1ff;font-size:.78rem;font-weight:750;cursor:pointer}
+.wishlist-form button:hover{background:rgba(124,108,255,.32)}
+.wishlist-feedback{margin:4px 24px 7px;min-height:1rem;color:#88cbaa;font-size:.71rem}
+.wishlist-feedback.is-error{color:#eea0a4}
+.wishlist-list-header{display:flex;align-items:center;justify-content:space-between;gap:8px;
+  margin:0 24px;padding:9px 0 10px;border-top:1px solid rgba(255,255,255,.07);
+  color:#b7c3d8;font-size:.68rem;font-weight:650;font-variant-numeric:tabular-nums}
+.wishlist-list-header>span:last-child{font-size:.62rem;color:#718099;font-weight:500;text-align:right}
+.wishlist-list{margin:0 12px 0 24px;padding:0 12px 0 0;list-style:none;overflow-y:auto;min-height:0;
+  scrollbar-width:thin;scrollbar-color:#43506b transparent}
+.wishlist-item{display:flex;align-items:center;gap:13px;justify-content:space-between;
+  min-height:62px;padding:12px 3px;border-top:1px solid rgba(255,255,255,.07)}
+.wishlist-item:first-child{border-top:0}
+.wishlist-item-content{min-width:0;flex:1;display:flex;flex-direction:column;gap:5px}
+.wishlist-item-title{display:block;color:#e7eaf3;font-size:.84rem;font-weight:650;line-height:1.28;
+  overflow-wrap:anywhere}
+.wishlist-item-status{display:inline-flex;align-items:center;gap:5px;width:max-content;
+  max-width:100%;color:#91a1b9;font-size:.69rem;font-weight:560}
+.wishlist-item.is-available .wishlist-item-status{color:#89d7ac}
+.wishlist-item.is-available .wishlist-item-status::before{content:"✓";font-weight:850}
+.wishlist-item-matched{color:#8390a4;font-size:.65rem;overflow-wrap:anywhere}
+.wishlist-item-actions{display:flex;align-items:center;flex:0 0 auto;gap:7px}
+.wishlist-view{border:1px solid rgba(130,200,160,.3);border-radius:8px;padding:7px 9px;
+  background:rgba(80,150,108,.1);color:#a5e6c0;font-size:.72rem;cursor:pointer;white-space:nowrap}
+.wishlist-view:hover{background:rgba(80,150,108,.25)}
+.wishlist-remove{border:0;background:transparent;color:#75839b;width:27px;height:29px;
+  padding:0;font-size:1.1rem;cursor:pointer;border-radius:7px}
+.wishlist-remove:hover{color:#f2a3a5;background:rgba(224,108,108,.09)}
+.wishlist-empty{margin:0;padding:17px 24px 26px;color:#8795aa;font-size:.79rem}
+.wishlist-empty[hidden]{display:none!important}
+.wishlist-footer{margin-top:11px;border-top:1px solid rgba(255,255,255,.06);padding:11px 24px 15px;
+  font-size:.65rem;color:#6e7c94}
+.empty-wishlist-add{display:inline-flex;margin-top:12px;padding:9px 13px;border-radius:9px;
+  border:1px solid rgba(170,165,255,.4);background:rgba(124,108,255,.13);color:#dad5ff;
+  cursor:pointer;font-size:.76rem}
+.empty-wishlist-add:hover{background:rgba(124,108,255,.25)}
+@media(max-width:620px){
+  #favoritesToggle{padding:6px 9px;font-size:.92rem}
+  #favoritesToggle span{display:none}
+  .wishlist-top-trigger{padding:6px 8px;gap:3px;min-height:30px}
+  .wishlist-top-trigger [data-i18n="wishlist.title"]{display:none}
+  .wishlist-top-trigger small{font-size:.6rem}
+  .wishlist-header{padding:17px 16px 13px}
+  .wishlist-header h2{font-size:1.26rem}
+  .wishlist-form{padding:14px 16px 4px;gap:6px}
+  .wishlist-form button{padding-inline:10px}
+  .wishlist-feedback{margin-inline:16px}
+  .wishlist-list-header{margin-inline:16px;align-items:flex-start}
+  .wishlist-list{margin-left:16px;margin-right:5px;padding-right:11px}
+  .wishlist-item{gap:7px}
+  .wishlist-item-title{font-size:.78rem}
+  .wishlist-view{font-size:.68rem;padding:7px}
+  .wishlist-footer{padding:10px 16px}
+  .wishlist-empty{padding-inline:16px}
+}
+@media(prefers-reduced-motion:reduce){.wishlist-dialog::backdrop{backdrop-filter:none}}

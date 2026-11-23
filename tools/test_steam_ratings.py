@@ -165,6 +165,14 @@ class SteamRatingBotTests(unittest.TestCase):
         self.assertTrue(bot.store_verified(
             {"title": "Disney Dreamlight Valley: Ultimate Edition - v1.26.1"},
             {}, {"name": "Disney Dreamlight Valley", "type": "game"}))
+        self.assertTrue(bot.store_verified(
+            {"title": "Dragonkin: The Banished - Blood Scales Edition, v1.2.64"},
+            {"canonical_title": "Dragonkin: The Banished"},
+            {"name": "Dragonkin: The Banished", "type": "game"}))
+        self.assertTrue(bot.store_verified(
+            {"title": "Talisman: Digital 5th Edition - Complete, Build 86150"},
+            {"canonical_title": "Talisman: Digital 5th Edition"},
+            {"name": "Talisman: Digital 5th Edition", "type": "game"}))
 
     def test_store_search_requires_unique_exact_name(self):
         sample = {"title": "Cyberpunk 2077: Ultimate Edition - v2.5"}

@@ -93,6 +93,7 @@ jobs:
           base="${PAGE_URL%/}"; nonce="${EXPECTED_SHA:0:12}-$(date +%s)"
           fetch(){ echo "GET ${base}/$1?health=${nonce}"; curl --fail --silent --show-error --location --retry 10 --retry-delay 3 --retry-all-errors --connect-timeout 10 --max-time 45 -H 'Cache-Control: no-cache, no-store, max-age=0' "${base}/$1?health=${nonce}" -o "$2"; }
           fetch index.html /tmp/index.html
+          fetch favicon.svg /tmp/favicon.svg
           fetch assets/app.js /tmp/app.js
           fetch assets/game-identity.js /tmp/identity.js
           fetch assets/i18n.js /tmp/i18n.js
@@ -131,6 +132,8 @@ jobs:
           )
           fetch "$detail_path" /tmp/detail.json
           grep -q 'searchSuggestions' /tmp/index.html
+          grep -q 'favicon.svg?v=1' /tmp/index.html
+          grep -q 'viewBox="0 0 64 64"' /tmp/favicon.svg
           grep -q 'searchCandidateIndexes' /tmp/app.js
           grep -q 'effectiveGenreLabels' /tmp/identity.js
           grep -q 'metadata_developer' /tmp/app.js

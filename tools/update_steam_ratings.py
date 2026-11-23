@@ -198,6 +198,20 @@ def title_variants(text):
 
 
 
+def is_packaging_suffix(suffix):
+    """Allow edition/bundle add-ons, not numbered sequels or standalone prologues."""
+    if re.match(r"^(?:part|chapter|episode|volume|vol|prologue|sequel|"
+                r"ii|iii|iv|vi|vii|viii|\d+)\b", suffix):
+        return False
+    # "Digital 5th Edition" is an actual named title, not automatically a
+    # generic edition of "Talisman". Only numbered "Years" bundles are safe.
+    if re.search(r"\b\d+(?:st|nd|rd|th)?\b", suffix) and not suffix.startswith(("years ", "year ")):
+        return False
+    return bool(re.search(
+        r"\b(?:edition|bundle|upgrade|supporter|complete|deluxe|"
+        r"bonus|soundtrack|ost|pack)\b", suffix))
+
+
 def game_title_variants(game, metadata=None):
     raw = title_variants(game.get("title", ""))
     canonical = (metadata or {}).get("canonical_title", "")
@@ -211,15 +225,7 @@ def game_title_variants(game, metadata=None):
         root = normalize(canonical)
         if source.startswith(root + " "):
             suffix = source[len(root) + 1:]
-            # The title must continue as explicitly packaged content, not
-            # "Part II", "Prologue", "Chapter 2", etc.
-            structural = re.match(
-                r"^(?:part|chapter|episode|volume|vol|prologue|sequel|"
-                r"ii|iii|iv|vi|vii|viii|\d+)\b", suffix)
-            packaging = re.search(
-                r"\b(?:edition|bundle|upgrade|supporter|complete|deluxe|"
-                r"bonus|soundtrack|ost|pack)\b", suffix)
-            if packaging and not structural:
+            if is_packaging_suffix(suffix):
                 return raw | extra
     return raw
 
@@ -251,9 +257,16 @@ def store_details(appid, pause=1.5):
 
 
 def store_verified(game, metadata, details):
-    return (details.get("type") == "game"
-            and bool(title_variants(details.get("name"))
-                     & game_title_variants(game, metadata)))
+    if details.get("type") != "game":
+        return False
+    name = normalize(details.get("name"))
+    if title_variants(details.get("name")) & game_title_variants(game, metadata):
+        return True
+    # Store may name the base game while the repack title includes the edition.
+    # This must be a *prefix followed by packaging*, never another sequel.
+    source = normalize(clean_title(game.get("title", "")))
+    return bool(name and source.startswith(name + " ")
+                and is_packaging_suffix(source[len(name) + 1:]))
 
 
 def exact_store_search(game, metadata, pause=1.5):

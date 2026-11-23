@@ -53,7 +53,9 @@ class SteamRatingBotTests(unittest.TestCase):
             with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", meta), \
                  patch.object(bot, "OUTPUT", output), patch.object(bot, "wikidata_entities",
                              side_effect=lambda q: {qid: entity(int(qid[1:])) for qid in q}), \
-                 patch.object(bot, "collect_steam_reviews", side_effect=fetch_reviews):
+                 patch.object(bot, "collect_steam_reviews", side_effect=fetch_reviews), \
+                 patch.object(bot, "store_details", side_effect=lambda appid: {
+                     "name": {111: "First", 222: "Second"}[appid], "type": "game"}):
                 self.assertEqual(bot.update(args)["rated"], 1)
                 initial = output.read_text(encoding="utf-8")
                 self.assertEqual(bot.update(args)["steam_calls_this_run"], 0)
@@ -77,7 +79,8 @@ class SteamRatingBotTests(unittest.TestCase):
             with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", meta), \
                  patch.object(bot, "OUTPUT", output), patch.object(bot, "wikidata_entities",
                               return_value={"Q333": entity(333)}), \
-                 patch.object(bot, "collect_steam_reviews", side_effect=bot.Cooldown("HTTP 429")):
+                 patch.object(bot, "collect_steam_reviews", side_effect=bot.Cooldown("HTTP 429")), \
+                 patch.object(bot, "store_details", return_value={"name": "Another", "type": "game"}):
                 result = bot.update(Namespace(resolve_limit=10, reviews_limit=10,
                                                fallback_limit=0, pause=0, dry_run=False))
                 self.assertEqual(result["pending"], 1)
@@ -125,13 +128,121 @@ class SteamRatingBotTests(unittest.TestCase):
             with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", metadata), \
                  patch.object(bot, "OUTPUT", output), patch.object(bot, "wikidata_entities",
                              side_effect=lambda q: {qid: entity(int(qid[1:])) for qid in q}), \
-                 patch.object(bot, "collect_steam_reviews", side_effect=fake_review):
+                 patch.object(bot, "collect_steam_reviews", side_effect=fake_review), \
+                 patch.object(bot, "store_details", side_effect=lambda appid: {
+                     "name": {111: "Bad app", 222: "Good app"}[appid], "type": "game"}):
                 summary = bot.update(Namespace(resolve_limit=10, reviews_limit=10,
                                                fallback_limit=0, pause=0, dry_run=False))
             records = json.loads(output.read_text(encoding="utf-8"))["games"]
             self.assertEqual(records["a"]["status"], "unavailable")
             self.assertEqual(records["b"]["status"], "rated")
             self.assertEqual(summary["rated"], 1)
+
+
+    def test_strict_store_title_identity(self):
+        cyberpunk = {
+            "title": "Cyberpunk 2077: Ultimate Edition - v2.5 + DLCs",
+        }
+        self.assertIn("cyberpunk 2077", bot.game_title_variants(
+            cyberpunk, {"canonical_title": "Cyberpunk 2077: Ultimate Edition"}))
+        self.assertTrue(bot.store_verified(
+            cyberpunk, {}, {"name": "Cyberpunk 2077", "type": "game"}))
+        self.assertFalse(bot.store_verified(
+            cyberpunk, {}, {"name": "Cyberpunk 2077: Phantom Liberty", "type": "dlc"}))
+        self.assertFalse(bot.store_verified(
+            cyberpunk, {}, {"name": "Cyberpunk 2078", "type": "game"}))
+
+        wrong_qid = {"title": "Call of Duty: Modern Warfare II, v9.7 (Campaign)"}
+        wrong_meta = {"canonical_title": "Call of Duty: Modern Warfare III"}
+        self.assertNotIn("call of duty modern warfare iii",
+                         bot.game_title_variants(wrong_qid, wrong_meta))
+        self.assertFalse(bot.store_verified(wrong_qid, wrong_meta, {
+            "name": "Call of Duty®: Modern Warfare® III", "type": "game"}))
+        self.assertTrue(bot.store_verified(wrong_qid, wrong_meta, {
+            "name": "Call of Duty®: Modern Warfare® II", "type": "game"}))
+        self.assertTrue(bot.store_verified(
+            {"title": "Disney Dreamlight Valley: Ultimate Edition - v1.26.1"},
+            {}, {"name": "Disney Dreamlight Valley", "type": "game"}))
+
+    def test_store_search_requires_unique_exact_name(self):
+        sample = {"title": "Cyberpunk 2077: Ultimate Edition - v2.5"}
+        with patch.object(bot, "get_json", return_value={"items": [
+            {"id": 1091500, "name": "Cyberpunk 2077"},
+            {"id": 2138330, "name": "Cyberpunk 2077: Phantom Liberty"},
+        ]}):
+            self.assertEqual(bot.exact_store_search(sample, {}), 1091500)
+        with patch.object(bot, "get_json", return_value={"items": [
+            {"id": 1091500, "name": "Cyberpunk 2077"},
+            {"id": 2000000, "name": "Cyberpunk 2077"},
+        ]}):
+            self.assertIsNone(bot.exact_store_search(sample, {}))
+
+    def test_wikidata_retry_after_maxlag(self):
+        with patch.object(bot, "get_json", side_effect=[
+            bot.Cooldown("maxlag"), bot.Cooldown("HTTP 429"), {"entities": {}}
+        ]) as request, patch.object(bot.time, "sleep") as sleeper:
+            result = bot.wikidata_with_retry(bot.WIKIDATA, {"action": "wbgetentities"})
+            self.assertEqual(result, {"entities": {}})
+            self.assertEqual(request.call_count, 3)
+            self.assertEqual(sleeper.call_count, 2)
+
+    def test_wrong_sequel_never_receives_ratings(self):
+        with tempfile.TemporaryDirectory() as root:
+            folder = Path(root)
+            source, meta, cache = [folder / name for name in
+                                   ("games.json", "meta.json", "cache.json")]
+            source.write_text(json.dumps({"games": [{
+                "id": "cod-ii", "title": "Call of Duty: Modern Warfare II, v9.7",
+                "post_date": "2026-11-01T00:00:00Z"}]}), encoding="utf-8")
+            meta.write_text(json.dumps({"metadata_version": 1, "games": {
+                "cod-ii": {"canonical_title": "Call of Duty: Modern Warfare III",
+                           "evidence_urls": ["https://www.wikidata.org/wiki/Q123"]}}}), encoding="utf-8")
+            with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", meta), \
+                 patch.object(bot, "OUTPUT", cache), patch.object(bot, "wikidata_entities",
+                     return_value={"Q123": entity(2519060)}), \
+                 patch.object(bot, "store_details",
+                     return_value={"type": "game", "name": "Call of Duty: Modern Warfare III"}), \
+                 patch.object(bot, "collect_steam_reviews") as reviews:
+                result = bot.update(Namespace(
+                    resolve_limit=10, reviews_limit=10, fallback_limit=0,
+                    store_fallback_limit=0, pause=0, dry_run=False))
+            row = json.loads(cache.read_text(encoding="utf-8"))["games"]["cod-ii"]
+            self.assertEqual(row["status"], "mismatch")
+            self.assertEqual(row["invalid_steam_appid"], 2519060)
+            self.assertNotIn("positive_percent", row)
+            self.assertEqual(result["rated"], 0)
+            reviews.assert_not_called()
+
+    def test_exact_store_fallback_recovers_missing_wikidata_identifier(self):
+        with tempfile.TemporaryDirectory() as root:
+            folder = Path(root)
+            source, meta, cache = [folder / name for name in
+                                   ("games.json", "meta.json", "cache.json")]
+            source.write_text(json.dumps({"games": [{
+                "id": "cyberpunk", "title": "Cyberpunk 2077: Ultimate Edition - v2.5",
+                "post_date": "2026-11-01T00:00:00Z"}]}), encoding="utf-8")
+            meta.write_text(json.dumps({"metadata_version": 1, "games": {
+                "cyberpunk": {"canonical_title": "Cyberpunk 2077: Ultimate Edition",
+                              "evidence_urls": ["https://www.wikidata.org/wiki/Q456"]}}}), encoding="utf-8")
+            review = {"status": "rated", "positive": 90, "negative": 10,
+                      "total_reviews": 100, "positive_percent": 90,
+                      "review_checked_at": bot.iso(bot.utc_now())}
+            with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", meta), \
+                 patch.object(bot, "OUTPUT", cache), \
+                 patch.object(bot, "wikidata_entities", return_value={}), \
+                 patch.object(bot, "exact_store_search", return_value=1091500), \
+                 patch.object(bot, "store_details",
+                     return_value={"type": "game", "name": "Cyberpunk 2077"}), \
+                 patch.object(bot, "collect_steam_reviews", return_value=review):
+                result = bot.update(Namespace(
+                    resolve_limit=10, reviews_limit=10, fallback_limit=0,
+                    store_fallback_limit=1, pause=0, dry_run=False))
+            row = json.loads(cache.read_text(encoding="utf-8"))["games"]["cyberpunk"]
+            self.assertEqual(row["status"], "rated")
+            self.assertEqual(row["steam_appid"], 1091500)
+            self.assertEqual(row["resolution"], "steam_store_exact")
+            self.assertEqual(result["rated"], 1)
+
 
 
 if __name__ == "__main__":

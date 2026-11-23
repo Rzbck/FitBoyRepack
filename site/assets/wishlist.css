@@ -218,3 +218,29 @@ button.wishlist-chip-label:hover{color:#d8f9e6;text-decoration:underline;text-un
  .meta-status #healthBadge:not([hidden]){font-size:.59rem}
  .wishlist-chip-title{max-width:55px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow-wrap:anywhere}
 }
+
+/*
+ * Reserve the final widths of live header data before catalog.json/health.json
+ * resolve. Without fixed slots, the auto-sized grid shrinks search on every
+ * page load as "Chargement…" becomes the date and the coverage badge appears.
+ */
+.compact-meta #catalogStatus{
+  box-sizing:border-box;
+  width:116px;min-width:116px;max-width:116px;
+  flex:0 0 116px;overflow:hidden;text-overflow:clip;
+}
+.compact-meta #healthBadge{
+  box-sizing:border-box;justify-content:center;
+  width:87px;min-width:87px;max-width:87px;flex:0 0 87px;
+  white-space:nowrap;
+}
+.compact-meta #healthBadge[hidden]{
+  display:inline-flex!important;
+  visibility:hidden;
+  pointer-events:none;
+}
+.compact-meta .header-count{
+  box-sizing:border-box;
+  width:91px;min-width:91px;max-width:91px;flex:0 0 91px;
+  white-space:nowrap;
+}

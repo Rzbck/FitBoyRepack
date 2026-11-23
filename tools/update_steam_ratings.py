@@ -24,6 +24,13 @@ METADATA = Path("site/data/metadata-enrichment.json")
 OUTPUT = Path("site/data/steam-ratings.json")
 WIKIDATA = "https://www.wikidata.org/w/api.php"
 STEAM = "https://api.steampowered.com/IUserReviewsService/GetAppReviews/v1/"
+STEAM_STORE = "https://store.steampowered.com/api/appdetails"
+STEAM_SEARCH = "https://store.steampowered.com/api/storesearch"
+STORE_LOOKUP_AGE_DAYS = 14
+STORE_VERIFY_AGE_DAYS = 28
+STORE_DETAILS_LIMIT = 160
+STORE_FALLBACK_LIMIT = 20
+STORE_AUDIT_LIMIT = 35
 USER_AGENT = "FitBoyRepack-SteamReviews/1.0 (https://github.com/Rzbck/FitBoyRepack; keyless public metadata research)"
 QID_RE = re.compile(r"^https?://(?:www\.)?wikidata\.org/(?:wiki/|entity/)(Q[1-9]\d*)/?$")
 APP_ID_RE = re.compile(r"^[1-9]\d{0,9}$")
@@ -101,6 +108,20 @@ def steam_id_from_entity(entity):
     return next(iter(values)) if len(values) == 1 else None
 
 
+def wikidata_with_retry(url, params, pause=0, attempts=3):
+    """Bounded, non-destructive retries after Wikidata maxlag/429/503."""
+    for attempt in range(attempts):
+        try:
+            return get_json(url, params, pause=pause)
+        except Cooldown as error:
+            if attempt + 1 == attempts:
+                raise
+            delay = (4, 10)[min(attempt, 1)]
+            LOGGER.warning("Wikidata backoff %ss after %s (attempt %s/%s)",
+                           delay, error, attempt + 1, attempts)
+            time.sleep(delay)
+
+
 def wikidata_entities(ids):
     if not ids:
         return {}
@@ -113,11 +134,9 @@ def wikidata_entities(ids):
         bindings = sparql.get("results", {}).get("bindings")
         if not isinstance(bindings, list):
             raise ValueError("Unexpected Wikidata SPARQL response")
-    except Cooldown:
-        raise
-    except (HTTPError, URLError, ValueError) as error:
+    except (Cooldown, HTTPError, URLError, ValueError) as error:
         LOGGER.warning("Wikidata SPARQL unavailable (%s); trying bounded Action API", error)
-        response = get_json(WIKIDATA, {
+        response = wikidata_with_retry(WIKIDATA, {
             "action": "wbgetentities",
             "ids": "|".join(ids),
             "props": "claims",
@@ -147,6 +166,102 @@ def clean_title(text):
 def normalize(text):
     text = unicodedata.normalize("NFKD", str(text or "").casefold())
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", "".join(c for c in text if not unicodedata.combining(c)))).strip()
+
+
+
+def title_variants(text):
+    """Strict name identities: editions/build tags may vary, sequels must not."""
+    raw = clean_title(text)
+    raw = re.split(r",\\s*(?=v\\d|build\\b|update\\b)", raw, maxsplit=1, flags=re.I)[0]
+    variants = {normalize(raw)}
+    edition = (
+        r"(?:[:\\s-]+)(?:gold|deluxe|ultimate|complete|standard|premium|"
+        r"definitive|anniversary|special|enhanced|legendary|collector'?s|"
+        r"game of the year|goty)\\s+edition$"
+    )
+    base = re.sub(edition, "", raw, flags=re.I).strip()
+    if base:
+        variants.add(normalize(base))
+    # Steam Store titles do not contain "PC" or console release packaging.
+    for platform in (r"\\s+\\(PC\\)$", r"\\s+\\(Switch\\)$", r"\\s+-\\s+PC$"):
+        candidate = re.sub(platform, "", base, flags=re.I).strip()
+        if candidate:
+            variants.add(normalize(candidate))
+    return {value for value in variants if value}
+
+
+def game_title_variants(game, metadata=None):
+    raw = title_variants(game.get("title", ""))
+    canonical = (metadata or {}).get("canonical_title", "")
+    # Metadata may refer to a *different sequel*. Do not trust a QID alone.
+    extra = title_variants(canonical) if canonical else set()
+    return raw | extra if raw & extra else raw
+
+
+def store_game_title(game, metadata=None):
+    candidates = [
+        re.sub(r"(?:[:\\s-]+)(?:gold|deluxe|ultimate|complete|standard|"
+               r"premium|definitive|anniversary|special|enhanced|legendary|"
+               r"collector'?s|game of the year|goty)\\s+edition$", "",
+               clean_title(game.get("title", "")).split(", v")[0], flags=re.I).strip(),
+    ]
+    canonical = (metadata or {}).get("canonical_title", "")
+    if canonical and game_title_variants(game, metadata) & title_variants(canonical):
+        candidates.append(canonical)
+    return next((name for name in candidates if 3 <= len(name) <= 110), "")
+
+
+def store_details(appid, pause=1.5):
+    response = get_json(STEAM_STORE, {
+        "appids": int(appid), "cc": "us", "l": "en", "filters": "basic"
+    }, pause=pause)
+    item = response.get(str(appid), {})
+    if item.get("success") is not True or not isinstance(item.get("data"), dict):
+        raise ValueError("Steam Store did not return public app details")
+    data = item["data"]
+    name = str(data.get("name") or "").strip()
+    kind = str(data.get("type") or "").lower()
+    if not name or not kind:
+        raise ValueError("Steam Store app details missing name/type")
+    return {"name": name, "type": kind}
+
+
+def store_verified(game, metadata, details):
+    return (details.get("type") == "game"
+            and normalize(details.get("name")) in game_title_variants(game, metadata))
+
+
+def exact_store_search(game, metadata, pause=1.5):
+    title = store_game_title(game, metadata)
+    if not title:
+        return None
+    response = get_json(STEAM_SEARCH,
+                        {"term": title, "l": "en", "cc": "us"}, pause=pause)
+    keys = game_title_variants(game, metadata)
+    items = response.get("items", [])
+    if not isinstance(items, list):
+        raise ValueError("Unexpected Steam Store search response")
+    exact_ids = set()
+    for item in items:
+        try:
+            appid = int(item["id"])
+        except (TypeError, ValueError, KeyError):
+            continue
+        if appid > 0 and normalize(item.get("name")) in keys:
+            exact_ids.add(appid)
+    # Ambiguity is safer than assigning the score of an unrelated game.
+    return next(iter(exact_ids)) if len(exact_ids) == 1 else None
+
+
+def invalidate_match(record, reason):
+    """Hide an incorrect app's review score, retaining evidence for diagnosis."""
+    record["invalid_steam_appid"] = record.pop("steam_appid", None)
+    for key in ("positive", "negative", "positive_percent", "total_reviews",
+                "review_checked_at", "store_verified_at", "steam_store_name"):
+        record.pop(key, None)
+    record["status"] = "mismatch"
+    record["identity_issue"] = reason
+    record["lookup_checked_at"] = iso(utc_now())
 
 
 def exact_title_entity(title):

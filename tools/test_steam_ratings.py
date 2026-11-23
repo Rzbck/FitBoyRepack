@@ -211,6 +211,30 @@ class SteamRatingBotTests(unittest.TestCase):
         self.assertFalse(bot.store_verified(
             {"title": "Talisman: Digital 5th Edition"},
             {}, {"name": "Talisman", "type": "game"}))
+        additional = [
+            ("Terraformers: Collection - v1.7 + 4 DLCs", "Terraformers", "Terraformers"),
+            ("LEGO Batman: Legacy of the Dark Knight + 4 DLCs",
+             "LEGO® Batman™: Legacy of the Dark Knight",
+             "Lego Batman: Legacy of the Dark Knight"),
+            ("Warhammer 40,000: Gladius - Complete Edition - v1.18",
+             "Warhammer 40,000: Gladius - Relics of War",
+             "Warhammer 40,000: Gladius - Relics of War"),
+            ("Tavern Talk: Dragon's Hoard Edition, Build 22215664 + 8 DLCs",
+             "Tavern Talk - A Cozy Visual Novel", "Tavern Talk"),
+        ]
+        for title, store_name, canonical in additional:
+            with self.subTest(title=title):
+                self.assertTrue(bot.store_verified(
+                    {"title": title}, {"canonical_title": canonical},
+                    {"name": store_name, "type": "game"}))
+        for title, prologue in [
+            ("Alchemist: Journey of the Soul", "Alchemist: Journey of the Soul Prologue"),
+            ("Medieval Crafter: Blacksmith - v1.0", "Medieval Crafter: Blacksmith Prologue"),
+        ]:
+            with self.subTest(title=title):
+                self.assertFalse(bot.store_verified(
+                    {"title": title}, {"canonical_title": prologue},
+                    {"name": prologue, "type": "game"}))
 
     def test_store_search_requires_unique_exact_name(self):
         sample = {"title": "Cyberpunk 2077: Ultimate Edition - v2.5"}

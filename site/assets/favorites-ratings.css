@@ -35,7 +35,6 @@
   display:block;min-width:0;white-space:normal;overflow:visible;text-overflow:clip;
   color:var(--muted);font-variant-numeric:tabular-nums
 }
-.game-card:not(.compact-card) .card-body>.steam-rating{margin-top:8px}
 .steam-rating-heading,.steam-rating-split{display:flex;align-items:baseline;justify-content:space-between;
   gap:5px;min-width:0;line-height:1.2}
 .steam-rating-heading{font-size:.66rem;color:#aebbd4;margin-bottom:5px}
@@ -61,11 +60,6 @@
   .game-card .steam-rating-split{font-size:.58rem}
 }
 
-/* One-line catalog vote summary; full green/red bar remains in the opened game sheet. */
-.game-card:not(.compact-card) .card-body>.steam-rating{
-  margin-top:7px;font-variant-numeric:tabular-nums;
-  overflow:hidden;white-space:nowrap;min-width:0
-}
 .steam-votes-inline{display:flex;align-items:center;gap:6px;width:100%;min-width:0;
   white-space:nowrap;overflow:hidden;line-height:1.15}
 .steam-mini-vote{display:inline-flex;align-items:center;gap:2px;flex:0 0 auto;
@@ -81,4 +75,46 @@
  .steam-mini-vote{font-size:.6rem;gap:1px}
  .steam-thumb-icon{width:11px;height:11px;flex-basis:11px}
  .steam-mini-count{font-size:.57rem}
+}
+
+/* Cover-only Steam badge: small, legible and outside card body layout. */
+.game-card .cover-wrap>.steam-cover-badge:not([hidden]){
+  position:absolute;z-index:4;right:7px;bottom:7px;left:auto;
+  display:block;width:max-content;max-width:calc(100% - 14px);
+  margin:0;padding:5px 7px;border-radius:7px;
+  background:rgba(7,12,23,.88);
+  border:1px solid rgba(228,234,249,.16);
+  box-shadow:0 2px 9px rgba(0,0,0,.32);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  color:#f4f6fe;font-variant-numeric:tabular-nums;
+  white-space:nowrap;overflow:hidden;text-overflow:clip;
+}
+.game-card .cover-wrap>.steam-cover-badge .steam-votes-inline{
+  width:auto;gap:6px;overflow:visible;line-height:1.2;
+}
+.game-card .steam-cover-badge .steam-mini-vote{
+  font-size:.66rem;gap:2px;font-weight:720;
+}
+.game-card .steam-cover-badge .steam-mini-count{
+  flex:0 0 auto;min-width:0;margin-left:0;padding-left:5px;
+  border-left:1px solid rgba(255,255,255,.21);
+  color:#d3daea;font-size:.61rem;font-weight:640;overflow:visible;
+}
+.game-card .steam-cover-badge .steam-thumb-icon{
+  width:11px;height:11px;flex-basis:11px;
+}
+/* Move "New" to the opposite corner to avoid collisions on narrow covers. */
+.game-card .cover-wrap>.new-badge{top:8px;left:8px;bottom:auto}
+/* Never reserve card height for an unknown date or an entirely empty meta row. */
+.game-card .card-date[hidden],.game-card .card-meta[hidden]{display:none!important}
+@media(max-width:620px){
+  .game-card .cover-wrap>.steam-cover-badge:not([hidden]){
+    right:5px;bottom:5px;max-width:calc(100% - 10px);padding:4px 5px;
+    border-radius:6px;
+  }
+  .game-card .cover-wrap>.steam-cover-badge .steam-votes-inline{gap:4px}
+  .game-card .steam-cover-badge .steam-mini-vote{font-size:.6rem;gap:1px}
+  .game-card .steam-cover-badge .steam-mini-count{font-size:.57rem;padding-left:4px}
+  .game-card .steam-cover-badge .steam-thumb-icon{width:10px;height:10px;flex-basis:10px}
 }

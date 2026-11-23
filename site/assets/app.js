@@ -1,4 +1,5 @@
 import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload } from './catalog-api.js';
+import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './wishlist.js';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
@@ -431,6 +432,14 @@ function updateCatalogMeta(){
   const isEmptyFavorites=state.libraryFilter==='favorites' && state.library.favorites.size===0;
   els.empty.querySelector('strong').textContent=t(isEmptyFavorites?'library.emptyFavoritesTitle':'empty.title');
   els.empty.querySelector('span').textContent=t(isEmptyFavorites?'library.emptyFavoritesBody':'empty.body');
+  els.empty.querySelector('.empty-wishlist-add')?.remove();
+  const missingQuery=els.search.value.trim();
+  if(state.filtered.length===0 && missingQuery.length>=2 && !state.libraryFilter){
+    const add=document.createElement('button');
+    add.type='button';add.className='empty-wishlist-add';add.textContent=t('wishlist.addThis');
+    add.addEventListener('click',()=>openWishlist(missingQuery));
+    els.empty.append(add);
+  }
   const headingKey=state.libraryFilter==='favorites'?'library.myFavorites':state.libraryFilter==='backlog'?'library.backlog':state.libraryFilter==='completed'?'library.completed':'catalog.title';
   els.catalogHeading.textContent=t(headingKey);
   const steamSorting=els.sort.value.startsWith('steam_');
@@ -492,8 +501,8 @@ function stepSuggestion(delta){const items=$$('.search-suggestion');if(!items.le
 
 function updateLibraryUI(){els.favoritesCount.textContent=state.library.favorites.size;els.backlogCount.textContent=state.library.backlog.size;els.completedCount.textContent=state.library.completed.size;$$('.library-filter').forEach(b=>{const active=b.dataset.library===state.libraryFilter;b.setAttribute('aria-pressed',String(active));b.classList.toggle('active',active);});}
 function setLibraryFilter(list){state.libraryFilter=state.libraryFilter===list?'':list;updateLibraryUI();applyFilters();renderRecommendations();closeMobileFilters();}
-function exportLibrary(){const blob=new Blob([JSON.stringify({version:2,exported_at:new Date().toISOString(),...snapshotLibrary()},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fitboyrepack-library.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
-async function importLibrary(file){try{const data=JSON.parse(await file.text());for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderRecommendations();applyFilters();}catch(error){console.error(error);alert(t('library.invalidFile'));}finally{els.importLibrary.value='';}}
+function exportLibrary(){const blob=new Blob([JSON.stringify({version:3,exported_at:new Date().toISOString(),...snapshotLibrary(),wishlist:exportWishlist()},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fitboyrepack-library.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+async function importLibrary(file){try{const data=JSON.parse(await file.text());if(Object.hasOwn(data,'wishlist'))importWishlist(data.wishlist);for(const key of ['favorites','backlog','completed'])if(Array.isArray(data[key]))state.library[key]=new Set(data[key].map(String));saveLibrary();updateLibraryUI();renderRecommendations();applyFilters();}catch(error){console.error(error);alert(t('library.invalidFile'));}finally{els.importLibrary.value='';}}
 
 function toggleQuick(key,button){state.quick[key]=!state.quick[key];button.setAttribute('aria-pressed',String(state.quick[key]));button.classList.toggle('active',state.quick[key]);applyFilters();}
 function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.releasePeriodFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();renderRecommendations();}
@@ -817,6 +826,7 @@ async function loadCatalog(){
     lastCatalogPayload=payload;
     state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);
     state.byId=new Map(state.games.map(g=>[g.id,g]));
+    setWishlistCatalog(state.games);
     const generated=payload.generated_at;
     els.status.textContent=generated
       ?t('catalog.updated',{value:formatDateValue(generated,{dateStyle:'medium',timeStyle:'short'})})
@@ -872,11 +882,13 @@ els.search.addEventListener('keydown',event=>{if(!els.suggestions.hidden&&(event
 els.search.addEventListener('blur',()=>setTimeout(()=>{els.suggestions.hidden=true;},150));
 els.tagSearch.addEventListener('input',updateTagFacets);els.clearTags.addEventListener('click',()=>{state.selectedTags.clear();els.tagSearch.value='';updateTagUI();applyFilters();});els.sort.addEventListener('change',applyFilters);els.yearFilter.addEventListener('change',applyFilters);els.releasePeriodFilter.addEventListener('change',applyFilters);els.sizeFilter.addEventListener('change',applyFilters);
 els.newOnlyFilter.addEventListener('click',()=>toggleQuick('newOnly',els.newOnlyFilter));els.detailsOnlyFilter.addEventListener('click',()=>toggleQuick('detailsOnly',els.detailsOnlyFilter));els.mediaOnlyFilter.addEventListener('click',()=>toggleQuick('mediaOnly',els.mediaOnlyFilter));els.resetFilters.addEventListener('click',resetFilters);
-$$('.library-filter').forEach(b=>b.addEventListener('click',()=>setLibraryFilter(b.dataset.library)));els.favoritesToggle.addEventListener('click',()=>setLibraryFilter('favorites'));els.exportLibrary.addEventListener('click',exportLibrary);els.importLibraryButton.addEventListener('click',()=>els.importLibrary.click());els.importLibrary.addEventListener('change',()=>{if(els.importLibrary.files[0])importLibrary(els.importLibrary.files[0]);});
+$('.library-filter[data-library]').forEach(b=>b.addEventListener('click',()=>setLibraryFilter(b.dataset.library)));els.favoritesToggle.addEventListener('click',()=>setLibraryFilter('favorites'));els.exportLibrary.addEventListener('click',exportLibrary);els.importLibraryButton.addEventListener('click',()=>els.importLibrary.click());els.importLibrary.addEventListener('change',()=>{if(els.importLibrary.files[0])importLibrary(els.importLibrary.files[0]);});
 els.openTagPicker.addEventListener('click',openTagPicker);els.closeTagPicker.addEventListener('click',closeTagPicker);els.tagPickerDialog.addEventListener('click',event=>{if(event.target===els.tagPickerDialog)closeTagPicker();});
 els.mobileFiltersButton.addEventListener('click',openMobileFilters);els.closeFilters.addEventListener('click',closeMobileFilters);els.filterOverlay.addEventListener('click',closeMobileFilters);
 els.dialog.addEventListener('click',e=>{if(e.target===els.dialog||e.target.closest('[data-close-dialog]'))els.dialog.close();});els.dialog.addEventListener('close',restoreCatalogPosition);
 window.addEventListener('hashchange',()=>{const id=gameHashId();if(!id&&els.dialog.open)els.dialog.close();else if(id&&state.byId.has(id)&&id!==state.dialogGameId)openDialog(state.byId.get(id),{syncUrl:false});});
 document.addEventListener('keydown',event=>{const typing=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName);if(els.dialog.open&&!typing&&!isLightboxOpen()){if(event.key==='ArrowLeft'){event.preventDefault();navigateDialog(-1);return;}if(event.key==='ArrowRight'){event.preventDefault();navigateDialog(1);return;}}if(event.key==='/'&&!typing){event.preventDefault();els.search.focus();}if(event.key==='Escape'){if(els.tagPickerDialog.open)closeTagPicker();else closeMobileFilters();}});
 window.addEventListener('resize',armInfiniteObserver,{passive:true});
+initWishlist({openGame:game=>{closeMobileFilters();openDialog(game,{syncUrl:true});}});
+document.querySelector('#wishlistLibraryButton')?.addEventListener('click',closeMobileFilters);
 loadCatalog();

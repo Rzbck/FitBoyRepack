@@ -51,18 +51,22 @@
       <button id="mobileFiltersButton" class="ghost-btn mobile-filters-button" type="button" aria-expanded="false" aria-controls="filterSidebar" data-i18n="app.filters">Filtres</button>
     </section>
     <div class="topbar-meta compact-meta">
-      <div id="languageSwitcher" class="language-switcher" role="group" aria-label="Langue">
-        <button type="button" data-language-mode="auto" aria-pressed="false">Auto</button>
-        <button type="button" data-language-mode="fr" aria-pressed="false">FR</button>
-        <button type="button" data-language-mode="en" aria-pressed="false">EN</button>
+      <div class="meta-status">
+        <div id="languageSwitcher" class="language-switcher" role="group" aria-label="Langue">
+          <button type="button" data-language-mode="auto" aria-pressed="false">Auto</button>
+          <button type="button" data-language-mode="fr" aria-pressed="false">FR</button>
+          <button type="button" data-language-mode="en" aria-pressed="false">EN</button>
+        </div>
+        <span id="catalogStatus" class="catalog-status" data-i18n="app.catalogLoading">Chargement…</span>
+        <span id="healthBadge" class="health-badge" title="État du catalogue" data-i18n-title="app.catalogHealth" hidden></span>
+        <span class="header-count" aria-live="polite"><strong id="visibleCount">0</strong><span data-i18n="app.games">jeux</span></span>
       </div>
-      <span id="catalogStatus" class="catalog-status" data-i18n="app.catalogLoading">Chargement…</span>
-      <span id="healthBadge" class="health-badge" title="État du catalogue" data-i18n-title="app.catalogHealth" hidden></span>
-      <span class="header-count" aria-live="polite"><strong id="visibleCount">0</strong><span data-i18n="app.games">jeux</span></span>
-      <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ <span data-i18n="app.favorites">Favoris</span></button>
-      <button id="wishlistToggle" class="ghost-btn wishlist-top-trigger" type="button" data-open-wishlist aria-haspopup="dialog" aria-controls="wishlistDialog">
-        <span aria-hidden="true">☆</span><span data-i18n="wishlist.title">Wishlist</span><small data-wishlist-count>0</small><b id="wishlistReadyCount" class="wishlist-ready-count" hidden>0</b>
-      </button>
+      <div class="meta-actions">
+        <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ <span data-i18n="app.favorites">Favoris</span></button>
+        <button id="wishlistToggle" class="ghost-btn wishlist-top-trigger" type="button" data-open-wishlist aria-haspopup="dialog" aria-controls="wishlistDialog">
+          <span aria-hidden="true">☆</span><span data-i18n="wishlist.title">Wishlist</span><small class="wishlist-inline-count" data-wishlist-count>0</small>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -159,10 +163,16 @@
         <button id="wishlistAdd" type="submit" data-i18n="wishlist.add">+ Ajouter</button>
       </form>
       <p id="wishlistFeedback" class="wishlist-feedback" role="status" aria-live="polite"></p>
-      <div class="wishlist-list-header"><span id="wishlistSummary">0 en attente · 0 disponible</span><span data-i18n="wishlist.local">Enregistrée sur cet appareil</span></div>
+      <div class="wishlist-list-header">
+        <strong id="wishlistSummary">0 en attente · 0 disponible</strong>
+        <div class="wishlist-legend" aria-hidden="true">
+          <span><i class="wishlist-legend-waiting">○</i><span data-i18n="wishlist.pending">En attente</span></span>
+          <span><i class="wishlist-legend-available">✓</i><span data-i18n="wishlist.available">Disponible</span></span>
+        </div>
+      </div>
       <p id="wishlistEmpty" class="wishlist-empty" data-i18n="wishlist.empty">Aucun jeu suivi pour l’instant. Ajoute un titre ci-dessus.</p>
       <ul id="wishlistList" class="wishlist-list" aria-label="Jeux attendus" data-i18n-aria-label="wishlist.list"></ul>
-      <footer class="wishlist-footer" data-i18n="wishlist.footer">Comparaison automatique au chargement du catalogue. Pas de notifications.</footer>
+      <footer class="wishlist-footer"><span data-i18n="wishlist.local">Sur cet appareil</span> · <span data-i18n="wishlist.footer">Comparaison automatique au chargement du catalogue. Pas de notifications.</span></footer>
     </div>
   </dialog>
 

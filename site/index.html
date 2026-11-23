@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="./assets/catalog-v2.css">
   <link rel="stylesheet" href="./assets/catalog-focus-v3.css">
   <link rel="stylesheet" href="./assets/favorites-ratings.css">
+  <link rel="stylesheet" href="./assets/wishlist.css">
 </head>
 <body>
   <header class="topbar compact-topbar">
@@ -59,6 +60,9 @@
       <span id="healthBadge" class="health-badge" title="État du catalogue" data-i18n-title="app.catalogHealth" hidden></span>
       <span class="header-count" aria-live="polite"><strong id="visibleCount">0</strong><span data-i18n="app.games">jeux</span></span>
       <button id="favoritesToggle" class="ghost-btn" type="button" aria-pressed="false">♡ <span data-i18n="app.favorites">Favoris</span></button>
+      <button id="wishlistToggle" class="ghost-btn wishlist-top-trigger" type="button" data-open-wishlist aria-haspopup="dialog" aria-controls="wishlistDialog">
+        <span aria-hidden="true">☆</span><span data-i18n="wishlist.title">Wishlist</span><small data-wishlist-count>0</small><b id="wishlistReadyCount" class="wishlist-ready-count" hidden>0</b>
+      </button>
     </div>
   </header>
 
@@ -83,12 +87,13 @@
         </section>
 
         <details class="sidebar-filter sidebar-collapsible library-panel">
-          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong data-i18n="library.title">Bibliothèque</strong><small data-i18n="library.summary">Favoris · À jouer · Terminé</small></span></summary>
+          <summary class="sidebar-summary"><span class="sidebar-summary-copy"><strong data-i18n="library.title">Bibliothèque</strong><small data-i18n="library.summary">Favoris · À jouer · Terminé · Wishlist</small></span></summary>
           <div class="sidebar-collapse-body">
             <div class="library-buttons">
               <button class="library-filter" data-library="favorites" type="button" aria-pressed="false">♥ <span data-i18n="library.favorite">Favoris</span> <small id="favoritesCount">0</small></button>
               <button class="library-filter" data-library="backlog" type="button" aria-pressed="false">＋ <span data-i18n="library.backlog">À jouer</span> <small id="backlogCount">0</small></button>
               <button class="library-filter" data-library="completed" type="button" aria-pressed="false">✓ <span data-i18n="library.completed">Terminé</span> <small id="completedCount">0</small></button>
+              <button class="library-filter wishlist-library-trigger" type="button" data-open-wishlist aria-haspopup="dialog" aria-controls="wishlistDialog">☆ <span data-i18n="wishlist.title">Wishlist</span> <small data-wishlist-count>0</small><em id="wishlistSidebarReady" hidden>0</em></button>
             </div>
             <div class="library-transfer"><button id="exportLibrary" class="ghost-btn" type="button" data-i18n="library.export">Exporter</button><button id="importLibraryButton" class="ghost-btn" type="button" data-i18n="library.import">Importer</button><input id="importLibrary" type="file" accept="application/json,.json" hidden></div>
           </div>
@@ -140,6 +145,25 @@
     </div>
     <div class="tag-result-summary" aria-live="polite"><span data-i18n="genre.currentResult">Résultat courant</span><strong id="tagResultCount">0 jeux</strong></div>
     <div id="tagList" class="tag-list tag-picker-list" aria-label="Liste des genres" data-i18n-aria-label="genre.list"></div>
+  </dialog>
+
+  <dialog id="wishlistDialog" class="wishlist-dialog" aria-labelledby="wishlistTitle">
+    <div class="wishlist-shell">
+      <header class="wishlist-header">
+        <div><span class="wishlist-eyebrow" data-i18n="wishlist.eyebrow">MA BIBLIOTHÈQUE</span><h2 id="wishlistTitle"><span aria-hidden="true">☆</span> <span data-i18n="wishlist.title">Wishlist</span></h2><p data-i18n="wishlist.intro">Les jeux que tu attends. Leur disponibilité est vérifiée dans notre catalogue.</p></div>
+        <button id="wishlistClose" type="button" class="wishlist-close" aria-label="Fermer" data-i18n-aria-label="app.close">×</button>
+      </header>
+      <form id="wishlistForm" class="wishlist-form">
+        <label class="sr-only" for="wishlistInput" data-i18n="wishlist.inputLabel">Nom du jeu attendu</label>
+        <input id="wishlistInput" type="text" maxlength="140" autocomplete="off" placeholder="Nom du jeu attendu…" data-i18n-placeholder="wishlist.placeholder" required>
+        <button id="wishlistAdd" type="submit" data-i18n="wishlist.add">+ Ajouter</button>
+      </form>
+      <p id="wishlistFeedback" class="wishlist-feedback" role="status" aria-live="polite"></p>
+      <div class="wishlist-list-header"><span id="wishlistSummary">0 en attente · 0 disponible</span><span data-i18n="wishlist.local">Enregistrée sur cet appareil</span></div>
+      <p id="wishlistEmpty" class="wishlist-empty" data-i18n="wishlist.empty">Aucun jeu suivi pour l’instant. Ajoute un titre ci-dessus.</p>
+      <ul id="wishlistList" class="wishlist-list" aria-label="Jeux attendus" data-i18n-aria-label="wishlist.list"></ul>
+      <footer class="wishlist-footer" data-i18n="wishlist.footer">Comparaison automatique au chargement du catalogue. Pas de notifications.</footer>
+    </div>
   </dialog>
 
   <dialog id="gameDialog" class="game-dialog"><button class="dialog-close" type="button" data-close-dialog aria-label="Fermer" data-i18n-aria-label="app.close">×</button><div id="dialogContent"></div></dialog>

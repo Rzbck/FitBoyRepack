@@ -38,6 +38,8 @@ jobs:
       - run: node --check site/assets/translations.js
       - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/app.js
+      - run: node --check site/assets/wishlist.js
+      - run: node tools/test_wishlist.mjs
       - run: node --check site/assets/details.js
 
   deploy:

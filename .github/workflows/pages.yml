@@ -39,6 +39,7 @@ jobs:
       - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/app.js
       - run: node --check site/assets/wishlist.js
+      - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
       - run: node --check site/assets/details.js
 
@@ -94,6 +95,9 @@ jobs:
           fetch(){ echo "GET ${base}/$1?health=${nonce}"; curl --fail --silent --show-error --location --retry 10 --retry-delay 3 --retry-all-errors --connect-timeout 10 --max-time 45 -H 'Cache-Control: no-cache, no-store, max-age=0' "${base}/$1?health=${nonce}" -o "$2"; }
           fetch index.html /tmp/index.html
           fetch favicon.svg /tmp/favicon.svg
+          fetch favicon-pulse.svg /tmp/favicon-pulse.svg
+          fetch favicon-gamepad.svg /tmp/favicon-gamepad.svg
+          fetch assets/favicon-animation.js /tmp/favicon-animation.js
           fetch assets/app.js /tmp/app.js
           fetch assets/game-identity.js /tmp/identity.js
           fetch assets/i18n.js /tmp/i18n.js
@@ -134,6 +138,10 @@ jobs:
           grep -q 'searchSuggestions' /tmp/index.html
           grep -Eq 'favicon[.]svg[?]v=[0-9]+' /tmp/index.html
           grep -q 'viewBox="0 0 64 64"' /tmp/favicon.svg
+          grep -Fq 'favicon-animation.js?v=1' /tmp/index.html
+          grep -Fq '#7c6cff' /tmp/favicon-gamepad.svg
+          grep -Fq '#7c6cff' /tmp/favicon-pulse.svg
+          grep -Fq 'prefers-reduced-motion' /tmp/favicon-animation.js
           grep -q 'searchCandidateIndexes' /tmp/app.js
           grep -q 'effectiveGenreLabels' /tmp/identity.js
           grep -q 'metadata_developer' /tmp/app.js

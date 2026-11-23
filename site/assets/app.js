@@ -357,12 +357,15 @@ function fillCompactSteamRating(target,rating){
   };
   const count=document.createElement('span');count.className='steam-mini-count';
   const abbreviated=new Intl.NumberFormat(locale(),{notation:'compact',maximumFractionDigits:1}).format(rating.total_reviews);
-  count.textContent=t('rating.votes',{count:abbreviated});
+  // Only the number stays visible on the artwork; the accessible label has the full count.
+  count.textContent=abbreviated;
   line.append(vote(false,percent),vote(true,negative),count);
   target.setAttribute('aria-label',t('rating.barLabel',{
     positive:formatNumber(Math.round(percent)),negative:formatNumber(Math.round(negative))
   })+' · '+t('rating.votes',{count:formatNumber(rating.total_reviews)}));
-  target.title=t('rating.votes',{count:formatNumber(rating.total_reviews)});
+  target.title=t('rating.barLabel',{
+    positive:formatNumber(Math.round(percent)),negative:formatNumber(Math.round(negative))
+  })+' · '+t('rating.votes',{count:formatNumber(rating.total_reviews)});
   target.replaceChildren(line);
 }
 function fillSteamRating(target,rating){
@@ -385,7 +388,7 @@ function fillSteamRating(target,rating){
   target.replaceChildren(heading,track,split);
 }
 function applyRatingLabel(card,game) {
-  const target=card.querySelector('.steam-rating');if(!target)return;
+  const target=card.querySelector('.cover-wrap > .steam-rating');if(!target)return;
   const rating=ratingFor(game);
   target.hidden=!rating;
   if(rating) fillCompactSteamRating(target,rating);
@@ -405,14 +408,15 @@ function renderCard(game,compact=false){
   const displayTitle=cardDisplayTitle(game);
   card.querySelector('.card-title').textContent=displayTitle;
   const releaseNode=card.querySelector('.card-date');
-  const verifiedRelease=game.game_release_date && releaseDate(game);
-  releaseNode.textContent=verifiedRelease
-    ? formatDate(game.game_release_date)
-    : t('card.releaseUnknown');
-  releaseNode.title=verifiedRelease
-    ? `${t('detail.releaseDate')}: ${formatDate(game.game_release_date)} · ${t('detail.published')}: ${formatDate(game.post_date)}`
-    : `${t('card.releaseUnknown')} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
-  card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
+  const verifiedRelease=Boolean(game.game_release_date && releaseDate(game));
+  releaseNode.hidden=!verifiedRelease;
+  releaseNode.textContent=verifiedRelease ? formatDate(game.game_release_date) : '';
+  if(verifiedRelease){
+    releaseNode.title=`${t('detail.releaseDate')}: ${formatDate(game.game_release_date)} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
+  }else releaseNode.removeAttribute('title');
+  const sizeNode=card.querySelector('.card-size');
+  sizeNode.textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
+  card.querySelector('.card-meta').hidden=!verifiedRelease&&!sizeNode.textContent;
   applyRatingLabel(card,game);
   if(displayTitle && displayTitle!==game.title) card.title=game.title;
   if(game.image_url){

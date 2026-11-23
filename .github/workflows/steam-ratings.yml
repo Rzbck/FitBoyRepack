@@ -2,7 +2,7 @@ name: Steam Reviews Enrichment
 
 on:
   schedule:
-    - cron: '46 */2 * * *'
+    - cron: '46 * * * *'
   workflow_dispatch:
     inputs:
       resolve_limit:

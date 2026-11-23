@@ -173,6 +173,14 @@ class SteamRatingBotTests(unittest.TestCase):
             {"title": "Talisman: Digital 5th Edition - Complete, Build 86150"},
             {"canonical_title": "Talisman: Digital 5th Edition"},
             {"name": "Talisman: Digital 5th Edition", "type": "game"}))
+        self.assertTrue(bot.store_verified(
+            {"title": "Screamer: Digital Deluxe Edition + 3 DLCs"},
+            {"canonical_title": "Screamer"},
+            {"name": "Screamer", "type": "game"}))
+        self.assertTrue(bot.store_verified(
+            {"title": "NBA 2K26: Superstar Edition - v5.0 + 22 DLCs"},
+            {"canonical_title": "NBA 2K26"},
+            {"name": "NBA 2K26", "type": "game"}))
 
     def test_store_search_requires_unique_exact_name(self):
         sample = {"title": "Cyberpunk 2077: Ultimate Edition - v2.5"}

@@ -244,3 +244,6 @@ button.wishlist-chip-label:hover{color:#d8f9e6;text-decoration:underline;text-un
   width:91px;min-width:91px;max-width:91px;flex:0 0 91px;
   white-space:nowrap;
 }
+
+/* Prevent the page-width jump when the catalog makes a scrollbar appear. */
+html{scrollbar-gutter:stable}

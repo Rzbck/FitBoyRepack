@@ -20,4 +20,21 @@ assert.equal(findWishlistGame('Anno 117',games),null,'do not match generic prefi
 assert.equal(findWishlistGame('Spirit City',games),null,'do not match partial name');
 assert.equal(findWishlistGame('Resident Evil 4 Remastered',games),null,'do not assume remaster');
 assert.ok(titleKeysForGame(games[0]).includes('anno 117 pax romana'));
-console.log('Wishlist matching: 11 checks OK');
+
+const edgeCases=[
+  ['   ANNO   117 :  PAX  ROMANA   ', 'anno-117'],
+  ['anno 117 pax romana', 'anno-117'],
+  ['  Resident    Evil 4   ', 'resident4'],
+  ['RÉSIDENT ÉVIL 4', 'resident4'],
+  ['SpIrIt  CITY : LOFI  SeSSionS', 'spiritnew'],
+  ['HOLLOW KNIGHT - SILKSONG', 'silksong'],
+];
+for(const [query,expected] of edgeCases){
+  assert.equal(findWishlistGame(query,games)?.id,expected,'normalized match: '+query);
+}
+assert.equal(findWishlistGame('Resident Evil 40',games),null,'numbers must not be dropped');
+assert.equal(findWishlistGame('Hollow Knight Silksong 2',games),null,'no broad fuzzy matches');
+assert.equal(findWishlistGame('Anno 117: Pax',games),null,'no incomplete prefix matches');
+console.log('Wishlist case/accents/whitespace/punctuation: 9 checks OK');
+
+console.log('Wishlist matching: 11 baseline checks OK');

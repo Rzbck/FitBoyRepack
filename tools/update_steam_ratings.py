@@ -173,6 +173,7 @@ def unpackaged_title(text):
     """Drop only release-package suffixes, never a sequel or arbitrary subtitle."""
     raw = clean_title(text)
     raw = re.split(r",\s*(?=v\d|build\b|update\b)", raw, maxsplit=1, flags=re.I)[0]
+    raw = re.split(r"\s+\+\s+\d+\s+dlcs?\b", raw, maxsplit=1, flags=re.I)[0]
     base = raw
     # A " - Blood Scales Edition" suffix is packaging; "Part II" is not.
     base = re.sub(r"\s+[–—-]\s+[^,]{1,40}\s+Edition$", "", base, flags=re.I)
@@ -210,7 +211,7 @@ def is_packaging_suffix(suffix):
     if re.search(r"\b\d+(?:st|nd|rd|th)?\b", suffix) and not suffix.startswith(("years ", "year ")):
         return False
     return bool(re.search(
-        r"\b(?:edition|bundle|upgrade|supporter|complete|deluxe|"
+        r"\b(?:edition|bundle|collection|upgrade|supporter|complete|deluxe|"
         r"bonus|soundtrack|ost|pack)\b", suffix))
 
 
@@ -266,10 +267,33 @@ def store_verified(game, metadata, details):
         return True
     # The Steam Store may add "Anniversary Edition" while the repack uses
     # "Ultimate Bundle": compare the shared base, but never a sequel/prologue.
-    source = normalize(unpackaged_title(game.get("title", ""))[0])
-    return any(source.startswith(name + " ")
-               and is_packaging_suffix(source[len(name) + 1:])
-               for name in store_names)
+    source_raw, source_base = unpackaged_title(game.get("title", ""))
+    source = normalize(source_raw)
+    for name in store_names:
+        if source.startswith(name + " ") and is_packaging_suffix(source[len(name) + 1:]):
+            return True
+    # A verified canonical title may include the Store's full descriptive
+    # subtitle ("Gladius - Relics of War", "Tavern Talk - A Cozy Visual Novel")
+    # while the repack names an edition of that SAME title. Never accept
+    # separate prologues, DLC, numbered sequels or chapters this way.
+    canonical = normalize((metadata or {}).get("canonical_title", ""))
+    storefront = normalize(details.get("name"))
+    if not canonical:
+        return False
+    denied = r"^(?:prologue|demo|dlc|expansion|part|episode|chapter|season|volume|vol|ii|iii|iv|\d+)\b"
+    if canonical == storefront:
+        shortened = normalize(source_base)
+        if (shortened != source and len(shortened.split()) >= 3
+                and storefront.startswith(shortened + " ")
+                and not re.match(denied, storefront[len(shortened) + 1:])):
+            return True
+    if storefront.startswith(canonical + " "):
+        tail = storefront[len(canonical) + 1:]
+        if (source.startswith(canonical + " ")
+                and is_packaging_suffix(source[len(canonical) + 1:])
+                and not re.match(denied, tail)):
+            return True
+    return False
 
 
 def exact_store_search(game, metadata, pause=1.5):

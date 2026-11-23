@@ -44,7 +44,10 @@ ratings=json.loads((ROOT/'data/steam-ratings.json').read_text(encoding='utf-8'))
 assert ratings.get('rating_version')==1 and isinstance(ratings.get('games'),dict)
 for game_id, row in ratings['games'].items():
     assert isinstance(game_id,str) and isinstance(row,dict)
-    assert row.get('status') in ('rated','no_reviews','pending','no_match','unavailable')
+    assert row.get('status') in ('rated','no_reviews','pending','no_match','unavailable','mismatch'), f'invalid Steam status for {game_id}'
+    if row.get('status')=='mismatch':
+        assert not row.get('steam_appid'), f'invalid Steam ID must not remain attached to {game_id}'
+        assert 'positive_percent' not in row, f'invalid Steam score must not be displayed for {game_id}'
     if row.get('status')=='rated':
         assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
 assert './assets/app.js' in p.scripts and './assets/details.js' in p.scripts and './assets/media-sanitize.js' in p.scripts

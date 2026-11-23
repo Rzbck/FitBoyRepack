@@ -820,6 +820,19 @@ function renderHealth(health){
 
 let lastCatalogPayload=null;
 let lastHealthPayload=null;
+function showCatalogTimestamp(generated){
+  if(!generated){
+    els.status.textContent=gameCountLabel(state.games.length);
+    els.status.removeAttribute('title');
+    return;
+  }
+  els.status.textContent=t('catalog.updatedCompact',{value:formatDateValue(generated,{
+    day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false
+  })});
+  els.status.title=t('catalog.updated',{value:formatDateValue(generated,{
+    dateStyle:'full',timeStyle:'short'
+  })});
+}
 async function loadCatalog(){
   try{
     const payload=await loadCatalogPayload();
@@ -827,10 +840,7 @@ async function loadCatalog(){
     state.games=payload.games.filter(g=>g?.id&&g?.title).map(prepareGame);
     state.byId=new Map(state.games.map(g=>[g.id,g]));
     setWishlistCatalog(state.games);
-    const generated=payload.generated_at;
-    els.status.textContent=generated
-      ?t('catalog.updated',{value:formatDateValue(generated,{dateStyle:'medium',timeStyle:'short'})})
-      :gameCountLabel(state.games.length);
+    showCatalogTimestamp(payload.generated_at);
     populateYears();
     buildTagIndex();
     updateLibraryUI();
@@ -865,7 +875,7 @@ async function loadCatalog(){
 document.addEventListener('fitboy:language-change',()=>{
   applyTranslations(document);
   if(lastCatalogPayload?.generated_at){
-    els.status.textContent=t('catalog.updated',{value:formatDateValue(lastCatalogPayload.generated_at,{dateStyle:'medium',timeStyle:'short'})});
+    showCatalogTimestamp(lastCatalogPayload.generated_at);
   }
   if(lastHealthPayload)renderHealth(lastHealthPayload);
   buildTagIndex();

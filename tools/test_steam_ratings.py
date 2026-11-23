@@ -7,6 +7,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 import update_steam_ratings as bot
+import steam_schedule_guard as cadence
+from datetime import datetime, timedelta, timezone
 
 
 def entity(appid):
@@ -243,6 +245,48 @@ class SteamRatingBotTests(unittest.TestCase):
             self.assertEqual(row["resolution"], "steam_store_exact")
             self.assertEqual(result["rated"], 1)
 
+
+
+    def test_redundant_cron_gate_only_skips_recent_schedules(self):
+        with tempfile.TemporaryDirectory() as root:
+            cache = Path(root) / "steam-ratings.json"
+            now = datetime(2026, 11, 23, 10, 30, tzinfo=timezone.utc)
+            cache.write_text(json.dumps({
+                "generated_at": (now - timedelta(minutes=20)).isoformat()
+            }), encoding="utf-8")
+            self.assertFalse(cadence.should_run("schedule", cache, now))
+            self.assertTrue(cadence.should_run("workflow_dispatch", cache, now))
+            cache.write_text(json.dumps({
+                "generated_at": (now - timedelta(minutes=42)).isoformat()
+            }), encoding="utf-8")
+            self.assertTrue(cadence.should_run("schedule", cache, now))
+            cache.write_text("{invalid", encoding="utf-8")
+            self.assertTrue(cadence.should_run("schedule", cache, now))
+
+    def test_non_game_app_never_gets_score(self):
+        with tempfile.TemporaryDirectory() as root:
+            folder = Path(root)
+            source, meta, cache = [folder / name for name in
+                                   ("games.json", "meta.json", "cache.json")]
+            source.write_text(json.dumps({"games": [{
+                "id": "expansion", "title": "Example Expansion",
+                "post_date": "2026-11-01T00:00:00Z"}]}), encoding="utf-8")
+            meta.write_text(json.dumps({"metadata_version": 1, "games": {
+                "expansion": {"evidence_urls": ["https://www.wikidata.org/wiki/Q456"]}}}),
+                encoding="utf-8")
+            with patch.object(bot, "CATALOG", source), patch.object(bot, "METADATA", meta), \
+                 patch.object(bot, "OUTPUT", cache), \
+                 patch.object(bot, "wikidata_entities", return_value={"Q456": entity(555)}), \
+                 patch.object(bot, "store_details",
+                     return_value={"type": "dlc", "name": "Example Expansion"}), \
+                 patch.object(bot, "collect_steam_reviews") as reviews:
+                result = bot.update(Namespace(
+                    resolve_limit=10, reviews_limit=10, fallback_limit=0,
+                    store_fallback_limit=0, pause=0, dry_run=False))
+            row = json.loads(cache.read_text(encoding="utf-8"))["games"]["expansion"]
+            self.assertEqual(row["status"], "mismatch")
+            self.assertEqual(result["mismatched"], 1)
+            reviews.assert_not_called()
 
 
 if __name__ == "__main__":

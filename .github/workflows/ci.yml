@@ -70,6 +70,8 @@ jobs:
       - run: node --check site/assets/i18n.js
       - run: node --check site/assets/translations.js
       - run: node --check site/assets/app.js
+      - run: node --check site/assets/wishlist.js
+      - run: node tools/test_wishlist.mjs
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: node --check site/assets/media-preview-v7.js

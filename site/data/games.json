@@ -1,9 +1,114 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-22T21:48:35.770722+00:00",
+  "generated_at": "2026-11-23T02:42:41.375830+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-22T11:55:32.162479+00:00",
   "games": [
+    {
+      "id": "anno-117-pax-romana",
+      "title": "Anno 117: Pax Romana – Gold Edition, v3.0.1733841 + 6 DLCs + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/anno-117-pax-romana/",
+      "image_url": "https://i4.imageban.ru/out/2026/04/09/ceea9c016152c4a0b412f448cdb9c498.jpg",
+      "post_date": "2026-11-23T03:30:23+03:00",
+      "genres": [
+        "Management",
+        "Strategy",
+        "Isometric",
+        "3D"
+      ],
+      "repack_size": "51.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/a0/33/a033d4ba-677a-4a10-ad96-c2b5e69b0817.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/33/a033d4ba-677a-4a10-ad96-c2b5e69b0817.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9d/b0/9db0db5a-0b16-425f-b4e1-f3102209cc45.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9d/b0/9db0db5a-0b16-425f-b4e1-f3102209cc45.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fb/ce/fbce2fcf-1c8c-4f19-bd10-c57fb59d111c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fb/ce/fbce2fcf-1c8c-4f19-bd10-c57fb59d111c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fd/9d/fd9d1752-ad14-436c-8ead-f0658caaa039.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/9d/fd9d1752-ad14-436c-8ead-f0658caaa039.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/5f/905fab31-212d-4054-aed0-5de33277d15d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/5f/905fab31-212d-4054-aed0-5de33277d15d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b9/0c/b90cbd65-4ba8-405a-ba5d-5181e1829363.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b9/0c/b90cbd65-4ba8-405a-ba5d-5181e1829363.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "As governor, how you build and govern will shape your story, your citizens’ destiny, and your provinces’ future. Will you cooperate with other governors or prove your military prowess by challenging your rivals? The cost of peace is yours to decide.",
+        "game_features": [
+          "EXPERIENCE THE PREMIER BUILDER – Build your provinces with unmatched detail, flexibility, and scale. Watch kids chase dogs through the streets or thousands cheer in the arena. Build upon the land that you see, from the beautiful heartland of Latium to the mysterious Celtic wetlands of Albion… where no civilized Roman wants to be.",
+          "BECOME A ROMAN GOVERNOR – Design the cities of your dreams at the peak of the Roman Empire as you balance your people’s needs with the relentless demands of the emperor. Forge alliances across the empire or showcase your might with strategic land battles and naval combat. You may even defy the emperor himself – but not without consequences.",
+          "HOOSE THE FATE OF YOUR PROVINCES – Every decision you make as governor matters. Will you honor local Celtic culture or enforce Roman traditions? Grow your provinces through diplomacy and commerce or conquer through military strength. Your choices will shape not only the future of your citizens and your provinces, but your own story as well."
+        ],
+        "repack_features": [
+          "Based on Steam BuildID 20373765 release: 112.7 GB",
+          "Bonus OST (419 MB) added, thanks to SittingOnClouds!",
+          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v1.5 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v1.4.1.1629710; 2 DLCs (Builder Pack + Year 1 Pass Cosmetics) are included and activated. All other DLCs are either not released or not unlocked",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with all components!",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional videos pack (contains 4K videos and credits), bonus OST & voiceover packs you don’t need. English VOs and 1080p videos are included by default",
+          "Significantly smaller archive size (compressed from cumulative 113.1 to 32.7~44.3 GB, depending on selected components)",
+          "Installation takes 7-40 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 113.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
+    {
+      "id": "771-smile-and-work",
+      "title": "771: Smile and Work",
+      "source_url": "https://fitgirl-repacks.site/771-smile-and-work/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/23/c7265c58ec1571e410194cd149407e3a.jpg",
+      "post_date": "2026-11-23T02:28:44+03:00",
+      "genres": [
+        "Adventure",
+        "Exploration",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "705 MB"
+    },
+    {
+      "id": "boxroom",
+      "title": "BOXROOM",
+      "source_url": "https://fitgirl-repacks.site/boxroom/",
+      "image_url": "https://i8.imageban.ru/out/2026/11/23/c8d4a776a3d8649edb7fe98174d5e05e.jpg",
+      "post_date": "2026-11-23T01:22:14+03:00",
+      "genres": [
+        "Lifestyle",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "1.2 GB"
+    },
     {
       "id": "goat-simulator-3",
       "title": "Goat Simulator 3: Multiversal Traveler’s Bundle, v1.3.0.0_517119 + 7 DLCs/Bonuses",
@@ -76670,83 +76775,6 @@
           "Installation takes 6-18 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 13 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "anno-117-pax-romana",
-      "title": "Anno 117: Pax Romana – v1.4.1.1629710 + 2 DLCs + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/anno-117-pax-romana/",
-      "image_url": "https://i4.imageban.ru/out/2026/04/09/ceea9c016152c4a0b412f448cdb9c498.jpg",
-      "post_date": "2026-04-09T21:07:23+03:00",
-      "genres": [
-        "Management",
-        "Strategy",
-        "Isometric",
-        "3D"
-      ],
-      "repack_size": "32.7 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/a0/33/a033d4ba-677a-4a10-ad96-c2b5e69b0817.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a0/33/a033d4ba-677a-4a10-ad96-c2b5e69b0817.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9d/b0/9db0db5a-0b16-425f-b4e1-f3102209cc45.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9d/b0/9db0db5a-0b16-425f-b4e1-f3102209cc45.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fb/ce/fbce2fcf-1c8c-4f19-bd10-c57fb59d111c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fb/ce/fbce2fcf-1c8c-4f19-bd10-c57fb59d111c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fd/9d/fd9d1752-ad14-436c-8ead-f0658caaa039.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fd/9d/fd9d1752-ad14-436c-8ead-f0658caaa039.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/90/5f/905fab31-212d-4054-aed0-5de33277d15d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/90/5f/905fab31-212d-4054-aed0-5de33277d15d.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b9/0c/b90cbd65-4ba8-405a-ba5d-5181e1829363.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b9/0c/b90cbd65-4ba8-405a-ba5d-5181e1829363.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "As governor, how you build and govern will shape your story, your citizens’ destiny, and your provinces’ future. Will you cooperate with other governors or prove your military prowess by challenging your rivals? The cost of peace is yours to decide.",
-        "game_features": [
-          "EXPERIENCE THE PREMIER BUILDER – Build your provinces with unmatched detail, flexibility, and scale. Watch kids chase dogs through the streets or thousands cheer in the arena. Build upon the land that you see, from the beautiful heartland of Latium to the mysterious Celtic wetlands of Albion… where no civilized Roman wants to be.",
-          "BECOME A ROMAN GOVERNOR – Design the cities of your dreams at the peak of the Roman Empire as you balance your people’s needs with the relentless demands of the emperor. Forge alliances across the empire or showcase your might with strategic land battles and naval combat. You may even defy the emperor himself – but not without consequences.",
-          "HOOSE THE FATE OF YOUR PROVINCES – Every decision you make as governor matters. Will you honor local Celtic culture or enforce Roman traditions? Grow your provinces through diplomacy and commerce or conquer through military strength. Your choices will shape not only the future of your citizens and your provinces, but your own story as well."
-        ],
-        "repack_features": [
-          "Based on Steam BuildID 20373765 release: 112.7 GB",
-          "Bonus OST (419 MB) added, thanks to SittingOnClouds!",
-          "Hypervisor Bypass (INTEL & AMD) by DenuvOwO + Goldberg emu applied over",
-          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
-          "VBS.cmd script v1.5 added",
-          "Custom launcher added for easier HV steps processing",
-          "Game version: v1.4.1.1629710; 2 DLCs (Builder Pack + Year 1 Pass Cosmetics) are included and activated. All other DLCs are either not released or not unlocked",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with all components!",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of optional videos pack (contains 4K videos and credits), bonus OST & voiceover packs you don’t need. English VOs and 1080p videos are included by default",
-          "Significantly smaller archive size (compressed from cumulative 113.1 to 32.7~44.3 GB, depending on selected components)",
-          "Installation takes 7-40 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 113.1 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

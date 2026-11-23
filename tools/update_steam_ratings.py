@@ -201,9 +201,8 @@ def title_variants(text):
 def game_title_variants(game, metadata=None):
     raw = title_variants(game.get("title", ""))
     canonical = (metadata or {}).get("canonical_title", "")
-    # Metadata can incorrectly point at another sequel (Modern Warfare II/III).
-    # A canonical title is an alias only when it is independently consistent
-    # with the repack's original title, including recognized edition packaging.
+    # Metadata can point at another sequel/prologue. Allow it only if the
+    # original repack title independently supports the same game identity.
     extra = title_variants(canonical) if canonical else set()
     if raw & extra:
         return raw | extra
@@ -212,13 +211,18 @@ def game_title_variants(game, metadata=None):
         root = normalize(canonical)
         if source.startswith(root + " "):
             suffix = source[len(root) + 1:]
-            edition = re.match(
-                r"^(?:(?:digital )?(?:deluxe|ultimate|superstar|complete|"
-                r"gold|premium|legendary|special|definitive|standard|"
-                r"collectors|blood scales)) edition\b", suffix)
-            if edition:
+            # The title must continue as explicitly packaged content, not
+            # "Part II", "Prologue", "Chapter 2", etc.
+            structural = re.match(
+                r"^(?:part|chapter|episode|volume|vol|prologue|sequel|"
+                r"ii|iii|iv|vi|vii|viii|\d+)\b", suffix)
+            packaging = re.search(
+                r"\b(?:edition|bundle|upgrade|supporter|complete|deluxe|"
+                r"bonus|soundtrack|ost|pack)\b", suffix)
+            if packaging and not structural:
                 return raw | extra
     return raw
+
 
 
 def store_game_title(game, metadata=None):
@@ -248,7 +252,8 @@ def store_details(appid, pause=1.5):
 
 def store_verified(game, metadata, details):
     return (details.get("type") == "game"
-            and normalize(details.get("name")) in game_title_variants(game, metadata))
+            and bool(title_variants(details.get("name"))
+                     & game_title_variants(game, metadata)))
 
 
 def exact_store_search(game, metadata, pause=1.5):
@@ -267,7 +272,7 @@ def exact_store_search(game, metadata, pause=1.5):
             appid = int(item["id"])
         except (TypeError, ValueError, KeyError):
             continue
-        if appid > 0 and normalize(item.get("name")) in keys:
+        if appid > 0 and title_variants(item.get("name")) & keys:
             exact_ids.add(appid)
     # Ambiguity is safer than assigning the score of an unrelated game.
     return next(iter(exact_ids)) if len(exact_ids) == 1 else None

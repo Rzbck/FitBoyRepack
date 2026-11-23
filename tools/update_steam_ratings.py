@@ -201,17 +201,33 @@ def title_variants(text):
 def game_title_variants(game, metadata=None):
     raw = title_variants(game.get("title", ""))
     canonical = (metadata or {}).get("canonical_title", "")
-    # Metadata may refer to a *different sequel*. Do not trust a QID alone.
+    # Metadata can incorrectly point at another sequel (Modern Warfare II/III).
+    # A canonical title is an alias only when it is independently consistent
+    # with the repack's original title, including recognized edition packaging.
     extra = title_variants(canonical) if canonical else set()
-    return raw | extra if raw & extra else raw
+    if raw & extra:
+        return raw | extra
+    if canonical:
+        source = normalize(clean_title(game.get("title", "")))
+        root = normalize(canonical)
+        if source.startswith(root + " "):
+            suffix = source[len(root) + 1:]
+            edition = re.match(
+                r"^(?:(?:digital )?(?:deluxe|ultimate|superstar|complete|"
+                r"gold|premium|legendary|special|definitive|standard|"
+                r"collectors|blood scales)) edition\b", suffix)
+            if edition:
+                return raw | extra
+    return raw
 
 
 def store_game_title(game, metadata=None):
     primary = unpackaged_title(game.get("title", ""))[1]
     canonical = (metadata or {}).get("canonical_title", "")
-    candidates = [primary]
-    if canonical and game_title_variants(game, metadata) & title_variants(canonical):
+    candidates = []
+    if canonical and normalize(canonical) in game_title_variants(game, metadata):
         candidates.append(unpackaged_title(canonical)[1])
+    candidates.append(primary)
     return next((name for name in candidates if 3 <= len(name) <= 110), "")
 
 

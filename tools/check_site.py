@@ -88,7 +88,11 @@ for release_game in catalog['games']:
     expected_year = int(date[:4]) if re.match(r'^20[0-9]{2}', date) else None
     assert release_game.get('year') == expected_year, f'wrong release year for {release_game["id"]}'
 assert 'releaseNode.textContent=verifiedRelease' in app
-assert "t('card.releaseUnknown')" in app
+assert 'releaseNode.hidden=!verifiedRelease' in app, 'unknown release date must be completely hidden'
+assert "releaseNode.textContent=verifiedRelease ? formatDate(game.game_release_date) : ''" in app
+assert 'cover-wrap > .steam-rating' in app, 'Steam badges must attach to the cover'
+assert '<div class="steam-rating steam-cover-badge" hidden></div></div><div class="card-body">' in html
+assert '<div class="steam-rating" hidden></div><div class="genre-row">' not in html, 'body Steam rating must not remain'
 
 assert search['prefix_min'] == 2 and search['prefix_max'] >= search['prefix_min']
 assert search['gram_size'] == 3

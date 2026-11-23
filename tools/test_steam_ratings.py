@@ -181,6 +181,36 @@ class SteamRatingBotTests(unittest.TestCase):
             {"title": "NBA 2K26: Superstar Edition - v5.0 + 22 DLCs"},
             {"canonical_title": "NBA 2K26"},
             {"name": "NBA 2K26", "type": "game"}))
+        packaging_cases = [
+            ("Two Point Campus: Brainy Bundle, v0.0.13 + 4 DLCs", "Two Point Campus"),
+            ("Monster Hunter Wilds: Premium Deluxe Edition - v1.04", "Monster Hunter Wilds"),
+            ("Wartales: The Mercenaries Edition, v1.0", "Wartales"),
+            ("RUSHING BEAT X: Return Of Brawl Brothers + Bonus OST",
+             "RUSHING BEAT X: Return Of Brawl Brothers"),
+            ("Sid Meier's Civilization VII: Settler's Edition - v1.3",
+             "Sid Meier's Civilization VII"),
+            ("SONIC X SHADOW GENERATIONS: Digital Deluxe Upgrade - v1.10",
+             "SONIC X SHADOW GENERATIONS"),
+            ("Gecko Gods: Deluxe! - v2719", "Gecko Gods"),
+            ("Age of Empires IV: Ultimate Bundle - v16.1",
+             "Age of Empires IV: Anniversary Edition"),
+        ]
+        for title, steam_name in packaging_cases:
+            with self.subTest(title=title):
+                self.assertTrue(bot.store_verified(
+                    {"title": title}, {"canonical_title": steam_name},
+                    {"name": steam_name, "type": "game"}))
+        self.assertFalse(bot.store_verified(
+            {"title": "I Am Jesus Christ - v1.1.8"},
+            {"canonical_title": "I Am Jesus Christ: Prologue"},
+            {"name": "I Am Jesus Christ: Prologue", "type": "game"}))
+        self.assertFalse(bot.store_verified(
+            {"title": "Truck Mechanic: Dangerous Paths"},
+            {"canonical_title": "Truck Mechanic: Dangerous Paths - Prologue"},
+            {"name": "Truck Mechanic: Dangerous Paths - Prologue", "type": "game"}))
+        self.assertFalse(bot.store_verified(
+            {"title": "Talisman: Digital 5th Edition"},
+            {}, {"name": "Talisman", "type": "game"}))
 
     def test_store_search_requires_unique_exact_name(self):
         sample = {"title": "Cyberpunk 2077: Ultimate Edition - v2.5"}

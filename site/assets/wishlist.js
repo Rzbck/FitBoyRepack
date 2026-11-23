@@ -104,8 +104,11 @@ function buildTitleIndex() {
   });
 }
 function foundGame(item) {
-  const match = item.matchedId && byId.get(item.matchedId);
-  return match || byTitle.get(keyOf(item.title))?.[0] || null;
+  const key = keyOf(item.title);
+  const previous = item.matchedId && byId.get(item.matchedId);
+  // A stale ID alone must not make a renamed/unrelated entry appear available.
+  if (previous && titleKeysForGame(previous).includes(key)) return previous;
+  return byTitle.get(key)?.[0] || null;
 }
 function syncMatches() {
   if (!catalogReady) return;

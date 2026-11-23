@@ -223,7 +223,7 @@ def game_title_variants(game, metadata=None):
     if raw & extra:
         return raw | extra
     if canonical:
-        source = normalize(clean_title(game.get("title", "")))
+        source = normalize(unpackaged_title(game.get("title", ""))[0])
         root = normalize(canonical)
         if source.startswith(root + " "):
             suffix = source[len(root) + 1:]
@@ -261,14 +261,15 @@ def store_details(appid, pause=1.5):
 def store_verified(game, metadata, details):
     if details.get("type") != "game":
         return False
-    name = normalize(details.get("name"))
-    if title_variants(details.get("name")) & game_title_variants(game, metadata):
+    store_names = title_variants(details.get("name"))
+    if store_names & game_title_variants(game, metadata):
         return True
-    # Store may name the base game while the repack title includes the edition.
-    # This must be a *prefix followed by packaging*, never another sequel.
-    source = normalize(clean_title(game.get("title", "")))
-    return bool(name and source.startswith(name + " ")
-                and is_packaging_suffix(source[len(name) + 1:]))
+    # The Steam Store may add "Anniversary Edition" while the repack uses
+    # "Ultimate Bundle": compare the shared base, but never a sequel/prologue.
+    source = normalize(unpackaged_title(game.get("title", ""))[0])
+    return any(source.startswith(name + " ")
+               and is_packaging_suffix(source[len(name) + 1:])
+               for name in store_names)
 
 
 def exact_store_search(game, metadata, pause=1.5):
@@ -287,7 +288,7 @@ def exact_store_search(game, metadata, pause=1.5):
             appid = int(item["id"])
         except (TypeError, ValueError, KeyError):
             continue
-        if appid > 0 and title_variants(item.get("name")) & keys:
+        if appid > 0 and store_verified(game, metadata, {"name": item.get("name"), "type": "game"}):
             exact_ids.add(appid)
     # Ambiguity is safer than assigning the score of an unrelated game.
     return next(iter(exact_ids)) if len(exact_ids) == 1 else None

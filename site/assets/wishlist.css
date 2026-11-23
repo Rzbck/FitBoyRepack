@@ -232,6 +232,7 @@ button.wishlist-chip-label:hover{color:#d8f9e6;text-decoration:underline;text-un
 .compact-meta #healthBadge{
   box-sizing:border-box;justify-content:center;
   width:87px;min-width:87px;max-width:87px;flex:0 0 87px;
+  height:27px;min-height:27px;max-height:27px;align-items:center;
   white-space:nowrap;
 }
 .compact-meta #healthBadge[hidden]{

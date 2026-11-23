@@ -404,7 +404,14 @@ function renderCard(game,compact=false){
   applyTranslations(card);
   const displayTitle=cardDisplayTitle(game);
   card.querySelector('.card-title').textContent=displayTitle;
-  card.querySelector('.card-date').textContent=formatDate(game.post_date);
+  const releaseNode=card.querySelector('.card-date');
+  const verifiedRelease=game.game_release_date && releaseDate(game);
+  releaseNode.textContent=verifiedRelease
+    ? formatDate(game.game_release_date)
+    : t('card.releaseUnknown');
+  releaseNode.title=verifiedRelease
+    ? `${t('detail.releaseDate')}: ${formatDate(game.game_release_date)} · ${t('detail.published')}: ${formatDate(game.post_date)}`
+    : `${t('card.releaseUnknown')} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
   card.querySelector('.card-size').textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
   applyRatingLabel(card,game);
   if(displayTitle && displayTitle!==game.title) card.title=game.title;

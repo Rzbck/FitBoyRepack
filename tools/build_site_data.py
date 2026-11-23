@@ -241,7 +241,7 @@ def main():
             "id": game_id,
             "title": title,
             "detail_path": detail_path,
-            "year": year_from_date(game.get("post_date")),
+            "year": year_from_date(verified_metadata.get("release_date") if verified_metadata else None),
             "size_mb": parse_size_mb(game.get("repack_size")),
             "details_ready": details_ready,
             "has_description": bool(description),

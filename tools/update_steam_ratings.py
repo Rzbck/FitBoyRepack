@@ -346,7 +346,7 @@ def update(args):
     for obsolete in set(records) - current_ids:
         del records[obsolete]
     changes = 0
-    # Process latest additions first, without starving the old backlog.
+
     games.sort(key=lambda game: str(game.get("post_date", "")), reverse=True)
     by_id = {str(game["id"]): game for game in games}
     known_qids = {}
@@ -355,18 +355,18 @@ def update(args):
         if qid:
             known_qids[game_id] = qid
 
-    # Query Wikidata in official <=50-entity batches, no fuzzy guesses.
+    # Wikidata P1733 is only a *candidate*: Steam itself verifies name and type.
     candidates = [(game_id, qid) for game_id, qid in known_qids.items()
                   if eligible_to_resolve(records.get(game_id), qid, now)][:args.resolve_limit]
     for offset in range(0, len(candidates), 25):
         batch = candidates[offset:offset + 25]
         try:
             entities = wikidata_entities(list(dict.fromkeys(qid for _, qid in batch)))
-        except Cooldown as e:
-            LOGGER.warning("%s. Stopping safely.", e)
+        except Cooldown as error:
+            LOGGER.warning("%s. Stopping Wikidata lookups safely.", error)
             break
-        except (HTTPError, URLError, ValueError) as e:
-            LOGGER.warning("Wikidata unavailable; no destructive state changes: %s", e)
+        except (HTTPError, URLError, ValueError) as error:
+            LOGGER.warning("Wikidata unavailable; preserving progress: %s", error)
             break
         for game_id, qid in batch:
             appid = steam_id_from_entity(entities.get(qid, {}))
@@ -384,18 +384,19 @@ def update(args):
                                     "lookup_checked_at": iso(now)}
             changes += 1
 
-    # Conservative fallback for records still lacking a verified Wikidata ID.
+    # Existing exact-title Wikidata fallback, still bounded and conservative.
     fallback = [(game_id, game) for game_id, game in by_id.items()
-                if game_id not in known_qids and days_since(records.get(game_id, {}).get("lookup_checked_at"), now) >= 60]
+                if game_id not in known_qids
+                and days_since(records.get(game_id, {}).get("lookup_checked_at"), now) >= 60]
     for game_id, game in fallback[:args.fallback_limit]:
         title = clean_title(game.get("title"))
         try:
             result = exact_title_entity(title)
-        except Cooldown as e:
-            LOGGER.warning("%s. Stopping safely.", e)
+        except Cooldown as error:
+            LOGGER.warning("%s. Stopping title search safely.", error)
             break
-        except (HTTPError, URLError, ValueError) as e:
-            LOGGER.warning("Wikidata title lookup unavailable: %s", e)
+        except (HTTPError, URLError, ValueError) as error:
+            LOGGER.warning("Wikidata title lookup unavailable: %s", error)
             break
         if result:
             qid, appid = result
@@ -411,63 +412,178 @@ def update(args):
             records[game_id] = {"status": "no_match", "lookup_checked_at": iso(now)}
         changes += 1
 
-    # Prefer brand new/unrated games, then refresh existing ratings after 28d.
-    review_queue = [g for g in games if
-                    records.get(str(g["id"]), {}).get("steam_appid") and
-                    days_since(records[str(g["id"])].get("review_checked_at"), now) >= 28]
-    review_queue.sort(key=lambda g: (
-        bool(records[str(g["id"])].get("review_checked_at")),
-        -datetime.fromisoformat(str(g.get("post_date") or "1970-01-01").replace("Z", "+00:00")).timestamp()
-        if re.match(r"^\d{4}-\d\d-\d\d", str(g.get("post_date"))) else 0,
+    # Storefront app details are authoritative for *what* the ID represents.
+    store_calls = 0
+    store_search_calls = 0
+    store_cache = {}
+    store_budget = getattr(args, "store_details_limit", STORE_DETAILS_LIMIT)
+
+    def check_identity(game, row):
+        nonlocal store_calls, changes
+        if (row.get("steam_appid") and row.get("store_verified_at")
+                and days_since(row["store_verified_at"], now) < STORE_VERIFY_AGE_DAYS):
+            return True
+        if store_calls >= store_budget:
+            return None
+        appid = row.get("steam_appid")
+        if not appid:
+            return False
+        if appid not in store_cache:
+            # One request per distinct app ID, shared across duplicate catalog entries.
+            store_calls += 1
+            store_cache[appid] = store_details(appid)
+        details = store_cache[appid]
+        if not store_verified(game, metadata.get(str(game["id"])), details):
+            LOGGER.warning("REJECTED Steam ID %s for %s: Steam says %s (%s)",
+                           appid, game["id"], details["name"], details["type"])
+            invalidate_match(row, "wrong_game_or_app_type")
+            changes += 1
+            return False
+        row["store_verified_at"] = iso(now)
+        row["steam_store_name"] = details["name"]
+        row.pop("identity_issue", None)
+        changes += 1
+        return True
+
+    # Audit older cached scores first. Prioritize suspicious verified-metadata
+    # collisions (e.g., Modern Warfare II linked to III) before regular scores.
+    legacy = [game for game in games
+              if records.get(str(game["id"]), {}).get("status") == "rated"
+              and not records[str(game["id"])].get("store_verified_at")]
+    legacy.sort(key=lambda game: (
+        bool(title_variants(game.get("title")) &
+             title_variants(metadata.get(str(game["id"]), {}).get("canonical_title"))),
+        str(game.get("post_date", "")),
     ))
-    cached = {}
+    for game in legacy[:getattr(args, "store_audit_limit", STORE_AUDIT_LIMIT)]:
+        try:
+            check_identity(game, records[str(game["id"])])
+        except Cooldown as error:
+            LOGGER.warning("Store throttled during cache audit (%s); preserving remaining scores", error)
+            break
+        except (HTTPError, URLError, ValueError) as error:
+            LOGGER.warning("Store identity audit unavailable for %s: %s", game["id"], error)
+            break
+
+    # Secondary recovery route: exact Steam Store search, including games that
+    # have a Wikidata item but no P1733. No fuzzy scores, no API keys.
+    missing = [game for game in games
+               if not records.get(str(game["id"]), {}).get("steam_appid")
+               and days_since(records.get(str(game["id"]), {}).get("store_lookup_checked_at"), now)
+                   >= STORE_LOOKUP_AGE_DAYS]
+    missing.sort(key=lambda game: records.get(str(game["id"]), {}).get("status")
+                 not in ("mismatch", "no_match"))
+    for game in missing[:getattr(args, "store_fallback_limit", STORE_FALLBACK_LIMIT)]:
+        if store_calls >= store_budget:
+            break
+        game_id = str(game["id"])
+        row = records.setdefault(game_id, {})
+        try:
+            appid = exact_store_search(game, metadata.get(game_id))
+            store_search_calls += 1
+            if appid:
+                # Store search shows only a name; validate type and identity again.
+                if appid not in store_cache:
+                    store_calls += 1
+                    store_cache[appid] = store_details(appid)
+                details = store_cache[appid]
+                if store_verified(game, metadata.get(game_id), details):
+                    row.update({
+                        "steam_appid": appid,
+                        "steam_store_name": details["name"],
+                        "store_verified_at": iso(now),
+                        "resolution": "steam_store_exact",
+                        "status": "pending",
+                    })
+                    row.pop("identity_issue", None)
+                else:
+                    LOGGER.warning("Rejected fallback %s for %s (%s)",
+                                   appid, game_id, details["name"])
+                    row.setdefault("status", "no_match")
+            else:
+                row.setdefault("status", "no_match")
+        except Cooldown as error:
+            LOGGER.warning("Steam Store asked for slowdown (%s); keeping pending matches", error)
+            break
+        except (HTTPError, URLError, ValueError) as error:
+            LOGGER.warning("Steam Store search unavailable for %s: %s", game_id, error)
+            break
+        row["store_lookup_checked_at"] = iso(now)
+        changes += 1
+
+    # Prefer new/unrated games. Recheck existing scores at most every 28 days.
+    review_queue = [game for game in games
+                    if records.get(str(game["id"]), {}).get("steam_appid")
+                    and days_since(records[str(game["id"])].get("review_checked_at"), now) >= 28]
+    review_queue.sort(key=lambda game: (
+        bool(records[str(game["id"])].get("review_checked_at")),
+        -datetime.fromisoformat(str(game.get("post_date") or "1970-01-01").replace("Z", "+00:00")).timestamp()
+        if re.match(r"^\d{4}-\d\d-\d\d", str(game.get("post_date"))) else 0,
+    ))
+    review_cache = {}
     for row in records.values():
         appid = row.get("steam_appid")
-        if appid and row.get("review_checked_at") and days_since(row["review_checked_at"], now) < 28:
-            cached[appid] = {key: row[key] for key in
-                              ("status", "positive", "negative", "total_reviews", "positive_percent", "review_checked_at") if key in row}
+        if appid and row.get("store_verified_at") and row.get("review_checked_at") and (
+                days_since(row["review_checked_at"], now) < 28):
+            review_cache[appid] = {key: row[key] for key in
+                                  ("status", "positive", "negative", "total_reviews",
+                                   "positive_percent", "review_checked_at") if key in row}
+
     attempted = 0
     for game in review_queue:
         if attempted >= args.reviews_limit:
             break
         game_id = str(game["id"])
         row = records[game_id]
+        try:
+            identity = check_identity(game, row)
+        except Cooldown as error:
+            LOGGER.warning("Store identity throttled (%s); stopping safely.", error)
+            break
+        except (HTTPError, URLError, ValueError) as error:
+            LOGGER.warning("Store identity unavailable for %s: %s", game_id, error)
+            break
+        if identity is None:
+            LOGGER.info("Steam Store verification budget reached; deferred remaining games")
+            break
+        if identity is False:
+            continue
         appid = row["steam_appid"]
-        if appid in cached:
-            row.update(cached[appid])
+        if appid in review_cache:
+            row.update(review_cache[appid])
             changes += 1
             continue
         try:
             review = collect_steam_reviews(appid, args.pause)
-        except Cooldown as e:
-            LOGGER.warning("%s. Stopping safely.", e)
+        except Cooldown as error:
+            LOGGER.warning("%s. Stopping safely.", error)
             break
-        except HTTPError as e:
-            # An invalid/missing Steam ID must not block the backlog behind it.
-            # 403/429/503 are already handled as Cooldown in get_json.
-            if e.code in (400, 404):
-                LOGGER.warning("Steam app %s is unavailable (%s); skipping", appid, e.code)
+        except HTTPError as error:
+            if error.code in (400, 404):
+                LOGGER.warning("Steam app %s unavailable (%s); skipping", appid, error.code)
                 row.update({"status": "unavailable", "review_checked_at": iso(utc_now())})
                 changes += 1
                 continue
-            LOGGER.warning("Steam temporary HTTP problem for app %s: %s; yielding", appid, e)
+            LOGGER.warning("Steam temporary HTTP problem for %s: %s", appid, error)
             break
-        except (URLError, ValueError, TypeError) as e:
-            LOGGER.warning("Review fetch failed for app %s: %s; yielding", appid, e)
+        except (URLError, ValueError, TypeError) as error:
+            LOGGER.warning("Review fetch failed for app %s: %s", appid, error)
             break
         row.update(review)
-        cached[appid] = review
+        review_cache[appid] = review
         attempted += 1
         changes += 1
 
-    # The public file is a small cache; only public scores, never review texts.
     stats = {
         "catalog_games": len(games),
         "rated": sum(row.get("status") == "rated" for row in records.values()),
         "no_reviews": sum(row.get("status") == "no_reviews" for row in records.values()),
         "unmatched": sum(row.get("status") == "no_match" for row in records.values()),
+        "mismatched": sum(row.get("status") == "mismatch" for row in records.values()),
         "pending": sum(row.get("status") == "pending" for row in records.values()),
         "steam_calls_this_run": attempted,
+        "store_checks_this_run": store_calls,
+        "store_searches_this_run": store_search_calls,
     }
     LOGGER.info("Steam: %s", stats)
     if not args.dry_run and changes:
@@ -475,7 +591,8 @@ def update(args):
         state["counts"] = stats
         OUTPUT.parent.mkdir(parents=True, exist_ok=True)
         temp = OUTPUT.with_suffix(".json.tmp")
-        temp.write_text(json.dumps(state, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
+        temp.write_text(json.dumps(state, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n",
+                        encoding="utf-8")
         temp.replace(OUTPUT)
         LOGGER.info("Saved %s updated records to %s", changes, OUTPUT)
     else:

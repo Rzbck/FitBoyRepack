@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,4 +32,4 @@ if __name__ == "__main__":
     event = os.environ.get("GITHUB_EVENT_NAME", "")
     run = should_run(event)
     print(f"run={'true' if run else 'false'}")
-    print(f"Steam gate: {'RUN' if run else 'SKIP recent successful batch'}; event={event}")
+    print(f"Steam gate: {'RUN' if run else 'SKIP recent successful batch'}; event={event}", file=sys.stderr)

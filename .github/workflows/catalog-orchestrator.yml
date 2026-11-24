@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '4,9,14,19,24,29,34,39,44,49,54,59 * * * *'
   workflow_run:
-    workflows: [CI, Fast New Post Watch, Catalog Refresh, Full Catalog Backfill, Media Enrichment, Steam Reviews Enrichment]
+    workflows: [CI, Deploy Pages, Fast New Post Watch, Catalog Refresh, Full Catalog Backfill, Media Enrichment, Steam Reviews Enrichment]
     branches: [main]
     types: [completed]
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
     if: >-
       github.event_name != 'workflow_run' ||
       (github.event.workflow_run.head_repository.full_name == github.repository &&
-       (github.event.workflow_run.name != 'CI' || github.event.workflow_run.conclusion == 'success'))
+       (github.event.workflow_run.name != 'Deploy Pages' || github.event.workflow_run.conclusion == 'success'))
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

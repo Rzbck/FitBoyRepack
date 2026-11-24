@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from health_monitor import service_health, workflow_health, queue_counts, write_report
+from health_monitor import service_health, workflow_health, queue_counts, write_report, notify
 
 NOW=datetime(2026,11,24,12,tzinfo=timezone.utc)
 def run(age,conclusion="success",status="completed"):
@@ -24,6 +24,22 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(status["issues"],["success_stale","latest_failed"])
         self.assertEqual(workflow_health([run(900)],NOW,None)["issues"],[])
         self.assertIn("success_stale",workflow_health([],NOW,30)["issues"])
+    def test_persistent_alert_and_recovery(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/"health").mkdir()
+            report={"generated_at":NOW.isoformat(),"issues":["github/ci.yml/latest_failed"]}
+            sent=[]
+            def sender(title,items,priority):
+                sent.append((title,items,priority));return True
+            notify(root,report,"unused",sender)
+            self.assertEqual(len(sent),0)
+            notify(root,report,"unused",sender)
+            self.assertEqual(len(sent),1)
+            notify(root,report,"unused",sender)
+            self.assertEqual(len(sent),1)
+            notify(root,{**report,"issues":[]},"unused",sender)
+            self.assertEqual(len(sent),2)
+            self.assertEqual(sent[-1][2],3)
     def test_db_readonly_and_report(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); db=root/"test.db"

@@ -11,6 +11,7 @@ import shutil
 import sqlite3
 import subprocess
 import time
+from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 SERVICES = {
@@ -22,7 +23,7 @@ WORKFLOWS = {
     "catalog-orchestrator.yml": 30, "feed-watch.yml": 40,
     "steam-ratings.yml": 120, "update-catalog.yml": 120,
     "enrich-media.yml": 45, "backfill-catalog.yml": 2880,
-    "pages.yml": None,
+    "pages.yml": None, "ci.yml": None,
 }
 REPO = "Rzbck/FitBoyRepack"
 
@@ -71,9 +72,10 @@ def workflow_health(runs, now, limit):
     last=max((datetime.fromisoformat((r.get("run_started_at") or r["created_at"]).replace("Z","+00:00")) for r in successes),default=None)
     age=round((now-last).total_seconds()/60,1) if last else None
     latest=max(runs,key=lambda r:r["created_at"],default={})
+    decisive=max((r for r in runs if r.get("status")=="completed" and r.get("conclusion") not in {"skipped","cancelled"}),key=lambda r:r["created_at"],default={})
     issues=[]
     if age is None or (limit is not None and age>limit):issues.append("success_stale")
-    if latest.get("status")=="completed" and latest.get("conclusion") not in {"success","skipped","cancelled"}:issues.append("latest_failed")
+    if decisive and decisive.get("conclusion")!="success":issues.append("latest_failed")
     return {"last_success_age_minutes":age,"latest_status":latest.get("status"),
             "latest_conclusion":latest.get("conclusion"),"latest_event":latest.get("event"),
             "issues":issues}
@@ -83,7 +85,7 @@ def github_runs(workflow):
     req=Request(url,headers={"User-Agent":"FitBoyRepack-health/1","Accept":"application/vnd.github+json"})
     with urlopen(req,timeout=6) as response:
         payload=json.load(response)
-    return payload["workflow_runs"]
+    return [r for r in payload["workflow_runs"] if workflow!="ci.yml" or r.get("event")=="push"]
 
 def collect(root, *, github=True, now=None):
     now=now or datetime.now(timezone.utc)
@@ -136,6 +138,43 @@ def write_report(root, report):
     tmp.write_text("\n".join(rows)+"\n",encoding="utf-8")
     os.replace(tmp,history)
 
+def notification_changes(previous, issues, now):
+    """Two consecutive observations; one alert per incident and one recovery."""
+    current=set(issues)
+    old=previous.get("incidents",{})
+    incidents={}
+    alerts=[]; recovered=[]
+    for issue in sorted(current):
+        item=old.get(issue,{})
+        count=item.get("count",0)+1
+        sent=bool(item.get("sent"))
+        incidents[issue]={"count":count,"sent":sent}
+        if count>=2 and not sent:alerts.append(issue)
+    for issue,item in old.items():
+        if issue not in current and item.get("sent"):recovered.append(issue)
+    return incidents,alerts,recovered
+
+def notify(root, report, url, sender=None):
+    path=root/"health/notifications.json"
+    previous=json.loads(path.read_text()) if path.exists() else {}
+    incidents,alerts,recovered=notification_changes(previous,report["issues"],report["generated_at"])
+    def send(title,items,priority):
+        if not items:return True
+        if sender is not None:return sender(title,items,priority)
+        # Only issue identifiers; never catalog contents, secrets or database rows.
+        req=Request(url,data=("\n".join(items)).encode(),headers={"Title":title,"Priority":str(priority),"Tags":"warning" if priority==4 else "white_check_mark"},method="POST")
+        try:
+            with urlopen(req,timeout=8) as response:return 200<=response.status<300
+        except (OSError,URLError):return False
+    if send("FitBoyRepack - persistent anomaly",alerts,4):
+        for issue in alerts:incidents[issue]["sent"]=True
+    if not send("FitBoyRepack - recovered",recovered,3):
+        for issue in recovered:incidents[issue]=previous["incidents"][issue]
+    tmp=path.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"incidents":incidents})+"\n")
+    os.replace(tmp,path)
+    return {"alerts":len(alerts),"recovered":len(recovered),"pending":sum(v["count"]>=2 and not v["sent"] for v in incidents.values())}
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--root",type=Path,default=Path("/var/lib/fitboy"))
@@ -143,6 +182,8 @@ def main():
     args=parser.parse_args()
     report=collect(args.root,github=not args.offline)
     write_report(args.root,report)
+    url=os.environ.get("FITBOY_NTFY_URL")
+    if url: print(json.dumps({"notification":notify(args.root,report,url)}),flush=True)
     print(json.dumps({"status":report["status"],"issues":report["issues"]},sort_keys=True),flush=True)
 
 if __name__=="__main__":main()

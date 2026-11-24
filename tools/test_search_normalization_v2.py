@@ -46,6 +46,15 @@ def main() -> None:
     assert ids == ["Q999"]
     assert queries == ["Official Game: Deluxe Edition"]
 
+    queries.clear()
+    def deep_search(params):
+        queries.append(str(params["search"]))
+        ids = ["Q1","Q2","Q3","Q4","Q5"] if len(queries)==1 else ["Q9","Q2","Q10"]
+        return {"search":[{"id":qid} for qid in ids]}
+    client._get = deep_search
+    ids = client.search("Black Mesa: Definitive Edition", 5)
+    assert ids == ["Q1","Q9","Q2","Q3","Q10"], ids
+    assert queries == ["Black Mesa: Definitive Edition","Black Mesa"], queries
     print("search normalization v2 OK")
 
 

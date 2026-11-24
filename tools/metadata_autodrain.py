@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Callable
 
 import batched_metadata_bootstrap_v2 as v2
+from metadata_recovery import schedule_reviews
 
 base = v2.base
 
@@ -178,6 +179,12 @@ def main() -> int:
         print("[AUTODRAIN] another metadata drain already holds the lock; exiting", flush=True)
         return 0
 
+    # Serialize with the LLM stage to avoid changing evidence during a decision.
+    review_lock = acquire_lock(args.lock_file.with_name("review-llm.lock"))
+    if review_lock is None:
+        lock.close()
+        print("[AUTODRAIN] review resolver active; retry next timer", flush=True)
+        return 0
     try:
         games = base.load_games(args.catalog)
         conn = base.connect_db(args.db)
@@ -187,10 +194,12 @@ def main() -> int:
             print("[AUTODRAIN] queue_init=", base.compact_json(init_stats), sep="", flush=True)
             print("[AUTODRAIN] queue_before=", base.compact_json(base.queue_counts(conn)), sep="", flush=True)
 
+            scheduled = schedule_reviews(conn)
+            print(f"[AUTODRAIN] recovery_scheduled={scheduled}", flush=True)
             stats = drain_pending(
                 conn,
                 batch_size=args.batch_size,
-                candidate_limit=min(args.candidate_limit, 5),
+                candidate_limit=min(max(args.candidate_limit, 5 if scheduled else 1), 5),
                 request_interval=max(0.0, args.request_interval),
                 maxlag=max(1, args.maxlag),
                 threshold=min(1.0, max(0.0, args.threshold)),
@@ -207,6 +216,7 @@ def main() -> int:
         finally:
             conn.close()
     finally:
+        review_lock.close()
         lock.close()
 
     return 0

@@ -1,6 +1,6 @@
 import { loadCatalogPayload } from './catalog-api.js';
 
-const FAVORITES_KEY = 'fitboyrepack:favorites:v1';
+import { readLibrary } from './storage.js';
 
 const els = {
   search: document.querySelector('#searchInput'),
@@ -27,8 +27,7 @@ function rawTags(game) {
 }
 
 function readFavorites() {
-  try { return new Set(JSON.parse(localStorage.getItem(FAVORITES_KEY) || '[]').map(String)); }
-  catch { return new Set(); }
+  return readLibrary().favorites;
 }
 
 function selectedTagKeys() {

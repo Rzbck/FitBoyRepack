@@ -1,6 +1,8 @@
 import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload, searchIndexMatchesCatalog } from './catalog-api.js?v=3';
 import { createCardWindow } from './card-window.js';
-import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './wishlist.js';
+import { normalized, createQueryScorer } from './search-score.js';
+import { STORAGE_KEYS, readLibrary, writeLibrary } from './storage.js';
+import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './wishlist.js?v=2';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
@@ -16,15 +18,13 @@ import {
   initI18n,
   locale,
   t,
-} from './i18n.js';
+} from './i18n.js?v=2';
 
 initI18n();
 
 const PAGE_SIZE = 30;
 const RECOMMENDATION_LIMIT = 12;
 const HOME_LIMIT = 6;
-const LEGACY_FAVORITES_KEY = 'fitboyrepack:favorites:v1';
-const LIBRARY_KEY = 'fitboyrepack:library:v2';
 const LOAD_COOLDOWN_MS = 250;
 const SEARCH_DEBOUNCE_MS = 80;
 const $ = selector => document.querySelector(selector);
@@ -46,22 +46,10 @@ const els = {
   healthTotal: $('#healthTotal'), healthDescriptions: $('#healthDescriptions'), healthGalleries: $('#healthGalleries'), healthGifs: $('#healthGifs'), healthMeta: $('#healthMeta')
 };
 
-function emptyLibrary() { return { favorites:new Set(), backlog:new Set(), completed:new Set() }; }
-function readLibrary() {
-  const out = emptyLibrary();
-  try {
-    const parsed = JSON.parse(localStorage.getItem(LIBRARY_KEY) || '{}');
-    for (const key of Object.keys(out)) out[key] = new Set(Array.isArray(parsed[key]) ? parsed[key].map(String) : []);
-  } catch { /* keep empty */ }
-  try {
-    for (const id of JSON.parse(localStorage.getItem(LEGACY_FAVORITES_KEY) || '[]')) out.favorites.add(String(id));
-  } catch { /* noop */ }
-  return out;
-}
+let libraryStorageWarning=false;
 function saveLibrary() {
-  const payload = Object.fromEntries(Object.entries(state.library).map(([key, set]) => [key, [...set]]));
-  localStorage.setItem(LIBRARY_KEY, JSON.stringify(payload));
-  localStorage.setItem(LEGACY_FAVORITES_KEY, JSON.stringify([...state.library.favorites]));
+  if(writeLibrary(state.library)){libraryStorageWarning=false;return;}
+  if(!libraryStorageWarning){libraryStorageWarning=true;alert(t('wishlist.storageError'));}
 }
 
 const state = {
@@ -70,9 +58,6 @@ const state = {
   dialogGameId:null, dialogScrollY:0, dialogOpener:null, loadingMore:false, lastLoadAt:0, renderGeneration:0, searchTimer:0, suggestionIndex:-1
 };
 
-function normalized(value='') {
-  return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
-}
 function tokens(value='') { return normalized(value).split(' ').filter(Boolean); }
 function searchGrams(token,size=3){const out=[];if(token.length<size)return out;for(let i=0;i<=token.length-size;i++){const gram=token.slice(i,i+size);if(!out.includes(gram))out.push(gram);}return out;}
 function indexedTokenCandidates(token){
@@ -87,7 +72,15 @@ function searchCandidateIndexes(rawQuery){
   for(const token of qTokens){const candidates=indexedTokenCandidates(token);if(!candidates)continue;result=result===null?candidates:new Set([...result].filter(index=>candidates.has(index)));if(!result.size)break;}
   return result;
 }
-function searchPool(rawQuery){const indexes=searchCandidateIndexes(rawQuery);if(!indexes||!indexes.size)return state.games;return [...indexes].map(index=>state.games[index]).filter(Boolean);}
+let poolCache=null;
+function searchPool(rawQuery){
+  const key=normalized(rawQuery);
+  if(poolCache?.key===key&&poolCache.index===state.searchIndex&&poolCache.games===state.games)return poolCache.value;
+  const indexes=searchCandidateIndexes(key);
+  const value=!indexes||!indexes.size?state.games:[...indexes].map(index=>state.games[index]).filter(Boolean);
+  poolCache={key,index:state.searchIndex,games:state.games,value};
+  return value;
+}
 function getTags(game) {
   const value = game?.genres ?? game?.genre ?? [];
   return (Array.isArray(value) ? value : String(value || '').split(',')).map(v => String(v).trim()).filter(Boolean);
@@ -101,8 +94,8 @@ function cardDisplayTitle(game) {
 function cardDisplayTags(game) {
   return effectiveGenreLabels(game);
 }
-function gameDate(game) { const t=Date.parse(game.post_date||''); return Number.isFinite(t)?t:0; }
-function releaseDate(game) { const t=Date.parse(game.game_release_date||''); return Number.isFinite(t)?t:0; }
+function gameDate(game) { return game.__postTime ?? (Date.parse(game.post_date||'')||0); }
+function releaseDate(game) { return game.__releaseTime ?? (Date.parse(game.game_release_date||'')||0); }
 function formatDate(value) { return formatDateValue(value) || (currentLanguage()==='fr'?'Date inconnue':'Unknown date'); }
 function isNew(game, days=14) { const t=gameDate(game); return Boolean(t && Date.now()-t < days*86400000); }
 function startOfLocalWeek(time=Date.now()) {
@@ -154,47 +147,7 @@ function sizeMatches(game, bucket) {
   return mb >= 51200;
 }
 
-function boundedDistance(a,b,max) {
-  if (Math.abs(a.length-b.length)>max) return max+1;
-  let prev=Array.from({length:b.length+1},(_,i)=>i);
-  for (let i=1;i<=a.length;i++) {
-    const cur=[i]; let rowMin=i;
-    for (let j=1;j<=b.length;j++) {
-      const val=Math.min(cur[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
-      cur[j]=val; rowMin=Math.min(rowMin,val);
-    }
-    if (rowMin>max) return max+1;
-    prev=cur;
-  }
-  return prev[b.length];
-}
-
-function queryScore(game, rawQuery) {
-  const query=normalized(rawQuery);
-  if (!query) return 1;
-  if (game.__titleNorm===query) return 500;
-  if (game.__titleNorm.startsWith(query)) return 420-query.length*.01;
-  if (game.__titleNorm.includes(query)) return 360-query.length*.01;
-  if (game.__searchText.includes(query)) return 300;
-  const qTokens=query.split(' ');
-  let total=0;
-  for (const q of qTokens) {
-    let best=0;
-    for (const candidate of game.__searchTokens) {
-      if (candidate===q) { best=90; break; }
-      if (candidate.startsWith(q)) best=Math.max(best,75);
-      else if (candidate.includes(q)) best=Math.max(best,58);
-      else if (q.length>=4 && Math.abs(candidate.length-q.length)<=2) {
-        const max=q.length<=5?1:2;
-        const d=boundedDistance(q,candidate,max);
-        if (d<=max) best=Math.max(best,48-d*8);
-      }
-    }
-    if (!best) return 0;
-    total+=best;
-  }
-  return total;
-}
+const queryScore=createQueryScorer();
 
 function prepareGame(raw) {
   const game={...raw,id:String(raw.id)};
@@ -216,7 +169,9 @@ function prepareGame(raw) {
   ];
   game.__titleNorm=normalized(canonical||game.title);
   game.__searchText=normalized(searchable.join(' '));
-  game.__searchTokens=[...new Set(tokens(searchable.join(' ')))];
+  game.__searchTokens=[...new Set(game.__searchText.split(' ').filter(Boolean))];
+  game.__postTime=Date.parse(game.post_date||'')||0;
+  game.__releaseTime=Date.parse(game.game_release_date||'')||0;
   game.__releaseYear=releaseYear;
   return game;
 }
@@ -237,6 +192,7 @@ function applyFilters() {
   const query=els.search.value.trim(); const selected=[...state.selectedTags]; const pool=query?searchPool(query):state.games;
   state.filtered=pool.filter(game=>nonTagMatches(game,query) && (!selected.length || selected.every(tag=>game.__tagKeySet.has(tag))));
   const sort=els.sort.value;
+  const collator=sort.startsWith("name_")?new Intl.Collator(locale(),{sensitivity:"base"}):null;
   state.filtered.sort((a,b)=>{
     if(sort==='steam_best') return steamQuality(b)-steamQuality(a) || Number(ratingFor(b)?.total_reviews||0)-Number(ratingFor(a)?.total_reviews||0) || gameDate(b)-gameDate(a);
     if(sort==='steam_popular') return Number(ratingFor(b)?.total_reviews||0)-Number(ratingFor(a)?.total_reviews||0) || steamQuality(b)-steamQuality(a);
@@ -245,13 +201,13 @@ function applyFilters() {
     if (sort==='release_desc') return releaseDate(b)-releaseDate(a) || gameDate(b)-gameDate(a);
     if (sort==='release_asc') return releaseDate(a)-releaseDate(b) || gameDate(a)-gameDate(b);
     if (sort==='date_asc') return gameDate(a)-gameDate(b);
-    if (sort==='name_asc') return cardDisplayTitle(a).localeCompare(cardDisplayTitle(b),locale(),{sensitivity:'base'});
-    if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),locale(),{sensitivity:'base'});
+    if (sort==='name_asc') return collator.compare(cardDisplayTitle(a),cardDisplayTitle(b));
+    if (sort==='name_desc') return collator.compare(cardDisplayTitle(b),cardDisplayTitle(a));
     return gameDate(b)-gameDate(a);
   });
   state.renderGeneration++; state.lastLoadAt=-Infinity;
   state.visible=Math.min(PAGE_SIZE,state.filtered.length); state.loadingMore=false; els.infiniteStatus.hidden=true;
-  renderCatalog(); updateTagFacets(); renderSuggestions(); armInfiniteObserver();
+  renderCatalog(); updateTagFacets(state.filtered); renderSuggestions(); armInfiniteObserver();
 }
 
 function buildTagIndex() {
@@ -287,10 +243,10 @@ function tagMatchRank(label, query) {
   if (label.split(' ').some(word=>word.startsWith(query))) return 2;
   return 3;
 }
-function updateTagFacets() {
+function updateTagFacets(filtered=null) {
   if (!state.games.length) return;
   const query=els.search.value.trim(), selected=[...state.selectedTags], searchBase=query?searchPool(query):state.games;
-  const pool=searchBase.filter(game=>nonTagMatches(game,query) && selected.every(tag=>game.__tagKeySet.has(tag)));
+  const pool=Array.isArray(filtered)?filtered:searchBase.filter(game=>nonTagMatches(game,query) && selected.every(tag=>game.__tagKeySet.has(tag)));
   const counts=new Map(); for (const game of pool) for (const tag of game.__tagKeySet) counts.set(tag,(counts.get(tag)||0)+1);
   const searchTag=normalized(els.tagSearch.value), buttons=[...els.tagList.querySelectorAll('.tag-chip')];
   const matchedKeys=new Set();
@@ -559,7 +515,25 @@ function gameHashId(){return window.location.hash.startsWith('#')?(new URLSearch
 function syncGameHash(id){const hash=`#game=${encodeURIComponent(id)}`;if(window.location.hash!==hash)history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}${hash}`);}
 function clearGameHash(){if(gameHashId())history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}`);}
 
-function collectionButton(labelKey,list,gameId,actionType){const b=document.createElement('button');b.type='button';b.className='dialog-action';b.dataset.actionType=actionType;const refresh=()=>{const on=state.library[list].has(gameId);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.textContent=`${on?'✓ ':''}${t(labelKey)}`;};refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(state.libraryFilter===list)applyFilters();});return b;}
+function refreshCollectionButton(button,list,gameId,labelKey){
+  const on=state.library[list].has(gameId);
+  button.classList.toggle('active',on);
+  button.setAttribute('aria-pressed',String(on));
+  button.textContent=(on?'\u2713 ':'')+t(labelKey);
+}
+function refreshDialogCollections(){
+  if(!els.dialog.open||!state.dialogGameId)return;
+  for(const button of els.dialog.querySelectorAll('[data-collection-list]')){
+    refreshCollectionButton(button,button.dataset.collectionList,state.dialogGameId,button.dataset.collectionLabel);
+  }
+}
+function collectionButton(labelKey,list,gameId,actionType){
+  const b=document.createElement('button');b.type='button';b.className='dialog-action';
+  b.dataset.actionType=actionType;b.dataset.collectionList=list;b.dataset.collectionLabel=labelKey;
+  const refresh=()=>refreshCollectionButton(b,list,gameId,labelKey);
+  refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(state.libraryFilter===list)applyFilters();});
+  return b;
+}
 
 function appendInitialIdentityFact(meta,labelKey,value,{dateValue=''}={}){
   if(!value)return;
@@ -923,6 +897,7 @@ document.addEventListener('fitboy:language-change',()=>{
   if(els.dialog.open){
     const game=state.byId.get(state.dialogGameId);
     if(game)syncDialogSteamRating(game);
+    refreshDialogCollections();
   }
   renderRecommendations();
 });
@@ -939,6 +914,21 @@ els.dialog.addEventListener('click',e=>{if(e.target===els.dialog||e.target.close
 window.addEventListener('hashchange',()=>{const id=gameHashId();if(!id&&els.dialog.open)els.dialog.close();else if(id&&state.byId.has(id)&&id!==state.dialogGameId)openDialog(state.byId.get(id),{syncUrl:false});});
 document.addEventListener('keydown',event=>{const typing=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName);if(els.dialog.open&&!typing&&!isLightboxOpen()){if(event.key==='ArrowLeft'){event.preventDefault();navigateDialog(-1);return;}if(event.key==='ArrowRight'){event.preventDefault();navigateDialog(1);return;}}if(event.key==='/'&&!typing){event.preventDefault();els.search.focus();}if(event.key==='Escape'){if(els.tagPickerDialog.open)closeTagPicker();else closeMobileFilters();}});
 window.addEventListener('resize',armInfiniteObserver,{passive:true});
+window.addEventListener('storage',event=>{
+  if(event.key!==STORAGE_KEYS.library && event.key!==STORAGE_KEYS.legacyFavorites && event.key!==null)return;
+  const next=readLibrary(),previous=state.library;
+  const changed=Object.keys(next).filter(key=>next[key].size!==previous[key].size||[...next[key]].some(id=>!previous[key].has(id)));
+  if(!changed.length)return;
+  state.library=next;
+  updateLibraryUI();refreshDialogCollections();
+  if(changed.includes(state.libraryFilter))applyFilters();
+  else if(changed.includes('favorites')){
+    for(const id of new Set([...previous.favorites,...next.favorites])){
+      if(previous.favorites.has(id)!==next.favorites.has(id))refreshFavoriteCards(id);
+    }
+  }
+  renderRecommendations();
+});
 initWishlist({openGame:game=>{closeMobileFilters();openDialog(game,{syncUrl:true});}});
 document.querySelector('#wishlistLibraryButton')?.addEventListener('click',closeMobileFilters);
 loadCatalog();

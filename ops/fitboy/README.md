@@ -237,3 +237,14 @@ and restored on intersection or focus. The limit is soft: visible or focused
 cards and the open dialog's original trigger are not evicted. Filter changes
 invalidate queued pagination callbacks, and favorite changes update the affected
 cards without rebuilding the entire catalog. These are browser-only changes.
+
+### Search, favicon and local persistence
+Search reuses scores and candidate pools for the active query; relevance ranking
+is unchanged. Facets reuse the filtered results, dates are parsed once per game,
+and alphabetical sort shares an Intl.Collator. The favicon retains its vector
+design and transition timing, encoding at most 43 distinct frames lazily and
+reusing them on subsequent cycles; hidden tabs and reduced motion pause it.
+A shared storage module preserves all existing versioned keys and backup
+formats. Canonical library favorites take precedence over the legacy mirror,
+which is still written for compatibility. Storage failures are handled without
+interrupting the page, and other tabs receive canonical library/language changes.

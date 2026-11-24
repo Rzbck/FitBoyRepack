@@ -1,7 +1,8 @@
-import { formatNumber, t } from './i18n.js';
+import { formatNumber, t } from './i18n.js?v=2';
 import { displayTitle, normalizeIdentity } from './game-identity.js';
 
-const STORAGE_KEY = 'fitboyrepack:wishlist:v1';
+import { STORAGE_KEYS, readJSON, writeJSON } from './storage.js';
+const STORAGE_KEY = STORAGE_KEYS.wishlist;
 const MAX_ITEMS = 1000;
 const MAX_TITLE_LENGTH = 140;
 let items = readEntries();
@@ -78,12 +79,11 @@ function sanitizeEntries(raw) {
   });
 }
 function readEntries() {
-  try { return sanitizeEntries(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
+  try { return sanitizeEntries(readJSON(STORAGE_KEY,[])); }
   catch { return []; }
 }
 function save() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); }
-  catch { showFeedback(t('wishlist.storageError'), true); }
+  if(!writeJSON(STORAGE_KEY,items))showFeedback(t('wishlist.storageError'),true);
 }
 function showFeedback(message='', error=false) {
   const node = document.querySelector('#wishlistFeedback');
@@ -250,7 +250,7 @@ export function initWishlist({openGame:openGameCallback}={}) {
   document.querySelector('#wishlistForm')?.addEventListener('submit',event=>{event.preventDefault();addWishlist();});
   document.addEventListener('fitboy:language-change',renderWishlist);
   window.addEventListener('storage',event=>{
-    if(event.key===STORAGE_KEY){items=readEntries();syncMatches();renderWishlist();}
+    if(event.key===STORAGE_KEY||event.key===null){items=readEntries();syncMatches();renderWishlist();}
   });
   renderWishlist();
 }

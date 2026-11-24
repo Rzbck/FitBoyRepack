@@ -10,7 +10,7 @@ import {
   formatDateValue,
   mediaCountLabel,
   t,
-} from './i18n.js';
+} from './i18n.js?v=2';
 import { localizeGameProse } from './translations.js?v=2';
 
 const dialog = document.querySelector('#gameDialog');

@@ -79,6 +79,9 @@ jobs:
       - run: node tools/test_wishlist.mjs
       - run: node tools/test_release_year.mjs
       - run: node tools/test_catalog_cache.mjs
+      - run: node tools/test_search_score.mjs
+      - run: node tools/test_storage.mjs
+      - run: node tools/test_favicon_cache.mjs
       - run: node tools/test_card_window.mjs
       - run: node --check site/assets/card-window.js
       - run: node --check site/assets/details.js

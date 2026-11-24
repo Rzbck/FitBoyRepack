@@ -1,4 +1,5 @@
-const STORAGE_KEY = 'fitboyrepack:language:v1';
+import { STORAGE_KEYS, readText, writeText } from './storage.js';
+const STORAGE_KEY = STORAGE_KEYS.language;
 const MODES = new Set(['auto', 'fr', 'en']);
 
 const STRINGS = {
@@ -457,7 +458,7 @@ function commitState(nextMode, { persist = true, emit = true } = {}) {
   language = resolveLanguage(mode);
 
   if (persist) {
-    try { localStorage.setItem(STORAGE_KEY, mode); } catch { /* storage unavailable */ }
+    writeText(STORAGE_KEY,mode);
   }
 
   document.documentElement.lang = language;
@@ -489,11 +490,14 @@ export function initI18n() {
 
   let initialMode = document.documentElement.dataset.languageMode || 'auto';
   try {
-    initialMode = localStorage.getItem(STORAGE_KEY) || initialMode;
+    initialMode = readText(STORAGE_KEY,initialMode);
   } catch { /* storage unavailable */ }
 
   commitState(initialMode, { persist:false, emit:false });
 
+  window.addEventListener('storage',event=>{
+    if(event.key===STORAGE_KEY||event.key===null)commitState(readText(STORAGE_KEY,'auto'),{persist:false,emit:true});
+  });
   document.querySelector('#languageSwitcher')?.addEventListener('click', event => {
     const button = event.target.closest('[data-language-mode]');
     if (!button) return;

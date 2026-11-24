@@ -1,5 +1,5 @@
 /* FitBoyRepack — centered FB ⇄ gamepad favicon.
- * Real vector-canvas morphing (30 fps during transitions, no work during holds).
+ * Cached vector-canvas morphing (30 fps during transitions, no work during holds).
  * Falls back to favicon.svg for reduced motion, background tabs, or no canvas.
  */
 (() => {
@@ -25,6 +25,9 @@
   const GAMEPAD_HOLD = 2400;
   const TRANSITION = 1400;
   const FRAME_INTERVAL = 1000 / 30;
+  const FRAME_COUNT = Math.round(TRANSITION / FRAME_INTERVAL);
+  const frames = new Map();
+  let shownFrame = -1;
   let timer = 0;
   let animation = 0;
   let generation = 0;
@@ -42,7 +45,7 @@
     ctx.fill();
   }
 
-  function paint(mix) {
+  function encodeFrame(mix) {
     ctx.setTransform(2, 0, 0, 2, 0, 0);
     ctx.clearRect(0, 0, 64, 64);
 
@@ -128,7 +131,18 @@
     }
 
     // PNG data URIs force Chromium/Brave to repaint favicons per frame.
-    icon.href = canvas.toDataURL('image/png');
+    return canvas.toDataURL('image/png');
+  }
+
+  function paintFrame(index) {
+    if(index===shownFrame)return;
+    let src=frames.get(index);
+    if(!src){
+      src=encodeFrame(smooth(0,1,index/FRAME_COUNT));
+      frames.set(index,src);
+    }
+    icon.href=src;
+    shownFrame=index;
   }
 
   function stop() {
@@ -144,7 +158,7 @@
 
   function hold(pose, cycle) {
     if (cycle !== generation || !canAnimate()) return;
-    if (pose === 0) icon.href = fallback;
+    if (pose === 0) {icon.href = fallback;shownFrame=-1;}
     timer = setTimeout(() => transition(pose, 1 - pose, cycle),
       pose === 0 ? FB_HOLD : GAMEPAD_HOLD);
   }
@@ -157,9 +171,9 @@
       if (cycle !== generation || !canAnimate()) return;
       if (startedAt === null) startedAt = now;
       const progress = clamp((now - startedAt) / TRANSITION);
-      const eased = smooth(0, 1, progress);
+      const index = Math.round((from + (to - from) * progress) * FRAME_COUNT);
       if (now - lastPaint >= FRAME_INTERVAL || progress >= 1) {
-        paint(from + (to - from) * eased);
+        paintFrame(index);
         lastPaint = now;
       }
       if (progress < 1) animation = requestAnimationFrame(frame);
@@ -174,6 +188,7 @@
   function restart() {
     stop();
     icon.href = fallback;
+    shownFrame=-1;
     if (canAnimate()) hold(0, generation);
   }
 

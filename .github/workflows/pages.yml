@@ -43,6 +43,9 @@ jobs:
       - run: node --check site/assets/wishlist.js
       - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
+      - run: node tools/test_search_score.mjs
+      - run: node tools/test_storage.mjs
+      - run: node tools/test_favicon_cache.mjs
       - run: node --check site/assets/details.js
       - name: Remove source monoliths from public artifact
         run: rm site/data/games.json site/data/translations-fr.json
@@ -139,7 +142,9 @@ jobs:
           grep -q 'effectiveGenreLabels' /tmp/identity.js
           grep -q 'metadata_developer' /tmp/app.js
           grep -q 'metadata_publisher' /tmp/app.js
-          grep -q 'fitboyrepack:language:v1' /tmp/i18n.js
+          fetch assets/storage.js /tmp/storage.js
+          grep -q 'fitboyrepack:language:v1' /tmp/storage.js
+          grep -q 'STORAGE_KEYS.language' /tmp/i18n.js
           grep -q 'source_sha256' /tmp/translations.js
           ! grep -q 'translations-fr.json' /tmp/api.js
           python -c "import json; h=json.load(open('/tmp/health.json')); d=json.load(open('/tmp/detail.json')); assert not h['translation_games'] or d.get('translations_fr')"

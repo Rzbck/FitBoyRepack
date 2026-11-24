@@ -18,7 +18,9 @@ def verify(archive, stamp):
     with tarfile.open(archive,"r:*") as tar, tempfile.TemporaryDirectory() as temp:
         members={m.name.removeprefix("./"):m for m in tar.getmembers() if m.isfile()}
         expected={stamp+"/"+f for f in FILES}
-        if set(members)!=expected or any(not m.isfile() and not m.isdir() for m in tar.getmembers()):
+        legacy_sidecars={stamp+"/"+name+suffix for name in FILES-{"manifest.json"} for suffix in ("-shm","-wal")}
+        extra=set(members)-expected
+        if not expected.issubset(members) or not extra.issubset(legacy_sidecars) or any(members[n].size!=0 for n in extra if n.endswith("-wal")) or any(not m.isfile() and not m.isdir() for m in tar.getmembers()):
             raise ValueError("unexpected archive entries")
         manifest=json.load(tar.extractfile(members[stamp+"/manifest.json"]))
         if manifest["created_at"]!=stamp or set(manifest["databases"])!=FILES-{"manifest.json"}:
@@ -48,7 +50,7 @@ def pull(destination,ssh="ssh",host="rmm-vps"):
         fd,tmp=tempfile.mkstemp(prefix=".fitboy-",suffix=".partial",dir=destination)
         try:
             with os.fdopen(fd,"wb") as handle:
-                subprocess.run(cmd+[f"sudo -n -u fitboy tar -C /var/lib/fitboy/backups -cf - {stamp}"],stdout=handle,check=True,timeout=180)
+                subprocess.run(cmd+["sudo -n -u fitboy tar -C /var/lib/fitboy/backups -cf - "+" ".join(stamp+"/"+name for name in sorted(FILES))],stdout=handle,check=True,timeout=180)
                 handle.flush();os.fsync(handle.fileno())
             verify(tmp,stamp)
             os.replace(tmp,target)

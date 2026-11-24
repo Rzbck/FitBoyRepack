@@ -14,6 +14,7 @@ CATALOG_FILENAME = "catalog.json"
 SEARCH_INDEX_FILENAME = "search-index.json"
 HEALTH_FILENAME = "health.json"
 METADATA_FILENAME = "metadata-enrichment.json"
+TRANSLATIONS_FILENAME = "translations-fr.json"
 DETAILS_DIRNAME = "games"
 EXPECTED_MEDIA_VERSION = 7
 EXPECTED_DETAILS_VERSION = 1
@@ -37,6 +38,7 @@ def parse_args():
         default=None,
         help="optional sanitized metadata snapshot; defaults beside the source catalog",
     )
+    parser.add_argument("--translations", type=Path, default=None)
     return parser.parse_args()
 
 
@@ -65,6 +67,48 @@ def load_public_metadata(path):
         if str(game_id).strip() and isinstance(value, dict)
     }
     return cleaned, payload.get("generated_at")
+
+
+def load_public_translations(path):
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if (not isinstance(payload, dict) or payload.get("translation_version") != 1
+            or payload.get("language") != "fr" or not isinstance(payload.get("games"), dict)
+            or payload.get("count") != len(payload["games"])):
+        raise RuntimeError("invalid French translation snapshot")
+    return payload["games"]
+
+
+def verified_translation_entry(details, entry):
+    """Include only translations matching the current source, keeping the runtime hash guard."""
+    if not isinstance(entry, dict):
+        return {}, 0
+    def checked(source, candidate):
+        if not isinstance(source, str) or not isinstance(candidate, dict):
+            return None
+        normalized = re.sub(r"\s+", " ", source).strip()
+        text = candidate.get("text")
+        digest = candidate.get("source_sha256")
+        if (not normalized or not isinstance(text, str) or not text.strip()
+                or digest != hashlib.sha256(normalized.encode("utf-8")).hexdigest()):
+            return None
+        return {"text": text.strip(), "source_sha256": digest}
+    out = {}
+    description = checked(details.get("description"), entry.get("description"))
+    if description:
+        out["description"] = description
+    features = details.get("game_features")
+    candidates = entry.get("game_features")
+    if isinstance(features, list) and isinstance(candidates, dict):
+        verified = {}
+        for i, source in enumerate(features):
+            item = checked(source, candidates.get(str(i)))
+            if item:
+                verified[str(i)] = item
+        if verified:
+            out["game_features"] = verified
+    return out, int(bool(description)) + len(out.get("game_features", {}))
 
 
 def parse_size_mb(value):
@@ -183,6 +227,8 @@ def main():
 
     metadata_path = args.metadata or args.source.with_name(METADATA_FILENAME)
     public_metadata, metadata_generated_at = load_public_metadata(metadata_path)
+    translations = load_public_translations(args.translations or args.source.with_name(TRANSLATIONS_FILENAME))
+    translation_sample = None
 
     data_dir = args.site_root / "data"
     details_dir = data_dir / DETAILS_DIRNAME
@@ -208,6 +254,8 @@ def main():
         "media_items": 0,
         "enrichment_pending": 0,
         "metadata_verified": 0,
+        "translation_games": 0,
+        "translation_fields": 0,
     }
 
     for game in source_payload["games"]:
@@ -236,6 +284,14 @@ def main():
         pending = bool(game.get("source_url")) and not (details_ready and media_ready)
 
         detail_path = f"data/{DETAILS_DIRNAME}/{filename}"
+        detail_game.pop("translations_fr", None)
+        translated, field_count = verified_translation_entry(details, translations.get(game_id))
+        if field_count:
+            detail_game["translations_fr"] = translated
+            stats["translation_games"] += 1
+            stats["translation_fields"] += field_count
+            if translation_sample is None:
+                translation_sample = detail_path
         light = {key: game.get(key) for key in LIGHT_FIELDS if key in game}
         light.update({
             "id": game_id,
@@ -303,6 +359,7 @@ def main():
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
         **stats,
+        "translation_sample_path": translation_sample,
         "metadata_snapshot_count": len(public_metadata),
         "metadata_unmatched": len(public_metadata) - len(used_metadata_ids),
         "coverage": {

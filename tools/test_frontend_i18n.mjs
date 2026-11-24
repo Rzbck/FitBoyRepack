@@ -42,6 +42,7 @@ const payload = {
 
 const game = {
   id: 'demo',
+  translations_fr: payload.games.demo,
   details: {
     description: sourceDescription,
     game_features: sourceFeatures,
@@ -49,19 +50,21 @@ const game = {
   },
 };
 
-const fr = await localizeGameProse(game, payload, 'fr');
+const fr = await localizeGameProse(game, 'fr');
 assert.equal(fr.details.description, 'Une description française compacte.');
 assert.equal(fr.details.game_features[0], 'Première fonctionnalité française.');
 assert.equal(fr.details.game_features[1], sourceFeatures[1], 'stale feature must fall back to English source');
 assert.deepEqual(fr.details.repack_features, game.details.repack_features, 'repack prose must not be translated');
 assert.equal(fr.__translatedFields, 2);
 
-const en = await localizeGameProse(game, payload, 'en');
+const en = await localizeGameProse(game, 'en');
 assert.equal(en, game, 'English mode must use the immutable source payload');
 
 const stalePayload = structuredClone(payload);
 stalePayload.games.demo.description.source_sha256 = 'f'.repeat(64);
-const stale = await localizeGameProse(game, stalePayload, 'fr');
+const stale = await localizeGameProse({...game, translations_fr: stalePayload.games.demo}, 'fr');
 assert.equal(stale.details.description, sourceDescription, 'stale description must fail closed to English');
 
+assert.equal(await localizeGameProse({id:'missing'}, 'fr').then(g=>g.id),'missing');
+assert.equal(game.details.description,sourceDescription);
 console.log('frontend translation hash/fallback contract OK');

@@ -1,4 +1,4 @@
-import { loadGameDetail, loadTranslationsFrPayload } from './catalog-api.js';
+import { loadGameDetail } from './catalog-api.js?v=2';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
@@ -11,7 +11,7 @@ import {
   mediaCountLabel,
   t,
 } from './i18n.js';
-import { localizeGameProse } from './translations.js';
+import { localizeGameProse } from './translations.js?v=2';
 
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');
@@ -537,11 +537,10 @@ function currentMediaItems() {
   return result;
 }
 
-async function localizedGameForCurrentLanguage(game, payload = null) {
+async function localizedGameForCurrentLanguage(game) {
   if (currentLanguage() !== 'fr') return game;
   try {
-    const translations = payload || await loadTranslationsFrPayload();
-    return await localizeGameProse(game, translations, 'fr');
+    return await localizeGameProse(game, 'fr');
   } catch (error) {
     console.debug('French translations unavailable; using English source', error);
     return game;
@@ -606,22 +605,11 @@ async function loadDetailsForOpenGame(gameId, detailPath, { refresh = false } = 
   }
 
   try {
-    const translationPromise = currentLanguage() === 'fr'
-      ? loadTranslationsFrPayload().catch(error => {
-          console.debug('French translation snapshot unavailable; using English source', error);
-          return null;
-        })
-      : Promise.resolve(null);
-    const [sourceGame, translationPayload] = await Promise.all([
-      loadGameDetail(detailPath),
-      translationPromise,
-    ]);
+    const sourceGame = await loadGameDetail(detailPath);
     if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
     currentSourceGame = sourceGame;
     currentSourceGameId = String(gameId);
-    const game = translationPayload
-      ? await localizedGameForCurrentLanguage(sourceGame, translationPayload)
-      : sourceGame;
+    const game = await localizedGameForCurrentLanguage(sourceGame);
     if (requestId !== detailRequestId || !dialog.open || !currentLayout(gameId)) return;
     enhanceDialog(game, gameId, { refresh });
   } catch (error) {

@@ -22,10 +22,10 @@ async function verifiedTranslation(source, candidate) {
   return text;
 }
 
-export async function localizeGameProse(game, translationsPayload, language) {
-  if (language !== 'fr' || !translationsPayload?.games || !game?.id) return game;
+export async function localizeGameProse(game, language) {
+  if (language !== 'fr' || !game?.id) return game;
 
-  const publicEntry = translationsPayload.games[String(game.id)];
+  const publicEntry = game.translations_fr;
   if (!publicEntry || typeof publicEntry !== 'object') return game;
 
   const details = game.details && typeof game.details === 'object' ? game.details : {};

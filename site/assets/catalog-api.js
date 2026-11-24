@@ -1,14 +1,12 @@
 const CATALOG_URL = './data/catalog.json';
 const SEARCH_INDEX_URL = './data/search-index.json';
 const HEALTH_URL = './data/health.json';
-const TRANSLATIONS_FR_URL = './data/translations-fr.json';
 const STEAM_RATINGS_URL = './data/steam-ratings.json';
 const DETAIL_CACHE_LIMIT = 24;
 
 let catalogPromise = null;
 let searchIndexPromise = null;
 let healthPromise = null;
-let translationsFrPromise = null;
 let steamRatingsPromise = null;
 const detailCache = new Map();
 
@@ -49,24 +47,6 @@ export function loadHealthPayload() {
     }).catch(error => { healthPromise = null; throw error; });
   }
   return healthPromise;
-}
-
-export function loadTranslationsFrPayload() {
-  if (!translationsFrPromise) {
-    translationsFrPromise = fetchJson(TRANSLATIONS_FR_URL, 'French translations').then(payload => {
-      if (
-        !payload
-        || payload.translation_version !== 1
-        || payload.language !== 'fr'
-        || !payload.games
-        || typeof payload.games !== 'object'
-      ) {
-        throw new Error('Invalid French translation payload');
-      }
-      return payload;
-    }).catch(error => { translationsFrPromise = null; throw error; });
-  }
-  return translationsFrPromise;
 }
 
 export function loadSteamRatingsPayload() {

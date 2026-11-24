@@ -50,7 +50,7 @@ for game_id, row in ratings['games'].items():
         assert 'positive_percent' not in row, f'invalid Steam score must not be displayed for {game_id}'
     if row.get('status')=='rated':
         assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
-assert './assets/app.js' in p.scripts and './assets/details.js' in p.scripts and './assets/media-sanitize.js' in p.scripts
+assert './assets/app.js?v=2' in p.scripts and './assets/details.js?v=2' in p.scripts and './assets/media-sanitize.js' in p.scripts
 assert './assets/tag-facets.js' not in p.scripts, 'facets are now integrated in the main filtered state'
 assert './assets/catalog-v2.css' in p.links
 assert (ROOT/'data/games.json').exists()
@@ -102,6 +102,18 @@ assert translations_fr.get('translation_version') == 1
 assert translations_fr.get('language') == 'fr'
 assert isinstance(translations_fr.get('games'), dict)
 assert translations_fr.get('count') == len(translations_fr['games'])
+assert 'translations-fr.json' not in api and 'loadTranslationsFrPayload' not in details
+from build_site_data import verified_translation_entry
+translation_games=translation_fields=0
+for item in catalog['games']:
+    payload=json.loads((ROOT/item['detail_path']).read_text(encoding='utf-8'))
+    assert 'translations_fr' not in item
+    expected,count=verified_translation_entry(payload.get('details') or {},translations_fr['games'].get(str(item['id'])))
+    assert payload.get('translations_fr',{})==expected, item['id']
+    translation_games+=bool(count)
+    translation_fields+=count
+assert translation_games==health['translation_games']
+assert translation_fields==health['translation_fields']
 
 def norm(value):
     text=unicodedata.normalize('NFD',str(value or ''))
@@ -121,9 +133,9 @@ for ordinal,game in enumerate(catalog['games']):
 
 for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','metadata_developer','metadata_publisher','buildInitialVerifiedIdentity','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
-for token in ('catalog.json','search-index.json','health.json','translations-fr.json','loadSearchIndexPayload','loadHealthPayload','loadTranslationsFrPayload','loadGameDetail'):
+for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
-for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','loadTranslationsFrPayload','localizeGameProse','makeIdentityFacts','identityStable','cleanPlatformLabel','verifiedMetadata','detail.releaseDate','detail.verified'):
+for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','loadGameDetail','localizeGameProse','makeIdentityFacts','identityStable','cleanPlatformLabel','verifiedMetadata','detail.releaseDate','detail.verified'):
     assert token in details, f'missing detail behavior: {token}'
 for token in ('displayTitle','editionTitle','effectiveGenreLabels','cleanGenreLabel','titleParts'):
     assert token in identity, f'missing shared identity behavior: {token}'

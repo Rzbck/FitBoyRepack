@@ -2561,6 +2561,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "stellaris-repack-updated-13",
+      "title": "Stellaris Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/stellaris-repack-updated-13/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "supercar-collection-simulator-repack-updated",
       "title": "Supercar Collection Simulator Repack Updated",
       "source_url": "https://fitgirl-repacks.site/supercar-collection-simulator-repack-updated/",
@@ -8920,10 +8930,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

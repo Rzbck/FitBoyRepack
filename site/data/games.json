@@ -1,9 +1,122 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T21:07:20.383895+00:00",
+  "generated_at": "2026-11-24T22:45:58.394358+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
+    {
+      "id": "stellaris-galaxy-edition",
+      "title": "Stellaris: Ultimate Bundle, v4.6.0 (3d1a) + 47 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/stellaris-galaxy-edition/",
+      "image_url": "https://i3.imageban.ru/out/2021/11/24/745a560d41151956384c111b5eea170f.jpg",
+      "post_date": "2026-11-25T01:00:47+03:00",
+      "genres": [
+        "Strategy",
+        "Grand strategy",
+        "3D",
+        "Pausable real-time"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/extras/Interstellar_Warfare_1.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/40/3a/403a1e05-e838-491d-9798-bd5d58cd512f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/40/3a/403a1e05-e838-491d-9798-bd5d58cd512f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1d/16/1d167f7b-787a-4bc9-83e7-e7d3171b1b47.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1d/16/1d167f7b-787a-4bc9-83e7-e7d3171b1b47.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/46/8e467161-f792-4212-9fd2-f5c7482a715a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/46/8e467161-f792-4212-9fd2-f5c7482a715a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5f/51/5f515839-6706-4d5c-97df-3305f9165391.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5f/51/5f515839-6706-4d5c-97df-3305f9165391.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ce/ba/ceba6217-b61f-4e3c-908c-58bcc44fbde6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ce/ba/ceba6217-b61f-4e3c-908c-58bcc44fbde6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/75/a8/75a848ad-e08e-436e-833f-3a2dbc40d09f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/75/a8/75a848ad-e08e-436e-833f-3a2dbc40d09f.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Explore a vast galaxy full of wonder! Paradox Development Studio, makers of the Crusader Kings and Europa Universalis series presents Stellaris, an evolution of the grand strategy genre with space exploration at its core.\nFeaturing deep strategic gameplay, a rich and enormously diverse selection of alien races and emergent storytelling, Stellaris has engaging challenging gameplay that rewards interstellar exploration as you traverse, discover, interact and learn more about the multitude of species you will encounter during your travels.\nEtch your name across the cosmos by forging a galactic empire; colonizing remote planets and integrating alien civilizations. Will you expand through war alone or walk the path of diplomacy to achieve your goals?",
+        "game_features": [
+          "Deep & Varied Exploration.",
+          "Enormous procedural galaxies, containing thousands of planets.",
+          "Explore Anomalies with your heroic Scientist leaders.",
+          "Infinitely varied races through customization and procedural generation.",
+          "Advanced Diplomacy system worthy of a Grand Strategy Game.",
+          "Ship Designer based on a vast array of technologies.",
+          "Stunning space visuals.",
+          "Included DLCs:",
+          "Ancient Relics Story Pack",
+          "Anniversary Portraits",
+          "Apocalypse",
+          "Aquatics Species Pack",
+          "Arachnoid Portrait Pack",
+          "Astral Planes",
+          "BioGenesis",
+          "Complete Soundtrack",
+          "Cosmic Storms",
+          "Creatures of the Void",
+          "Digital Artbook",
+          "Digital OST",
+          "Distant Stars Story Pack",
+          "Expansion Subscription",
+          "Federations",
+          "First Contact Story Pack",
+          "Galactic Paragons",
+          "Galaxy Edition Upgrade Pack",
+          "Grand Archive",
+          "Horizon Signal",
+          "Humanoids Species Pack",
+          "Infernals Species Pack",
+          "Infinite Frontiers eBook",
+          "Leviathans Story Pack",
+          "Lithoids Species Pack",
+          "MegaCorp",
+          "Necroids Species Pack",
+          "Nemesis",
+          "Nomads",
+          "Nova Edition Upgrade Pack",
+          "Novel by Steven Savile",
+          "Overlord"
+        ],
+        "repack_features": [
+          "Based on Stellaris.Nomads-RUNE ISO release: rune-stellaris.nomads.iso (19,446,366,208 bytes)",
+          "Game version: v4.4.1 (8e23); 45 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (not counting removed FLAC files)",
+          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus files (OSTs, Wallpapers, Ringtones, etc.)",
+          "Significantly smaller archive size (compressed from 18.1 to 8.5/9.4 GB)",
+          "Installation takes 3-15 minutes, depending on your configuration",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 28.6 GB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack",
+          "Language can be changed by editing -language param in the icon properties; use one of these: l_english, l_russian, l_braz_por, l_french, l_spanish, l_german, l_polish, l_simp_chinese, l_japanese, l_korean"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "serious-sam-fusion",
       "title": "Serious Sam Fusion – v791116",
@@ -53109,119 +53222,6 @@
           "HDD space after installation: 7.1 GB",
           "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "stellaris-galaxy-edition",
-      "title": "Stellaris: Ultimate Bundle, v4.4.1 (8e23) + 45 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/stellaris-galaxy-edition/",
-      "image_url": "https://i3.imageban.ru/out/2021/11/24/745a560d41151956384c111b5eea170f.jpg",
-      "post_date": "2026-06-15T22:00:47+03:00",
-      "genres": [
-        "Strategy",
-        "Grand strategy",
-        "3D",
-        "Pausable real-time"
-      ],
-      "repack_size": "7.6 GB",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/extras/Interstellar_Warfare_1.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/40/3a/403a1e05-e838-491d-9798-bd5d58cd512f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/40/3a/403a1e05-e838-491d-9798-bd5d58cd512f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/1d/16/1d167f7b-787a-4bc9-83e7-e7d3171b1b47.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/1d/16/1d167f7b-787a-4bc9-83e7-e7d3171b1b47.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8e/46/8e467161-f792-4212-9fd2-f5c7482a715a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8e/46/8e467161-f792-4212-9fd2-f5c7482a715a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5f/51/5f515839-6706-4d5c-97df-3305f9165391.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5f/51/5f515839-6706-4d5c-97df-3305f9165391.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ce/ba/ceba6217-b61f-4e3c-908c-58bcc44fbde6.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ce/ba/ceba6217-b61f-4e3c-908c-58bcc44fbde6.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/75/a8/75a848ad-e08e-436e-833f-3a2dbc40d09f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/75/a8/75a848ad-e08e-436e-833f-3a2dbc40d09f.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Explore a vast galaxy full of wonder! Paradox Development Studio, makers of the Crusader Kings and Europa Universalis series presents Stellaris, an evolution of the grand strategy genre with space exploration at its core.\nFeaturing deep strategic gameplay, a rich and enormously diverse selection of alien races and emergent storytelling, Stellaris has engaging challenging gameplay that rewards interstellar exploration as you traverse, discover, interact and learn more about the multitude of species you will encounter during your travels.\nEtch your name across the cosmos by forging a galactic empire; colonizing remote planets and integrating alien civilizations. Will you expand through war alone or walk the path of diplomacy to achieve your goals?",
-        "game_features": [
-          "Deep & Varied Exploration.",
-          "Enormous procedural galaxies, containing thousands of planets.",
-          "Explore Anomalies with your heroic Scientist leaders.",
-          "Infinitely varied races through customization and procedural generation.",
-          "Advanced Diplomacy system worthy of a Grand Strategy Game.",
-          "Ship Designer based on a vast array of technologies.",
-          "Stunning space visuals.",
-          "Included DLCs:",
-          "Ancient Relics Story Pack",
-          "Anniversary Portraits",
-          "Apocalypse",
-          "Aquatics Species Pack",
-          "Arachnoid Portrait Pack",
-          "Astral Planes",
-          "BioGenesis",
-          "Complete Soundtrack",
-          "Cosmic Storms",
-          "Creatures of the Void",
-          "Digital Artbook",
-          "Digital OST",
-          "Distant Stars Story Pack",
-          "Expansion Subscription",
-          "Federations",
-          "First Contact Story Pack",
-          "Galactic Paragons",
-          "Galaxy Edition Upgrade Pack",
-          "Grand Archive",
-          "Horizon Signal",
-          "Humanoids Species Pack",
-          "Infernals Species Pack",
-          "Infinite Frontiers eBook",
-          "Leviathans Story Pack",
-          "Lithoids Species Pack",
-          "MegaCorp",
-          "Necroids Species Pack",
-          "Nemesis",
-          "Nomads",
-          "Nova Edition Upgrade Pack",
-          "Novel by Steven Savile",
-          "Overlord"
-        ],
-        "repack_features": [
-          "Based on Stellaris.Nomads-RUNE ISO release: rune-stellaris.nomads.iso (19,446,366,208 bytes)",
-          "Game version: v4.4.1 (8e23); 45 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (not counting removed FLAC files)",
-          "Bonus OST in FLAC format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus files (OSTs, Wallpapers, Ringtones, etc.)",
-          "Significantly smaller archive size (compressed from 18.1 to 8.5/9.4 GB)",
-          "Installation takes 3-15 minutes, depending on your configuration",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 28.6 GB",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack",
-          "Language can be changed by editing -language param in the icon properties; use one of these: l_english, l_russian, l_braz_por, l_french, l_spanish, l_german, l_polish, l_simp_chinese, l_japanese, l_korean"
         ]
       },
       "details_version": 1,

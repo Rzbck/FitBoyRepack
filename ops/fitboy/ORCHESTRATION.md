@@ -5,8 +5,9 @@ runs and dispatches at most one eligible job per tick. It does not bypass the
 existing catalog-writer concurrency lock or change the data processing limits.
 The intended intervals are 60 minutes for Steam and catalog refresh, 15 minutes
 for media and 24 hours for full backfill. The read-only RSS watcher retains
-its independent 10-minute schedule and only requests a writer for new URLs
-or an unavailable feed. The coordinator ticks every five minutes. These are targets,
+its independent 10-minute schedule and also participates in coordinator
+catch-up when overdue. It only requests a writer for new URLs or an
+unavailable feed. The coordinator ticks every five minutes. These are targets,
 not guarantees. Overdue jobs are selected by absolute lateness; failures cool
 down for 15 minutes. A failed API read stops dispatch. Manual worker dispatch
 remains available; catalog updates still request immediate media and Pages work.
@@ -23,3 +24,7 @@ opportunities to catch up without relying solely on cron, but GitHub limits
 workflow_run chains and can delay scheduled events. Existing writer lock,
 cooldown and fail-closed checks remain. No external dispatch credential is
 added. The health timer monitors public Actions histories independently.
+
+RSS catch-up shares the same fail-closed history and active-run checks.
+No second scheduled RSS run is requested while an observed worker or RSS run
+is active; the independent RSS schedule remains a fallback.

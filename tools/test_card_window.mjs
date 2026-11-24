@@ -18,7 +18,7 @@ class Node {
  getBoundingClientRect(){return {width:180,height:320};}
  setAttribute(){}
  addEventListener(type,fn){this.events[type]=fn;}
- querySelector(){return {focus(){}};}
+ querySelector(){return {focus(){},addEventListener(){}};}
 }
 globalThis.document={activeElement:null,createElement:()=>new Node(),createDocumentFragment:()=>Object.assign(new Node(),{fragment:true})};
 const grid=new Node(), render=game=>Object.assign(new Node(),{className:'game-card',id:game.id});
@@ -32,6 +32,7 @@ assert.equal(grid.children.filter(n=>n.className==='game-card').length,120);
 assert.equal(grid.children[0],protectedCard);
 const slot=grid.children[1];
 assert.equal(slot.className,'card-slot');
+assert.equal(slot.type,'button');
 observer.emit([slot],true);
 assert.equal(grid.children[1].id,1);
 const another=grid.children.find(n=>n.className==='card-slot');

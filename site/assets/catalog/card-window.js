@@ -18,6 +18,7 @@ export function createCardWindow(grid, render, {limit=120, protectedNode=()=>nul
 
   function restore(slot, focus=false) {
     if (slot.parentNode!==grid) return;
+    focus=focus||document.activeElement===slot;
     const game=games.get(slot);
     if (!game) return;
     const card=render(game);
@@ -27,7 +28,17 @@ export function createCardWindow(grid, render, {limit=120, protectedNode=()=>nul
     slot.replaceWith(card);
     live.add(card);
     observer?.observe(card);
-    if(focus) card.querySelector('.card-open')?.focus({preventScroll:true});
+    if(focus){
+      // Keep the restored card renderable while transferring keyboard focus.
+      card.style.contentVisibility='visible';
+      const control=card.querySelector('.card-open');
+      const transfer=()=>control?.focus({preventScroll:true});
+      control?.addEventListener('blur',()=>card.style.removeProperty('content-visibility'),{once:true});
+      transfer();
+      if(document.activeElement!==control&&typeof requestAnimationFrame==='function'){
+        requestAnimationFrame(()=>{if(card.isConnected)transfer();});
+      }
+    }
   }
 
   function prune() {
@@ -43,10 +54,10 @@ export function createCardWindow(grid, render, {limit=120, protectedNode=()=>nul
       card.style.removeProperty("content-visibility");
       if(rect.width<=0 || rect.height<=0) continue;
       const game=games.get(card);
-      const slot=document.createElement('div');
+      const slot=document.createElement('button');
+      slot.type='button';
       slot.className='card-slot';
       slot.tabIndex=0;
-      slot.setAttribute('role','button');
       slot.setAttribute('aria-label',game.title);
       slot.style.setProperty('--slot-body',Math.max(0,rect.height-rect.width*4/3)+'px');
       games.set(slot,game);

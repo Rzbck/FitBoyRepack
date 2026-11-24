@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T00:53:13.038650+00:00",
+  "generated_at": "2026-11-24T00:54:06.426459+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-23T13:35:44.283886+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "Horror",
         "Turn-based"
       ],
-      "repack_size": "4.1 GB"
+      "repack_size": "4.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/48/fb/48fba3f4-0803-4437-ab93-d08eba7111b6.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/48/fb/48fba3f4-0803-4437-ab93-d08eba7111b6.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/9f/aa9f5a9c-2fb2-40aa-bbf1-88bfa3a94375.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/9f/aa9f5a9c-2fb2-40aa-bbf1-88bfa3a94375.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/65/2e/652e3877-61c3-41b4-a8c0-0f55d1d798de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/65/2e/652e3877-61c3-41b4-a8c0-0f55d1d798de.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/60/22/602279a0-0b8f-4e87-bc9f-28faf26c26de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/60/22/602279a0-0b8f-4e87-bc9f-28faf26c26de.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ab/af/abafb432-4204-4dfb-a5c6-f6d0c434ab8d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ab/af/abafb432-4204-4dfb-a5c6-f6d0c434ab8d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ed/45/ed45e883-000f-47dc-8055-4f7bb2a0affb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ed/45/ed45e883-000f-47dc-8055-4f7bb2a0affb.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-24T00:54:06.423955+00:00",
+      "details": {
+        "description": "From the makers of\nThe Blackout Club\nand\nThe Magic Circle\ncomes\nThe Killing Stone.\nA card battler with beautiful stylized art, animated figurines, dazzling effects, haunted sound and music, and an original first-person narrative set in the 17th century in a remote region of the Arctic circle.\nA Living Game Board\nAt the center of the ceremonial board is the\nFanghella\n, the Killing Stone. A collection of magical creature figurines, spells, and incantations allows for a variety of clever tactics. The game pieces are full of life and character, giving a very tactile and responsive experience while still allowing players to deliberate their every move.\nA novel\nReserve System\nallows for more strategic plays, letting you stack units and buffing incantations above the battle line for later deployment. Creature placement, spellcasting, and bargaining to add powerful banes and boons to your deck all affect your chances of success.\nNavigate Ritual Contracts\nBattles feed into a Ritual bargain\nagainst the Devil’s minions for the soul of each family member. Like a cat with a mouse, Demons love to play with their victims. Their pride cannot resist a wager if they think they can tilt the outcome to their advantage – but you can call their bluff.\nEach Svangård has their own card deck representing their souls, cursed with debts left by their Matriarch. The outcomes of a Bargain offer powerful effects which permanently affect the family member you are helping with helpful Boons or heavy Banes.\nYou only have a few rounds to negotiate before the Ritual is completed, and only a few Rituals to make a difference and alter a family member’s fate before the final Reckoning is due.\nThese bargains and the opposing demons change as you progress.\nNo two playthroughs are identical\n. Replays grant you new dark miracles, and ways to change the ending.\nPurge the Svangård family’s hereditary curse before the devil arrives. Hopefully, without losing your own soul.",
+        "game_features": [],
+        "repack_features": [
+          "Based on The.Killing.Stone-RUNE ISO release: rune-the.killing.stone.iso (5,960,990,720 bytes)",
+          "Game version: v18032",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.6 to 4.1 GB)",
+          "Installation takes 2-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-24T00:54:06.423955+00:00"
     },
     {
       "id": "phantom-blade-zero",
@@ -102,7 +155,59 @@
         "3D",
         "Japanese"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/f2/0b/f20bef94-3b15-4636-add6-2c78a8b8becc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f2/0b/f20bef94-3b15-4636-add6-2c78a8b8becc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f9/8d/f98dbb3f-1651-4744-b948-9742231541e7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f9/8d/f98dbb3f-1651-4744-b948-9742231541e7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/63/0e/630e384c-5b19-4a7b-b291-00bdf8a46c5c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/63/0e/630e384c-5b19-4a7b-b291-00bdf8a46c5c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8f/cd/8fcda554-3199-4307-bba8-3beedcd3369b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8f/cd/8fcda554-3199-4307-bba8-3beedcd3369b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/16/17/16174f9d-1bb3-48b7-9fce-b89157a56ab4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/16/17/16174f9d-1bb3-48b7-9fce-b89157a56ab4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1e/8a/1e8a41b8-5b1f-4c39-9ba3-e331d0db9562.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1e/8a/1e8a41b8-5b1f-4c39-9ba3-e331d0db9562.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-24T00:54:06.423955+00:00",
+      "details": {
+        "description": "THE ETERNAL PALACE\nStep into the dreamscape of the Eternal Palace. You are Retla, a cat-eared dual-weapon-wielder, tasked with navigating an ever changing labyrinth that challenges every adventurer who dares enter. Each run is a test of skill, cunning, and courage.\nTHE DREAM LABYRINTH\nEvery corridor changes with each attempt, revealing new dangers, hidden treasures, and unexpected secrets. No two runs are the same: explore, adapt, and master the ever-changing maze.\nMASTER THE COMBAT\nYour arsenal consists in dual blades, flashy combos, and fast-paced dodges. Strike, evade, and chain attacks in a style all your own. Every enemy is a puzzle and every battle a chance to prove your skill.\nROGUELITE PROGRESSION\nWith every attempt, grow stronger. Unlock new abilities, weapons, and upgrades that carry over into future runs. Adapt your skills, experiment with strategies, and continue your endless journey through the ever-changing labyrinth.\nFEATURES\nThrilling 3D action with responsive dual-wield combat.\nProcedurally generated labyrinths full of traps, treasures, and mysteries.\nHigh replayability with evolving challenges.\nAnime-inspired fantasy world with a memorable, heroic protagonist.\nENTER THE LABYRINTH\nFace various cunning enemies, unravel shifting paths, and rise stronger with each run. The Eternal Palace awaits: will you master its trials, or be lost to its mysteries forever?\nMUGEN DEPTH: THE DEEPER YOU GO, THE GREATER THE DANGER\nAs you venture deeper into the labyrinth, your Mugen Depth rises, bringing debuffs and ever-stronger enemies.\nWeighing risk against reward keeps every run tense and makes you want to dive in again and again.\nSTORY\nRetla Stlutin, a cat-eared heroine, has heard rumors of a mysterious tower that rises endlessly into the heavens, and has come all the way to Ouran, a land in the Far East.\nAfter overcoming countless hardships, Retla finally reaches the tower. But the moment she steps inside, she becomes trapped within its walls…\nRetla battles through hordes of enemies, collecting spoils and rare treasures as she goes. Just how far can she make it into the Eternal Palace Sakura!\nBrave the ever-shifting eternal labyrinth and conquer the mighty bosses and endgame challenges lurking in its deepest floors!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Eternal.Palace.Sakura-TENOKE ISO release: tenoke-eternal.palace.sakura.iso (2,085,068,800 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.9 GB to 711 MB)",
+          "Installation takes 1-2 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-24T00:54:06.423955+00:00"
     },
     {
       "id": "dinkum",
@@ -192,7 +297,60 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "1.1 GB"
+      "repack_size": "1.1 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/70/92/70920caf-84b7-4373-bf57-a76e2391023f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/70/92/70920caf-84b7-4373-bf57-a76e2391023f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9c/17/9c175f1d-a431-4087-a34b-365bf514470d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9c/17/9c175f1d-a431-4087-a34b-365bf514470d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/02/90/0290a5c4-9965-4dcc-9403-850ea841ccfe.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/02/90/0290a5c4-9965-4dcc-9403-850ea841ccfe.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/12/20/12206986-41a5-4228-8c2f-4b0bf4503c96.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/12/20/12206986-41a5-4228-8c2f-4b0bf4503c96.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/99/91/9991a801-189b-490e-85d5-fb1e0f71f43c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/99/91/9991a801-189b-490e-85d5-fb1e0f71f43c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3b/96/3b967dbb-a786-4849-ad65-93375ed2169a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3b/96/3b967dbb-a786-4849-ad65-93375ed2169a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-24T00:54:06.423955+00:00",
+      "details": {
+        "description": "“I am writing this under an appreciable mental strain…”\nA faithful re-imagining of H.P. Lovecraft through the eyes of a penguin. Developed by Origame Digital, creators of Umurangi Generation, published by Fellow Traveller (1000xRESIST), and narrated by Lenval Brown.\n“The wind howls differently in South”\nThe year is 1939, and the Nazis and Kaitiaki are making their way into the deep Antarctic to answer the call of an impossibly ancient being. One group seeks to extract this inconceivable power for its own destructive means. The other, as it has been doing for generations, hopes to return it to its slumber for another hundred years.\nThese humans, with their strange sights and sounds, will pique the curiosity of the local penguins. Embody any one of these penguins and wander the frozen landscape, following the humans in their discoveries, and witnessing their minds collapse under the strain.\nPart adaptation, part re-imagination, Penguin Colony is a sincere expansion of H.P. Lovecraft’s mythos. Drawing inspiration from stories like At the Mountains of Madness and The Shadow Out of Time, the game is set just two years after Lovecraft’s death, and carries on his tradition of weird fiction.\nAbout the Developer\nORIGAME DIGITAL is a new media studio located in Ahitereiria. Developers of the IGF Grand Prize Winner Umurangi Generation (2020). Combining the new medium of Video Games with the Original story telling ways that’s what ORI-GAME is all about. Next time you feel like something fresh check out an ORIGAME.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Penguin.Colony-FCKDRM ISO release: fckdrm-penguin.colony.iso (2,329,280,512 bytes)",
+          "Game version: v1.5",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.2 to 1.1 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-24T00:54:06.423955+00:00"
     },
     {
       "id": "anno-117-pax-romana",

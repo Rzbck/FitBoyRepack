@@ -30,6 +30,7 @@ jobs:
       - run: PYTHONPATH=tools python tools/test_translation_pipeline.py
       - run: bash -n ops/fitboy/install_translation_runtime.sh
       - run: python ops/fitboy/test_backup_sqlite.py
+      - run: python tools/test_github_orchestrator.py
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'

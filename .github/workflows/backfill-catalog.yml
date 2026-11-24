@@ -1,21 +1,12 @@
 name: Full Catalog Backfill
 
 on:
-  schedule:
-    - cron: '31 3 * * *'
   workflow_dispatch:
     inputs:
       workers:
         description: 'Parallel listing-page workers'
         required: false
         default: '12'
-  push:
-    branches: [main]
-    paths:
-      - 'tools/update_catalog.py'
-      - 'tools/catalog_classifier.py'
-      - 'tools/check_catalog_classification.py'
-      - '.github/workflows/backfill-catalog.yml'
 
 permissions:
   contents: write

@@ -1,8 +1,6 @@
 name: Fast New Post Watch
 
 on:
-  schedule:
-    - cron: '*/10 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [fitgirl-new-post]
@@ -31,6 +29,7 @@ jobs:
         id: feed
         run: python tools/check_feed.py
       - name: Queue the serialized catalog writer
+        if: steps.feed.outputs.feed_ok != 'true' || steps.feed.outputs.new_count != '0'
         env:
           GH_TOKEN: ${{ github.token }}
           NEW_COUNT: ${{ steps.feed.outputs.new_count || '0' }}

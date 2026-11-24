@@ -7,3 +7,18 @@
   content-visibility: visible;
   contain-intrinsic-size: none;
 }
+
+/* Offscreen cards retain their grid cell without images, badges or listeners. */
+.game-grid .card-slot {
+  min-width: 0;
+  padding-bottom: var(--slot-body, 0px);
+  border-radius: 18px;
+  background: var(--panel);
+  outline-offset: -2px;
+}
+.game-grid .card-slot::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}

@@ -1,4 +1,5 @@
-import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload } from './catalog-api.js?v=2';
+import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload, searchIndexMatchesCatalog } from './catalog-api.js?v=3';
+import { createCardWindow } from './card-window.js';
 import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './wishlist.js';
 import {
   displayTitle as identityDisplayTitle,
@@ -66,7 +67,7 @@ function saveLibrary() {
 const state = {
   games: [], byId:new Map(), filtered:[], visible:PAGE_SIZE, selectedTags:new Set(), tagCounts:new Map(), searchIndex:null, steamRatings:new Map(),
   library:readLibrary(), libraryFilter:'', quick:{ newOnly:false, detailsOnly:false, mediaOnly:false },
-  dialogGameId:null, dialogScrollY:0, dialogOpener:null, loadingMore:false, lastLoadAt:0, searchTimer:0, suggestionIndex:-1
+  dialogGameId:null, dialogScrollY:0, dialogOpener:null, loadingMore:false, lastLoadAt:0, renderGeneration:0, searchTimer:0, suggestionIndex:-1
 };
 
 function normalized(value='') {
@@ -248,7 +249,8 @@ function applyFilters() {
     if (sort==='name_desc') return cardDisplayTitle(b).localeCompare(cardDisplayTitle(a),locale(),{sensitivity:'base'});
     return gameDate(b)-gameDate(a);
   });
-  state.visible=Math.min(PAGE_SIZE,state.filtered.length); state.loadingMore=false;
+  state.renderGeneration++; state.lastLoadAt=-Infinity;
+  state.visible=Math.min(PAGE_SIZE,state.filtered.length); state.loadingMore=false; els.infiniteStatus.hidden=true;
   renderCatalog(); updateTagFacets(); renderSuggestions(); armInfiniteObserver();
 }
 
@@ -318,8 +320,17 @@ function updateTagFacets() {
 }
 
 function pill(text){const el=document.createElement('span');el.className='genre-pill';el.textContent=text;return el;}
-function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)return; on?set.add(id):set.delete(id); saveLibrary(); updateLibraryUI(); renderRecommendations(); document.dispatchEvent(new CustomEvent('fitboy:library-change',{detail:{gameId:id,library:snapshotLibrary()}})); }
-function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorites.has(id)); if(state.libraryFilter==='favorites') applyFilters(); else renderCatalog();}
+function setLibraryItem(list,id,on){ const set=state.library[list]; if(!set)return; on?set.add(id):set.delete(id); saveLibrary(); updateLibraryUI(); renderRecommendations(); if(list==="favorites")refreshFavoriteCards(id); document.dispatchEvent(new CustomEvent('fitboy:library-change',{detail:{gameId:id,library:snapshotLibrary()}})); }
+function toggleFavorite(id){setLibraryItem('favorites',id,!state.library.favorites.has(id)); if(state.libraryFilter==='favorites') applyFilters();}
+function refreshFavoriteCards(id){
+  const active=state.library.favorites.has(id);
+  for(const card of document.querySelectorAll('.game-card[data-game-id]')){
+    if(card.dataset.gameId!==id)continue;
+    const favorite=card.querySelector('.favorite-btn');if(!favorite)continue;
+    favorite.classList.toggle('active',active);favorite.textContent=active?'\u2665':'\u2661';
+    favorite.setAttribute('aria-label',t(active?'card.removeFavorite':'card.addFavorite'));
+  }
+}
 function snapshotLibrary(){return Object.fromEntries(Object.entries(state.library).map(([k,v])=>[k,[...v]]));}
 
 function makeVoteThumb(down=false){
@@ -478,9 +489,26 @@ function updateCatalogMeta(){
   els.favoritesToggle.classList.toggle('active',state.libraryFilter==='favorites');
   els.favoritesToggle.setAttribute('aria-pressed',String(state.libraryFilter==='favorites'));
 }
-function renderCatalog({append=false,start=0}={}){const end=Math.min(state.visible,state.filtered.length),fragment=document.createDocumentFragment();for(let i=start;i<end;i++)fragment.append(renderCard(state.filtered[i]));append?els.grid.append(fragment):els.grid.replaceChildren(fragment);updateCatalogMeta();}
-
-function loadNextPage(){if(state.loadingMore||state.visible>=state.filtered.length)return;const now=performance.now();if(now-state.lastLoadAt<LOAD_COOLDOWN_MS)return;state.loadingMore=true;state.lastLoadAt=now;infiniteObserver.unobserve(els.scrollSentinel);els.infiniteStatus.hidden=false;const start=state.visible;requestAnimationFrame(()=>{state.visible=Math.min(state.visible+PAGE_SIZE,state.filtered.length);renderCatalog({append:true,start});els.infiniteStatus.hidden=true;setTimeout(()=>{state.loadingMore=false;armInfiniteObserver();},LOAD_COOLDOWN_MS);});}
+const cardWindow=createCardWindow(els.grid,renderCard,{protectedNode:()=>state.dialogOpener});
+function renderCatalog({append=false,start=0}={}){
+  if(!append)cardWindow.reset();
+  cardWindow.append(state.filtered.slice(start,Math.min(state.visible,state.filtered.length)));
+  updateCatalogMeta();
+}
+function loadNextPage(){
+  if(state.loadingMore||state.visible>=state.filtered.length)return;
+  const now=performance.now();
+  if(now-state.lastLoadAt<LOAD_COOLDOWN_MS)return;
+  state.loadingMore=true;state.lastLoadAt=now;
+  const generation=state.renderGeneration,start=state.visible;
+  infiniteObserver.unobserve(els.scrollSentinel);els.infiniteStatus.hidden=false;
+  requestAnimationFrame(()=>{
+    if(generation!==state.renderGeneration)return;
+    state.visible=Math.min(state.visible+PAGE_SIZE,state.filtered.length);
+    renderCatalog({append:true,start});els.infiniteStatus.hidden=true;
+    setTimeout(()=>{if(generation!==state.renderGeneration)return;state.loadingMore=false;armInfiniteObserver();},LOAD_COOLDOWN_MS);
+  });
+}
 const infiniteObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.target===els.scrollSentinel&&e.isIntersecting))loadNextPage();},{root:null,rootMargin:'350px 0px',threshold:.01});
 function armInfiniteObserver(){infiniteObserver.unobserve(els.scrollSentinel);if(state.loadingMore||els.scrollSentinel.hidden)return;requestAnimationFrame(()=>{if(!state.loadingMore&&!els.scrollSentinel.hidden)infiniteObserver.observe(els.scrollSentinel);});}
 infiniteObserver.observe(els.scrollSentinel);
@@ -531,7 +559,7 @@ function gameHashId(){return window.location.hash.startsWith('#')?(new URLSearch
 function syncGameHash(id){const hash=`#game=${encodeURIComponent(id)}`;if(window.location.hash!==hash)history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}${hash}`);}
 function clearGameHash(){if(gameHashId())history.replaceState(history.state,'',`${window.location.pathname}${window.location.search}`);}
 
-function collectionButton(labelKey,list,gameId,actionType){const b=document.createElement('button');b.type='button';b.className='dialog-action';b.dataset.actionType=actionType;const refresh=()=>{const on=state.library[list].has(gameId);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.textContent=`${on?'✓ ':''}${t(labelKey)}`;};refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(list==='favorites')renderCatalog();});return b;}
+function collectionButton(labelKey,list,gameId,actionType){const b=document.createElement('button');b.type='button';b.className='dialog-action';b.dataset.actionType=actionType;const refresh=()=>{const on=state.library[list].has(gameId);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.textContent=`${on?'✓ ':''}${t(labelKey)}`;};refresh();b.addEventListener('click',()=>{setLibraryItem(list,gameId,!state.library[list].has(gameId));refresh();if(state.libraryFilter===list)applyFilters();});return b;}
 
 function appendInitialIdentityFact(meta,labelKey,value,{dateValue=''}={}){
   if(!value)return;
@@ -814,7 +842,7 @@ function openDialog(game,{syncUrl=true}={}){
 }
 function isLightboxOpen(){const box=els.dialog.querySelector('.media-lightbox');return Boolean(box&&!box.hidden);}
 function navigateDialog(delta){if(!els.dialog.open||isLightboxOpen()||state.filtered.length<2)return;const current=state.filtered.findIndex(g=>g.id===state.dialogGameId);if(current<0)return;openDialog(state.filtered[(current+delta+state.filtered.length)%state.filtered.length],{syncUrl:true});}
-function restoreCatalogPosition(){const opener=state.dialogOpener;state.dialogGameId=null;state.dialogOpener=null;clearGameHash();unlockCatalogScroll();requestAnimationFrame(()=>{try{if(opener?.isConnected)opener.focus({preventScroll:true});}catch{}});}
+function restoreCatalogPosition(){const opener=state.dialogOpener;state.dialogGameId=null;state.dialogOpener=null;clearGameHash();unlockCatalogScroll();requestAnimationFrame(()=>{try{if(opener?.isConnected)opener.focus({preventScroll:true});cardWindow.prune();}catch{}});}
 function openHashGame(){const id=gameHashId();if(!id)return;const game=state.byId.get(id);if(game)openDialog(game,{syncUrl:false});}
 
 function renderHealth(health){
@@ -861,7 +889,7 @@ async function loadCatalog(){
     renderRecommendations();
     openHashGame();
     loadSearchIndexPayload().then(index=>{
-      if(index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);
+      if(!searchIndexMatchesCatalog(index,payload)||index.count!==state.games.length)throw new Error(`Search index count ${index.count} != catalog ${state.games.length}`);
       state.searchIndex=index;
       if(els.search.value.trim())applyFilters();
     }).catch(e=>console.warn('Search index unavailable, using full scan',e));

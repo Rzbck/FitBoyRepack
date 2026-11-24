@@ -1,0 +1,34 @@
+<!doctype html><meta charset="utf-8"><title>Card window browser contract</title>
+<link rel="stylesheet" href="./assets/performance.css">
+<style>*{box-sizing:border-box}body{margin:0}#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}.game-card{border:1px solid #777}.game-card .cover{aspect-ratio:3/4}.card-open{height:60px;width:100%}</style>
+<div id="grid" class="game-grid"></div><pre id="result">pending</pre>
+<script type="module">
+import {createCardWindow} from './assets/card-window.js';
+const grid=document.querySelector('#grid'),result=document.querySelector('#result');
+const check=(condition,message)=>{if(!condition)throw new Error(message);};
+const settle=()=>new Promise(resolve=>setTimeout(resolve,250));
+const render=game=>{
+  const card=document.createElement('article');card.className='game-card';card.dataset.id=game.id;
+  const cover=document.createElement('div');cover.className='cover';
+  const button=document.createElement('button');button.className='card-open';button.textContent=game.title;
+  card.append(cover,button);return card;
+};
+try {
+  const controller=createCardWindow(grid,render);
+  controller.append(Array.from({length:240},(_,id)=>({id,title:'Game '+id})));
+  for(let i=0;i<20 && grid.querySelectorAll('.card-slot').length===0;i++)await settle();
+  check(grid.children.length===240,'missing grid cells');
+  check(grid.querySelectorAll('.game-card').length<=120,'live window not reduced');
+  const slot=grid.querySelector('.card-slot'),index=[...grid.children].indexOf(slot);
+  slot.scrollIntoView({block:'center'});
+  for(let i=0;i<20 && grid.children[index].classList.contains('card-slot');i++)await settle();
+  check(grid.children[index].dataset.id===String(index),'scroll did not restore original card');
+  const next=grid.querySelector('.card-slot'),nextIndex=[...grid.children].indexOf(next);
+  next.focus({preventScroll:true});
+  check(grid.children[nextIndex].dataset.id===String(nextIndex),'focus did not restore card');
+  check(document.activeElement===grid.children[nextIndex].querySelector('.card-open'),'focus lost');
+  controller.reset();controller.append([{id:999,title:'Filtered game'}]);
+  check(grid.children.length===1&&grid.children[0].dataset.id==='999','reset failed');
+  result.textContent='CARD WINDOW BROWSER OK';
+} catch(error){result.textContent='CARD WINDOW BROWSER FAILED: '+error.message;}
+</script>

@@ -9,6 +9,7 @@ let searchIndexPromise = null;
 let healthPromise = null;
 let steamRatingsPromise = null;
 const detailCache = new Map();
+const detailPending = new Map();
 
 function fetchJson(url, label) {
   return fetch(url, { cache:'no-cache' }).then(async response => {
@@ -69,12 +70,27 @@ export function detailUrl(detailPath) {
 export function loadGameDetail(detailPath) {
   const url = detailUrl(detailPath);
   if (!url) return Promise.reject(new Error('Missing game detail path'));
-  if (detailCache.has(url)) return detailCache.get(url);
+  if (detailCache.has(url)) {
+    const value = detailCache.get(url);
+    detailCache.delete(url);
+    detailCache.set(url, value);
+    return Promise.resolve(value);
+  }
+  if (detailPending.has(url)) return detailPending.get(url);
   const promise = fetchJson(url, 'Game detail').then(game => {
     if (!game || !game.id || !game.title) throw new Error('Invalid game detail payload');
+    detailCache.set(url, game);
+    while (detailCache.size > DETAIL_CACHE_LIMIT) detailCache.delete(detailCache.keys().next().value);
     return game;
-  }).catch(error => { detailCache.delete(url); throw error; });
-  detailCache.set(url, promise);
-  while (detailCache.size > DETAIL_CACHE_LIMIT) detailCache.delete(detailCache.keys().next().value);
+  }).finally(() => {
+    if (detailPending.get(url) === promise) detailPending.delete(url);
+  });
+  detailPending.set(url, promise);
   return promise;
+}
+
+export function searchIndexMatchesCatalog(index, catalog) {
+  return index.count === catalog.count
+    && index.generated_at === catalog.generated_at
+    && index.metadata_generated_at === catalog.metadata_generated_at;
 }

@@ -226,3 +226,14 @@ feature translations in each individual detail payload. The deployed artifact
 excludes the global source snapshot. The client verifies hashes again and uses
 English for missing or stale fields. Language changes reuse the detail cache.
 The health payload reports embedded game and field counts.
+
+### Browser cache and card window
+The detail cache holds the 24 most recently used completed payloads. In-flight
+requests are shared separately and failed requests remain retryable. The search
+index is only used when its catalog and metadata timestamps match the catalog.
+The catalog retains the original infinite paging and grid geometry; beyond 120
+cards, offscreen cards can be replaced by lightweight responsive placeholders
+and restored on intersection or focus. The limit is soft: visible or focused
+cards and the open dialog's original trigger are not evicted. Filter changes
+invalidate queued pagination callbacks, and favorite changes update the affected
+cards without rebuilding the entire catalog. These are browser-only changes.

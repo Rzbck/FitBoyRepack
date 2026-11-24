@@ -1,4 +1,4 @@
-import { loadGameDetail } from './catalog-api.js?v=2';
+import { loadGameDetail } from './catalog-api.js?v=3';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,

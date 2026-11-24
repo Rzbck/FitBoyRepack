@@ -25,7 +25,8 @@ try {
   check(grid.children[index].dataset.id===String(index),'scroll did not restore original card');
   const next=grid.querySelector('.card-slot'),nextIndex=[...grid.children].indexOf(next);
   next.focus({preventScroll:true});
-  check(grid.children[nextIndex].dataset.id===String(nextIndex),'focus did not restore card');
+  for(let i=0;i<8 && (grid.children[nextIndex].dataset.id!==String(nextIndex)||document.activeElement!==grid.children[nextIndex].querySelector('.card-open'));i++)await settle();
+  check(grid.children[nextIndex].dataset.id===String(nextIndex),'focus did not restore card at '+nextIndex+'; active='+document.activeElement.tagName+'; slot='+next.tagName+'; hasFocus='+document.hasFocus());
   check(document.activeElement===grid.children[nextIndex].querySelector('.card-open'),'focus lost');
   controller.reset();controller.append([{id:999,title:'Filtered game'}]);
   check(grid.children.length===1&&grid.children[0].dataset.id==='999','reset failed');

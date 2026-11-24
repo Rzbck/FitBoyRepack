@@ -1,5 +1,5 @@
 import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload, searchIndexMatchesCatalog } from './core/catalog-api.js';
-import { createCardWindow } from './catalog/card-window.js';
+import { createCardWindow } from './catalog/card-window.js?v=2';
 import { normalized, createQueryScorer } from './catalog/search-score.js';
 import { STORAGE_KEYS, readLibrary, writeLibrary } from './core/storage.js';
 import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './library/wishlist.js';

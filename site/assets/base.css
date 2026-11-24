@@ -623,7 +623,11 @@ body.dialog-scroll-locked{
 /* Offscreen cards retain their grid cell without images, badges or listeners. */
 .game-grid .card-slot {
   min-width: 0;
-  padding-bottom: var(--slot-body, 0px);
+  width:100%;
+  display:block;
+  border:0;
+  appearance:none;
+  padding: 0 0 var(--slot-body, 0px);
   border-radius: 18px;
   background: var(--panel);
   outline-offset: -2px;

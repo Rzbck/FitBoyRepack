@@ -52,6 +52,7 @@ try {
   for(const viewport of [{width:1000,height:800},{width:390,height:844}]){
     await call('Emulation.setDeviceMetricsOverride',{...viewport,deviceScaleFactor:1,mobile:false});
     const target=new URL(url);target.searchParams.set('viewport',String(viewport.width));
+    await call('Page.bringToFront');
     await call('Page.navigate',{url:target.href});
     let result='pending';
     for(let i=0;i<150;i++){

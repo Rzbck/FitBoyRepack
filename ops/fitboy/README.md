@@ -218,3 +218,11 @@ before a fresh review. The metadata worker shares the review lock during its
 activation. Search fallback uses bounded title variants; confidence, completeness
 and margin requirements are unchanged. No manually maintained title mapping or
 paid API is needed. The timer fetches the tested code from main.
+
+### Lazy French translations
+The publisher continues writing the complete translation snapshot in GitHub.
+The Pages build verifies source hashes and embeds only matching description and
+feature translations in each individual detail payload. The deployed artifact
+excludes the global source snapshot. The client verifies hashes again and uses
+English for missing or stale fields. Language changes reuse the detail cache.
+The health payload reports embedded game and field counts.

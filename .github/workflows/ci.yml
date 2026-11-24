@@ -28,6 +28,7 @@ jobs:
       - run: PYTHONPATH=tools python tools/test_public_metadata_export.py
       - run: PYTHONPATH=tools python tools/test_steam_ratings.py
       - run: PYTHONPATH=tools python tools/test_translation_pipeline.py
+      - run: python tools/test_translation_build.py
       - run: bash -n ops/fitboy/install_translation_runtime.sh
       - run: python ops/fitboy/test_backup_sqlite.py
       - run: python tools/test_github_orchestrator.py
@@ -245,6 +246,10 @@ jobs:
           Path('site/data/translations-fr.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
           print('translation browser fixture',game_id)
           PY
+      - name: Rebuild with translation fixture and remove global source from browser test
+        run: |
+          python tools/build_site_data.py
+          rm site/data/translations-fr.json
       - name: Verify developer/publisher search postings
         shell: bash
         run: |
@@ -372,7 +377,7 @@ jobs:
           ! grep -q 'class="detail-loading-shell"' /tmp/legacy-game.html
 
           # Public prose localization is source-hash verified and obeys the persisted language choice.
-          translated_id=$(python -c "import json; print(next(iter(json.load(open('site/data/translations-fr.json',encoding='utf-8'))['games'])))")
+          translated_id=$(python -c "import json; print(json.load(open('site/'+json.load(open('site/data/health.json',encoding='utf-8'))['translation_sample_path'],encoding='utf-8'))['id'])")
           encoded_translated_id=$(python -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1],safe=''))" "$translated_id")
           run_lang fr "./#game=${encoded_translated_id}" /tmp/translated-fr.html
           grep -Fq 'TRADUCTION FRANÇAISE CI — description vérifiée.' /tmp/translated-fr.html

@@ -1,4 +1,4 @@
-import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload } from './catalog-api.js';
+import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload } from './catalog-api.js?v=2';
 import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './wishlist.js';
 import {
   displayTitle as identityDisplayTitle,

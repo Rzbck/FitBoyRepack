@@ -78,6 +78,9 @@ jobs:
       - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
       - run: node tools/test_release_year.mjs
+      - run: node tools/test_catalog_cache.mjs
+      - run: node tools/test_card_window.mjs
+      - run: node --check site/assets/card-window.js
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: node --check site/assets/media-preview-v7.js
@@ -297,6 +300,9 @@ jobs:
           PY
             run_chrome http://127.0.0.1:4173/__ci-lang.html > "$output"
           }
+          cp tools/card_window_browser.html site/__ci-card-window.html
+          run_chrome http://127.0.0.1:4173/__ci-card-window.html > /tmp/card-window.html
+          grep -Fq '<pre id="result">CARD WINDOW BROWSER OK</pre>' /tmp/card-window.html
           run_lang en "./" /tmp/dom.html
           cards=$(grep -o 'data-game-id=' /tmp/dom.html | wc -l | tr -d ' ')
           echo "Rendered cards: $cards"

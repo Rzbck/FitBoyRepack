@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T18:00:35.940077+00:00",
+  "generated_at": "2026-11-24T21:06:28.172722+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
+    {
+      "id": "serious-sam-fusion",
+      "title": "Serious Sam Fusion – v791116",
+      "source_url": "https://fitgirl-repacks.site/serious-sam-fusion/",
+      "image_url": "https://i5.imageban.ru/out/2026/11/24/52f7528dda2aec259e350aba31d6508a.jpg",
+      "post_date": "2026-11-24T23:55:09+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "4.3 GB"
+    },
     {
       "id": "flick",
       "title": "Flick",

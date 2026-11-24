@@ -39,6 +39,12 @@ class OrchestratorTests(unittest.TestCase):
         self.assertEqual(status["last_success_age_minutes"],180)
         self.assertEqual(status["last_conclusion"],"failure")
         self.assertTrue(status["overdue"])
+    def test_rss_failover(self):
+        r = fresh(); r["feed-watch.yml"] = [run(310)]
+        r["enrich-media.yml"] = [run(130)]
+        self.assertEqual(choose(r,NOW)[0], "feed-watch.yml")
+        r["feed-watch.yml"] = [run(1,None,"in_progress")]
+        self.assertIsNone(choose(r,NOW)[0])
     def test_pending(self):
         r = fresh(); r["enrich-media.yml"] = [run(1,None,"queued")]
         r["steam-ratings.yml"] = [run(120)]

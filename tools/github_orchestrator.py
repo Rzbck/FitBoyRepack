@@ -11,6 +11,7 @@ INTERVALS = {
     "backfill-catalog.yml": 1440,
     "update-catalog.yml": 60,
     "enrich-media.yml": 15,
+    "feed-watch.yml": 10,
 }
 RETRY_MINUTES = 15
 
@@ -24,7 +25,7 @@ def choose(runs, now):
     if set(runs) != set(INTERVALS):
         raise ValueError("incomplete workflow history")
     if any(r["status"] != "completed" for history in runs.values() for r in history):
-        return None, "writer already active"
+        return None, "worker or RSS watch already active"
     due = []
     for name, interval in INTERVALS.items():
         history = runs[name]

@@ -1,9 +1,78 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T14:44:47.908961+00:00",
+  "generated_at": "2026-11-24T16:52:28.875628+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
+    {
+      "id": "slime-rancher-2",
+      "title": "Slime Rancher 2: Game & Soundtrack, v1.3.0 + Bonus OST (2 volumes)",
+      "source_url": "https://fitgirl-repacks.site/slime-rancher-2/",
+      "image_url": "https://i6.imageban.ru/out/2025/09/24/4e3f1710cb194486ef9d65bc509a529d.jpg",
+      "post_date": "2026-11-24T19:35:00+03:00",
+      "genres": [
+        "Action",
+        "Exploration",
+        "Management",
+        "Open world",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/35/2d/352d64fc-f7f5-4695-8f8c-a3352fcd90c2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/35/2d/352d64fc-f7f5-4695-8f8c-a3352fcd90c2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ed/2b/ed2b895d-7f8e-400c-9a18-aa0aa2d0e05b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ed/2b/ed2b895d-7f8e-400c-9a18-aa0aa2d0e05b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/af/a6/afa6a901-ba88-44b2-a77c-4be00df3936f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/af/a6/afa6a901-ba88-44b2-a77c-4be00df3936f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/39/32/3932d4cc-e135-48c5-9fca-254f4811f3c9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/39/32/3932d4cc-e135-48c5-9fca-254f4811f3c9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4a/92/4a92fc4f-bc82-49af-9578-49a9728dff70.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/92/4a92fc4f-bc82-49af-9578-49a9728dff70.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Slime Rancher 2\nis a sequel to the award-winning, smash-hit original that has been enjoyed by over 15 million fans worldwide. Continue the adventures of Beatrix LeBeau as she journeys to Rainbow Island, a mysterious land brimming with ancient technology, unknown natural resources, and an avalanche of wiggling, jiggling, new slimes to discover.\nAs Beatrix attempts to unravel the island’s secrets and uncover its true purpose, she’ll build, ranch, and farm within a beautiful conservatory, whose sparkling glass walls give her full view of the prismatic paradise she now calls home.",
+        "game_features": [
+          "Explore a Vibrant New World – Continue the slime ranching adventures of Beatrix LeBeau as she journeys to a mysterious rainbow-hued island.",
+          "Discover Wiggly New Slimes – Collect slimes never seen before on the Far, Far Range, like the bouncy cotton slime or the aquatic angler slime.",
+          "Build a Conservatory on Rainbow Island – Earn newbucks from slime plorts and collect resources on Rainbow Island to upgrade your vacpack, build new gadgets, and expand your conservatory."
+        ],
+        "repack_features": [
+          "Based on Slime.Rancher.2.v1.0.3-RUNE ISO release: rune-slime.rancher.2.v1.0.3.iso (6,328,614,912 bytes)",
+          "Game version: v1.0.3",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus soundtrack in FLAC format ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus soundtrack in MP3 format (2 volumes included)",
+          "Significantly smaller archive size (compressed from 5.9 GB to 1/1.6 GB)",
+          "Installation takes 2-6 minutes (depending on your system and selected components)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "the-killing-stone",
       "title": "The Killing Stone – v18032",
@@ -111511,75 +111580,6 @@
           "Installation takes 2-6 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 13.9 GB",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "slime-rancher-2",
-      "title": "Slime Rancher 2: Game & Soundtrack, v1.0.3 + Bonus OST (2 volumes)",
-      "source_url": "https://fitgirl-repacks.site/slime-rancher-2/",
-      "image_url": "https://i6.imageban.ru/out/2025/09/24/4e3f1710cb194486ef9d65bc509a529d.jpg",
-      "post_date": "2025-12-02T23:30:00+03:00",
-      "genres": [
-        "Action",
-        "Exploration",
-        "Management",
-        "Open world",
-        "First-person",
-        "3D"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/35/2d/352d64fc-f7f5-4695-8f8c-a3352fcd90c2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/35/2d/352d64fc-f7f5-4695-8f8c-a3352fcd90c2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ed/2b/ed2b895d-7f8e-400c-9a18-aa0aa2d0e05b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ed/2b/ed2b895d-7f8e-400c-9a18-aa0aa2d0e05b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/af/a6/afa6a901-ba88-44b2-a77c-4be00df3936f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/af/a6/afa6a901-ba88-44b2-a77c-4be00df3936f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/39/32/3932d4cc-e135-48c5-9fca-254f4811f3c9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/39/32/3932d4cc-e135-48c5-9fca-254f4811f3c9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/4a/92/4a92fc4f-bc82-49af-9578-49a9728dff70.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/4a/92/4a92fc4f-bc82-49af-9578-49a9728dff70.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Slime Rancher 2\nis a sequel to the award-winning, smash-hit original that has been enjoyed by over 15 million fans worldwide. Continue the adventures of Beatrix LeBeau as she journeys to Rainbow Island, a mysterious land brimming with ancient technology, unknown natural resources, and an avalanche of wiggling, jiggling, new slimes to discover.\nAs Beatrix attempts to unravel the island’s secrets and uncover its true purpose, she’ll build, ranch, and farm within a beautiful conservatory, whose sparkling glass walls give her full view of the prismatic paradise she now calls home.",
-        "game_features": [
-          "Explore a Vibrant New World – Continue the slime ranching adventures of Beatrix LeBeau as she journeys to a mysterious rainbow-hued island.",
-          "Discover Wiggly New Slimes – Collect slimes never seen before on the Far, Far Range, like the bouncy cotton slime or the aquatic angler slime.",
-          "Build a Conservatory on Rainbow Island – Earn newbucks from slime plorts and collect resources on Rainbow Island to upgrade your vacpack, build new gadgets, and expand your conservatory."
-        ],
-        "repack_features": [
-          "Based on Slime.Rancher.2.v1.0.3-RUNE ISO release: rune-slime.rancher.2.v1.0.3.iso (6,328,614,912 bytes)",
-          "Game version: v1.0.3",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus soundtrack in FLAC format ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus soundtrack in MP3 format (2 volumes included)",
-          "Significantly smaller archive size (compressed from 5.9 GB to 1/1.6 GB)",
-          "Installation takes 2-6 minutes (depending on your system and selected components)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 6 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T17:59:43.830059+00:00",
+  "generated_at": "2026-11-24T18:00:35.940077+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
@@ -16,7 +16,57 @@
         "3D",
         "Horror"
       ],
-      "repack_size": "1.9 GB"
+      "repack_size": "1.9 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/ee/5a/ee5ae4b2-96f3-4706-bba4-29e476f7efd5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ee/5a/ee5ae4b2-96f3-4706-bba4-29e476f7efd5.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/42/4f/424f6034-ec19-48e6-8c44-65bcfe615277.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/42/4f/424f6034-ec19-48e6-8c44-65bcfe615277.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/93/309387c4-df87-4522-b434-2034bab2ff4d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/93/309387c4-df87-4522-b434-2034bab2ff4d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4e/3c/4e3cc5f5-6877-49c3-bafd-c2834c0c0476.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4e/3c/4e3cc5f5-6877-49c3-bafd-c2834c0c0476.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/83/50/8350a2d2-761b-4871-8310-097d6ceb7dfd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/83/50/8350a2d2-761b-4871-8310-097d6ceb7dfd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/09/76/0976e082-61d5-4fb1-a2f3-92e0bb3535f9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/09/76/0976e082-61d5-4fb1-a2f3-92e0bb3535f9.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-24T18:00:35.938338+00:00",
+      "details": {
+        "description": "FLICK is a short first-person horror game scientifically engineered to spike feelings of dread. “Flick” light switches on and off within a long-abandoned house to instantly shift the environment from a safe reality to a blood-soaked echo where grisly puzzles manifest. But every flick of the switch is a gamble, for within the haunted memories of the house, something from the deep past has awoken…\nKEY FEATURES\nReality Shifting:\nToggling a light switch instantly alters a room from a safe reality to a horrifying echo where critical items and mind-bending puzzles manifest.\nFractured Storyline:\nSearch through the remnants of your family’s desperate escape and unearth the sickening history of those who resided here long before you.\nImmersive Environments:\nNavigate highly detailed, oppressive rooms where atmospheric lighting and deep shadows conceal threats around every corner.\nTotal Gameplay Time:\nMost gameplay runs will take around an hour, to an hour and a half\nExplore an oppressive home that serves as a physical record of past tragedies. What appears as a quiet, abandoned hallway in the dark twists into a gruesome tableau of atrocities the moment you\nflick\nthe light switch. Wander through these fractured realities and sift through the blood and madness of the past to find a way out of the present.\nProgress by flicking each room’s light switches on and off. Toggling the lights alters the state of the room, shifting from a safe, clean reality to a horrific echo where keys, tools, and hidden paths manifest. But progress requires courage…\nSomething twisted is hunting you through the house, following the echo of your footsteps and the memories unearthed by the lights. However, you need the light to progress, making every flick of the switch a gamble that might summon the very terror trying to tear you apart.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Flick-FLT ISO release: flt-flick.iso (3,137,529,856 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.9 to 1.9 GB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 5.2 GB",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-24T18:00:35.938338+00:00"
     },
     {
       "id": "slime-rancher-2",

@@ -24,3 +24,18 @@ history.jsonl (672 observations). Warnings appear in the journal; no secrets,
 automatic restarts, writes to application tables, or external dispatches.
 Public API reads require no credential; failures are reported as unavailable.
 Pages is event-driven, so its age alone is not considered an anomaly.
+
+## Final stability
+CI uses a pinned Playwright Chromium, retries only browser startup and retains
+desktop/mobile and detail assertions. The coordinator reacts to trusted main
+CI completions (even when a browser fails) and successful Pages deployments;
+it runs its own selection tests before dispatch. GitHub event and cron limits
+still apply. An independent VPS dispatch timer requires a separately authorized,
+repository-scoped Actions write credential; existing publisher credentials are
+not repurposed.
+The monitor includes main push CI failures. With FITBOY_NTFY_URL configured,
+two consecutive observations of an issue trigger a notification; identical
+persistent issues are not repeated, and recovery is announced once.
+External snapshots can be pulled via SSH using pull_external_backup.py, with
+SHA-256 and SQLite validation before atomic publication. Run it from a separate
+machine on a regular schedule; if that machine is off, the next run catches up.

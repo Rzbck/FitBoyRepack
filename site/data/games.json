@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T16:52:28.875628+00:00",
+  "generated_at": "2026-11-24T17:59:43.830059+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
+    {
+      "id": "flick",
+      "title": "Flick",
+      "source_url": "https://fitgirl-repacks.site/flick/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/24/10c7bea06c599ae9b96aef2cefdf450e.jpg",
+      "post_date": "2026-11-24T20:43:26+03:00",
+      "genres": [
+        "Exploration",
+        "First-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "1.9 GB"
+    },
     {
       "id": "slime-rancher-2",
       "title": "Slime Rancher 2: Game & Soundtrack, v1.3.0 + Bonus OST (2 volumes)",

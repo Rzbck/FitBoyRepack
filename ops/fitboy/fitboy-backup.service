@@ -1,0 +1,19 @@
+[Unit]
+Description=FitBoyRepack consistent SQLite backup
+
+[Service]
+Type=oneshot
+User=fitboy
+Group=fitboy
+ExecStart=/usr/bin/python3 /usr/local/libexec/fitboy/backup_sqlite.py
+TimeoutStartSec=5min
+Nice=19
+IOSchedulingClass=idle
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/fitboy/backups
+RestrictAddressFamilies=AF_UNIX
+IPAddressDeny=any

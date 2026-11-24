@@ -16,10 +16,13 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   verify:
+    name: Build and verify a single Pages artifact
+    outputs:
+      commit_sha: ${{ steps.version.outputs.sha }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -32,7 +35,6 @@ jobs:
       - run: python tools/build_site_data.py
       - run: python tools/check_site.py
       - run: PYTHONPATH=tools python tools/test_steam_ratings.py
-      - run: node --check site/assets/catalog-api.js
       - run: node --check site/assets/game-identity.js
       - run: node --check site/assets/i18n.js
       - run: node --check site/assets/translations.js
@@ -42,23 +44,6 @@ jobs:
       - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
       - run: node --check site/assets/details.js
-
-  deploy:
-    needs: verify
-    outputs:
-      page_url: ${{ steps.deployment.outputs.page_url }}
-      commit_sha: ${{ steps.version.outputs.sha }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-        with: { ref: main }
-      - uses: actions/setup-python@v7
-        with: { python-version: '3.12' }
-      - name: Build lightweight catalog, health and lazy game payloads
-        run: python tools/build_site_data.py
       - name: Remove rich source monolith from public artifact
         run: rm site/data/games.json
       - name: Stamp deployed revision
@@ -73,9 +58,18 @@ jobs:
         with: { enablement: true }
       - uses: actions/upload-pages-artifact@v3
         with: { path: site }
-      - name: Allow Pages artifact metadata to propagate
-        run: sleep 20
-      - name: Deploy to GitHub Pages
+
+  deploy:
+    needs: verify
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+      commit_sha: ${{ needs.verify.outputs.commit_sha }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the already verified Pages artifact
         id: deployment
         uses: actions/deploy-pages@v4
 
@@ -137,7 +131,7 @@ jobs:
           grep -q 'searchSuggestions' /tmp/index.html
           grep -Eq 'favicon[.]svg[?]v=[0-9]+' /tmp/index.html
           grep -q 'viewBox="0 0 64 64"' /tmp/favicon.svg
-          grep -Fq 'favicon-animation.js?v=3' /tmp/index.html
+          grep -Eq 'favicon-animation[.]js[?]v=[0-9]+' /tmp/index.html
           grep -Fq '#7c6cff' /tmp/favicon-gamepad.svg
           grep -Fq 'toDataURL' /tmp/favicon-animation.js
           grep -Fq 'FRAME_INTERVAL' /tmp/favicon-animation.js

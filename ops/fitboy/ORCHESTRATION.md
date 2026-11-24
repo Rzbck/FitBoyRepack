@@ -43,3 +43,8 @@ The heartbeat checks every five minutes; queued/running or recent coordinator
 runs are skipped. Failed requests back off 15 minutes. The GitHub coordinator
 retains its own worker concurrency and eligibility checks. GitHub runner queue
 delays and external outages remain possible. Do not enable before provisioning.
+
+Install setup_dispatch_token.sh as root-owned /usr/local/sbin/fitboy-dispatch-setup.
+The owner enters the token directly in an interactive SSH terminal (not chat);
+input is hidden and the token is never passed as an argument. Rotate using the
+same helper. Revoke the old token in GitHub after successful replacement.

@@ -58,7 +58,10 @@ def main():
     state=json.loads(path.read_text()) if path.exists() else {}
     now=time.time()
     if not args.dry_run and now<float(state.get("next_attempt",0)):
-        print("Dispatch guard: cooldown");return
+        print("Dispatch guard: cooldown",flush=True)
+        # Keep a previous API failure visible to systemd during backoff.
+        if state.get("result") in {"pending","error"}:raise SystemExit(1)
+        return
     try:
         runs=api(HISTORY,token)
         action=decision(runs,now,state)

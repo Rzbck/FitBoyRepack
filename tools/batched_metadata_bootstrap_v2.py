@@ -10,6 +10,7 @@ variant intended to remove repack/package/version suffixes.
 from __future__ import annotations
 
 import re
+from update_steam_ratings import unpackaged_title
 
 import batched_metadata_bootstrap as base
 from fast_metadata_bootstrap import clean_fast_title as conservative_clean
@@ -92,14 +93,32 @@ class NormalizedSearchClient(base.BatchWikidataClient):
 
     def search(self, title: str, limit: int) -> list[str]:
         primary = conservative_clean(title)
-        ids = self._search_query(primary, limit)
-        if ids:
-            return ids
+        # Prefer the complete title. On empty results try bounded, distinct
+        # variants; these are discovery only, not evidence of identity.
+        variants = (primary, aggressive_search_title(title), unpackaged_title(title)[1])
+        seen = set()
+        found = []
+        for query in variants:
+            key = query.casefold().strip()
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            ids = self._search_query(query, limit)
+            if ids and limit < 5:
+                return ids
+            # Recovery searches include alternate candidates even when the
+            # primary query has hits; preserve at least one from each variant.
+            if ids:
+                found.append(ids)
+        merged = []
+        for rank in range(limit):
+            for ids in found:
+                if rank < len(ids) and ids[rank] not in merged:
+                    merged.append(ids[rank])
+                    if len(merged) == limit:
+                        return merged
+        return merged
 
-        fallback = aggressive_search_title(title)
-        if not fallback or fallback.casefold() == primary.casefold():
-            return []
-        return self._search_query(fallback, limit)
 
 
 # Scoring/progress should compare the discovered Wikidata candidate against the

@@ -413,6 +413,9 @@ jobs:
       - run: python tools/test_llm_client.py
       - run: python tools/test_ai_catalog_bootstrap.py
       - run: python tools/test_fast_metadata_bootstrap.py
+      - run: python tools/test_metadata_recovery.py
+      - run: python tools/test_metadata_autodrain.py
+      - run: python tools/test_search_normalization_v2.py
       - name: Verify reusable localhost-only service template
         run: |
           grep -q 'LLM_HOST=127.0.0.1' ops/llm/llm.env.example

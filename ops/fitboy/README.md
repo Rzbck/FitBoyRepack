@@ -206,3 +206,15 @@ le snapshot et les permissions, puis effectuer la restauration en fenêtre de ma
 Le script ne sauvegarde pas les secrets, les modèles ni les autres projets du VPS.
 
 Tests isolés sur Linux : `python ops/fitboy/test_backup_sqlite.py`.
+
+### Autonomous review recovery
+
+After synchronizing the catalog, the metadata timer gives fresh games priority.
+When the pending queue is empty, up to 25 unresolved games without a verified
+result are automatically requeued per activation. A versioned recovery ledger
+prevents retries for the same fingerprint for 30 days. Only selected search
+cache entries are invalidated; prior non-resolved LLM attempts are archived
+before a fresh review. The metadata worker shares the review lock during its
+activation. Search fallback uses bounded title variants; confidence, completeness
+and margin requirements are unchanged. No manually maintained title mapping or
+paid API is needed. The timer fetches the tested code from main.

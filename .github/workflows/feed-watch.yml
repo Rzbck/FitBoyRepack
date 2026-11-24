@@ -1,6 +1,8 @@
 name: Fast New Post Watch
 
 on:
+  schedule:
+    - cron: '*/10 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [fitgirl-new-post]

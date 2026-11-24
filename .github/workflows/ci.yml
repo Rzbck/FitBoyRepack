@@ -430,6 +430,7 @@ jobs:
           python-version: '3.12'
       - run: python -m compileall -q tools ops/fitboy
       - run: python ops/fitboy/test_health_monitor.py
+      - run: python ops/fitboy/test_dispatch_guard.py
       - run: python ops/fitboy/test_external_backup.py
 
   security-boundary:

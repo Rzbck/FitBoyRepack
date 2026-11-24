@@ -1,0 +1,11 @@
+[Unit]
+Description=FitBoyRepack independent five-minute scheduler
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=5min
+RandomizedDelaySec=15s
+Unit=fitboy-dispatch.service
+
+[Install]
+WantedBy=timers.target

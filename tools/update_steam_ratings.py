@@ -31,6 +31,7 @@ STORE_VERIFY_AGE_DAYS = 28
 STORE_DETAILS_LIMIT = 160
 STORE_FALLBACK_LIMIT = 20
 STORE_AUDIT_LIMIT = 35
+STORE_MATCH_RULE_VERSION = 2
 USER_AGENT = "FitBoyRepack-SteamReviews/1.0 (https://github.com/Rzbck/FitBoyRepack; keyless public metadata research)"
 QID_RE = re.compile(r"^https?://(?:www\.)?wikidata\.org/(?:wiki/|entity/)(Q[1-9]\d*)/?$")
 APP_ID_RE = re.compile(r"^[1-9]\d{0,9}$")
@@ -174,7 +175,11 @@ def unpackaged_title(text):
     raw = clean_title(text)
     raw = re.split(r",\s*(?=v\d|build\b|update\b)", raw, maxsplit=1, flags=re.I)[0]
     raw = re.split(r"\s+\+\s+\d+\s+dlcs?\b", raw, maxsplit=1, flags=re.I)[0]
+    # Only explicit commercial packaging, not arbitrary subtitles or sequel numbers.
+    raw = re.split(r"\s+\+\s+(?:(?:\d+\s+)?(?:bonus\s+)?dlcs?(?:/bonuses)?|bonus\s+content|crackfix)\s*(?:$|\+)", raw, maxsplit=1, flags=re.I)[0]
     base = raw
+    base = re.sub(r"(?::\s*|\s+[-\u2013\u2014]\s+|\s+)(?:\d{1,2}[- ]year|(?:19|20)\d{2})\s+(?:anniversary edition|collector['\u2019]s bundle)$", "", base, flags=re.I)
+    base = re.sub(r"(?::\s*|\s+[-\u2013\u2014]\s+)(?:complete|ultimate|deluxe|supporter)\s+(?:bundle|pack|edition)$", "", base, flags=re.I)
     # A " - Blood Scales Edition" suffix is packaging; "Part II" is not.
     base = re.sub(r"\s+[–—-]\s+[^,]{1,40}\s+Edition$", "", base, flags=re.I)
     base = re.sub(r"\s+[–—-]\s+(?:complete|ultimate|deluxe|gold|standard)$",
@@ -337,6 +342,7 @@ def invalidate_match(record, reason):
         record.pop(key, None)
     record["status"] = "mismatch"
     record["identity_issue"] = reason
+    record["store_match_rule_version"] = STORE_MATCH_RULE_VERSION
     record["lookup_checked_at"] = iso(utc_now())
 
 
@@ -463,6 +469,8 @@ def update(args):
     # Existing exact-title Wikidata fallback, still bounded and conservative.
     fallback = [(game_id, game) for game_id, game in by_id.items()
                 if game_id not in known_qids
+                and not records.get(game_id, {}).get("steam_appid")
+                and records.get(game_id, {}).get("status") != "mismatch"
                 and days_since(records.get(game_id, {}).get("lookup_checked_at"), now) >= 60]
     for game_id, game in fallback[:args.fallback_limit]:
         title = clean_title(game.get("title"))
@@ -551,10 +559,15 @@ def update(args):
     # have a Wikidata item but no P1733. No fuzzy scores, no API keys.
     missing = [game for game in games
                if not records.get(str(game["id"]), {}).get("steam_appid")
-               and days_since(records.get(str(game["id"]), {}).get("store_lookup_checked_at"), now)
-                   >= STORE_LOOKUP_AGE_DAYS]
-    missing.sort(key=lambda game: records.get(str(game["id"]), {}).get("status")
-                 not in ("mismatch", "no_match"))
+               and (days_since(records.get(str(game["id"]), {}).get("store_lookup_checked_at"), now)
+                    >= STORE_LOOKUP_AGE_DAYS
+                    or (records.get(str(game["id"]), {}).get("status") == "mismatch"
+                        and records.get(str(game["id"]), {}).get("store_match_rule_version", 0)
+                            < STORE_MATCH_RULE_VERSION))]
+    missing.sort(key=lambda game: (
+        records.get(str(game["id"]), {}).get("status") != "mismatch",
+        records.get(str(game["id"]), {}).get("status") != "no_match",
+    ))
     for game in missing[:getattr(args, "store_fallback_limit", STORE_FALLBACK_LIMIT)]:
         if store_calls >= store_budget:
             break
@@ -596,6 +609,7 @@ def update(args):
             LOGGER.warning("Steam Store network unavailable: %s", error)
             break
         row["store_lookup_checked_at"] = iso(now)
+        row["store_match_rule_version"] = STORE_MATCH_RULE_VERSION
         changes += 1
 
     # Prefer new/unrated games. Recheck existing scores at most every 28 days.

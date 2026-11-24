@@ -118,3 +118,8 @@ export function effectiveGenreLabels(game) {
 
   return out;
 }
+
+// Release years are independent of the catalog publication date.
+export function gameReleaseYear(value) {
+  return /^((?:19|20)\d{2})(?=$|[-T ])/.exec(String(value || ""))?.[1] || "";
+}

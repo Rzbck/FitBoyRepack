@@ -4,6 +4,7 @@ import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
+  gameReleaseYear,
 } from './game-identity.js';
 import {
   applyTranslations,
@@ -201,7 +202,7 @@ function prepareGame(raw) {
   game.__tagKeys=tags.map(normalized);
   game.__tagKeySet=new Set(game.__tagKeys);
   const canonical=String(game.canonical_title||'').trim();
-  const releaseYear=/^(20\d{2})/.exec(String(game.game_release_date||''))?.[1]||'';
+  const releaseYear=gameReleaseYear(game.game_release_date);
   const searchable=[
     game.title,
     canonical,
@@ -517,7 +518,7 @@ async function importLibrary(file){try{const data=JSON.parse(await file.text());
 
 function toggleQuick(key,button){state.quick[key]=!state.quick[key];button.setAttribute('aria-pressed',String(state.quick[key]));button.classList.toggle('active',state.quick[key]);applyFilters();}
 function resetFilters(){els.search.value='';els.tagSearch.value='';els.yearFilter.value='';els.releasePeriodFilter.value='';els.sizeFilter.value='';state.selectedTags.clear();state.libraryFilter='';for(const key of Object.keys(state.quick))state.quick[key]=false;for(const b of [els.newOnlyFilter,els.detailsOnlyFilter,els.mediaOnlyFilter]){b.setAttribute('aria-pressed','false');b.classList.remove('active');}updateTagUI();updateLibraryUI();applyFilters();renderRecommendations();}
-function populateYears(){const years=[...new Set(state.games.map(g=>g.__releaseYear).filter(y=>/^20\d\d$/.test(y)))].sort((a,b)=>b-a);for(const year of years){const o=document.createElement('option');o.value=year;o.textContent=year;els.yearFilter.append(o);}}
+function populateYears(){const years=[...new Set(state.games.map(g=>g.__releaseYear).filter(Boolean))].sort((a,b)=>b-a);for(const year of years){const o=document.createElement('option');o.value=year;o.textContent=year;els.yearFilter.append(o);}}
 
 function openTagPicker(){if(!els.tagPickerDialog.open)els.tagPickerDialog.showModal();requestAnimationFrame(()=>els.tagSearch.focus());}
 function closeTagPicker(){if(els.tagPickerDialog.open)els.tagPickerDialog.close();}

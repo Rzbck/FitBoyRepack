@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+let now=0,id=0,encoded=0,frames=0,href='';
+const timers=new Map(),raf=new Map(),events={},winEvents={},motionEvents={};
+const motion={matches:false,addEventListener:(k,fn)=>motionEvents[k]=fn};
+const ctx=new Proxy({},{get:(o,k)=>o[k]??(()=>{}),set:(o,k,v)=>(o[k]=v,true)});
+const icon={get href(){return href;},set href(v){href=v;frames++;}};
+const document={hidden:false,baseURI:'https://example.invalid/',querySelector:()=>icon,createElement:()=>({getContext:()=>ctx,toDataURL:()=>('data:image/png;frame='+ ++encoded)}),addEventListener:(k,fn)=>events[k]=fn};
+const sandbox={document,window:{matchMedia:()=>motion,addEventListener:(k,fn)=>winEvents[k]=fn},URL,Path2D:class{},setTimeout:(fn,ms)=>{timers.set(++id,{at:now+ms,fn});return id;},clearTimeout:i=>timers.delete(i),requestAnimationFrame:fn=>{raf.set(++id,fn);return id;},cancelAnimationFrame:i=>raf.delete(i)};
+vm.runInNewContext(readFileSync(new URL('../site/assets/favicon-animation.js',import.meta.url),'utf8'),sandbox);
+function tick(ms){const end=now+ms;while(now<end){now+=10;for(const [key,v] of [...timers])if(v.at<=now){timers.delete(key);v.fn();}const list=[...raf];raf.clear();for(const [,fn] of list)fn(now);}}
+tick(24000);
+assert.ok(encoded>25&&encoded<=43,encoded);
+const warm=encoded,previousFrames=frames;tick(24000);
+assert.equal(encoded,warm,'no re-encoding after warm cycles');assert.ok(frames>previousFrames,'animation continues');
+document.hidden=true;events.visibilitychange();const before=frames;tick(10000);assert.equal(frames,before);assert.equal(raf.size,0);assert.equal(timers.size,0);
+document.hidden=false;motion.matches=true;events.visibilitychange();tick(10000);assert.ok(href.endsWith('favicon.svg?v=5'));assert.equal(raf.size,0);
+motion.matches=false;motionEvents.change();tick(10000);assert.equal(encoded,warm);
+console.log('Favicon: '+warm+' unique PNG frames, zero repeated encoding after warmup, background/reduced-motion pause OK');

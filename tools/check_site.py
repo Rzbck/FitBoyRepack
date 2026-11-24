@@ -50,7 +50,7 @@ for game_id, row in ratings['games'].items():
         assert 'positive_percent' not in row, f'invalid Steam score must not be displayed for {game_id}'
     if row.get('status')=='rated':
         assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
-assert './assets/app.js?v=3' in p.scripts and './assets/details.js?v=3' in p.scripts and './assets/media-sanitize.js' in p.scripts
+assert './assets/app.js?v=4' in p.scripts and './assets/details.js?v=4' in p.scripts and './assets/media-sanitize.js' in p.scripts
 assert './assets/tag-facets.js' not in p.scripts, 'facets are now integrated in the main filtered state'
 assert './assets/catalog-v2.css' in p.links
 assert (ROOT/'data/games.json').exists()
@@ -131,7 +131,7 @@ for ordinal,game in enumerate(catalog['games']):
         gram=token[:search['gram_size']]
         assert ordinal in search['grams'].get(gram,[]), f'missing gram posting for {game["id"]}'
 
-for token in ('queryScore','boundedDistance','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','LIBRARY_KEY','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','metadata_developer','metadata_publisher','buildInitialVerifiedIdentity','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
+for token in ('queryScore','createQueryScorer','searchCandidateIndexes','searchPool','renderSuggestions','yearFilter','releasePeriodFilter','releasePeriodMatches','releaseDate','effectiveTags','sizeFilter','detailsOnly','mediaOnly','selectedTagsBar','tagPickerDialog','openTagPicker','readLibrary','exportLibrary','importLibrary','recommendationScores','titleAffinityTokens','loadSearchIndexPayload','loadHealthPayload','IntersectionObserver','loadNextPage','openHashGame','fitboy:game-open','fitboy:language-change','cardDisplayTitle','cardDisplayTags','identityDisplayTitle'  ,'initI18n','metadata_developer','metadata_publisher','buildInitialVerifiedIdentity','buildInitialCoverIdentity','buildDetailLoadingShell','cover-details-initial','detail-loading-shell','dialog-loading'):
     assert token in app, f'missing V2 behavior: {token}'
 for token in ('catalog.json','search-index.json','health.json','loadSearchIndexPayload','loadHealthPayload','loadGameDetail'):
     assert token in api, f'missing API behavior: {token}'
@@ -139,7 +139,7 @@ for token in ('openLightbox','renderDescriptionTabs','renderGameplayPreview','lo
     assert token in details, f'missing detail behavior: {token}'
 for token in ('displayTitle','editionTitle','effectiveGenreLabels','cleanGenreLabel','titleParts'):
     assert token in identity, f'missing shared identity behavior: {token}'
-for token in ('fitboyrepack:language:v1','navigator.languages','data-i18n','languageSwitcher','setLanguageMode'):
+for token in ('STORAGE_KEYS.language','navigator.languages','data-i18n','languageSwitcher','setLanguageMode'):
     assert token in i18n or token in html, f'missing i18n behavior: {token}'
 for token in ('localizeGameProse','source_sha256','crypto.subtle'):
     assert token in translations, f'missing translation client behavior: {token}'

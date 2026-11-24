@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {normalized,createQueryScorer,boundedDistance} from '../site/assets/search-score.js';
+const prepare=(title,extra='')=>{
+  const text=normalized(title+' '+extra);
+  return {__titleNorm:normalized(title),__searchText:text,__searchTokens:[...new Set(text.split(' '))]};
+};
+const score=createQueryScorer(),game=prepare('Resident Evil 4','Capcom Action Horror');
+assert.equal(score(game,'RÉSIDENT EVIL 4'),500);
+assert.equal(score(game,'Resident'),420-8*.01);
+assert.equal(score(game,'Evil 4'),360-6*.01);
+assert.equal(score(game,'Capcom'),300);
+assert.ok(score(game,'residnt evil')>0);
+assert.equal(score(game,'resident evil 8'),0);
+assert.equal(score(game,''),1);
+assert.equal(boundedDistance('residnt','resident',2),1);
+let reads=0;
+const counted={...game,get __titleNorm(){reads++;return game.__titleNorm;}};
+assert.equal(score(counted,'resident evil 4'),500);
+const before=reads;
+for(let i=0;i<1000;i++)assert.equal(score(counted,'resident evil 4'),500);
+assert.equal(reads,before);
+assert.equal(score(counted,'  RÉSIDENT EVIL 4  '),500);
+assert.equal(reads,before);
+assert.equal(score(counted,'unrelated'),0);
+assert.ok(reads>before);
+assert.equal(score(prepare('Other game'),'resident evil 4'),0);
+console.log('Search: exact, prefix, metadata, typo, negative, normalized reuse and query invalidation OK');

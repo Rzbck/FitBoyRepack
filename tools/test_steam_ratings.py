@@ -141,6 +141,43 @@ class SteamRatingBotTests(unittest.TestCase):
             self.assertEqual(summary["rated"], 1)
 
 
+    def test_explicit_packaging_keeps_game_identity(self):
+        for title, name in [
+            ("Age of Wonders 4: 2026 Collector\u2019s Bundle - v1.0 + 18 DLCs", "Age of Wonders 4"),
+            ("RoadCraft: 1-Year Anniversary Edition, v8.0 + 9 DLCs", "RoadCraft"),
+            ("SnowRunner: 4-Year Anniversary Edition, v44.0 + 50 DLCs", "SnowRunner"),
+            ("Oxygen Not Included: Complete Bundle, v1.0 + 7 DLCs", "Oxygen Not Included"),
+            ("The Relic: First Guardian + DLC", "The Relic: First Guardian"),
+            ("Demonschool: Deluxe Edition + 2 Bonus DLCs", "Demonschool"),
+        ]:
+            with self.subTest(title=title):
+                self.assertTrue(bot.store_verified({"title": title}, {}, {"name": name, "type": "game"}))
+                self.assertFalse(bot.store_verified({"title": title}, {}, {"name": name, "type": "dlc"}))
+                self.assertFalse(bot.store_verified({"title": title}, {}, {"name": name + " II", "type": "game"}))
+        self.assertFalse(bot.store_verified({"title": "RoadCraft 2: 1-Year Anniversary Edition"}, {}, {"name": "RoadCraft", "type": "game"}))
+
+    def test_rule_upgrade_retries_recent_mismatch_once(self):
+        with tempfile.TemporaryDirectory() as root:
+            folder = Path(root)
+            source, meta, cache = [folder / name for name in ("games.json", "meta.json", "cache.json")]
+            source.write_text(json.dumps({"games": [{"id":"roadcraft","title":"RoadCraft: 1-Year Anniversary Edition"}]}), encoding="utf-8")
+            meta.write_text(json.dumps({"metadata_version":1,"games":{}}), encoding="utf-8")
+            cache.write_text(json.dumps({"rating_version":1,"games":{"roadcraft":{
+                "status":"mismatch","invalid_steam_appid":2104890,
+                "store_lookup_checked_at":bot.iso(bot.utc_now())
+            }}}), encoding="utf-8")
+            args = Namespace(resolve_limit=0, reviews_limit=0, fallback_limit=0,
+                             store_fallback_limit=1, pause=0, dry_run=False)
+            with (patch.object(bot,"CATALOG",source), patch.object(bot,"METADATA",meta),
+                  patch.object(bot,"OUTPUT",cache), patch.object(bot,"exact_store_search",return_value=None) as search):
+                bot.update(args)
+                bot.update(args)
+                search.assert_called_once()
+            row=json.loads(cache.read_text(encoding="utf-8"))["games"]["roadcraft"]
+            self.assertEqual(row["status"],"mismatch")
+            self.assertEqual(row["invalid_steam_appid"],2104890)
+            self.assertEqual(row["store_match_rule_version"],bot.STORE_MATCH_RULE_VERSION)
+
     def test_strict_store_title_identity(self):
         cyberpunk = {
             "title": "Cyberpunk 2077: Ultimate Edition - v2.5 + DLCs",

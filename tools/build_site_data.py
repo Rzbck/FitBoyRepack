@@ -86,7 +86,7 @@ def parse_size_mb(value):
 
 
 def year_from_date(value):
-    match = re.match(r"^(20\d{2})", str(value or ""))
+    match = re.match(r"^((?:19|20)\d{2})(?=$|[-T ])", str(value or ""))
     return int(match.group(1)) if match else None
 
 

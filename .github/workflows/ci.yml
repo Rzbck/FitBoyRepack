@@ -31,6 +31,7 @@ jobs:
       - run: bash -n ops/fitboy/install_translation_runtime.sh
       - run: python ops/fitboy/test_backup_sqlite.py
       - run: python tools/test_github_orchestrator.py
+      - run: python tools/test_release_year.py
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'
@@ -75,6 +76,7 @@ jobs:
       - run: node --check site/assets/wishlist.js
       - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
+      - run: node tools/test_release_year.mjs
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: node --check site/assets/media-preview-v7.js

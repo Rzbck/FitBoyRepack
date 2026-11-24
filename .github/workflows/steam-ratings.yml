@@ -1,9 +1,6 @@
 name: Steam Reviews Enrichment
 
 on:
-  schedule:
-    - cron: '17 * * * *' # backup trigger; first healthy run wins
-    - cron: '46 * * * *' # primary trigger
   workflow_dispatch:
     inputs:
       resolve_limit:
@@ -15,11 +12,6 @@ on:
       fallback_limit:
         description: 'Exact-title fallback lookups (0-40)'
         default: '25'
-  push:
-    branches: [main]
-    paths:
-      - 'tools/update_steam_ratings.py'
-      - '.github/workflows/steam-ratings.yml'
 
 permissions:
   contents: write

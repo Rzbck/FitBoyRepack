@@ -1,8 +1,6 @@
 name: Media Enrichment
 
 on:
-  schedule:
-    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
       batch:
@@ -26,16 +24,6 @@ on:
         required: false
         type: boolean
         default: false
-  push:
-    branches: [main]
-    paths:
-      - 'tools/enrich_media.py'
-      - 'tools/enrich_media_v4.py'
-      - 'tools/enrich_media_v5.py'
-      - 'tools/enrich_media_v6.py'
-      - 'tools/enrich_media_v7.py'
-      - 'tools/enrich_media_clustered.py'
-      - '.github/workflows/enrich-media.yml'
 
 permissions:
   contents: write

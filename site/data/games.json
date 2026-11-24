@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T21:06:28.172722+00:00",
+  "generated_at": "2026-11-24T21:07:20.383895+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "4.3 GB"
+      "repack_size": "4.3 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/bc/8e/bc8e3f1d-2ce3-4749-aacc-abf9f3f46060.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bc/8e/bc8e3f1d-2ce3-4749-aacc-abf9f3f46060.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/67/1a/671ab1d5-b8d9-42e8-8fe3-47031288d4de.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/67/1a/671ab1d5-b8d9-42e8-8fe3-47031288d4de.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/61/a3/61a3ab38-d8f8-420c-b4aa-81253a1c30c7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/61/a3/61a3ab38-d8f8-420c-b4aa-81253a1c30c7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/05/09/05094c6a-7041-42de-bdae-22f00fd87ac8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/05/09/05094c6a-7041-42de-bdae-22f00fd87ac8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8e/be/8ebe4a27-7cd2-4b00-bdda-c8f5f74eb688.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8e/be/8ebe4a27-7cd2-4b00-bdda-c8f5f74eb688.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/83/55/83555cbf-9cda-4dc5-8ccc-2bae9c81baa0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/83/55/83555cbf-9cda-4dc5-8ccc-2bae9c81baa0.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-24T21:07:20.382821+00:00",
+      "details": {
+        "description": "Serious Sam Fusion\nbrings several Serious Sam games developed by Croteam to the latest in-house tech!\nThe best part? If you own a Serious Sam game listed below you’ll be getting a Serious Sam Fusion version of that game for FREE!\nSerious Sam Fusion is also a central hub for existing Serious Sam games that will enable seamless integration of new engine features, patches, and upgrades.\nGames available in Serious Sam Fusion\nSerious Sam HD: The First Encounter\nSerious Sam HD: The Second Encounter\nSerious Sam 3: BFE\nVR versions of all games are a part of Serious Sam Fusion 2017, too!\nWhat does it do?\nSerious Sam Fusion enables a lot of cool new features, like a common workshop and cross-game mods. All of the games can be started from one application, so you can jump between playing The First Encounter level to a Serious Sam 3 level and back without exiting the game. When listing game servers, servers playing TFE, TSE, SS3 – will all appear in the same list and you can vote map across games if you want. Oh, and owners of our VR games are able to play multiplayer together with their “flat” counterparts.\nSince there are so many changes and exciting new features, we’ll just go ahead a list them here as bullet points.\nCool new features in Serious Sam Fusion\nAll games now support SteamOS/Linux/OSX!\nSplit-screen!\n64bit executables\nSupport for Vulkan API (DirectX9 is now being removed)\nMultithreaded rendering\nThe new “light-weight” savegame system – savegames are now saved much faster, are very small and stored in the Steam cloud, and savegames still work even if a level is changed in a patch, or if a mod is updated\nFull support for all controllers including Steam controller, PS4 gamepads, all older DInput joysticks\nProper multimonitor support\nBorderless window support\nCustomizable sound outputs\nProper 3D audio using a proprietary sound-mixer (the same approach as used in the old Classic games)\nImproved physics engine with better handling of character movement\nTexture streaming in all games\nMuch better modding support with customizable weapons and items, improved scripting (including better support for scripting networked games)\nLots of other improvements, optimizations and fixes",
+        "game_features": [],
+        "repack_features": [
+          "Based on Serious.Sam.Fusion-RUNE ISO release: rune-serious.sam.fusion.iso (9,432,334,336 bytes)",
+          "Game version: v791116",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 8.8 to 4.3 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 8.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-24T21:07:20.382821+00:00"
     },
     {
       "id": "flick",

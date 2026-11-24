@@ -1,4 +1,4 @@
-import { loadGameDetail } from './catalog-api.js';
+import { loadGameDetail } from './core/catalog-api.js';
 
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');

@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 import httpx
 from bs4 import BeautifulSoup
 
-from catalog_classifier import classify_record, quarantine_entry
+from fitboy.catalog.catalog_classifier import classify_record, quarantine_entry
 
 BASE_URL = "https://fitgirl-repacks.site"
 OUTPUT = Path("site/data/games.json")

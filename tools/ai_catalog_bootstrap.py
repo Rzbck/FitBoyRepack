@@ -22,7 +22,7 @@ from urllib.parse import quote
 
 import httpx
 
-from llm_client import LocalLLMClient
+from fitboy.metadata.llm_client import LocalLLMClient
 
 AI_VERSION = 1
 DEFAULT_CATALOG = Path("site/data/games.json")

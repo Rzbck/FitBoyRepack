@@ -1,3 +1,4 @@
+/* Source: game-sheet-v6.css */
 /* Game sheet V6: fixed information zone + adaptive media grid, no horizontal filmstrip. */
 .game-dialog{
   width:min(1480px,calc(100vw - 56px));
@@ -221,4 +222,325 @@
   .dialog-cover .dialog-action{height:36px}
   .dialog-layout.rich-details .detail-tabs{height:330px;min-height:330px}
   .dialog-media .media-grid{grid-auto-rows:88px;gap:6px}
+}
+
+/* Source: game-sheet-v7.css */
+/* V7 polish: keep the close control clear of tab content. */
+.game-dialog > .dialog-close{
+  top:16px;
+  right:16px;
+  z-index:2147482500;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:999px;
+  background:#0a1120;
+  color:#fff;
+  box-shadow:0 8px 24px rgba(0,0,0,.38);
+  font-size:0;
+  line-height:0;
+}
+
+/* Draw the X ourselves so it is optically centered instead of relying on font metrics. */
+.game-dialog > .dialog-close::before,
+.game-dialog > .dialog-close::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:16px;
+  height:2px;
+  border-radius:999px;
+  background:currentColor;
+  transform:translate(-50%,-50%) rotate(45deg);
+  pointer-events:none;
+}
+
+.game-dialog > .dialog-close::after{
+  transform:translate(-50%,-50%) rotate(-45deg);
+}
+
+.game-dialog > .dialog-close:hover,
+.game-dialog > .dialog-close:focus-visible{
+  border-color:rgba(132,177,255,.9);
+  background:#13213a;
+  outline:none;
+}
+
+.game-dialog .dialog-layout.rich-details .detail-tab-nav{
+  padding:5px!important;
+  overflow:hidden;
+}
+
+.game-dialog .dialog-layout.rich-details .detail-tab-btn{
+  flex:1 1 0;
+  min-width:0;
+  text-align:center;
+}
+
+@media(max-width:900px){
+  .game-dialog > .dialog-close{
+    top:12px;
+    right:12px;
+    width:40px;
+    height:40px;
+  }
+  .game-dialog .dialog-layout.rich-details .detail-tab-nav{padding:5px!important}
+}
+
+@media(max-width:620px){
+  .game-dialog > .dialog-close{
+    top:10px;
+    right:10px;
+  }
+}
+
+
+@media(min-width:1181px){
+  .game-dialog .dialog-layout.rich-details{
+    grid-template-columns:minmax(350px,390px) minmax(0,1fr);
+  }
+}
+
+/* Verified facts are part of the identity itself: no nested metadata card. */
+.game-dialog .dialog-layout.rich-details .dialog-cover>img{
+  flex:1 1 300px;
+  width:100%;
+  height:auto;
+  min-height:190px;
+  max-height:380px;
+  object-fit:contain;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-details{
+  gap:8px;
+  padding:0 1px 2px;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-details-meta{
+  grid-template-columns:repeat(auto-fit,minmax(82px,1fr));
+  gap:6px;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-details-meta span{
+  min-width:0;
+  padding:7px 8px;
+  border-radius:8px;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-details-meta small{
+  font-size:.56rem;
+  letter-spacing:.045em;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-details-meta strong{
+  font-size:.72rem;
+  overflow:visible;
+  text-overflow:clip;
+  white-space:normal;
+  line-height:1.25;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-tags{
+  gap:5px;
+  margin:1px 0 0;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-tags .genre-pill{
+  max-width:100%;
+  padding:4px 7px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:.6rem;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-game-title{
+  margin:1px 0 0;
+  font-size:1.34rem;
+  line-height:1.03;
+  letter-spacing:-.035em;
+}
+
+.game-dialog .dialog-layout.rich-details .cover-edition-title{
+  margin:-2px 0 0;
+  color:#9eabc2;
+  font-size:.72rem;
+  line-height:1.32;
+  font-weight:600;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+}
+
+.game-dialog .cover-identity-facts{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  margin-top:2px;
+  padding-top:8px;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+
+.game-dialog .identity-fact-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:6px 12px;
+  margin:0;
+}
+
+.game-dialog .identity-fact{
+  min-width:0;
+}
+
+.game-dialog .identity-fact:last-child:nth-child(odd){
+  grid-column:1/-1;
+}
+
+.game-dialog .identity-fact dt{
+  margin:0 0 2px;
+  color:#77869f;
+  font-size:.54rem;
+  font-weight:760;
+  line-height:1.25;
+  letter-spacing:.045em;
+  text-transform:uppercase;
+}
+
+.game-dialog .identity-fact dd{
+  min-width:0;
+  margin:0;
+  color:#dce4f2;
+  font-size:.68rem;
+  line-height:1.32;
+  overflow-wrap:anywhere;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+}
+
+.game-dialog .identity-evidence{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:4px 8px;
+  color:#66758f;
+  font-size:.58rem;
+}
+
+.game-dialog .identity-evidence a{
+  color:#86aff1;
+  text-decoration:none;
+}
+
+.game-dialog .identity-evidence a:hover,
+.game-dialog .identity-evidence a:focus-visible{
+  color:#c5dcff;
+  text-decoration:underline;
+}
+
+/* The right pane is reserved for description/features/media only. */
+.game-dialog .dialog-layout.rich-details .detail-tabs{
+  flex-basis:clamp(300px,40dvh,380px);
+  min-height:300px;
+  max-height:45%;
+}
+
+@media(max-width:900px){
+  .game-dialog .dialog-layout.rich-details .dialog-cover>img{
+    flex:0 0 auto;
+    height:auto;
+    min-height:0;
+    max-height:42dvh;
+  }
+
+  .game-dialog .dialog-layout.rich-details .cover-details-meta{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  .game-dialog .identity-fact-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .game-dialog .dialog-layout.rich-details .detail-tabs{
+    height:320px;
+    min-height:320px;
+    max-height:none;
+  }
+}
+
+@media(max-width:620px){
+  .game-dialog .dialog-layout.rich-details .cover-details-meta{
+    grid-template-columns:repeat(auto-fit,minmax(82px,1fr));
+  }
+
+  .game-dialog .identity-fact-list{
+    grid-template-columns:1fr;
+  }
+
+  .game-dialog .identity-fact:last-child:nth-child(odd){
+    grid-column:auto;
+  }
+}
+
+
+/* Stable first frame: the lazy detail load must never flash the retired legacy sheet. */
+.game-dialog .dialog-loading .dialog-info{
+  position:relative;
+}
+
+.game-dialog .detail-loading-shell{
+  height:100%;
+  min-height:0;
+  display:grid;
+  grid-template-rows:54px minmax(170px,34%) minmax(180px,1fr);
+  gap:12px;
+  padding-top:0;
+  overflow:hidden;
+  opacity:.72;
+}
+
+.game-dialog .detail-loading-shell > div{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.045);
+  border-radius:12px;
+  background:rgba(255,255,255,.025);
+}
+
+.game-dialog .detail-loading-shell > div::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  transform:translateX(-110%);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.035),transparent);
+  animation:fitboy-detail-loading 1.15s ease-in-out infinite;
+}
+
+.game-dialog .detail-loading-tabs{
+  max-width:440px;
+}
+
+.game-dialog .detail-loading-copy{
+  max-width:760px;
+}
+
+@keyframes fitboy-detail-loading{
+  to{transform:translateX(110%)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .game-dialog .detail-loading-shell > div::after{animation:none}
+}
+
+@media(max-width:900px){
+  .game-dialog .detail-loading-shell{
+    min-height:360px;
+    grid-template-rows:48px 150px 180px;
+  }
 }

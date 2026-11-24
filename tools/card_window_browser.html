@@ -1,9 +1,9 @@
 <!doctype html><meta charset="utf-8"><title>Card window browser contract</title>
-<link rel="stylesheet" href="./assets/performance.css">
+<link rel="stylesheet" href="./assets/base.css">
 <style>*{box-sizing:border-box}body{margin:0}#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}.game-card{border:1px solid #777}.game-card .cover{aspect-ratio:3/4}.card-open{height:60px;width:100%}</style>
 <div id="grid" class="game-grid"></div><pre id="result">pending</pre>
 <script type="module">
-import {createCardWindow} from './assets/card-window.js';
+import {createCardWindow} from './assets/catalog/card-window.js';
 const grid=document.querySelector('#grid'),result=document.querySelector('#result');
 const check=(condition,message)=>{if(!condition)throw new Error(message);};
 const settle=()=>new Promise(resolve=>setTimeout(resolve,250));

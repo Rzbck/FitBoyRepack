@@ -19,15 +19,10 @@ AI results are deliberately kept outside `site/data/games.json` during bootstrap
 
 ## Automatic incremental mode
 
-Install `ai-enrichment.service` and `ai-enrichment.timer` in `/etc/systemd/system/`, create `/var/lib/fitboy/ai`, then enable the timer:
-
-```bash
-sudo install -d -o fitboy -g fitboy /var/lib/fitboy/ai
-sudo systemctl daemon-reload
-sudo systemctl enable --now ai-enrichment.timer
-```
-
-The first activation consumes the full queue. Later activations only queue/process new or changed games. The project worker is limited separately from the LLM process (`CPUQuota=50%`, `MemoryMax=1G`).
+Production uses metadata-autodrain.timer, review-llm.timer, metadata-publish.timer,
+translation-autodrain.timer, translation-publish.timer and fitboy-backup.timer.
+The older ai-enrichment timer is a historical bootstrap unit: do not enable it
+alongside the current metadata worker. Keep the existing service entrypoint paths.
 
 Useful commands:
 

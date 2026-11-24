@@ -1,0 +1,11 @@
+[Unit]
+Description=FitBoyRepack periodic health observation
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=15min
+RandomizedDelaySec=30s
+Unit=fitboy-health.service
+
+[Install]
+WantedBy=timers.target

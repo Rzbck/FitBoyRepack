@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import Callable
 
 import batched_metadata_bootstrap_v2 as v2
-from metadata_recovery import schedule_reviews
+from fitboy.metadata.metadata_recovery import schedule_reviews
 
 base = v2.base
 

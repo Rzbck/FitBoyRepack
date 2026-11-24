@@ -8,13 +8,13 @@ import unicodedata
 ROOT=Path('site')
 html=(ROOT/'index.html').read_text(encoding='utf-8')
 app=(ROOT/'assets/app.js').read_text(encoding='utf-8')
-api=(ROOT/'assets/catalog-api.js').read_text(encoding='utf-8')
+api=(ROOT/'assets/core/catalog-api.js').read_text(encoding='utf-8')
 details=(ROOT/'assets/details.js').read_text(encoding='utf-8')
-identity=(ROOT/'assets/game-identity.js').read_text(encoding='utf-8')
-i18n=(ROOT/'assets/i18n.js').read_text(encoding='utf-8')
-translations=(ROOT/'assets/translations.js').read_text(encoding='utf-8')
-v2css=(ROOT/'assets/catalog-v2.css').read_text(encoding='utf-8')
-focuscss=(ROOT/'assets/catalog-focus-v3.css').read_text(encoding='utf-8')
+identity=(ROOT/'assets/catalog/game-identity.js').read_text(encoding='utf-8')
+i18n=(ROOT/'assets/core/i18n.js').read_text(encoding='utf-8')
+translations=(ROOT/'assets/catalog/translations.js').read_text(encoding='utf-8')
+v2css=(ROOT/'assets/catalog.css').read_text(encoding='utf-8')
+focuscss=(ROOT/'assets/catalog.css').read_text(encoding='utf-8')
 
 class P(HTMLParser):
     def __init__(self): super().__init__(); self.ids=set(); self.scripts=[]; self.links=[]
@@ -39,7 +39,7 @@ assert 'discoveryShell' not in p.ids, 'Discover panel must no longer appear in t
 assert "state.libraryFilter==='favorites'" in app, 'recommendations must stay inside Favorites'
 assert 'catalogResults' in p.ids and 'catalogHeading' in p.ids, 'compact Favorites layout is missing'
 assert 'steam_best' in html and 'steam_hidden' in html, 'Steam sort options are missing'
-assert './assets/favorites-ratings.css' in p.links, 'Favorites layout CSS is missing'
+assert './assets/catalog.css?v=1' in p.links, 'Favorites layout CSS is missing'
 ratings=json.loads((ROOT/'data/steam-ratings.json').read_text(encoding='utf-8'))
 assert ratings.get('rating_version')==1 and isinstance(ratings.get('games'),dict)
 for game_id, row in ratings['games'].items():
@@ -50,9 +50,10 @@ for game_id, row in ratings['games'].items():
         assert 'positive_percent' not in row, f'invalid Steam score must not be displayed for {game_id}'
     if row.get('status')=='rated':
         assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
-assert './assets/app.js?v=4' in p.scripts and './assets/details.js?v=4' in p.scripts and './assets/media-sanitize.js' in p.scripts
+assert './assets/app.js?v=5' in p.scripts and './assets/details.js?v=5' in p.scripts and './assets/media-sanitize.js' in p.scripts
 assert './assets/tag-facets.js' not in p.scripts, 'facets are now integrated in the main filtered state'
-assert './assets/catalog-v2.css' in p.links
+assert './assets/catalog.css?v=1' in p.links
+assert './assets/base.css?v=1' in p.links and './assets/game-sheet.css?v=1' in p.links
 assert (ROOT/'data/games.json').exists()
 assert (ROOT/'data/catalog.json').exists(), 'run tools/build_site_data.py before smoke test'
 assert (ROOT/'data/search-index.json').exists(), 'static search index missing'

@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timedelta, timezone
-from github_orchestrator import choose, INTERVALS
+from github_orchestrator import choose, INTERVALS, summarize
 
 NOW = datetime(2026, 11, 24, 12, tzinfo=timezone.utc)
 
@@ -33,6 +33,12 @@ class OrchestratorTests(unittest.TestCase):
         self.assertEqual(choose(r,NOW)[0], "backfill-catalog.yml")
     def test_incomplete_history(self):
         with self.assertRaises(ValueError): choose({},NOW)
+    def test_monitor_distinguishes_failed_and_stale(self):
+        r = fresh(); r["steam-ratings.yml"] = [run(2,"failure"), run(180)]
+        status = summarize(r,NOW)["steam-ratings.yml"]
+        self.assertEqual(status["last_success_age_minutes"],180)
+        self.assertEqual(status["last_conclusion"],"failure")
+        self.assertTrue(status["overdue"])
     def test_pending(self):
         r = fresh(); r["enrich-media.yml"] = [run(1,None,"queued")]
         r["steam-ratings.yml"] = [run(120)]

@@ -173,3 +173,36 @@ La publication GitHub des traductions est volontairement regroupée toutes les ~
 pendant le remplissage initial afin d'éviter des commits, CI et déploiements Pages inutiles
 à chaque petit lot. Une fois la file vidée, les activations deviennent quasi gratuites :
 si les entrées n'ont pas changé, le modèle reste déchargé et le worker quitte immédiatement.
+
+
+## Sauvegardes SQLite et restauration
+
+Le service `fitboy-backup.service` utilise l'API de sauvegarde SQLite (y compris WAL)
+pour créer des copies cohérentes des deux bases, sans arrêter les workers.
+Il vérifie chaque copie avec `PRAGMA quick_check`, calcule les empreintes SHA-256
+et publie un répertoire daté avec `manifest.json` seulement après réussite.
+Le timer effectue une sauvegarde quotidienne à 03:20 UTC (+ délai aléatoire de 10 min)
+et conserve les 14 derniers snapshots créés par ce programme.
+
+Installation depuis une révision Git vérifiée :
+
+```bash
+sudo install -d -m 0755 /usr/local/libexec/fitboy
+sudo install -d -m 0700 -o fitboy -g fitboy /var/lib/fitboy/backups
+sudo install -m 0755 ops/fitboy/backup_sqlite.py /usr/local/libexec/fitboy/backup_sqlite.py
+sudo install -m 0644 ops/fitboy/fitboy-backup.service /etc/systemd/system/
+sudo install -m 0644 ops/fitboy/fitboy-backup.timer /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl start fitboy-backup.service
+sudo systemctl enable --now fitboy-backup.timer
+systemctl list-timers fitboy-backup.timer
+```
+
+Les snapshots restent privés sur le VPS. Copier régulièrement un snapshot complet
+vers un support indépendant (hors VPS), vérifier ses empreintes et tester l'ouverture
+des copies dans un répertoire de restauration isolé. Ne jamais remplacer une base
+active à chaud : arrêter les workers concernés, sauvegarder l'état actuel, vérifier
+le snapshot et les permissions, puis effectuer la restauration en fenêtre de maintenance.
+Le script ne sauvegarde pas les secrets, les modèles ni les autres projets du VPS.
+
+Tests isolés sur Linux : `python ops/fitboy/test_backup_sqlite.py`.

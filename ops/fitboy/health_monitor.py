@@ -99,6 +99,11 @@ def collect(root, *, github=True, now=None):
         result["issues"].extend(f"{section}/{name}/{issue}" for issue in value.get("issues",[]))
     for name,limit in SERVICES.items():
         record("services",name,lambda:service_health(props(name+".timer"),props(name+".service"),limit,mono))
+    # Optional independently installed heartbeat: report only when provisioned.
+    try: dispatch_timer=props("fitboy-dispatch.timer")
+    except (OSError,subprocess.SubprocessError): dispatch_timer={}
+    if dispatch_timer.get("UnitFileState") in {"enabled","enabled-runtime"}:
+        record("services","fitboy-dispatch",lambda:service_health(dispatch_timer,props("fitboy-dispatch.service"),20,mono))
     record("services","llama-server",lambda:{"state":props("llama-server.service").get("ActiveState"),"issues":[] if props("llama-server.service").get("ActiveState")=="active" else ["llm_inactive"]})
     for name,path,table in [
         ("metadata",root/"ai/catalog_enrichment.sqlite3","jobs"),

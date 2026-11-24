@@ -1,0 +1,26 @@
+[Unit]
+Description=FitBoyRepack isolated GitHub coordinator heartbeat
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/etc/fitboy/github-dispatch.token
+
+[Service]
+Type=oneshot
+DynamicUser=yes
+LoadCredential=github-token:/etc/fitboy/github-dispatch.token
+StateDirectory=fitboy-dispatch
+StateDirectoryMode=0700
+ExecStart=/usr/bin/python3 -I /usr/local/lib/fitboy/dispatch_guard.py
+TimeoutStartSec=60
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=

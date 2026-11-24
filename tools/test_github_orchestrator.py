@@ -16,16 +16,16 @@ class OrchestratorTests(unittest.TestCase):
         self.assertIsNone(choose(fresh(), NOW)[0])
     def test_active(self):
         r = fresh(); r["steam-ratings.yml"] = [run(5, None, "in_progress")]
-        r["feed-watch.yml"] = [run(100)]
+        r["enrich-media.yml"] = [run(100)]
         self.assertIsNone(choose(r, NOW)[0])
     def test_most_overdue(self):
         r = fresh(); r["steam-ratings.yml"] = [run(120)]
-        r["feed-watch.yml"] = [run(20)]
+        r["enrich-media.yml"] = [run(25)]
         self.assertEqual(choose(r, NOW)[0], "steam-ratings.yml")
     def test_retry_cooldown(self):
         r = fresh(); r["steam-ratings.yml"] = [run(3,"failure"),run(120)]
-        r["feed-watch.yml"] = [run(20)]
-        self.assertEqual(choose(r,NOW)[0], "feed-watch.yml")
+        r["enrich-media.yml"] = [run(25)]
+        self.assertEqual(choose(r,NOW)[0], "enrich-media.yml")
         r["steam-ratings.yml"][0] = run(20,"failure")
         self.assertEqual(choose(r,NOW)[0], "steam-ratings.yml")
     def test_no_history(self):

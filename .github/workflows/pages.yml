@@ -35,12 +35,12 @@ jobs:
       - run: python tools/build_site_data.py
       - run: python tools/check_site.py
       - run: PYTHONPATH=tools python tools/test_steam_ratings.py
-      - run: node --check site/assets/game-identity.js
-      - run: node --check site/assets/i18n.js
-      - run: node --check site/assets/translations.js
-      - run: node --check site/assets/catalog-api.js
+      - run: node --check site/assets/catalog/game-identity.js
+      - run: node --check site/assets/core/i18n.js
+      - run: node --check site/assets/catalog/translations.js
+      - run: node --check site/assets/core/catalog-api.js
       - run: node --check site/assets/app.js
-      - run: node --check site/assets/wishlist.js
+      - run: node --check site/assets/library/wishlist.js
       - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
       - run: node tools/test_search_score.mjs
@@ -95,11 +95,11 @@ jobs:
           fetch favicon-gamepad.svg /tmp/favicon-gamepad.svg
           fetch assets/favicon-animation.js /tmp/favicon-animation.js
           fetch assets/app.js /tmp/app.js
-          fetch assets/game-identity.js /tmp/identity.js
-          fetch assets/i18n.js /tmp/i18n.js
-          fetch assets/translations.js /tmp/translations.js
-          fetch assets/catalog-api.js /tmp/api.js
-          fetch assets/catalog-v2.css /tmp/v2.css
+          fetch assets/catalog/game-identity.js /tmp/identity.js
+          fetch assets/core/i18n.js /tmp/i18n.js
+          fetch assets/catalog/translations.js /tmp/translations.js
+          fetch assets/core/catalog-api.js /tmp/api.js
+          fetch assets/catalog.css /tmp/v2.css
           fetch data/catalog.json /tmp/catalog.json
           fetch data/search-index.json /tmp/search-index.json
           fetch data/health.json /tmp/health.json
@@ -142,7 +142,7 @@ jobs:
           grep -q 'effectiveGenreLabels' /tmp/identity.js
           grep -q 'metadata_developer' /tmp/app.js
           grep -q 'metadata_publisher' /tmp/app.js
-          fetch assets/storage.js /tmp/storage.js
+          fetch assets/core/storage.js /tmp/storage.js
           grep -q 'fitboyrepack:language:v1' /tmp/storage.js
           grep -q 'STORAGE_KEYS.language' /tmp/i18n.js
           grep -q 'source_sha256' /tmp/translations.js

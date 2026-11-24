@@ -1,14 +1,14 @@
-import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload, searchIndexMatchesCatalog } from './catalog-api.js?v=3';
-import { createCardWindow } from './card-window.js';
-import { normalized, createQueryScorer } from './search-score.js';
-import { STORAGE_KEYS, readLibrary, writeLibrary } from './storage.js';
-import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './wishlist.js?v=2';
+import { loadCatalogPayload, loadSearchIndexPayload, loadHealthPayload, loadSteamRatingsPayload, searchIndexMatchesCatalog } from './core/catalog-api.js';
+import { createCardWindow } from './catalog/card-window.js';
+import { normalized, createQueryScorer } from './catalog/search-score.js';
+import { STORAGE_KEYS, readLibrary, writeLibrary } from './core/storage.js';
+import { initWishlist, setWishlistCatalog, openWishlist, exportWishlist, importWishlist } from './library/wishlist.js';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
   gameReleaseYear,
-} from './game-identity.js';
+} from './catalog/game-identity.js';
 import {
   applyTranslations,
   currentLanguage,
@@ -18,7 +18,7 @@ import {
   initI18n,
   locale,
   t,
-} from './i18n.js?v=2';
+} from './core/i18n.js';
 
 initI18n();
 

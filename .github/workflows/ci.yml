@@ -69,12 +69,12 @@ jobs:
         with:
           node-version: '22'
       - run: python tools/build_site_data.py
-      - run: node --check site/assets/catalog-api.js
-      - run: node --check site/assets/game-identity.js
-      - run: node --check site/assets/i18n.js
-      - run: node --check site/assets/translations.js
+      - run: node --check site/assets/core/catalog-api.js
+      - run: node --check site/assets/catalog/game-identity.js
+      - run: node --check site/assets/core/i18n.js
+      - run: node --check site/assets/catalog/translations.js
       - run: node --check site/assets/app.js
-      - run: node --check site/assets/wishlist.js
+      - run: node --check site/assets/library/wishlist.js
       - run: node --check site/assets/favicon-animation.js
       - run: node tools/test_wishlist.mjs
       - run: node tools/test_release_year.mjs
@@ -83,7 +83,7 @@ jobs:
       - run: node tools/test_storage.mjs
       - run: node tools/test_favicon_cache.mjs
       - run: node tools/test_card_window.mjs
-      - run: node --check site/assets/card-window.js
+      - run: node --check site/assets/catalog/card-window.js
       - run: node --check site/assets/details.js
       - run: node --check site/assets/layout-v3.js
       - run: node --check site/assets/media-preview-v7.js
@@ -98,7 +98,7 @@ jobs:
             displayTitle,
             editionTitle,
             effectiveGenreLabels,
-          } from './site/assets/game-identity.js';
+          } from './site/assets/catalog/game-identity.js';
 
           const lightLegacy = {
             title: 'Eastern Era – v1.2.0',
@@ -142,32 +142,32 @@ jobs:
           JS
       - name: Verify fixed media grid and preview/full contract
         run: |
-          grep -q 'game-sheet-v6.css' site/assets/layout-v3.js
-          grep -q 'game-sheet-v7.css' site/assets/layout-v3.js
+          grep -q 'game-sheet.css' site/index.html
+          test -f site/assets/game-sheet.css
           grep -q 'media-preview-v7.js' site/assets/layout-v3.js
           grep -q 'media-gif-v6' site/assets/layout-v3.js
-          grep -q 'overflow-x:hidden' site/assets/game-sheet-v6.css
-          grep -q 'grid-column:span 2' site/assets/game-sheet-v6.css
-          grep -q 'detail-tab-nav' site/assets/game-sheet-v7.css
+          grep -q 'overflow-x:hidden' site/assets/game-sheet.css
+          grep -q 'grid-column:span 2' site/assets/game-sheet.css
+          grep -q 'detail-tab-nav' site/assets/game-sheet.css
           grep -q 'makeIdentityFacts' site/assets/details.js
-          grep -q 'cover-identity-facts' site/assets/game-sheet-v7.css
-          grep -q 'cover-details-meta' site/assets/game-sheet-v7.css
+          grep -q 'cover-identity-facts' site/assets/game-sheet.css
+          grep -q 'cover-details-meta' site/assets/game-sheet.css
           grep -q 'cardDisplayTitle' site/assets/app.js
           grep -q 'cardDisplayTags' site/assets/app.js
           grep -q 'game-identity.js' site/assets/app.js
           grep -q 'identityStable' site/assets/details.js
           grep -q 'effectiveTags' site/assets/app.js
           grep -q 'releasePeriodMatches' site/assets/app.js
-          grep -q 'tag-picker-dialog' site/assets/catalog-focus-v3.css
-          grep -q 'canonical title first' site/assets/catalog-focus-v3.css
+          grep -q 'tag-picker-dialog' site/assets/catalog.css
+          grep -q 'canonical title first' site/assets/catalog.css
           grep -q 'buildInitialCoverIdentity' site/assets/app.js
           grep -q 'buildDetailLoadingShell' site/assets/app.js
-          grep -q 'detail-loading-shell' site/assets/game-sheet-v7.css
+          grep -q 'detail-loading-shell' site/assets/game-sheet.css
           grep -q 'cover-details-initial' site/assets/details.js
           grep -q 'buildInitialVerifiedIdentity' site/assets/app.js
           grep -q 'metadata_developer' tools/build_site_data.py
           grep -q 'metadata_publisher' tools/build_site_data.py
-          grep -q 'flex:1 1 0' site/assets/game-sheet-v7.css
+          grep -q 'flex:1 1 0' site/assets/game-sheet.css
           grep -q 'preview_url' site/assets/media-preview-v7.js
           grep -q 'preloadImage' site/assets/media-preview-v7.js
           ! grep -q 'structureMediaGallery' site/assets/layout-v3.js
@@ -444,7 +444,8 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - run: python -m py_compile tools/update_catalog.py tools/catalog_classifier.py tools/check_catalog_classification.py tools/test_catalog_classifier.py tools/enrich_media.py tools/enrich_media_v4.py tools/enrich_media_v5.py tools/enrich_media_v6.py tools/enrich_media_v7.py tools/enrich_media_clustered.py tools/check_feed.py tools/build_site_data.py tools/export_public_metadata.py tools/publish_public_metadata.py tools/test_public_metadata_export.py tools/test_media_filter.py tools/test_media_v4.py tools/test_media_v5.py tools/test_media_v6.py tools/test_media_v7.py tools/validate_catalog.py tools/check_site.py tools/llm_client.py tools/test_llm_client.py tools/ai_catalog_bootstrap.py tools/test_ai_catalog_bootstrap.py tools/fast_metadata_bootstrap.py tools/test_fast_metadata_bootstrap.py tools/translation_autodrain.py tools/export_public_translations.py tools/publish_public_translations.py tools/test_translation_pipeline.py tools/update_steam_ratings.py tools/test_steam_ratings.py
+      - run: python -m compileall -q tools ops/fitboy
+      - run: python ops/fitboy/test_health_monitor.py
 
   security-boundary:
     name: Robot · forbidden-link guard

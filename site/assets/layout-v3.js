@@ -5,27 +5,9 @@ function initCatalogFocus() {
   const dialog = document.querySelector('#gameDialog');
   const dialogContent = document.querySelector('#dialogContent');
 
-  if (!document.querySelector('link[data-game-sheet-v6]')) {
-    document.querySelector('link[data-game-sheet-v5]')?.remove();
-    document.querySelector('link[data-game-sheet-v4]')?.remove();
-    const sheet = document.createElement('link');
-    sheet.rel = 'stylesheet';
-    sheet.href = './assets/game-sheet-v6.css';
-    sheet.dataset.gameSheetV6 = 'true';
-    document.head.append(sheet);
-  }
-
-  if (!document.querySelector('link[data-game-sheet-v7]')) {
-    const sheet = document.createElement('link');
-    sheet.rel = 'stylesheet';
-    sheet.href = './assets/game-sheet-v7.css';
-    sheet.dataset.gameSheetV7 = 'true';
-    document.head.append(sheet);
-  }
-
   if (!window.__fitboyMediaPreviewV7) {
     window.__fitboyMediaPreviewV7 = true;
-    import('./media-preview-v7.js').catch(error => console.debug('Media preview V7 unavailable', error));
+    import('./media-preview-v7.js?v=2').catch(error => console.debug('Media preview V7 unavailable', error));
   }
 
   if (discovery && search) {

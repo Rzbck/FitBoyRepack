@@ -1,17 +1,17 @@
-import { loadGameDetail } from './catalog-api.js?v=3';
+import { loadGameDetail } from './core/catalog-api.js';
 import {
   displayTitle as identityDisplayTitle,
   editionTitle as identityEditionTitle,
   effectiveGenreLabels,
-} from './game-identity.js';
+} from './catalog/game-identity.js';
 import {
   applyTranslations,
   currentLanguage,
   formatDateValue,
   mediaCountLabel,
   t,
-} from './i18n.js?v=2';
-import { localizeGameProse } from './translations.js?v=2';
+} from './core/i18n.js';
+import { localizeGameProse } from './catalog/translations.js';
 
 const dialog = document.querySelector('#gameDialog');
 const dialogContent = document.querySelector('#dialogContent');

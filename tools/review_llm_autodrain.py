@@ -25,7 +25,7 @@ from typing import Any
 
 import batched_metadata_bootstrap_v2 as v2
 from ai_catalog_bootstrap import AI_VERSION, compact_json, utcnow
-from llm_client import LocalLLMClient
+from fitboy.metadata.llm_client import LocalLLMClient
 
 base = v2.base
 

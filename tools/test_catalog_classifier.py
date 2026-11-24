@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from catalog_classifier import classify_record
+from fitboy.catalog.catalog_classifier import classify_record
 
 
 def record(title, genres=None, size="N/A", image="", description="", media=None):

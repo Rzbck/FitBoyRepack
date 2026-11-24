@@ -45,6 +45,25 @@ def choose(runs, now):
     return max(due, key=lambda x: x[0])[1], "most overdue eligible workflow"
 
 
+def summarize(histories, now):
+    """Observable cadence; never mistake a failed run for successful work."""
+    report = {}
+    for name, interval in INTERVALS.items():
+        history = histories[name]
+        completed = [r for r in history if r.get("status") == "completed"]
+        successful = [r for r in completed if r.get("conclusion") == "success"]
+        latest = max(completed, key=lambda r: timestamp(r["created_at"]), default=None)
+        last = max((timestamp(r.get("run_started_at") or r["created_at"]) for r in successful), default=None)
+        age = round((now-last).total_seconds()/60, 1) if last else None
+        report[name] = {
+            "target_minutes": interval, "last_success_age_minutes": age,
+            "active": sum(r.get("status") != "completed" for r in history),
+            "last_conclusion": latest.get("conclusion") if latest else None,
+            "overdue": age is None or age > interval * 2,
+        }
+    return report
+
+
 def gh(*args):
     return subprocess.check_output(["gh", *args], text=True, encoding="utf-8")
 
@@ -58,7 +77,13 @@ def main():
     for name in INTERVALS:
         path = f"repos/{args.repo}/actions/workflows/{name}/runs?branch=main&per_page=20"
         histories[name] = json.loads(gh("api", path))["workflow_runs"]
-    name, reason = choose(histories, datetime.now(timezone.utc))
+    now = datetime.now(timezone.utc)
+    report = summarize(histories, now)
+    print(json.dumps(report, sort_keys=True), flush=True)
+    for worker, status in report.items():
+        if status["overdue"]:
+            print(f"::warning title=Worker cadence::{worker} has no recent successful run")
+    name, reason = choose(histories, now)
     print(f"Orchestrator: {name or 'idle'} ({reason})", flush=True)
     if name and not args.dry_run:
         subprocess.run(["gh", "workflow", "run", name, "--ref", "main", "-R", args.repo], check=True)

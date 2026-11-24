@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-from catalog_classifier import classify_record
+from fitboy.catalog.catalog_classifier import classify_record
 
 P = Path("site/data/games.json")
 data = json.loads(P.read_text(encoding="utf-8"))

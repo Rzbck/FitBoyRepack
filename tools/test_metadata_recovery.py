@@ -3,7 +3,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from ai_catalog_bootstrap import connect_db,initialize_queue
 from fast_metadata_bootstrap import ensure_cache,store_cache,cached_evidence
-from metadata_recovery import schedule_reviews
+from fitboy.metadata.metadata_recovery import schedule_reviews
 
 def main():
     with TemporaryDirectory() as tmp:

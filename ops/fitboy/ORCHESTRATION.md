@@ -16,3 +16,10 @@ continues to catch edits to existing posts.
 
 The VPS publisher token is intentionally not changed. A future external timer
 requires an explicitly authorized GitHub Actions write credential.
+
+Coordinator triggers also include completed trusted main-branch CI, RSS and
+worker runs. CI failures do not trigger writers. This adds event-driven
+opportunities to catch up without relying solely on cron, but GitHub limits
+workflow_run chains and can delay scheduled events. Existing writer lock,
+cooldown and fail-closed checks remain. No external dispatch credential is
+added. The health timer monitors public Actions histories independently.

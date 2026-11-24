@@ -3,7 +3,7 @@ import json
 
 import httpx
 
-from llm_client import LLMConfig, LocalLLMClient
+from fitboy.metadata.llm_client import LLMConfig, LocalLLMClient
 
 
 def main():

@@ -8680,10 +8680,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-14-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8848,10 +8846,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-20-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -8890,8 +8886,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-21-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -11087,18 +11085,6 @@
       "reason": "audited-editorial",
       "score": 0,
       "signals": [],
-      "action": "excluded-new"
-    },
-    {
-      "id": "winter-get-the-fuck-out-updates-digest-for-february-28-2026",
-      "title": "Winter, get the fuck out! Updates Digest for February 28, 2026",
-      "source_url": "https://fitgirl-repacks.site/winter-get-the-fuck-out-updates-digest-for-february-28-2026/",
-      "classification": "non_game",
-      "reason": "updates-digest",
-      "score": 1,
-      "signals": [
-        "image"
-      ],
       "action": "excluded-new"
     },
     {

@@ -1,9 +1,199 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-23T13:35:44.283886+00:00",
+  "generated_at": "2026-11-24T00:53:13.038650+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-23T13:35:44.283886+00:00",
   "games": [
+    {
+      "id": "the-killing-stone",
+      "title": "The Killing Stone – v18032",
+      "source_url": "https://fitgirl-repacks.site/the-killing-stone/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/24/4490c33b044b1a146751d543ea3fde3e.jpg",
+      "post_date": "2026-11-24T01:31:40+03:00",
+      "genres": [
+        "Card game",
+        "First-person",
+        "3D",
+        "Horror",
+        "Turn-based"
+      ],
+      "repack_size": "4.1 GB"
+    },
+    {
+      "id": "phantom-blade-zero",
+      "title": "Phantom Blade Zero: Deluxe Edition – v302256-17280 + 2 DLCs",
+      "source_url": "https://fitgirl-repacks.site/phantom-blade-zero/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/23/479b251a3656b40fd35b3f84353c27cc.jpg",
+      "post_date": "2026-11-24T00:01:54+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "112.2 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/90/b7/90b794cc-aad5-4cf7-93be-4b4e46b8868f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/b7/90b794cc-aad5-4cf7-93be-4b4e46b8868f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/44/9f44af58-1e37-4ddc-8996-6f1cb22a19b7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/44/9f44af58-1e37-4ddc-8996-6f1cb22a19b7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/51/d4/51d4b2d8-b5c0-4992-a1a9-ee2438cf639b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/51/d4/51d4b2d8-b5c0-4992-a1a9-ee2438cf639b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/81/25816a12-17a7-4c60-9521-e8912c08fd36.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/81/25816a12-17a7-4c60-9521-e8912c08fd36.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3c/16/3c16fa1a-4817-4ad7-88f1-28671375bd93.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3c/16/3c16fa1a-4817-4ad7-88f1-28671375bd93.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/18/2c183b90-e0be-4600-9771-b0bea51c41cd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/18/2c183b90-e0be-4600-9771-b0bea51c41cd.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-31T05:32:38.715884+00:00",
+      "details": {
+        "description": "Framed for murdering his master, Soul suffers a devastating wound to the heart, leaving him just sixty-six days to live. Alone and hunted, he roams the Wulin, determined to unravel a conspiracy that has ensnared the martial world.\nThrough rain and blood, kindness and vengeance, he embarks on a journey where love and hatred intertwine in search of a heart.\nExplore the mysterious Phantom World, where shifting light and shadow conceal mysteries at every turn.\nMemory Flowers, the Wulin and the Discordance, Transcension, the Lady of the Veil, Inanis’ Dreamscape…\nEvery secret leads to another, and every corner hides a new story.\nWhen one path ends, another begins. Hidden passages and intricate mechanisms await those who dare to explore.\nIn the Wulin, your weapon is your life.\nMaster over 30 primary weapons and more than 20 unique Phantom Edges, wrested from the hands of fallen foes.\nRooted in traditional martial arts, combat flows through seamless combos that are easy to learn yet rewarding to master. Only true masters will uncover the deadly intricacies within every technique.\nBlades clash in showers of sparks. Dodge, deflect, counter, and strike in one seamless flow, where victory and defeat are decided in an instant.\nWill the next turn leave the sands stained with blood, or lead you back from the brink of death?\nThe golden age of wuxia cinema collides with punk fantasy in Phantom Blade Zero.\nMartial arts, cold steel, mechanical prosthetics, crumbling industrial ruins, traditional Chinese aesthetics, and modern rock music.\nTogether, they create the dark, unmistakable aesthetic of kungfupunk.\nPowered by Unreal Engine 5 and cutting-edge motion capture technology, renowned martial arts choreographers from the golden age of wuxia cinema collaborated to bring authentic Chinese kungfu to life. Every strike and stance in Phantom Blade Zero is rooted in real martial techniques.\nExperience the timeless allure of Chinese kungfu through breathtaking cinematic action.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Steam BuildID 26266538 release: 140.6 GB",
+          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
+          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
+          "VBS.cmd script v2.0 added",
+          "Custom launcher added for easier HV steps processing",
+          "Game version: v301524-17219; 2 DLCs (Pre-Purchase Bonus & Deluxe Edition Upgrade) are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 140.6 GB to 110.8 GB)",
+          "Installation takes from 70 minutes (on 32-threads CPU) up to ~3 hours (on 8-threads CPU)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 140.6 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-31T05:32:38.715884+00:00"
+    },
+    {
+      "id": "eternal-palace-sakura",
+      "title": "Eternal Palace Sakura",
+      "source_url": "https://fitgirl-repacks.site/eternal-palace-sakura/",
+      "image_url": "https://i8.imageban.ru/out/2026/11/23/5f46bc966c1f13d219d7ef8385e3b396.jpg",
+      "post_date": "2026-11-23T22:37:40+03:00",
+      "genres": [
+        "Action",
+        "Third-person",
+        "3D",
+        "Japanese"
+      ],
+      "repack_size": "N/A"
+    },
+    {
+      "id": "dinkum",
+      "title": "Dinkum: Official Soundtrack Edition, v1.0.9 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/dinkum/",
+      "image_url": "https://i4.imageban.ru/out/2025/04/29/3ec17a50e0d51bad680b507850ddc223.jpg",
+      "post_date": "2026-11-23T20:00:09+03:00",
+      "genres": [
+        "Lifestyle",
+        "Management",
+        "Isometric",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062520/extras/6_%EC%95%8C%ED%8C%8C%EB%8D%B0%EB%B9%8C_1.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/35/94/3594e1bf-48bd-41e9-a44e-af6ba1097b6c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/35/94/3594e1bf-48bd-41e9-a44e-af6ba1097b6c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e2/6d/e26de163-e381-43b8-bad4-e6bf30d5334a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e2/6d/e26de163-e381-43b8-bad4-e6bf30d5334a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/69/98/699868ac-2036-4438-a8a4-d99d1d73f964.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/69/98/699868ac-2036-4438-a8a4-d99d1d73f964.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/39/24/39244728-a17f-41d5-9db6-86176f7135af.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/39/24/39244728-a17f-41d5-9db6-86176f7135af.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/dc/17/dc17389c-bf56-4d47-ad94-cdc3133475d9.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/dc/17/dc17389c-bf56-4d47-ad94-cdc3133475d9.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/af/37/af378a9c-7563-436f-b120-2e30217c142a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/af/37/af378a9c-7563-436f-b120-2e30217c142a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "G’Day! Grab your tools, gather resources, and build your town while hanging out with friends and enjoying the charm of Dinkum.\nPlant crops, raise animals, and build your dream farm, or roam the island catching fish and bugs at your own pace.\nWith changing seasons and weather affecting how your crops grow, every day brings a new challenge. Slip on your flip-flops to hunt for rare fish, bugs, or ores. Every moment becomes a special adventure.",
+        "game_features": [
+          "Explore and Survive the Wild – From red deserts and lush forests to hidden mines, Dinkum is full of wild places to explore. Hunt wild animals, gather resources, and learn how to survive in the great outdoors. The creatures might look cute, but don’t let your guard down! You’ll need tools, weapons, and a solid strategy to make it out in one piece. Will you go head-to-head, or set traps and play it smart? The choice is yours.",
+          "Build Your Town Your Way – What starts as a simple campfire and a sleeping bag can grow into a thriving town with shops, fountains, flower beds, and windmills. Craft furniture and decorations to personalize your home, reshape the island to design your ideal town layout, and customize your character’s look from head to toe. Invite friends over to show off your one-of-a-kind creation!",
+          "The Joy of Growing Together – Sell your harvest and foraged goods to earn Dinks, and reinvest them to help your town flourish. As your town grows, new shops will open, visitors will stop by—and some might even decide to stay for good. Celebrate with festivals and build a vibrant, lively town, whether you’re playing solo or with friends."
+        ],
+        "repack_features": [
+          "Based on Dinkum-TENOKE ISO release: tenoke-dinkum.iso (4,993,175,552 bytes)",
+          "Game version: v1.0.0 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in WAV format nullified and recoded to MP3 (LAME Extreme Preset), NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST",
+          "Significantly smaller archive size (compressed from 4.7 GB to 660/795 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 4.8 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
+    {
+      "id": "penguin-colony",
+      "title": "Penguin Colony – v1.5",
+      "source_url": "https://fitgirl-repacks.site/penguin-colony/",
+      "image_url": "https://i1.imageban.ru/out/2026/11/23/fd0ac84449c7cd643a431e6b4eb6bc6b.jpg",
+      "post_date": "2026-11-23T18:21:13+03:00",
+      "genres": [
+        "Adventure",
+        "Third-person",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "1.1 GB"
+    },
     {
       "id": "anno-117-pax-romana",
       "title": "Anno 117: Pax Romana – Gold Edition, v3.0.1733841 + 6 DLCs + Bonus OST",
@@ -8243,77 +8433,6 @@
       },
       "details_version": 1,
       "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "phantom-blade-zero",
-      "title": "Phantom Blade Zero: Deluxe Edition – v301524-17219 + 2 DLCs",
-      "source_url": "https://fitgirl-repacks.site/phantom-blade-zero/",
-      "image_url": "https://i1.imageban.ru/out/2026/10/31/73dca9b0ed13f92c8f1a83af09fcf3ac.jpg",
-      "post_date": "2026-10-31T04:42:54+03:00",
-      "genres": [
-        "RPG",
-        "Action RPG",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "110.8 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/90/b7/90b794cc-aad5-4cf7-93be-4b4e46b8868f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/90/b7/90b794cc-aad5-4cf7-93be-4b4e46b8868f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9f/44/9f44af58-1e37-4ddc-8996-6f1cb22a19b7.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9f/44/9f44af58-1e37-4ddc-8996-6f1cb22a19b7.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/51/d4/51d4b2d8-b5c0-4992-a1a9-ee2438cf639b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/51/d4/51d4b2d8-b5c0-4992-a1a9-ee2438cf639b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/25/81/25816a12-17a7-4c60-9521-e8912c08fd36.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/25/81/25816a12-17a7-4c60-9521-e8912c08fd36.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3c/16/3c16fa1a-4817-4ad7-88f1-28671375bd93.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3c/16/3c16fa1a-4817-4ad7-88f1-28671375bd93.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2c/18/2c183b90-e0be-4600-9771-b0bea51c41cd.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2c/18/2c183b90-e0be-4600-9771-b0bea51c41cd.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-31T05:32:38.715884+00:00",
-      "details": {
-        "description": "Framed for murdering his master, Soul suffers a devastating wound to the heart, leaving him just sixty-six days to live. Alone and hunted, he roams the Wulin, determined to unravel a conspiracy that has ensnared the martial world.\nThrough rain and blood, kindness and vengeance, he embarks on a journey where love and hatred intertwine in search of a heart.\nExplore the mysterious Phantom World, where shifting light and shadow conceal mysteries at every turn.\nMemory Flowers, the Wulin and the Discordance, Transcension, the Lady of the Veil, Inanis’ Dreamscape…\nEvery secret leads to another, and every corner hides a new story.\nWhen one path ends, another begins. Hidden passages and intricate mechanisms await those who dare to explore.\nIn the Wulin, your weapon is your life.\nMaster over 30 primary weapons and more than 20 unique Phantom Edges, wrested from the hands of fallen foes.\nRooted in traditional martial arts, combat flows through seamless combos that are easy to learn yet rewarding to master. Only true masters will uncover the deadly intricacies within every technique.\nBlades clash in showers of sparks. Dodge, deflect, counter, and strike in one seamless flow, where victory and defeat are decided in an instant.\nWill the next turn leave the sands stained with blood, or lead you back from the brink of death?\nThe golden age of wuxia cinema collides with punk fantasy in Phantom Blade Zero.\nMartial arts, cold steel, mechanical prosthetics, crumbling industrial ruins, traditional Chinese aesthetics, and modern rock music.\nTogether, they create the dark, unmistakable aesthetic of kungfupunk.\nPowered by Unreal Engine 5 and cutting-edge motion capture technology, renowned martial arts choreographers from the golden age of wuxia cinema collaborated to bring authentic Chinese kungfu to life. Every strike and stance in Phantom Blade Zero is rooted in real martial techniques.\nExperience the timeless allure of Chinese kungfu through breathtaking cinematic action.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Steam BuildID 26266538 release: 140.6 GB",
-          "Hypervisor Bypass (INTEL & AMD) by ARTIFACT + Goldberg emu applied over",
-          "Many antiviruses, including Windows Defender are now marking HV files as rootkits, rendering games unplayable. To avoid it either turn off AV completely, or add source/target installation folders to exclusions",
-          "VBS.cmd script v2.0 added",
-          "Custom launcher added for easier HV steps processing",
-          "Game version: v301524-17219; 2 DLCs (Pre-Purchase Bonus & Deluxe Edition Upgrade) are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 140.6 GB to 110.8 GB)",
-          "Installation takes from 70 minutes (on 32-threads CPU) up to ~3 hours (on 8-threads CPU)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 140.6 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-31T05:32:38.715884+00:00"
     },
     {
       "id": "project-hunt",
@@ -171812,82 +171931,6 @@
           "HDD space after installation: 1.6 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "dinkum",
-      "title": "Dinkum: Official Soundtrack Edition, v1.0.0 (Release) + Bonus OST",
-      "source_url": "https://fitgirl-repacks.site/dinkum/",
-      "image_url": "https://i4.imageban.ru/out/2025/04/29/3ec17a50e0d51bad680b507850ddc223.jpg",
-      "post_date": "2025-04-29T17:31:09+03:00",
-      "genres": [
-        "Lifestyle",
-        "Management",
-        "Isometric",
-        "3D",
-        "Real-time"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062520/extras/6_%EC%95%8C%ED%8C%8C%EB%8D%B0%EB%B9%8C_1.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/35/94/3594e1bf-48bd-41e9-a44e-af6ba1097b6c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/35/94/3594e1bf-48bd-41e9-a44e-af6ba1097b6c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e2/6d/e26de163-e381-43b8-bad4-e6bf30d5334a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e2/6d/e26de163-e381-43b8-bad4-e6bf30d5334a.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/69/98/699868ac-2036-4438-a8a4-d99d1d73f964.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/69/98/699868ac-2036-4438-a8a4-d99d1d73f964.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/39/24/39244728-a17f-41d5-9db6-86176f7135af.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/39/24/39244728-a17f-41d5-9db6-86176f7135af.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/dc/17/dc17389c-bf56-4d47-ad94-cdc3133475d9.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/dc/17/dc17389c-bf56-4d47-ad94-cdc3133475d9.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/af/37/af378a9c-7563-436f-b120-2e30217c142a.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/af/37/af378a9c-7563-436f-b120-2e30217c142a.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "G’Day! Grab your tools, gather resources, and build your town while hanging out with friends and enjoying the charm of Dinkum.\nPlant crops, raise animals, and build your dream farm, or roam the island catching fish and bugs at your own pace.\nWith changing seasons and weather affecting how your crops grow, every day brings a new challenge. Slip on your flip-flops to hunt for rare fish, bugs, or ores. Every moment becomes a special adventure.",
-        "game_features": [
-          "Explore and Survive the Wild – From red deserts and lush forests to hidden mines, Dinkum is full of wild places to explore. Hunt wild animals, gather resources, and learn how to survive in the great outdoors. The creatures might look cute, but don’t let your guard down! You’ll need tools, weapons, and a solid strategy to make it out in one piece. Will you go head-to-head, or set traps and play it smart? The choice is yours.",
-          "Build Your Town Your Way – What starts as a simple campfire and a sleeping bag can grow into a thriving town with shops, fountains, flower beds, and windmills. Craft furniture and decorations to personalize your home, reshape the island to design your ideal town layout, and customize your character’s look from head to toe. Invite friends over to show off your one-of-a-kind creation!",
-          "The Joy of Growing Together – Sell your harvest and foraged goods to earn Dinks, and reinvest them to help your town flourish. As your town grows, new shops will open, visitors will stop by—and some might even decide to stay for good. Celebrate with festivals and build a vibrant, lively town, whether you’re playing solo or with friends."
-        ],
-        "repack_features": [
-          "Based on Dinkum-TENOKE ISO release: tenoke-dinkum.iso (4,993,175,552 bytes)",
-          "Game version: v1.0.0 (Release)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "Bonus OST in WAV format nullified and recoded to MP3 (LAME Extreme Preset), NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of bonus OST",
-          "Significantly smaller archive size (compressed from 4.7 GB to 660/795 MB)",
-          "Installation takes 1-2 minutes",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: up to 4.8 GB",
-          "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

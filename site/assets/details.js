@@ -231,6 +231,7 @@ function renderCoverDetails(layout, game) {
     const releaseValue = document.createElement('strong');
     releaseValue.dataset.i18nDate = game.game_release_date;
     releaseValue.textContent = formatDate(game.game_release_date);
+    if(game.game_release_source) releaseValue.title=game.game_release_source==="steam"?"Steam":"Wikidata";
     release.append(releaseLabel, releaseValue);
     meta.append(release);
   }

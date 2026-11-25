@@ -341,7 +341,7 @@ def invalidate_match(record, reason):
     record["invalid_steam_appid"] = record.pop("steam_appid", None)
     for key in ("positive", "negative", "positive_percent", "total_reviews",
                 "review_checked_at", "store_verified_at", "steam_store_name",
-                "steam_release_date", "steam_release_appid", "steam_release_checked_at"):
+                "steam_release_date", "steam_release_appid", "steam_release_checked_at", "steam_release_retry_at"):
         record.pop(key, None)
     record["status"] = "mismatch"
     record["identity_issue"] = reason
@@ -351,6 +351,7 @@ def invalidate_match(record, reason):
 
 def record_store_date(row, details, now):
     row["steam_release_checked_at"]=iso(now)
+    row.pop("steam_release_retry_at",None)
     value=normalize_date(details.get("release_date"))
     if value and len(value)==10:
         row["steam_release_date"]=value
@@ -633,6 +634,7 @@ def update(args):
     date_queue=[game for game in games if
                 (row:=records.get(str(game["id"]),{})).get("steam_appid")
                 and row.get("store_verified_at")
+                and days_since(row.get("steam_release_retry_at"),now)>=1
                 and (not row.get("steam_release_checked_at")
                      or (not row.get("steam_release_date") and days_since(row["steam_release_checked_at"],now)>=28))]
     date_queue.sort(key=lambda game: (
@@ -651,6 +653,8 @@ def update(args):
             break
         except (HTTPError,ValueError) as error:
             LOGGER.warning("Store date unavailable for %s: %s",game["id"],error)
+            records[str(game["id"])]["steam_release_retry_at"]=iso(now)
+            changes+=1
             continue
 
     # Prefer new/unrated games. Recheck existing scores at most every 28 days.

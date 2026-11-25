@@ -1,9 +1,77 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T00:19:13.310981+00:00",
-  "source_pages": 825,
+  "generated_at": "2026-11-25T02:39:01.661999+00:00",
+  "source_pages": 826,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
+    {
+      "id": "tokyo-xtreme-racer",
+      "title": "Tokyo Xtreme Racer – v1.6.1 + 4 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/tokyo-xtreme-racer/",
+      "image_url": "https://i8.imageban.ru/out/2025/09/26/1be558726bdcc590b5eb59ef5210f38e.jpg",
+      "post_date": "2026-11-25T05:00:21+03:00",
+      "genres": [
+        "Arcade",
+        "Racing",
+        "First-person",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/58/9d/589dd944-9451-4020-b1d9-bc8f51fb3ae3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/9d/589dd944-9451-4020-b1d9-bc8f51fb3ae3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8b/09/8b09f8dc-df7b-4ce3-9c48-a760103a600e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8b/09/8b09f8dc-df7b-4ce3-9c48-a760103a600e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/aa/50/aa503027-b71d-4518-a4f1-5d3bf0855e1f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/50/aa503027-b71d-4518-a4f1-5d3bf0855e1f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f7/1e/f71edabd-5770-4764-b178-5b1c9e2edbcf.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f7/1e/f71edabd-5770-4764-b178-5b1c9e2edbcf.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/58/5a58b878-5af4-471e-8200-d496b47bff1d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/58/5a58b878-5af4-471e-8200-d496b47bff1d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
+      "details": {
+        "description": "“Tokyo Xtreme Racer” is a racing game set in a sealed-off future Tokyo, where you compete for the fastest speed in your customized cars on the highways that weave through the city, aiming to reach the top.\nDrive real cars on meticulously recreated courses, compete against powerful rivals, slip through other cars, and engage in spirit-wracking battles.\nThis is a series with unparalleled appeal.",
+        "game_features": [
+          "SP Battle (Spirit Point Battle) – Unlike regular racing games, the SP Battle is a unique battle feature based Spirit Points, a numeric value that quantifies the willpower of drivers. Not only is your speed tested, master the mind games and break your opponent’s resolve.",
+          "Blaze through the midnight Shuto Expressway – With the Tokyo Expressway faithfully reproduced, the complex twists and dramatic elevation changes deliver an adrenaline-pumping racing experience that’s as close to the real thing as it gets.",
+          "Countless rivals with mysterious charm – The race begins with a headlight flash as you face off against rivals with distinctive cars and bold driving styles."
+        ],
+        "repack_features": [
+          "Based on Tokyo.Xtreme.Racer-RUNE ISO release: rune-tokyo.xtreme.racer.iso (10,201,071,616 bytes)",
+          "Game version: v1.0.0 (Release)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with optional videos!)",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of optional videos pack (contains credits and non-English videos)",
+          "Significantly smaller archive size (compressed from 9.5 to 5.3/7 GB)",
+          "Installation takes 6-12 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9.8 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
+    },
     {
       "id": "blitzkrieg-3",
       "title": "Blitzkrieg 3: Deluxe Edition – Build 26763333 + All DLCs",
@@ -131059,74 +131127,6 @@
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:18:05.045422+00:00"
-    },
-    {
-      "id": "tokyo-xtreme-racer",
-      "title": "Tokyo Xtreme Racer – v1.0.0 (Release)",
-      "source_url": "https://fitgirl-repacks.site/tokyo-xtreme-racer/",
-      "image_url": "https://i8.imageban.ru/out/2025/09/26/1be558726bdcc590b5eb59ef5210f38e.jpg",
-      "post_date": "2025-09-26T23:08:21+03:00",
-      "genres": [
-        "Arcade",
-        "Racing",
-        "First-person",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "5.3 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/58/9d/589dd944-9451-4020-b1d9-bc8f51fb3ae3.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/58/9d/589dd944-9451-4020-b1d9-bc8f51fb3ae3.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8b/09/8b09f8dc-df7b-4ce3-9c48-a760103a600e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8b/09/8b09f8dc-df7b-4ce3-9c48-a760103a600e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/aa/50/aa503027-b71d-4518-a4f1-5d3bf0855e1f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/aa/50/aa503027-b71d-4518-a4f1-5d3bf0855e1f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f7/1e/f71edabd-5770-4764-b178-5b1c9e2edbcf.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f7/1e/f71edabd-5770-4764-b178-5b1c9e2edbcf.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/5a/58/5a58b878-5af4-471e-8200-d496b47bff1d.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/5a/58/5a58b878-5af4-471e-8200-d496b47bff1d.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:18:05.045422+00:00",
-      "details": {
-        "description": "“Tokyo Xtreme Racer” is a racing game set in a sealed-off future Tokyo, where you compete for the fastest speed in your customized cars on the highways that weave through the city, aiming to reach the top.\nDrive real cars on meticulously recreated courses, compete against powerful rivals, slip through other cars, and engage in spirit-wracking battles.\nThis is a series with unparalleled appeal.",
-        "game_features": [
-          "SP Battle (Spirit Point Battle) – Unlike regular racing games, the SP Battle is a unique battle feature based Spirit Points, a numeric value that quantifies the willpower of drivers. Not only is your speed tested, master the mind games and break your opponent’s resolve.",
-          "Blaze through the midnight Shuto Expressway – With the Tokyo Expressway faithfully reproduced, the complex twists and dramatic elevation changes deliver an adrenaline-pumping racing experience that’s as close to the real thing as it gets.",
-          "Countless rivals with mysterious charm – The race begins with a headlight flash as you face off against rivals with distinctive cars and bold driving styles."
-        ],
-        "repack_features": [
-          "Based on Tokyo.Xtreme.Racer-RUNE ISO release: rune-tokyo.xtreme.racer.iso (10,201,071,616 bytes)",
-          "Game version: v1.0.0 (Release)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation (ONLY when installed with optional videos!)",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Selective Download feature: you may skip downloading and installing of optional videos pack (contains credits and non-English videos)",
-          "Significantly smaller archive size (compressed from 9.5 to 5.3/7 GB)",
-          "Installation takes 6-12 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 9.8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 3 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,

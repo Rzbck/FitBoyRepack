@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T23:08:27.675441+00:00",
+  "generated_at": "2026-11-25T23:09:12.766637+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "Top-down",
         "2D"
       ],
-      "repack_size": "618 MB"
+      "repack_size": "618 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/6c/5d/6c5da727-d512-455c-bbba-461db72ddfe0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/6c/5d/6c5da727-d512-455c-bbba-461db72ddfe0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/45/26/4526d8f9-0777-4943-a984-c8f0003665ce.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/45/26/4526d8f9-0777-4943-a984-c8f0003665ce.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3f/9a/3f9a3c5d-3e34-4027-be68-4d35b3dc6573.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3f/9a/3f9a3c5d-3e34-4027-be68-4d35b3dc6573.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/30/cf/30cff119-2afd-4d8b-8744-b058a98bc5b8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/30/cf/30cff119-2afd-4d8b-8744-b058a98bc5b8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/dd/e0/dde09f4f-11fb-4b05-9ac2-aba8dfbe2426.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/dd/e0/dde09f4f-11fb-4b05-9ac2-aba8dfbe2426.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/37/37/3737d962-8df1-446c-9716-7c5bbea7271d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/37/37/3737d962-8df1-446c-9716-7c5bbea7271d.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-25T23:09:12.764210+00:00",
+      "details": {
+        "description": "Explore a gorgeous\nroguelite hockey\nworld where every choice matters on your journey to restore hockey to its former glory. Hire unique players, manage your benchwarmers, discover synergies between them, choose new abilities, bribe the referees, visit the Blademaster for upgrades and a lot more.\nCRAFT YOUR TEAM\nTake control of Angus McShaggy and lead your squad across a world filled with rival teams, strange characters and increasingly ridiculous challenges.\nHit the Training Center to boost your attributes, visit the No. 1 Fan to unlock a new player talent, or stop by the Infirmary to sacrifice a player… for the good of the team.\nBut this isn’t a regular hockey season. Lose and your run is over. Start again, take a different route, build a different team using your new unlocks and discover new combinations along the way.\nFACE TEAMS THAT DON’T PLAY BY THE RULES\nYour opponents aren’t interested in playing ordinary hockey. Take on cheating referees, farting princesses and the most sinister opponents of all: the Golfers.\nFace teams with their own players, abilities, strategies and occasionally absurd interpretations of the rules. Learn how they play, adapt your strategy and figure out how to counter their strengths before they end your run.\nMASTER EVERY SQUAD\nEach Squad introduces its own twist on the game and can completely change how you approach a run.\nBuild your roster by hiring Free Agents with the GM Squad, embrace the physical side of hockey with the Violence Squad, go back to old-school hockey physics with the Retro Squad, or forget the wrist shot entirely and blast away with the Slapshot Squad.\nDEEP AND REWARDING GAMEPLAY\nTape to Tape combines fast-paced arcade hockey with responsive controls, big hits, one-timers, saucer passes, desperate saves and plenty of opportunities to send your opponents flying.\nEasy to pick up but with plenty to master, the game rewards good positioning, passing, timing and learning how to take advantage of your team’s strengths.\nKEY FEATURES\nA hockey roguelite campaign where every run brings a new path, opponents, events and opportunities to build your team\nAll the replayability and progression of a roguelite, built around fast-paced arcade hockey\nFace a colorful cast of unique rival teams, each with their own players, abilities and ridiculous ways of playing hockey\nExperience the entire campaign solo or in local couch co-op\nFast, responsive arcade hockey featuring big hits, one-timers, saucer passes, dekes, rebounds and desperate saves\nKeep coming back with persistent unlocks, including new players, abilities, Relics and Squads\nChallenge your friends with up to 10 local players in Play Now, Tournament, Shootout and other game modes\nLOCAL/STEAM REMOTE PLAY MULTIPLAYER\nNote:\nTape to Tape does\nnot\nfeature native online multiplayer. However, you can still play with friends remotely using\nSteam Remote Play Together\nor third-party services such as\nParsec\n.\nExperience the\nRoguelite Campaign\nat its best\nin co-op\n. Team up with friends to conquer the campaign, debate every power-up choice, and embrace the glorious chaos that makes each run unforgettable.\nYou can also jump into\nPlay Now\nmode, where up to\n10 players\ncan face off locally. With a wide variety of teams, deep gameplay, and countless power-ups, every match feels chaotic, competitive, and endlessly replayable.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Tape.to.Tape-RUNE ISO release: rune-tape.to.tape.iso (999,817,216 bytes)",
+          "Game version: v1.0.0-CS 13980",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 954 to 618 MB)",
+          "Installation takes 1-2 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-25T23:09:12.764210+00:00"
     },
     {
       "id": "nightmare-frontier",

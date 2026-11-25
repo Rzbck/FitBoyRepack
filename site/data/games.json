@@ -1,9 +1,84 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T23:09:12.766637+00:00",
+  "generated_at": "2026-11-25T23:20:24.412072+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
+    {
+      "id": "the-strange-city",
+      "title": "The Strange City – v1.1",
+      "source_url": "https://fitgirl-repacks.site/the-strange-city/",
+      "image_url": "https://i1.imageban.ru/out/2024/12/16/937aa6414137cb02cd62327e10369a08.jpg",
+      "post_date": "2026-11-26T02:00:48+03:00",
+      "genres": [
+        "Arcade",
+        "Platform adventure",
+        "Side",
+        "3D",
+        "Horror"
+      ],
+      "repack_size": "1.7 GB",
+      "media": [
+        {
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2944750/extras/STC_GIF_BossRun_02.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b1/86/b186f56a-5d34-43a9-aea3-79d13048d249.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b1/86/b186f56a-5d34-43a9-aea3-79d13048d249.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0b/59/0b592e8e-930b-44b6-8547-0c25ddaa62ab.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0b/59/0b592e8e-930b-44b6-8547-0c25ddaa62ab.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ce/88/ce88c5ab-7d5c-45ef-8934-f55f921b4826.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ce/88/ce88c5ab-7d5c-45ef-8934-f55f921b4826.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/de/2c/de2cd340-fa64-49b1-ab67-9a6be10a2b69.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/de/2c/de2cd340-fa64-49b1-ab67-9a6be10a2b69.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a6/ce/a6ce503d-53a2-43ed-9d2e-201af9f298b0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a6/ce/a6ce503d-53a2-43ed-9d2e-201af9f298b0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/dc/5b/dc5b93fa-52a0-4547-ad3f-39776eb990a8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/dc/5b/dc5b93fa-52a0-4547-ad3f-39776eb990a8.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:19:11.717875+00:00",
+      "details": {
+        "description": "Embark on the adventure as Agent G, a lone survivor drawn into a mystery after a brutal car crash. Pursued by relentless monsters and trapped in eerie, shifting environments, you’ll need courage and wit to survive. Can you uncover the secrets at the journey’s end—or will the shadows claim you first?\nThe Strange City is a single-player horror adventure game that invites you into a world of eerie mysteries and strange discoveries.",
+        "game_features": [
+          "Each Chapter Challenges You to Adapt and Think on Your Feet – In The Strange City, survival demands more than courage—it requires wit. Across five chapters, relentless pursuers each employ unique hunting tactics to track G. To endure, you must outsmart their unyielding chase, search the fear-filled environments, and uncover the escape route!",
+          "Only Those Who Break Their Limits Will Survive – Survival won’t come easy—each chapter culminates in a final encounter that will push your instincts and resolve to limits. Only those who conquer these final trials can move forward to the next chapter of the journey.",
+          "Uncover the Secrets of The Strange City – What will she find waiting at the end of the path? Dive into The Strange City and discover the reason behind G’s fateful adventure."
+        ],
+        "repack_features": [
+          "Based on The.Strange.City-RUNE ISO release: rune-the.strange.city.iso (3,013,738,496 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.8 to 1.6 GB)",
+          "Installation takes 2-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 3.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:19:11.717875+00:00"
+    },
     {
       "id": "tape-to-tape",
       "title": "Tape to Tape – v1.0.0-CS 13980",
@@ -210941,81 +211016,6 @@
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack",
           "If you can’t move your mouse cursor in the main menu, press Alt+Tab two times to switch from the game window and back"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:19:11.717875+00:00"
-    },
-    {
-      "id": "the-strange-city",
-      "title": "The Strange City",
-      "source_url": "https://fitgirl-repacks.site/the-strange-city/",
-      "image_url": "https://i1.imageban.ru/out/2024/12/16/937aa6414137cb02cd62327e10369a08.jpg",
-      "post_date": "2024-12-16T17:27:48+03:00",
-      "genres": [
-        "Arcade",
-        "Platform adventure",
-        "Side",
-        "3D",
-        "Horror"
-      ],
-      "repack_size": "1.6 GB",
-      "media": [
-        {
-          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2944750/extras/STC_GIF_BossRun_02.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/b1/86/b186f56a-5d34-43a9-aea3-79d13048d249.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/b1/86/b186f56a-5d34-43a9-aea3-79d13048d249.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0b/59/0b592e8e-930b-44b6-8547-0c25ddaa62ab.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0b/59/0b592e8e-930b-44b6-8547-0c25ddaa62ab.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ce/88/ce88c5ab-7d5c-45ef-8934-f55f921b4826.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ce/88/ce88c5ab-7d5c-45ef-8934-f55f921b4826.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/de/2c/de2cd340-fa64-49b1-ab67-9a6be10a2b69.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/de/2c/de2cd340-fa64-49b1-ab67-9a6be10a2b69.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a6/ce/a6ce503d-53a2-43ed-9d2e-201af9f298b0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a6/ce/a6ce503d-53a2-43ed-9d2e-201af9f298b0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/dc/5b/dc5b93fa-52a0-4547-ad3f-39776eb990a8.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/dc/5b/dc5b93fa-52a0-4547-ad3f-39776eb990a8.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:19:11.717875+00:00",
-      "details": {
-        "description": "Embark on the adventure as Agent G, a lone survivor drawn into a mystery after a brutal car crash. Pursued by relentless monsters and trapped in eerie, shifting environments, you’ll need courage and wit to survive. Can you uncover the secrets at the journey’s end—or will the shadows claim you first?\nThe Strange City is a single-player horror adventure game that invites you into a world of eerie mysteries and strange discoveries.",
-        "game_features": [
-          "Each Chapter Challenges You to Adapt and Think on Your Feet – In The Strange City, survival demands more than courage—it requires wit. Across five chapters, relentless pursuers each employ unique hunting tactics to track G. To endure, you must outsmart their unyielding chase, search the fear-filled environments, and uncover the escape route!",
-          "Only Those Who Break Their Limits Will Survive – Survival won’t come easy—each chapter culminates in a final encounter that will push your instincts and resolve to limits. Only those who conquer these final trials can move forward to the next chapter of the journey.",
-          "Uncover the Secrets of The Strange City – What will she find waiting at the end of the path? Dive into The Strange City and discover the reason behind G’s fateful adventure."
-        ],
-        "repack_features": [
-          "Based on The.Strange.City-RUNE ISO release: rune-the.strange.city.iso (3,013,738,496 bytes)",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 2.8 to 1.6 GB)",
-          "Installation takes 2-8 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 3.7 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },
       "details_version": 1,

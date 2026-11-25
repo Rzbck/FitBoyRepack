@@ -2715,6 +2715,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "the-strange-city-repack-updated",
+      "title": "The Strange City Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/the-strange-city-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "the-thaumaturge-repack-updated",
       "title": "The Thaumaturge Repack Updated",
       "source_url": "https://fitgirl-repacks.site/the-thaumaturge-repack-updated/",

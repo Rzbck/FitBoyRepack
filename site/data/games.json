@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T00:18:09.213326+00:00",
+  "generated_at": "2026-11-25T00:19:13.310981+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
@@ -18,7 +18,59 @@
         "3D",
         "Real-time"
       ],
-      "repack_size": "1.6 GB"
+      "repack_size": "1.6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/10/76/10763fff-39ec-4ad5-97eb-24014f604074.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/10/76/10763fff-39ec-4ad5-97eb-24014f604074.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/63/f56343c3-abf8-4202-8b61-9aafd83c9754.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/63/f56343c3-abf8-4202-8b61-9aafd83c9754.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/04/7b/047b6233-2537-464d-b52d-fb29b40d8713.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/04/7b/047b6233-2537-464d-b52d-fb29b40d8713.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/31/b6/31b67769-04e7-4b68-add8-e0811a09b6e3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/31/b6/31b67769-04e7-4b68-add8-e0811a09b6e3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3f/b9/3fb99440-3edf-43b9-a37b-f44c44e20177.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3f/b9/3fb99440-3edf-43b9-a37b-f44c44e20177.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fe/3b/fe3b5114-407d-4c28-82fb-53e78321e9a1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/3b/fe3b5114-407d-4c28-82fb-53e78321e9a1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-25T00:19:13.310051+00:00",
+      "details": {
+        "description": "Blitzkrieg 3 is a WW2 RTS made for true admirers of strategic mastery! Challenge your tactical skills in historical campaigns and defeat a powerful Neural Network AI in skirmish battles.\nThree campaigns take you through 70 historical missions with 200+ authentic combat units. Blitzkrieg’s impressive Neural Network AI acts like no machine before.\nThe game runs fully offline, and all former DLC content is included.\nA Neural Network machine named Boris plays at the top player’s level while not using any hidden information about the enemy. General Boris regularly analyzes the gaming session and makes Neural Network-based predictions of the enemy behavior. This approach allows him to think up sophisticated counter-strategies and bring them to life. That makes Boris tough and unpredictable, so he can amaze you over and over again.\nDominate on the battlefield in three atmospheric historical campaigns, that cover the main period of World War II: from the invasion of Poland in 1939 to the triumphant capture of Berlin in 1945. Choose your side of the conflict – USSR, Axis or Allies! Take command over your forces and win the legendary battles of World War II, that were created from archival materials on historically accurate maps. The best strategists will get additional rewards for perfectly cleared missions!\nChoose your side in the largest war in the history and fight against Neural Network AI. Improve your tactical skills in the classic Skirmish mode 1×1, 2×2, 3×3, fighting with Boris.\nYou will lead more than 200 authentic combat units into battle. All of them were developed based on historical technical characteristics – more than 100 models of armored vehicles and self-propelled guns, 40 different types of infantry and assault squads and variety of different fortifications and defenses. Each unit has performance characteristics reconstructed in detail, such as fire rate, armored capture, field of vision and others that let you feel like a real commander. Assemble and train your army and form your own squads to complete the missions.\nUse every opportunity to defeat the enemy: consider features of the landscape, weather conditions and viewing ranges of different types of forces to carry out the most daring tactical operations. Attack the enemy when he doesn’t expect it. Use stealthy scouts and place infantry in the trenches, fortifications, pillboxes and even civilian buildings!\nLearn tactics from legendary strategists! Appoint Zhukov as the commander of your forces and defeat Manstein! In the game available more than 20 commanders, with unique features and combat tactics based on command styles of their historical prototypes. Complete tasks and earn the loyalty of different commanders. Each can give you useful bonuses and additional features on the battlefield. Rokossovsky, Rommel, Montgomery – the choice is yours! Each commander has his own specialization and favorite combat tactics that make tactics development of the game even more diverse, providing additional opportunities for interesting combinations.\nFeatures\n3 historical campaigns for the USSR, Axis and Allies, with 70 missions\n200+ authentic combat units\nSkirmish battles against Boris, our Neural Network AI\nEverything from the Deluxe and Strategic DLC: premium missions with the Dora railway gun, the V-2 rocket and the nuclear reactor; commanders Rokossovsky, Manstein and Montgomery; the T-34-76 screened tank, the M6 heavy tank and the Sturer Emil\nNo server dependency. The game runs fully on your PC.\nCampaign fixes. Bugs that could block campaign progress are fixed.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Blitzkrieg.3-SKIDROW ISO release: sr-blitzkrieg3.iso (3,954,593,792 bytes)",
+          "Game version: Steam BuildID 26763333; All DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.7 to 1.6 GB)",
+          "Installation takes 2-4 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-25T00:19:13.310051+00:00"
     },
     {
       "id": "stellaris-galaxy-edition",

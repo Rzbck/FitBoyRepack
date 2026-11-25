@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T14:47:38.823265+00:00",
+  "generated_at": "2026-11-25T19:20:16.659796+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
+    {
+      "id": "queens-domain",
+      "title": "Queen’s Domain – v1.01.00",
+      "source_url": "https://fitgirl-repacks.site/queens-domain/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/25/056944cf631f8ee6c2174e9c6ba10e11.jpg",
+      "post_date": "2026-11-25T21:59:52+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "First-person",
+        "3D"
+      ],
+      "repack_size": "652 MB"
+    },
     {
       "id": "tokyo-xtreme-racer",
       "title": "Tokyo Xtreme Racer – v1.6.1 + 4 DLCs/Bonuses",

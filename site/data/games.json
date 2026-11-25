@@ -1,9 +1,80 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T19:21:04.418152+00:00",
+  "generated_at": "2026-11-25T20:28:39.418117+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
+    {
+      "id": "nightmare-frontier",
+      "title": "Nightmare Frontier: Complete Bundle, v1.1.0.1814 + DLC",
+      "source_url": "https://fitgirl-repacks.site/nightmare-frontier/",
+      "image_url": "https://i2.imageban.ru/out/2026/07/24/165ba7960d8882c64e2fdd46a4b06238.jpg",
+      "post_date": "2026-11-25T22:40:55+03:00",
+      "genres": [
+        "Strategy",
+        "Tactics",
+        "Content randomization",
+        "Top-down",
+        "3D",
+        "Alternative history",
+        "Supernatural fiction",
+        "Turn-based"
+      ],
+      "repack_size": "3.7 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/45/bc/45bcd268-4533-4876-a547-b1bd63f5a16f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/45/bc/45bcd268-4533-4876-a547-b1bd63f5a16f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/35/41/35413964-8b82-4833-b491-086e7842c526.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/35/41/35413964-8b82-4833-b491-086e7842c526.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/2c/ac/2cac162f-9d4b-4f74-9f87-2cc19322a037.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/2c/ac/2cac162f-9d4b-4f74-9f87-2cc19322a037.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ef/df/efdf125b-c128-4641-ada7-05529f9342a2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ef/df/efdf125b-c128-4641-ada7-05529f9342a2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d2/74/d2749476-5e9a-42ed-9607-091fc3db9235.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d2/74/d2749476-5e9a-42ed-9607-091fc3db9235.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/66/6d/666d6c57-b42d-4d5e-8d01-2ab2570aed81.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/6d/666d6c57-b42d-4d5e-8d01-2ab2570aed81.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "Welcome to the first Tactical Extraction Looter\nwhere you pit your courage and leadership against fears made manifest as flesh and blood monsters.\nLead a crew of Scavengers\n– simple folk, but tough enough to face their fears, guns blazing.\nRaid into the twisted City\n, and get back out with everything your team can carry.\nIt all begins with a newspaper ad, promising a new gold rush – a ruined City full of riches, free for the taking. Behind the ad stands Doc, a snake-oil genius with blueprints to harness the Nightmare and use it to power a new future. District by District, the story unravels what Doc is actually building and what the hell is going on here.\nEvery Scavenger rescued on a raid carries one of 16 Fears. Each Fear attracts its own Dreadweaver – that’s what the locals call these Fears incarnate – from spiders packing six six-shooters to creepy puppets coming at you with scissors. Picking who joins the next raid decides which monsters and hazards the crew will face, and what resources they will harvest from carcasses.\nShootouts are turn-based, vicious and fully deterministic: no dice rolls, no hit chances. Every fight plays like a puzzle with guns on a battlefield packed with interactables and hazards. Ricochet a bullet off a milk can, shove a beast into a burning stove, push another into your partner’s line of fire, then chain your kills to keep the turn going. The gap between losing your whole crew and clearing the board in a single turn comes down to how you read the battlefield: it’s a weapon of its own, if you’re clever enough to aim it.\nExperience a genre-defining combination of turn-based tactical combat and high risk-high reward gameplay loop of Extraction Shooters. City Districts are infinite, randomly generated and full of dangers and opportunities alike – map nodes lead to combats, useful facilities, altering anomalies and quests. Going deeper raises the Nightmare Level making the fights harder, but the loot more valuable. Backpack space is limited and falling in battle means losing everything – decide when to push your luck and venture deeper for better loot and when to return to the Hideout with what you have. Cowardice rarely pays the bills, but you cannot enjoy your gains when you are dead.\nHaul the winnings – weapons, gear, Nightmare Essence and monster parts – back to the Hideout, the only Nightmare-proof corner of the City. Combine harvested eyes, teeth and spines with ordinary junk and ideas ahead of their time to upgrade your reason-defying equipment. Expand the four unlock trees of the Compounds, nightmarize your crew’s combat style and appearance – and unlock new ways to send the monsters back to the hells they crawled out of.\nBetween raids, the Hideout is yours to run. Manage the roster, upgrade equipment, unlock new Compounds and build the loadout for the next Raid: the right gear against the right prey is the difference between a payday and a funeral.\nThe game enters 1.0 launch featuring 16 Fears and Enemies, 80+ upgradable Items, 30+ Interactables and Hazards, 4 playable character Classes, 4 Unlock Trees, 4 Districts and 8 unique Tactical Objectives. Wrapped up into an endless, procedurally-generated Nightmare.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Nightmare.Frontier-RUNE ISO release: rune-nightmare.frontier.iso (6,172,606,464 bytes)",
+          "Game version: v1.0.0.1607",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 5.7 to 3.8 GB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 6.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "queens-domain",
       "title": "Queen’s Domain – v1.01.00",
@@ -42210,77 +42281,6 @@
           "Installation takes from 50 minutes (on 24-threads CPU) up to 2 hours (on 8-threads CPU)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 84.4 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "nightmare-frontier",
-      "title": "Nightmare Frontier – v1.0.0.1607",
-      "source_url": "https://fitgirl-repacks.site/nightmare-frontier/",
-      "image_url": "https://i2.imageban.ru/out/2026/07/24/165ba7960d8882c64e2fdd46a4b06238.jpg",
-      "post_date": "2026-07-24T02:54:55+03:00",
-      "genres": [
-        "Strategy",
-        "Tactics",
-        "Content randomization",
-        "Top-down",
-        "3D",
-        "Alternative history",
-        "Supernatural fiction",
-        "Turn-based"
-      ],
-      "repack_size": "3.8 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/45/bc/45bcd268-4533-4876-a547-b1bd63f5a16f.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/45/bc/45bcd268-4533-4876-a547-b1bd63f5a16f.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/35/41/35413964-8b82-4833-b491-086e7842c526.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/35/41/35413964-8b82-4833-b491-086e7842c526.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/2c/ac/2cac162f-9d4b-4f74-9f87-2cc19322a037.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/2c/ac/2cac162f-9d4b-4f74-9f87-2cc19322a037.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ef/df/efdf125b-c128-4641-ada7-05529f9342a2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ef/df/efdf125b-c128-4641-ada7-05529f9342a2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/d2/74/d2749476-5e9a-42ed-9607-091fc3db9235.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/d2/74/d2749476-5e9a-42ed-9607-091fc3db9235.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/66/6d/666d6c57-b42d-4d5e-8d01-2ab2570aed81.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/66/6d/666d6c57-b42d-4d5e-8d01-2ab2570aed81.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "Welcome to the first Tactical Extraction Looter\nwhere you pit your courage and leadership against fears made manifest as flesh and blood monsters.\nLead a crew of Scavengers\n– simple folk, but tough enough to face their fears, guns blazing.\nRaid into the twisted City\n, and get back out with everything your team can carry.\nIt all begins with a newspaper ad, promising a new gold rush – a ruined City full of riches, free for the taking. Behind the ad stands Doc, a snake-oil genius with blueprints to harness the Nightmare and use it to power a new future. District by District, the story unravels what Doc is actually building and what the hell is going on here.\nEvery Scavenger rescued on a raid carries one of 16 Fears. Each Fear attracts its own Dreadweaver – that’s what the locals call these Fears incarnate – from spiders packing six six-shooters to creepy puppets coming at you with scissors. Picking who joins the next raid decides which monsters and hazards the crew will face, and what resources they will harvest from carcasses.\nShootouts are turn-based, vicious and fully deterministic: no dice rolls, no hit chances. Every fight plays like a puzzle with guns on a battlefield packed with interactables and hazards. Ricochet a bullet off a milk can, shove a beast into a burning stove, push another into your partner’s line of fire, then chain your kills to keep the turn going. The gap between losing your whole crew and clearing the board in a single turn comes down to how you read the battlefield: it’s a weapon of its own, if you’re clever enough to aim it.\nExperience a genre-defining combination of turn-based tactical combat and high risk-high reward gameplay loop of Extraction Shooters. City Districts are infinite, randomly generated and full of dangers and opportunities alike – map nodes lead to combats, useful facilities, altering anomalies and quests. Going deeper raises the Nightmare Level making the fights harder, but the loot more valuable. Backpack space is limited and falling in battle means losing everything – decide when to push your luck and venture deeper for better loot and when to return to the Hideout with what you have. Cowardice rarely pays the bills, but you cannot enjoy your gains when you are dead.\nHaul the winnings – weapons, gear, Nightmare Essence and monster parts – back to the Hideout, the only Nightmare-proof corner of the City. Combine harvested eyes, teeth and spines with ordinary junk and ideas ahead of their time to upgrade your reason-defying equipment. Expand the four unlock trees of the Compounds, nightmarize your crew’s combat style and appearance – and unlock new ways to send the monsters back to the hells they crawled out of.\nBetween raids, the Hideout is yours to run. Manage the roster, upgrade equipment, unlock new Compounds and build the loadout for the next Raid: the right gear against the right prey is the difference between a payday and a funeral.\nThe game enters 1.0 launch featuring 16 Fears and Enemies, 80+ upgradable Items, 30+ Interactables and Hazards, 4 playable character Classes, 4 Unlock Trees, 4 Districts and 8 unique Tactical Objectives. Wrapped up into an endless, procedurally-generated Nightmare.",
-        "game_features": [],
-        "repack_features": [
-          "Based on Nightmare.Frontier-RUNE ISO release: rune-nightmare.frontier.iso (6,172,606,464 bytes)",
-          "Game version: v1.0.0.1607",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 5.7 to 3.8 GB)",
-          "Installation takes 1-3 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 6.2 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

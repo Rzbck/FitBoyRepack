@@ -13,6 +13,30 @@ def launch(driver):
             print("Chromium launch failed; retrying infrastructure startup",file=sys.stderr)
             time.sleep(2*(attempt+1))
 
+def check_media_fallback(page):
+    url="https://s01.riotpixels.net/data/c1/8a/c18a557f-be60-4e6d-aad9-8d2c81598546.jpg"
+    seen=[]
+    def handle(route):
+        seen.append(route.request.url)
+        if route.request.url==url+".1080p.jpg":
+            route.fulfill(status=200,content_type="image/svg+xml",body='<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"><rect width="1920" height="1080" fill="red"/></svg>')
+        else:
+            route.fulfill(status=404,body="not found")
+    page.route("https://s01.riotpixels.net/**",handle)
+    page.evaluate("""async url=>{
+      const {showMedia}=await import('/assets/catalog/media-fallback.js');
+      const stage=document.createElement('figure');
+      stage.id='media-fallback-ci';
+      stage.innerHTML='<img alt=""><figcaption></figcaption>';
+      document.body.append(stage);
+      showMedia(stage,{url,preview:url+'.240p.jpg',kind:'image'},stage.querySelector('figcaption'),
+         {media:'image',original:'original',fallback:'fallback',unavailable:'unavailable'});
+    }""",url)
+    page.wait_for_function("document.querySelector('#media-fallback-ci figcaption').dataset.mediaStatus==='fallback'")
+    assert page.locator('#media-fallback-ci img').evaluate('(img)=>img.naturalWidth')==1920
+    assert seen==[url,url+".1080p.jpg"],seen
+    print("Real browser media fallback OK")
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("url")
@@ -31,6 +55,7 @@ def main():
                     result=page.locator("#result").inner_text()
                     assert result=="CARD WINDOW BROWSER OK",f"{width}px: {result}"
                     print(f"Card window Chromium {width}px: OK")
+                    if width==1000:check_media_fallback(page)
                     context.close()
             else:
                 context=browser.new_context(viewport={"width":1200,"height":900})

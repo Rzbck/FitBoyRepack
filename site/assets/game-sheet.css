@@ -544,3 +544,6 @@
     grid-template-rows:48px 150px 180px;
   }
 }
+
+.media-lightbox-stage figcaption[data-media-status='fallback'],.media-lightbox-stage figcaption[data-media-status='unavailable']{display:block!important;color:#aeb9cc;font-size:.8rem;text-align:center;padding:6px}
+.media-lightbox-stage img[hidden]{display:none!important}

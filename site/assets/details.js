@@ -1,3 +1,4 @@
+import { showMedia } from './catalog/media-fallback.js';
 import { loadGameDetail } from './core/catalog-api.js';
 import {
   displayTitle as identityDisplayTitle,
@@ -397,6 +398,7 @@ function renderMediaGallery(info, game) {
     const link = document.createElement('a');
     link.className = 'media-item';
     link.href = item.url;
+    if(item.preview_url)link.dataset.previewUrl=item.preview_url;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
 
@@ -443,6 +445,7 @@ function renderGameplayPreview(info, game) {
   button.type = 'button';
   button.className = 'gameplay-preview-button';
   button.dataset.mediaUrl = gif.url;
+  if(gif.preview_url)button.dataset.previewUrl=gif.preview_url;
   const img = document.createElement('img');
   img.src = gif.preview_url || gif.url;
   img.alt = currentLanguage()==='fr'?`Gameplay de ${game.title}`:`Gameplay from ${game.title}`;
@@ -493,11 +496,14 @@ function updateLightbox() {
   const box = ensureLightbox();
   const item = lightboxItems[lightboxIndex];
   if (!item) return closeLightbox();
-  const img = box.querySelector('.media-lightbox-stage img');
-  img.src = item.url;
-  img.alt = item.alt || t('detail.gameMedia');
+  const stage=box.querySelector('.media-lightbox-stage');
+  showMedia(stage,item,stage.querySelector('figcaption'),{
+    media:t('detail.gameMedia'),
+    original:item.kind==='gif'?'GIF gameplay':t('detail.gameCapture'),
+    fallback:t('detail.mediaFallback'),
+    unavailable:t('detail.mediaUnavailable'),
+  });
   box.querySelector('.media-lightbox-count').textContent = `${lightboxIndex + 1} / ${lightboxItems.length}`;
-  box.querySelector('figcaption').textContent = item.kind === 'gif' ? 'GIF gameplay' : t('detail.gameCapture');
   const hasMany = lightboxItems.length > 1;
   box.querySelector('.media-lightbox-prev').hidden = !hasMany;
   box.querySelector('.media-lightbox-next').hidden = !hasMany;
@@ -529,11 +535,11 @@ function currentMediaItems() {
   dialogContent.querySelectorAll('.media-item').forEach(item => {
     const img = item.querySelector('img');
     if (!item.href) return;
-    result.push({ url:item.href, alt:img?.alt || '', kind:item.querySelector('.media-kind') ? 'gif' : 'image' });
+    result.push({ url:item.href, preview:item.dataset.previewUrl||img?.currentSrc||img?.src, alt:img?.alt || '', kind:item.querySelector('.media-kind') ? 'gif' : 'image' });
   });
   const preview = dialogContent.querySelector('.gameplay-preview-button');
   if (preview?.dataset.mediaUrl) {
-    result.unshift({ url:preview.dataset.mediaUrl, alt:preview.querySelector('img')?.alt || '', kind:'gif' });
+    result.unshift({ url:preview.dataset.mediaUrl, preview:preview.dataset.previewUrl||preview.querySelector('img')?.currentSrc, alt:preview.querySelector('img')?.alt || '', kind:'gif' });
   }
   return result;
 }

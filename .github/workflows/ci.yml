@@ -77,6 +77,7 @@ jobs:
       - run: node --check site/assets/app.js
       - run: node --check site/assets/library/wishlist.js
       - run: node --check site/assets/favicon-animation.js
+      - run: node tools/test_media_fallback.mjs
       - run: node tools/test_wishlist.mjs
       - run: node tools/test_release_year.mjs
       - run: node tools/test_catalog_cache.mjs

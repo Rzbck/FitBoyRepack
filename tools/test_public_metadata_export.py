@@ -128,6 +128,12 @@ def main() -> None:
         assert alpha["wikidata_id"] == "Q123"
         assert "raw_json" not in alpha and "notes" not in alpha and "description_fr" not in alpha
 
+        source.with_name("steam-ratings.json").write_text(json.dumps({
+            "rating_version":1,"generated_at":"2026-11-24T00:00:00Z",
+            "games":{"beta":{"status":"rated","steam_appid":123,"steam_release_appid":123,
+                              "store_verified_at":"2026-11-24T00:00:00Z","steam_release_date":"2020-05-06"}}
+        }),encoding="utf-8")
+
         subprocess.run(
             [
                 sys.executable,
@@ -152,6 +158,14 @@ def main() -> None:
         assert first["metadata_ready"] is True
         assert first["game_release_date"] == "2024-01-02"
         assert catalog["games"][1]["metadata_ready"] is False
+        beta=catalog["games"][1]
+        assert beta["game_release_date"]=="2020-05-06" and beta["game_release_source"]=="steam"
+        assert beta["year"]==2020 and beta["game_release_precision"]=="day"
+        beta_detail=json.loads((site_root/beta["detail_path"]).read_text(encoding="utf-8"))
+        assert beta_detail["game_release_date"]==beta["game_release_date"]
+        assert 1 in search["prefixes"]["2020"]
+        assert health["release_dates_steam"]==1
+        assert search["steam_generated_at"]==catalog["steam_generated_at"]
 
         detail_path = site_root / first["detail_path"]
         detail = json.loads(detail_path.read_text(encoding="utf-8"))

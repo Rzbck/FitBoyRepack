@@ -50,7 +50,7 @@ for game_id, row in ratings['games'].items():
         assert 'positive_percent' not in row, f'invalid Steam score must not be displayed for {game_id}'
     if row.get('status')=='rated':
         assert row.get('total_reviews',0)>0 and 0<=row.get('positive_percent',-1)<=100
-assert './assets/app.js?v=6' in p.scripts and './assets/details.js?v=5' in p.scripts and './assets/media-sanitize.js' in p.scripts
+assert './assets/app.js?v=7' in p.scripts and './assets/details.js?v=6' in p.scripts and './assets/media-sanitize.js' in p.scripts
 assert './assets/tag-facets.js' not in p.scripts, 'facets are now integrated in the main filtered state'
 assert './assets/catalog.css?v=1' in p.links
 assert './assets/base.css?v=2' in p.links and './assets/game-sheet.css?v=1' in p.links

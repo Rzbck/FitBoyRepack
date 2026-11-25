@@ -18,6 +18,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from release_dates import normalize_date, steam_date
 
 CATALOG = Path("site/data/games.json")
 METADATA = Path("site/data/metadata-enrichment.json")
@@ -32,6 +33,7 @@ STORE_DETAILS_LIMIT = 160
 STORE_FALLBACK_LIMIT = 20
 STORE_AUDIT_LIMIT = 35
 STORE_MATCH_RULE_VERSION = 2
+STORE_DATE_BACKFILL_LIMIT = 25
 USER_AGENT = "FitBoyRepack-SteamReviews/1.0 (https://github.com/Rzbck/FitBoyRepack; keyless public metadata research)"
 QID_RE = re.compile(r"^https?://(?:www\.)?wikidata\.org/(?:wiki/|entity/)(Q[1-9]\d*)/?$")
 APP_ID_RE = re.compile(r"^[1-9]\d{0,9}$")
@@ -251,7 +253,7 @@ def store_game_title(game, metadata=None):
 
 def store_details(appid, pause=1.5):
     response = get_json(STEAM_STORE, {
-        "appids": int(appid), "cc": "us", "l": "en", "filters": "basic"
+        "appids": int(appid), "cc": "us", "l": "en", "filters": "basic,release_date"
     }, pause=pause)
     item = response.get(str(appid), {})
     if item.get("success") is not True or not isinstance(item.get("data"), dict):
@@ -261,7 +263,7 @@ def store_details(appid, pause=1.5):
     kind = str(data.get("type") or "").lower()
     if not name or not kind:
         raise ValueError("Steam Store app details missing name/type")
-    return {"name": name, "type": kind}
+    return {"name": name, "type": kind, "release_date": steam_date(data.get("release_date"))}
 
 
 def store_verified(game, metadata, details):
@@ -338,12 +340,24 @@ def invalidate_match(record, reason):
     """Hide an incorrect app's review score, retaining evidence for diagnosis."""
     record["invalid_steam_appid"] = record.pop("steam_appid", None)
     for key in ("positive", "negative", "positive_percent", "total_reviews",
-                "review_checked_at", "store_verified_at", "steam_store_name"):
+                "review_checked_at", "store_verified_at", "steam_store_name",
+                "steam_release_date", "steam_release_appid", "steam_release_checked_at"):
         record.pop(key, None)
     record["status"] = "mismatch"
     record["identity_issue"] = reason
     record["store_match_rule_version"] = STORE_MATCH_RULE_VERSION
     record["lookup_checked_at"] = iso(utc_now())
+
+
+def record_store_date(row, details, now):
+    row["steam_release_checked_at"]=iso(now)
+    value=normalize_date(details.get("release_date"))
+    if value and len(value)==10:
+        row["steam_release_date"]=value
+        row["steam_release_appid"]=row["steam_appid"]
+    else:
+        row.pop("steam_release_date",None)
+        row.pop("steam_release_appid",None)
 
 
 def exact_title_entity(title):
@@ -447,7 +461,7 @@ def update(args):
         except Cooldown as error:
             LOGGER.warning("%s. Stopping Wikidata lookups safely.", error)
             break
-        except (HTTPError, URLError, ValueError) as error:
+        except (HTTPError, URLError, TimeoutError, ValueError) as error:
             LOGGER.warning("Wikidata unavailable; preserving progress: %s", error)
             break
         for game_id, qid in batch:
@@ -479,7 +493,7 @@ def update(args):
         except Cooldown as error:
             LOGGER.warning("%s. Stopping title search safely.", error)
             break
-        except (HTTPError, URLError, ValueError) as error:
+        except (HTTPError, URLError, TimeoutError, ValueError) as error:
             LOGGER.warning("Wikidata title lookup unavailable: %s", error)
             break
         if result:
@@ -502,9 +516,9 @@ def update(args):
     store_cache = {}
     store_budget = getattr(args, "store_details_limit", STORE_DETAILS_LIMIT)
 
-    def check_identity(game, row):
+    def check_identity(game, row, force=False):
         nonlocal store_calls, changes
-        if (row.get("steam_appid") and row.get("store_verified_at")
+        if (not force and row.get("steam_appid") and row.get("store_verified_at")
                 and days_since(row["store_verified_at"], now) < STORE_VERIFY_AGE_DAYS):
             return True
         if store_calls >= store_budget:
@@ -525,6 +539,7 @@ def update(args):
             return False
         row["store_verified_at"] = iso(now)
         row["steam_store_name"] = details["name"]
+        record_store_date(row, details, now)
         row.pop("identity_issue", None)
         changes += 1
         return True
@@ -551,7 +566,7 @@ def update(args):
         except (HTTPError, ValueError) as error:
             LOGGER.warning("Store app unavailable for %s: %s; trying next", game["id"], error)
             continue
-        except URLError as error:
+        except (URLError, TimeoutError) as error:
             LOGGER.warning("Store network unavailable during audit: %s", error)
             break
 
@@ -590,6 +605,7 @@ def update(args):
                         "resolution": "steam_store_exact",
                         "status": "pending",
                     })
+                    record_store_date(row, details, now)
                     row.pop("identity_issue", None)
                 else:
                     LOGGER.warning("Rejected fallback %s for %s (%s)",
@@ -605,12 +621,37 @@ def update(args):
             row["store_lookup_checked_at"] = iso(now)
             changes += 1
             continue
-        except URLError as error:
+        except (URLError, TimeoutError) as error:
             LOGGER.warning("Steam Store network unavailable: %s", error)
             break
         row["store_lookup_checked_at"] = iso(now)
         row["store_match_rule_version"] = STORE_MATCH_RULE_VERSION
         changes += 1
+
+    # Bounded migration of existing identities, prioritizing missing/partial
+    # Wikidata release dates. Uses the SAME Store request budget as reviews.
+    date_queue=[game for game in games if
+                (row:=records.get(str(game["id"]),{})).get("steam_appid")
+                and row.get("store_verified_at")
+                and (not row.get("steam_release_checked_at")
+                     or (not row.get("steam_release_date") and days_since(row["steam_release_checked_at"],now)>=28))]
+    date_queue.sort(key=lambda game: (
+        len(normalize_date(metadata.get(str(game["id"]),{}).get("release_date")) or "")==10,
+        str(records[str(game["id"])].get("steam_release_checked_at") or "")))
+    date_attempts=0
+    date_paused=False
+    for game in date_queue[:STORE_DATE_BACKFILL_LIMIT]:
+        if store_calls>=store_budget:break
+        try:
+            date_attempts+=1
+            check_identity(game,records[str(game["id"])],force=True)
+        except (Cooldown,URLError,TimeoutError) as error:
+            LOGGER.warning("Store date backfill paused: %s",error)
+            date_paused=True
+            break
+        except (HTTPError,ValueError) as error:
+            LOGGER.warning("Store date unavailable for %s: %s",game["id"],error)
+            continue
 
     # Prefer new/unrated games. Recheck existing scores at most every 28 days.
     review_queue = [game for game in games
@@ -631,7 +672,7 @@ def update(args):
                                    "positive_percent", "review_checked_at") if key in row}
 
     attempted = 0
-    for game in review_queue:
+    for game in ([] if date_paused else review_queue):
         if attempted >= args.reviews_limit:
             break
         game_id = str(game["id"])
@@ -644,7 +685,7 @@ def update(args):
         except (HTTPError, ValueError) as error:
             LOGGER.warning("Store app unavailable for %s: %s; trying next", game_id, error)
             continue
-        except URLError as error:
+        except (URLError, TimeoutError) as error:
             LOGGER.warning("Store identity network unavailable: %s", error)
             break
         if identity is None:
@@ -670,7 +711,7 @@ def update(args):
                 continue
             LOGGER.warning("Steam temporary HTTP problem for %s: %s", appid, error)
             break
-        except (URLError, ValueError, TypeError) as error:
+        except (URLError, TimeoutError, ValueError, TypeError) as error:
             LOGGER.warning("Review fetch failed for app %s: %s", appid, error)
             break
         row.update(review)
@@ -688,6 +729,8 @@ def update(args):
         "steam_calls_this_run": attempted,
         "store_checks_this_run": store_calls,
         "store_searches_this_run": store_search_calls,
+        "store_date_backfill_attempts": date_attempts,
+        "store_release_dates": sum(bool(row.get("steam_release_date")) for row in records.values()),
     }
     LOGGER.info("Steam: %s", stats)
     if not args.dry_run and changes:

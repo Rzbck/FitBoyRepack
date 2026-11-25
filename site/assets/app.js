@@ -380,7 +380,8 @@ function renderCard(game,compact=false){
   releaseNode.hidden=!verifiedRelease;
   releaseNode.textContent=verifiedRelease ? formatDate(game.game_release_date) : '';
   if(verifiedRelease){
-    releaseNode.title=`${t('detail.releaseDate')}: ${formatDate(game.game_release_date)} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
+    const dateSource=game.game_release_source==='steam'?'Steam':game.game_release_source==='wikidata'?'Wikidata':'';
+    releaseNode.title=`${t('detail.releaseDate')}: ${formatDate(game.game_release_date)}\${dateSource?' ('+dateSource+')':''} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
   }else releaseNode.removeAttribute('title');
   const sizeNode=card.querySelector('.card-size');
   sizeNode.textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';

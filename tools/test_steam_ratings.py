@@ -16,6 +16,35 @@ def entity(appid):
 
 
 class SteamRatingBotTests(unittest.TestCase):
+    def test_store_details_release_date(self):
+        with patch.object(bot,"get_json",return_value={"281990":{"success":True,"data":{"name":"Stellaris","type":"game","release_date":{"coming_soon":False,"date":"May 9, 2016"}}}}) as request:
+            details=bot.store_details(281990,pause=0)
+            self.assertEqual(details["release_date"],"2016-05-09")
+            self.assertEqual(request.call_args.args[1]["filters"],"basic,release_date")
+
+    def test_date_migration_preserves_reviews_and_request_budget(self):
+        with tempfile.TemporaryDirectory() as root:
+            folder=Path(root)
+            source,meta,cache=[folder/n for n in ("games.json","meta.json","cache.json")]
+            source.write_text(json.dumps({"games":[{"id":"flick","title":"Flick","post_date":"2026-11-24T00:00:00Z"}]}),encoding="utf-8")
+            meta.write_text(json.dumps({"metadata_version":1,"games":{}}),encoding="utf-8")
+            now=bot.iso(bot.utc_now())
+            old={"status":"rated","steam_appid":4450660,"store_verified_at":now,"review_checked_at":now,"positive":70,"negative":2,"total_reviews":72,"positive_percent":97.2}
+            cache.write_text(json.dumps({"rating_version":1,"games":{"flick":old}}),encoding="utf-8")
+            args=Namespace(resolve_limit=0,reviews_limit=0,fallback_limit=0,store_fallback_limit=0,store_details_limit=1,pause=0,dry_run=False)
+            with patch.object(bot,"CATALOG",source),patch.object(bot,"METADATA",meta),patch.object(bot,"OUTPUT",cache),patch.object(bot,"store_details",return_value={"name":"Flick","type":"game","release_date":"2026-11-19"}) as store:
+                stats=bot.update(args)
+                self.assertEqual(stats["store_checks_this_run"],1)
+                self.assertEqual(bot.update(args)["store_checks_this_run"],0)
+                self.assertEqual(store.call_count,1)
+            row=json.loads(cache.read_text(encoding="utf-8"))["games"]["flick"]
+            self.assertEqual(row["steam_release_date"],"2026-11-19")
+            self.assertEqual(row["steam_release_appid"],4450660)
+            for key in ("positive","negative","positive_percent","total_reviews","review_checked_at"):
+                self.assertEqual(row[key],old[key])
+            bot.invalidate_match(row,"wrong_game")
+            self.assertNotIn("steam_release_date",row)
+
     def test_wikidata_claims(self):
         self.assertEqual(bot.steam_id_from_entity(entity(12345)), 12345)
         self.assertIsNone(bot.steam_id_from_entity({"claims": {}}))

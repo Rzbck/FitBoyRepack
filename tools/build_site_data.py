@@ -7,6 +7,7 @@ import shutil
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
+from release_dates import release_choice
 
 DEFAULT_SOURCE = Path("site/data/games.json")
 DEFAULT_SITE_ROOT = Path("site")
@@ -180,7 +181,7 @@ def display_genre(value):
 def search_tokens(game):
     metadata = game.get("verified_metadata") if isinstance(game.get("verified_metadata"), dict) else {}
     raw_tags = [*game_tags(game), *metadata_tags(game)]
-    release_year = year_from_date(metadata.get("release_date"))
+    release_year = year_from_date(game.get("game_release_date", metadata.get("release_date")))
     text = normalize_search(
         " ".join(
             [
@@ -228,6 +229,12 @@ def main():
     metadata_path = args.metadata or args.source.with_name(METADATA_FILENAME)
     public_metadata, metadata_generated_at = load_public_metadata(metadata_path)
     translations = load_public_translations(args.translations or args.source.with_name(TRANSLATIONS_FILENAME))
+    steam_path=args.source.with_name("steam-ratings.json")
+    steam_payload=json.loads(steam_path.read_text(encoding="utf-8")) if steam_path.exists() else {}
+    if steam_payload and (steam_payload.get("rating_version")!=1 or not isinstance(steam_payload.get("games"),dict)):
+        raise RuntimeError("invalid Steam snapshot")
+    steam_rows=steam_payload.get("games",{})
+    steam_generated_at=steam_payload.get("generated_at")
     translation_sample = None
 
     data_dir = args.site_root / "data"
@@ -254,6 +261,9 @@ def main():
         "media_items": 0,
         "enrichment_pending": 0,
         "metadata_verified": 0,
+        "release_dates_known": 0,
+        "release_dates_steam": 0,
+        "release_dates_conflicting": 0,
         "translation_games": 0,
         "translation_fields": 0,
     }
@@ -270,6 +280,8 @@ def main():
 
         verified_metadata = public_metadata.get(game_id)
         detail_game = dict(game)
+        release=release_choice(verified_metadata,steam_rows.get(game_id))
+        detail_game.update(release)
         if verified_metadata:
             detail_game["verified_metadata"] = verified_metadata
             used_metadata_ids.add(game_id)
@@ -297,7 +309,7 @@ def main():
             "id": game_id,
             "title": title,
             "detail_path": detail_path,
-            "year": year_from_date(verified_metadata.get("release_date") if verified_metadata else None),
+            "year": year_from_date(release["game_release_date"]),
             "size_mb": parse_size_mb(game.get("repack_size")),
             "details_ready": details_ready,
             "has_description": bool(description),
@@ -305,7 +317,7 @@ def main():
             "has_gif": has_gif,
             "metadata_ready": bool(verified_metadata),
             "canonical_title": verified_metadata.get("canonical_title") if verified_metadata else None,
-            "game_release_date": verified_metadata.get("release_date") if verified_metadata else None,
+            **release,
             "metadata_genres": verified_metadata.get("genres", []) if verified_metadata else [],
             "metadata_developer": verified_metadata.get("developer") if verified_metadata else None,
             "metadata_publisher": verified_metadata.get("publisher") if verified_metadata else None,
@@ -330,12 +342,16 @@ def main():
         stats["media_items"] += media_count
         stats["enrichment_pending"] += int(pending)
         stats["metadata_verified"] += int(bool(verified_metadata))
+        stats["release_dates_known"] += int(bool(release["game_release_date"]))
+        stats["release_dates_steam"] += int(release["game_release_source"]=="steam")
+        stats["release_dates_conflicting"] += int(release["game_release_conflict"])
 
     generated_at = source_payload.get("generated_at") or datetime.now(timezone.utc).isoformat()
     catalog_payload = {
         "catalog_version": source_payload.get("catalog_version"),
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
+        "steam_generated_at": steam_generated_at,
         "count": len(catalog_games),
         "games": catalog_games,
     }
@@ -345,6 +361,7 @@ def main():
         "search_index_version": SEARCH_INDEX_VERSION,
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
+        "steam_generated_at": steam_generated_at,
         "count": len(catalog_games),
         "prefix_min": SEARCH_PREFIX_MIN,
         "prefix_max": SEARCH_PREFIX_MAX,
@@ -358,6 +375,7 @@ def main():
     health_payload = {
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
+        "steam_generated_at": steam_generated_at,
         **stats,
         "translation_sample_path": translation_sample,
         "metadata_snapshot_count": len(public_metadata),

@@ -223,14 +223,14 @@ function renderCoverDetails(layout, game) {
   published.append(publishedLabel, publishedValue);
   meta.append(published);
 
-  if (metadata?.release_date) {
+  if (game.game_release_date) {
     const release = document.createElement('span');
     const releaseLabel = document.createElement('small');
     releaseLabel.dataset.i18n = 'detail.releaseDate';
     releaseLabel.textContent = t('detail.releaseDate');
     const releaseValue = document.createElement('strong');
-    releaseValue.dataset.i18nDate = metadata.release_date;
-    releaseValue.textContent = formatDate(metadata.release_date);
+    releaseValue.dataset.i18nDate = game.game_release_date;
+    releaseValue.textContent = formatDate(game.game_release_date);
     release.append(releaseLabel, releaseValue);
     meta.append(release);
   }

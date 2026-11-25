@@ -284,6 +284,12 @@ def main():
         detail_game = dict(game)
         release=release_choice(verified_metadata,steam_rows.get(game_id))
         detail_game.update(release)
+        steam_row=steam_rows.get(game_id,{})
+        appid=steam_row.get("steam_appid")
+        detail_game.pop("verified_steam_appid",None)
+        if (type(appid) is int and 0<appid<=4294967295 and steam_row.get("store_verified_at")
+            and steam_row.get("status") in {"rated","pending","no_reviews","unavailable"}):
+            detail_game["verified_steam_appid"]=appid
         if verified_metadata:
             detail_game["verified_metadata"] = verified_metadata
             used_metadata_ids.add(game_id)

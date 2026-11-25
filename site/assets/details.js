@@ -322,6 +322,16 @@ function renderDescriptionTabs(info, game, { replace = false } = {}) {
     ['detail.repackFeatures', makeListPanel('detail.repackFeatures', gameDetails.repack_features)],
   ].filter(([, panel]) => panel);
   if (!panels.length) return;
+  const descriptionPanel=panels.find(([key])=>key==='detail.description')?.[1];
+  if(descriptionPanel && Number.isInteger(game.verified_steam_appid) && game.verified_steam_appid>0 && game.verified_steam_appid<=4294967295){
+    const link=document.createElement('a');
+    link.className='official-steam-description';
+    link.href='https://store.steampowered.com/app/'+game.verified_steam_appid+'/?l='+ (currentLanguage()==='fr'?'french':'english');
+    link.target='_blank';link.rel='noopener noreferrer';
+    link.dataset.i18n='detail.officialSteam';
+    link.textContent=t('detail.officialSteam');
+    descriptionPanel.append(link);
+  }
 
   const section = document.createElement('section');
   section.className = 'detail-tabs';

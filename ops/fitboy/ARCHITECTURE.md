@@ -39,3 +39,20 @@ persistent issues are not repeated, and recovery is announced once.
 External snapshots can be pulled via SSH using pull_external_backup.py, with
 SHA-256 and SQLite validation before atomic publication. Run it from a separate
 machine on a regular schedule; if that machine is off, the next run catches up.
+
+
+### French translation quality
+The existing Helsinki-NLP opus-mt-tc-big-en-fr model (CC BY 4.0,
+https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-fr) runs locally
+with INT8 CTranslate2. Translation quality rules are versioned separately
+from the public storage schema; a metadata-only change does not discard an
+accepted translation whose source hash is unchanged. New outputs use bounded
+glossary protection, placeholder multiplicity, numeric and simple negation
+checks. If a masked attempt is rejected, one unmasked attempt is validated
+against the same rules. These checks are heuristic, not proof of semantic fidelity.
+Up to six previous rejected fields per run are retried within the existing
+24-field limit; a private SQLite marker prevents retrying the same source
+indefinitely. A small source-anchored correction pass fixes confirmed legacy
+terminology errors once per quality version. The Steam description link is
+constructed only from verified app IDs; no localized Steam prose is imported
+without a confirmed reuse grant.

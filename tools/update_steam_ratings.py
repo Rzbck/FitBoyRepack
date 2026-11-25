@@ -18,7 +18,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
-from release_dates import normalize_date, steam_date
+from release_dates import normalize_date, steam_date, load_release_seed, apply_release_seed
 
 CATALOG = Path("site/data/games.json")
 METADATA = Path("site/data/metadata-enrichment.json")
@@ -442,7 +442,9 @@ def update(args):
     current_ids = {str(game["id"]) for game in games}
     for obsolete in set(records) - current_ids:
         del records[obsolete]
-    changes = 0
+    seed,_=load_release_seed(OUTPUT.with_name("steam-release-seed.json"))
+    changes = apply_release_seed(records,seed)
+    if changes: LOGGER.info("Imported %s independently verified release dates",changes)
 
     games.sort(key=lambda game: str(game.get("post_date", "")), reverse=True)
     by_id = {str(game["id"]): game for game in games}

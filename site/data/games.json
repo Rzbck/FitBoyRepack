@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T19:20:16.659796+00:00",
+  "generated_at": "2026-11-25T19:21:04.418152+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "652 MB"
+      "repack_size": "652 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/0c/30/0c30122a-1bf6-46d2-9d11-06a02a2b1b08.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0c/30/0c30122a-1bf6-46d2-9d11-06a02a2b1b08.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/28/bb/28bbed7d-01d3-471e-aff6-63740a58fb1f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/28/bb/28bbed7d-01d3-471e-aff6-63740a58fb1f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c5/f6/c5f6394e-c2cc-4758-b505-0e27ddc20ff7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c5/f6/c5f6394e-c2cc-4758-b505-0e27ddc20ff7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/13/a5/13a520cf-512b-483b-b50e-6be382b4515c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/13/a5/13a520cf-512b-483b-b50e-6be382b4515c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/73/dc/73dcde0b-e3e2-4a7e-be6a-465da7d19045.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/73/dc/73dcde0b-e3e2-4a7e-be6a-465da7d19045.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c9/bd/c9bd9d4b-ff9f-45e5-b319-a9b755b0ec5a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c9/bd/c9bd9d4b-ff9f-45e5-b319-a9b755b0ec5a.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-25T19:21:04.417419+00:00",
+      "details": {
+        "description": "Queen’s Domain is a retro-fantasy action RPG. Washed up on the shores of the Isle of Neasied, you set out to find your father and uncover the dark heart of this mysterious isle.\nWield the Legendary Holy Sword Endu to take flight from platform to platform, and discover an interconnected, labyrinthine world where secrets and dangers lurk around every corner.\nFight action-oriented battles with a classic stamina meter, powerful charge attacks, weapon specific special attacks, and secondary throwing weapons. Level up, accessorize, and choose from a huge catalogue of melee weapons on your quest to fight your way through the hordes of monsters and powerful bosses awaiting you in the darkest depths of the isle.\nFeatures:\nExplore an interconnected island filled with hidden secrets\nLovingly crafted retro-fantasy aesthetic\nAction-combat with a stamina meter, special attacks, throwing weapons & more\nFly across gaps with your Holy Sword – use upgrades to fly further!\nDozens of hours of adventuring and exploration\n50+ melee weapons to discover, equip, and upgrade\nUse XP to level up, and eat delicious food to further increase your stats\n20+ types of secondary throwing weapons allow for varied strategies in combat\nOver 100 enemies, mini bosses, and bosses to defeat",
+        "game_features": [],
+        "repack_features": [
+          "Based on Queens.Domain-TENOKE ISO release: tenoke-queens.domain.iso (2,353,389,568 bytes)",
+          "Game version: v1.01.00",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 2.2 GB to 652 MB)",
+          "Installation takes less than a minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-25T19:21:04.417419+00:00"
     },
     {
       "id": "tokyo-xtreme-racer",

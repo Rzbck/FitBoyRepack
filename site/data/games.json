@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-24T22:45:58.394358+00:00",
+  "generated_at": "2026-11-25T00:18:09.213326+00:00",
   "source_pages": 825,
   "last_full_scan_at": "2026-11-24T14:44:47.908961+00:00",
   "games": [
+    {
+      "id": "blitzkrieg-3",
+      "title": "Blitzkrieg 3: Deluxe Edition – Build 26763333 + All DLCs",
+      "source_url": "https://fitgirl-repacks.site/blitzkrieg-3/",
+      "image_url": "https://i3.imageban.ru/out/2026/11/25/5a38ae0d028afced846b2c04a6a6e4f4.jpg",
+      "post_date": "2026-11-25T03:17:06+03:00",
+      "genres": [
+        "Strategy",
+        "RTS",
+        "World War II",
+        "Isometric",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "1.6 GB"
+    },
     {
       "id": "stellaris-galaxy-edition",
       "title": "Stellaris: Ultimate Bundle, v4.6.0 (3d1a) + 47 DLCs/Bonuses",

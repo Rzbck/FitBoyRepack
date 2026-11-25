@@ -168,6 +168,7 @@ def main() -> None:
         assert beta["year"]==2020 and beta["game_release_precision"]=="day"
         beta_detail=json.loads((site_root/beta["detail_path"]).read_text(encoding="utf-8"))
         assert beta_detail["game_release_date"]==beta["game_release_date"]
+        assert beta_detail["verified_steam_appid"]==123
         assert 1 in search["prefixes"]["2020"]
         assert health["release_dates_steam"]==1
         assert search["steam_generated_at"]==catalog["steam_generated_at"]
@@ -177,6 +178,7 @@ def main() -> None:
         detail = json.loads(detail_path.read_text(encoding="utf-8"))
         assert detail["verified_metadata"]["developer"] == "Studio A"
         assert detail["title"] == "Alpha Repack"
+        assert "verified_steam_appid" not in detail
 
         assert health["metadata_verified"] == 1
         assert health["coverage"]["metadata"] == 50.0

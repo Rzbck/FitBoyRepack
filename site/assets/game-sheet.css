@@ -547,3 +547,5 @@
 
 .media-lightbox-stage figcaption[data-media-status='fallback'],.media-lightbox-stage figcaption[data-media-status='unavailable']{display:block!important;color:#aeb9cc;font-size:.8rem;text-align:center;padding:6px}
 .media-lightbox-stage img[hidden]{display:none!important}
+
+.official-steam-description{display:inline-block;margin-top:8px;color:#9dbdff;font-size:.75rem;text-decoration:none}.official-steam-description:hover,.official-steam-description:focus-visible{text-decoration:underline}

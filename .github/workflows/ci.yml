@@ -28,6 +28,7 @@ jobs:
       - run: PYTHONPATH=tools python tools/test_public_metadata_export.py
       - run: PYTHONPATH=tools python tools/test_steam_ratings.py
       - run: PYTHONPATH=tools python tools/test_translation_pipeline.py
+      - run: PYTHONPATH=tools python tools/test_translation_quality.py
       - run: python tools/test_translation_build.py
       - run: bash -n ops/fitboy/install_translation_runtime.sh
       - run: python ops/fitboy/test_backup_sqlite.py

@@ -21,6 +21,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from translation_quality import QUALITY_VERSION, RETRY_LIMIT, mask, fidelity_issue, repair_legacy, protected_spans
+
 WORKER_VERSION = 1
 MODEL_ID = "Helsinki-NLP/opus-mt-tc-big-en-fr"
 DEFAULT_CATALOG = Path("/opt/FitBoyRepack/site/data/games.json")
@@ -239,6 +241,11 @@ def connect_db(path: Path) -> sqlite3.Connection:
         );
         CREATE INDEX IF NOT EXISTS idx_translation_jobs_work
           ON translation_jobs(active, status, attempts, updated_at);
+        CREATE TABLE IF NOT EXISTS translation_quality_retry (
+            game_id TEXT NOT NULL, field_key TEXT NOT NULL, source_sha256 TEXT NOT NULL,
+            quality_version INTEGER NOT NULL,
+            PRIMARY KEY(game_id,field_key,source_sha256,quality_version)
+        );
         CREATE TABLE IF NOT EXISTS translation_meta (
             key TEXT PRIMARY KEY,
             value TEXT NOT NULL,
@@ -262,7 +269,7 @@ def file_sha256(path: Path) -> str:
 
 def input_fingerprint(catalog_path: Path, metadata_path: Path) -> str:
     payload = (
-        f"worker={WORKER_VERSION}\n"
+        f"worker={WORKER_VERSION}\nquality={QUALITY_VERSION}\n"
         f"catalog={file_sha256(catalog_path)}\n"
         f"metadata={file_sha256(metadata_path)}\n"
     )
@@ -329,7 +336,7 @@ def sync_queue(
             fp = fingerprint(text, terms)
             sha = source_sha256(text)
             row = conn.execute(
-                "SELECT fingerprint,worker_version FROM translation_jobs "
+                "SELECT fingerprint,worker_version,source_sha256,status,translated_text FROM translation_jobs "
                 "WHERE game_id=? AND field_key=?",
                 (game_id, field_key),
             ).fetchone()
@@ -346,6 +353,15 @@ def sync_queue(
                     (game_id, field_key, fp, sha, text, terms_json, WORKER_VERSION, now, now),
                 )
                 queued += 1
+            elif row["source_sha256"] == sha and row["status"] == "done" and row["translated_text"]:
+                # A metadata/quality update is not a source text change. Keep published
+                # translations available; deterministic corrections are applied separately.
+                conn.execute(
+                    """UPDATE translation_jobs SET fingerprint=?,terms_json=?,
+                    worker_version=?,active=1 WHERE game_id=? AND field_key=?""",
+                    (fp,terms_json,WORKER_VERSION,game_id,field_key),
+                )
+                unchanged += 1
             elif row["fingerprint"] != fp or int(row["worker_version"]) != WORKER_VERSION:
                 conn.execute(
                     """
@@ -408,36 +424,30 @@ def service_active(name: str) -> bool:
     return result.returncode == 0
 
 
-def split_sentences(text: str) -> list[str]:
-    text = clean(text)
-    if not text:
-        return []
-    return [
-        item.strip()
-        for item in re.split(r'(?<=[.!?])\s+(?=[A-Z0-9"“‘(\[])', text)
-        if item.strip()
-    ]
+def split_sentences(text: str, terms: list[str] | None = None) -> list[str]:
+    text=clean(text)
+    spans=protected_spans(text,terms or [])
+    sentences=[]
+    start=0
+    for boundary in re.finditer(r"(?<=[.!?])\s+(?=[A-Z0-9\"“'(\[])",text):
+        if any(left<boundary.start()<right for left,right,_ in spans):
+            continue
+        if text[start:boundary.start()].strip():
+            sentences.append(text[start:boundary.start()].strip())
+        start=boundary.end()
+    if text[start:].strip():
+        sentences.append(text[start:].strip())
+    return sentences
 
 
 def protect_sentence(sentence: str, terms: list[str]) -> tuple[str, dict[str, str]]:
-    masked = sentence
-    mapping: dict[str, str] = {}
-    counter = 0
-
-    for term in terms:
-        if term not in masked:
-            continue
-        counter += 1
-        placeholder = f"ZXQ{counter:02d}QXZ"
-        masked = masked.replace(term, placeholder)
-        mapping[placeholder] = term
-    return masked, mapping
+    return mask(sentence, terms)
 
 
 def restore_sentence(text: str, mapping: dict[str, str]) -> tuple[str, list[str], list[str]]:
     missing: list[str] = []
     for placeholder, original in mapping.items():
-        if placeholder not in text:
+        if text.count(placeholder) != 1:
             missing.append(placeholder)
         else:
             text = text.replace(placeholder, original)
@@ -467,20 +477,21 @@ def load_runtime(model_path: Path, tokenizer_path: Path):
     return translator, tokenizer
 
 
-def translate_field(
+def _translate_attempt(
     text: str,
     terms: list[str],
     *,
     translator: Any,
     tokenizer: Any,
+    masked_mode: bool = True,
 ) -> str:
-    sentences = split_sentences(text)
+    sentences = split_sentences(text,terms)
     if not sentences:
         raise TranslationRejected("empty source after sentence split")
 
     prepared: list[dict[str, Any]] = []
     for sentence in sentences:
-        masked, mapping = protect_sentence(sentence, terms)
+        masked, mapping = protect_sentence(sentence, terms) if masked_mode else (sentence,{})
         token_ids = tokenizer.encode(masked, add_special_tokens=True)
         prepared.append(
             {
@@ -513,15 +524,64 @@ def translate_field(
             raise TranslationRejected("empty translated sentence")
 
         ratio = len(restored) / max(1, len(item["source"]))
-        if ratio < 0.30 or ratio > 2.20:
+        if ratio < 0.30 or len(restored) > max(24, 2.20 * len(item["source"])):
             raise TranslationRejected(f"implausible length ratio {ratio:.3f}")
 
         if len(restored) >= 80 and english_leak_score(restored) >= 0.20:
             raise TranslationRejected("excessive English residue")
 
+        issue=fidelity_issue(item["source"],restored,terms)
+        if issue:
+            raise TranslationRejected(issue)
         translated_sentences.append(restored)
 
     return " ".join(translated_sentences)
+
+
+def translate_field(text,terms,*,translator,tokenizer):
+    try:
+        return _translate_attempt(text,terms,translator=translator,tokenizer=tokenizer)
+    except TranslationRejected as first:
+        # A second, unmasked attempt can recover damaged placeholders; it must
+        # independently preserve the same names, terminology and numbers.
+        try:
+            return _translate_attempt(text,terms,translator=translator,tokenizer=tokenizer,masked_mode=False)
+        except TranslationRejected as second:
+            raise TranslationRejected(f"{first}; retry: {second}") from second
+
+def schedule_quality_retries(conn,limit):
+    if limit<=0:return 0
+    rows=conn.execute("""SELECT j.game_id,j.field_key,j.source_sha256
+        FROM translation_jobs j WHERE j.active=1 AND j.status='rejected'
+        AND NOT EXISTS(SELECT 1 FROM translation_quality_retry r WHERE
+          r.game_id=j.game_id AND r.field_key=j.field_key
+          AND r.source_sha256=j.source_sha256 AND r.quality_version=?)
+        ORDER BY CASE WHEN j.field_key='description' THEN 0 ELSE 1 END,j.updated_at,j.game_id,j.field_key LIMIT ?""",
+        (QUALITY_VERSION,min(RETRY_LIMIT,limit))).fetchall()
+    with conn:
+        for r in rows:
+            key=(r["game_id"],r["field_key"],r["source_sha256"])
+            conn.execute("INSERT OR IGNORE INTO translation_quality_retry VALUES(?,?,?,?)",(*key,QUALITY_VERSION))
+            conn.execute("""UPDATE translation_jobs SET status='pending',attempts=0,updated_at=?
+                WHERE game_id=? AND field_key=? AND source_sha256=? AND status='rejected'""",(utcnow(),*key))
+    return len(rows)
+
+def repair_published_once(conn):
+    marker=f"quality_repair_{QUALITY_VERSION}"
+    if meta_value(conn,marker):return 0
+    count=0
+    with conn:
+        rows=conn.execute("""SELECT game_id,field_key,source_text,source_sha256,translated_text
+            FROM translation_jobs WHERE active=1 AND status='done' AND translated_text IS NOT NULL""")
+        for r in rows:
+            old=r["translated_text"];new=repair_legacy(r["source_text"],old)
+            if new==old:continue
+            conn.execute("""UPDATE translation_jobs SET translated_text=?,updated_at=?
+                WHERE game_id=? AND field_key=? AND source_sha256=? AND status='done' AND translated_text=?""",
+                (new,utcnow(),r["game_id"],r["field_key"],r["source_sha256"],old))
+            count+=1
+        conn.execute("INSERT INTO translation_meta(key,value,updated_at) VALUES(?,?,?)",(marker,str(count),utcnow()))
+    return count
 
 
 def pending_rows(
@@ -589,6 +649,7 @@ def process_rows(
                 tokenizer=tokenizer,
             )
         except TranslationRejected as exc:
+            conn.execute("""INSERT OR IGNORE INTO translation_quality_retry SELECT game_id,field_key,source_sha256,? FROM translation_jobs WHERE game_id=? AND field_key=? AND fingerprint=?""",(QUALITY_VERSION,game_id,field_key,fingerprint_value))
             conn.execute(
                 """
                 UPDATE translation_jobs
@@ -687,6 +748,8 @@ def main() -> int:
         else:
             print("[TRANSLATE] sync=skipped inputs_unchanged=yes", flush=True)
 
+        repaired=repair_published_once(conn)
+        if repaired:print(f"[TRANSLATE] legacy_corrected={repaired}",flush=True)
         print("[TRANSLATE] queue_before=" + json.dumps(queue_counts(conn), separators=(",", ":")), flush=True)
 
         rows = pending_rows(
@@ -694,6 +757,10 @@ def main() -> int:
             limit=args.limit,
             max_error_attempts=args.max_error_attempts,
         )
+        scheduled=schedule_quality_retries(conn,args.limit-len(rows))
+        if scheduled:
+            print(f"[TRANSLATE] quality_retries={scheduled}",flush=True)
+            rows=pending_rows(conn,limit=args.limit,max_error_attempts=args.max_error_attempts)
         if not rows:
             print("[TRANSLATE] no eligible pending fields; model remains unloaded", flush=True)
             return 0

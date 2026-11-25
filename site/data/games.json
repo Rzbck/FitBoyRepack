@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T20:28:39.418117+00:00",
+  "generated_at": "2026-11-25T23:08:27.675441+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
+    {
+      "id": "tape-to-tape",
+      "title": "Tape to Tape – v1.0.0-CS 13980",
+      "source_url": "https://fitgirl-repacks.site/tape-to-tape/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/25/dd02e8fd175192d380ac621604d3c158.jpg",
+      "post_date": "2026-11-26T00:37:52+03:00",
+      "genres": [
+        "Arcade",
+        "Sports",
+        "Hockey",
+        "Top-down",
+        "2D"
+      ],
+      "repack_size": "618 MB"
+    },
     {
       "id": "nightmare-frontier",
       "title": "Nightmare Frontier: Complete Bundle, v1.1.0.1814 + DLC",

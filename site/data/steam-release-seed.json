@@ -1,0 +1,217 @@
+{
+  "seed_version": 1,
+  "generated_at": "2026-11-25T19:06:57+00:00",
+  "source": "Steam Store appdetails; exact identity verified; one-time disjoint backfill",
+  "games": {
+    "99vidas": {
+      "steam_appid": 557040,
+      "steam_store_name": "99Vidas",
+      "steam_release_date": "2016-12-22",
+      "steam_release_appid": 557040,
+      "steam_release_checked_at": "2026-11-25T19:04:26Z"
+    },
+    "the-town-of-light": {
+      "steam_appid": 433100,
+      "steam_store_name": "The Town of Light",
+      "steam_release_date": "2016-02-26",
+      "steam_release_appid": 433100,
+      "steam_release_checked_at": "2026-11-25T19:04:29Z"
+    },
+    "the-eternal-cylinder": {
+      "steam_appid": 865680,
+      "steam_store_name": "The Eternal Cylinder",
+      "steam_release_date": "2022-10-13",
+      "steam_release_appid": 865680,
+      "steam_release_checked_at": "2026-11-25T19:04:32Z"
+    },
+    "pc-building-simulator": {
+      "steam_appid": 621060,
+      "steam_store_name": "PC Building Simulator",
+      "steam_release_date": "2019-01-29",
+      "steam_release_appid": 621060,
+      "steam_release_checked_at": "2026-11-25T19:04:34Z"
+    },
+    "police-stories": {
+      "steam_appid": 539470,
+      "steam_store_name": "Police Stories",
+      "steam_release_date": "2019-09-19",
+      "steam_release_appid": 539470,
+      "steam_release_checked_at": "2026-11-25T19:04:37Z"
+    },
+    "ruined-king-a-league-of-legends-story": {
+      "steam_appid": 1276790,
+      "steam_store_name": "Ruined King: A League of Legends Story™",
+      "steam_release_date": "2021-11-16",
+      "steam_release_appid": 1276790,
+      "steam_release_checked_at": "2026-11-25T19:04:40Z"
+    },
+    "daemon-x-machina": {
+      "steam_appid": 1167450,
+      "steam_store_name": "DAEMON X MACHINA",
+      "steam_release_date": "2020-02-13",
+      "steam_release_appid": 1167450,
+      "steam_release_checked_at": "2026-11-25T19:04:51Z"
+    },
+    "far-changing-tides-switch": {
+      "steam_appid": 1570010,
+      "steam_store_name": "FAR: Changing Tides",
+      "steam_release_date": "2022-03-01",
+      "steam_release_appid": 1570010,
+      "steam_release_checked_at": "2026-11-25T19:04:53Z"
+    },
+    "warhammer-40000-space-wolf": {
+      "steam_appid": 553210,
+      "steam_store_name": "Warhammer 40,000: Space Wolf",
+      "steam_release_date": "2017-09-21",
+      "steam_release_appid": 553210,
+      "steam_release_checked_at": "2026-11-25T19:04:56Z"
+    },
+    "mega-man-zero-zx-legacy-collection": {
+      "steam_appid": 999020,
+      "steam_store_name": "Mega Man Zero/ZX Legacy Collection",
+      "steam_release_date": "2020-02-25",
+      "steam_release_appid": 999020,
+      "steam_release_checked_at": "2026-11-25T19:04:59Z"
+    },
+    "aurum": {
+      "steam_appid": 1859980,
+      "steam_store_name": "AURUM",
+      "steam_release_date": "2022-04-15",
+      "steam_release_appid": 1859980,
+      "steam_release_checked_at": "2026-11-25T19:05:02Z"
+    },
+    "vampire-the-masquerade-swansong": {
+      "steam_appid": 1299510,
+      "steam_store_name": "Vampire: The Masquerade – Swansong",
+      "steam_release_date": "2023-05-30",
+      "steam_release_appid": 1299510,
+      "steam_release_checked_at": "2026-11-25T19:05:04Z"
+    },
+    "dolmen": {
+      "steam_appid": 831050,
+      "steam_store_name": "Dolmen",
+      "steam_release_date": "2022-05-20",
+      "steam_release_appid": 831050,
+      "steam_release_checked_at": "2026-11-25T19:05:15Z"
+    },
+    "pac-man-museum-plus": {
+      "steam_appid": 1665130,
+      "steam_store_name": "PAC-MAN MUSEUM+",
+      "steam_release_date": "2022-06-27",
+      "steam_release_appid": 1665130,
+      "steam_release_checked_at": "2026-11-25T19:05:17Z"
+    },
+    "descenders": {
+      "steam_appid": 681280,
+      "steam_store_name": "Descenders",
+      "steam_release_date": "2019-05-07",
+      "steam_release_appid": 681280,
+      "steam_release_checked_at": "2026-11-25T19:05:20Z"
+    },
+    "the-waylanders": {
+      "steam_appid": 957710,
+      "steam_store_name": "The Waylanders",
+      "steam_release_date": "2022-02-02",
+      "steam_release_appid": 957710,
+      "steam_release_checked_at": "2026-11-25T19:05:23Z"
+    },
+    "fashion-police-squad": {
+      "steam_appid": 1319460,
+      "steam_store_name": "Fashion Police Squad",
+      "steam_release_date": "2022-08-15",
+      "steam_release_appid": 1319460,
+      "steam_release_checked_at": "2026-11-25T19:05:26Z"
+    },
+    "destroy-all-humans-2-reprobed": {
+      "steam_appid": 1266700,
+      "steam_store_name": "Destroy All Humans! 2 - Reprobed",
+      "steam_release_date": "2022-08-30",
+      "steam_release_appid": 1266700,
+      "steam_release_checked_at": "2026-11-25T19:05:29Z"
+    },
+    "lego-brawls": {
+      "steam_appid": 1731460,
+      "steam_store_name": "LEGO® Brawls",
+      "steam_release_date": "2022-09-02",
+      "steam_release_appid": 1731460,
+      "steam_release_checked_at": "2026-11-25T19:05:51Z"
+    },
+    "the-diofield-chronicle-switch": {
+      "steam_appid": 1399080,
+      "steam_store_name": "The DioField Chronicle",
+      "steam_release_date": "2022-09-22",
+      "steam_release_appid": 1399080,
+      "steam_release_checked_at": "2026-11-25T19:05:53Z"
+    },
+    "this-land-is-my-land": {
+      "steam_appid": 1069640,
+      "steam_store_name": "This Land Is My Land",
+      "steam_release_date": "2021-10-20",
+      "steam_release_appid": 1069640,
+      "steam_release_checked_at": "2026-11-25T19:05:56Z"
+    },
+    "the-dungeon-of-naheulbeuk-the-amulet-of-chaos": {
+      "steam_appid": 970830,
+      "steam_store_name": "The Dungeon Of Naheulbeuk: The Amulet Of Chaos",
+      "steam_release_date": "2020-09-17",
+      "steam_release_appid": 970830,
+      "steam_release_checked_at": "2026-11-25T19:05:59Z"
+    },
+    "sunday-gold": {
+      "steam_appid": 1969440,
+      "steam_store_name": "Sunday Gold",
+      "steam_release_date": "2022-10-13",
+      "steam_release_appid": 1969440,
+      "steam_release_checked_at": "2026-11-25T19:06:02Z"
+    },
+    "star-trek-prodigy-supernova": {
+      "steam_appid": 1655220,
+      "steam_store_name": "Star Trek Prodigy: Supernova",
+      "steam_release_date": "2022-10-14",
+      "steam_release_appid": 1655220,
+      "steam_release_checked_at": "2026-11-25T19:06:04Z"
+    },
+    "terror-of-hemasaurus": {
+      "steam_appid": 1016180,
+      "steam_store_name": "Terror of Hemasaurus",
+      "steam_release_date": "2022-10-17",
+      "steam_release_appid": 1016180,
+      "steam_release_checked_at": "2026-11-25T19:06:13Z"
+    },
+    "uncharted-legacy-of-thieves-collection": {
+      "steam_appid": 1659420,
+      "steam_store_name": "UNCHARTED™: Legacy of Thieves Collection",
+      "steam_release_date": "2022-10-19",
+      "steam_release_appid": 1659420,
+      "steam_release_checked_at": "2026-11-25T19:06:16Z"
+    },
+    "crysis-3-remastered": {
+      "steam_appid": 2096610,
+      "steam_store_name": "Crysis 3 Remastered",
+      "steam_release_date": "2022-11-17",
+      "steam_release_appid": 2096610,
+      "steam_release_checked_at": "2026-11-25T19:06:18Z"
+    },
+    "crysis-2-remastered": {
+      "steam_appid": 2096600,
+      "steam_store_name": "Crysis 2 Remastered",
+      "steam_release_date": "2022-11-17",
+      "steam_release_appid": 2096600,
+      "steam_release_checked_at": "2026-11-25T19:06:21Z"
+    },
+    "a-hat-in-time": {
+      "steam_appid": 253230,
+      "steam_store_name": "A Hat in Time",
+      "steam_release_date": "2017-10-05",
+      "steam_release_appid": 253230,
+      "steam_release_checked_at": "2026-11-25T19:06:24Z"
+    },
+    "captain-tsubasa-rise-of-new-champions": {
+      "steam_appid": 1163550,
+      "steam_store_name": "Captain Tsubasa: Rise of New Champions",
+      "steam_release_date": "2020-09-28",
+      "steam_release_appid": 1163550,
+      "steam_release_checked_at": "2026-11-25T19:06:27Z"
+    }
+  }
+}

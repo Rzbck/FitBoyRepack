@@ -130,10 +130,15 @@ def main() -> None:
 
         source.with_name("steam-ratings.json").write_text(json.dumps({
             "rating_version":1,"generated_at":"2026-11-24T00:00:00Z",
-            "games":{"beta":{"status":"rated","steam_appid":123,"steam_release_appid":123,
-                              "store_verified_at":"2026-11-24T00:00:00Z","steam_release_date":"2020-05-06"}}
+            "games":{"beta":{"status":"rated","steam_appid":123,"steam_store_name":"Beta",
+                              "store_verified_at":"2026-11-24T00:00:00Z"}}
         }),encoding="utf-8")
 
+        source.with_name("steam-release-seed.json").write_text(json.dumps({
+            "seed_version":1,"generated_at":"2026-11-24T00:00:00Z",
+            "games":{"beta":{"steam_appid":123,"steam_release_appid":123,"steam_store_name":"Beta",
+                              "steam_release_checked_at":"2020-06-01T00:00:00Z","steam_release_date":"2020-05-06"}}
+        }),encoding="utf-8")
         subprocess.run(
             [
                 sys.executable,
@@ -166,6 +171,7 @@ def main() -> None:
         assert 1 in search["prefixes"]["2020"]
         assert health["release_dates_steam"]==1
         assert search["steam_generated_at"]==catalog["steam_generated_at"]
+        assert search["steam_release_seed_generated_at"]==catalog["steam_release_seed_generated_at"]=="2026-11-24T00:00:00Z"
 
         detail_path = site_root / first["detail_path"]
         detail = json.loads(detail_path.read_text(encoding="utf-8"))

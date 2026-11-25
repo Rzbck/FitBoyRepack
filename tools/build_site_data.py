@@ -7,7 +7,7 @@ import shutil
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
-from release_dates import release_choice
+from release_dates import release_choice, load_release_seed, apply_release_seed
 
 DEFAULT_SOURCE = Path("site/data/games.json")
 DEFAULT_SITE_ROOT = Path("site")
@@ -235,6 +235,8 @@ def main():
         raise RuntimeError("invalid Steam snapshot")
     steam_rows=steam_payload.get("games",{})
     steam_generated_at=steam_payload.get("generated_at")
+    seed,seed_generated_at=load_release_seed(args.source.with_name("steam-release-seed.json"))
+    apply_release_seed(steam_rows,seed)
     translation_sample = None
 
     data_dir = args.site_root / "data"
@@ -352,6 +354,7 @@ def main():
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
         "steam_generated_at": steam_generated_at,
+        "steam_release_seed_generated_at": seed_generated_at,
         "count": len(catalog_games),
         "games": catalog_games,
     }
@@ -362,6 +365,7 @@ def main():
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
         "steam_generated_at": steam_generated_at,
+        "steam_release_seed_generated_at": seed_generated_at,
         "count": len(catalog_games),
         "prefix_min": SEARCH_PREFIX_MIN,
         "prefix_max": SEARCH_PREFIX_MAX,
@@ -376,6 +380,7 @@ def main():
         "generated_at": generated_at,
         "metadata_generated_at": metadata_generated_at,
         "steam_generated_at": steam_generated_at,
+        "steam_release_seed_generated_at": seed_generated_at,
         **stats,
         "translation_sample_path": translation_sample,
         "metadata_snapshot_count": len(public_metadata),

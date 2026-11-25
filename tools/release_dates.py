@@ -1,5 +1,6 @@
 """Conservative release dates, preserving precision and conflicting sources."""
 import re
+import json
 from datetime import date, datetime, timezone
 from calendar import month_abbr, month_name
 
@@ -43,3 +44,36 @@ def release_choice(metadata,row):
             "game_release_precision":{4:"year",7:"month",10:"day"}.get(len(chosen or "")),
             "game_release_conflict":conflict,"steam_release_date":steam,
             "wikidata_release_date":wiki}
+
+def load_release_seed(path):
+    """A one-time, separately published collection; never modify the live cache."""
+    if not path.exists():return {},None
+    payload=json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload,dict) or payload.get("seed_version")!=1 or not isinstance(payload.get("games"),dict) or not isinstance(payload.get("generated_at"),str):
+        raise ValueError("invalid Steam release seed")
+    return payload["games"],payload["generated_at"]
+
+def apply_release_seed(rows,seed):
+    """Import only into an existing verified identity with no date observation."""
+    count=0
+    for gid,entry in seed.items():
+        row=rows.get(gid)
+        if not isinstance(row,dict) or not isinstance(entry,dict):continue
+        appid=row.get("steam_appid")
+        if (row.get("status") not in {"rated","pending","no_reviews","unavailable"}
+            or not row.get("store_verified_at") or row.get("steam_release_checked_at")
+            or not isinstance(appid,int) or isinstance(appid,bool) or appid<=0
+            or entry.get("steam_appid")!=appid or entry.get("steam_release_appid")!=appid
+            or not row.get("steam_store_name") or row["steam_store_name"]!=entry.get("steam_store_name")):continue
+        value=normalize_date(entry.get("steam_release_date"))
+        checked=entry.get("steam_release_checked_at")
+        if not value or len(value)!=10 or not isinstance(checked,str):continue
+        try:
+            stamp=datetime.fromisoformat(checked.replace("Z","+00:00"))
+            if stamp.tzinfo is None or stamp>datetime.now(timezone.utc):continue
+        except ValueError:continue
+        if value>stamp.date().isoformat():continue
+        row.update({"steam_release_date":value,"steam_release_appid":appid,"steam_release_checked_at":checked})
+        row.pop("steam_release_retry_at",None)
+        count+=1
+    return count

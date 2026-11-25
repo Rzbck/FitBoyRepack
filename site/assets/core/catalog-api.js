@@ -92,5 +92,6 @@ export function loadGameDetail(detailPath) {
 export function searchIndexMatchesCatalog(index, catalog) {
   return index.count === catalog.count
     && index.generated_at === catalog.generated_at
-    && index.metadata_generated_at === catalog.metadata_generated_at;
+    && index.metadata_generated_at === catalog.metadata_generated_at
+    && index.steam_generated_at === catalog.steam_generated_at;
 }

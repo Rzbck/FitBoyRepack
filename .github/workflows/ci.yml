@@ -33,6 +33,7 @@ jobs:
       - run: python ops/fitboy/test_backup_sqlite.py
       - run: python tools/test_github_orchestrator.py
       - run: python tools/test_release_year.py
+      - run: python tools/test_release_dates.py
       - name: Verify split catalog, health and lazy payloads
         run: |
           python - <<'PY'

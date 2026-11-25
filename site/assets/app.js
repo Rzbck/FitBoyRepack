@@ -380,7 +380,8 @@ function renderCard(game,compact=false){
   releaseNode.hidden=!verifiedRelease;
   releaseNode.textContent=verifiedRelease ? formatDate(game.game_release_date) : '';
   if(verifiedRelease){
-    releaseNode.title=`${t('detail.releaseDate')}: ${formatDate(game.game_release_date)} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
+    const dateSource=game.game_release_source==='steam'?'Steam':game.game_release_source==='wikidata'?'Wikidata':'';
+    releaseNode.title=`${t('detail.releaseDate')}: ${formatDate(game.game_release_date)}${dateSource?' ('+dateSource+')':''} · ${t('detail.published')}: ${formatDate(game.post_date)}`;
   }else releaseNode.removeAttribute('title');
   const sizeNode=card.querySelector('.card-size');
   sizeNode.textContent=game.repack_size!=='N/A'?(game.repack_size||''):'';
@@ -660,7 +661,11 @@ function buildInitialCoverIdentity(cover,game){
   const meta=document.createElement('div');
   meta.className='cover-details-meta';
   appendInitialIdentityFact(meta,'detail.published',formatDate(game.post_date),{dateValue:game.post_date});
-  if(game.game_release_date)appendInitialIdentityFact(meta,'detail.releaseDate',formatDate(game.game_release_date),{dateValue:game.game_release_date});
+  if(game.game_release_date){
+    appendInitialIdentityFact(meta,'detail.releaseDate',formatDate(game.game_release_date),{dateValue:game.game_release_date});
+    const dateFact=meta.lastElementChild;
+    if(dateFact&&game.game_release_source) dateFact.title=game.game_release_source==='steam'?'Steam':'Wikidata';
+  }
   if(game.repack_size&&game.repack_size!=='N/A')appendInitialIdentityFact(meta,'detail.repackSize',game.repack_size);
   card.append(meta);
 

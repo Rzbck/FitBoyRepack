@@ -395,6 +395,16 @@ export function locale() {
 }
 
 export function formatDateValue(value, options = { day:'2-digit', month:'short', year:'numeric' }) {
+  const raw=String(value||'');
+  if (/^\d{4}$/.test(raw)) return raw;
+  if (/^\d{4}-\d{2}$/.test(raw)) {
+    const time=Date.parse(raw+'-01T00:00:00Z');
+    return Number.isFinite(time) ? new Intl.DateTimeFormat(locale(),{month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(time)) : '';
+  }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) {
+    const time=Date.parse(raw+'T00:00:00Z');
+    return Number.isFinite(time) ? new Intl.DateTimeFormat(locale(),{...options,timeZone:'UTC'}).format(new Date(time)) : '';
+  }
   const time = Date.parse(value || '');
   if (!Number.isFinite(time)) return '';
   return new Intl.DateTimeFormat(locale(), options).format(new Date(time));

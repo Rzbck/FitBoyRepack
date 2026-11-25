@@ -6,6 +6,7 @@ on:
     paths:
       - 'site/**'
       - 'tools/build_site_data.py'
+      - 'tools/release_dates.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 

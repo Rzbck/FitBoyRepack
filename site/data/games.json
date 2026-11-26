@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T00:43:47.495224+00:00",
+  "generated_at": "2026-11-26T00:44:36.767355+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
@@ -15,7 +15,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "6 GB"
+      "repack_size": "6 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/a0/95/a0957139-9ce3-4adf-8445-0b6c6c13e0fa.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/95/a0957139-9ce3-4adf-8445-0b6c6c13e0fa.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/a1/25a11e19-18a3-44cb-bbd8-3ec8898761f2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/a1/25a11e19-18a3-44cb-bbd8-3ec8898761f2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/5a/ca/5acab1d0-dd7d-44aa-82ea-7f81154fdda3.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/5a/ca/5acab1d0-dd7d-44aa-82ea-7f81154fdda3.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/1a/d0/1ad0e589-7563-4eba-a42e-84cf368bc18a.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/1a/d0/1ad0e589-7563-4eba-a42e-84cf368bc18a.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b2/22/b22271e8-8691-4c36-bf4d-008f416f59fd.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b2/22/b22271e8-8691-4c36-bf4d-008f416f59fd.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/bc/a5/bca5b0b2-15c4-410d-b0c5-376229292466.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/bc/a5/bca5b0b2-15c4-410d-b0c5-376229292466.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-26T00:44:36.765384+00:00",
+      "details": {
+        "description": "In Toto’s Journey, you play as Toto — a brave and loyal dog who has been swept away into a magical world by a mysterious cyclone. Separated from his owner Dorothy, Toto sets out on a dangerous journey to find his way back home, meeting new allies and uncovering the secrets of this enchanted land along the way.\nYou will explore a variety of unique locations — from dense forests hiding the Lion to mechanical ruins once inhabited by the Tin Woodman. Each area presents its own challenges, combining exploration with environmental storytelling.\nAlong the journey, you will face a range of puzzles that test your logic and creativity. Open new paths, restore broken mechanisms, and interact with light and shadows to progress. With each solved challenge, Toto grows stronger, unlocking new magical abilities that help him overcome obstacles and continue his search for Dorothy.\nToto’s Journey is a heartfelt adventure about friendship, discovery, and the desire to return home. Explore a mysterious world, meet unforgettable characters, and uncover its hidden truths.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Totos.Journey-RUNE ISO release: rune-totos.journey.iso (10,328,735,744 bytes)",
+          "Game version: v1.0.8.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 9.6 to 6 GB)",
+          "Installation takes 2-7 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 9.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-26T00:44:36.765384+00:00"
     },
     {
       "id": "the-strange-city",

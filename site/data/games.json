@@ -1,9 +1,22 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-25T23:20:24.412072+00:00",
+  "generated_at": "2026-11-26T00:43:47.495224+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
+    {
+      "id": "totos-journey",
+      "title": "Toto’s Journey – v1.0.8.0",
+      "source_url": "https://fitgirl-repacks.site/totos-journey/",
+      "image_url": "https://i7.imageban.ru/out/2026/11/26/2f7c331dc20f079631c07304bec28ef0.jpg",
+      "post_date": "2026-11-26T03:26:53+03:00",
+      "genres": [
+        "Adventure",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "6 GB"
+    },
     {
       "id": "the-strange-city",
       "title": "The Strange City – v1.1",

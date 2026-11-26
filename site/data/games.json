@@ -1,9 +1,99 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T18:32:38.840972+00:00",
+  "generated_at": "2026-11-26T20:56:44.264499+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
+    {
+      "id": "tunguska-the-visitation",
+      "title": "Tunguska: The Visitation – Complete Collectors’ Edition, v1.98-1 + 7 DLCs",
+      "source_url": "https://fitgirl-repacks.site/tunguska-the-visitation/",
+      "image_url": "https://i2.imageban.ru/out/2023/06/20/879ea131a1467dd708c978624e0856f8.jpg",
+      "post_date": "2026-11-26T22:00:48+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Isometric",
+        "3D"
+      ],
+      "repack_size": "1.8 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/fe/00/fe002469-72e5-4618-988a-0adc8eb3864c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fe/00/fe002469-72e5-4618-988a-0adc8eb3864c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/de/17/de170205-96c2-452f-ba87-24545959ccbb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/de/17/de170205-96c2-452f-ba87-24545959ccbb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e0/da/e0da047b-f6a5-4867-9862-265abf1afd07.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e0/da/e0da047b-f6a5-4867-9862-265abf1afd07.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/48/d4/48d4dc34-788f-4057-808f-e84217376558.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/48/d4/48d4dc34-788f-4057-808f-e84217376558.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8c/6c/8c6cb6cf-72b9-42c3-bb4c-505def736cc0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8c/6c/8c6cb6cf-72b9-42c3-bb4c-505def736cc0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/ff/9fffac0f-8728-48a5-8e01-6ee4580ebbcb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/ff/9fffac0f-8728-48a5-8e01-6ee4580ebbcb.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Live the life of a Ghoul Hunter and uncover the dark secrets of Tunguska from the Soviet era. Venture across desolate villages, abandoned facilities, toxic swamps, and ominous tunnels in this top-down adventure RPG, and discover the truth about the mysterious Tunguska Event in 1908.\nTunguska: The Visitation is 3D top-down action shooter (W-A-S-D movement + mouse aim), infused with moderate survival elements such as food, medicine, body energy, character stat buff, hazardous environments, and inventory management. The survival mechanics are designed to minimize chores and hassles for the player while keeping combat challenging and engaging. The slow-paced, methodical gameplay inspires critical thinking and strategic planning.\nAnd there are skills! The skill system lets players decide how they want to build expertise – be it combat-heavy, stealthy, crafty, or just a Jack-of-all-trades master of none!\nThe story-rich quests and lore of Tunguska encourage exploration and discovery. Vast amount of information and side-quests can be discovered from dialogues with NPC, fire-side conversations, or from documents and notes found throughout Tunguska.\nInspired by novel Roadside Picnic, Tunguska is one man’s vision and creation of a new post-Visitation zone: a place not just full of horror and danger, but also the freedom and opportunities sought after by many near the fall of the USSR.",
+        "game_features": [
+          "Dangerous mutants and skillful, well-equipped human NPCs powered by Goal-Oriented AI",
+          "Radiation hazard and T-Syndrome infection, both mitigated in multiple ways",
+          "Deadly space-time distortions player must constantly watch out for",
+          "Arsenal of Soviet-era weapons with matching ammunition",
+          "Weapon customization/upgrade via attachments",
+          "72 skill perks (6 per skill), each adds a unique ability for the player (or sometimes, NPCs too)",
+          "Earn combat and survival XP separately through gameplay, which converts to skill points after each level",
+          "Grid-based, Diablo-like inventory with weight limit",
+          "Power-ups crafted from mutant body parts with both positive and negative effects",
+          "Extensive story and lore discovered through dialogues, notes, and journals",
+          "Top-down line-of-sight system allowing for tactical engagements",
+          "Realistic weathers with continuous day/night cycle",
+          "Suppressed weapons, silent takedown, and interactive dynamic lighting allowing for stealth style gameplay",
+          "Wearable detectors to assist the player across different situations",
+          "Fast-travel available via railroad or as a paid service through the NPCs",
+          "Included DLCs:",
+          "Ravenwood Stories",
+          "Way of The Hunter",
+          "Ghost of Valentin",
+          "Dead Zone",
+          "Shadow Master",
+          "Slaughterhouse",
+          "Sound of Music"
+        ],
+        "repack_features": [
+          "Based on Tunguska.The.Visitation.Final.Cut-RUNE ISO release: rune-tunguska.the.visitation.final.cut.iso (2,772,631,552 bytes)",
+          "Game version: v1.95-1; 7 DLCs are included and activated",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 2.6 to 1.8 GB)",
+          "Installation takes 2-4 minutes",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4.7 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "virtue-and-a-sledgehammer",
       "title": "Virtue and a Sledgehammer – v1.0.0r6373",
@@ -106000,96 +106090,6 @@
           "Installation takes less than a minute",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 4.3 GB",
-          "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "tunguska-the-visitation",
-      "title": "Tunguska: The Visitation – Final Cut, v1.95-1 + 7 DLCs",
-      "source_url": "https://fitgirl-repacks.site/tunguska-the-visitation/",
-      "image_url": "https://i2.imageban.ru/out/2023/06/20/879ea131a1467dd708c978624e0856f8.jpg",
-      "post_date": "2025-12-21T23:00:48+03:00",
-      "genres": [
-        "RPG",
-        "Action RPG",
-        "Isometric",
-        "3D"
-      ],
-      "repack_size": "1.8 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/fe/00/fe002469-72e5-4618-988a-0adc8eb3864c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fe/00/fe002469-72e5-4618-988a-0adc8eb3864c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/de/17/de170205-96c2-452f-ba87-24545959ccbb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/de/17/de170205-96c2-452f-ba87-24545959ccbb.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e0/da/e0da047b-f6a5-4867-9862-265abf1afd07.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e0/da/e0da047b-f6a5-4867-9862-265abf1afd07.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/48/d4/48d4dc34-788f-4057-808f-e84217376558.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/48/d4/48d4dc34-788f-4057-808f-e84217376558.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8c/6c/8c6cb6cf-72b9-42c3-bb4c-505def736cc0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8c/6c/8c6cb6cf-72b9-42c3-bb4c-505def736cc0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9f/ff/9fffac0f-8728-48a5-8e01-6ee4580ebbcb.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9f/ff/9fffac0f-8728-48a5-8e01-6ee4580ebbcb.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Live the life of a Ghoul Hunter and uncover the dark secrets of Tunguska from the Soviet era. Venture across desolate villages, abandoned facilities, toxic swamps, and ominous tunnels in this top-down adventure RPG, and discover the truth about the mysterious Tunguska Event in 1908.\nTunguska: The Visitation is 3D top-down action shooter (W-A-S-D movement + mouse aim), infused with moderate survival elements such as food, medicine, body energy, character stat buff, hazardous environments, and inventory management. The survival mechanics are designed to minimize chores and hassles for the player while keeping combat challenging and engaging. The slow-paced, methodical gameplay inspires critical thinking and strategic planning.\nAnd there are skills! The skill system lets players decide how they want to build expertise – be it combat-heavy, stealthy, crafty, or just a Jack-of-all-trades master of none!\nThe story-rich quests and lore of Tunguska encourage exploration and discovery. Vast amount of information and side-quests can be discovered from dialogues with NPC, fire-side conversations, or from documents and notes found throughout Tunguska.\nInspired by novel Roadside Picnic, Tunguska is one man’s vision and creation of a new post-Visitation zone: a place not just full of horror and danger, but also the freedom and opportunities sought after by many near the fall of the USSR.",
-        "game_features": [
-          "Dangerous mutants and skillful, well-equipped human NPCs powered by Goal-Oriented AI",
-          "Radiation hazard and T-Syndrome infection, both mitigated in multiple ways",
-          "Deadly space-time distortions player must constantly watch out for",
-          "Arsenal of Soviet-era weapons with matching ammunition",
-          "Weapon customization/upgrade via attachments",
-          "72 skill perks (6 per skill), each adds a unique ability for the player (or sometimes, NPCs too)",
-          "Earn combat and survival XP separately through gameplay, which converts to skill points after each level",
-          "Grid-based, Diablo-like inventory with weight limit",
-          "Power-ups crafted from mutant body parts with both positive and negative effects",
-          "Extensive story and lore discovered through dialogues, notes, and journals",
-          "Top-down line-of-sight system allowing for tactical engagements",
-          "Realistic weathers with continuous day/night cycle",
-          "Suppressed weapons, silent takedown, and interactive dynamic lighting allowing for stealth style gameplay",
-          "Wearable detectors to assist the player across different situations",
-          "Fast-travel available via railroad or as a paid service through the NPCs",
-          "Included DLCs:",
-          "Ravenwood Stories",
-          "Way of The Hunter",
-          "Ghost of Valentin",
-          "Dead Zone",
-          "Shadow Master",
-          "Slaughterhouse",
-          "Sound of Music"
-        ],
-        "repack_features": [
-          "Based on Tunguska.The.Visitation.Final.Cut-RUNE ISO release: rune-tunguska.the.visitation.final.cut.iso (2,772,631,552 bytes)",
-          "Game version: v1.95-1; 7 DLCs are included and activated",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Smaller archive size (compressed from 2.6 to 1.8 GB)",
-          "Installation takes 2-4 minutes",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 4.7 GB",
           "Language can be changed in game settings",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]

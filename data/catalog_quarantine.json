@@ -368,6 +368,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "cities-skylines-repack-updated-12",
+      "title": "Cities: Skylines Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/cities-skylines-repack-updated-12/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "cod-black-ops-3-repack-status",
       "title": "CoD Black Ops 3 Repack Status",
       "source_url": "https://fitgirl-repacks.site/cod-black-ops-3-repack-status/",

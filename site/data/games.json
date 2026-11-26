@@ -1,9 +1,84 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T00:44:36.767355+00:00",
+  "generated_at": "2026-11-26T02:53:21.813315+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-25T14:47:38.823265+00:00",
   "games": [
+    {
+      "id": "cities-skylines-deluxe-edition",
+      "title": "Cities: Skylines – Collection, v1.21.2-f5 + 94 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/cities-skylines-deluxe-edition/",
+      "image_url": "https://i2.imageban.ru/out/2022/01/25/18041972c70cd19a11ac9c91d4574bce.jpg",
+      "post_date": "2026-11-26T05:00:41+03:00",
+      "genres": [
+        "Managerial",
+        "Strategy",
+        "3D",
+        "Real-time"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/cc/dd/ccdd32d6-ad58-4dfc-8635-9cbf3ba54230.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/cc/dd/ccdd32d6-ad58-4dfc-8635-9cbf3ba54230.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e4/cb/e4cbd76c-86fc-4e06-9f4b-0b6a786d52ff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e4/cb/e4cbd76c-86fc-4e06-9f4b-0b6a786d52ff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9c/c8/9cc88470-950c-43ba-b6ac-d79a76c3869e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9c/c8/9cc88470-950c-43ba-b6ac-d79a76c3869e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/60/4f/604f8797-4b0a-43f6-b0ad-0c4eeacf3002.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/60/4f/604f8797-4b0a-43f6-b0ad-0c4eeacf3002.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/58/9e/589ea98b-808d-48da-be3c-a79f8287d2cc.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/58/9e/589ea98b-808d-48da-be3c-a79f8287d2cc.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/59/7d/597d18ac-ef75-47b7-b8c8-e7051672b0a0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/59/7d/597d18ac-ef75-47b7-b8c8-e7051672b0a0.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
+      "details": {
+        "description": "Cities: Skylines is a modern take on the classic city simulation. The game introduces new game play elements to realize the thrill and hardships of creating and maintaining a real city whilst expanding on some well-established tropes of the city building experience.\nFrom the makers of the Cities in Motion franchise, the game boasts a fully realized transport system. It also includes the ability to mod the game to suit your play style as a fine counter balance to the layered and challenging simulation. You’re only limited by your imagination, so take control and reach for the sky!",
+        "game_features": [
+          "Multi-tiered and challenging simulation",
+          ": Constructing your city from the ground up is easy to learn, but hard to master. Playing as the mayor of your city you’ll be faced with balancing essential requirements such as education, water electricity, police, fire fighting, healthcare and much more along with your citys real economy system. Citizens within your city react fluidly, with gravitas and with an air of authenticity to a multitude of game play scenarios.",
+          "Extensive local traffic simulation",
+          ": Colossal Orders extensive experience developing the Cities in Motion series is fully utilized in a fully fleshed out and well-crafted transport systems.",
+          "Districts and Policies",
+          ": Be more than just an administrator from city hall. Designating parts of your city as a district results in the application of policies which results in you rising to the status of Mayor for your own city.",
+          "Extensive modding support",
+          ": Build or improve on existing maps and structures. You can then import them into the game, share them as well as download the creations of other city builders on the Steam workshop."
+        ],
+        "repack_features": [
+          "Based on Cities.Skylines.Race.Day-RUNE scene ISO release: rune-cities.skylines.race.day.iso (10,635,739,136 bytes)",
+          "Game version is v1.21.1-f5; 90 DLCs/Bonuses are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "You can skip downloading & installing of bonus content (digital postcards, artbook, soundtrack)",
+          "Significantly smaller archive size (compressed from 9.9 GB to 6.8/7 GB)",
+          "Installation takes 4-12 minutes",
+          "HDD space after installation: up to 19.3 GB",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
+    },
     {
       "id": "totos-journey",
       "title": "Toto’s Journey – v1.0.8.0",
@@ -85028,81 +85103,6 @@
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 10.5 GB",
           "Language can be changed in game settings",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:16:56.647414+00:00"
-    },
-    {
-      "id": "cities-skylines-deluxe-edition",
-      "title": "Cities: Skylines – Collection, v1.21.1-f5 + 90 DLCs/Bonuses",
-      "source_url": "https://fitgirl-repacks.site/cities-skylines-deluxe-edition/",
-      "image_url": "https://i2.imageban.ru/out/2022/01/25/18041972c70cd19a11ac9c91d4574bce.jpg",
-      "post_date": "2026-03-11T11:00:41+03:00",
-      "genres": [
-        "Managerial",
-        "Strategy",
-        "3D",
-        "Real-time"
-      ],
-      "repack_size": "N/A",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/cc/dd/ccdd32d6-ad58-4dfc-8635-9cbf3ba54230.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/cc/dd/ccdd32d6-ad58-4dfc-8635-9cbf3ba54230.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/e4/cb/e4cbd76c-86fc-4e06-9f4b-0b6a786d52ff.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/e4/cb/e4cbd76c-86fc-4e06-9f4b-0b6a786d52ff.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/9c/c8/9cc88470-950c-43ba-b6ac-d79a76c3869e.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/9c/c8/9cc88470-950c-43ba-b6ac-d79a76c3869e.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/60/4f/604f8797-4b0a-43f6-b0ad-0c4eeacf3002.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/60/4f/604f8797-4b0a-43f6-b0ad-0c4eeacf3002.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/58/9e/589ea98b-808d-48da-be3c-a79f8287d2cc.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/58/9e/589ea98b-808d-48da-be3c-a79f8287d2cc.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/59/7d/597d18ac-ef75-47b7-b8c8-e7051672b0a0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/59/7d/597d18ac-ef75-47b7-b8c8-e7051672b0a0.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:16:56.647414+00:00",
-      "details": {
-        "description": "Cities: Skylines is a modern take on the classic city simulation. The game introduces new game play elements to realize the thrill and hardships of creating and maintaining a real city whilst expanding on some well-established tropes of the city building experience.\nFrom the makers of the Cities in Motion franchise, the game boasts a fully realized transport system. It also includes the ability to mod the game to suit your play style as a fine counter balance to the layered and challenging simulation. You’re only limited by your imagination, so take control and reach for the sky!",
-        "game_features": [
-          "Multi-tiered and challenging simulation",
-          ": Constructing your city from the ground up is easy to learn, but hard to master. Playing as the mayor of your city you’ll be faced with balancing essential requirements such as education, water electricity, police, fire fighting, healthcare and much more along with your citys real economy system. Citizens within your city react fluidly, with gravitas and with an air of authenticity to a multitude of game play scenarios.",
-          "Extensive local traffic simulation",
-          ": Colossal Orders extensive experience developing the Cities in Motion series is fully utilized in a fully fleshed out and well-crafted transport systems.",
-          "Districts and Policies",
-          ": Be more than just an administrator from city hall. Designating parts of your city as a district results in the application of policies which results in you rising to the status of Mayor for your own city.",
-          "Extensive modding support",
-          ": Build or improve on existing maps and structures. You can then import them into the game, share them as well as download the creations of other city builders on the Steam workshop."
-        ],
-        "repack_features": [
-          "Based on Cities.Skylines.Race.Day-RUNE scene ISO release: rune-cities.skylines.race.day.iso (10,635,739,136 bytes)",
-          "Game version is v1.21.1-f5; 90 DLCs/Bonuses are included",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "You can skip downloading & installing of bonus content (digital postcards, artbook, soundtrack)",
-          "Significantly smaller archive size (compressed from 9.9 GB to 6.8/7 GB)",
-          "Installation takes 4-12 minutes",
-          "HDD space after installation: up to 19.3 GB",
-          "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

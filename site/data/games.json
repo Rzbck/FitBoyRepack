@@ -1,9 +1,23 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T14:54:44.846907+00:00",
+  "generated_at": "2026-11-26T18:31:41.726801+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
+    {
+      "id": "virtue-and-a-sledgehammer",
+      "title": "Virtue and a Sledgehammer – v1.0.0r6373",
+      "source_url": "https://fitgirl-repacks.site/virtue-and-a-sledgehammer/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/26/8b09a254b905b9a35ee4e5fa9617d1b1.jpg",
+      "post_date": "2026-11-26T21:21:18+03:00",
+      "genres": [
+        "Adventure",
+        "Physics-based",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "2.5 GB"
+    },
     {
       "id": "cities-skylines-deluxe-edition",
       "title": "Cities: Skylines – Collection, v1.21.2-f5 + 94 DLCs/Bonuses",

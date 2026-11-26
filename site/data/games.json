@@ -1,9 +1,25 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T20:56:44.264499+00:00",
+  "generated_at": "2026-11-26T22:35:31.459205+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
+    {
+      "id": "we-are-football-2027",
+      "title": "WE ARE FOOTBALL 2027 – v4.04",
+      "source_url": "https://fitgirl-repacks.site/we-are-football-2027/",
+      "image_url": "https://i4.imageban.ru/out/2026/11/26/3f0b1790c82cca78ead63c4894ae4cd3.jpg",
+      "post_date": "2026-11-27T01:34:51+03:00",
+      "genres": [
+        "Managerial",
+        "Sports",
+        "Soccer",
+        "Strategy",
+        "2D",
+        "3D"
+      ],
+      "repack_size": "1.3 GB"
+    },
     {
       "id": "tunguska-the-visitation",
       "title": "Tunguska: The Visitation – Complete Collectors’ Edition, v1.98-1 + 7 DLCs",

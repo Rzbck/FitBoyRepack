@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T18:31:41.726801+00:00",
+  "generated_at": "2026-11-26T18:32:38.840972+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
@@ -16,7 +16,60 @@
         "Third-person",
         "3D"
       ],
-      "repack_size": "2.5 GB"
+      "repack_size": "2.5 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b9/90/b9904612-7bd4-4152-b0fb-b06e3ca1eac7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b9/90/b9904612-7bd4-4152-b0fb-b06e3ca1eac7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/94/35/9435f08f-8eb1-4910-bfca-c3cfac1b32ff.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/94/35/9435f08f-8eb1-4910-bfca-c3cfac1b32ff.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/77/67/77671fef-37a0-4495-adf4-d49c2405a55f.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/77/67/77671fef-37a0-4495-adf4-d49c2405a55f.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/25/75/25753403-2ad2-4f69-96d3-92755499092d.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/25/75/25753403-2ad2-4f69-96d3-92755499092d.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/e1/65/e165a0f0-af29-4eea-85ce-2b2f48e51b2e.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/e1/65/e165a0f0-af29-4eea-85ce-2b2f48e51b2e.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/b7/4f/b74f034b-4e60-47c0-9e64-28a1f27982ac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b7/4f/b74f034b-4e60-47c0-9e64-28a1f27982ac.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-26T18:32:38.839546+00:00",
+      "details": {
+        "description": "Most people resort to therapy. But you chose the brave option. A sledgehammer.\nIn Virtue and a Sledgehammer, explore the remains of your hometown haunted by the android ghosts of your digitized neighbors. There won’t always be a clear path, so create your own by knocking down any structures that stand in your way.\nIt will be a painful journey, not only because of the assault from the robots that have taken over life in the mountains, but because of the memories you’ll unearth—sometimes warm, but often traumatic—as you destroy the remnants of your childhood.\nA game about family, traditions, and being a misfit.\nWield your sledgehammer like an instrument of reckoning, swinging through the swathes of mechanical human facsimiles and the buildings they call home. But will violent catharsis salve your soul, or make the pain burn brighter?\nYou can’t tear down the place you were born without awakening a few ghosts. The cinematic sequences of interactive fiction will reveal your fears, desires, and your family’s knotty web of virtues and flaws.\nFlesh is a source of aches and tainted humors.\nIt’s only now, devoid of bones, devoid of hunger, that I can tell you…\nI have never been happier.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Virtue.and.a.Sledgehammer-RUNE ISO release: rune-virtue.and.a.sledgehammer.iso (4,089,839,616 bytes)",
+          "Game version: v1.0.0r6373",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 3.8 to 2.5 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 4.2 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-26T18:32:38.839546+00:00"
     },
     {
       "id": "cities-skylines-deluxe-edition",

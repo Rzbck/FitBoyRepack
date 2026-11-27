@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-27T22:47:45.103763+00:00",
+  "generated_at": "2026-11-27T22:48:38.224462+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-27T15:03:46.163243+00:00",
   "games": [
@@ -15,7 +15,61 @@
         "First-person",
         "3D"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/0a/eb/0aeb09ca-bb31-4824-8cf0-3c126b53bdd4.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0a/eb/0aeb09ca-bb31-4824-8cf0-3c126b53bdd4.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/7b/e9/7be96dc2-680d-431b-9c16-9cfa9b8a7d0b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7b/e9/7be96dc2-680d-431b-9c16-9cfa9b8a7d0b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/90/cc/90ccc366-8816-4cb3-8798-af83ae320f12.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/90/cc/90ccc366-8816-4cb3-8798-af83ae320f12.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/d0/09/d0094c27-49a9-49a5-9845-e5d0de776c39.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/d0/09/d0094c27-49a9-49a5-9845-e5d0de776c39.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/77/4a/774a6f0f-ee06-4255-9085-6dbd9c067283.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/77/4a/774a6f0f-ee06-4255-9085-6dbd9c067283.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4f/09/4f0922f6-26e2-49a2-b8f1-0a50ab565cf5.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4f/09/4f0922f6-26e2-49a2-b8f1-0a50ab565cf5.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-27T22:48:38.223617+00:00",
+      "details": {
+        "description": "Take apart, clean and bring new life to long forgotten objects in Reshine – a cozy restoration game that will take you on a journey through history, all within the safe space of your own attic.\nReshine is a chill, relaxing experience. Simple and intuitive controls, minimalistic UI, straightforward gameplay. There are no complicated systems, no management, no stress.\nListen to the rainfall, as you slowly work in a quiet attic, where the time seems to have stopped. Surrounded by relics of the past, take apart each object piece by piece. There’s no rush, you can follow your own rhythm, discovering how everything fits together as you go. With nothing to get wrong, you’re free to simply unwind and enjoy the process.\nThe parts need to be restored to their former glory. Clean away the dust, sand down rough edges, and gently remove the rust using a variety of tools. Pick colors that feel right for you and repaint the surface until it looks good as new. Go in any order you want and just sit back, relax and watch the object come back to life.\nWhen every part looks like new, you can slowly bring everything back together. Piece by piece, watch the object take shape again. Before you know it, it’s looking like its old self again, or maybe even better.\nAnd that’s it! Compare your final result with the object before restoration to see how much it has changed. You can repeat the restoration as many times as you want, to try different colors or just relive the experience. But, most importantly, more old treasures await you!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Reshine-TENOKE ISO release: tenoke-reshine.iso (5,536,661,504 bytes)",
+          "3 DLCs/Bonuses (Supporter Cutting Mats, Soundtrack & Digital Artbook) are included",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus content",
+          "Significantly smaller archive size (compressed from 5.2 to 3.6/3.8 GB)",
+          "Installation takes 3-8 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-27T22:48:38.223617+00:00"
     },
     {
       "id": "ascend-to-zero",

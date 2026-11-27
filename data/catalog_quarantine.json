@@ -1264,6 +1264,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "hotel-architect-repack-updated",
+      "title": "Hotel Architect Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/hotel-architect-repack-updated/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "how-many-threads-does-your-cpu-have",
       "title": "How many THREADS does your CPU have?",
       "source_url": "https://fitgirl-repacks.site/how-many-threads-does-your-cpu-have/",
@@ -9031,8 +9041,10 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-23-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 1,
+      "score": 7,
       "signals": [
+        "genres",
+        "repack-size",
         "image"
       ],
       "action": "excluded-new"
@@ -9071,10 +9083,9 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-25-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 4,
       "signals": [
         "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

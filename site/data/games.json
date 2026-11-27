@@ -1,9 +1,75 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-27T01:12:30.224199+00:00",
+  "generated_at": "2026-11-27T01:37:36.512588+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
+    {
+      "id": "hotel-architect",
+      "title": "Hotel Architect – v1.1.0.15 + DLC",
+      "source_url": "https://fitgirl-repacks.site/hotel-architect/",
+      "image_url": "https://i6.imageban.ru/out/2026/05/17/2e422312863e581167ca0a1514633cb4.jpg",
+      "post_date": "2026-11-27T04:01:45+03:00",
+      "genres": [
+        "Managerial",
+        "Top-down",
+        "3D"
+      ],
+      "repack_size": "753 MB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/aa/0f/aa0fd6f6-9e06-40e1-a9e3-c42ee92de1f1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/aa/0f/aa0fd6f6-9e06-40e1-a9e3-c42ee92de1f1.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/16/8a/168a57b4-322b-4be5-8352-4b7d0b6c192b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/16/8a/168a57b4-322b-4be5-8352-4b7d0b6c192b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f4/69/f4691faf-51c0-4406-87da-c4fe4e49a9ce.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f4/69/f4691faf-51c0-4406-87da-c4fe4e49a9ce.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/fd/cb/fdcbb6b2-5637-404d-b16e-9ee15ac1b0db.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/fd/cb/fdcbb6b2-5637-404d-b16e-9ee15ac1b0db.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/a0/f8/a0f851b3-ae66-4a2a-bac8-f02a6639dbd0.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/a0/f8/a0f851b3-ae66-4a2a-bac8-f02a6639dbd0.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/de/fa/defa4f36-403a-4d89-b630-a76f3392e424.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/de/fa/defa4f36-403a-4d89-b630-a76f3392e424.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "You’ll juggle demanding guests, keep your establishment running smoothly, and face a delightful array of unexpected challenges. All this and more awaits you in Hotel Architect: the ultimate hotel construction and tycoon management game!\nDemonstrate your managerial prowess and creative talent as you build your hotel from the ground up in Career Mode or let your imagination run wild in Sandbox Mode.\nRejuvenate rundown buildings or transform empty plots into five-star destinations that tower above the Empire State Building – figuratively and literally! Design and dress lobbies that are sure to inspire envy in any would-be rival hoteliers!\nMake each hotel your own with an expansive range of décor and furnishings tailored to the needs of your guests and your establishment’s unique style. Explore endless combinations across multiple floors with numerous zones and amenities available to construct. There are no limits; want to build a prison-style hotel that maximizes how many rooms you offer, regardless of how your guests feel? Or how about a pyramid-shaped building that offers some…strange amenities? Make every hotel your own!\nIn the fast-paced world of hospitality, you’ll need to impress the harshest critics, satisfy the most demanding of guests, and tame logistical chaos behind-the-scenes to earn that coveted 5-star rating.\nHire the right staff, balance your finances, and make the tough calls; Will you splash out on a world class chef at the risk of hiring a clumsy receptionist? The choice is yours!\nGet ready to check-in to Hotel Architect; where your creativity meets clientele challenges, and every great stay begins with a little chaos!\nBuild your Dreams in Career or Sandbox Mode\nClimb the ranks in Career Campaign Mode by completing a variety of objectives, or play in the Sandbox Mode available for each location.\nDynamic Building Meets Careful Planning\nDesign your own hotel from the ground up or breathe new life into a neglected property. Design layouts, hire construction crews, and watch your vision come to life in real time. Plan carefully though. Annoy, disturb, or remove items your guests are using, and your reviews might plummet!\nDesign and Decorate Your Dream Hotel\nCustomize every corner of your hotel! Set up themed zones, install amenities, and choose from a wide selection of furnishings, wallpaper, and flooring to create a five-star atmosphere that’s uniquely yours.\nImpress and Advance\nEvery detail matters. Hospitality reviewers will scrutinize every room, every meal, every stay. Earn glowing ratings to attract wealthier guests and expand your growing hotel empire.\nExpand Your Hotel Empire to Global Heights\nExpand your hotel empire across multiple locations across the globe, each with their own unique character and challenges. Some sites will come with existing structures to build on, while others are blank slates waiting for you to make your mark.\nManage Staff and Contractors\nRecruit and train a capable team to keep your hotel running smoothly. Each employee has unique attributes that influence their performance, and they’ll grow and level up as they gain experience! Balance staff levels with guest needs, and coordinate with contractors to manage supplies, restock pantries, and keep every room spotless.\nWelcome Your Guests\nAdapt as demanding guests, special events, and unpredictable situations keep you on your toes. Meet expectations or brace yourself for the reviews!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Hotel.Architect-TENOKE ISO release: tenoke-hotel.architect.iso (1,796,429,824 bytes)",
+          "Game version: v1.0.0.7",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Significantly smaller archive size (compressed from 1.7 GB to 678 MB)",
+          "Installation takes 1-3 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.5 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "hope-in-the-city",
       "title": "Hope in the City – v1.1.0.0",
@@ -66609,72 +66675,6 @@
           "Installation takes 13-45 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: up to 50.5 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "hotel-architect",
-      "title": "Hotel Architect – v1.0.0.7",
-      "source_url": "https://fitgirl-repacks.site/hotel-architect/",
-      "image_url": "https://i6.imageban.ru/out/2026/05/17/2e422312863e581167ca0a1514633cb4.jpg",
-      "post_date": "2026-05-17T21:36:45+03:00",
-      "genres": [
-        "Managerial",
-        "Top-down",
-        "3D"
-      ],
-      "repack_size": "678 MB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/aa/0f/aa0fd6f6-9e06-40e1-a9e3-c42ee92de1f1.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/aa/0f/aa0fd6f6-9e06-40e1-a9e3-c42ee92de1f1.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/16/8a/168a57b4-322b-4be5-8352-4b7d0b6c192b.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/16/8a/168a57b4-322b-4be5-8352-4b7d0b6c192b.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f4/69/f4691faf-51c0-4406-87da-c4fe4e49a9ce.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f4/69/f4691faf-51c0-4406-87da-c4fe4e49a9ce.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/fd/cb/fdcbb6b2-5637-404d-b16e-9ee15ac1b0db.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/fd/cb/fdcbb6b2-5637-404d-b16e-9ee15ac1b0db.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/a0/f8/a0f851b3-ae66-4a2a-bac8-f02a6639dbd0.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/a0/f8/a0f851b3-ae66-4a2a-bac8-f02a6639dbd0.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/de/fa/defa4f36-403a-4d89-b630-a76f3392e424.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/de/fa/defa4f36-403a-4d89-b630-a76f3392e424.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "You’ll juggle demanding guests, keep your establishment running smoothly, and face a delightful array of unexpected challenges. All this and more awaits you in Hotel Architect: the ultimate hotel construction and tycoon management game!\nDemonstrate your managerial prowess and creative talent as you build your hotel from the ground up in Career Mode or let your imagination run wild in Sandbox Mode.\nRejuvenate rundown buildings or transform empty plots into five-star destinations that tower above the Empire State Building – figuratively and literally! Design and dress lobbies that are sure to inspire envy in any would-be rival hoteliers!\nMake each hotel your own with an expansive range of décor and furnishings tailored to the needs of your guests and your establishment’s unique style. Explore endless combinations across multiple floors with numerous zones and amenities available to construct. There are no limits; want to build a prison-style hotel that maximizes how many rooms you offer, regardless of how your guests feel? Or how about a pyramid-shaped building that offers some…strange amenities? Make every hotel your own!\nIn the fast-paced world of hospitality, you’ll need to impress the harshest critics, satisfy the most demanding of guests, and tame logistical chaos behind-the-scenes to earn that coveted 5-star rating.\nHire the right staff, balance your finances, and make the tough calls; Will you splash out on a world class chef at the risk of hiring a clumsy receptionist? The choice is yours!\nGet ready to check-in to Hotel Architect; where your creativity meets clientele challenges, and every great stay begins with a little chaos!\nBuild your Dreams in Career or Sandbox Mode\nClimb the ranks in Career Campaign Mode by completing a variety of objectives, or play in the Sandbox Mode available for each location.\nDynamic Building Meets Careful Planning\nDesign your own hotel from the ground up or breathe new life into a neglected property. Design layouts, hire construction crews, and watch your vision come to life in real time. Plan carefully though. Annoy, disturb, or remove items your guests are using, and your reviews might plummet!\nDesign and Decorate Your Dream Hotel\nCustomize every corner of your hotel! Set up themed zones, install amenities, and choose from a wide selection of furnishings, wallpaper, and flooring to create a five-star atmosphere that’s uniquely yours.\nImpress and Advance\nEvery detail matters. Hospitality reviewers will scrutinize every room, every meal, every stay. Earn glowing ratings to attract wealthier guests and expand your growing hotel empire.\nExpand Your Hotel Empire to Global Heights\nExpand your hotel empire across multiple locations across the globe, each with their own unique character and challenges. Some sites will come with existing structures to build on, while others are blank slates waiting for you to make your mark.\nManage Staff and Contractors\nRecruit and train a capable team to keep your hotel running smoothly. Each employee has unique attributes that influence their performance, and they’ll grow and level up as they gain experience! Balance staff levels with guest needs, and coordinate with contractors to manage supplies, restock pantries, and keep every room spotless.\nWelcome Your Guests\nAdapt as demanding guests, special events, and unpredictable situations keep you on your toes. Meet expectations or brace yourself for the reviews!",
-        "game_features": [],
-        "repack_features": [
-          "Based on Hotel.Architect-TENOKE ISO release: tenoke-hotel.architect.iso (1,796,429,824 bytes)",
-          "Game version: v1.0.0.7",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Significantly smaller archive size (compressed from 1.7 GB to 678 MB)",
-          "Installation takes 1-3 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 1.5 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

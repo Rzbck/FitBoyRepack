@@ -1,9 +1,21 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-27T00:08:46.450901+00:00",
+  "generated_at": "2026-11-27T01:11:38.732522+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
+    {
+      "id": "hope-in-the-city",
+      "title": "Hope in the City – v1.1.0.0",
+      "source_url": "https://fitgirl-repacks.site/hope-in-the-city/",
+      "image_url": "https://i7.imageban.ru/out/2026/11/27/5797a22cebee2ce6f80d25633ba70d77.jpg",
+      "post_date": "2026-11-27T03:55:57+03:00",
+      "genres": [
+        "Adventure",
+        "3D"
+      ],
+      "repack_size": "6.4 GB"
+    },
     {
       "id": "enotria-the-last-song",
       "title": "Enotria: The Last Song – v1.011.29684",

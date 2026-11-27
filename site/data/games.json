@@ -1,9 +1,76 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-27T19:26:07.098387+00:00",
+  "generated_at": "2026-11-27T20:32:35.748857+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-27T15:03:46.163243+00:00",
   "games": [
+    {
+      "id": "ascend-to-zero",
+      "title": "Ascend to ZERO: Deluxe Edition, MS Store v1.3.0.0 + 3 DLCs/Bonuses",
+      "source_url": "https://fitgirl-repacks.site/ascend-to-zero/",
+      "image_url": "https://i6.imageban.ru/out/2026/07/13/0b43ba7452307088546570f92ad26321.jpg",
+      "post_date": "2026-11-27T22:30:16+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Isometric",
+        "2D"
+      ],
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/3c/99/3c993662-e96c-4c3f-ad74-0e9020c4b551.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3c/99/3c993662-e96c-4c3f-ad74-0e9020c4b551.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/0f/01/0f0164fe-9c97-4904-8531-d5b82235ca73.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/0f/01/0f0164fe-9c97-4904-8531-d5b82235ca73.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/3b/69/3b69fbf7-e1a2-4da7-a36a-4a6fec68052c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/3b/69/3b69fbf7-e1a2-4da7-a36a-4a6fec68052c.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f8/f9/f8f913a6-1ad9-48f5-a558-9d50f0650712.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f8/f9/f8f913a6-1ad9-48f5-a558-9d50f0650712.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/ba/f4/baf4a223-aebe-40c6-a4cb-9ba8f56f59ac.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/ba/f4/baf4a223-aebe-40c6-a4cb-9ba8f56f59ac.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/53/ca/53ca981e-141b-47ec-a621-a230339815a7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/53/ca/53ca981e-141b-47ec-a621-a230339815a7.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
+      "details": {
+        "description": "The clock is ticking, but luckily you can manipulate and bend time to your will! Every second is another weapon in your arsenal – learn to wield it better with every passing run!\nUnlock a variety of skills, chips and abilities to become a force to be reckoned with!\nIncrease your stats, enhance your awesome weapons, and upgrade your massive arsenal of gear to be the ultimate avatar of time!\nWant to be a glass-cannon swordsman? Slice and dice through your obstacles!\nRange is the name of your game? Lock and load as you zip around your enemies!",
+        "game_features": [],
+        "repack_features": [
+          "Based on Ascend.to.ZERO-RUNE ISO release: rune-ascend.to.zero.iso (1,539,080,192 bytes)",
+          "Game version: MS Store v1.0.4.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 1.4 to 1.1 GB)",
+          "Installation takes 2-5 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 1.7 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
+    },
     {
       "id": "deadly-days-roadtrip",
       "title": "Deadly Days: Roadtrip",
@@ -46391,73 +46458,6 @@
           "Installation takes 4-12 minutes (depending on your system)",
           "After-install integrity check so you could make sure that everything installed properly",
           "HDD space after installation: 8 GB",
-          "Language can be changed in game settings",
-          "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:15:21.074025+00:00"
-    },
-    {
-      "id": "ascend-to-zero",
-      "title": "Ascend to ZERO – MS Store v1.0.4.0",
-      "source_url": "https://fitgirl-repacks.site/ascend-to-zero/",
-      "image_url": "https://i6.imageban.ru/out/2026/07/13/0b43ba7452307088546570f92ad26321.jpg",
-      "post_date": "2026-07-14T00:40:16+03:00",
-      "genres": [
-        "RPG",
-        "Action RPG",
-        "Isometric",
-        "2D"
-      ],
-      "repack_size": "1.1 GB",
-      "media": [
-        {
-          "url": "https://s01.riotpixels.net/data/3c/99/3c993662-e96c-4c3f-ad74-0e9020c4b551.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3c/99/3c993662-e96c-4c3f-ad74-0e9020c4b551.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/0f/01/0f0164fe-9c97-4904-8531-d5b82235ca73.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/0f/01/0f0164fe-9c97-4904-8531-d5b82235ca73.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/3b/69/3b69fbf7-e1a2-4da7-a36a-4a6fec68052c.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/3b/69/3b69fbf7-e1a2-4da7-a36a-4a6fec68052c.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/f8/f9/f8f913a6-1ad9-48f5-a558-9d50f0650712.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/f8/f9/f8f913a6-1ad9-48f5-a558-9d50f0650712.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/ba/f4/baf4a223-aebe-40c6-a4cb-9ba8f56f59ac.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/ba/f4/baf4a223-aebe-40c6-a4cb-9ba8f56f59ac.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/53/ca/53ca981e-141b-47ec-a621-a230339815a7.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/53/ca/53ca981e-141b-47ec-a621-a230339815a7.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:15:21.074025+00:00",
-      "details": {
-        "description": "The clock is ticking, but luckily you can manipulate and bend time to your will! Every second is another weapon in your arsenal – learn to wield it better with every passing run!\nUnlock a variety of skills, chips and abilities to become a force to be reckoned with!\nIncrease your stats, enhance your awesome weapons, and upgrade your massive arsenal of gear to be the ultimate avatar of time!\nWant to be a glass-cannon swordsman? Slice and dice through your obstacles!\nRange is the name of your game? Lock and load as you zip around your enemies!",
-        "game_features": [],
-        "repack_features": [
-          "Based on Ascend.to.ZERO-RUNE ISO release: rune-ascend.to.zero.iso (1,539,080,192 bytes)",
-          "Game version: MS Store v1.0.4.0",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Smaller archive size (compressed from 1.4 to 1.1 GB)",
-          "Installation takes 2-5 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 1.7 GB",
           "Language can be changed in game settings",
           "Repack uses XTool library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"

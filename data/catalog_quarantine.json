@@ -724,6 +724,16 @@
       "action": "excluded-new"
     },
     {
+      "id": "enotria-the-last-song-repack-updated-2",
+      "title": "Enotria: The Last Song Repack Updated",
+      "source_url": "https://fitgirl-repacks.site/enotria-the-last-song-repack-updated-2/",
+      "classification": "non_game",
+      "reason": "repack-update-post",
+      "score": 0,
+      "signals": [],
+      "action": "excluded-new"
+    },
+    {
       "id": "fifa-19-repack-poll",
       "title": "FIFA 19 Repack Poll",
       "source_url": "https://fitgirl-repacks.site/fifa-19-repack-poll/",
@@ -9021,10 +9031,8 @@
       "source_url": "https://fitgirl-repacks.site/updates-digest-for-november-23-2026/",
       "classification": "non_game",
       "reason": "updates-digest",
-      "score": 7,
+      "score": 1,
       "signals": [
-        "genres",
-        "repack-size",
         "image"
       ],
       "action": "excluded-new"

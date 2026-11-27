@@ -1,9 +1,87 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-26T22:36:14.527942+00:00",
+  "generated_at": "2026-11-27T00:08:46.450901+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
+    {
+      "id": "enotria-the-last-song",
+      "title": "Enotria: The Last Song – v1.011.29684",
+      "source_url": "https://fitgirl-repacks.site/enotria-the-last-song/",
+      "image_url": "https://i5.imageban.ru/out/2024/09/17/a9dde93480894b636f4bfb9e66c04e9f.jpg",
+      "post_date": "2026-11-27T02:00:07+03:00",
+      "genres": [
+        "RPG",
+        "Action RPG",
+        "Third-person",
+        "3D"
+      ],
+      "repack_size": "9.5 GB",
+      "media": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2102450/extras/RiposteV3.gif",
+          "type": "gif"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/66/15/661590ac-3950-4c84-8643-0448183d0114.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/15/661590ac-3950-4c84-8643-0448183d0114.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4a/27/4a2778ff-caac-4ef4-8d53-66ab7b6a12a2.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4a/27/4a2778ff-caac-4ef4-8d53-66ab7b6a12a2.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/89/7f/897fb3aa-e81f-4479-b8aa-6f1841976796.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/89/7f/897fb3aa-e81f-4479-b8aa-6f1841976796.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/61/0c/610ce6c8-8e37-4073-a99c-7a787e91fc42.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/61/0c/610ce6c8-8e37-4073-a99c-7a787e91fc42.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/97/af/97afef5f-05a1-4795-9421-c60ec9c14288.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/97/af/97afef5f-05a1-4795-9421-c60ec9c14288.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8a/b1/8ab1cfc8-5f0c-454e-812a-cf504a022d54.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8a/b1/8ab1cfc8-5f0c-454e-812a-cf504a022d54.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-10-01T08:19:11.717875+00:00",
+      "details": {
+        "description": "“Enotria: The Last Song” is a thrilling Soulsike set in a sun-lit land inspired by Italian folklore and filled with danger.\nThe world has been gripped by the Canovaccio – a twisted eternal play that keeps everything in an unnatural stasis. You, Maskless One, are the only one without a given role and master of your destiny. Defeat the fearsome Authors that created it and free the world from stagnation, by harnessing the power of Ardore.\nBecome the Mask of Change.\nSummer Souls\n3 Main Regions, 40+ hours, more than 100 different enemies\nEnotria is a beautiful sun-lit land inspired by Italian nature, that hides dark secrets behind its bright facades, and it is up to you to unravel the mysteries of this stunning world.\nMany Masks, One Face\n30+ Masks. Don your fallen foes’ Masks to take on their roles, enabling new ways to play, each with its own strengths and weaknesses. Swap between up to 3 customisable Loadouts at any time.\nPath of Innovators\n68 Skills (Unlockable PERKS), with 150+ milions different build combinations. Expand your playstyle options through a unique pool of talents in the Path of Innovators.\nSlot talents into Masks to create custom builds on a single screen, experience a unique system that makes theorycrafting and altering playstyle for each situation easier than ever.\nUnparalleled Flexibility\n30+ aspects to alter your main statistics dynamically. Choose strategically which Mask will face the dangers of Enotria and swap between up to three custom loadouts at any time. Each loadout allows you to try out a new playstyle, without the burden of a respec.\nAlter Reality\n3 different type of Rifts. Channel the power of Ardore to dynamically alter reality. Swap strategically between environmental states to solve puzzles, reveal secrets, traverse a decaying world and gain a strategic edge in battles.\nAwaken your Potential\n120+ weapons, 8 different weapon classes, 45 spells, 8 parry modifiers\nBreak an enemies posture to enable a devastating riposte attack, which grants you the mighty Awakened buff. Chain kills and swap between Masks to alter the boons you receive to best match the opponent.",
+        "game_features": [
+          "Wield Ardore to alter the world around you",
+          "Stay on the offensive with quicksteps and chainable parries",
+          "Strike foes to charge powerful magical Lines",
+          "Strategically swap between up to three Loadouts at any time",
+          "Break an enemies posture for a devastating attack, granting you a mighty Awakened buff",
+          "Reveal the secrets of Enotria to gain Inspiration & unlock new perks in the Path of Innovators"
+        ],
+        "repack_features": [
+          "Based on Enotria.The.Last.Song.v1.007-RUNE ISO release: rune-enotria.the.last.song.v1.007.iso (12,683,542,528 bytes)",
+          "Game version: v1.007.28161",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 11.8 to 8.8 GB)",
+          "Installation takes 5-20 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 12.1 GB",
+          "Language can be changed in game settings",
+          "Repack uses compression library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-10-01T08:19:11.717875+00:00"
+    },
     {
       "id": "we-are-football-2027",
       "title": "WE ARE FOOTBALL 2027 – v4.04",
@@ -200387,84 +200465,6 @@
           "HDD space after installation: 13.1 GB",
           "Language can be changed in “EngineBinariesThirdPartySteamworksSteamv157Win64tenoke.ini”",
           "Repack uses XTool library by Razor12911",
-          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
-        ]
-      },
-      "details_version": 1,
-      "details_checked_at": "2026-10-01T08:19:11.717875+00:00"
-    },
-    {
-      "id": "enotria-the-last-song",
-      "title": "Enotria: The Last Song – v1.007.28161",
-      "source_url": "https://fitgirl-repacks.site/enotria-the-last-song/",
-      "image_url": "https://i5.imageban.ru/out/2024/09/17/a9dde93480894b636f4bfb9e66c04e9f.jpg",
-      "post_date": "2025-01-30T00:01:07+03:00",
-      "genres": [
-        "RPG",
-        "Action RPG",
-        "Third-person",
-        "3D"
-      ],
-      "repack_size": "8.8 GB",
-      "media": [
-        {
-          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2102450/extras/RiposteV3.gif",
-          "type": "gif"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/66/15/661590ac-3950-4c84-8643-0448183d0114.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/66/15/661590ac-3950-4c84-8643-0448183d0114.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/4a/27/4a2778ff-caac-4ef4-8d53-66ab7b6a12a2.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/4a/27/4a2778ff-caac-4ef4-8d53-66ab7b6a12a2.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/89/7f/897fb3aa-e81f-4479-b8aa-6f1841976796.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/89/7f/897fb3aa-e81f-4479-b8aa-6f1841976796.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/61/0c/610ce6c8-8e37-4073-a99c-7a787e91fc42.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/61/0c/610ce6c8-8e37-4073-a99c-7a787e91fc42.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/97/af/97afef5f-05a1-4795-9421-c60ec9c14288.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/97/af/97afef5f-05a1-4795-9421-c60ec9c14288.jpg.240p.jpg"
-        },
-        {
-          "url": "https://s01.riotpixels.net/data/8a/b1/8ab1cfc8-5f0c-454e-812a-cf504a022d54.jpg",
-          "type": "image",
-          "preview_url": "https://s01.riotpixels.net/data/8a/b1/8ab1cfc8-5f0c-454e-812a-cf504a022d54.jpg.240p.jpg"
-        }
-      ],
-      "media_version": 7,
-      "media_checked_at": "2026-10-01T08:19:11.717875+00:00",
-      "details": {
-        "description": "“Enotria: The Last Song” is a thrilling Soulsike set in a sun-lit land inspired by Italian folklore and filled with danger.\nThe world has been gripped by the Canovaccio – a twisted eternal play that keeps everything in an unnatural stasis. You, Maskless One, are the only one without a given role and master of your destiny. Defeat the fearsome Authors that created it and free the world from stagnation, by harnessing the power of Ardore.\nBecome the Mask of Change.\nSummer Souls\n3 Main Regions, 40+ hours, more than 100 different enemies\nEnotria is a beautiful sun-lit land inspired by Italian nature, that hides dark secrets behind its bright facades, and it is up to you to unravel the mysteries of this stunning world.\nMany Masks, One Face\n30+ Masks. Don your fallen foes’ Masks to take on their roles, enabling new ways to play, each with its own strengths and weaknesses. Swap between up to 3 customisable Loadouts at any time.\nPath of Innovators\n68 Skills (Unlockable PERKS), with 150+ milions different build combinations. Expand your playstyle options through a unique pool of talents in the Path of Innovators.\nSlot talents into Masks to create custom builds on a single screen, experience a unique system that makes theorycrafting and altering playstyle for each situation easier than ever.\nUnparalleled Flexibility\n30+ aspects to alter your main statistics dynamically. Choose strategically which Mask will face the dangers of Enotria and swap between up to three custom loadouts at any time. Each loadout allows you to try out a new playstyle, without the burden of a respec.\nAlter Reality\n3 different type of Rifts. Channel the power of Ardore to dynamically alter reality. Swap strategically between environmental states to solve puzzles, reveal secrets, traverse a decaying world and gain a strategic edge in battles.\nAwaken your Potential\n120+ weapons, 8 different weapon classes, 45 spells, 8 parry modifiers\nBreak an enemies posture to enable a devastating riposte attack, which grants you the mighty Awakened buff. Chain kills and swap between Masks to alter the boons you receive to best match the opponent.",
-        "game_features": [
-          "Wield Ardore to alter the world around you",
-          "Stay on the offensive with quicksteps and chainable parries",
-          "Strike foes to charge powerful magical Lines",
-          "Strategically swap between up to three Loadouts at any time",
-          "Break an enemies posture for a devastating attack, granting you a mighty Awakened buff",
-          "Reveal the secrets of Enotria to gain Inspiration & unlock new perks in the Path of Innovators"
-        ],
-        "repack_features": [
-          "Based on Enotria.The.Last.Song.v1.007-RUNE ISO release: rune-enotria.the.last.song.v1.007.iso (12,683,542,528 bytes)",
-          "Game version: v1.007.28161",
-          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
-          "NOTHING ripped, NOTHING re-encoded",
-          "Smaller archive size (compressed from 11.8 to 8.8 GB)",
-          "Installation takes 5-20 minutes (depending on your system)",
-          "After-install integrity check so you could make sure that everything installed properly",
-          "HDD space after installation: 12.1 GB",
-          "Language can be changed in game settings",
-          "Repack uses compression library by Razor12911",
           "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
         ]
       },

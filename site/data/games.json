@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-27T01:11:38.732522+00:00",
+  "generated_at": "2026-11-27T01:12:30.224199+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-26T14:54:44.846907+00:00",
   "games": [
@@ -14,7 +14,59 @@
         "Adventure",
         "3D"
       ],
-      "repack_size": "6.4 GB"
+      "repack_size": "6.4 GB",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/b5/f0/b5f0e3e4-e45b-489d-af97-1b9ab6932082.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/b5/f0/b5f0e3e4-e45b-489d-af97-1b9ab6932082.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/56/1e/561e21b0-b4a0-4796-97e2-46caec77fa0b.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/56/1e/561e21b0-b4a0-4796-97e2-46caec77fa0b.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/4f/c2/4fc21eed-5988-4635-9e87-0f1d087afa49.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/4f/c2/4fc21eed-5988-4635-9e87-0f1d087afa49.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/8a/b2/8ab2a04c-a713-41ec-8379-38998c710471.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/8a/b2/8ab2a04c-a713-41ec-8379-38998c710471.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/66/48/66484871-3269-49fb-8951-5115f1c02e01.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/66/48/66484871-3269-49fb-8951-5115f1c02e01.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/c5/51/c551b258-0989-4635-8efa-2bd0c6ebe7a1.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/c5/51/c551b258-0989-4635-8efa-2bd0c6ebe7a1.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-27T01:12:30.222852+00:00",
+      "details": {
+        "description": "Your sketches may be the only clues you have. Play as 17-year-old Hope Song in this narrative mystery set in Shenyang, China. While everyone around her cracks under exam pressure, Hope escapes into her drawings, until her parents disappear. Investigate what happened, connect the clues, and uncover the truth hidden beneath the city’s calm.\nYou come home from school like any other day. But the house is quiet. Your parents are gone, the apartment is in shambles. No note, no warning, no answers.\nHope isn’t a detective. And everyone she turns to seems intent on avoiding trouble. But with an artist’s eye, she notices details others overlook, and that’s what makes her dangerous to whoever’s hiding the truth. Drawing is no longer an escape; it’s her best chance to solve her parents’ mystery.\nWherever Hope goes and whoever she speaks with, she finds elements that don’t add up. Investigate each one and capture your observations as sketches in Hope’s notebook. Every detail matters.\nCombine Hope’s sketches into insights, and keep adding new thoughts until they grow into breakthroughs. Piece by piece, sketch by sketch, watch the picture of what happened to your parents take shape, and grow darker than you ever imagined.\nShenyang isn’t just a backdrop, it’s a character of its own. Rendered in a bold, stylized art style with an edge, every street, storefront, and shadowed alley is begging to be explored. Wander past neon signs and quiet corners, and let the city’s striking visuals pull you deeper into its secrets.\nOn the surface, it’s just home: familiar streets, quiet neighbors, ordinary life. But beneath the quiet, something is hidden. Hope can’t be sure who she can trust. And she can’t afford to wait for someone to help her find the truth.\nHope in the City is made by the team behind the 2026 GDC Best in Play Winner Sky of Tides and the 2024 Peabody Award-nominated Eternal Spring.",
+        "game_features": [],
+        "repack_features": [
+          "Based on Hope.in.the.City-RUNE ISO release: rune-hope.in.the.city.iso (8,641,314,816 bytes)",
+          "Game version: v1.1.0.0",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "NOTHING ripped, NOTHING re-encoded",
+          "Smaller archive size (compressed from 8 to 6.4 GB)",
+          "Installation takes 2-6 minutes (depending on your system)",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: 13.9 GB",
+          "Language can be changed in game settings",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-27T01:12:30.222852+00:00"
     },
     {
       "id": "enotria-the-last-song",

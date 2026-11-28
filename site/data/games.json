@@ -1,9 +1,24 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-28T00:05:13.749633+00:00",
+  "generated_at": "2026-11-28T01:33:22.748752+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-27T15:03:46.163243+00:00",
   "games": [
+    {
+      "id": "sulfur",
+      "title": "SULFUR: Original Soundtrack Bundle – v1.0 + Bonus OST",
+      "source_url": "https://fitgirl-repacks.site/sulfur/",
+      "image_url": "https://i2.imageban.ru/out/2026/11/28/7e76e4b3a73c9ccf920c90ad467b4ed5.jpg",
+      "post_date": "2026-11-28T04:18:48+03:00",
+      "genres": [
+        "Action",
+        "Shooter",
+        "First-person",
+        "3D",
+        "Retro look"
+      ],
+      "repack_size": "N/A"
+    },
     {
       "id": "grime-2",
       "title": "GRIME II – v1.3.19021",

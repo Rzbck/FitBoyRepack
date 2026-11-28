@@ -1,6 +1,6 @@
 {
   "catalog_version": 2,
-  "generated_at": "2026-11-28T01:33:22.748752+00:00",
+  "generated_at": "2026-11-28T01:34:14.794126+00:00",
   "source_pages": 826,
   "last_full_scan_at": "2026-11-27T15:03:46.163243+00:00",
   "games": [
@@ -17,7 +17,60 @@
         "3D",
         "Retro look"
       ],
-      "repack_size": "N/A"
+      "repack_size": "N/A",
+      "media": [
+        {
+          "url": "https://s01.riotpixels.net/data/7b/a7/7ba7db26-1a49-481e-a2c7-2a5470b675cb.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/7b/a7/7ba7db26-1a49-481e-a2c7-2a5470b675cb.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/9f/c2/9fc2d858-243b-4e57-9637-5c52151008b8.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/9f/c2/9fc2d858-243b-4e57-9637-5c52151008b8.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/18/6d/186d30bd-8f2c-4ef9-9a96-217bba30a053.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/18/6d/186d30bd-8f2c-4ef9-9a96-217bba30a053.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/11/07/11074b7b-7a8b-4b59-8bbf-4323b1f20498.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/11/07/11074b7b-7a8b-4b59-8bbf-4323b1f20498.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/f5/02/f502dfec-d247-491d-98c5-e23d58d042c7.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/f5/02/f502dfec-d247-491d-98c5-e23d58d042c7.jpg.240p.jpg"
+        },
+        {
+          "url": "https://s01.riotpixels.net/data/75/d4/75d4dbfb-c606-4665-96cf-c4d33b0cd45c.jpg",
+          "type": "image",
+          "preview_url": "https://s01.riotpixels.net/data/75/d4/75d4dbfb-c606-4665-96cf-c4d33b0cd45c.jpg.240p.jpg"
+        }
+      ],
+      "media_version": 7,
+      "media_checked_at": "2026-11-28T01:34:14.792902+00:00",
+      "details": {
+        "description": "Plan ahead, outsmart enemies and progress a world of dark creatures and cunning evil. Utilize playful and tactile weaponry in visceral and intense combat. Create unique builds by combining weapons, gear, tools, and enchantments to suit your playstyle. Whether you’re a gun-blazing risk-taker or a careful strategist, the choice is yours. Adapt your approach, experiment, and survive the dangers of Sulfur.\nEnter a world packed with relentless action, powerful firearms, and dynamic FPS combat, where unpredictable enemies lurk in every shadow. Arm yourself with an array of weapons that can be modified and enchanted with a vast range of attachments and effects.\nAs you explore, uncover hidden secrets, collect valuable loot, and discover rare treasures – but tread carefully. Every decision counts: the gear you bring may be lost if you fail, and the equipment you leave behind won’t be there when you need it most. Risk and reward are tightly intertwined in every choice you make.\nExperience the atmosphere, suspense and tribulation of a world in redemption. What happened? And why? Travel through eerie caverns, sordid Black Guild shanties, putrid sewers and pass through castle walls and beyond. Go deeper, head on. Answers come to those who listen.\nExplore, discover, uncover. On your adventure you encounter strange creatures in unexpected places—pay attention to their warnings. Whether they despise, admire, or ignore you, your path is yours to forge. Stay alert; these encounters may offer insights, but ultimately, it’s up to you to push forward and find the answers you seek.\nA bloodstained white collar\nDirt on your shoes\nYour shoulders are aching\nIs this but a ruse?\nA coven is suspect\nA church is aflame\nWho is the culprit?\nWho is to blame?\nOcean screaming,\nTwisting turning\nMouth is dry,\nEyes are burning\nBut you must tread on,\nThere is no remorse\nBrush the saltwater film\noff your Palehorse™",
+        "game_features": [],
+        "repack_features": [
+          "Based on SULFUR-TENOKE ISO release: tenoke-sulfur.iso (4,158,146,560 bytes)",
+          "100% Lossless & MD5 Perfect: all files are identical to originals after installation",
+          "Bonus OST in FLAC format nullified, NOTHING re-encoded",
+          "Selective Download feature: you may skip downloading and installing of bonus OST in MP3 format",
+          "Significantly smaller archive size (compressed from 3.9 GB to 610/823 MB)",
+          "Installation takes one minute",
+          "After-install integrity check so you could make sure that everything installed properly",
+          "HDD space after installation: up to 3.9 GB",
+          "Language can be changed in game settings",
+          "Repack uses XTool library by Razor12911",
+          "At least 2 GB of free RAM (inc. virtual) required for installing this repack"
+        ]
+      },
+      "details_version": 1,
+      "details_checked_at": "2026-11-28T01:34:14.792902+00:00"
     },
     {
       "id": "grime-2",
